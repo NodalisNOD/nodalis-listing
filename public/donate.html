@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate</title>
+  <link rel="stylesheet" href="styles/donate.css" />
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <h1>Nodalis</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="donation-container">
+      <h1>Donate</h1>
+      <p>
+        Support our project by donating to the following address. Your donations help us improve our platform and keep it online.
+      </p>
+      <div class="donation-address">
+        <input
+          type="text"
+          id="donationAddress"
+          value="0x051c7F8A6D4B244A3b4E1Cc82f4552A2b1FCfcE7leg"
+          readonly
+        />
+        <button id="copyButton">Copy address</button>
+      </div>
+      <div class="qr-code">
+        <img src="./assets/metamaskwallet.png" alt="QR code for MetaMask Wallet" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Nodalis. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById("copyButton").addEventListener("click", function () {
+      const copyText = document.getElementById("donationAddress");
+
+      // Select the text in the input field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text to the clipboard
+      navigator.clipboard.writeText(copyText.value)
+        .then(() => {
+          alert("Address copied!");
+        })
+        .catch((err) => {
+          alert("Copy failed: " + err);
+        });
+    });
+  </script>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+</body>
+</html>

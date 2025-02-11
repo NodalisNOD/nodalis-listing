@@ -33,13 +33,19 @@ footer.innerHTML = `
       </ul>
     </div>
 
-    <!-- Deel 4: Donations -->
-    <div class="footer-section">
-      <h3>Donations</h3>
-      <ul>
-        <li><a href="/donate-cronos">Cronos</a></li>
-      </ul>
-    </div>
+ <!-- Deel 4: About -->
+<div class="footer-section">
+  <h3>Donations</h3>
+  <ul>
+    <li><a href="/donate.html">Cronos</a></li>
+  </ul>
+  <h3>Legal</h3>
+  <ul>
+    <li><a href="/tos.html">Terms of Service</a></li>
+    <li><a href="/pos.html">Privacy Policy</a></li>
+  </ul>
+</div>
+
 
     <!-- Deel 5: Business -->
     <div class="footer-section">

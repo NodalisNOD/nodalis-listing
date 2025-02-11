@@ -1,0 +1,56 @@
+
+  /* Container voor de donatiepagina */
+  .donation-container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Koptekst */
+  h1 {
+    margin-top: 0;
+  }
+  
+  /* Donatieadres en kopieerknop */
+  .donation-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .donation-address input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .donation-address button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .donation-address button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* QR-code styling */
+  .qr-code img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  

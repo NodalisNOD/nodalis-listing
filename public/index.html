@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nodalis</title>
-  <link rel="stylesheet" href="./styles/global.css">
-  <link rel="stylesheet" href="./styles/layout.css">
-  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
 </head>
 
 <body>
@@ -22,10 +21,10 @@
   <!-- Main Content -->
   <main class="main-content">
     <div class="tables-container">
-      <!-- Newcomers Tabel -->
+      <!-- Newcomers Table -->
       <div class="table-wrapper">
         <h2>
-          <img src="./assets/plant.png" alt="Plant Logo" class="table-icon">Newcomers
+          <img src="./assets/plant.png" alt="Plant Logo" class="table-icon" />Newcomers
         </h2>
         <table>
           <thead>
@@ -39,10 +38,10 @@
         </table>
       </div>
 
-      <!-- Top Gainers Tabel -->
+      <!-- Top Gainers Table -->
       <div class="table-wrapper">
         <h2>
-          <img src="./assets/rocket.png" alt="Rocket Logo" class="table-icon">Top Gainers
+          <img src="./assets/rocket.png" alt="Rocket Logo" class="table-icon" />Top Gainers
         </h2>
         <table>
           <thead>
@@ -56,24 +55,29 @@
         </table>
       </div>
 
-<!-- Advertentie + Twitter Feed Wrapper -->
-<div class="ad-twitter-wrapper">
-  <!-- Advertentie -->
-  <div class="ad-container">
-    <div class="ad-content">
-      <img src="./assets/add.png" alt="Advertentie" class="ad-image" />
-      <img src="./assets/ad.png" alt="Sponsored Label" class="sponsored-label" />
-    </div>
-  </div>
+      <!-- Advertisement + Twitter Feed Wrapper -->
+      <div class="ad-twitter-wrapper">
+        <!-- Advertisement -->
+        <div class="ad-container">
+          <div class="ad-content">
+            <a href="advertise.html">
+              <img src="./assets/add.png" alt="Advertisement" class="ad-image" />
+            </a>
+          </div>
+        </div>
 
-  <!-- Twitter Feed -->
-  <div id="twitter-feed" class="twitter-feed-container">
-    <blockquote class="twitter-tweet">
-      <a href="https://twitter.com/cronos_chain?ref_src=twsrc%5Etfw"></a>
-    </blockquote>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-</div>
+        <!-- Twitter Feed -->
+        <div id="twitter-feed" class="twitter-feed-container">
+          <!-- In dit voorbeeld wordt de Twitter-feed via ons eigen twitter-feed.js geladen.
+               De embedded Twitter-widget kan verwijderd worden als je de eigen fetch gebruikt. -->
+          <!--
+          <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/cronos_chain?ref_src=twsrc%5Etfw"></a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          -->
+        </div>
+      </div>
 
       <!-- Stats: Market Cap and Dominance -->
       <div class="stats-wrapper">
@@ -96,16 +100,22 @@
             Dominance
           </h3>
           <p id="dominance">
-            <img src="./assets/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
+            <img src="./assets/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;" />
             0%
           </p>
         </div>
       </div>
     </div>
-    <!-- All Coins Tabel -->
+
+    <!-- All Coins Table -->
     <div class="main-table-wrapper">
       <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..." aria-label="Search for a coin" />
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for a coin by name or contract address..."
+          aria-label="Search for a coin"
+        />
       </div>
       <table class="main-crypto-table">
         <thead>
@@ -125,7 +135,24 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <p>&copy; 2025 Nodalis. All rights reserved.</p>
+    <p>
+      <a href="terms.html">Terms of Service</a> | 
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner" style="display: none;">
+    <span>
+      Our website uses cookies, including third-party cookies (e.g. from X(twitter)), to improve your experience.
+      By clicking "Accept", you agree to our use of cookies.
+      <a href="privacy.html" target="_blank">Learn more</a>.
+    </span>
+    <button id="acceptCookies">Accept</button>
+    <button id="declineCookies">Decline</button>
+  </div>
 
   <!-- Scripts -->
   <script src="./scripts/header.js"></script>
@@ -134,19 +161,36 @@
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
   <script type="module">
     import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js";
-
     document.addEventListener("DOMContentLoaded", () => {
-      populateAltcoinTable(); // Vul de tabel met alle coins
-      setupSearch(); // Activeer zoekfunctionaliteit
+      populateAltcoinTable(); // Fill the table with all coins
+      setupSearch(); // Activate search functionality
     });
   </script>
   <script src="./scripts/stats-dashboard.js" type="module"></script>
   <script src="./scripts/twitter-feed.js"></script>
   <script>
+    // Cookie Consent Script
+    document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const consent = localStorage.getItem("cookieConsent");
+      if (!consent) {
+        banner.style.display = "flex";
+      }
+      document.getElementById("acceptCookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "accepted");
+        banner.style.display = "none";
+        // Optionally, load external scripts (e.g. Twitter) here if needed.
+      });
+      document.getElementById("declineCookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "declined");
+        banner.style.display = "none";
+        // You might choose not to load external scripts if cookies are declined.
+      });
+    });
+
+    // PostHog Tracking Script (example)
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_4GifZdg799FxUjonRWB7EpOowLNfFj01CmVo24INpzA', {api_host: 'https://eu.i.posthog.com'})
-</script>
-
+  </script>
 </body>
-
 </html>

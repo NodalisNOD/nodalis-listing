@@ -1,3 +1,4 @@
+// altcoins.js
 
 // Lijst met coins
 export const coins = [
@@ -5,57 +6,82 @@ export const coins = [
     name: "CorgiAI CORGIAI",
     contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
     icon: "./assets/corgiai.png",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
   },
   {
     name: "crow with knife CAW",
     contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
     icon: "./assets/caw.png",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5",
   },
   {
     name: "Croakey CROAK",
     contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
     icon: "./assets/croak.webp",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
   },
   {
     name: "Moonflow MOON",
     contract: "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
     icon: "./assets/moon.png",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
   },
   {
     name: "Mistery MERY",
     contract: "0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d",
     icon: "./assets/mistery.png",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
   },
   {
     name: "VVS Finance",
     contract: "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
     icon: "./assets/vvs.jpg",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b",
   },
   {
     name: "Mad Meerkat Finance",
     contract: "0x1a9f22b4c385f78650e7874d64e442839dc32327",
     icon: "./assets/mmf.jpg",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
   },
   {
     name: "Crodex Token CRX",
     contract: "0x4d03f8b5d8fbe17d84e1b709b0d5e17eb9a6b7b8",
     icon: "./assets/crx.png",
-    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
   },
 ];
 
-// Functie om data op te halen en samen te voegen
+const BROWSER_CACHE_DURATION = 10 * 60 * 1000; // 10 minuten in milliseconden
+
+// Functie om data op te halen en samen te voegen met browser caching
 export async function fetchCoinData(coin) {
+  // Gebruik de apiUrl als sleutel (gecodeerd om speciale karakters te vermijden)
+  const storageKey = "coinData_" + encodeURIComponent(coin.apiUrl);
+  const cacheTimeKey = storageKey + "_time";
+  const now = Date.now();
+
+  // Probeer eerst de data uit de browsercache te halen
+  const cachedData = localStorage.getItem(storageKey);
+  const cachedTime = localStorage.getItem(cacheTimeKey);
+
+  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
+    return JSON.parse(cachedData);
+  }
+
+  // Anders: haal de data op via de API
   try {
     const response = await fetch(coin.apiUrl);
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    if (!response.ok)
+      throw new Error(`HTTP error! Status: ${response.status}`);
 
     const data = await response.json();
     const pools = data.data;
@@ -73,21 +99,20 @@ export async function fetchCoinData(coin) {
 
     pools.forEach((pool) => {
       const poolId = pool.id;
-    
+
       if (processedPools.has(poolId)) {
         console.log(`Skipping duplicate pool: ${poolId}`);
         return;
       }
-    
+
       processedPools.add(poolId);
-    
+
       const attributes = pool.attributes;
       const volume = parseFloat(attributes.volume_usd?.h24) || 0;
       const basePrice = parseFloat(attributes.base_token_price_usd) || 0;
-    
+
       combinedData.totalVolumeUsd += volume;
-    
-    
+
       // Market cap controle met prioriteit
       if (!combinedData.marketCap) {
         if (attributes.market_cap_usd) {
@@ -97,20 +122,19 @@ export async function fetchCoinData(coin) {
         } else if (attributes.reserve_in_usd && attributes.base_token_price_usd) {
           const reserveUsd = parseFloat(attributes.reserve_in_usd);
           const baseTokenPrice = parseFloat(attributes.base_token_price_usd);
-    
           combinedData.marketCap = reserveUsd / baseTokenPrice;
           console.log(`Calculated Market Cap from Reserve and Base Price: ${combinedData.marketCap}`);
         } else {
           console.log("Market Cap could not be determined for this pool.");
         }
       }
-    
+
       combinedData.totalBasePriceUsd += volume > 0 ? basePrice * volume : 0;
       combinedData.priceChange1h += parseFloat(attributes.price_change_percentage?.h1 || 0) * volume;
       combinedData.priceChange24h += parseFloat(attributes.price_change_percentage?.h24 || 0) * volume;
     });
 
-    return {
+    const result = {
       name: coin.name,
       contract: coin.contract,
       icon: coin.icon,
@@ -125,16 +149,22 @@ export async function fetchCoinData(coin) {
         combinedData.totalVolumeUsd > 0
           ? (combinedData.priceChange24h / combinedData.totalVolumeUsd).toFixed(2)
           : "0.00",
-          marketCap: combinedData.marketCap
-          ? combinedData.marketCap.toLocaleString("en-US", {
-              minimumFractionDigits: 2,
-              maximumFractionDigits: 2,
-            })
-          : "N/A",        
+      marketCap: combinedData.marketCap
+        ? combinedData.marketCap.toLocaleString("en-US", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })
+        : "N/A",
       volume24h: combinedData.totalVolumeUsd
         ? combinedData.totalVolumeUsd.toLocaleString()
         : "N/A",
     };
+
+    // Sla de opgehaalde data op in de browsercache
+    localStorage.setItem(storageKey, JSON.stringify(result));
+    localStorage.setItem(cacheTimeKey, now.toString());
+
+    return result;
   } catch (error) {
     console.error(`Error fetching data for ${coin.name}:`, error);
     return null;

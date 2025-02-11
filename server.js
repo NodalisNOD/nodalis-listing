@@ -8,6 +8,7 @@ const nodemailer = require("nodemailer");
 const multer = require("multer");
 require("dotenv").config();
 
+
 // Controllers
 const authController = require("./controllers/authController");
 const postController = require("./controllers/postController");
@@ -22,6 +23,8 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 // Initialiseer de Express-app en stel de poort in
 const app = express();
 const PORT = process.env.PORT || 3001;
+const cors = require("cors");
+
 
 // === POSTHOG ANALYTICS ===
 const { PostHog } = require("posthog-node");
@@ -129,7 +132,7 @@ app.get("/api/latest-tweet", async (req, res) => {
 // ----- COIN API MET CACHING -----
 let coinDataCache = null;
 let lastCoinFetchTime = 0;
-const COIN_CACHE_DURATION = 5 * 60 * 1000;
+const COIN_CACHE_DURATION = 10 * 60 * 1000;
 
 const fetchCoinData = async () => {
   try {
