@@ -457,3 +457,32 @@ table th {
 .tweet-button:hover {
   background-color: #ddd;
 }
+ /* Eenvoudige styling voor de cookie consent banner */
+ .cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.cookie-banner button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.cookie-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
