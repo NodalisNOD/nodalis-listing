@@ -21,7 +21,7 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 
 // Initialiseer de Express-app en stel de poort in
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // === POSTHOG ANALYTICS ===
 const { PostHog } = require("posthog-node");
