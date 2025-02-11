@@ -1,4 +1,4 @@
-// Functie om gegevens op te halen en weer te geven
+// function to fetch and display DEX details
 async function fetchAndDisplayDexDetails() {
   const dexData = [
     {
@@ -23,7 +23,7 @@ async function fetchAndDisplayDexDetails() {
       const response = await fetch(dex.api);
       const data = await response.json();
 
-      // Controleer of de noodzakelijke velden aanwezig zijn
+      // check if the required fields are present
       const requiredFields = ["name", "url", "logo", "total24h"];
       const missingFields = requiredFields.filter((field) => !(field in data));
 
@@ -68,5 +68,5 @@ async function fetchAndDisplayDexDetails() {
   }
 }
 
-// Roep de functie aan bij pagina-lading
+// call the function when the DOM is loaded
 document.addEventListener("DOMContentLoaded", fetchAndDisplayDexDetails);

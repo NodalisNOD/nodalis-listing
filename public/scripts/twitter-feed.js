@@ -1,62 +1,98 @@
-const TWEET_CACHE_DURATION = 10 * 60 * 1000; // 10 minuten in milliseconden
+const tokenId = "cronos"; // Unique ID for Cronos Chain sentiment votes
 
-async function fetchLatestTweet() {
-  const cacheKey = "latestTweet";
-  const cacheTimeKey = "latestTweetTime";
-  const now = Date.now();
-
-  // Probeer de tweetgegevens uit de cache te halen
-  const cachedData = localStorage.getItem(cacheKey);
-  const cachedTime = localStorage.getItem(cacheTimeKey);
-
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < TWEET_CACHE_DURATION) {
-    console.log("✅ Tweet laden vanuit browsercache");
-    displayTweet(JSON.parse(cachedData));
-    return;
-  }
-
-  // Als er geen geldige cache is, haal de data op via het API-endpoint
+// ✅ Fetch votes from the server
+async function fetchVotes() {
   try {
-    const response = await fetch("/api/latest-tweet");
-    if (!response.ok) throw new Error("Failed to fetch tweet");
+    const response = await fetch(`/votes/global`);
+    if (!response.ok) throw new Error("Failed to fetch votes");
 
+    const votes = await response.json();
+    updateSentimentBar(votes);
+  } catch (error) {
+    console.error("❌ Error fetching votes:", error);
+  }
+}
+
+// ✅ Send vote to server
+async function submitVote(type) {
+  try {
+    const response = await fetch(`/votes/global/${type}`, { method: "POST" });
     const data = await response.json();
 
-    // Sla de opgehaalde data op in de browsercache
-    localStorage.setItem(cacheKey, JSON.stringify(data));
-    localStorage.setItem(cacheTimeKey, now.toString());
+    if (!response.ok) {
+      throw new Error(data.message || "Vote failed");
+    }
 
-    displayTweet(data);
+    updateSentimentBar(data.votes);
+    displayMessage("✅ Your vote has been recorded.");
   } catch (error) {
-    console.error("Error loading tweet:", error);
+    console.error("❌ Error submitting vote:", error);
+
+    if (error.message.includes("You already voted today")) {
+      displayMessage("🚫 You already voted today. Try again tomorrow.");
+    } else {
+      displayMessage("❌ Failed to submit vote.");
+    }
   }
 }
 
-// Functie om de tweet in de DOM te tonen
-function displayTweet(data) {
-  const twitterFeed = document.getElementById("twitter-feed");
-  const tweetUrl = `https://twitter.com/${data.username}/status/${data.tweet_id}`;
+// ✅ Update sentiment bar
+function updateSentimentBar(votes) {
+  const totalVotes = votes.positive + votes.negative;
+  let positivePercentage = 0;
+  let negativePercentage = 0;
 
-  twitterFeed.innerHTML = `
-    <div class="twitter-feed-container">
-      <div class="tweet-header">
-        <img src="${data.profile_image_url}" alt="${data.username}" class="tweet-profile-pic">
-        <div class="tweet-info">
-          <span class="tweet-author"><a href="https://twitter.com/${data.username}" target="_blank">@${data.username}</a></span>
-          <span class="tweet-date">${new Date(data.created_at).toLocaleString()}</span>
-        </div>
-      </div>
-      <div class="tweet-box">
-        <p class="tweet-text">${data.tweet}</p>
-        ${data.image_url ? `<img src="${data.image_url}" alt="Tweet Image" class="tweet-image">` : ""}
-      </div>
-      <a href="${tweetUrl}" target="_blank" class="tweet-button">View on X</a>
-    </div>
-  `;
+  if (totalVotes > 0) {
+    positivePercentage = ((votes.positive / totalVotes) * 100).toFixed(1);
+    negativePercentage = ((votes.negative / totalVotes) * 100).toFixed(1);
+  }
+
+  document.getElementById("positive-bar").style.width = `${positivePercentage}%`;
+  document.getElementById("positive-bar").textContent = totalVotes > 0 ? `${positivePercentage}% ` : "";
+  document.getElementById("negative-bar").style.width = `${negativePercentage}%`;
+  document.getElementById("negative-bar").textContent = totalVotes > 0 ? `${negativePercentage}% ` : "";
 }
 
+// ✅ Show message (tooltip)
+function displayMessage(message) {
+  const messageBox = document.getElementById("vote-message");
+  messageBox.textContent = message;
+  messageBox.style.display = "block";
+  setTimeout(() => {
+    messageBox.style.display = "none";
+  }, 5000);
+}
+
+// ✅ Display sentiment inside the Twitter feed box
+function displaySentiment() {
+  const sentimentHtml = `
+    <div class="sentiment-container">
+      <div class="tooltip-wrapper">
+        <h3>Cronos Community Sentiment</h3>
+        <img src="./assets/about.png" alt="About Sentiment" class="tooltip-icon" />
+        <span class="tooltip-text">The community's opinion on Cronos Chain.</span>
+      </div>
+      <div class="sentiment-bar">
+        <div id="positive-bar" class="positive-bar"></div>
+        <div id="negative-bar" class="negative-bar"></div>
+      </div>
+      <div id="vote-message" class="vote-message" style="display: none;"></div>
+      <div class="vote-buttons">
+        <img id="vote-positive" src="./assets/like.png" alt="Like" class="vote-icon" />
+        <img id="vote-negative" src="./assets/dislike.png" alt="Dislike" class="vote-icon" />
+      </div>
+    </div>
+  `;
+
+  document.getElementById("twitter-feed").innerHTML = sentimentHtml;
+
+  // ✅ Re-add event listeners
+  document.getElementById("vote-positive").addEventListener("click", () => submitVote("positive"));
+  document.getElementById("vote-negative").addEventListener("click", () => submitVote("negative"));
+}
+
+// ✅ Initialize everything when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  fetchLatestTweet();
-  // Vernieuw de tweet elke 15 minuten (900000 ms)
-  setInterval(fetchLatestTweet, 900000);
+  displaySentiment();  // Set up UI
+  fetchVotes();        // Load votes from server
 });

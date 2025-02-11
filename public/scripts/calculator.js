@@ -1,6 +1,6 @@
-import { coins } from "./altcoins.js"; // ✅ Correcte manier om altcoins.js te laden
+import { coins } from "./altcoins.js"; 
 
-// Vul de token dropdown met naam + icoon
+// fill the token dropdown with icons
 async function populateTokens() {
   const tokenSelect = document.getElementById("token");
 
@@ -13,21 +13,21 @@ async function populateTokens() {
     tokenSelect.appendChild(option);
   });
 
-  // Activeer zoekfunctionaliteit met icoontjes
+  // Activate select2 plugin
   $("#token").select2({
     templateResult: formatToken,
     templateSelection: formatToken,
   });
 }
 
-// Token dropdown met iconen
+// Token dropdown template
 function formatToken(token) {
   if (!token.id) return token.text;
   const icon = $(token.element).data("icon");
   return $(`<span><img src="${icon}" class="token-icon"/> ${token.text}</span>`);
 }
 
-// Haal de prijs op via GeckoTerminal API
+// API call to fetch token price
 async function fetchTokenPrice(apiUrl) {
   try {
     const response = await fetch(apiUrl);
@@ -40,7 +40,7 @@ async function fetchTokenPrice(apiUrl) {
   }
 }
 
-// Bereken de waarde in USD of CRO
+// calculate the token value
 async function calculateValue() {
   const amount = parseFloat(document.getElementById("amount").value);
   const currency = document.getElementById("currency").value;
@@ -79,7 +79,7 @@ async function calculateValue() {
   document.getElementById("result").textContent = resultText;
 }
 
-// Haal de Cronos-prijs op
+// fetch Cronos price
 async function fetchCronosPrice() {
   try {
     const response = await fetch(

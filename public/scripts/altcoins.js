@@ -1,6 +1,6 @@
 // altcoins.js
 
-// Lijst met coins
+// coins list
 export const coins = [
   {
     name: "CorgiAI CORGIAI",
@@ -60,16 +60,16 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 10 * 60 * 1000; // 10 minuten in milliseconden
+const BROWSER_CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
 
-// Functie om data op te halen en samen te voegen met browser caching
+// Function to retrieve and merge data with browser caching
 export async function fetchCoinData(coin) {
-  // Gebruik de apiUrl als sleutel (gecodeerd om speciale karakters te vermijden)
+// Use the apiUrl as key for the cache
   const storageKey = "coinData_" + encodeURIComponent(coin.apiUrl);
   const cacheTimeKey = storageKey + "_time";
   const now = Date.now();
 
-  // Probeer eerst de data uit de browsercache te halen
+  // try to get the data from the cache
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
 
@@ -77,7 +77,7 @@ export async function fetchCoinData(coin) {
     return JSON.parse(cachedData);
   }
 
-  // Anders: haal de data op via de API
+  // if not in cache, fetch the data
   try {
     const response = await fetch(coin.apiUrl);
     if (!response.ok)
@@ -94,7 +94,7 @@ export async function fetchCoinData(coin) {
       marketCap: null,
     };
 
-    // Set voor unieke pool-ID's
+    // unique set to avoid duplicate pools
     const processedPools = new Set();
 
     pools.forEach((pool) => {
@@ -113,7 +113,7 @@ export async function fetchCoinData(coin) {
 
       combinedData.totalVolumeUsd += volume;
 
-      // Market cap controle met prioriteit
+      // control if market cap is already set
       if (!combinedData.marketCap) {
         if (attributes.market_cap_usd) {
           combinedData.marketCap = parseFloat(attributes.market_cap_usd);
@@ -160,7 +160,7 @@ export async function fetchCoinData(coin) {
         : "N/A",
     };
 
-    // Sla de opgehaalde data op in de browsercache
+    // save the data to the cache
     localStorage.setItem(storageKey, JSON.stringify(result));
     localStorage.setItem(cacheTimeKey, now.toString());
 
@@ -171,7 +171,7 @@ export async function fetchCoinData(coin) {
   }
 }
 
-// Functie om de tabel te vullen (inclusief zoekfunctionaliteit)
+// table rendering function
 export async function populateAltcoinTable(searchQuery = "") {
   const tableBody = document.querySelector("#altcoin-table");
   const tableHeaders = document.querySelectorAll(".main-crypto-table th");
@@ -181,13 +181,13 @@ export async function populateAltcoinTable(searchQuery = "") {
     return;
   }
 
-  let currentSortKey = "marketCap"; // Standaard sorteren op market cap
+  let currentSortKey = "marketCap"; // default sort key
   let sortAscending = false;
 
   const allCoinData = await Promise.all(coins.map(fetchCoinData));
   let validCoinData = allCoinData.filter((data) => data !== null);
 
-  // Filter munten op basis van zoekopdracht
+  // filter by search query
   validCoinData = validCoinData.filter(
     (coin) =>
       coin &&
@@ -259,7 +259,7 @@ export async function populateAltcoinTable(searchQuery = "") {
   sortTable(currentSortKey);
 }
 
-// Functie om zoeken in te stellen
+// search bar setup
 export function setupSearch() {
   const searchInput = document.querySelector("#search-bar");
   searchInput.addEventListener("input", (event) => {
@@ -268,7 +268,7 @@ export function setupSearch() {
   });
 }
 
-// Initialisatie bij laden
+// load the table and search bar when the page is ready
 document.addEventListener("DOMContentLoaded", () => {
   populateAltcoinTable();
   setupSearch();

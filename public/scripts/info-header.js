@@ -1,9 +1,9 @@
 import { coins, fetchCoinData } from "./altcoins.js";
 
-// HTML-element voor de info-header
+// HTML element to update
 const infoHeader = document.getElementById("info-header");
 
-// Functie om de Cronos-prijs op te halen
+// function to fetch Cronos price
 async function fetchCronosPrice() {
   try {
     const response = await fetch(
@@ -19,14 +19,14 @@ async function fetchCronosPrice() {
   }
 }
 
-// Functie om een string naar een getal te parseren
+// function to parse market cap values
 function parseMarketCap(value) {
   if (!value) return 0;
   const cleanedValue = value.replace(/\./g, "").replace(/,/g, ".");
   return parseFloat(cleanedValue);
 }
 
-// Functie om de info header dynamisch te vullen (met caching van 5 minuten)
+// function to update the info header
 async function updateInfoHeader() {
   if (!infoHeader) {
     console.error("Info header element not found.");
@@ -35,10 +35,10 @@ async function updateInfoHeader() {
 
   const cacheKey = "infoHeaderData";
   const cacheTimeKey = "infoHeaderDataTime";
-  const CACHE_DURATION = 5 * 60 * 1000; // 5 minuten in milliseconden
+  const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
   const now = Date.now();
 
-  // Controleer of er geldige cache-data beschikbaar is
+  // check if valid cache data is available
   const cachedData = localStorage.getItem(cacheKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
   if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < CACHE_DURATION) {
@@ -65,31 +65,31 @@ async function updateInfoHeader() {
     return;
   }
 
-  // Als er geen geldige cache is, haal de data op
+  // if no valid cache data, fetch new data
   try {
-    // Fetch data voor alle coins
+    // Fetch coin data
     const allCoinData = await Promise.all(coins.map(fetchCoinData));
     const validCoinData = allCoinData.filter((data) => data !== null);
 
-    // Bereken het totaal aantal tokens
+    // calculate total tokens
     const totalTokens = validCoinData.length;
 
-    // Bereken de totale market cap
+    // calculate total market cap
     const totalMarketCap = validCoinData.reduce((acc, coin) => {
       const marketCap = coin.marketCap ? parseFloat(coin.marketCap.replace(/,/g, "")) : 0;
       return acc + marketCap;
     }, 0);
 
-    // Bereken het totale volume (24h)
+    // calculate total 24h volume
     const totalVolume24h = validCoinData.reduce((acc, coin) => {
       const volume = parseMarketCap(coin.volume24h);
       return acc + (volume || 0);
     }, 0);
 
-    // Fetch de Cronos-prijs
+    // fetch Cronos price
     const cronosPrice = await fetchCronosPrice();
 
-    // Maak een object met de info-header gegevens
+    // create info data object
     const infoData = {
       totalTokens,
       totalMarketCap,
@@ -97,11 +97,11 @@ async function updateInfoHeader() {
       cronosPrice,
     };
 
-    // Sla de data op in de browsercache
+    // save data to cache
     localStorage.setItem(cacheKey, JSON.stringify(infoData));
     localStorage.setItem(cacheTimeKey, now.toString());
 
-    // Update de DOM met de opgehaalde waarden
+    // update header new data
     infoHeader.innerHTML = `
       <div class="info-item">
         <span>Tokens:</span>
@@ -125,5 +125,5 @@ async function updateInfoHeader() {
   }
 }
 
-// Roep de functie aan bij pagina-lading
+// call the function when the DOM is loaded
 document.addEventListener("DOMContentLoaded", updateInfoHeader);

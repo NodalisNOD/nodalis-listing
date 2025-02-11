@@ -1,8 +1,8 @@
-// URL-parameters ophalen
+// fetch the coin details
 const params = new URLSearchParams(window.location.search);
 let coinId = params.get("id");
 
-// Normaliseer de coin-ID
+// check if coinId is present
 if (coinId) {
   coinId = coinId.toLowerCase().replace(/\s+/g, "-");
 } else {
@@ -14,7 +14,7 @@ let currentPage = 1;
 let marketData = [];
 let totalLiquidity = 0;
 
-// Mapping voor DEX-icoontjes
+// map of dex icons
 const dexIcons = {
   vvs: "./assets/vvs.jpg",
   "vvs-v3": "./assets/vvs.jpg",
@@ -23,7 +23,7 @@ const dexIcons = {
   "crodex": "./assets/ebisus.png",
 };
 
-// Functie om coin-details te laden
+// function to fetch coin details
 async function fetchCoinDetails() {
   try {
     const response = await fetch("/data/coin-data.json");
@@ -81,12 +81,12 @@ async function fetchCoinDetails() {
 }
 }
 
-// Functie om een subtiele popup te tonen
+// function to show notification
 function showNotification(message, event) {
   const popup = document.getElementById("notification-popup");
   popup.textContent = message;
 
-  // Positioneer de popup dicht bij de klikpositie
+  // position the popup near the cursor
   const xOffset = 20;
   const yOffset = 20;
   popup.style.left = `${event.pageX + xOffset}px`;
@@ -95,14 +95,14 @@ function showNotification(message, event) {
   popup.classList.remove("hidden");
   popup.classList.add("visible");
 
-  // Verberg de popup na 2 seconden
+  // hiude the popup after 2 seconds
   setTimeout(() => {
     popup.classList.remove("visible");
     popup.classList.add("hidden");
   }, 2000);
 }
 
-// Dynamische data ophalen
+// fetch dynamic data
 async function fetchDynamicData(dynamicData) {
   try {
     const priceResponse = await fetch(dynamicData.priceApi);
@@ -120,7 +120,7 @@ async function fetchDynamicData(dynamicData) {
     marketData.forEach((market) => {
       const attributes = market.attributes;
 
-      // Markt cap controle met prioriteit (fallback-mechanisme)
+      // check if market cap is available
       if (!totalMarketCap) {
         if (attributes.market_cap_usd) {
           totalMarketCap = parseFloat(attributes.market_cap_usd);
@@ -155,10 +155,10 @@ async function fetchDynamicData(dynamicData) {
   }
 }
 
-// Functie om alle markten in een scrollbare lijst weer te geven
+// function to render markets
 function renderMarkets(markets) {
   const marketsTable = document.getElementById("markets-table");
-  marketsTable.innerHTML = ""; // Leeg de tabel voordat nieuwe data wordt toegevoegd
+  marketsTable.innerHTML = ""; // empty the table
 
   markets.forEach((market) => {
     const attributes = market.attributes;
@@ -184,7 +184,7 @@ function renderMarkets(markets) {
     marketsTable.appendChild(row);
   });
 }
-// Functie om stemmen op te halen
+// function to fetch votes
 async function fetchVotes() {
   try {
     const response = await fetch(`/votes/${coinId}`);
@@ -195,7 +195,7 @@ async function fetchVotes() {
   }
 }
 
-// Functie om stemmen te versturen
+// function to submit vote
 async function submitVote(type, event) {
   try {
     const response = await fetch(`/votes/${coinId}/${type}`, { method: "POST" });
@@ -212,7 +212,7 @@ async function submitVote(type, event) {
   }
 }
 
-// Sentimentbalk bijwerken
+// change the sentiment bar
 function updateSentimentBar(votes) {
   const totalVotes = votes.positive + votes.negative;
   if (totalVotes === 0) return;
@@ -226,11 +226,11 @@ function updateSentimentBar(votes) {
   document.getElementById("negative-bar").textContent = `${negativePercentage}%`;
 }
 
-// Event listeners toevoegen
+// add event listeners
 document.getElementById("vote-positive").addEventListener("click", (event) => submitVote("positive", event));
 document.getElementById("vote-negative").addEventListener("click", (event) => submitVote("negative", event));
 
-// Grafiek renderen
+// graph rendering
 function renderGraph(graphApi) {
   fetch(graphApi)
     .then((response) => response.json())
@@ -299,5 +299,5 @@ function renderGraph(graphApi) {
     .catch((error) => console.error("Error rendering graph:", error));
 }
 
-// Laad coin-details bij pagina-lading
+// load coin details
 document.addEventListener("DOMContentLoaded", fetchCoinDetails);

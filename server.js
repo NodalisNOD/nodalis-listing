@@ -8,7 +8,6 @@ const nodemailer = require("nodemailer");
 const multer = require("multer");
 require("dotenv").config();
 
-
 // Controllers
 const authController = require("./controllers/authController");
 const postController = require("./controllers/postController");
@@ -25,6 +24,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const cors = require("cors");
 
+app.use(bodyParser.json());
+app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static("public/uploads"));
 
 // === POSTHOG ANALYTICS ===
 const { PostHog } = require("posthog-node");
@@ -82,52 +85,6 @@ app.post("/posts/:postId/vote", postController.votePost);
 app.post("/posts/:postId/comments", authController.authenticateToken, postController.addComment);
 app.get("/posts/:postId", postController.getPostById);
 
-// ----- TWITTER/X API MET CACHING -----
-let lastTweet = null;
-let lastTweetFetchTime = 0;
-const TWEET_CACHE_DURATION = 15 * 60 * 1000;
-const twitterHandles = ["cryptocom", "onchain_wallet", "cronos_chain"];
-const BEARER_TOKEN = process.env.TWITTER_BEARER_TOKEN;
-
-app.get("/api/latest-tweet", async (req, res) => {
-  const now = Date.now();
-  if (lastTweet && now - lastTweetFetchTime < TWEET_CACHE_DURATION) {
-    console.log("✅ Serving tweet from cache");
-    return res.json(lastTweet);
-  }
-  try {
-    let latestTweet = null;
-    for (const handle of twitterHandles) {
-      const userResponse = await axios.get(
-        `https://api.twitter.com/2/users/by/username/${handle}?user.fields=profile_image_url`,
-        { headers: { Authorization: `Bearer ${BEARER_TOKEN}` } }
-      );
-      const { id: userId, username, profile_image_url: profileImageUrl } = userResponse.data.data;
-      const tweetsResponse = await axios.get(
-        `https://api.twitter.com/2/users/${userId}/tweets?max_results=5&tweet.fields=created_at,attachments&expansions=attachments.media_keys&media.fields=url`,
-        { headers: { Authorization: `Bearer ${BEARER_TOKEN}` } }
-      );
-      if (tweetsResponse.data.data && tweetsResponse.data.data.length > 0) {
-        latestTweet = tweetsResponse.data.data[0];
-        const tweetImageUrl = tweetsResponse.data.includes?.media?.[0]?.url || null;
-        lastTweet = {
-          tweet: latestTweet.text,
-          created_at: latestTweet.created_at,
-          username,
-          profile_image_url: profileImageUrl,
-          tweet_id: latestTweet.id,
-          image_url: tweetImageUrl
-        };
-        lastTweetFetchTime = now;
-        return res.json(lastTweet);
-      }
-    }
-    res.status(404).json({ message: "No tweets found." });
-  } catch (error) {
-    console.error("Error fetching tweets:", error.response?.data || error.message);
-    res.status(500).json({ message: "Failed to fetch tweets." });
-  }
-});
 
 // ----- COIN API MET CACHING -----
 let coinDataCache = null;
@@ -165,9 +122,50 @@ app.get("/api/coins", async (req, res) => {
   }
 });
 
-// ----- VOTING ROUTE VOOR TOKENS -----
+// ----- GLOBAL SENTIMENT VOTING -----
+let globalVotes = { positive: 0, negative: 0 };
+let globalUserVotes = new Map(); // Track welke gebruikers hebben gestemd
+
+const VOTE_EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 uur
+
+// ✅ Fetch global votes
+app.get("/votes/global", (req, res) => {
+  res.json(globalVotes);
+});
+
+// ✅ Process global vote (alleen 1 stem per dag toegestaan)
+app.post("/votes/global/:type", (req, res) => {
+  const { type } = req.params;
+  const userIp = req.ip; // Alternatief: gebruik echte user ID als je login hebt
+
+  // ✅ Controleer of gebruiker al heeft gestemd binnen 24 uur
+  if (globalUserVotes.has(userIp)) {
+    const lastVoteTime = globalUserVotes.get(userIp);
+    
+    if (Date.now() - lastVoteTime < VOTE_EXPIRATION_TIME) {
+      return res.status(429).json({ message: "🚫 You already voted today. Try again tomorrow.", votes: globalVotes });
+    }
+  }
+
+  // ✅ Voeg de nieuwe stem toe
+  if (type === "positive") {
+    globalVotes.positive++;
+  } else if (type === "negative") {
+    globalVotes.negative++;
+  } else {
+    return res.status(400).json({ message: "Invalid vote type." });
+  }
+
+  // ✅ Registreer stem en timestamp
+  globalUserVotes.set(userIp, Date.now());
+
+  res.json({ message: "✅ Your vote has been recorded.", votes: globalVotes });
+});
+
+// ----- PER COIN VOTING -----
 const tokenVotes = {};
 const voteTimestamps = {};
+const VOTE_RESET_INTERVAL = 24 * 60 * 60 * 1000; // 24 hours
 
 app.post("/votes/:tokenId/:type", (req, res) => {
   const { tokenId, type } = req.params;
@@ -178,7 +176,7 @@ app.post("/votes/:tokenId/:type", (req, res) => {
     tokenVotes[tokenId] = { positive: 0, negative: 0 };
   }
 
-  if (voteTimestamps[userIp]?.[tokenId] && now - voteTimestamps[userIp][tokenId] < 24 * 60 * 60 * 1000) {
+  if (voteTimestamps[userIp]?.[tokenId] && now - voteTimestamps[userIp][tokenId] < VOTE_RESET_INTERVAL) {
     return res.status(429).json({ message: "You can only vote once every 24 hours for this token." });
   }
 
@@ -193,6 +191,27 @@ app.post("/votes/:tokenId/:type", (req, res) => {
   voteTimestamps[userIp] = { ...voteTimestamps[userIp], [tokenId]: now };
   res.json({ message: "Vote recorded successfully.", votes: tokenVotes[tokenId] });
 });
+
+app.get("/votes/:tokenId", (req, res) => {
+  const { tokenId } = req.params;
+  if (!tokenVotes[tokenId]) {
+    return res.json({ positive: 0, negative: 0 });
+  }
+  res.json(tokenVotes[tokenId]);
+});
+
+// Reset votes every 24 hours
+setInterval(() => {
+  for (const tokenId in tokenVotes) {
+    tokenVotes[tokenId] = { positive: 0, negative: 0 };
+  }
+  for (const userIp in voteTimestamps) {
+    voteTimestamps[userIp] = {};
+  }
+  globalVotes = { positive: 0, negative: 0 };
+  globalUserVotes.clear();
+  console.log("Votes have been reset.");
+}, VOTE_RESET_INTERVAL);
 
 // ----- LISTING FORM: COIN LISTING -----
 app.post("/submit-coin-listing", (req, res) => {
@@ -250,6 +269,29 @@ app.post("/submit-exchange-listing", (req, res) => {
   });
 });
 
+app.get("/latest-tweet", async (req, res) => {
+  const twitterUser = "cryptocom"; // Replace with the actual Twitter username
+  const tweetPageUrl = `https://nitter.net/${twitterUser}`;
+
+  try {
+    // Scrape Nitter instead of Twitter (bypass rate limits)
+    const response = await axios.get(tweetPageUrl);
+    const html = response.data;
+
+    // Find the first tweet ID
+    const tweetIdMatch = html.match(/status\/(\d+)/);
+    if (!tweetIdMatch) throw new Error("No tweet ID found");
+
+    const tweetId = tweetIdMatch[1];
+
+    // Fetch the oEmbed HTML
+    const oembedResponse = await axios.get(`https://publish.twitter.com/oembed?url=https://twitter.com/${twitterUser}/status/${tweetId}&maxwidth=500`);
+    res.json(oembedResponse.data);
+  } catch (error) {
+    console.error("❌ Error fetching tweet:", error.message);
+    res.status(500).json({ error: "Failed to fetch latest tweet" });
+  }
+});
 
 // Contact Form Submission Route
 app.post("/submit-contact", async (req, res) => {

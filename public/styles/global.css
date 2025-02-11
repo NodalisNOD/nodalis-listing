@@ -341,12 +341,14 @@ table th {
   align-items: center;
   gap: 10px; /* Afstand tussen advertentie en Twitter-feed */
 }
-
 /* Advertentie Container */
-.ad-container {
+.ad-container, #twitter-feed {
   width: 300px;
   height: 200px;
-  position: relative; /* Zorgt ervoor dat absolute positionering werkt binnen deze container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centreert de inhoud verticaal */
+  align-items: center; /* Centreert de inhoud horizontaal */
   text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
@@ -355,126 +357,65 @@ table th {
   overflow: hidden; /* Voorkomt dat content buiten de container komt */
 }
 
-/* Twitter Feed - Zelfde grootte als advertentie */
-.twitter-feed-container {
-  width: 300px;
-  height: 200px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 8px;
-  text-align: left;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+/* Zorg ervoor dat de sentiment-bar en knoppen zich aanpassen */
+.sentiment-bar {
+  display: flex;
+  height: 20px;
+  border-radius: 5px;
   overflow: hidden;
+  background: #ccc;
+  width: 100%;
+  margin-bottom: 15px; /* 🔥 Voegt extra ruimte toe onder de balk */
+}
+
+.positive-bar {
+  background: green;
+  color: white;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+.negative-bar {
+  background: red;
+  color: white;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+.vote-buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Tweet Header */
-.tweet-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Profielfoto */
-.tweet-profile-pic {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
-.tweet-info {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-}
-
-.tweet-author a {
-  color: #042c3f;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.tweet-date {
-  font-size: 10px;
-  opacity: 0.7;
-}
-
-/* Tweet inhoud + afbeelding thumbnail */
-.tweet-box {
-  display: flex;
-  align-items: center;
   gap: 10px;
-  flex-grow: 1;
-  padding: 8px;
-  border-left: 2px solid rgb(29, 59, 117);
-  font-size: 14px;
-  overflow: hidden;
-}
-
-/* Tekst blijft beperkt in hoogte en breekt correct */
-.tweet-text {
-  font-size: 14px;
-  line-height: 1.2;
-  white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  flex-grow: 1; /* Laat de tekst de ruimte gebruiken */
-}
-
-/* Thumbnail afbeelding naast de tekst */
-.tweet-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 1px;
-  object-fit: cover;
-  flex-shrink: 0; /* Voorkomt dat de afbeelding wordt geschaald */
-}
-
-/* Knop voor "View on X" */
-.tweet-button {
-  display: block;
-  background-color: #042c3f;
-  color: #ffffff;
-  text-align: center;
-  padding: 6px 10px;
-  margin-top: 8px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 12px;
-  width: fit-content;
-  align-self: center;
-}
-
-.tweet-button:hover {
-  background-color: #ddd;
-}
- /* Eenvoudige styling voor de cookie consent banner */
- .cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-  z-index: 1000;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
 }
+
+.vote-buttons {
+  display: flex;
+  gap: 15px; /* Ruimte tussen de knoppen */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* ✅ Stijl voor de afbeelding-buttons */
+.vote-buttons img {
+  width: 50px; /* Pas de grootte aan indien nodig */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* ✅ Hover-effect voor de afbeeldingen */
+.vote-buttons img:hover {
+  transform: scale(1.1); /* Licht vergroten bij hover */
+  opacity: 0.8; /* Transparantie effect */
+}
+
+/* ✅ Klik-effect */
+.vote-buttons img:active {
+  transform: scale(0.9); /* Kleinere schaal bij klikken */
+}
+
+
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 14px;
