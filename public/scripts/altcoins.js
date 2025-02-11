@@ -1,0 +1,245 @@
+
+// Lijst met coins
+export const coins = [
+  {
+    name: "CorgiAI CORGIAI",
+    contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
+    icon: "./assets/corgiai.png",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
+  },
+  {
+    name: "crow with knife CAW",
+    contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
+    icon: "./assets/caw.png",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C",
+  },
+  {
+    name: "Croakey CROAK",
+    contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+    icon: "./assets/croak.webp",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
+  },
+  {
+    name: "Moonflow MOON",
+    contract: "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+    icon: "./assets/moon.png",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
+  },
+  {
+    name: "Mistery MERY",
+    contract: "0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d",
+    icon: "./assets/mistery.png",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
+  },
+  {
+    name: "VVS Finance",
+    contract: "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+    icon: "./assets/vvs.jpg",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b",
+  },
+  {
+    name: "Mad Meerkat Finance",
+    contract: "0x1a9f22b4c385f78650e7874d64e442839dc32327",
+    icon: "./assets/mmf.jpg",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
+  },
+  {
+    name: "Crodex Token CRX",
+    contract: "0x4d03f8b5d8fbe17d84e1b709b0d5e17eb9a6b7b8",
+    icon: "./assets/crx.png",
+    apiUrl: "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
+  },
+];
+
+// Functie om data op te halen en samen te voegen
+export async function fetchCoinData(coin) {
+  try {
+    const response = await fetch(coin.apiUrl);
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+    const data = await response.json();
+    const pools = data.data;
+
+    let combinedData = {
+      totalVolumeUsd: 0,
+      totalBasePriceUsd: 0,
+      priceChange1h: 0,
+      priceChange24h: 0,
+      marketCap: null,
+    };
+
+    // Set voor unieke pool-ID's
+    const processedPools = new Set();
+
+    pools.forEach((pool) => {
+      const poolId = pool.id;
+    
+      if (processedPools.has(poolId)) {
+        console.log(`Skipping duplicate pool: ${poolId}`);
+        return;
+      }
+    
+      processedPools.add(poolId);
+    
+      const attributes = pool.attributes;
+      const volume = parseFloat(attributes.volume_usd?.h24) || 0;
+      const basePrice = parseFloat(attributes.base_token_price_usd) || 0;
+    
+      combinedData.totalVolumeUsd += volume;
+    
+    
+      // Market cap controle met prioriteit
+      if (!combinedData.marketCap) {
+        if (attributes.market_cap_usd) {
+          combinedData.marketCap = parseFloat(attributes.market_cap_usd);
+        } else if (attributes.fdv_usd) {
+          combinedData.marketCap = parseFloat(attributes.fdv_usd);
+        } else if (attributes.reserve_in_usd && attributes.base_token_price_usd) {
+          const reserveUsd = parseFloat(attributes.reserve_in_usd);
+          const baseTokenPrice = parseFloat(attributes.base_token_price_usd);
+    
+          combinedData.marketCap = reserveUsd / baseTokenPrice;
+          console.log(`Calculated Market Cap from Reserve and Base Price: ${combinedData.marketCap}`);
+        } else {
+          console.log("Market Cap could not be determined for this pool.");
+        }
+      }
+    
+      combinedData.totalBasePriceUsd += volume > 0 ? basePrice * volume : 0;
+      combinedData.priceChange1h += parseFloat(attributes.price_change_percentage?.h1 || 0) * volume;
+      combinedData.priceChange24h += parseFloat(attributes.price_change_percentage?.h24 || 0) * volume;
+    });
+
+    return {
+      name: coin.name,
+      contract: coin.contract,
+      icon: coin.icon,
+      price: combinedData.totalBasePriceUsd
+        ? (combinedData.totalBasePriceUsd / combinedData.totalVolumeUsd).toFixed(10)
+        : "N/A",
+      priceChange1h:
+        combinedData.totalVolumeUsd > 0
+          ? (combinedData.priceChange1h / combinedData.totalVolumeUsd).toFixed(2)
+          : "0.00",
+      priceChange24h:
+        combinedData.totalVolumeUsd > 0
+          ? (combinedData.priceChange24h / combinedData.totalVolumeUsd).toFixed(2)
+          : "0.00",
+          marketCap: combinedData.marketCap
+          ? combinedData.marketCap.toLocaleString("en-US", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+          : "N/A",        
+      volume24h: combinedData.totalVolumeUsd
+        ? combinedData.totalVolumeUsd.toLocaleString()
+        : "N/A",
+    };
+  } catch (error) {
+    console.error(`Error fetching data for ${coin.name}:`, error);
+    return null;
+  }
+}
+
+// Functie om de tabel te vullen (inclusief zoekfunctionaliteit)
+export async function populateAltcoinTable(searchQuery = "") {
+  const tableBody = document.querySelector("#altcoin-table");
+  const tableHeaders = document.querySelectorAll(".main-crypto-table th");
+
+  if (!tableBody) {
+    console.error("Altcoin table element not found.");
+    return;
+  }
+
+  let currentSortKey = "marketCap"; // Standaard sorteren op market cap
+  let sortAscending = false;
+
+  const allCoinData = await Promise.all(coins.map(fetchCoinData));
+  let validCoinData = allCoinData.filter((data) => data !== null);
+
+  // Filter munten op basis van zoekopdracht
+  validCoinData = validCoinData.filter(
+    (coin) =>
+      coin &&
+      (coin.name.toLowerCase().includes(searchQuery.toLowerCase().trim()) ||
+        coin.contract.toLowerCase().includes(searchQuery.toLowerCase().trim()))
+  );
+
+  function renderTable() {
+    const rowsHtml = validCoinData
+      .map((coin, index) => {
+        function formatChange(change) {
+          const arrow = change >= 0 ? "↑" : "↓";
+          const colorClass = change >= 0 ? "positive-change" : "negative-change";
+          return `<span class="${colorClass}">${arrow} ${Math.abs(change)}%</span>`;
+        }
+
+        return `
+          <tr>
+            <td>${index + 1}</td>
+            <td>
+              <a href="coin.html?id=${coin.name}" class="coin-link">
+                <img src="${coin.icon}" alt="${coin.name} Logo" class="crypto-logo">
+                ${coin.name}
+              </a>
+            </td>
+            <td>$${coin.price}</td>
+            <td>${formatChange(coin.priceChange1h)}</td>
+            <td>${formatChange(coin.priceChange24h)}</td>
+            <td>$${coin.marketCap || "N/A"}</td>
+            <td>$${coin.volume24h || "N/A"}</td>
+          </tr>
+        `;
+      })
+      .join("");
+
+    tableBody.innerHTML =
+      rowsHtml || "<tr><td colspan='7'>No matching coins found.</td></tr>";
+  }
+
+  function sortTable(key) {
+    validCoinData.sort((a, b) => {
+      const valueA = parseFloat(a[key]?.replace(/[.,]/g, "")) || 0;
+      const valueB = parseFloat(b[key]?.replace(/[.,]/g, "")) || 0;
+      return sortAscending ? valueA - valueB : valueB - valueA;
+    });
+    renderTable();
+  }
+
+  tableHeaders.forEach((header, index) => {
+    header.addEventListener("click", () => {
+      const sortKeys = [
+        null,
+        "name",
+        "price",
+        "priceChange1h",
+        "priceChange24h",
+        "marketCap",
+        "volume24h",
+      ];
+      const key = sortKeys[index];
+      if (key) {
+        sortAscending = currentSortKey === key ? !sortAscending : false;
+        currentSortKey = key;
+        sortTable(key);
+      }
+    });
+  });
+
+  sortTable(currentSortKey);
+}
+
+// Functie om zoeken in te stellen
+export function setupSearch() {
+  const searchInput = document.querySelector("#search-bar");
+  searchInput.addEventListener("input", (event) => {
+    const searchQuery = event.target.value;
+    populateAltcoinTable(searchQuery);
+  });
+}
+
+// Initialisatie bij laden
+document.addEventListener("DOMContentLoaded", () => {
+  populateAltcoinTable();
+  setupSearch();
+});

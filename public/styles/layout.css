@@ -1,0 +1,200 @@
+/* Header Styling */
+header {
+  background-color: #042c3f; /* Donkerdere tint groen voor een professionelere uitstraling */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center; /* Zorgt ervoor dat logo en tekst op dezelfde lijn staan */
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor meer diepte */
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Ruimte tussen logo en tekst */
+}
+
+header .logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Verwijder onderlijning van de link */
+  color: white; /* Maak de tekst wit */
+}
+
+header img.logo {
+  height: 50px; /* Grotere hoogte voor meer zichtbaarheid */
+  width: auto; /* Houd de verhoudingen intact */
+}
+
+header .site-title {
+  font-size: 1.8rem; /* Grotere tekst voor de site-titel */
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Meer ruimte tussen knoppen */
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem; /* Iets grotere tekst voor navigatie */
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Gladde overgang bij hover */
+}
+
+header .nav-list li a:hover {
+  background-color: #05a6c9; /* Donkerdere hover-kleur */
+  color: #e1f4e8; /* Lichtere tekstkleur bij hover */
+}
+
+/* Info Header Styling */
+.info-header {
+  background-color: #f1f5f8; /* Lichtere achtergrondkleur voor meer contrast */
+  border-bottom: 2px solid #d3d3d3; /* Dikkere rand voor betere scheiding */
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.info-header .info-item {
+  text-align: center;
+}
+
+.info-header .info-item span {
+  color: #7a7a7a; /* Zachtere grijstint */
+  font-size: 0.85rem;
+}
+
+.info-header .info-item strong {
+  color: #000;
+  font-size: 1.1rem; /* Grotere tekst voor belangrijke info */
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1e2328; /* Donkere achtergrond voor een premium uitstraling */
+  color: #dcdcdc; /* Zachtere tekstkleur voor contrast */
+  padding: 3rem 1rem; /* Extra padding voor meer balans */
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1e2328; /* Donkere achtergrond */
+  color: #dcdcdc; /* Zachte tekstkleur */
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centreer de hele footer */
+  display: flex;
+  flex-wrap: wrap; /* Responsieve layout */
+  justify-content: space-between; /* Verdeel de ruimte tussen secties */
+  gap: 2rem; /* Ruimte tussen secties */
+}
+
+/* Secties (Tekst met logo, categorieën) */
+.footer-section {
+  flex: 1;
+  min-width: 220px; /* Minimum breedte voor secties */
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #05a6c9; /* Groene lijn onder titels */
+  padding-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Tekst en Logo */
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Ruimte tussen logo en tekst */
+}
+
+.footer-logo {
+  width: 80px; /* Breedte van het logo */
+  height: auto; /* Houd de verhoudingen intact */
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+  color: #dcdcdc;
+}
+
+/* Disclaimer */
+.footer-disclaimer {
+  max-width: 1200px;
+  margin: 2rem auto 0; /* Centreer de disclaimer onder de secties */
+  padding-top: 1.5rem;
+  border-top: 1px solid #333; /* Scheiding boven de disclaimer */
+  font-size: 0.85rem;
+  color: #a9a9a9;
+  line-height: 1.5;
+  text-align: center; /* Centreer de tekst */
+}
+
+.footer-disclaimer strong {
+  color: #ff6f61; /* Accentkleur voor de disclaimer titel */
+}
+
+/* Footer Onderschrift */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #a9a9a9;
+}
+
+/* Cronos Logo Styling */
+.cronos-logo {
+  height: 20px; /* Stel een vaste hoogte in */
+  width: auto; /* Houd de verhouding intact */
+  margin-right: 0.5rem; /* Voeg wat ruimte toe rechts van de afbeelding */
+  vertical-align: middle; /* Zorg dat de afbeelding netjes uitlijnt met de tekst */
+}

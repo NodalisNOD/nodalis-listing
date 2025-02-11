@@ -1,0 +1,459 @@
+/* Algemene instellingen */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9fafa;
+  color: #333;
+}
+
+main {
+  padding: 1rem;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Zorgt dat alles onder elkaar wordt gestapeld */
+}
+
+.tables-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem; /* Voeg ruimte toe onder de tabellen */
+}
+
+.table-wrapper {
+  flex: 1;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #042c3f;
+  color: white;
+}
+
+.crypto-logo {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.main-crypto-table td:first-child, .main-crypto-table th:first-child {
+  text-align: center;
+}
+
+.main-table-wrapper {
+  display: block; /* Zorg dat deze altijd een blokelement blijft */
+  margin-top: 20px; /* Ruimte tussen de tabellen en de all coins tabel */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.crypto-table th, .crypto-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.crypto-table th {
+  background-color: #042c3f;
+  color: white;
+}
+
+.crypto-table img {
+  height: 20px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+/* Specifieke stijl voor afbeeldingen in tabellen */
+.crypto-table td img,
+.main-crypto-table td img {
+  height: 24px !important; /* Stel een maximale hoogte in */
+  width: auto !important;  /* Houd de aspectverhouding */
+  max-width: 40px !important; /* Stel een maximale breedte in */
+  margin-right: 0.5rem; /* Ruimte tussen de afbeelding en tekst */
+  vertical-align: middle; /* Lijn afbeelding uit met tekst */
+}
+/* Prijskleuren */
+.positive-change {
+  color: #28a745;
+
+}
+.negative-change {
+  color: #dc3545;
+
+}
+.table-icon {
+  height: 24px; /* Stel een kleinere hoogte in */
+  width: auto; /* Houd de aspect ratio intact */
+  vertical-align: middle; /* Lijn de afbeelding uit met de tekst */
+  margin-right: 0.5rem; /* Voeg ruimte toe rechts van de afbeelding */
+}
+/* Stijlen voor sorteerbare kolomkoppen */
+.main-crypto-table th {
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.main-crypto-table th:hover {
+  background-color: #05a6c9; /* Lichtgrijze achtergrond bij hover */
+  color: #ffffff; /* Blauwe tekst bij hover */
+}
+
+/* Pijlen voor sorteerbare kolommen */
+.main-crypto-table th.sort-asc::after,
+.main-crypto-table th.sort-desc::after {
+  content: ''; /* Pijl toevoegen */
+  position: absolute;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.main-crypto-table th.sort-asc::after {
+  border-width: 0 5px 5px 5px; /* Pijl naar boven */
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.main-crypto-table th.sort-desc::after {
+  border-width: 5px 5px 0 5px; /* Pijl naar beneden */
+  border-color: #ffffff transparent transparent transparent;
+}
+.coin-link {
+  text-decoration: none;
+  color: inherit; /* Zorg dat de kleur overeenkomt met de tekst */
+}
+
+.coin-link:hover {
+  color: #1a664f; /* Geef een blauwe kleur bij hover */
+  text-decoration: underline;
+}
+.search-container {
+  margin-bottom: 10px; /* Minder ruimte onder de zoekbalk */
+  display: flex;
+  justify-content: flex-start; /* Plaatst de zoekbalk aan de links */
+}
+
+#search-bar {
+  width: 20%; /* Smalle breedte */
+  padding: 8px; /* Compactere padding */
+  font-size: 14px; /* Kleiner lettertype */
+  border: 1px solid #ccc; /* Rand behouden */
+  border-radius: 4px; /* Kleinere ronding */
+}
+.tables-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem; /* Voeg ruimte toe onder de container */
+}
+
+.table-wrapper {
+  flex: 4; /* Breedte van de Newcomers en Top Gainers tabellen */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Zorgt dat de inhoud goed past */
+}
+
+.stats-wrapper {
+  flex: 1.5; /* Breedte van de Market Cap en Dominance */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between; /* Zorgt dat de vakken worden verdeeld */
+}
+
+.stat-box {
+  background-color: #f9f9f9;
+  border: 3px solid #042c3f;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centreert de inhoud verticaal */
+  height: 100%; /* Zorgt dat de stat-box volledig wordt opgerekt */
+}
+
+.stat-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.tooltip-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  display: none; /* Verberg de tooltip standaard */
+  position: absolute;
+  top: -45px; /* Plaats de tooltip boven het icoontje */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px; /* Beperk de breedte van de tooltip */
+  text-align: center; /* Zorg dat de tekst gecentreerd is */
+  white-space: normal; /* Sta tekstafbreking toe */
+  word-wrap: break-word; /* Breek woorden indien nodig */
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  display: block; /* Toon de tooltip bij hover */
+}
+.ad-container {
+  width: 300px; /* Vaste breedte */
+  height: 200px; /* Vaste hoogte */
+  position: relative; /* Voor positionering van het label */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 0 1rem; /* Ruimte tussen secties */
+}
+
+.ad-content {
+  position: relative; /* Basis voor labelpositionering */
+  display: inline-block; /* Zorgt dat de inhoud inline is */
+}
+
+.ad-image {
+  max-width: 100%; /* Laat de advertentie-afbeelding schalen */
+  height: auto;
+}
+
+/* Sponsored Label (ad.png) */
+.sponsored-label {
+  position: absolute;
+  top: 10px; /* Afstand vanaf de bovenkant */
+  left: 10px; /* Afstand vanaf de linkerkant */
+  width: 10px; /* Grootte van het label */
+  height: auto;
+  z-index: 2; /* Zorgt ervoor dat het altijd bovenop de advertentieafbeelding staat */
+  background: rgba(255, 255, 255, 0.8); /* Optionele achtergrond voor betere zichtbaarheid */
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+/* Stijling voor de dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #042c3f;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+}
+
+.dropdown-menu li:hover {
+  background: #05a6c9;
+}
+
+.dropdown-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Advertentie en Twitter Feed Wrapper */
+.ad-twitter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Afstand tussen advertentie en Twitter-feed */
+}
+
+/* Advertentie Container */
+.ad-container {
+  width: 300px;
+  height: 200px;
+  position: relative; /* Zorgt ervoor dat absolute positionering werkt binnen deze container */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Voorkomt dat content buiten de container komt */
+}
+
+/* Twitter Feed - Zelfde grootte als advertentie */
+.twitter-feed-container {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Tweet Header */
+.tweet-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Profielfoto */
+.tweet-profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.tweet-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.tweet-author a {
+  color: #042c3f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tweet-date {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Tweet inhoud + afbeelding thumbnail */
+.tweet-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 8px;
+  border-left: 2px solid rgb(29, 59, 117);
+  font-size: 14px;
+  overflow: hidden;
+}
+
+/* Tekst blijft beperkt in hoogte en breekt correct */
+.tweet-text {
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  flex-grow: 1; /* Laat de tekst de ruimte gebruiken */
+}
+
+/* Thumbnail afbeelding naast de tekst */
+.tweet-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+  flex-shrink: 0; /* Voorkomt dat de afbeelding wordt geschaald */
+}
+
+/* Knop voor "View on X" */
+.tweet-button {
+  display: block;
+  background-color: #042c3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 10px;
+  margin-top: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  width: fit-content;
+  align-self: center;
+}
+
+.tweet-button:hover {
+  background-color: #ddd;
+}

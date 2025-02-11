@@ -1,0 +1,93 @@
+/* Algemene stijlen voor DEX- en Aggregator-tabellen */
+.dex-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.dex-table th, .dex-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.dex-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Links binnen de tabel (zoals namen van DEX en Aggregators) */
+.dex-table td a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.dex-table td a:hover {
+  color: #1a664f;
+}
+
+/* Stijl voor positieve en negatieve veranderingen */
+.dex-table td.change-positive {
+  color: green;
+  font-weight: bold;
+}
+
+.dex-table td.change-negative {
+  color: red;
+  font-weight: bold;
+}
+
+/* Stijl voor DEX- en Aggregator-logo's */
+.dex-logo {
+  height: 24px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Advertentie Banner */
+#ad-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 700px;
+  height: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#ad-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Algemeen */
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-underline:hover {
+  text-decoration: underline;
+  color: #1a664f;
+}
+
+/* Positieve en negatieve verandering */
+.change-positive {
+  color: green;
+}
+
+.change-negative {
+  color: red;
+}
+
+/* DEX Logo */
+.dex-logo {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}

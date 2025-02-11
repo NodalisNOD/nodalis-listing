@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="./styles/socials.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+  <div id="profileContainer">
+    <!-- Profile information will be loaded here -->
+  </div>
+  <script>
+    // Function to get query parameter
+    function getQueryParam(param) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(param);
+    }
+    
+    async function loadUserProfile() {
+      const userId = getQueryParam("userId");
+      if (!userId) {
+        document.getElementById("profileContainer").innerHTML = "<p>No user specified.</p>";
+        return;
+      }
+      try {
+        const response = await fetch(`http://localhost:3000/users/${userId}`);
+        if (!response.ok) throw new Error("Failed to fetch user profile");
+        const user = await response.json();
+        document.getElementById("profileContainer").innerHTML = `
+          <h2>${user.username}'s Profile</h2>
+          <img src="http://localhost:3000/${user.profilePicture}" alt="Profile Picture" style="width:100px;height:100px;border-radius:50%;">
+          <p><strong>Email:</strong> ${user.email}</p>
+          <p><strong>Bio:</strong> ${user.bio || "No bio set"}</p>
+          <p><strong>Followers:</strong> ${user.followers ? user.followers.length : 0}</p>
+          <p><strong>Following:</strong> ${user.following ? user.following.length : 0}</p>
+          <button id="followBtn">Follow/Unfollow</button>
+        `;
+        // Follow/Unfollow functionality
+        document.getElementById("followBtn").onclick = async function () {
+          const token = localStorage.getItem("token");
+          const res = await fetch("http://localhost:3000/auth/follow", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token.trim()}`
+            },
+            body: JSON.stringify({ followId: userId })
+          });
+          const result = await res.json();
+          alert(result.message);
+          loadUserProfile(); // Refresh profile info after follow/unfollow
+        };
+      } catch (error) {
+        console.error("Error loading profile:", error);
+        document.getElementById("profileContainer").innerHTML = "<p>Error loading profile.</p>";
+      }
+    }
+    
+    loadUserProfile();
+  </script>
+</body>
+</html>

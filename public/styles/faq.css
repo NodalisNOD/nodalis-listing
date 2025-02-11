@@ -1,0 +1,35 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+  }
+  
+  .faq-item h2 {
+    font-size: 1.4em;
+    color: #333;
+  }
+  
+  .faq-item p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .faq-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+  

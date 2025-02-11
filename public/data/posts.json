@@ -1,0 +1,236 @@
+[
+  {
+    "id": "1739267216592",
+    "content": "Dit is de eerste post",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 1,
+    "timestamp": "2025-02-11T09:46:56.592Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "Ik kon upvoten en downvoten, netjes"
+      }
+    ],
+    "votes": {
+      "b6dc6be4-a997-4a0e-b9d8-894cece6bb57": "downvote"
+    }
+  },
+  {
+    "id": "1739267240190",
+    "content": "Dit is de tweede post",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T09:47:20.190Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "test"
+      },
+      {
+        "author": "tester1",
+        "content": "verandering?"
+      },
+      {
+        "author": "tester1",
+        "content": "terst"
+      }
+    ],
+    "votes": {}
+  },
+  {
+    "id": "1739267415790",
+    "content": "Dit is een post met een #test",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T09:50:15.790Z",
+    "comments": [],
+    "votes": {}
+  },
+  {
+    "id": "1739267431635",
+    "content": "Dit is een post met een #test2",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 1,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T09:50:31.635Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "test"
+      }
+    ],
+    "votes": {
+      "8231a863-19dd-4364-8718-767bec770105": "upvote"
+    }
+  },
+  {
+    "id": "1739271644783",
+    "content": "new",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:00:44.783Z",
+    "comments": [],
+    "votes": {}
+  },
+  {
+    "id": "1739271647732",
+    "content": "new2",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:00:47.732Z",
+    "comments": [],
+    "votes": {}
+  },
+  {
+    "id": "1739271651147",
+    "content": "new2",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:00:51.147Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "l"
+      },
+      {
+        "author": "tester1",
+        "content": "l"
+      },
+      {
+        "author": "tester1",
+        "content": "l"
+      },
+      {
+        "author": "tester1",
+        "content": "l"
+      }
+    ],
+    "votes": {}
+  },
+  {
+    "id": "1739271661448",
+    "content": "",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:01:01.448Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "test"
+      },
+      {
+        "author": "tester1",
+        "content": "test"
+      },
+      {
+        "author": "tester1",
+        "content": "test"
+      }
+    ],
+    "votes": {}
+  },
+  {
+    "id": "1739272220915",
+    "content": "test",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:10:20.915Z",
+    "comments": [],
+    "votes": {}
+  },
+  {
+    "id": "1739272222001",
+    "content": "test",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 1,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:10:22.001Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "test",
+        "timestamp": "2025-02-11T11:13:05.908Z"
+      }
+    ],
+    "votes": {
+      "b6dc6be4-a997-4a0e-b9d8-894cece6bb57": "upvote"
+    }
+  },
+  {
+    "id": "1739272391224",
+    "content": "test",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 0,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:13:11.224Z",
+    "comments": [
+      {
+        "author": "tester1",
+        "content": "go",
+        "timestamp": "2025-02-11T11:13:35.298Z"
+      },
+      {
+        "author": "tester1",
+        "content": "test",
+        "timestamp": "2025-02-11T11:32:21.919Z"
+      }
+    ],
+    "votes": {}
+  },
+  {
+    "id": "1739273546226",
+    "content": "test",
+    "author": {
+      "id": "b6dc6be4-a997-4a0e-b9d8-894cece6bb57",
+      "username": "tester1"
+    },
+    "upvotes": 1,
+    "downvotes": 0,
+    "timestamp": "2025-02-11T11:32:26.226Z",
+    "comments": [],
+    "votes": {
+      "b6dc6be4-a997-4a0e-b9d8-894cece6bb57": "upvote"
+    }
+  }
+]

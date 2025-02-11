@@ -1,0 +1,149 @@
+[
+  {
+    "id": "corgiai-corgiai",
+    "name": "CorgiAI CORGIAI",
+    "icon": "./assets/corgiai.png",
+    "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
+    "website": "https://corgiai.xyz",
+    "explorer": "https://cronoscan.com/address/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
+    "twitter": "https://x.com/corgiaiclub",
+    "telegram": "/",
+    "discord": "https://discord.com/invite/HrrmmdAytu",
+    "description": "CorgiAI claimed to be a community-driven AI project centered around the creation of a tight-knitted community with one objective in mind: to unleash the power of togetherness and build tools to enable the ultimate community.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x189291476338446c6e62c8a18ef22d3c80eb5f72/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a"
+    }
+  },
+  {
+    "id": "crow-with-knife-caw",
+    "name": "Crow With Knife CAW",
+    "icon": "./assets/caw.png",
+    "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
+    "website": "https://www.crowwithknife.com",
+    "explorer": "https://cronoscan.com/address/0xccccccccdbec186dc426f8b5628af94737df0e60",
+    "twitter": "https://x.com/crow_with_knife",
+    "telegram": "https://t.me/crowwithknife",
+    "discord": "https://discord.com/invite/8a8Xm4wwR9",
+    "description": "literally just a crow with a knife.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xccccccccdbec186dc426f8b5628af94737df0e60",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C"
+    }
+  },
+    {
+      "id": "vvs-finance",
+      "name": "VVS Finance",
+      "icon": "./assets/vvs.jpg",
+      "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "website": "https://vvs.finance",
+      "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "twitter": "https://x.com/VVS_finance",
+        "telegram": "https://t.me/VVSFinance",
+        "discord": "https://discord.com/invite/V2957zMsmg",
+      "description": "Gateway to Cronos.",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b%2C0x814920d1b8007207db6cb5a2dd92bf0b082bdba1%2C0xfc07bf38408e4326f99dec96ba94f1e28af68842%2C0x9d96706f31f520cb2404a3d2ad1a932b61a85acf%2C0x861a978dc3c8183ce245a888f32e4eedd595aaa0%2C0xa922530960a1f94828a7e132ec1ba95717ed1eab%2C0x6ae624714f221964aff3ab8d8276a7ec142a759f%2C0xb90d6e09075168281d47da6f0665ff4fd8f0ff6f%2C0x1673afb35c5ffedfa5a55460a6ae16cc4173fcaa%2C0x910c37d26a9eb4aadff925b47ffde6308e03fa37",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xbf62c67ea509e86f07c8c69d0286c0636c50270b/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b"
+       
+      }
+    },
+    {
+      "id": "moonflow-moon",
+      "name": "Moonflow",
+      "icon": "./assets/moon.png",
+      "contract": "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+      "website": "https://wolfswap.app/swap",
+      "explorer": "https://cronoscan.com/address/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+      "twitter": "https://x.com/wolfswapdotapp",
+      "discord": "https://discord.com/invite/moonflowlabs",
+      "telegram": "https://t.me/moonflowlabs",
+      "description": "Wolfswap is an Aggregator DEX that incorporates GameFi aspects to deliver the best experience for the end-user.",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae"
+      }
+    },
+    {
+      "id": "mad-meerkat-finance",
+      "name": "Mad Meerkat Finance",
+      "icon": "./assets/mmf.jpg",
+      "contract": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
+      "website": "https://mm.finance",
+      "explorer": "https://cronoscan.com/address/0x97749c9b61f878a880dfe312d2594ae07aed7656",
+        "twitter": "https://twitter.com/mmfinance",
+        "discord": "https://discord.gg/mmfinance",
+        "telegram": "https://telegram.me/MMFcrypto",
+      "description": "Mad Meerkat Finance is a DEX platform on Cronos.",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x97749c9b61f878a880dfe312d2594ae07aed7656",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae"
+      }
+    },
+    {
+      "id": "croakey-croak",
+      "name": "Croakey",
+      "icon": "./assets/croak.webp",
+      "contract": "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+      "website": "https://croakey.io",
+      "explorer": "https://cronoscan.com/address/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+        "twitter": "https://x.com/croakcronos",
+        "discord": "https://discord.com/invite/croakeycronos",
+        "telegram": "https://t.me/+514AfwaUi2swY2I0",
+      "description": "Croakey’s on a mission to become the #1 Frog.",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8"
+      }
+    },
+    {
+      "id": "crodex-token-crx",
+      "name": "Crodex",
+      "icon": "./assets/crx.png",
+      "contract": "0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
+      "website": "https://swap.crodex.app/#/swap",
+      "explorer": "https://cronoscan.com/address/0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
+        "twitter": "https://x.com/crodexapp",
+        "discord": "/",
+        "telegram": "https://t.me/crodexofficial",
+      "description": "CRODEX Exchange is working to be the best trading platform for all upcoming projects that are being developed to take advantage of Cronos’ blazing fast speed. CRODEX enjoys the enviable position of being amongst Cronos’ first and most widely recognized Decentralized Exchanges (DEX).",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd141aed3fa86f411808d5d74bebbc038e94f300d/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe243ccab9e66e6cf1215376980811ddf1eb7f689"
+      }
+    },
+    {
+      "id": "mistery-mery",
+      "name": "Mistery MERY",
+      "icon": "./assets/mistery.png",
+      "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "website": "https://vvs.finance",
+      "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "twitter": "https://x.com/Misteryoncro",
+        "discord": "https://discord.com/invite/mery",
+        "telegram": "https://t.me/misteryoncro",
+      "description": ".",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa51231984ff01f4933a9fa24e8fd143f18ae6772/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b"
+       
+      }
+    }
+  ]
+  

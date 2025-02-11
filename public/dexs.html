@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodalis</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/dexs.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
+
+<!-- Advertentie Banner (Klikbaar) -->
+<div id="ad-banner">
+  <a href="advertise.html">
+    <img src="./assets/bannerad.png" alt="Advertisement" width="700" height="150">
+  </a>
+</div>
+  <!-- Main Content -->
+  <main>
+    <!-- VVS Finance (DEX) -->
+    <section>
+      <h2>DEX</h2>
+      <table class="main-crypto-table">
+        <thead>
+          <tr>
+            <th>DEX</th>
+            <th>24h Volume</th>
+            <th>48h to 24h Volume</th>
+            <th>7d Volume</th>
+            <th>All-Time Volume</th>
+            <th>1d Change</th>
+          </tr>
+        </thead>
+        <tbody id="dex-table">
+          <!-- Dynamische inhoud wordt hier geladen -->
+        </tbody>
+      </table>
+    </section>
+  
+    <!-- Wolfswap (Aggregator) -->
+    <section>
+      <h2>Aggregators</h2>
+      <table class="main-crypto-table">
+        <thead>
+          <tr>
+            <th>Aggregator</th>
+            <th>24h Volume</th>
+            <th>48h to 24h Volume</th>
+            <th>7d Volume</th>
+            <th>All-Time Volume</th>
+            <th>1d Change</th>
+          </tr>
+        </thead>
+        <tbody id="aggregator-table">
+          <!-- Dynamische inhoud wordt hier geladen -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <!-- Scripts -->
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+  <script src="./scripts/dexs.js"></script>
+</body>
+</html>

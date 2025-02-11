@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodalis</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <h1>Nodalis</h1>
+  </header>
+
+  <!-- Info Header -->
+  <div id="info-header" class="info-header"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="tables-container">
+      <!-- Newcomers Tabel -->
+      <div class="table-wrapper">
+        <h2>
+          <img src="./assets/plant.png" alt="Plant Logo" class="table-icon">Newcomers
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Token Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="newcomers-table"></tbody>
+        </table>
+      </div>
+
+      <!-- Top Gainers Tabel -->
+      <div class="table-wrapper">
+        <h2>
+          <img src="./assets/rocket.png" alt="Rocket Logo" class="table-icon">Top Gainers
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Token Name</th>
+              <th>%</th>
+            </tr>
+          </thead>
+          <tbody id="top-gainers-table"></tbody>
+        </table>
+      </div>
+
+<!-- Advertentie + Twitter Feed Wrapper -->
+<div class="ad-twitter-wrapper">
+  <!-- Advertentie -->
+  <div class="ad-container">
+    <div class="ad-content">
+      <img src="./assets/add.png" alt="Advertentie" class="ad-image" />
+      <img src="./assets/ad.png" alt="Sponsored Label" class="sponsored-label" />
+    </div>
+  </div>
+
+  <!-- Twitter Feed -->
+  <div id="twitter-feed" class="twitter-feed-container">
+    <blockquote class="twitter-tweet">
+      <a href="https://twitter.com/cronos_chain?ref_src=twsrc%5Etfw"></a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+
+      <!-- Stats: Market Cap and Dominance -->
+      <div class="stats-wrapper">
+        <div id="market-cap-container" class="stat-box">
+          <h3>
+            <div class="tooltip-wrapper">
+              <img src="./assets/about.png" alt="About Market Cap" class="tooltip-icon" />
+              <span class="tooltip-text">The total market value on Nodalis.</span>
+            </div>
+            Market Cap
+          </h3>
+          <p id="market-cap">$0</p>
+        </div>
+        <div id="dominance-container" class="stat-box">
+          <h3>
+            <div class="tooltip-wrapper">
+              <img src="./assets/about.png" alt="About Dominance" class="tooltip-icon" />
+              <span class="tooltip-text">The percentage of this platform's market cap relative to the Cronos market cap.</span>
+            </div>
+            Dominance
+          </h3>
+          <p id="dominance">
+            <img src="./assets/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
+            0%
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- All Coins Tabel -->
+    <div class="main-table-wrapper">
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..." aria-label="Search for a coin" />
+      </div>
+      <table class="main-crypto-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>1h Change</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+            <th>Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="altcoin-table"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <!-- Scripts -->
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+  <script src="./scripts/info-header.js" type="module"></script>
+  <script src="./scripts/newcomers-topgainers.js" type="module"></script>
+  <script type="module">
+    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      populateAltcoinTable(); // Vul de tabel met alle coins
+      setupSearch(); // Activeer zoekfunctionaliteit
+    });
+  </script>
+  <script src="./scripts/stats-dashboard.js" type="module"></script>
+  <script src="./scripts/twitter-feed.js"></script>
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_4GifZdg799FxUjonRWB7EpOowLNfFj01CmVo24INpzA', {api_host: 'https://eu.i.posthog.com'})
+</script>
+
+</body>
+
+</html>

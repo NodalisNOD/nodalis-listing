@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Your Token or Exchange</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/listForm.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
+
+  <!-- Content -->
+  <main class="container">
+    <h1>Get Listed</h1>
+
+<!-- Introductory Text -->
+<div class="form-intro">
+    <p>
+      Kindly complete the form as per your request. If your specific request(s) are not covered by this form, please contact us by submitting a ticket at 
+      <a href="mailto:nodalisn@gmail.com">nodalisn@gmail.com</a>.
+    </p>
+  </div>
+  
+  <!-- Keuzemenu -->
+  <div class="listing-choice">
+    <button id="choose-coin" class="listing-option">
+      <img src="./assets/coin.png" alt="Coin/Token">
+      <span>Coin/Token</span>
+    </button>
+    <button id="choose-exchange" class="listing-option">
+      <img src="./assets/stock.png" alt="Exchange">
+      <span>Exchange</span>
+    </button>
+  </div>
+  
+
+    <!-- Coin/Token Form -->
+    <form id="coin-form" class="hidden" action="/submit-coin-listing" method="POST" enctype="multipart/form-data">
+      <h2>List Your Coin/Token</h2>
+      <!-- Fields for Coin/Token -->
+      <h2>Basic Coin/Token Information</h2>
+      <label for="token-name">Coin/Token Name:</label>
+      <input type="text" id="token-name" name="tokenName" required>
+
+      <label for="token-symbol">Coin/Token Symbol:</label>
+      <input type="text" id="token-symbol" name="tokenSymbol" required>
+
+      <label for="contract-address">Token Contract Address:</label>
+      <input type="text" id="contract-address" name="contractAddress" required>
+
+      <label for="token-image">Upload Picture (256x256):</label>
+      <input type="file" id="token-image" name="tokenImage" accept="image/*" required>
+
+      <label for="website-url-1">Website URL:</label>
+      <input type="url" id="website-url-1" name="websiteUrl1" required>
+
+      <label for="website-url-2">Website URL (Optional):</label>
+      <input type="url" id="website-url-2" name="websiteUrl2">
+
+      <label for="whitepaper-link">Whitepaper Link:</label>
+      <input type="url" id="whitepaper-link" name="whitepaperLink">
+
+      <label for="submitter-role">Submitter's Role:</label>
+      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
+
+      <label for="submitter-role">Way to get contacted:</label>
+      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Discord, e-mail,..." required>
+
+      <!-- Section 2: Project Information -->
+      <h2>Project Information</h2>
+      <label for="project-description">What is the project about?</label>
+      <textarea id="project-description" name="projectDescription" rows="5" placeholder="Provide a clear and concise description of the project." required></textarea>
+
+      <label for="social-links">Social Media Links (Separate with commas):</label>
+      <textarea id="social-links" name="socialLinks" rows="3" placeholder="E.g., Twitter: https://twitter.com/example, Telegram: https://t.me/example"></textarea>
+
+      <label for="cronoscan-link">Cronoscan Link:</label>
+      <input type="url" id="cronoscan-link" name="cronoscanLink" required>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+
+    <!-- Exchange Form -->
+    <form id="exchange-form" class="hidden" action="/submit-exchange-listing" method="POST">
+      <h2>List Your Exchange</h2>
+      <!-- Fields for Exchange -->
+      <label for="exchange-name">Exchange Name:</label>
+      <input type="text" id="exchange-name" name="exchangeName" required>
+
+      <label for="token-image">Upload Picture (256x256):</label>
+      <input type="file" id="token-image" name="tokenImage" accept="image/*" required>
+
+      <label for="exchange-url">Exchange URL:</label>
+      <input type="url" id="exchange-url" name="exchangeUrl" required>
+
+      <label for="exchange-description">Description:</label>
+      <textarea id="exchange-description" name="exchangeDescription" rows="5" required></textarea>
+
+      <label for="social-links">Social Media Links (Separate with commas):</label>
+      <textarea id="social-links" name="socialLinks" rows="3" placeholder="E.g., Twitter: https://twitter.com/example, Telegram: https://t.me/example"></textarea>
+
+      <label for="submitter-role">Submitter's Role:</label>
+      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
+
+      <label for="submitter-role">Way to get contacted:</label>
+      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Discord, e-mail,..." required>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <!-- Scripts -->
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+  <script src="./scripts/listForm.js"></script>
+</body>
+</html>

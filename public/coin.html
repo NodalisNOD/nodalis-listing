@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Details</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/coin.css">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+</head>
+<body>
+  <!-- Notificatie Popup -->
+  <div id="notification-popup" class="notification-popup hidden"></div>
+  
+  <header id="header"></header>
+
+  <main>
+    <div class="coin-header">
+      <img id="coin-icon" alt="Coin Icon" class="coin-icon">
+      <h1 id="coin-name">Loading...</h1>
+      <p id="coin-description">Loading...</p>
+    </div>
+
+    <div class="layout-container">
+      <div class="coin-info">
+        <div class="coin-details">
+          <p>
+            <strong>Contract:</strong>
+            <span id="coin-contract">Loading...</span>
+            <img id="copy-icon" src="./assets/copy.png" alt="Copy Icon" class="icon" title="Copy Contract">
+          </p>
+          <p>
+            <strong>Website:</strong>
+            <a id="coin-website" href="#" target="_blank">Visit Website</a>
+          </p>
+          <p>
+            <strong>Explorer:</strong>
+            <a id="coin-explorer" href="#" target="_blank">Cronoscan</a>
+          </p>
+          <p>
+            <strong>Twitter:</strong>
+            <a id="coin-twitter" href="#" target="_blank">Visit Twitter</a>
+          </p>
+          <p>
+            <strong>Telegram:</strong>
+            <a id="coin-telegram" href="#" target="_blank">Join Telegram</a>
+          </p>
+          <p>
+            <strong>Discord:</strong>
+            <a id="coin-discord" href="#" target="_blank">Join Discord</a>
+          </p>
+        </div>
+        <div class="dynamic-data">
+          <p><strong>Price:</strong> <span id="coin-price">Loading...</span></p>
+          <p><strong>Market Cap:</strong> <span id="coin-marketcap">Loading...</span></p>
+          <p><strong>Volume (24h):</strong> <span id="coin-volume">Loading...</span></p>
+          <p><strong>Liquidity:</strong> <span id="coin-liquidity">Loading...</span></p>
+        </div>
+        <!-- Sentiment Section -->
+        <h4 class="sentiment-title">Community Sentiment</h4>
+        <div class="sentiment-container">
+          <div class="sentiment-bar">
+            <div id="positive-bar" class="positive" style="width: 0%;">0%</div>
+            <div id="negative-bar" class="negative" style="width: 0%;">0%</div>
+          </div>
+          <div class="vote-buttons">
+            <button id="vote-positive" class="positive">👍 Positive</button>
+            <button id="vote-negative" class="negative">👎 Negative</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <h2>Price Graph (Last 24h)</h2>
+        <canvas id="price-graph"></canvas>
+      </div>
+    </div>
+
+    <div class="coin-markets">
+      <h2>Official Markets</h2>
+      <div id="markets-container" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-top: 20px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Pair</th>
+              <th>Price</th>
+              <th>Volume (24h)</th>
+              <th>Liquidity</th>
+            </tr>
+          </thead>
+          <tbody id="markets-table"></tbody>
+        </table>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./scripts/header.js" type="module"></script>
+  <script src="./scripts/footer.js" type="module"></script>
+  <script src="./scripts/coin.js" type="module"></script>
+</body>
+</html>
