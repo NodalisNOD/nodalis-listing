@@ -1,6 +1,6 @@
 // controllers/authController.js
 const { readJSON, writeJSON } = require("../jsonHelper");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
 const multer = require("multer");
