@@ -3,7 +3,7 @@ const tokenId = "cronos"; // Unique ID for Cronos Chain sentiment votes
 // ✅ Fetch votes from the server
 async function fetchVotes() {
   try {
-    const response = await fetch(`/votes/global`);
+    const response = await fetch(`https://nodalisting.com/votes/global`);
     if (!response.ok) throw new Error("Failed to fetch votes");
 
     const votes = await response.json();
@@ -16,7 +16,7 @@ async function fetchVotes() {
 // ✅ Send vote to server
 async function submitVote(type) {
   try {
-    const response = await fetch(`/votes/global/${type}`, { method: "POST" });
+    const response = await fetch(`https://nodalisting.com/votes/global/${type}`, { method: "POST" });
     const data = await response.json();
 
     if (!response.ok) {

@@ -7,7 +7,6 @@ const axios = require("axios");
 const nodemailer = require("nodemailer");
 const multer = require("multer");
 require("dotenv").config();
-
 // Controllers
 const authController = require("./controllers/authController");
 const postController = require("./controllers/postController");
@@ -129,12 +128,12 @@ let globalUserVotes = new Map(); // Track welke gebruikers hebben gestemd
 const VOTE_EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 uur
 
 // ✅ Fetch global votes
-app.get("/votes/global", (req, res) => {
-  res.json(globalVotes);
+app.get("https://nodalisting.com/votes/global", (req, res) => {
+  res.json({ positive: 0, negative: 0 });
 });
 
 // ✅ Process global vote (alleen 1 stem per dag toegestaan)
-app.post("/votes/global/:type", (req, res) => {
+app.post("https://nodalisting.com/votes/global/:type", (req, res) => {
   const { type } = req.params;
   const userIp = req.ip; // Alternatief: gebruik echte user ID als je login hebt
 
