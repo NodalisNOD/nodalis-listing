@@ -1,5 +1,23 @@
 [
   {
+    "id": "turtle-turtle",
+    "name": "Turtle TURTLE",
+    "icon": "./assets/turtle.webp",
+    "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
+    "website": "https://turtleoncro.com/",
+    "explorer": "https://cronoscan.com/token/0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
+    "twitter": "https://x.com/TurtleonCro",
+    "telegram": "https://t.me/turtleoncrocommunity",
+    "discord": "https://discord.com/invite/FBx5CjfJ59",
+    "description": "Turtle on Cronos is a memecoin that is driven by the community. Our focuses are onboarding, spreading awareness, and welcoming people to the cronos blockchain through memes, good vibes, and safe trading.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8c9e2bef2962ce302ef578113eebec62920b7e57",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xea8f22344dd9269b030381f676432270a22a5837/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb"
+    }
+  },
+  {
     "id": "corgiai-corgiai",
     "name": "CorgiAI CORGIAI",
     "icon": "./assets/corgiai.png",

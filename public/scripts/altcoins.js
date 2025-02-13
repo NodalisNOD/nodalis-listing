@@ -3,6 +3,13 @@
 // coins list
 export const coins = [
   {
+    name: "Turtle TURTLE",
+    contract: "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
+    icon: "./assets/turtle.webp",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb",
+  },
+  {
     name: "CorgiAI CORGIAI",
     contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
     icon: "./assets/corgiai.png",
