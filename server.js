@@ -407,6 +407,6 @@ app.post("/submit-contact", async (req, res) => {
 });
 
 // === SERVER START ===
-app.listen(PORT, () => {
-  console.log(`✅ Server draait op http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`✅ Server draait op http://0.0.0.0:${PORT}`);
 });
