@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="./assets/logo.png">
 </head>
 <body>
-  <!-- Notificatie Popup -->
+  <!-- Notification popup -->
   <div id="notification-popup" class="notification-popup hidden"></div>
   
   <header id="header"></header>
@@ -22,7 +22,9 @@
       <p id="coin-description">Loading...</p>
     </div>
 
+    <!-- Layout: Info naast Graph -->
     <div class="layout-container">
+      <!-- Info Kolom -->
       <div class="coin-info">
         <div class="coin-details">
           <p>
@@ -65,18 +67,20 @@
             <div id="negative-bar" class="negative" style="width: 0%;">0%</div>
           </div>
           <div class="vote-buttons">
-            <button id="vote-positive" class="positive">👍 Positive</button>
-            <button id="vote-negative" class="negative">👎 Negative</button>
+            <img id="vote-positive" src="./assets/like.png" alt="Like" class="vote-icon">
+            <img id="vote-negative" src="./assets/dislike.png" alt="Dislike" class="vote-icon">
           </div>
         </div>
       </div>
-
+      
+      <!-- Graph Kolom -->
       <div class="chart-container">
         <h2>Price Graph (Last 24h)</h2>
         <canvas id="price-graph"></canvas>
       </div>
     </div>
 
+    <!-- Markets Sectie Onder de Layout -->
     <div class="coin-markets">
       <h2>Official Markets</h2>
       <div id="markets-container" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-top: 20px;">

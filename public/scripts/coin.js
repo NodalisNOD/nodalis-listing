@@ -2,7 +2,6 @@
 const params = new URLSearchParams(window.location.search);
 let coinId = params.get("id");
 
-// check if coinId is present
 if (coinId) {
   coinId = coinId.toLowerCase().replace(/\s+/g, "-");
 } else {
@@ -14,16 +13,15 @@ let currentPage = 1;
 let marketData = [];
 let totalLiquidity = 0;
 
-// map of dex icons
 const dexIcons = {
-  vvs: "./assets/vvs.jpg",
-  "vvs-v3": "./assets/vvs.jpg",
-  mm_finance: "./assets/mmf.jpg",
-  "ebisus-bay": "./assets/ebisus.png",
-  "crodex": "./assets/ebisus.png",
+  vvs: { icon: "./assets/vvs.jpg", name: "VVS Finance" },
+  "vvs-v3": { icon: "./assets/vvs.jpg", name: "VVS Finance" },
+  mm_finance: { icon: "./assets/mmf.jpg", name: "MM Finance" },
+  "ebisus-bay": { icon: "./assets/ebisus.png", name: "Ebisus Bay" },
+  crodex: { icon: "./assets/crodex.png", name: "Crodex" },
 };
 
-// function to fetch coin details
+
 async function fetchCoinDetails() {
   try {
     const response = await fetch("/data/coin-data.json");
@@ -62,31 +60,29 @@ async function fetchCoinDetails() {
       <a href="${coin.explorer}" target="_blank">Cronoscan</a>
     `;
     document.getElementById("coin-twitter").innerHTML = `
-    <img src="./assets/twitter.png" alt="Explorer Icon" class="icon">
-    <a href="${coin.twitter}" target="_blank">Twitter</a>
-  `;
-  document.getElementById("coin-telegram").innerHTML = `
-  <img src="./assets/telegram.png" alt="Explorer Icon" class="icon">
-  <a href="${coin.telegram}" target="_blank">Telegram</a>
-  `;
-  document.getElementById("coin-discord").innerHTML = `
-  <img src="./assets/discord.png" alt="Explorer Icon" class="icon">
-  <a href="${coin.discord}" target="_blank">Discord</a>
-  `;
+      <img src="./assets/twitter.png" alt="Twitter Icon" class="icon">
+      <a href="${coin.twitter}" target="_blank">Twitter</a>
+    `;
+    document.getElementById("coin-telegram").innerHTML = `
+      <img src="./assets/telegram.png" alt="Telegram Icon" class="icon">
+      <a href="${coin.telegram}" target="_blank">Telegram</a>
+    `;
+    document.getElementById("coin-discord").innerHTML = `
+      <img src="./assets/discord.png" alt="Discord Icon" class="icon">
+      <a href="${coin.discord}" target="_blank">Discord</a>
+    `;
 
-  await fetchDynamicData(coin.dynamicData);
-  fetchVotes();
-} catch (error) {
-  console.error("Error loading coin details:", error);
-}
+    await fetchDynamicData(coin.dynamicData);
+    fetchVotes();
+  } catch (error) {
+    console.error("Error loading coin details:", error);
+  }
 }
 
-// function to show notification
 function showNotification(message, event) {
   const popup = document.getElementById("notification-popup");
   popup.textContent = message;
 
-  // position the popup near the cursor
   const xOffset = 20;
   const yOffset = 20;
   popup.style.left = `${event.pageX + xOffset}px`;
@@ -95,14 +91,12 @@ function showNotification(message, event) {
   popup.classList.remove("hidden");
   popup.classList.add("visible");
 
-  // hiude the popup after 2 seconds
   setTimeout(() => {
     popup.classList.remove("visible");
     popup.classList.add("hidden");
   }, 2000);
 }
 
-// fetch dynamic data
 async function fetchDynamicData(dynamicData) {
   try {
     const priceResponse = await fetch(dynamicData.priceApi);
@@ -120,21 +114,15 @@ async function fetchDynamicData(dynamicData) {
     marketData.forEach((market) => {
       const attributes = market.attributes;
 
-      // check if market cap is available
       if (!totalMarketCap) {
         if (attributes.market_cap_usd) {
           totalMarketCap = parseFloat(attributes.market_cap_usd);
-          console.log(`Market Cap set from API: ${totalMarketCap}`);
         } else if (attributes.fdv_usd) {
           totalMarketCap = parseFloat(attributes.fdv_usd);
-          console.log(`Market Cap set from FDV: ${totalMarketCap}`);
         } else if (attributes.reserve_in_usd && attributes.base_token_price_usd) {
           const reserveUsd = parseFloat(attributes.reserve_in_usd);
           const baseTokenPrice = parseFloat(attributes.base_token_price_usd);
           totalMarketCap = reserveUsd / baseTokenPrice;
-          console.log(`Calculated Market Cap from Reserve and Base Price: ${totalMarketCap}`);
-        } else {
-          console.log("Market Cap could not be determined for this market.");
         }
       }
 
@@ -155,36 +143,33 @@ async function fetchDynamicData(dynamicData) {
   }
 }
 
-// function to render markets
 function renderMarkets(markets) {
   const marketsTable = document.getElementById("markets-table");
-  marketsTable.innerHTML = ""; // empty the table
+  marketsTable.innerHTML = "";
 
   markets.forEach((market) => {
     const attributes = market.attributes;
     const dex = market.relationships.dex.data.id;
 
-    const dexDisplay = dexIcons[dex]
-      ? `<img src="${dexIcons[dex]}" alt="${dex}" class="dex-icon">`
-      : dex;
-
-    const pair = attributes.name;
-    const price = parseFloat(attributes.base_token_price_usd);
-    const volume = parseFloat(attributes.volume_usd.h24);
-    const liquidity = parseFloat(attributes.reserve_in_usd);
-
+    // Haal icon en naam op uit dexIcons object
+    const dexData = dexIcons[dex] || { icon: "./assets/default.png", name: dex };
+    
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td>${dexDisplay}</td>
-      <td>${pair}</td>
-      <td>$${price.toFixed(10)}</td>
-      <td>$${volume.toLocaleString()}</td>
-      <td>$${liquidity.toLocaleString()}</td>
+      <td>
+        <img src="${dexData.icon}" alt="${dexData.name}" class="dex-icon" width="16" height="16">
+        <span>${dexData.name}</span>
+      </td>
+      <td>${attributes.name}</td>
+      <td>$${parseFloat(attributes.base_token_price_usd).toFixed(10)}</td>
+      <td>$${parseFloat(attributes.volume_usd.h24).toLocaleString()}</td>
+      <td>$${parseFloat(attributes.reserve_in_usd).toLocaleString()}</td>
     `;
     marketsTable.appendChild(row);
   });
 }
-// function to fetch votes
+
+
 async function fetchVotes() {
   try {
     const response = await fetch(`/votes/${coinId}`);
@@ -195,7 +180,6 @@ async function fetchVotes() {
   }
 }
 
-// function to submit vote
 async function submitVote(type, event) {
   try {
     const response = await fetch(`/votes/${coinId}/${type}`, { method: "POST" });
@@ -212,7 +196,6 @@ async function submitVote(type, event) {
   }
 }
 
-// change the sentiment bar
 function updateSentimentBar(votes) {
   const totalVotes = votes.positive + votes.negative;
   if (totalVotes === 0) return;
@@ -226,11 +209,9 @@ function updateSentimentBar(votes) {
   document.getElementById("negative-bar").textContent = `${negativePercentage}%`;
 }
 
-// add event listeners
 document.getElementById("vote-positive").addEventListener("click", (event) => submitVote("positive", event));
 document.getElementById("vote-negative").addEventListener("click", (event) => submitVote("negative", event));
 
-// graph rendering
 function renderGraph(graphApi) {
   fetch(graphApi)
     .then((response) => response.json())
@@ -299,5 +280,4 @@ function renderGraph(graphApi) {
     .catch((error) => console.error("Error rendering graph:", error));
 }
 
-// load coin details
 document.addEventListener("DOMContentLoaded", fetchCoinDetails);

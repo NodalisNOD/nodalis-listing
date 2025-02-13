@@ -1,9 +1,8 @@
 const tokenId = "cronos"; // Unique ID for Cronos Chain sentiment votes
 
-// ✅ Fetch votes from the server
 async function fetchVotes() {
   try {
-    const response = await fetch(`https://nodalisting.com/votes/global`);
+    const response = await fetch(`/votes/global`);
     if (!response.ok) throw new Error("Failed to fetch votes");
 
     const votes = await response.json();
@@ -13,10 +12,9 @@ async function fetchVotes() {
   }
 }
 
-// ✅ Send vote to server
 async function submitVote(type) {
   try {
-    const response = await fetch(`https://nodalisting.com/votes/global/${type}`, { method: "POST" });
+    const response = await fetch(`/votes/global/${type}`, { method: "POST" });
     const data = await response.json();
 
     if (!response.ok) {
@@ -36,7 +34,6 @@ async function submitVote(type) {
   }
 }
 
-// ✅ Update sentiment bar
 function updateSentimentBar(votes) {
   const totalVotes = votes.positive + votes.negative;
   let positivePercentage = 0;
@@ -53,7 +50,6 @@ function updateSentimentBar(votes) {
   document.getElementById("negative-bar").textContent = totalVotes > 0 ? `${negativePercentage}% ` : "";
 }
 
-// ✅ Show message (tooltip)
 function displayMessage(message) {
   const messageBox = document.getElementById("vote-message");
   messageBox.textContent = message;
@@ -63,7 +59,6 @@ function displayMessage(message) {
   }, 5000);
 }
 
-// ✅ Display sentiment inside the Twitter feed box
 function displaySentiment() {
   const sentimentHtml = `
     <div class="sentiment-container">
@@ -86,13 +81,11 @@ function displaySentiment() {
 
   document.getElementById("twitter-feed").innerHTML = sentimentHtml;
 
-  // ✅ Re-add event listeners
   document.getElementById("vote-positive").addEventListener("click", () => submitVote("positive"));
   document.getElementById("vote-negative").addEventListener("click", () => submitVote("negative"));
 }
 
-// ✅ Initialize everything when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  displaySentiment();  // Set up UI
-  fetchVotes();        // Load votes from server
+  displaySentiment();
+  fetchVotes();
 });

@@ -1,13 +1,18 @@
-// server.js (relevant gedeelte)
+// === MODULES & CONFIGURATIE ===
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const axios = require("axios");
 const nodemailer = require("nodemailer");
 const multer = require("multer");
+const cors = require("cors");
+const cron = require("node-cron");
+const AdmZip = require("adm-zip");
 require("dotenv").config();
-// Controllers
+
+// === CONTROLLERS ===
 const authController = require("./controllers/authController");
 const postController = require("./controllers/postController");
 const userController = require("./controllers/userController");
@@ -18,11 +23,11 @@ const moderatorController = require("./controllers/moderatorController");
 const JWT_SECRET = process.env.JWT_SECRET;
 console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 
-// Initialiseer de Express-app en stel de poort in
+// Initialiseer Express-app en poort
 const app = express();
 const PORT = process.env.PORT || 3001;
-const cors = require("cors");
 
+// === MIDDLEWARE ===
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
@@ -33,7 +38,6 @@ const { PostHog } = require("posthog-node");
 const posthog = new PostHog("phc_4GifZdg799FxUjonRWB7EpOowLNpzA", {
   host: "https://eu.i.posthog.com",
 });
-
 posthog.capture({
   distinctId: "server_event",
   event: "server_started",
@@ -46,17 +50,12 @@ process.on("exit", () => posthog.shutdown());
 const storage = multer.diskStorage({
   destination: "public/uploads/",
   filename: (req, file, cb) => {
-    // Zorg ervoor dat req.user beschikbaar is (bijv. via authenticateToken)
+    // Zorg dat req.user beschikbaar is (bijv. via authenticateToken)
     const userId = req.user ? req.user.userId : "unknown";
     cb(null, `profile-${userId}.jpg`);
   }
 });
 const upload = multer({ storage });
-
-// === MIDDLEWARE ===
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "public")));
-app.use("/uploads", express.static("public/uploads"));
 
 // === ROUTES ===
 
@@ -84,11 +83,10 @@ app.post("/posts/:postId/vote", postController.votePost);
 app.post("/posts/:postId/comments", authController.authenticateToken, postController.addComment);
 app.get("/posts/:postId", postController.getPostById);
 
-
 // ----- COIN API MET CACHING -----
 let coinDataCache = null;
 let lastCoinFetchTime = 0;
-const COIN_CACHE_DURATION = 10 * 60 * 1000;
+const COIN_CACHE_DURATION = 10 * 60 * 1000; // 10 minuten
 
 const fetchCoinData = async () => {
   try {
@@ -123,30 +121,28 @@ app.get("/api/coins", async (req, res) => {
 
 // ----- GLOBAL SENTIMENT VOTING -----
 let globalVotes = { positive: 0, negative: 0 };
-let globalUserVotes = new Map(); // Track welke gebruikers hebben gestemd
-
+let globalUserVotes = new Map(); // Houd bij welke gebruikers gestemd hebben
 const VOTE_EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 uur
 
-// ✅ Fetch global votes
-app.get("https://nodalisting.com/votes/global", (req, res) => {
-  res.json({ positive: 0, negative: 0 });
+// Fetch global votes
+app.get("/votes/global", (req, res) => {
+  res.json(globalVotes);
 });
 
-// ✅ Process global vote (alleen 1 stem per dag toegestaan)
-app.post("https://nodalisting.com/votes/global/:type", (req, res) => {
+// Process global vote (1 stem per 24 uur per gebruiker)
+app.post("/votes/global/:type", (req, res) => {
   const { type } = req.params;
-  const userIp = req.ip; // Alternatief: gebruik echte user ID als je login hebt
+  const userIp = req.ip;
 
-  // ✅ Controleer of gebruiker al heeft gestemd binnen 24 uur
+  // Controleer of gebruiker al gestemd heeft binnen 24 uur
   if (globalUserVotes.has(userIp)) {
     const lastVoteTime = globalUserVotes.get(userIp);
-    
     if (Date.now() - lastVoteTime < VOTE_EXPIRATION_TIME) {
       return res.status(429).json({ message: "🚫 You already voted today. Try again tomorrow.", votes: globalVotes });
     }
   }
 
-  // ✅ Voeg de nieuwe stem toe
+  // Voeg de nieuwe stem toe
   if (type === "positive") {
     globalVotes.positive++;
   } else if (type === "negative") {
@@ -155,16 +151,15 @@ app.post("https://nodalisting.com/votes/global/:type", (req, res) => {
     return res.status(400).json({ message: "Invalid vote type." });
   }
 
-  // ✅ Registreer stem en timestamp
+  // Registreer stem en timestamp
   globalUserVotes.set(userIp, Date.now());
-
   res.json({ message: "✅ Your vote has been recorded.", votes: globalVotes });
 });
 
 // ----- PER COIN VOTING -----
 const tokenVotes = {};
 const voteTimestamps = {};
-const VOTE_RESET_INTERVAL = 24 * 60 * 60 * 1000; // 24 hours
+const TOKEN_VOTE_EXPIRATION = 24 * 60 * 60 * 1000; // 24 uur
 
 app.post("/votes/:tokenId/:type", (req, res) => {
   const { tokenId, type } = req.params;
@@ -175,7 +170,7 @@ app.post("/votes/:tokenId/:type", (req, res) => {
     tokenVotes[tokenId] = { positive: 0, negative: 0 };
   }
 
-  if (voteTimestamps[userIp]?.[tokenId] && now - voteTimestamps[userIp][tokenId] < VOTE_RESET_INTERVAL) {
+  if (voteTimestamps[userIp]?.[tokenId] && now - voteTimestamps[userIp][tokenId] < TOKEN_VOTE_EXPIRATION) {
     return res.status(429).json({ message: "You can only vote once every 24 hours for this token." });
   }
 
@@ -199,20 +194,104 @@ app.get("/votes/:tokenId", (req, res) => {
   res.json(tokenVotes[tokenId]);
 });
 
-// Reset votes every 24 hours
-setInterval(() => {
+// ----- ARCHIVERING & RESET VAN STEMMEN -----
+
+// Zorg dat de data-directory bestaat
+const dataDir = path.join(__dirname, "public", "data");
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
+
+// Archiveer de huidige stemdata in een JSON-bestand, zip deze en verwijder het originele JSON-bestand.
+function archiveVotes() {
+  const now = new Date();
+  const dateStr = now.toISOString().slice(0, 10); // Format: YYYY-MM-DD
+  const filename = `votes-${dateStr}.json`;
+  const filePath = path.join(dataDir, filename);
+
+  const archiveData = {
+    timestamp: now,
+    globalVotes,
+    tokenVotes
+  };
+
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(archiveData, null, 2));
+    console.log(`Votes archived to ${filename}`);
+
+    // Zippen
+    const zip = new AdmZip();
+    zip.addLocalFile(filePath);
+    const zipFilePath = filePath.replace('.json', '.zip');
+    zip.writeZip(zipFilePath);
+    console.log(`Votes zipped to ${path.basename(zipFilePath)}`);
+
+    // Verwijder het originele JSON-bestand
+    fs.unlinkSync(filePath);
+  } catch (error) {
+    console.error("Error archiving votes:", error);
+  }
+}
+
+// Reset de in-memory stemdata
+function resetVotes() {
+  globalVotes = { positive: 0, negative: 0 };
+  globalUserVotes.clear();
   for (const tokenId in tokenVotes) {
     tokenVotes[tokenId] = { positive: 0, negative: 0 };
   }
   for (const userIp in voteTimestamps) {
     voteTimestamps[userIp] = {};
   }
-  globalVotes = { positive: 0, negative: 0 };
-  globalUserVotes.clear();
   console.log("Votes have been reset.");
-}, VOTE_RESET_INTERVAL);
+}
 
-// ----- LISTING FORM: COIN LISTING -----
+// Verwijder gezipte archieven ouder dan 3 dagen
+function cleanupOldArchives() {
+  fs.readdir(dataDir, (err, files) => {
+    if (err) {
+      console.error("Error reading data directory:", err);
+      return;
+    }
+    files.forEach(file => {
+      if (file.endsWith('.zip')) {
+        const filePath = path.join(dataDir, file);
+        fs.stat(filePath, (err, stats) => {
+          if (err) {
+            console.error("Error stating file:", filePath, err);
+            return;
+          }
+          const fileAge = Date.now() - stats.mtimeMs;
+          const threeDays = 3 * 24 * 60 * 60 * 1000;
+          if (fileAge > threeDays) {
+            fs.unlink(filePath, err => {
+              if (err) console.error("Error deleting file:", filePath, err);
+              else console.log("Deleted old archive:", file);
+            });
+          }
+        });
+      }
+    });
+  });
+}
+
+// Plan een cronjob die elke dag om middernacht (Europe/Amsterdam) de stemmen archiveert en reset.
+cron.schedule('0 0 * * *', () => {
+  console.log("Running daily archive and reset task");
+  archiveVotes();
+  resetVotes();
+}, {
+  timezone: "Europe/Amsterdam"
+});
+
+// Plan een cronjob die dagelijks de oude archieven opruimt (bijv. om 01:00 uur).
+cron.schedule('0 1 * * *', cleanupOldArchives, {
+  timezone: "Europe/Amsterdam"
+});
+
+// ----- OVERIGE ROUTES -----
+
+// LISTING FORM: COIN LISTING
 app.post("/submit-coin-listing", (req, res) => {
   const listingData = req.body;
 
@@ -240,7 +319,7 @@ app.post("/submit-coin-listing", (req, res) => {
   });
 });
 
-// ----- LISTING FORM: EXCHANGE LISTING -----
+// LISTING FORM: EXCHANGE LISTING
 app.post("/submit-exchange-listing", (req, res) => {
   const listingData = req.body;
 
@@ -268,22 +347,20 @@ app.post("/submit-exchange-listing", (req, res) => {
   });
 });
 
+// Latest Tweet ophalen via Nitter (om rate limits te omzeilen)
 app.get("/latest-tweet", async (req, res) => {
-  const twitterUser = "cryptocom"; // Replace with the actual Twitter username
+  const twitterUser = "cryptocom"; // Vervang met de gewenste Twitter gebruikersnaam
   const tweetPageUrl = `https://nitter.net/${twitterUser}`;
 
   try {
-    // Scrape Nitter instead of Twitter (bypass rate limits)
     const response = await axios.get(tweetPageUrl);
     const html = response.data;
 
-    // Find the first tweet ID
+    // Zoek de eerste tweet ID
     const tweetIdMatch = html.match(/status\/(\d+)/);
     if (!tweetIdMatch) throw new Error("No tweet ID found");
 
     const tweetId = tweetIdMatch[1];
-
-    // Fetch the oEmbed HTML
     const oembedResponse = await axios.get(`https://publish.twitter.com/oembed?url=https://twitter.com/${twitterUser}/status/${tweetId}&maxwidth=500`);
     res.json(oembedResponse.data);
   } catch (error) {
@@ -292,7 +369,7 @@ app.get("/latest-tweet", async (req, res) => {
   }
 });
 
-// Contact Form Submission Route
+// Contact Form Submission
 app.post("/submit-contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -305,18 +382,17 @@ app.post("/submit-contact", async (req, res) => {
   console.log(`Subject: ${subject}`);
   console.log(`Message: ${message}`);
 
-  // Nodemailer configureren
   const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-          user: process.env.GMAIL_USER,  // Zorg ervoor dat dit in je .env-bestand staat
+          user: process.env.GMAIL_USER,
           pass: process.env.GMAIL_PASS
       }
   });
 
   const mailOptions = {
       from: email,
-      to: "nodalisn@gmail.com", // Vervang dit met jouw e-mailadres
+      to: "nodalisn@gmail.com",
       subject: `Contact Form Submission: ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
