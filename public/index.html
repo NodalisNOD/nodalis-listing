@@ -64,28 +64,31 @@
             </a>
         </div>
 
-<!-- Twitter Feed Container (Sentiment wordt hier getoond) -->
-<div id="twitter-feed">
+<!-- Sentiment -->
+<!-- Sentiment -->
+<div id="comVotes">
   <h3>Cronos Community Sentiment</h3>
+  <div class="tooltip-wrapper" style="display: inline-block; position: relative;">
+    <img src="./assets/about.png" alt="About" class="tooltip-icon">
+    <span class="tooltip-text">How do you feel about Cronos today?</span>
+  </div>
   <div class="sentiment-bar">
     <div id="positive-bar" class="positive-bar"></div>
     <div id="negative-bar" class="negative-bar"></div>
   </div>
+  <div id="total-votes"></div>
   <div id="reset-timer"></div>
   <div class="vote-buttons">
-    <button id="vote-positive">👍 Positive</button>
-    <button id="vote-negative">👎 Negative</button>
+    <button id="vote-positive"></button>
+    <button id="vote-negative"></button>
   </div>
 </div>
-
 
  <!-- Sentiment Bar -->
  <div id="sentiment-bar">
    <div id="positive-bar" class="positive-bar"></div>
    <div id="negative-bar" class="negative-bar"></div>
  </div>
- <!-- Reset Timer -->
- <div id="reset-timer"></div>
 
     </div>
       <!-- Stats: Market Cap and Dominance -->

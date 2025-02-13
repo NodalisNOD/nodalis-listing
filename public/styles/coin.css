@@ -25,7 +25,7 @@ main {
 }
 
 .coin-icon {
-  width: 50px; /* Reduced from 60px */
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -146,6 +146,17 @@ main {
   background-color: #f44336;
 }
 
+/* Additional elements for sentiment */
+.total-votes {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.reset-timer {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
 .vote-buttons {
   display: flex;
   justify-content: center;
@@ -153,7 +164,7 @@ main {
 }
 
 .vote-buttons img.vote-icon {
-  width: 28px; /* Reduced from 30px */
+  width: 28px;
   height: 28px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -204,7 +215,7 @@ main {
 
 /* Reduce Market Icons Size */
 .dex-icon {
-  width: 24px; /* Reduced from 16px */
+  width: 24px;
   height: 24px;
   object-fit: contain;
   display: block;
@@ -213,7 +224,7 @@ main {
 
 /* Reduce Other Icons (Contract Copy Icon, etc.) */
 .coin-details img.icon {
-  width: 16px; /* Reduced from 16px */
+  width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-left: 5px;

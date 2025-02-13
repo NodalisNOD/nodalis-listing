@@ -1,7 +1,8 @@
-// fetch the coin details
+// coin.js
+
+// Haal de coinId uit de URL-query parameters
 const params = new URLSearchParams(window.location.search);
 let coinId = params.get("id");
-
 if (coinId) {
   coinId = coinId.toLowerCase().replace(/\s+/g, "-");
 } else {
@@ -9,10 +10,12 @@ if (coinId) {
   window.location.href = "index.html";
 }
 
+// Globale variabelen voor de coin details
 let currentPage = 1;
 let marketData = [];
 let totalLiquidity = 0;
 
+// Dex icon mapping voor markten
 const dexIcons = {
   vvs: { icon: "./assets/vvs.jpg", name: "VVS Finance" },
   "vvs-v3": { icon: "./assets/vvs.jpg", name: "VVS Finance" },
@@ -21,7 +24,7 @@ const dexIcons = {
   crodex: { icon: "./assets/crodex.png", name: "Crodex" },
 };
 
-
+// Haal coin details op
 async function fetchCoinDetails() {
   try {
     const response = await fetch("/data/coin-data.json");
@@ -34,6 +37,7 @@ async function fetchCoinDetails() {
       return;
     }
 
+    // Vul de coin details in de pagina
     document.getElementById("coin-icon").src = coin.icon;
     document.getElementById("coin-name").textContent = coin.name;
     document.getElementById("coin-description").textContent = coin.description;
@@ -43,12 +47,14 @@ async function fetchCoinDetails() {
     contractElement.dataset.fullAddress = coin.contract;
 
     document.getElementById("copy-icon").addEventListener("click", (event) => {
-      const contractAddress = document.getElementById("coin-contract").dataset.fullAddress;
-      navigator.clipboard.writeText(contractAddress).then(() => {
-        showNotification("Contract address copied!", event);
-      }).catch(() => {
-        showNotification("Failed to copy address.", event);
-      });
+      const contractAddress = contractElement.dataset.fullAddress;
+      navigator.clipboard.writeText(contractAddress)
+        .then(() => {
+          showNotification("Contract address copied!", event);
+        })
+        .catch(() => {
+          showNotification("Failed to copy address.", event);
+        });
     });
 
     document.getElementById("coin-website").innerHTML = `
@@ -73,35 +79,36 @@ async function fetchCoinDetails() {
     `;
 
     await fetchDynamicData(coin.dynamicData);
-    fetchVotes();
+    fetchVotes(); // Haal de permanente coin sentiment votes op
   } catch (error) {
     console.error("Error loading coin details:", error);
   }
 }
 
+// Toon een notificatie (bijv. voor kopiëren of stemmen)
 function showNotification(message, event) {
   const popup = document.getElementById("notification-popup");
   popup.textContent = message;
-
   const xOffset = 20;
   const yOffset = 20;
   popup.style.left = `${event.pageX + xOffset}px`;
   popup.style.top = `${event.pageY + yOffset}px`;
-
   popup.classList.remove("hidden");
   popup.classList.add("visible");
-
   setTimeout(() => {
     popup.classList.remove("visible");
     popup.classList.add("hidden");
   }, 2000);
 }
 
+// Haal dynamische coin data (prijs, markten, grafiek, etc.) op
 async function fetchDynamicData(dynamicData) {
   try {
     const priceResponse = await fetch(dynamicData.priceApi);
     const priceData = await priceResponse.json();
-    const price = parseFloat(priceData.data.attributes.token_prices[Object.keys(priceData.data.attributes.token_prices)[0]]);
+    const price = parseFloat(priceData.data.attributes.token_prices[
+      Object.keys(priceData.data.attributes.token_prices)[0]
+    ]);
     document.getElementById("coin-price").textContent = `$${price.toFixed(10)}`;
 
     const marketResponse = await fetch(dynamicData.marketApi);
@@ -113,7 +120,6 @@ async function fetchDynamicData(dynamicData) {
 
     marketData.forEach((market) => {
       const attributes = market.attributes;
-
       if (!totalMarketCap) {
         if (attributes.market_cap_usd) {
           totalMarketCap = parseFloat(attributes.market_cap_usd);
@@ -125,7 +131,6 @@ async function fetchDynamicData(dynamicData) {
           totalMarketCap = reserveUsd / baseTokenPrice;
         }
       }
-
       totalVolume24h += parseFloat(attributes.volume_usd?.h24) || 0;
       totalLiquidity += parseFloat(attributes.reserve_in_usd) || 0;
     });
@@ -146,14 +151,10 @@ async function fetchDynamicData(dynamicData) {
 function renderMarkets(markets) {
   const marketsTable = document.getElementById("markets-table");
   marketsTable.innerHTML = "";
-
   markets.forEach((market) => {
     const attributes = market.attributes;
     const dex = market.relationships.dex.data.id;
-
-    // Haal icon en naam op uit dexIcons object
     const dexData = dexIcons[dex] || { icon: "./assets/default.png", name: dex };
-    
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>
@@ -168,49 +169,6 @@ function renderMarkets(markets) {
     marketsTable.appendChild(row);
   });
 }
-
-
-async function fetchVotes() {
-  try {
-    const response = await fetch(`/votes/${coinId}`);
-    const votes = await response.json();
-    updateSentimentBar(votes);
-  } catch (error) {
-    console.error("Error fetching votes:", error);
-  }
-}
-
-async function submitVote(type, event) {
-  try {
-    const response = await fetch(`/votes/${coinId}/${type}`, { method: "POST" });
-    if (response.status === 429) {
-      showNotification("You can only vote once every 24 hours.", event);
-      return;
-    }
-    const data = await response.json();
-    updateSentimentBar(data.votes);
-    showNotification("Your vote has been recorded.", event);
-  } catch (error) {
-    console.error("Error submitting vote:", error);
-    showNotification("Failed to submit vote.", event);
-  }
-}
-
-function updateSentimentBar(votes) {
-  const totalVotes = votes.positive + votes.negative;
-  if (totalVotes === 0) return;
-
-  const positivePercentage = ((votes.positive / totalVotes) * 100).toFixed(1);
-  const negativePercentage = ((votes.negative / totalVotes) * 100).toFixed(1);
-
-  document.getElementById("positive-bar").style.width = `${positivePercentage}%`;
-  document.getElementById("positive-bar").textContent = `${positivePercentage}%`;
-  document.getElementById("negative-bar").style.width = `${negativePercentage}%`;
-  document.getElementById("negative-bar").textContent = `${negativePercentage}%`;
-}
-
-document.getElementById("vote-positive").addEventListener("click", (event) => submitVote("positive", event));
-document.getElementById("vote-negative").addEventListener("click", (event) => submitVote("negative", event));
 
 function renderGraph(graphApi) {
   fetch(graphApi)
@@ -280,4 +238,111 @@ function renderGraph(graphApi) {
     .catch((error) => console.error("Error rendering graph:", error));
 }
 
-document.addEventListener("DOMContentLoaded", fetchCoinDetails);
+/* ===================== */
+/* Coin Sentiment Votes  */
+/* (Permanente votes per coin met dagelijkse beperking) */
+/* ===================== */
+
+// Helper: Berekent het aantal milliseconden tot de volgende UTC-middernacht
+function getTimeRemainingForCoinVote() {
+  const now = new Date();
+  const nextMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+  const diff = nextMidnight - now;
+  return diff > 0 ? diff : 0;
+}
+
+// Helper: Formatteer milliseconden naar HH:MM:SS
+function formatTime(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, "0");
+  const minutes = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, "0");
+  const seconds = (totalSeconds % 60).toString().padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+// Update de reset-timer voor coin votes (weergeven als "Reset in: HH:MM:SS")
+function updateCoinVoteTimer() {
+  const timerEl = document.getElementById("reset-timer");
+  if (!timerEl) return;
+  const remaining = getTimeRemainingForCoinVote();
+  timerEl.textContent = `Reset in: ${formatTime(remaining)}`;
+}
+
+// Controleer of de gebruiker voor deze coin al heeft gestemd (op basis van UTC-datum)
+function canVoteCoin() {
+  const lastVote = localStorage.getItem(`coin_vote_${coinId}`);
+  if (!lastVote) return true;
+  const lastVoteDate = new Date(lastVote);
+  const now = new Date();
+  return (
+    lastVoteDate.getUTCFullYear() !== now.getUTCFullYear() ||
+    lastVoteDate.getUTCMonth() !== now.getUTCMonth() ||
+    lastVoteDate.getUTCDate() !== now.getUTCDate()
+  );
+}
+
+// Haal de coin votes op (via endpoint /votes/:coinId) en update de sentimentbalk en "Votes:" display
+async function fetchVotes() {
+  try {
+    const response = await fetch(`/votes/${coinId}`);
+    const votes = await response.json();
+    updateSentimentBar(votes);
+  } catch (error) {
+    console.error("Error fetching coin votes:", error);
+  }
+}
+
+// Verstuur een stem voor de coin (alleen 1x per dag per coin)
+async function submitVote(type, event) {
+  if (!canVoteCoin()) {
+    showNotification("You have already voted today.", event);
+    return;
+  }
+  try {
+    const response = await fetch(`/votes/${coinId}/${type}`, { method: "POST" });
+    if (response.status === 429) {
+      showNotification("You can only vote once every 24 hours.", event);
+      return;
+    }
+    const data = await response.json();
+    updateSentimentBar(data.votes);
+    showNotification("Your vote has been recorded.", event);
+    // Sla de stemtijd op voor deze coin
+    localStorage.setItem(`coin_vote_${coinId}`, new Date().toISOString());
+  } catch (error) {
+    console.error("Error submitting coin vote:", error);
+    showNotification("Failed to submit vote.", event);
+  }
+}
+
+// Update de sentimentbalk en de "Votes:" display
+function updateSentimentBar(votes) {
+  const totalVotes = votes.positive + votes.negative;
+  const positivePercentage = totalVotes > 0 ? ((votes.positive / totalVotes) * 100).toFixed(1) : 0;
+  const negativePercentage = totalVotes > 0 ? ((votes.negative / totalVotes) * 100).toFixed(1) : 0;
+
+  const positiveBar = document.getElementById("positive-bar");
+  const negativeBar = document.getElementById("negative-bar");
+
+  positiveBar.style.width = `${positivePercentage}%`;
+  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}%` : "0%";
+  negativeBar.style.width = `${negativePercentage}%`;
+  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
+
+  // Update de total votes display (indien element met id "total-votes" aanwezig is)
+  const totalVotesEl = document.getElementById("total-votes");
+  if (totalVotesEl) {
+    totalVotesEl.textContent = `Votes: ${totalVotes}`;
+  }
+}
+
+// Koppel event listeners aan de vote-iconen voor de coin sentiment votes
+document.getElementById("vote-positive").addEventListener("click", (event) => submitVote("positive", event));
+document.getElementById("vote-negative").addEventListener("click", (event) => submitVote("negative", event));
+
+// Start: Haal coin details op wanneer de pagina geladen is
+document.addEventListener("DOMContentLoaded", () => {
+  fetchCoinDetails();
+  // Update de reset timer voor coin votes elke seconde
+  setInterval(updateCoinVoteTimer, 1000);
+});

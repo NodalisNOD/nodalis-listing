@@ -22,7 +22,7 @@
       <p id="coin-description">Loading...</p>
     </div>
 
-    <!-- Layout: Info naast Graph -->
+    <!-- Layout: Info en Graph naast elkaar -->
     <div class="layout-container">
       <!-- Info Kolom -->
       <div class="coin-info">
@@ -66,13 +66,14 @@
             <div id="positive-bar" class="positive" style="width: 0%;">0%</div>
             <div id="negative-bar" class="negative" style="width: 0%;">0%</div>
           </div>
+          <div id="total-votes" class="total-votes">Votes: 0</div>
+          <div id="reset-timer" class="reset-timer">Reset in: 00:00:00</div>
           <div class="vote-buttons">
             <img id="vote-positive" src="./assets/like.png" alt="Like" class="vote-icon">
             <img id="vote-negative" src="./assets/dislike.png" alt="Dislike" class="vote-icon">
           </div>
         </div>
       </div>
-      
       <!-- Graph Kolom -->
       <div class="chart-container">
         <h2>Price Graph (Last 24h)</h2>
@@ -80,7 +81,7 @@
       </div>
     </div>
 
-    <!-- Markets Sectie Onder de Layout -->
+    <!-- Markets Sectie -->
     <div class="coin-markets">
       <h2>Official Markets</h2>
       <div id="markets-container" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-top: 20px;">

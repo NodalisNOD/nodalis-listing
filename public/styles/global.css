@@ -334,88 +334,6 @@ table th {
   display: block;
 }
 
-/* Advertentie en Twitter Feed Wrapper */
-.ad-twitter-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* Afstand tussen advertentie en Twitter-feed */
-}
-/* Advertentie Container */
-.ad-container, #twitter-feed {
-  width: 300px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centreert de inhoud verticaal */
-  align-items: center; /* Centreert de inhoud horizontaal */
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  overflow: hidden; /* Voorkomt dat content buiten de container komt */
-}
-
-/* Zorg ervoor dat de sentiment-bar en knoppen zich aanpassen */
-.sentiment-bar {
-  display: flex;
-  height: 20px;
-  border-radius: 5px;
-  overflow: hidden;
-  background: #ccc;
-  width: 100%;
-  margin-bottom: 15px; /* 🔥 Voegt extra ruimte toe onder de balk */
-}
-
-.positive-bar {
-  background: green;
-  color: white;
-  text-align: center;
-  transition: width 0.5s;
-}
-
-.negative-bar {
-  background: red;
-  color: white;
-  text-align: center;
-  transition: width 0.5s;
-}
-
-.vote-buttons {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.vote-buttons {
-  display: flex;
-  gap: 15px; /* Ruimte tussen de knoppen */
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-/* ✅ Stijl voor de afbeelding-buttons */
-.vote-buttons img {
-  width: 50px; /* Pas de grootte aan indien nodig */
-  height: 50px;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-/* ✅ Hover-effect voor de afbeeldingen */
-.vote-buttons img:hover {
-  transform: scale(1.1); /* Licht vergroten bij hover */
-  opacity: 0.8; /* Transparantie effect */
-}
-
-/* ✅ Klik-effect */
-.vote-buttons img:active {
-  transform: scale(0.9); /* Kleinere schaal bij klikken */
-}
-
-
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 14px;
@@ -426,4 +344,104 @@ table th {
 .cookie-banner a {
   color: #fff;
   text-decoration: underline;
+}
+
+/* Advertentie Container (voorbeeld) */
+.ad-container {
+  width: 300px; /* Vaste breedte */
+  height: 200px; /* Vaste hoogte */
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 0 1rem; /* Ruimte tussen secties */
+  box-sizing: border-box;
+}
+
+/* Sentiment Container in een box (exact 300px breed, met extra spacing) */
+#comVotes {
+  width: 300px; /* Exact dezelfde breedte als .ad-container */
+  min-height: 200px; /* Of vaste hoogte, afhankelijk van je inhoud */
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px auto; /* Extra ruimte boven en onder; auto centreert horizontaal */
+  box-sizing: border-box;
+}
+
+/* Sentimentbalk */
+#comVotes .sentiment-bar {
+  display: flex;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Positieve balk */
+#comVotes .positive-bar {
+  background: green;
+  color: white;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+/* Negatieve balk */
+#comVotes .negative-bar {
+  background: red;
+  color: white;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+/* Totaal aantal stemmen (klein lettertype) */
+#comVotes #total-votes {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Reset timer (klein lettertype) */
+#comVotes #reset-timer {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Vote-knoppen container */
+#comVotes .vote-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Standaard styling voor de vote-knoppen */
+#comVotes .vote-buttons button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Styling voor de afbeeldingen in de vote-knoppen */
+#comVotes .vote-buttons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+
+#comVotes .vote-buttons img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+#comVotes .vote-buttons img:active {
+  transform: scale(0.9);
 }
