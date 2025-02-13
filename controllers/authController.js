@@ -30,7 +30,6 @@ function authenticateToken(req, res, next) {
   });
 }
 
-
 // ✅ Registratie
 function register(req, res) {
   const { username, email, password } = req.body;
