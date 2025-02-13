@@ -1,6 +1,6 @@
 import { fetchCoinData, coins } from "./altcoins.js";
 
-// Functie om de Newcomers-tabel te vullen
+// function to populate the Newcomers table
 async function populateNewcomersTable() {
   const newcomersTable = document.querySelector("#newcomers-table");
 
@@ -33,7 +33,7 @@ async function populateNewcomersTable() {
     .join("");
 }
 
-// Functie om de Top Gainers-tabel te vullen
+// function to populate the Top Gainers table
 async function populateTopGainersTable() {
   const topGainersTable = document.querySelector("#top-gainers-table");
 
@@ -68,7 +68,7 @@ async function populateTopGainersTable() {
     .join("");
 }
 
-// Vul de tabellen bij pagina-lading
+// fill the tables when the page loads
 document.addEventListener("DOMContentLoaded", () => {
   populateNewcomersTable();
   populateTopGainersTable();

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         coinForm.classList.add("hidden");
     });
 
-    // Voeg submit functionaliteit toe aan beide formulieren
+    // add event listener to each form
     document.querySelectorAll("form").forEach((form) => {
         form.addEventListener("submit", async (e) => {
             e.preventDefault();

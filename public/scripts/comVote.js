@@ -14,9 +14,16 @@ async function fetchVotes() {
 
 async function submitVote(type) {
   try {
-    const response = await fetch(`/votes/global/${type}`, { method: "POST" });
-    const data = await response.json();
+    const userId = localStorage.getItem("userId") || generateUserId();
+    const response = await fetch(`/votes/global/${type}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId }),
+    });
 
+    const data = await response.json();
     if (!response.ok) {
       throw new Error(data.message || "Vote failed");
     }
@@ -83,6 +90,12 @@ function displaySentiment() {
 
   document.getElementById("vote-positive").addEventListener("click", () => submitVote("positive"));
   document.getElementById("vote-negative").addEventListener("click", () => submitVote("negative"));
+}
+
+function generateUserId() {
+  const userId = `user_${Math.random().toString(36).substr(2, 9)}`;
+  localStorage.setItem("userId", userId);
+  return userId;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -57,7 +57,39 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// === ROUTES ===
+// ==== GLOBALE VARIABELEN VOOR VOTING ====
+// Globale sentiment votes
+let globalVotes = { positive: 0, negative: 0 };
+// Per-token votes (let zodat we later eventueel kunnen herschrijven)
+let tokenVotes = {};
+// Om individuele token-vote tijdstempels op te slaan
+let voteRecords = {};
+// Indien nodig voor andere vote-tijdstempels (bijvoorbeeld voor reset)
+let voteTimestamps = {};
+// Om globale votes op IP-basis bij te houden
+const globalUserVotes = new Map();
+
+const VOTE_EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 uur voor globale voting
+const TOKEN_VOTE_EXPIRATION = 24 * 60 * 60 * 1000; // 24 uur voor token voting
+
+// ==== FUNCTIE OM VOTES OP TE SLAAN ====
+function saveVoteRecords() {
+  try {
+    const data = {
+      globalVotes,
+      tokenVotes,
+      globalUserVotes: Object.fromEntries(globalUserVotes), // Converteer Map naar object
+      voteTimestamps
+    };
+    const voteRecordsFile = path.join(__dirname, "public", "data", "voteRecords.json");
+    fs.writeFileSync(voteRecordsFile, JSON.stringify(data, null, 2));
+    console.log("✅ Votes saved successfully!");
+  } catch (error) {
+    console.error("❌ Error saving votes:", error);
+  }
+}
+
+// ==== ROUTES ====
 
 // ----- AUTH ROUTES -----
 app.post("/auth/register", authController.register);
@@ -120,29 +152,22 @@ app.get("/api/coins", async (req, res) => {
 });
 
 // ----- GLOBAL SENTIMENT VOTING -----
-let globalVotes = { positive: 0, negative: 0 };
-let globalUserVotes = new Map(); // Houd bij welke gebruikers gestemd hebben
-const VOTE_EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 uur
-
-// Fetch global votes
-app.get("/votes/global", (req, res) => {
-  res.json(globalVotes);
-});
-
-// Process global vote (1 stem per 24 uur per gebruiker)
 app.post("/votes/global/:type", (req, res) => {
   const { type } = req.params;
   const userIp = req.ip;
+  const now = Date.now();
 
-  // Controleer of gebruiker al gestemd heeft binnen 24 uur
+  // Check of de gebruiker al gestemd heeft
   if (globalUserVotes.has(userIp)) {
     const lastVoteTime = globalUserVotes.get(userIp);
-    if (Date.now() - lastVoteTime < VOTE_EXPIRATION_TIME) {
-      return res.status(429).json({ message: "🚫 You already voted today. Try again tomorrow.", votes: globalVotes });
+    const timeSinceLastVote = now - lastVoteTime;
+    console.log(`🛠️ Last vote time: ${new Date(lastVoteTime).toISOString()} (Time since: ${timeSinceLastVote}ms)`);
+    if (timeSinceLastVote < VOTE_EXPIRATION_TIME) {
+      return res.status(429).json({ message: "🚫 You already voted today. Try again tomorrow." });
     }
   }
 
-  // Voeg de nieuwe stem toe
+  // Verwerk de stem als er nog niet gestemd is of als de tijdsperiode verstreken is
   if (type === "positive") {
     globalVotes.positive++;
   } else if (type === "negative") {
@@ -151,27 +176,31 @@ app.post("/votes/global/:type", (req, res) => {
     return res.status(400).json({ message: "Invalid vote type." });
   }
 
-  // Registreer stem en timestamp
-  globalUserVotes.set(userIp, Date.now());
+  // Sla de nieuwe stemtijd op
+  globalUserVotes.set(userIp, now);
+  console.log(`✅ Vote recorded for IP ${userIp}: ${type}`);
+
   res.json({ message: "✅ Your vote has been recorded.", votes: globalVotes });
 });
 
-// ----- PER COIN VOTING -----
-const tokenVotes = {};
-const voteTimestamps = {};
-const TOKEN_VOTE_EXPIRATION = 24 * 60 * 60 * 1000; // 24 uur
 
+// ----- PER COIN VOTING -----
 app.post("/votes/:tokenId/:type", (req, res) => {
   const { tokenId, type } = req.params;
   const userIp = req.ip;
-  const now = Date.now();
+  const userAgent = req.headers["user-agent"] || "unknown";
+  const uniqueId = `${userIp}-${userAgent}`;
+
+  if (!voteRecords[tokenId]) {
+    voteRecords[tokenId] = {};
+  }
+
+  if (voteRecords[tokenId][uniqueId] && Date.now() - voteRecords[tokenId][uniqueId] < TOKEN_VOTE_EXPIRATION) {
+    return res.status(429).json({ message: "🚫 You already voted for this token today. Try again tomorrow." });
+  }
 
   if (!tokenVotes[tokenId]) {
     tokenVotes[tokenId] = { positive: 0, negative: 0 };
-  }
-
-  if (voteTimestamps[userIp]?.[tokenId] && now - voteTimestamps[userIp][tokenId] < TOKEN_VOTE_EXPIRATION) {
-    return res.status(429).json({ message: "You can only vote once every 24 hours for this token." });
   }
 
   if (type === "positive") {
@@ -182,27 +211,23 @@ app.post("/votes/:tokenId/:type", (req, res) => {
     return res.status(400).json({ message: "Invalid vote type." });
   }
 
-  voteTimestamps[userIp] = { ...voteTimestamps[userIp], [tokenId]: now };
-  res.json({ message: "Vote recorded successfully.", votes: tokenVotes[tokenId] });
+  voteRecords[tokenId][uniqueId] = Date.now();
+  saveVoteRecords();
+
+  res.json({ message: "✅ Your vote has been recorded.", votes: tokenVotes[tokenId] });
 });
 
 app.get("/votes/:tokenId", (req, res) => {
   const { tokenId } = req.params;
-  if (!tokenVotes[tokenId]) {
-    return res.json({ positive: 0, negative: 0 });
-  }
-  res.json(tokenVotes[tokenId]);
+  res.json(tokenVotes[tokenId] || { positive: 0, negative: 0 });
 });
 
-// ----- ARCHIVERING & RESET VAN STEMMEN -----
-
-// Zorg dat de data-directory bestaat
+// ----- ARCHIVE VOTES -----
 const dataDir = path.join(__dirname, "public", "data");
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }
 
-// Archiveer de huidige stemdata in een JSON-bestand, zip deze en verwijder het originele JSON-bestand.
 function archiveVotes() {
   const now = new Date();
   const dateStr = now.toISOString().slice(0, 10); // Format: YYYY-MM-DD
@@ -219,21 +244,19 @@ function archiveVotes() {
     fs.writeFileSync(filePath, JSON.stringify(archiveData, null, 2));
     console.log(`Votes archived to ${filename}`);
 
-    // Zippen
     const zip = new AdmZip();
     zip.addLocalFile(filePath);
     const zipFilePath = filePath.replace('.json', '.zip');
     zip.writeZip(zipFilePath);
     console.log(`Votes zipped to ${path.basename(zipFilePath)}`);
 
-    // Verwijder het originele JSON-bestand
     fs.unlinkSync(filePath);
   } catch (error) {
     console.error("Error archiving votes:", error);
   }
 }
 
-// Reset de in-memory stemdata
+// Optioneel: functie om votes in het geheugen te resetten
 function resetVotes() {
   globalVotes = { positive: 0, negative: 0 };
   globalUserVotes.clear();
@@ -246,52 +269,19 @@ function resetVotes() {
   console.log("Votes have been reset.");
 }
 
-// Verwijder gezipte archieven ouder dan 3 dagen
-function cleanupOldArchives() {
-  fs.readdir(dataDir, (err, files) => {
-    if (err) {
-      console.error("Error reading data directory:", err);
-      return;
-    }
-    files.forEach(file => {
-      if (file.endsWith('.zip')) {
-        const filePath = path.join(dataDir, file);
-        fs.stat(filePath, (err, stats) => {
-          if (err) {
-            console.error("Error stating file:", filePath, err);
-            return;
-          }
-          const fileAge = Date.now() - stats.mtimeMs;
-          const threeDays = 3 * 24 * 60 * 60 * 1000;
-          if (fileAge > threeDays) {
-            fs.unlink(filePath, err => {
-              if (err) console.error("Error deleting file:", filePath, err);
-              else console.log("Deleted old archive:", file);
-            });
-          }
-        });
-      }
-    });
-  });
-}
-
-// Plan een cronjob die elke dag om middernacht (Europe/Amsterdam) de stemmen archiveert en reset.
-cron.schedule('0 0 * * *', () => {
-  console.log("Running daily archive and reset task");
+// Plan een cronjob om dagelijks votes te resetten en te archiveren
+cron.schedule("0 0 * * *", () => {
+  console.log("🔄 Resetting daily votes...");
+  globalVotes = { positive: 0, negative: 0 };
+  tokenVotes = {};
+  voteRecords = {};
+  saveVoteRecords();
   archiveVotes();
-  resetVotes();
 }, {
   timezone: "Europe/Amsterdam"
 });
 
-// Plan een cronjob die dagelijks de oude archieven opruimt (bijv. om 01:00 uur).
-cron.schedule('0 1 * * *', cleanupOldArchives, {
-  timezone: "Europe/Amsterdam"
-});
-
-// ----- OVERIGE ROUTES -----
-
-// LISTING FORM: COIN LISTING
+// ----- LISTING FORM: COIN LISTING -----
 app.post("/submit-coin-listing", (req, res) => {
   const listingData = req.body;
 
@@ -319,7 +309,7 @@ app.post("/submit-coin-listing", (req, res) => {
   });
 });
 
-// LISTING FORM: EXCHANGE LISTING
+// ----- LISTING FORM: EXCHANGE LISTING -----
 app.post("/submit-exchange-listing", (req, res) => {
   const listingData = req.body;
 
@@ -347,29 +337,7 @@ app.post("/submit-exchange-listing", (req, res) => {
   });
 });
 
-// Latest Tweet ophalen via Nitter (om rate limits te omzeilen)
-app.get("/latest-tweet", async (req, res) => {
-  const twitterUser = "cryptocom"; // Vervang met de gewenste Twitter gebruikersnaam
-  const tweetPageUrl = `https://nitter.net/${twitterUser}`;
-
-  try {
-    const response = await axios.get(tweetPageUrl);
-    const html = response.data;
-
-    // Zoek de eerste tweet ID
-    const tweetIdMatch = html.match(/status\/(\d+)/);
-    if (!tweetIdMatch) throw new Error("No tweet ID found");
-
-    const tweetId = tweetIdMatch[1];
-    const oembedResponse = await axios.get(`https://publish.twitter.com/oembed?url=https://twitter.com/${twitterUser}/status/${tweetId}&maxwidth=500`);
-    res.json(oembedResponse.data);
-  } catch (error) {
-    console.error("❌ Error fetching tweet:", error.message);
-    res.status(500).json({ error: "Failed to fetch latest tweet" });
-  }
-});
-
-// Contact Form Submission
+// ----- CONTACT FORM SUBMISSION -----
 app.post("/submit-contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -407,6 +375,6 @@ app.post("/submit-contact", async (req, res) => {
 });
 
 // === SERVER START ===
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server draait op http://0.0.0.0:${PORT}`);
 });
