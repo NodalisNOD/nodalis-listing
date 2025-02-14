@@ -3,7 +3,7 @@ import { coins, fetchCoinData } from "./altcoins.js";
 // variables to store cache
 let statsCache = null;
 let statsCacheTime = 0;
-const STATS_CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
+const STATS_CACHE_DURATION = 7 * 60 * 1000; // 7 minutes
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchMarketCapAndDominance();
@@ -15,7 +15,6 @@ async function fetchMarketCapAndDominance() {
   
   // if cache is valid, load from cache
   if (statsCache && now - statsCacheTime < STATS_CACHE_DURATION) {
-    console.log("✅ Dashboard stats vanuit cache laden");
     updateDOM(statsCache);
     return;
   }
