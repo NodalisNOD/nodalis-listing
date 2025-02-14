@@ -1,7 +1,41 @@
 [
   {
+    "id": "croginalcats-croginal",
+    "name": "Croginal Cats CROGINAL",
+    "icon": "./assets/coinIcons/croginal.jpg",
+    "contract": "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
+    "website": "https://www.croginalcats.xyz/",
+    "explorer": "https://cronoscan.com/token/0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
+    "twitter": "https://x.com/croginal",
+    "telegram": "https://t.me/croginalcats",
+    "discord": "https://discord.gg/croginalcats",
+    "whitepaper": "https://croginal-cats.gitbook.io/croginal-cats-whitepaper",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/@Croginal"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/croginal/"
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Croginal Cats is a community project born on the Cronos blockchain. We combine entertaining web2 content with the power of web3, all wrapped up in the form of cute pixilated cats. Check out our animated series, video game and physical products. Don't forget our NFT collections found on your favorite marketplaces (CDC/Ebisu's Bay/Minted).",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdf782b0c50750a153b9418e85bb88ac4639c173c/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021"
+    }
+  },
+  {
     "id": "papasmerf-papacro",
-    "name": "PapaSmerf PapaCro ",
+    "name": "PapaSmerf PapaCro",
     "icon": "./assets/coinIcons/papacro.jpg",
     "contract": "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
     "website": "https://www.papacro.com/",
@@ -28,9 +62,9 @@
     "description": "Passive income project.",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69%2C0x32555af6a86756291140f8d74e412dafa1351834",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8%2C0x32555af6a86756291140f8d74e412dafa1351834"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69"
     }
   },
   {

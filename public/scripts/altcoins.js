@@ -3,11 +3,18 @@
 // coins list
 export const coins = [
   {
+    name: "Croginal Cats CROGINAL",
+    contract: "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
+    icon: "./assets/coinIcons/croginal.jpg",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021",
+  },
+  {
     name: "PapaSmerf PapaCro",
     contract: "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
     icon: "./assets/coinIcons/papacro.jpg",
     apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8%2C0x32555af6a86756291140f8d74e412dafa1351834",
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69",
   },
   {
     name: "Fortune Favors The Bozos FFTB",
