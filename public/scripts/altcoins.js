@@ -3,6 +3,13 @@
 // coins list
 export const coins = [
   {
+    name: "FORTUNE FAVOURS THE BRAVE FFTTB",
+    contract: "0xd677944Df705924AF369d2FCcf4A989f343DbCDf",
+    icon: "./assets/fftb.jpg",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C",
+  },
+  {
     name: "Turtle TURTLE",
     contract: "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     icon: "./assets/turtle.webp",

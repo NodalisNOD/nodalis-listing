@@ -39,13 +39,14 @@ footer.innerHTML = `
   <ul>
     <li><a href="/donate.html">Cronos</a></li>
   </ul>
+<div>
   <h3>Legal</h3>
   <ul>
     <li><a href="/tos.html">Terms of Service</a></li>
     <li><a href="/pos.html">Privacy Policy</a></li>
+    <li><img src="./assets/ssl.png" alt="SSL" /></li>
   </ul>
 </div>
-
 
     <!-- Deel 5: Business -->
     <div class="footer-section">
@@ -63,4 +64,5 @@ footer.innerHTML = `
   </div>
 
   <p class="footer-bottom">&copy; 2025 Nodalis Platform. All rights reserved.</p>
+  
 `;

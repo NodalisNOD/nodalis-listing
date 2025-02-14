@@ -1,6 +1,6 @@
 import { fetchCoinData, coins } from "./altcoins.js";
 
-// function to populate the Newcomers table
+// Function to populate the Newcomers table
 async function populateNewcomersTable() {
   const newcomersTable = document.querySelector("#newcomers-table");
 
@@ -23,8 +23,10 @@ async function populateNewcomersTable() {
       <tr>
         <td>${index + 1}</td>
         <td>
-          <img src="${coin.icon}" alt="${coin.name} Logo" class="table-icon">
-          ${coin.name}
+          <a href="coin.html?id=${encodeURIComponent(coin.name)}" class="coin-link">
+            <img src="${coin.icon}" alt="${coin.name} Logo" class="table-icon">
+            ${coin.name}
+          </a>
         </td>
         <td>$${coin.price}</td>
       </tr>
@@ -33,7 +35,7 @@ async function populateNewcomersTable() {
     .join("");
 }
 
-// function to populate the Top Gainers table
+// Function to populate the Top Gainers table
 async function populateTopGainersTable() {
   const topGainersTable = document.querySelector("#top-gainers-table");
 
@@ -58,8 +60,10 @@ async function populateTopGainersTable() {
       <tr>
         <td>${index + 1}</td>
         <td>
-          <img src="${coin.icon}" alt="${coin.name} Logo" class="table-icon">
-          ${coin.name}
+          <a href="coin.html?id=${encodeURIComponent(coin.name)}" class="coin-link">
+            <img src="${coin.icon}" alt="${coin.name} Logo" class="table-icon">
+            ${coin.name}
+          </a>
         </td>
         <td class="${colorClass}">${change}%</td>
       </tr>
@@ -68,7 +72,7 @@ async function populateTopGainersTable() {
     .join("");
 }
 
-// fill the tables when the page loads
+// Fill the tables when the page loads
 document.addEventListener("DOMContentLoaded", () => {
   populateNewcomersTable();
   populateTopGainersTable();

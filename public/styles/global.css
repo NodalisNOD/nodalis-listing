@@ -1,3 +1,4 @@
+
 /* Algemene instellingen */
 body {
   margin: 0;
@@ -60,66 +61,43 @@ table th {
   margin-right: 0.5rem;
 }
 
-.main-crypto-table td:first-child, .main-crypto-table th:first-child {
-  text-align: center;
-}
-
+/* 🔹 Algemene Tabelstijl */
 .main-table-wrapper {
-  display: block; /* Zorg dat deze altijd een blokelement blijft */
-  margin-top: 20px; /* Ruimte tussen de tabellen en de all coins tabel */
+  display: block;
+  margin-top: 20px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
+  overflow-x: auto; /* Horizontaal scrollen voor mobiele weergave */
 }
-.crypto-table {
+
+/* 🔹 Zorg dat tabellen correct werken */
+.main-crypto-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 600px; /* Voorkomt dat de tabel op mobiel te klein wordt */
 }
 
-.crypto-table th, .crypto-table td {
+.main-crypto-table th, 
+.main-crypto-table td {
   border: 1px solid #ddd;
-  padding: 0.8rem;
+  padding: 0.5rem;
   text-align: left;
+  white-space: nowrap; /* Voorkomt dat cellen te veel regels krijgen */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.crypto-table th {
+/* 🔹 Kopteksten */
+.main-crypto-table th {
   background-color: #042c3f;
   color: white;
-}
-
-.crypto-table img {
-  height: 20px;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
-/* Specifieke stijl voor afbeeldingen in tabellen */
-.crypto-table td img,
-.main-crypto-table td img {
-  height: 24px !important; /* Stel een maximale hoogte in */
-  width: auto !important;  /* Houd de aspectverhouding */
-  max-width: 40px !important; /* Stel een maximale breedte in */
-  margin-right: 0.5rem; /* Ruimte tussen de afbeelding en tekst */
-  vertical-align: middle; /* Lijn afbeelding uit met tekst */
-}
-/* Prijskleuren */
-.positive-change {
-  color: #28a745;
-
-}
-.negative-change {
-  color: #dc3545;
-
-}
-.table-icon {
-  height: 24px; /* Stel een kleinere hoogte in */
-  width: auto; /* Houd de aspect ratio intact */
-  vertical-align: middle; /* Lijn de afbeelding uit met de tekst */
-  margin-right: 0.5rem; /* Voeg ruimte toe rechts van de afbeelding */
-}
-/* Stijlen voor sorteerbare kolomkoppen */
-.main-crypto-table th {
   cursor: pointer;
   position: relative;
   text-align: left;
@@ -127,14 +105,14 @@ table th {
 }
 
 .main-crypto-table th:hover {
-  background-color: #05a6c9; /* Lichtgrijze achtergrond bij hover */
-  color: #ffffff; /* Blauwe tekst bij hover */
+  background-color: #05a6c9;
+  color: #ffffff;
 }
 
-/* Pijlen voor sorteerbare kolommen */
+/* 🔹 Pijlen voor sorteren */
 .main-crypto-table th.sort-asc::after,
 .main-crypto-table th.sort-desc::after {
-  content: ''; /* Pijl toevoegen */
+  content: '';
   position: absolute;
   right: 5px;
   width: 0;
@@ -143,36 +121,105 @@ table th {
 }
 
 .main-crypto-table th.sort-asc::after {
-  border-width: 0 5px 5px 5px; /* Pijl naar boven */
+  border-width: 0 5px 5px 5px;
   border-color: transparent transparent #ffffff transparent;
 }
 
 .main-crypto-table th.sort-desc::after {
-  border-width: 5px 5px 0 5px; /* Pijl naar beneden */
+  border-width: 5px 5px 0 5px;
   border-color: #ffffff transparent transparent transparent;
 }
+
+/* 🔹 Stijl voor de eerste kolom (icon/naam) */
+.main-crypto-table td:first-child, 
+.main-crypto-table th:first-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 🔹 Afbeeldingen in de tabel */
+.crypto-table td img,
+.main-crypto-table td img {
+  height: 24px !important;
+  width: auto !important;
+  max-width: 40px !important;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* 🔹 Prijsveranderingen */
+.positive-change {
+  color: #28a745;
+}
+
+.negative-change {
+  color: #dc3545;
+}
+
+/* 🔹 Sorteerbare kolomkoppen */
+.table-icon {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* 🔹 Linkjes */
 .coin-link {
   text-decoration: none;
-  color: inherit; /* Zorg dat de kleur overeenkomt met de tekst */
+  color: inherit;
 }
 
 .coin-link:hover {
-  color: #1a664f; /* Geef een blauwe kleur bij hover */
+  color: #1a664f;
   text-decoration: underline;
 }
+
+/* 🔹 Zoekbalk */
 .search-container {
-  margin-bottom: 10px; /* Minder ruimte onder de zoekbalk */
+  margin-bottom: 10px;
   display: flex;
-  justify-content: flex-start; /* Plaatst de zoekbalk aan de links */
+  justify-content: flex-start;
 }
 
 #search-bar {
-  width: 20%; /* Smalle breedte */
-  padding: 8px; /* Compactere padding */
-  font-size: 14px; /* Kleiner lettertype */
-  border: 1px solid #ccc; /* Rand behouden */
-  border-radius: 4px; /* Kleinere ronding */
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
+/* 🔹 Mobiele optimalisatie */
+@media (max-width: 768px) {
+  .main-table-wrapper {
+    overflow-x: auto; /* Zorgt voor horizontaal scrollen */
+    display: block;
+    width: 100%;
+  }
+
+  .main-crypto-table {
+    width: 100%;
+    min-width: 600px; /* Zorgt ervoor dat de tabel niet te smal wordt */
+  }
+
+  /* 🔹 Verberg minder belangrijke kolommen op mobiel */
+  .main-crypto-table th:nth-child(4),
+  .main-crypto-table td:nth-child(4), /* Verberg bijv. "Market Cap" */
+  .main-crypto-table th:nth-child(5),
+  .main-crypto-table td:nth-child(5)  /* Verberg bijv. "24h Volume" */ {
+    display: none;
+  }
+
+  /* 🔹 Maak cellen compacter */
+  .main-crypto-table th,
+  .main-crypto-table td {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+}
+
 .tables-container {
   display: flex;
   justify-content: space-between;
@@ -359,32 +406,42 @@ table th {
   margin: 0 1rem; /* Ruimte tussen secties */
   box-sizing: border-box;
 }
+/* 🔹 Mobile-first media queries */
+@media (max-width: 768px) {
+  .tables-container {
+    flex-direction: column; /* Stapel tabellen onder elkaar op kleinere schermen */
+  }
 
-/* Sentiment Container in een box (exact 300px breed, met extra spacing) */
+  .table-wrapper, 
+  .stats-wrapper {
+    width: 100%; /* Laat tabellen en stats de volledige breedte innemen */
+  }
+
+  .stat-box {
+    min-width: 100%;
+  }
+}
+
+/* 🔹 Sentiment container (Mobile Friendly) */
 #comVotes {
-  width: 300px; /* Exact dezelfde breedte als .ad-container */
-  min-height: 200px; /* Of vaste hoogte, afhankelijk van je inhoud */
-  position: relative;
+  width: 300px;
+  min-height: 200px;
   text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin: 20px auto; /* Extra ruimte boven en onder; auto centreert horizontaal */
-  box-sizing: border-box;
+  margin: 20px auto;
 }
 
-/* Sentimentbalk */
 #comVotes .sentiment-bar {
   display: flex;
   height: 20px;
   border-radius: 5px;
-  overflow: hidden;
   background: #ccc;
   margin-bottom: 10px;
 }
 
-/* Positieve balk */
 #comVotes .positive-bar {
   background: green;
   color: white;
@@ -392,7 +449,6 @@ table th {
   transition: width 0.5s;
 }
 
-/* Negatieve balk */
 #comVotes .negative-bar {
   background: red;
   color: white;
@@ -400,19 +456,7 @@ table th {
   transition: width 0.5s;
 }
 
-/* Totaal aantal stemmen (klein lettertype) */
-#comVotes #total-votes {
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-/* Reset timer (klein lettertype) */
-#comVotes #reset-timer {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-/* Vote-knoppen container */
+/* 🔹 Vote-knoppen */
 #comVotes .vote-buttons {
   display: flex;
   gap: 15px;
@@ -420,22 +464,11 @@ table th {
   align-items: center;
 }
 
-/* Standaard styling voor de vote-knoppen */
-#comVotes .vote-buttons button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-/* Styling voor de afbeeldingen in de vote-knoppen */
 #comVotes .vote-buttons img {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
-
 
 #comVotes .vote-buttons img:hover {
   transform: scale(1.1);
@@ -444,4 +477,11 @@ table th {
 
 #comVotes .vote-buttons img:active {
   transform: scale(0.9);
+}
+
+/* 🔹 Kleine tweaks voor desktop */
+@media (min-width: 1024px) {
+  .tables-container {
+    flex-direction: row; /* Zet de tabellen naast elkaar op grote schermen */
+  }
 }

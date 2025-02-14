@@ -1,5 +1,23 @@
 [
   {
+    "id": "fortune-favours-thebrave-fftb",
+    "name": "FORTUNE FAVOURS THE BRAVE FFTTB",
+    "icon": "./assets/fftb.jpg",
+    "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
+    "website": "https://fftb.space//",
+    "explorer": "https://cronoscan.com/token/0xd677944Df705924AF369d2FCcf4A989f343DbCDf",
+    "twitter": "https://x.com/FFTB_Cronos",
+    "telegram": "https://t.me/FFTB_Cronos",
+    "discord": "https://discord.com/invite/7GR7aUZm3X",
+    "description": "Fortune Favors The Brave” is a community-driven token within the Cronos ecosystem.\nThe mission is to increase awareness of the Cronos Chain in the cryptospace. $FFTB encourages collaborations, educational content and a strong community that helps users understand Cronos better. It serves as a bridge between CryptoCom users and the Cronos Ecosystem, contributing to Cronos growth and success. #FFTB🚀",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd677944df705924af369d2fccf4a989f343dbcdf",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C"
+    }
+  },
+  {
     "id": "turtle-turtle",
     "name": "Turtle TURTLE",
     "icon": "./assets/turtle.webp",
@@ -12,7 +30,7 @@
     "description": "Turtle on Cronos is a memecoin that is driven by the community. Our focuses are onboarding, spreading awareness, and welcoming people to the cronos blockchain through memes, good vibes, and safe trading.",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8c9e2bef2962ce302ef578113eebec62920b7e57",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb%2C0x6da125da08484b4c5cd755142205531ceb2d9a95%2C0x4b6d58436e37a941d065ba337c01b49821aad902%2C0xc1233acbd36f4ef022ef7e6292031283877c3305%2C0xc8fcfc922338d94d601758acf05e0372155c39f1%2C0x9642b3000b3a75a0037a0cb2293ab9f92049c999%2C0x890fc1a70111ef1539d1d3223f44a2d2b561c439",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xea8f22344dd9269b030381f676432270a22a5837/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb"
     }

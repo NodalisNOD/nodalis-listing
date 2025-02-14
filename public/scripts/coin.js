@@ -22,6 +22,7 @@ const dexIcons = {
   mm_finance: { icon: "./assets/mmf.jpg", name: "MM Finance" },
   "ebisus-bay": { icon: "./assets/ebisus.png", name: "Ebisus Bay" },
   crodex: { icon: "./assets/crodex.png", name: "Crodex" },
+  cronaswap: { icon: "./assets/crona.jpg", name: "CronaSwap" },
 };
 
 // Haal coin details op
@@ -29,7 +30,11 @@ async function fetchCoinDetails() {
   try {
     const response = await fetch("/data/coin-data.json");
     const coins = await response.json();
-    const coin = coins.find((c) => c.id === coinId);
+
+    const coin = coins.find((c) =>
+      c.id === coinId ||
+      c.name.toLowerCase().replace(/\s+/g, "") === coinId.replace(/-/g, "")
+    );
 
     if (!coin) {
       alert("Coin not found!");

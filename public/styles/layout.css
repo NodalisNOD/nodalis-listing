@@ -1,3 +1,4 @@
+
 /* Header Styling */
 header {
   background-color: #042c3f; /* Donkerdere tint groen voor een professionelere uitstraling */
@@ -59,6 +60,55 @@ header .nav-list li a:hover {
   background-color: #05a6c9; /* Donkerdere hover-kleur */
   color: #e1f4e8; /* Lichtere tekstkleur bij hover */
 }
+/* 🔹 Mobiele navigatie */
+.menu-toggle {
+  display: none; /* Alleen tonen op mobiel */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block; /* Toon hamburger-menu */
+  }
+
+  header nav {
+    display: none; /* Verberg navigatie standaard */
+    flex-direction: column;
+    width: 100%;
+    background: #042c3f;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  header nav.active {
+    display: flex; /* Toon het menu wanneer actief */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+}
 
 /* Info Header Styling */
 .info-header {
@@ -84,7 +134,14 @@ header .nav-list li a:hover {
   font-size: 1.1rem; /* Grotere tekst voor belangrijke info */
   font-weight: bold;
 }
-
+/* 🔹 Responsieve Info Header */
+@media (max-width: 768px) {
+  .info-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 /* Footer Styling */
 footer {
   background-color: #1e2328; /* Donkere achtergrond voor een premium uitstraling */
@@ -199,3 +256,14 @@ footer {
   vertical-align: middle; /* Zorg dat de afbeelding netjes uitlijnt met de tekst */
 }
 
+/* 🔹 Responsieve Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo-text {
+    justify-content: center;
+  }
+}

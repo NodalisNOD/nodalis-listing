@@ -27,7 +27,7 @@ header.innerHTML = `
                 Advertise
               </a>
             </li>
-                        <li>
+            <li>
               <a href="listForm.html">
                 <img src="./assets/check.png" alt="Get listed" class="dropdown-icon">
                 Get listed
@@ -35,6 +35,26 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
+
+        <!-- Extra uitklapbaar "Crypto.com" menu -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Crypto.com</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://crypto.com/eea" target="_blank">
+                <img src="./assets/crypto.png" alt="Crypto.com" class="dropdown-icon">
+                Crypto.com
+              </a>
+            </li>
+            <li>
+              <a href="https://crypto.com/exchange/" target="_blank">
+                <img src="./assets/crypto.png" alt="Crypto.com Exchange" class="dropdown-icon">
+                Crypto.com Exchange
+              </a>
+            </li>
+          </ul>
+        </li>
+
       </ul>
     </nav>
   </div>
