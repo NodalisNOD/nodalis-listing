@@ -144,42 +144,37 @@ header .nav-list li a:hover {
 }
 /* Footer Styling */
 footer {
-  background-color: #1e2328; /* Donkere achtergrond voor een premium uitstraling */
-  color: #dcdcdc; /* Zachtere tekstkleur voor contrast */
-  padding: 3rem 1rem; /* Extra padding voor meer balans */
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-/* Footer Styling */
-footer {
-  background-color: #1e2328; /* Donkere achtergrond */
-  color: #dcdcdc; /* Zachte tekstkleur */
+  background: linear-gradient(135deg, #1e2328, #272c33); /* subtiele gradient */
+  color: #dcdcdc;
   padding: 3rem 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
+/* Footer Container */
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto; /* Centreer de hele footer */
+  width: 100%;              /* Laat de container de volle breedte innemen */
+  margin: 0;                /* Geen automatische marges */
   display: flex;
-  flex-wrap: wrap; /* Responsieve layout */
-  justify-content: space-between; /* Verdeel de ruimte tussen secties */
-  gap: 2rem; /* Ruimte tussen secties */
+  flex-wrap: wrap;          /* Responsieve layout */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;          /* Indien gewenst: padding voor wat extra ruimte */
 }
 
 /* Secties (Tekst met logo, categorieën) */
 .footer-section {
   flex: 1;
-  min-width: 220px; /* Minimum breedte voor secties */
+  min-width: 220px;
 }
 
 .footer-section h3 {
   color: #ffffff;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #05a6c9; /* Groene lijn onder titels */
+  border-bottom: 2px solid #05a6c9;
   padding-bottom: 0.5rem;
 }
 
@@ -201,7 +196,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #ffffff;
+  color: #05a6c9;
   text-decoration: underline;
 }
 
@@ -209,12 +204,12 @@ footer {
 .footer-logo-text {
   display: flex;
   align-items: center;
-  gap: 15px; /* Ruimte tussen logo en tekst */
+  gap: 15px;
 }
 
 .footer-logo {
-  width: 80px; /* Breedte van het logo */
-  height: auto; /* Houd de verhoudingen intact */
+  width: 80px;
+  height: auto;
 }
 
 .footer-section p {
@@ -226,18 +221,19 @@ footer {
 
 /* Disclaimer */
 .footer-disclaimer {
-  max-width: 1200px;
-  margin: 2rem auto 0; /* Centreer de disclaimer onder de secties */
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0 0;
   padding-top: 1.5rem;
-  border-top: 1px solid #333; /* Scheiding boven de disclaimer */
+  border-top: 1px solid #333;
   font-size: 0.85rem;
   color: #a9a9a9;
   line-height: 1.5;
-  text-align: center; /* Centreer de tekst */
+  text-align: center;
 }
 
 .footer-disclaimer strong {
-  color: #ff6f61; /* Accentkleur voor de disclaimer titel */
+  color: #ff6f61;
 }
 
 /* Footer Onderschrift */
@@ -250,20 +246,83 @@ footer {
 
 /* Cronos Logo Styling */
 .cronos-logo {
-  height: 20px; /* Stel een vaste hoogte in */
-  width: auto; /* Houd de verhouding intact */
-  margin-right: 0.5rem; /* Voeg wat ruimte toe rechts van de afbeelding */
-  vertical-align: middle; /* Zorg dat de afbeelding netjes uitlijnt met de tekst */
+  height: 20px;
+  width: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
-/* 🔹 Responsieve Footer */
+/* Responsieve Footer */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
-
   .footer-logo-text {
     justify-content: center;
   }
+}
+/* Cookie Consent Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  z-index: 10000;
+  max-width: 90%;
+  color: #333;
+}
+
+.cookie-banner span {
+  flex: 1 1 300px;
+  line-height: 1.4;
+}
+
+.cookie-banner a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cookie-banner a:hover {
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Accept Button */
+.cookie-banner button#acceptCookies {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.cookie-banner button#acceptCookies:hover {
+  background-color: #0056b3;
+}
+
+/* Decline Button */
+.cookie-banner button#declineCookies {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cookie-banner button#declineCookies:hover {
+  background-color: #bdbdbd;
 }

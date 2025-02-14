@@ -57,7 +57,7 @@ async function updateInfoHeader() {
         <strong>$${infoData.totalVolume24h.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>
       </div>
       <div class="info-item" id="cronos-price">
-        <img src="./assets/cro.png" alt="Cronos Logo" class="cronos-logo">
+        <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" class="cronos-logo">
         <strong>${infoData.cronosPrice ? `$${infoData.cronosPrice.toFixed(6)}` : "N/A"}</strong>
       </div>
     `;

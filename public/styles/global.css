@@ -485,3 +485,14 @@ table th {
     flex-direction: row; /* Zet de tabellen naast elkaar op grote schermen */
   }
 }
+
+.table-footer-logo {
+  text-align: right;   /* Plaats het logo rechts in de container */
+  margin-top: 10px;     /* Ruimte boven het logo */
+  opacity: 0.9;         /* Pas de transparantie aan naar wens */
+}
+
+.table-footer-logo img {
+  width: 250px;          /* Stel de gewenste breedte in */
+  height: auto;
+}

@@ -3,6 +3,13 @@
 // coins list
 export const coins = [
   {
+    name: "PapaSmerf PapaCro",
+    contract: "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
+    icon: "./assets/coinIcons/papacro.jpg",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8%2C0x32555af6a86756291140f8d74e412dafa1351834",
+  },
+  {
     name: "Fortune Favors The Bozos FFTB",
     contract: "0x8eBB879557Db19D36E69b53B99f0ab938a703BEF",
     icon: "./assets/coinIcons/bozos.jpg",

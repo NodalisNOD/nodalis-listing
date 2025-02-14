@@ -1,5 +1,39 @@
 [
   {
+    "id": "papasmerf-papacro",
+    "name": "PapaSmerf PapaCro ",
+    "icon": "./assets/coinIcons/papacro.jpg",
+    "contract": "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
+    "website": "https://www.papacro.com/",
+    "explorer": "https://cronoscan.com/token/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
+    "twitter": "https://x.com/PAPACRO_?t=Rq4ax7-rN7REEA4itN_4Nw&s=09",
+    "telegram": "https://t.me/+vBPd0xIa1ZNlZmQ0",
+    "discord": "https://discord.com/invite/udKdZRTw8V",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Passive income project.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69%2C0x32555af6a86756291140f8d74e412dafa1351834",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8%2C0x32555af6a86756291140f8d74e412dafa1351834"
+    }
+  },
+  {
     "id": "fortune-favours-the-bozos-fftb",
     "name": "Fortune Favors The Bozos FFTB",
     "icon": "./assets/coinIcons/bozos.jpg",
