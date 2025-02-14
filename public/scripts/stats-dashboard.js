@@ -71,7 +71,7 @@ function updateDOM(statsData) {
     maximumFractionDigits: 2,
   })}`;
   document.getElementById("dominance").innerHTML = `
-    <img src="./assets/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
+    <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
     ${statsData.dominance}%
   `;
 }

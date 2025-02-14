@@ -1,14 +1,64 @@
 [
   {
+    "id": "fortune-favours-the-bozos-fftb",
+    "name": "Fortune Favors The Bozos FFTB",
+    "icon": "./assets/coinIcons/bozos.jpg",
+    "contract": "0x8eBB879557Db19D36E69b53B99f0ab938a703BEF",
+    "website": "https://the-bozos.netlify.app/",
+    "explorer": "https://cronoscan.com/address/0x8eBB879557Db19D36E69b53B99f0ab938a703BEF",
+    "twitter": "https://twitter.com/fftbcro",
+    "telegram": "https://t.me/KitCoinKitty",
+    "discord": "https://discord.gg/VjuDbsB7kw",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Fortune Favors The Bozos\" (FFTB) is a community-driven cryptocurrency project operating within the Cronos ecosystem. Its primary mission is to enhance awareness of the Cronos Chain in the broader cryptocurrency space. \nThe native token, $FTTB, is an ERC-20 token with a total supply of 420 million. It can be used to list or buy NFTs on Ebisu's Bay marketplace. \nFFTB tokens can be traded on decentralized exchanges, where the most active trading pair is FFTB/WCRO. The project also has a NFT collection with a limited supply of 600 called The Bozo NFTs. Mint is still live!!! ",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8ebb879557db19d36e69b53b99f0ab938a703bef",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x40d2483fda3a736b292801366d80cd7ca186ac9b%2C0xc29c75cb2249583698183e070f233ac01fb1e371%2C0xed85721c972d7a1ecbcc154972dc577150124db7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xed85721c972d7a1ecbcc154972dc577150124db7/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x40d2483fda3a736b292801366d80cd7ca186ac9b%2C0xc29c75cb2249583698183e070f233ac01fb1e371%2C0xed85721c972d7a1ecbcc154972dc577150124db7"
+    }
+  },
+  {
     "id": "kitcoin-kitty",
     "name": "Kitcoin KITTY",
-    "icon": "./assets/kitty.png",
+    "icon": "./assets/coinIcons/kitty.png",
     "contract": "0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61",
     "website": "https://www.kitcoin.io/",
     "explorer": "https://cronoscan.com/token/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61",
     "twitter": "https://x.com/KitCoinX",
     "telegram": "https://t.me/KitCoinKitty",
     "discord": "https://discord.com/invite/J6vRjXX6GU",
+    "whitepaper": "https://kitcoin.gitbook.io/whitepaper",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "NFT Mint",
+        "url": "https://app.ebisusbay.com/drops/kitcoin-kitty-cats"
+      },
+      {
+        "name": "NFT Staking",
+        "url": "https://robincronos.com/nft-staking/15"
+      },
+      {
+        "name": "$KITTY Staking",
+        "url": "https://obsidian.finance/pools"
+      }
+    ],
     "description": "KitCoin is the name, $KITTY is the ticker!\n$KITTY has No Buy Tax or Sell Tax, LP Burnt, Ownership Renounced & 20% of total supply burnt.\nKitCoin offers an NFT collection which is LIVE on Ebisu's Bay, with 18 partner project traits with rewards & 15 Legends.\nKitCoin provides NFT & $KITTY staking & are currently developing a gaming DAPP #CroVegas",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61",
@@ -20,7 +70,7 @@
   {
     "id": "reaper-squad-reaper",
     "name": "Reaper's Squad REAPER",
-    "icon": "./assets/reaper.png",
+    "icon": "./assets/coinIcons/reaper.png",
     "contract": "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
     "website": "https://reapers-squad.netlify.app",
     "explorer": "https://cronoscan.com/token/0x73712A912AE5e39634046F4409Ef57eac34E96BA",
@@ -38,13 +88,29 @@
   {
     "id": "fortune-favours-thebrave-fftb",
     "name": "FORTUNE FAVOURS THE BRAVE FFTB",
-    "icon": "./assets/fftb.jpg",
+    "icon": "./assets/coinIcons/fftb.png",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://fftb.space//",
     "explorer": "https://cronoscan.com/token/0xd677944Df705924AF369d2FCcf4A989f343DbCDf",
     "twitter": "https://x.com/FFTB_Cronos",
     "telegram": "https://t.me/FFTB_Cronos",
     "discord": "https://discord.com/invite/7GR7aUZm3X",
+    "whitepaper": "https://fftb.space/roadmap",
+    "threads": "/",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
     "description": "Fortune Favors The Brave” is a community-driven token within the Cronos ecosystem.\nThe mission is to increase awareness of the Cronos Chain in the cryptospace. $FFTB encourages collaborations, educational content and a strong community that helps users understand Cronos better. It serves as a bridge between CryptoCom users and the Cronos Ecosystem, contributing to Cronos growth and success. #FFTB🚀",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd677944df705924af369d2fccf4a989f343dbcdf",
@@ -56,7 +122,7 @@
   {
     "id": "turtle-turtle",
     "name": "Turtle TURTLE",
-    "icon": "./assets/turtle.webp",
+    "icon": "./assets/coinIcons/turtle.webp",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://turtleoncro.com/",
     "explorer": "https://cronoscan.com/token/0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
@@ -74,7 +140,7 @@
   {
     "id": "corgiai-corgiai",
     "name": "CorgiAI CORGIAI",
-    "icon": "./assets/corgiai.png",
+    "icon": "./assets/coinIcons/corgiai.png",
     "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
     "website": "https://corgiai.xyz",
     "explorer": "https://cronoscan.com/address/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
@@ -92,7 +158,7 @@
   {
     "id": "crow-with-knife-caw",
     "name": "Crow With Knife CAW",
-    "icon": "./assets/caw.png",
+    "icon": "./assets/coinIcons/caw.png",
     "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
     "website": "https://www.crowwithknife.com",
     "explorer": "https://cronoscan.com/address/0xccccccccdbec186dc426f8b5628af94737df0e60",
@@ -110,7 +176,7 @@
     {
       "id": "vvs-finance",
       "name": "VVS Finance",
-      "icon": "./assets/vvs.jpg",
+      "icon": "./assets/coinIcons/vvs.jpg",
       "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
       "website": "https://vvs.finance",
       "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
@@ -129,7 +195,7 @@
     {
       "id": "moonflow-moon",
       "name": "Moonflow",
-      "icon": "./assets/moon.png",
+      "icon": "./assets/coinIcons/moon.png",
       "contract": "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
       "website": "https://wolfswap.app/swap",
       "explorer": "https://cronoscan.com/address/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
@@ -147,7 +213,7 @@
     {
       "id": "mad-meerkat-finance",
       "name": "Mad Meerkat Finance",
-      "icon": "./assets/mmf.jpg",
+      "icon": "./assets/coinIcons/mmf.jpg",
       "contract": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
       "website": "https://mm.finance",
       "explorer": "https://cronoscan.com/address/0x97749c9b61f878a880dfe312d2594ae07aed7656",
@@ -165,7 +231,7 @@
     {
       "id": "croakey-croak",
       "name": "Croakey",
-      "icon": "./assets/croak.webp",
+      "icon": "./assets/coinIcons/croak.webp",
       "contract": "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
       "website": "https://croakey.io",
       "explorer": "https://cronoscan.com/address/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
@@ -183,7 +249,7 @@
     {
       "id": "crodex-token-crx",
       "name": "Crodex",
-      "icon": "./assets/crx.png",
+      "icon": "./assets/coinIcons/crx.png",
       "contract": "0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
       "website": "https://swap.crodex.app/#/swap",
       "explorer": "https://cronoscan.com/address/0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
@@ -201,7 +267,7 @@
     {
       "id": "mistery-mery",
       "name": "Mistery MERY",
-      "icon": "./assets/mistery.png",
+      "icon": "./assets/coinIcons/mistery.png",
       "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
       "website": "https://vvs.finance",
       "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",

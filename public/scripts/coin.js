@@ -17,12 +17,12 @@ let totalLiquidity = 0;
 
 // Dex icon mapping voor markten
 const dexIcons = {
-  vvs: { icon: "./assets/vvs.jpg", name: "VVS Finance" },
-  "vvs-v3": { icon: "./assets/vvs.jpg", name: "VVS Finance" },
-  mm_finance: { icon: "./assets/mmf.jpg", name: "MM Finance" },
-  "ebisus-bay": { icon: "./assets/ebisus.png", name: "Ebisus Bay" },
-  crodex: { icon: "./assets/crodex.png", name: "Crodex" },
-  cronaswap: { icon: "./assets/crona.jpg", name: "CronaSwap" },
+  vvs: { icon: "./assets/coinIcons/vvs.jpg", name: "VVS Finance" },
+  "vvs-v3": { icon: "./assets/coinIcons/vvs.jpg", name: "VVS Finance" },
+  mm_finance: { icon: "./assets/coinIcons/mmf.jpg", name: "MM Finance" },
+  "ebisus-bay": { icon: "./assets/coinIcons/ebisus.png", name: "Ebisus Bay" },
+  crodex: { icon: "./assets/coinIcons/crodex.png", name: "Crodex" },
+  cronaswap: { icon: "./assets/coinIcons/crona.jpg", name: "CronaSwap" },
 };
 
 // Haal coin details op
@@ -47,6 +47,7 @@ async function fetchCoinDetails() {
     document.getElementById("coin-name").textContent = coin.name;
     document.getElementById("coin-description").textContent = coin.description;
 
+    // Contract: toon een afgekorte versie en koppel copy-functionaliteit
     const contractElement = document.getElementById("coin-contract");
     contractElement.textContent = `${coin.contract.slice(0, 7)}...${coin.contract.slice(-5)}`;
     contractElement.dataset.fullAddress = coin.contract;
@@ -62,26 +63,60 @@ async function fetchCoinDetails() {
         });
     });
 
+    // Vul de standaard links in
     document.getElementById("coin-website").innerHTML = `
-      <img src="./assets/domain.png" alt="Website Icon" class="icon">
+      <img src="./assets/UI/domain.png" alt="Website Icon" class="icon">
       <a href="${coin.website}" target="_blank">${coin.website}</a>
     `;
     document.getElementById("coin-explorer").innerHTML = `
-      <img src="./assets/magnifier.png" alt="Explorer Icon" class="icon">
+      <img src="./assets/UI/magnifier.png" alt="Explorer Icon" class="icon">
       <a href="${coin.explorer}" target="_blank">Cronoscan</a>
     `;
     document.getElementById("coin-twitter").innerHTML = `
-      <img src="./assets/twitter.png" alt="Twitter Icon" class="icon">
+      <img src="./assets/UI/twitter.png" alt="Twitter Icon" class="icon">
       <a href="${coin.twitter}" target="_blank">Twitter</a>
     `;
     document.getElementById("coin-telegram").innerHTML = `
-      <img src="./assets/telegram.png" alt="Telegram Icon" class="icon">
+      <img src="./assets/UI/telegram.png" alt="Telegram Icon" class="icon">
       <a href="${coin.telegram}" target="_blank">Telegram</a>
     `;
     document.getElementById("coin-discord").innerHTML = `
-      <img src="./assets/discord.png" alt="Discord Icon" class="icon">
+      <img src="./assets/UI/discord.png" alt="Discord Icon" class="icon">
       <a href="${coin.discord}" target="_blank">Discord</a>
     `;
+
+// Nieuwe links: Whitepaper en Threads
+if (coin.whitepaper) {
+  document.getElementById("coin-whitepaper").innerHTML = `
+    <img src="./assets/UI/whitepaper.png" alt="Whitepaper Icon" class="icon">
+    <a href="${coin.whitepaper}" target="_blank">Whitepaper</a>
+  `;
+} else {
+  document.getElementById("coin-whitepaper").innerHTML = "";
+}
+
+if (coin.threads) {
+  document.getElementById("coin-threads").innerHTML = `
+    <img src="./assets/UI/threads.png" alt="Threads Icon" class="icon">
+    &nbsp;<a href="${coin.threads}" target="_blank">Threads</a>
+  `;
+} else {
+  document.getElementById("coin-threads").innerHTML = "";
+}
+
+    // Extra links (maximaal 3) tonen als ze ingevuld zijn
+    if (coin.extraLinks && coin.extraLinks.length > 0) {
+      let extraLinksHTML = `<h3><img src="./assets/UI/link.png" alt="Link Icon" class="icon"> Additional Links</h3><ul>`;
+      coin.extraLinks.forEach(link => {
+        if (link.url && link.name) {
+          extraLinksHTML += `<li><a href="${link.url}" target="_blank">${link.name}</a></li>`;
+        }
+      });
+      extraLinksHTML += `</ul>`;
+      document.getElementById("coin-extra-links").innerHTML = extraLinksHTML;
+    } else {
+      document.getElementById("coin-extra-links").innerHTML = "";
+    }
 
     await fetchDynamicData(coin.dynamicData);
     fetchVotes(); // Haal de permanente coin sentiment votes op

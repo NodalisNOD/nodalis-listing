@@ -9,7 +9,7 @@ body {
 
 /* 🔹 Main Container */
 main {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 20px auto;
   background-color: #fff;
   border: 1px solid #eee;
@@ -69,11 +69,10 @@ main {
   padding: 1.5rem;
   box-sizing: border-box;
 }
-
 /* Grafiek grootte */
 .chart-container canvas {
   width: 100% !important;
-  height: 400px !important;
+  height: 520px !important;
   max-width: 100%;
   display: block;
 }
@@ -214,12 +213,28 @@ main {
   margin: 0 auto;
 }
 
-.coin-details img.icon {
+
+img.icon {
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-left: 5px;
 }
+/* Zorg dat alle links dezelfde stijl hebben */
+.coin-details a,
+.dynamic-data a,
+#coin-extra-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.coin-details a:hover,
+.dynamic-data a:hover,
+#coin-extra-links a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* 🔹 Notificatie Popup */
 .notification-popup {

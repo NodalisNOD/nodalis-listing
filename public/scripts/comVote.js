@@ -105,19 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error('Error sending vote:', error));
   }
 
-  // Vervang de inhoud van de stemknoppen met de gewenste afbeeldingen (zonder inline CSS)
-  const positiveBtn = document.getElementById('vote-positive');
-  positiveBtn.innerHTML = '<img src="./assets/like.png" alt="Positive Vote">';
-  const negativeBtn = document.getElementById('vote-negative');
-  negativeBtn.innerHTML = '<img src="./assets/dislike.png" alt="Negative Vote">';
 
-  // Voeg event listeners toe aan de stemknoppen
+  const positiveBtn = document.getElementById('vote-positive');
+  positiveBtn.innerHTML = '<img src="./assets/UI/like.png" alt="Positive Vote">';
+  const negativeBtn = document.getElementById('vote-negative');
+  negativeBtn.innerHTML = '<img src="./assets/UI/dislike.png" alt="Negative Vote">';
+
+
   positiveBtn.addEventListener('click', () => {
     if (canVote()) {
       sendVote('positive');
       updateVoteButtons();
     } else {
-      alert('Je hebt vandaag al gestemd.');
+      alert('You already voted today.');
     }
   });
 
@@ -126,14 +126,14 @@ document.addEventListener('DOMContentLoaded', () => {
       sendVote('negative');
       updateVoteButtons();
     } else {
-      alert('Je hebt vandaag al gestemd.');
+      alert('You already voted today.');
     }
   });
 
-  // Initialiseer de UI
+  
   updateVotes();
   updateVoteButtons();
   updateResetTimer();
-  // Werk de afteller elke seconde bij
+
   setInterval(updateResetTimer, 1000);
 });
