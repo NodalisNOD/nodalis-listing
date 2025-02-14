@@ -3,6 +3,13 @@
 // coins list
 export const coins = [
   {
+    name: "Kitcoin KITTY",
+    contract: "0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61",
+    icon: "./assets/kitty.png",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C",
+  },
+  {
     name: "Reaper's Squad REAPER",
     contract: "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
     icon: "./assets/reaper.png",

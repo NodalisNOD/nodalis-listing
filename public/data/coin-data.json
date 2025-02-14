@@ -1,5 +1,23 @@
 [
   {
+    "id": "kitcoin-kitty",
+    "name": "Kitcoin KITTY",
+    "icon": "./assets/kitty.png",
+    "contract": "0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61",
+    "website": "https://www.kitcoin.io/",
+    "explorer": "https://cronoscan.com/token/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61",
+    "twitter": "https://x.com/KitCoinX",
+    "telegram": "https://t.me/KitCoinKitty",
+    "discord": "https://discord.com/invite/J6vRjXX6GU",
+    "description": "KitCoin is the name, $KITTY is the ticker!\n$KITTY has No Buy Tax or Sell Tax, LP Burnt, Ownership Renounced & 20% of total supply burnt.\nKitCoin offers an NFT collection which is LIVE on Ebisu's Bay, with 18 partner project traits with rewards & 15 Legends.\nKitCoin provides NFT & $KITTY staking & are currently developing a gaming DAPP #CroVegas",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C"
+    }
+  },
+  {
     "id": "reaper-squad-reaper",
     "name": "Reaper's Squad REAPER",
     "icon": "./assets/reaper.png",
