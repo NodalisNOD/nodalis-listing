@@ -1,7 +1,25 @@
 [
   {
+    "id": "reaper-squad-reaper",
+    "name": "Reaper's Squad REAPER",
+    "icon": "./assets/reaper.png",
+    "contract": "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
+    "website": "https://reapers-squad.netlify.app",
+    "explorer": "https://cronoscan.com/token/0x73712A912AE5e39634046F4409Ef57eac34E96BA",
+    "twitter": "https://x.com/ReapersSquadCro",
+    "telegram": "/",
+    "discord": "https://discord.gg/xrJz4awbuj",
+    "description": "Our main goal is to create a flawless ecosystem between NFT, Token & DEFI game. We aim to be one of the first play-to-earn games on Cronos Chain. We are planning to release on IOS/Android/GooglePlay & PC!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x73712a912ae5e39634046f4409ef57eac34e96ba",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C"
+    }
+  },
+  {
     "id": "fortune-favours-thebrave-fftb",
-    "name": "FORTUNE FAVOURS THE BRAVE FFTTB",
+    "name": "FORTUNE FAVOURS THE BRAVE FFTB",
     "icon": "./assets/fftb.jpg",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://fftb.space//",

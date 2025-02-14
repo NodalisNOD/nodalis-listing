@@ -3,7 +3,14 @@
 // coins list
 export const coins = [
   {
-    name: "FORTUNE FAVOURS THE BRAVE FFTTB",
+    name: "Reaper's Squad REAPER",
+    contract: "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
+    icon: "./assets/reaper.png",
+    apiUrl:
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C",
+  },
+  {
+    name: "FORTUNE FAVOURS THE BRAVE FFTB",
     contract: "0xd677944Df705924AF369d2FCcf4A989f343DbCDf",
     icon: "./assets/fftb.jpg",
     apiUrl:
