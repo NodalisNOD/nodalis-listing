@@ -318,6 +318,10 @@ table th {
   position: relative; /* Basis voor labelpositionering */
   display: inline-block; /* Zorgt dat de inhoud inline is */
 }
+.ad-text small {
+  font-size: 10px; /* Pas de grootte aan indien nodig */
+  color: #666; /* Optioneel: kleur aanpassen */
+}
 
 .ad-image {
   max-width: 100%; /* Laat de advertentie-afbeelding schalen */
