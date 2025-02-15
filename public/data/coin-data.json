@@ -2,7 +2,7 @@
   {
     "id": "cryptoholic-holic",
     "name": "Cryptoholic HOLIC",
-    "icon": "./assets/coinIcons/holic.webp",
+    "icon": "./assets/coinIcons/holic.jpg",
     "contract": "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
     "website": "https://cryptoholic.app/",
     "explorer": "https://cronoscan.com/token/0x2829955d8Aac64f184E363516FDfbb0394042B90",

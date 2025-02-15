@@ -2,7 +2,7 @@ export const coins = [
   {
     name: "Cryptoholic HOLIC",
     contract: "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
-    icon: "./assets/coinIcons/holic.webp",
+    icon: "./assets/coinIcons/holic.jpg",
     apiUrl:
     "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0",
   },
