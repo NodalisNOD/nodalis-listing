@@ -3,7 +3,7 @@ import { coins, fetchCoinData } from "./altcoins.js";
 // variables to store cache
 let statsCache = null;
 let statsCacheTime = 0;
-const STATS_CACHE_DURATION = 7 * 60 * 1000; // 7 minutes
+const STATS_CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchMarketCapAndDominance();

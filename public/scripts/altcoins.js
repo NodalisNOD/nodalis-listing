@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "croc with knife STAB",
+    contract: "0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
+    icon: "./assets/coinIcons/stab.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835",
+  },
+  {
     name: "Cryptoholic HOLIC",
     contract: "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
     icon: "./assets/coinIcons/holic.jpg",
@@ -134,7 +141,7 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
+const BROWSER_CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract

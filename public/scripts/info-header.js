@@ -35,7 +35,7 @@ async function updateInfoHeader() {
 
   const cacheKey = "infoHeaderData";
   const cacheTimeKey = "infoHeaderDataTime";
-  const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+  const CACHE_DURATION = 2 * 60 * 1000; // 5 minutes
   const now = Date.now();
 
   // check if valid cache data is available

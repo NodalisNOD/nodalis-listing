@@ -1,5 +1,39 @@
 [
   {
+    "id": "croc-with-knife-stab",
+    "name": "croc with knife STAB",
+    "icon": "./assets/coinIcons/stab.jpg",
+    "contract": "0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
+    "website": "https://crocwithknife.fun/",
+    "explorer": "https://cronoscan.com/address/0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
+    "twitter": "https://x.com/croc_with_knife",
+    "telegram": "https://telegram.me/crocwithknife",
+    "discord": "https://discord.com/invite/bpmWMxq4p7",
+    "whitepaper": "https://crocwithknife.fun/assets/docs/whitepaper.pdf",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Stake $STAB",
+        "url": "https://earn.network/pools/cronos/STAB"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Hello Fam,We are Croc with Knife, a memecoin project on the Cronos Chain, known for our exciting cartoon series that also features other Cronos memecoins.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x1ebd45a0415ba286f10babd9e27c69f62b7db7d7",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x79773e4aba9f74da020a9bc4ed82377b3f374895/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835"
+    }
+  },
+  {
     "id": "cryptoholic-holic",
     "name": "Cryptoholic HOLIC",
     "icon": "./assets/coinIcons/holic.jpg",

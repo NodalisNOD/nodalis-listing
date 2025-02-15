@@ -319,7 +319,7 @@ table th {
   display: inline-block; /* Zorgt dat de inhoud inline is */
 }
 .ad-text small {
-  font-size: 10px; /* Pas de grootte aan indien nodig */
+  font-size: 15px; /* Pas de grootte aan indien nodig */
   color: #07b5e056; /* Optioneel: kleur aanpassen */
 }
 
