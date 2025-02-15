@@ -1,5 +1,19 @@
 export const coins = [
   {
+    name: "Kris KRIS",
+    contract: "0x2829955d8Aac64f184E363516FDfbb0394042B90",
+    icon: "./assets/coinIcons/kris.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930",
+  },
+  {
+    name: "Crooks CRKS",
+    contract: "0xe07375D293D7b8d3758B74FD6a71800A946B3b07",
+    icon: "./assets/coinIcons/crks.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982",
+  },
+  {
     name: "GoodMorning GM",
     contract: "0x7492450cc8897a4e444ad972eb1619251ef15c23",
     icon: "./assets/coinIcons/gm.png",

@@ -1,5 +1,73 @@
 [
   {
+    "id": "kris-kris",
+    "name": "Kris KRIS",
+    "icon": "./assets/coinIcons/kris.jpg",
+    "contract": "0x2829955d8Aac64f184E363516FDfbb0394042B90",
+    "website": "https://kristoken.xyz/",
+    "explorer": "https://cronoscan.com/token/0x2829955d8Aac64f184E363516FDfbb0394042B90",
+    "twitter": "https://x.com/kristokencro",
+    "telegram": "",
+    "discord": "http://discord.com/invite/Uag7j5SsZ8",
+    "whitepaper": "https://kristoken.com/roadmap",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Kris ($Kris) is a community-driven meme coin on the Cronos blockchain that prioritizes organic growth, decentralized efforts, and long-term sustainability. Rather than relying on paid promotions, influencer hype, or pump groups, the project emphasizes grassroots engagement, small holders, and genuine community involvement. Users earn $Kris by completing social tasks—such as tweeting with hashtags, creating YouTube videos, or posting on X—which drives organic marketing. Additionally, Kris offers free decentralized applications (dApps) designed to support startups with tools for social engagement, AI-powered analytics, and promotional campaigns. Through the Kris Accelerator Program, the project aids emerging meme and NFT projects on Cronos by providing liquidity support, guidance, and community engagement tools. Moreover, Kris is exploring innovative liquidity mechanisms via ERC404s, expanding its utility beyond traditional meme coin models. Overall, Kris stands out by building a foundation of sustainable growth, authentic community participation, and real utility, ensuring long-term engagement and value creation within the Cronos ecosystem.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2829955d8aac64f184e363516fdfbb0394042b90",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930"
+    }
+  },
+  {
+    "id": "crooks-crks",
+    "name": "Crooks CRKS",
+    "icon": "./assets/coinIcons/crks.jpg",
+    "contract": "0xe07375D293D7b8d3758B74FD6a71800A946B3b07",
+    "website": "https://crooks.finance/",
+    "explorer": "https://cronoscan.com/token/0xe07375D293D7b8d3758B74FD6a71800A946B3b073",
+    "twitter": "https://x.com/crooksfinance",
+    "telegram": "https://t.me/crookstoken",
+    "discord": "https://discord.com/invite/JxjyWm8T",
+    "whitepaper": "https://www.crooks.finance/#faqs",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Crooks Finance is specialist in passive income and first launched in July 2022 in the end phase of the Cronos Bull run. We still believe the Cronos Chain has a huge potential and that the most growth still has to come. So we relaunched, created a new dapp and we now send multiple rewards to our holders every day. The last 2 years we already send over 400,000 CRO in rewards.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe07375d293d7b8d3758b74fd6a71800a946b3b07",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982"
+    }
+  },
+  {
     "id": "goodmorning-gm",
     "name": "GoodMorning GM",
     "icon": "./assets/coinIcons/gm.png",
@@ -29,7 +97,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x7492450cc8897a4e444ad972eb1619251ef15c23",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a/ohlcv/minute?aggregate=15",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x556996d8baed07c3843dd6b21d4fcd8962b1d982/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416"
     }
   },
