@@ -1,6 +1,11 @@
-// altcoins.js
-
 export const coins = [
+  {
+    name: "GoodMorning GM",
+    contract: "0x7492450cc8897a4e444ad972eb1619251ef15c23",
+    icon: "./assets/coinIcons/gm.png",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416",
+  },
   {
     name: "Croginal Cats CROGINAL",
     contract: "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",

@@ -319,6 +319,19 @@ comVoteRouter.post('/vote', (req, res) => {
 });
 app.use('/api/comvote', comVoteRouter);
 
+// Flush endpoint: reset alle globale community votes
+comVoteRouter.post('/flush', (req, res) => {
+  comVoteDb.run('DELETE FROM votes', function(err) {
+    if (err) {
+      console.error("Error flushing global votes:", err.message);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    console.log("Global votes flushed successfully.");
+    res.json({ success: true });
+  });
+});
+
+
 // ----- COIN VOTES ENDPOINTS (Permanente sentiment per coin) -----
 const coinVotesRouter = express.Router();
 const coinVotesDbDir = path.join(__dirname, "public", "data");

@@ -16,11 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
     return `${hours}:${minutes}:${seconds}`;
   }
 
-  // Update de reset‑afteller
+  // Variabele om te voorkomen dat flushVotes meerdere keren wordt aangeroepen
+  let flushCalled = false;
+
+  // Update de reset‑afteller en controleer of deze 0 is
   function updateResetTimer() {
     const timerEl = document.getElementById('reset-timer');
     const remaining = getTimeRemaining();
     timerEl.textContent = `Reset in: ${formatTime(remaining)}`;
+
+    // Als de timer 0 is en flush nog niet is uitgevoerd, flush de stemmen
+    if (remaining === 0 && !flushCalled) {
+      flushVotes();
+      flushCalled = true;
+    } else if (remaining > 0) {
+      flushCalled = false; // reset de flag zodra de timer weer op een positieve waarde staat
+    }
   }
 
   // Haal stemmen op en update de sentimentbalk en totaal aantal stemmen
@@ -31,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Verwachte data: { positive, negative, total }.
         const positive = data.positive || 0;
         const negative = data.negative || 0;
-        // Gebruik data.total als een getal, anders bereken het als som van positieve en negatieve stemmen
         const total = typeof data.total === 'number' ? data.total : (positive + negative);
         let positivePercent = 0;
         let negativePercent = 0;
@@ -40,10 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
           negativePercent = (negative / total) * 100;
         }
         
-        // Update de sentimentbalken binnen de container #comVotes (zorg dat je HTML zo is opgebouwd)
+        // Update de sentimentbalken binnen de container #comVotes
         document.querySelectorAll('#comVotes .positive-bar').forEach(bar => {
           bar.style.width = positivePercent + '%';
-          // Als er stemmen zijn, toon het percentage; anders geen tekst
           bar.textContent = total > 0 ? positivePercent.toFixed(0) + '%' : '';
         });
         document.querySelectorAll('#comVotes .negative-bar').forEach(bar => {
@@ -51,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
           bar.textContent = total > 0 ? negativePercent.toFixed(0) + '%' : '';
         });
 
-        // Update totaal aantal stemmen (zorg dat er een element met id="total-votes" bestaat)
+        // Update totaal aantal stemmen (element met id "total-votes")
         const totalVotesEl = document.getElementById('total-votes');
         if (totalVotesEl) {
           totalVotesEl.textContent = `Votes: ${total}`;
@@ -66,9 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lastVoteTime) return true;
     const lastVote = new Date(lastVoteTime);
     const now = new Date();
-    return lastVote.getUTCFullYear() !== now.getUTCFullYear() ||
-           lastVote.getUTCMonth() !== now.getUTCMonth() ||
-           lastVote.getUTCDate() !== now.getUTCDate();
+    return (
+      lastVote.getUTCFullYear() !== now.getUTCFullYear() ||
+      lastVote.getUTCMonth() !== now.getUTCMonth() ||
+      lastVote.getUTCDate() !== now.getUTCDate()
+    );
   }
 
   // Update de enabled/disabled status van de stemknoppen
@@ -105,13 +116,31 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error('Error sending vote:', error));
   }
 
+  // Functie om de stemmen in de database te flushen (resetten)
+  function flushVotes() {
+    fetch('/api/comvote/flush', { method: 'POST' })
+      .then(response => response.json())
+      .then(result => {
+        if (result.success) {
+          console.log('Votes flushed successfully.');
+          updateVotes();
+          // Verwijder lokale stemtijd zodat opnieuw gestemd kan worden
+          localStorage.removeItem('lastVoteTime');
+          updateVoteButtons();
+        } else {
+          console.error('Failed to flush votes:', result.error);
+        }
+      })
+      .catch(error => console.error('Error flushing votes:', error));
+  }
 
+  // Stel de stemknoppen in met de juiste iconen
   const positiveBtn = document.getElementById('vote-positive');
   positiveBtn.innerHTML = '<img src="./assets/UI/like.png" alt="Positive Vote">';
   const negativeBtn = document.getElementById('vote-negative');
   negativeBtn.innerHTML = '<img src="./assets/UI/dislike.png" alt="Negative Vote">';
 
-
+  // Event listeners voor stemknoppen
   positiveBtn.addEventListener('click', () => {
     if (canVote()) {
       sendVote('positive');
@@ -130,10 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+  // Initial updates
   updateVotes();
   updateVoteButtons();
   updateResetTimer();
 
+  // Update de reset timer elke seconde
   setInterval(updateResetTimer, 1000);
 });

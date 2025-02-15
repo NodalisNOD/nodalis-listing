@@ -118,6 +118,7 @@ main {
 
 .sentiment-bar {
   position: relative;
+  display: flex; /* Zorgt ervoor dat de kinderen naast elkaar komen */
   width: 100%;
   height: 24px;
   margin: 0 auto 1rem;
@@ -145,6 +146,7 @@ main {
 .sentiment-bar .negative {
   background-color: #f44336;
 }
+
 
 /* 🔹 Stemknoppen */
 .vote-buttons {

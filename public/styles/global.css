@@ -428,7 +428,8 @@ table th {
   min-height: 200px;
   text-align: center;
   padding: 10px;
-  border: 1px solid #ddd;
+  /* Als je de rand niet wilt, verwijder of zet deze op none */
+  border: none; /* of verwijder deze regel */
   border-radius: 5px;
   background-color: #f9f9f9;
   margin: 20px auto;
@@ -447,6 +448,7 @@ table th {
   color: white;
   text-align: center;
   transition: width 0.5s;
+  font-size: 0.7rem; /* Kleinere tekst in de balk, indien gewenst */
 }
 
 #comVotes .negative-bar {
@@ -454,6 +456,7 @@ table th {
   color: white;
   text-align: center;
   transition: width 0.5s;
+  font-size: 0.7rem; /* Kleinere tekst in de balk, indien gewenst */
 }
 
 /* 🔹 Vote-knoppen */
@@ -468,6 +471,15 @@ table th {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  border: none;  /* Zorg dat er geen rand om de afbeeldingen zit */
+}
+#comVotes .vote-buttons button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
 }
 
 #comVotes .vote-buttons img:hover {
@@ -478,6 +490,15 @@ table th {
 #comVotes .vote-buttons img:active {
   transform: scale(0.9);
 }
+
+/* Minimalistische tekst voor stemmen en reset timer */
+#total-votes,
+#reset-timer {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
 
 /* 🔹 Kleine tweaks voor desktop */
 @media (min-width: 1024px) {
@@ -495,4 +516,16 @@ table th {
 .table-footer-logo img {
   width: 250px;          /* Stel de gewenste breedte in */
   height: auto;
+}
+/* Minimalistic styling for sentiment text */
+#total-votes,
+#reset-timer {
+  font-size: 0.75rem;  /* Kleinere tekst */
+  color: #666;         /* Een lichtere tint voor een subtiel effect */
+  margin-top: 0.25rem;  /* Optionele kleine ruimte boven de tekst */
+}
+
+/* Optioneel: verklein ook de algemene sentiment-container marges */
+.sentiment-container {
+  margin-bottom: 1rem; /* Minder ruimte onder de sentiment sectie */
 }

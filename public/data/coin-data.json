@@ -1,5 +1,39 @@
 [
   {
+    "id": "goodmorning-gm",
+    "name": "GoodMorning GM",
+    "icon": "./assets/coinIcons/gm.png",
+    "contract": "0x7492450cc8897a4e444ad972eb1619251ef15c23",
+    "website": "http://gmcronos.com/",
+    "explorer": "https://cronoscan.com/token/0x7492450cc8897a4e444ad972eb1619251ef15c23",
+    "twitter": "https://x.com/GMCronos",
+    "telegram": "",
+    "discord": "https://discord.com/invite/JxjyWm8T",
+    "whitepaper": "https://gmcronos.com/litepaper/",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/gmcronoschain?utm_source=qr"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "If you have been in Crypto for awhile, the term, GM is a way of greeting someone to start off on a positive note and to instill positivity and camaraderie within the community. “The Cryptopion”, a long-term supporter of the Cronos ecosystem felt that Web3 can sometimes be a very lonely and toxic place. Hence, GMCronos ($GM) Token is a cryptocurrency token created and designed to foster friendship and love, firstly, within the Cronos Blockchain community, known as GM Gang and, one day the whole of Web3.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x7492450cc8897a4e444ad972eb1619251ef15c23",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416"
+    }
+  },
+  {
     "id": "croginalcats-croginal",
     "name": "Croginal Cats CROGINAL",
     "icon": "./assets/coinIcons/croginal.jpg",
@@ -190,7 +224,7 @@
   {
     "id": "turtle-turtle",
     "name": "Turtle TURTLE",
-    "icon": "./assets/coinIcons/turtle.webp",
+    "icon": "./assets/coinIcons/turtle.jpg",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://turtleoncro.com/",
     "explorer": "https://cronoscan.com/token/0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
