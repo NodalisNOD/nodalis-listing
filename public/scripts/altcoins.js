@@ -1,13 +1,12 @@
 // altcoins.js
 
-// coins list
 export const coins = [
   {
     name: "Croginal Cats CROGINAL",
     contract: "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
     icon: "./assets/coinIcons/croginal.jpg",
     apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021",
+      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C",
   },
   {
     name: "PapaSmerf PapaCro",
@@ -111,27 +110,35 @@ export const coins = [
 
 const BROWSER_CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
 
-// Function to retrieve and merge data with browser caching
 export async function fetchCoinData(coin) {
-// Use the apiUrl as key for the cache
+  // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
+  let fallbackPrice = null;
+  try {
+    const priceResponse = await fetch(`https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/${coin.contract}`);
+    if (priceResponse.ok) {
+      const priceData = await priceResponse.json();
+      const priceKey = Object.keys(priceData.data.attributes.token_prices)[0];
+      fallbackPrice = parseFloat(priceData.data.attributes.token_prices[priceKey]);
+    }
+  } catch (error) {
+    console.error(`Error fetching fallback price for ${coin.name}:`, error);
+  }
+
+  // Gebruik de apiUrl voor pool data
   const storageKey = "coinData_" + encodeURIComponent(coin.apiUrl);
   const cacheTimeKey = storageKey + "_time";
   const now = Date.now();
 
-  // try to get the data from the cache
+  // Probeer data uit de cache te halen als deze recent is
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
-
   if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
     return JSON.parse(cachedData);
   }
 
-  // if not in cache, fetch the data
   try {
     const response = await fetch(coin.apiUrl);
-    if (!response.ok)
-      throw new Error(`HTTP error! Status: ${response.status}`);
-
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const data = await response.json();
     const pools = data.data;
 
@@ -143,17 +150,14 @@ export async function fetchCoinData(coin) {
       marketCap: null,
     };
 
-    // unique set to avoid duplicate pools
     const processedPools = new Set();
 
     pools.forEach((pool) => {
       const poolId = pool.id;
-
       if (processedPools.has(poolId)) {
         console.log(`Skipping duplicate pool: ${poolId}`);
         return;
       }
-
       processedPools.add(poolId);
 
       const attributes = pool.attributes;
@@ -162,7 +166,6 @@ export async function fetchCoinData(coin) {
 
       combinedData.totalVolumeUsd += volume;
 
-      // control if market cap is already set
       if (!combinedData.marketCap) {
         if (attributes.market_cap_usd) {
           combinedData.marketCap = parseFloat(attributes.market_cap_usd);
@@ -172,9 +175,7 @@ export async function fetchCoinData(coin) {
           const reserveUsd = parseFloat(attributes.reserve_in_usd);
           const baseTokenPrice = parseFloat(attributes.base_token_price_usd);
           combinedData.marketCap = reserveUsd / baseTokenPrice;
-          console.log(`Calculated Market Cap from Reserve and Base Price: ${combinedData.marketCap}`);
-        } else {
-          console.log("Market Cap could not be determined for this pool.");
+          console.log(`Calculated Market Cap: ${combinedData.marketCap}`);
         }
       }
 
@@ -187,9 +188,12 @@ export async function fetchCoinData(coin) {
       name: coin.name,
       contract: coin.contract,
       icon: coin.icon,
-      price: combinedData.totalBasePriceUsd
-        ? (combinedData.totalBasePriceUsd / combinedData.totalVolumeUsd).toFixed(10)
-        : "N/A",
+      price:
+        combinedData.totalVolumeUsd > 0
+          ? (combinedData.totalBasePriceUsd / combinedData.totalVolumeUsd).toFixed(10)
+          : fallbackPrice !== null
+          ? fallbackPrice.toFixed(10)
+          : "0",
       priceChange1h:
         combinedData.totalVolumeUsd > 0
           ? (combinedData.priceChange1h / combinedData.totalVolumeUsd).toFixed(2)
@@ -203,13 +207,13 @@ export async function fetchCoinData(coin) {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
           })
-        : "N/A",
-      volume24h: combinedData.totalVolumeUsd
-        ? combinedData.totalVolumeUsd.toLocaleString()
-        : "N/A",
+        : "0",
+      volume24h:
+        typeof combinedData.totalVolumeUsd === "number"
+          ? combinedData.totalVolumeUsd.toLocaleString()
+          : "0",
     };
 
-    // save the data to the cache
     localStorage.setItem(storageKey, JSON.stringify(result));
     localStorage.setItem(cacheTimeKey, now.toString());
 
@@ -220,7 +224,6 @@ export async function fetchCoinData(coin) {
   }
 }
 
-// table rendering function
 export async function populateAltcoinTable(searchQuery = "") {
   const tableBody = document.querySelector("#altcoin-table");
   const tableHeaders = document.querySelectorAll(".main-crypto-table th");
@@ -230,13 +233,12 @@ export async function populateAltcoinTable(searchQuery = "") {
     return;
   }
 
-  let currentSortKey = "marketCap"; // default sort key
+  let currentSortKey = "marketCap";
   let sortAscending = false;
 
   const allCoinData = await Promise.all(coins.map(fetchCoinData));
   let validCoinData = allCoinData.filter((data) => data !== null);
 
-  // filter by search query
   validCoinData = validCoinData.filter(
     (coin) =>
       coin &&
@@ -265,8 +267,8 @@ export async function populateAltcoinTable(searchQuery = "") {
             <td>$${coin.price}</td>
             <td>${formatChange(coin.priceChange1h)}</td>
             <td>${formatChange(coin.priceChange24h)}</td>
-            <td>$${coin.marketCap || "N/A"}</td>
-            <td>$${coin.volume24h || "N/A"}</td>
+            <td>$${coin.marketCap}</td>
+            <td>$${coin.volume24h}</td>
           </tr>
         `;
       })
@@ -308,7 +310,6 @@ export async function populateAltcoinTable(searchQuery = "") {
   sortTable(currentSortKey);
 }
 
-// search bar setup
 export function setupSearch() {
   const searchInput = document.querySelector("#search-bar");
   searchInput.addEventListener("input", (event) => {
@@ -317,7 +318,6 @@ export function setupSearch() {
   });
 }
 
-// load the table and search bar when the page is ready
 document.addEventListener("DOMContentLoaded", () => {
   populateAltcoinTable();
   setupSearch();
