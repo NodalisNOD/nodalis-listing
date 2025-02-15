@@ -1,5 +1,39 @@
 [
   {
+    "id": "cryptoholic-holic",
+    "name": "Cryptoholic HOLIC",
+    "icon": "./assets/coinIcons/holic.webp",
+    "contract": "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
+    "website": "https://cryptoholic.app/",
+    "explorer": "https://cronoscan.com/token/0x2829955d8Aac64f184E363516FDfbb0394042B90",
+    "twitter": "https://x.com/cryptoholic_app",
+    "telegram": "",
+    "discord": "https://discord.com/invite/hTSDp4Ug3K",
+    "whitepaper": "https://cryptoholic.app/litepaper.html",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Cryptoholic is a meme coin launched on the Cronos Chain, blending humor and a passion for crypto trading. The project aspires to become a leading meme coin by engaging a vibrant community and delivering value to its token holders.\nCryptoholic’s primary goal is to dominate the meme coin space on the Cronos Chain, leveraging humor, community engagement, and strategic marketing.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x55e6fb1ae5e3fcd505446f501ab766d8d59b20a9",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x596e0065eaa9673453e7ada85814343d2dd8dbdb/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0"
+    }
+  },
+  {
     "id": "kris-kris",
     "name": "Kris KRIS",
     "icon": "./assets/coinIcons/kris.jpg",
