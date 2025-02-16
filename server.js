@@ -423,8 +423,8 @@ coinVotesRouter.post('/:coinId/:type', (req, res) => {
 app.use('/votes', coinVotesRouter);
 
 // ----- TRENDING VOTES ENDPOINTS -----
+// (Plaats dit in je server.js, onder de andere routes)
 
-// Maak een aangepaste trending_votes tabel met per stem een record en een unieke constraint op (coinId, userIdentifier, date(voteTime))
 const trendingVotesDbPath = path.join(coinVotesDbDir, "trending_votes.db");
 const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
   if (err) {
@@ -449,11 +449,10 @@ trendingVotesDb.serialize(() => {
   });
 });
 
-// POST trending vote: Elke gebruiker mag 1x per 24 uur stemmen op een coin
 const trendingVotesRouter = express.Router();
 trendingVotesRouter.post('/:coinId', (req, res) => {
   const coinId = req.params.coinId;
-  // Haal de userId uit de cookie, in plaats van uit de request body
+  // Haal userId uit de cookie
   const userId = req.cookies.userId;
   if (!userId) {
     return res.status(400).json({ error: "User not identified" });
@@ -469,7 +468,6 @@ trendingVotesRouter.post('/:coinId', (req, res) => {
         return res.status(500).json({ error: "Database error" });
       }
     }
-    // Na succesvolle stem: haal het totale aantal stemmen voor deze coin op
     trendingVotesDb.get(`SELECT COUNT(*) AS votes FROM trending_votes WHERE coinId = ?`, [coinId], (err, row) => {
       if (err) {
         console.error(err.message);
@@ -480,7 +478,6 @@ trendingVotesRouter.post('/:coinId', (req, res) => {
   });
 });
 
-// GET trending coins: retourneer de top 10 trending coins, geaggregeerd per coin
 trendingVotesRouter.get('/', (req, res) => {
   trendingVotesDb.all(`
     SELECT coinId, COUNT(*) AS votes 
@@ -497,7 +494,7 @@ trendingVotesRouter.get('/', (req, res) => {
   });
 });
 
-// Cronjob: Reset trending votes wekelijks op zaterdag 23:00 UTC (dat is zondag middernacht UTC+1)
+// Cronjob: Reset trending votes elke week op zaterdag 23:00 UTC (zondag middernacht UTC+1)
 cron.schedule('0 23 * * 6', () => {
   trendingVotesDb.run(`DELETE FROM trending_votes`, (err) => {
     if (err) {
@@ -510,6 +507,8 @@ cron.schedule('0 23 * * 6', () => {
   scheduled: true,
   timezone: "UTC"
 });
+
+app.use('/trending', trendingVotesRouter);
 
 app.use('/trending', trendingVotesRouter);
 
