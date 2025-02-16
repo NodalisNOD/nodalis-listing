@@ -1,35 +1,39 @@
+/* Ensure the body and html elements do not overflow */
+html, body {
+  overflow-x: hidden;
+}
 
 /* Header Styling */
 header {
-  background-color: #042c3f; /* Donkerdere tint groen voor een professionelere uitstraling */
+  background-color: #042c3f;
   color: white;
   padding: 1rem;
   display: flex;
-  align-items: center; /* Zorgt ervoor dat logo en tekst op dezelfde lijn staan */
+  align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor meer diepte */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo-container {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Ruimte tussen logo en tekst */
+  gap: 1rem;
 }
 
 header .logo-link {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Verwijder onderlijning van de link */
-  color: white; /* Maak de tekst wit */
+  text-decoration: none;
+  color: white;
 }
 
 header img.logo {
-  height: 50px; /* Grotere hoogte voor meer zichtbaarheid */
-  width: auto; /* Houd de verhoudingen intact */
+  height: 50px;
+  width: auto;
 }
 
 header .site-title {
-  font-size: 1.8rem; /* Grotere tekst voor de site-titel */
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -41,7 +45,7 @@ header nav {
 header .nav-list {
   list-style: none;
   display: flex;
-  gap: 1.5rem; /* Meer ruimte tussen knoppen */
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -50,19 +54,20 @@ header .nav-list li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1.1rem; /* Iets grotere tekst voor navigatie */
+  font-size: 1.1rem;
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Gladde overgang bij hover */
+  transition: background-color 0.3s ease;
 }
 
 header .nav-list li a:hover {
-  background-color: #05a6c9; /* Donkerdere hover-kleur */
-  color: #e1f4e8; /* Lichtere tekstkleur bij hover */
+  background-color: #05a6c9;
+  color: #e1f4e8;
 }
-/* 🔹 Mobiele navigatie */
+
+/* Mobile navigation */
 .menu-toggle {
-  display: none; /* Alleen tonen op mobiel */
+  display: none;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -73,11 +78,11 @@ header .nav-list li a:hover {
   }
 
   .menu-toggle {
-    display: block; /* Toon hamburger-menu */
+    display: block;
   }
 
   header nav {
-    display: none; /* Verberg navigatie standaard */
+    display: none;
     flex-direction: column;
     width: 100%;
     background: #042c3f;
@@ -89,7 +94,7 @@ header .nav-list li a:hover {
   }
 
   header nav.active {
-    display: flex; /* Toon het menu wanneer actief */
+    display: flex;
   }
 
   .nav-list {
@@ -112,8 +117,8 @@ header .nav-list li a:hover {
 
 /* Info Header Styling */
 .info-header {
-  background-color: #f1f5f8; /* Lichtere achtergrondkleur voor meer contrast */
-  border-bottom: 2px solid #d3d3d3; /* Dikkere rand voor betere scheiding */
+  background-color: #f1f5f8;
+  border-bottom: 2px solid #d3d3d3;
   display: flex;
   justify-content: space-around;
   padding: 0.8rem 1.5rem;
@@ -125,16 +130,16 @@ header .nav-list li a:hover {
 }
 
 .info-header .info-item span {
-  color: #7a7a7a; /* Zachtere grijstint */
+  color: #7a7a7a;
   font-size: 0.85rem;
 }
 
 .info-header .info-item strong {
   color: #000;
-  font-size: 1.1rem; /* Grotere tekst voor belangrijke info */
+  font-size: 1.1rem;
   font-weight: bold;
 }
-/* 🔹 Responsieve Info Header */
+
 @media (max-width: 768px) {
   .info-header {
     flex-direction: column;
@@ -142,32 +147,37 @@ header .nav-list li a:hover {
     text-align: center;
   }
 }
+
 /* Footer Styling */
 footer {
-  background: linear-gradient(135deg, #1e2328, #272c33); /* subtiele gradient */
+  background: linear-gradient(135deg, #1e2328, #272c33);
   color: #dcdcdc;
   padding: 3rem 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
   width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 /* Footer Container */
 .footer-container {
-  width: 100%;              /* Laat de container de volle breedte innemen */
-  margin: 0;                /* Geen automatische marges */
+  width: 100%;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;          /* Responsieve layout */
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  padding: 0 1rem;          /* Indien gewenst: padding voor wat extra ruimte */
+  padding: 0 1rem;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-/* Secties (Tekst met logo, categorieën) */
+/* Sections (Text with logo, categories) */
 .footer-section {
   flex: 1;
   min-width: 220px;
+  word-wrap: break-word; /* Ensure text does not overflow */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 .footer-section h3 {
@@ -200,7 +210,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Tekst en Logo */
+/* Text and Logo */
 .footer-logo-text {
   display: flex;
   align-items: center;
@@ -230,18 +240,22 @@ footer {
   color: #a9a9a9;
   line-height: 1.5;
   text-align: center;
+  word-wrap: break-word; /* Ensure text does not overflow */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 .footer-disclaimer strong {
   color: #ff6f61;
 }
 
-/* Footer Onderschrift */
+/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.85rem;
   color: #a9a9a9;
+  word-wrap: break-word; /* Ensure text does not overflow */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 /* Cronos Logo Styling */
@@ -252,7 +266,7 @@ footer {
   vertical-align: middle;
 }
 
-/* Responsieve Footer */
+/* Responsive Footer */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -262,6 +276,7 @@ footer {
     justify-content: center;
   }
 }
+
 /* Cookie Consent Banner */
 .cookie-banner {
   position: fixed;

@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Cronos Legends CLG",
+    contract: "0x08d9cb5100C306C2909B63415d7ff05268633b41",
+    icon: "./assets/coinIcons/clg.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
+  },
+  {
     name: "Pixel Tribes Cro PTCRO",
     contract: "0xDd8D87faF419Abad614E0D05E01c68FDfa473A6A",
     icon: "./assets/coinIcons/ptcro.webp",

@@ -1,5 +1,39 @@
 [
   {
+    "id": "cronos-legends-clg",
+    "name": "Cronos Legends CLG",
+    "icon": "./assets/coinIcons/clg.jpg",
+    "contract": "0x08d9cb5100C306C2909B63415d7ff05268633b41",
+    "website": "https://cronoslegends.com/",
+    "explorer": "https://cronoscan.com/token/0x08d9cb5100C306C2909B63415d7ff05268633b41",
+    "twitter": "https://x.com/CronosLegends",
+    "telegram": "",
+    "discord": "https://discord.gg/HDZx9VpKVE",
+    "whitepaper": "https://cronoslegends.com/whitepaper/",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": "c"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$CLG is the native token fueling the Cronos Legends ecosystem, a project blending strategy, creativity, and exploration.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x08d9cb5100c306c2909b63415d7ff05268633b41",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x80228677d9895934eed4bdb402ac659094903298/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893"
+    }
+  },
+  {
     "id": "pixel-tribes-cro-ptcro",
     "name": "Pixel Tribes Cro PTCRO",
     "icon": "./assets/coinIcons/ptcro.webp",

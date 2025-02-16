@@ -4,32 +4,34 @@ async function fetchTrendingTokens() {
   try {
     const response = await fetch('/trending');
     const tokens = await response.json();
-    // Verwacht tokens als een array van objecten: { coinId, votes }
-    const leftTokens = tokens.slice(0, 5);
-    const rightTokens = tokens.slice(5, 10);
-    populateTrendingTable('top-community-left', leftTokens);
-    populateTrendingTable('top-community-right', rightTokens);
+    // Populate the two tables
+    populateTrendingTables(tokens);
   } catch (error) {
     console.error("Error fetching trending tokens:", error);
   }
 }
 
-function populateTrendingTable(elementId, tokens) {
-  const tbody = document.getElementById(elementId);
-  tbody.innerHTML = '';
-  tokens.forEach((token, index) => {
-    // Zoek in de coins-array op basis van coinId.
-    // We gaan ervan uit dat coinId gelijk is aan de coin-naam in slug-form 
-    // (kleine letters, spaties vervangen door streepjes).
+function populateTrendingTables(tokens) {
+  const leftTableBody = document.getElementById('top-community-left');
+  const rightTableBody = document.getElementById('top-community-right');
+
+  // Clear any existing rows
+  leftTableBody.innerHTML = '';
+  rightTableBody.innerHTML = '';
+
+  // Split the data into two arrays of five items each
+  const leftColumn = tokens.slice(0, 5);
+  const rightColumn = tokens.slice(5, 10);
+
+  // Populate the left column
+  leftColumn.forEach((token, index) => {
     let coinData = coins.find(c =>
       c.name.toLowerCase().replace(/\s+/g, "-") === token.coinId
     );
-    
-    // Bepaal de ticker en icoon
+
     let ticker = token.coinId; // fallback
     let iconHTML = '';
-    
-    // Speciale uitzondering voor "greenstix-v2-grnstx-v2"
+
     if (token.coinId.toLowerCase() === "greenstix-v2-grnstx-v2") {
       ticker = "GRNSTX v2";
       iconHTML = `<img src="./assets/coinIcons/GRNSTX.jpg" alt="GRNSTX v2" class="table-icon">`;
@@ -38,31 +40,57 @@ function populateTrendingTable(elementId, tokens) {
       ticker = nameParts[nameParts.length - 1].toUpperCase();
       iconHTML = `<img src="${coinData.icon}" alt="${ticker}" class="table-icon">`;
     }
-    
-    // Maak de tokennaam klikbaar: link naar coin.html?id=<coinId>
+
     const tokenLink = `<a href="coin.html?id=${encodeURIComponent(token.coinId)}">${iconHTML} ${ticker}</a>`;
-    
+
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${index + 1}</td>
       <td>${tokenLink}</td>
       <td>${token.votes}</td>
     `;
-    tbody.appendChild(tr);
+    leftTableBody.appendChild(tr);
+  });
+
+  // Populate the right column
+  rightColumn.forEach((token, index) => {
+    let coinData = coins.find(c =>
+      c.name.toLowerCase().replace(/\s+/g, "-") === token.coinId
+    );
+
+    let ticker = token.coinId; // fallback
+    let iconHTML = '';
+
+    if (token.coinId.toLowerCase() === "greenstix-v2-grnstx-v2") {
+      ticker = "GRNSTX v2";
+      iconHTML = `<img src="./assets/coinIcons/GRNSTX.jpg" alt="GRNSTX v2" class="table-icon">`;
+    } else if (coinData) {
+      const nameParts = coinData.name.split(" ");
+      ticker = nameParts[nameParts.length - 1].toUpperCase();
+      iconHTML = `<img src="${coinData.icon}" alt="${ticker}" class="table-icon">`;
+    }
+
+    const tokenLink = `<a href="coin.html?id=${encodeURIComponent(token.coinId)}">${iconHTML} ${ticker}</a>`;
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${index + 6}</td>
+      <td>${tokenLink}</td>
+      <td>${token.votes}</td>
+    `;
+    rightTableBody.appendChild(tr);
   });
 }
 
 // Berekent de volgende resettijd in UTC+1 (zondag 00:00 UTC+1, oftewel zaterdag 23:00 UTC)
 function getNextResetTimeUTCPlus1() {
   const now = new Date();
-  // Bereken nu in UTC+1 door 1 uur op te tellen
   const nowUTCPlus1 = new Date(now.getTime() + 60 * 60 * 1000);
-  const day = nowUTCPlus1.getUTCDay(); // zondag = 0, zaterdag = 6
+  const day = nowUTCPlus1.getUTCDay(); 
   let daysUntilSunday = (7 - day) % 7;
   if (daysUntilSunday === 0 && (nowUTCPlus1.getUTCHours() > 0 || nowUTCPlus1.getUTCMinutes() > 0 || nowUTCPlus1.getUTCSeconds() > 0)) {
     daysUntilSunday = 7;
   }
-  // Volgende reset: zondag 00:00 in UTC+1. In UTC is dit zaterdag 23:00.
   const nextResetUTCPlus1 = new Date(Date.UTC(
     nowUTCPlus1.getUTCFullYear(),
     nowUTCPlus1.getUTCMonth(),
