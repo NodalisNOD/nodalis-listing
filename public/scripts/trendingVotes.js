@@ -19,12 +19,13 @@ function populateTrendingTable(elementId, tokens) {
   tbody.innerHTML = '';
   tokens.forEach((token, index) => {
     // Zoek in de coins-array op basis van coinId.
-    // We gaan ervan uit dat coinId gelijk is aan de coin-naam in slug-form (kleine letters, spaties vervangen door streepjes).
+    // We gaan ervan uit dat coinId gelijk is aan de coin-naam in slug-form 
+    // (kleine letters, spaties vervangen door streepjes).
     let coinData = coins.find(c =>
       c.name.toLowerCase().replace(/\s+/g, "-") === token.coinId
     );
     
-    // Standaard ticker en icoon
+    // Bepaal de ticker en icoon
     let ticker = token.coinId; // fallback
     let iconHTML = '';
     
@@ -51,16 +52,17 @@ function populateTrendingTable(elementId, tokens) {
   });
 }
 
+// Berekent de volgende resettijd in UTC+1 (zondag 00:00 UTC+1, oftewel zaterdag 23:00 UTC)
 function getNextResetTimeUTCPlus1() {
   const now = new Date();
-  // Bereken nu in UTC+1 (door 1 uur op te tellen)
+  // Bereken nu in UTC+1 door 1 uur op te tellen
   const nowUTCPlus1 = new Date(now.getTime() + 60 * 60 * 1000);
   const day = nowUTCPlus1.getUTCDay(); // zondag = 0, zaterdag = 6
   let daysUntilSunday = (7 - day) % 7;
   if (daysUntilSunday === 0 && (nowUTCPlus1.getUTCHours() > 0 || nowUTCPlus1.getUTCMinutes() > 0 || nowUTCPlus1.getUTCSeconds() > 0)) {
     daysUntilSunday = 7;
   }
-  // Volgende reset: zondag 00:00 in UTC+1. In UTC is dit 23:00 de voorgaande dag.
+  // Volgende reset: zondag 00:00 in UTC+1. In UTC is dit zaterdag 23:00.
   const nextResetUTCPlus1 = new Date(Date.UTC(
     nowUTCPlus1.getUTCFullYear(),
     nowUTCPlus1.getUTCMonth(),

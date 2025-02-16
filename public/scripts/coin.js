@@ -86,24 +86,24 @@ async function fetchCoinDetails() {
       <a href="${coin.discord}" target="_blank">Discord</a>
     `;
 
-// Nieuwe links: Whitepaper en Threads
-if (coin.whitepaper) {
-  document.getElementById("coin-whitepaper").innerHTML = `
-    <img src="./assets/UI/whitepaper.png" alt="Whitepaper Icon" class="icon">
-    <a href="${coin.whitepaper}" target="_blank">Whitepaper</a>
-  `;
-} else {
-  document.getElementById("coin-whitepaper").innerHTML = "";
-}
+    // Nieuwe links: Whitepaper en Threads
+    if (coin.whitepaper) {
+      document.getElementById("coin-whitepaper").innerHTML = `
+        <img src="./assets/UI/whitepaper.png" alt="Whitepaper Icon" class="icon">
+        <a href="${coin.whitepaper}" target="_blank">Whitepaper</a>
+      `;
+    } else {
+      document.getElementById("coin-whitepaper").innerHTML = "";
+    }
 
-if (coin.threads) {
-  document.getElementById("coin-threads").innerHTML = `
-    <img src="./assets/UI/threads.png" alt="Threads Icon" class="icon">
-    &nbsp;<a href="${coin.threads}" target="_blank">Threads</a>
-  `;
-} else {
-  document.getElementById("coin-threads").innerHTML = "";
-}
+    if (coin.threads) {
+      document.getElementById("coin-threads").innerHTML = `
+        <img src="./assets/UI/threads.png" alt="Threads Icon" class="icon">
+        &nbsp;<a href="${coin.threads}" target="_blank">Threads</a>
+      `;
+    } else {
+      document.getElementById("coin-threads").innerHTML = "";
+    }
 
     // Extra links (maximaal 3) tonen als ze ingevuld zijn
     if (coin.extraLinks && coin.extraLinks.length > 0) {
@@ -141,29 +141,27 @@ function showNotification(message, event) {
     popup.classList.add("hidden");
   }, 2000);
 }
+
+// Verstuur een trending stem voor de huidige coin
 async function submitTrendingVote() {
   try {
-    const response = await fetch(`/trending/${coinId}`, { method: 'POST' });
+    const response = await fetch(`/trending/${coinId}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' }
+      // Geen userId meegeven; de server haalt deze uit de cookie
+    });
     if (response.status === 429) {
       alert("You can only vote once every 24 hours for this coin.");
       return;
     }
     const data = await response.json();
     alert("Your trending vote has been recorded.");
-    // (Optioneel) Update de UI met het nieuwe aantal stemmen
+    // (Optioneel) Update de UI met het nieuwe aantal stemmen.
   } catch (error) {
     console.error("Error submitting trending vote:", error);
     alert("Failed to submit trending vote.");
   }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const trendingBtn = document.getElementById("vote-trending");
-  if (trendingBtn) {
-    trendingBtn.addEventListener("click", submitTrendingVote);
-  }
-});
-
 
 // Haal dynamische coin data (prijs, markten, grafiek, etc.) op
 async function fetchDynamicData(dynamicData) {
@@ -404,9 +402,15 @@ function updateSentimentBar(votes) {
 document.getElementById("vote-positive").addEventListener("click", (event) => submitVote("positive", event));
 document.getElementById("vote-negative").addEventListener("click", (event) => submitVote("negative", event));
 
-// Start: Haal coin details op wanneer de pagina geladen is
+// Combineer de initialisatie zodat alle functies worden gestart bij DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
   fetchCoinDetails();
-  // Update de reset timer voor coin votes elke seconde
+  fetchVotes();
   setInterval(updateCoinVoteTimer, 1000);
+  
+  // Koppel de trending stemknop
+  const trendingBtn = document.getElementById("vote-trending");
+  if (trendingBtn) {
+    trendingBtn.addEventListener("click", submitTrendingVote);
+  }
 });

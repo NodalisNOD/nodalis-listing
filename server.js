@@ -11,7 +11,7 @@ const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
 const cron = require("node-cron");
-
+const cookieParser = require("cookie-parser");
 
 // === CONTROLLERS ===
 const authController = require("./controllers/authController");
@@ -33,6 +33,16 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/uploads", express.static("public/uploads"));
+app.use(cookieParser());
+app.use((req, res, next) => {
+  if (!req.cookies.userId) {
+    const userId = 'user_' + Math.random().toString(36).substr(2, 9);
+    // Stel de cookie in met een lange vervaltijd (bijv. 1 jaar) en httpOnly
+    res.cookie('userId', userId, { maxAge: 365 * 24 * 60 * 60 * 1000, httpOnly: true });
+    req.cookies.userId = userId;
+  }
+  next();
+});
 
 // === POSTHOG ANALYTICS ===
 const { PostHog } = require("posthog-node");
@@ -413,7 +423,8 @@ coinVotesRouter.post('/:coinId/:type', (req, res) => {
 app.use('/votes', coinVotesRouter);
 
 // ----- TRENDING VOTES ENDPOINTS -----
-// Maak een aparte database voor trending votes in dezelfde data-map
+
+// Maak een aangepaste trending_votes tabel met per stem een record en een unieke constraint op (coinId, userIdentifier, date(voteTime))
 const trendingVotesDbPath = path.join(coinVotesDbDir, "trending_votes.db");
 const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
   if (err) {
@@ -425,9 +436,11 @@ const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
 trendingVotesDb.serialize(() => {
   trendingVotesDb.run(`
     CREATE TABLE IF NOT EXISTS trending_votes (
-      coinId TEXT PRIMARY KEY,
-      votes INTEGER DEFAULT 0,
-      lastVote DATETIME DEFAULT CURRENT_TIMESTAMP
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      coinId TEXT NOT NULL,
+      userIdentifier TEXT NOT NULL,
+      voteTime DATETIME DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE (coinId, userIdentifier, date(voteTime))
     )
   `, (err) => {
     if (err) {
@@ -436,53 +449,46 @@ trendingVotesDb.serialize(() => {
   });
 });
 
-// POST trending vote: Bezoeker mag 1x per 24 uur stemmen op een coin voor trending
-trendingVotesDb;
+// POST trending vote: Elke gebruiker mag 1x per 24 uur stemmen op een coin
 const trendingVotesRouter = express.Router();
 trendingVotesRouter.post('/:coinId', (req, res) => {
   const coinId = req.params.coinId;
+  // Haal de userId uit de cookie, in plaats van uit de request body
+  const userId = req.cookies.userId;
+  if (!userId) {
+    return res.status(400).json({ error: "User not identified" });
+  }
   const now = new Date();
-  trendingVotesDb.get(`SELECT coinId, votes, lastVote FROM trending_votes WHERE coinId = ?`, [coinId], (err, row) => {
+  const query = `INSERT INTO trending_votes (coinId, userIdentifier, voteTime) VALUES (?, ?, ?)`;
+  trendingVotesDb.run(query, [coinId, userId, now.toISOString()], function(err) {
     if (err) {
-      console.error(err.message);
-      return res.status(500).json({ error: 'Database error' });
-    }
-    if (row) {
-      const lastVote = new Date(row.lastVote);
-      if (
-        lastVote.getUTCFullYear() === now.getUTCFullYear() &&
-        lastVote.getUTCMonth() === now.getUTCMonth() &&
-        lastVote.getUTCDate() === now.getUTCDate()
-      ) {
-        return res.status(429).json({ error: 'Already voted today for trending' });
+      if (err.message.includes("UNIQUE constraint failed")) {
+        return res.status(429).json({ error: "Already voted today" });
+      } else {
+        console.error(err.message);
+        return res.status(500).json({ error: "Database error" });
       }
-      const newVotes = row.votes + 1;
-      trendingVotesDb.run(`UPDATE trending_votes SET votes = ?, lastVote = ? WHERE coinId = ?`,
-        [newVotes, now.toISOString(), coinId],
-        function(err) {
-          if (err) {
-            console.error(err.message);
-            return res.status(500).json({ error: 'Database error' });
-          }
-          res.json({ coinId, votes: newVotes });
-        });
-    } else {
-      trendingVotesDb.run(`INSERT INTO trending_votes (coinId, votes, lastVote) VALUES (?, ?, ?)`,
-        [coinId, 1, now.toISOString()],
-        function(err) {
-          if (err) {
-            console.error(err.message);
-            return res.status(500).json({ error: 'Database error' });
-          }
-          res.json({ coinId, votes: 1 });
-        });
     }
+    // Na succesvolle stem: haal het totale aantal stemmen voor deze coin op
+    trendingVotesDb.get(`SELECT COUNT(*) AS votes FROM trending_votes WHERE coinId = ?`, [coinId], (err, row) => {
+      if (err) {
+        console.error(err.message);
+        return res.status(500).json({ error: "Database error" });
+      }
+      res.json({ coinId, votes: row.votes });
+    });
   });
 });
 
-// GET trending coins: retourneer top 10 trending coins (gesorteerd op stemmen)
+// GET trending coins: retourneer de top 10 trending coins, geaggregeerd per coin
 trendingVotesRouter.get('/', (req, res) => {
-  trendingVotesDb.all(`SELECT coinId, votes FROM trending_votes ORDER BY votes DESC LIMIT 10`, [], (err, rows) => {
+  trendingVotesDb.all(`
+    SELECT coinId, COUNT(*) AS votes 
+    FROM trending_votes 
+    GROUP BY coinId 
+    ORDER BY votes DESC 
+    LIMIT 10
+  `, [], (err, rows) => {
     if (err) {
       console.error(err.message);
       return res.status(500).json({ error: 'Database error' });
@@ -491,7 +497,7 @@ trendingVotesRouter.get('/', (req, res) => {
   });
 });
 
-// Cronjob: Reset trending votes elke week op zaterdag 23:00 UTC (wat neerkomt op zondag middernacht UTC+1)
+// Cronjob: Reset trending votes wekelijks op zaterdag 23:00 UTC (dat is zondag middernacht UTC+1)
 cron.schedule('0 23 * * 6', () => {
   trendingVotesDb.run(`DELETE FROM trending_votes`, (err) => {
     if (err) {
@@ -506,10 +512,6 @@ cron.schedule('0 23 * * 6', () => {
 });
 
 app.use('/trending', trendingVotesRouter);
-
-// === LISTING FORM ROUTES & OVERIGE ROUTES (zoals eerder) ===
-
-// (Je overige routes blijven ongewijzigd)
 
 // === SERVER START ===
 app.listen(PORT, "0.0.0.0", () => {
