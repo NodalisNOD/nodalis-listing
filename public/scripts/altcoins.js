@@ -1,10 +1,10 @@
 export const coins = [
   {
-    name: "Cronos Legends CLG",
-    contract: "0x08d9cb5100C306C2909B63415d7ff05268633b41",
-    icon: "./assets/coinIcons/clg.jpg",
+    name: "Chucky CHUCKY",
+    contract: "0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2",
+    icon: "./assets/coinIcons/chucky.jpg",
     apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x3e5795b89ba23c9a8d44c0bab6888cca21ce7d42%2C0x1e4d16ad0d6860435bd146e3c5a19d45b7af74be%2C0xe7f72ad51661b99a89ecaa9bcb436a9815bddd43%2C0x98a7a313844c1cf3e10ca7d3262eec38155473aa%2C0xd15179a486ecb2b3f1035bdd9ebbc2ade9947541%2C0x1e06ca44ebd9284200a671ec64839dbd184804c9",
   },
   {
     name: "Pixel Tribes Cro PTCRO",
