@@ -342,90 +342,16 @@ comVoteRouter.post('/flush', (req, res) => {
   });
 });
 
-// ----- COIN VOTES ENDPOINTS (Permanente sentiment per coin) -----
-const coinVotesRouter = express.Router();
 const coinVotesDbDir = path.join(__dirname, "public", "data");
-const coinVotesDbPath = path.join(coinVotesDbDir, "coin_votes.db");
+const trendingVotesDbPath = path.join(coinVotesDbDir, "trending_votes.db");
+
+// Zorg ervoor dat de database directory bestaat
 if (!fs.existsSync(coinVotesDbDir)) {
   fs.mkdirSync(coinVotesDbDir, { recursive: true });
   console.log(`Map aangemaakt: ${coinVotesDbDir}`);
 }
-const coinVotesDb = new sqlite3.Database(coinVotesDbPath, (err) => {
-  if (err) {
-    console.error("Error opening coin_votes database:", err.message);
-  } else {
-    console.log("Connected to coin_votes database at", coinVotesDbPath);
-  }
-});
-coinVotesDb.serialize(() => {
-  coinVotesDb.run(`
-    CREATE TABLE IF NOT EXISTS coin_votes (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      coinId TEXT NOT NULL,
-      voteType TEXT NOT NULL,  -- 'positive' of 'negative'
-      voteTime DATETIME DEFAULT CURRENT_TIMESTAMP
-    )
-  `, (err) => {
-    if (err) {
-      console.error("Error creating coin_votes table:", err.message);
-    }
-  });
-});
-coinVotesRouter.get('/:coinId', (req, res) => {
-  const coinId = req.params.coinId;
-  const query = `
-    SELECT 
-      SUM(CASE WHEN voteType = 'positive' THEN 1 ELSE 0 END) AS positive,
-      SUM(CASE WHEN voteType = 'negative' THEN 1 ELSE 0 END) AS negative
-    FROM coin_votes
-    WHERE coinId = ?
-  `;
-  coinVotesDb.get(query, [coinId], (err, row) => {
-    if (err) {
-      console.error("Error fetching coin votes:", err.message);
-      return res.status(500).json({ error: "Internal Server Error" });
-    }
-    if (!row) row = { positive: 0, negative: 0 };
-    row.total = (row.positive || 0) + (row.negative || 0);
-    res.json(row);
-  });
-});
-coinVotesRouter.post('/:coinId/:type', (req, res) => {
-  const coinId = req.params.coinId;
-  const type = req.params.type;
-  if (type !== 'positive' && type !== 'negative') {
-    return res.status(400).json({ error: "Invalid vote type" });
-  }
-  const query = `INSERT INTO coin_votes (coinId, voteType) VALUES (?, ?)`;
-  coinVotesDb.run(query, [coinId, type], function(err) {
-    if (err) {
-      console.error("Error inserting coin vote:", err.message);
-      return res.status(500).json({ error: "Internal Server Error" });
-    }
-    const selectQuery = `
-      SELECT 
-        SUM(CASE WHEN voteType = 'positive' THEN 1 ELSE 0 END) AS positive,
-        SUM(CASE WHEN voteType = 'negative' THEN 1 ELSE 0 END) AS negative
-      FROM coin_votes
-      WHERE coinId = ?
-    `;
-    coinVotesDb.get(selectQuery, [coinId], (err, row) => {
-      if (err) {
-        console.error("Error fetching updated coin votes:", err.message);
-        return res.status(500).json({ error: "Internal Server Error" });
-      }
-      if (!row) row = { positive: 0, negative: 0 };
-      row.total = (row.positive || 0) + (row.negative || 0);
-      res.json({ votes: row });
-    });
-  });
-});
-app.use('/votes', coinVotesRouter);
 
-// ----- TRENDING VOTES ENDPOINTS -----
-// (Plaats dit in je server.js, onder de andere routes)
-
-const trendingVotesDbPath = path.join(coinVotesDbDir, "trending_votes.db");
+// Verbinden met database
 const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
   if (err) {
     console.error("Error opening trending_votes database:", err.message);
@@ -433,14 +359,17 @@ const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
     console.log("Connected to trending_votes database at", trendingVotesDbPath);
   }
 });
+
+// Creëer of update de database tabel
 trendingVotesDb.serialize(() => {
   trendingVotesDb.run(`
     CREATE TABLE IF NOT EXISTS trending_votes (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       coinId TEXT NOT NULL,
       userIdentifier TEXT NOT NULL,
+      userIp TEXT NOT NULL,
       voteTime DATETIME DEFAULT CURRENT_TIMESTAMP,
-      UNIQUE (coinId, userIdentifier, date(voteTime))
+      UNIQUE (coinId, userIp, date(voteTime))
     )
   `, (err) => {
     if (err) {
@@ -450,67 +379,109 @@ trendingVotesDb.serialize(() => {
 });
 
 const trendingVotesRouter = express.Router();
-trendingVotesRouter.post('/:coinId', (req, res) => {
+
+// 🔥 Stemmen toevoegen met IP-check en userId-check
+trendingVotesRouter.post("/:coinId", (req, res) => {
   const coinId = req.params.coinId;
-  // Haal userId uit de cookie
-  const userId = req.cookies.userId;
-  if (!userId) {
-    return res.status(400).json({ error: "User not identified" });
+  
+  // Haal userId uit de cookie (optioneel, kan ook "anonymous" zijn)
+  const userId = req.cookies.userId || "anonymous";
+
+  // Haal IP-adres op
+  const userIp = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+
+  if (!userIp) {
+    return res.status(400).json({ error: "Could not determine IP address" });
   }
+
   const now = new Date();
-  const query = `INSERT INTO trending_votes (coinId, userIdentifier, voteTime) VALUES (?, ?, ?)`;
-  trendingVotesDb.run(query, [coinId, userId, now.toISOString()], function(err) {
+  const voteTime = now.toISOString();
+  const voteDate = now.toISOString().split("T")[0]; // YYYY-MM-DD
+  
+  // Probeer een stem toe te voegen
+  const query = `INSERT INTO trending_votes (coinId, userIdentifier, userIp, voteTime, voteDate) VALUES (?, ?, ?, ?, ?)`;
+  trendingVotesDb.run(query, [coinId, userId, userIp, voteTime, voteDate], function(err) {  
     if (err) {
       if (err.message.includes("UNIQUE constraint failed")) {
-        return res.status(429).json({ error: "Already voted today" });
+        return res.status(429).json({ error: "Already voted today from this IP" });
       } else {
-        console.error(err.message);
+        console.error("Database error:", err.message);
         return res.status(500).json({ error: "Database error" });
       }
     }
-    trendingVotesDb.get(`SELECT COUNT(*) AS votes FROM trending_votes WHERE coinId = ?`, [coinId], (err, row) => {
-      if (err) {
-        console.error(err.message);
-        return res.status(500).json({ error: "Database error" });
+
+    // Haal het totaal aantal stemmen op voor de coin
+    trendingVotesDb.get(
+      `SELECT COUNT(*) AS votes FROM trending_votes WHERE coinId = ?`,
+      [coinId],
+      (err, row) => {
+        if (err) {
+          console.error("Error fetching votes:", err.message);
+          return res.status(500).json({ error: "Database error" });
+        }
+        res.json({ coinId, votes: row.votes });
       }
-      res.json({ coinId, votes: row.votes });
-    });
+    );
   });
 });
 
-trendingVotesRouter.get('/', (req, res) => {
-  trendingVotesDb.all(`
+// 🔥 Trending coins ophalen (top 10 meest gestemde coins)
+trendingVotesRouter.get("/", (req, res) => {
+  trendingVotesDb.all(
+    `
     SELECT coinId, COUNT(*) AS votes 
     FROM trending_votes 
     GROUP BY coinId 
     ORDER BY votes DESC 
     LIMIT 10
-  `, [], (err, rows) => {
-    if (err) {
-      console.error(err.message);
-      return res.status(500).json({ error: 'Database error' });
+  `,
+    [],
+    (err, rows) => {
+      if (err) {
+        console.error("Error fetching trending votes:", err.message);
+        return res.status(500).json({ error: "Database error" });
+      }
+      res.json(rows);
     }
-    res.json(rows);
-  });
+  );
 });
 
-// Cronjob: Reset trending votes elke week op zaterdag 23:00 UTC (zondag middernacht UTC+1)
-cron.schedule('0 23 * * 6', () => {
-  trendingVotesDb.run(`DELETE FROM trending_votes`, (err) => {
-    if (err) {
-      console.error("Error resetting trending votes:", err.message);
-    } else {
-      console.log("Trending votes have been reset.");
+// 🔥 Debug route om IP-adressen van stemmen te bekijken (alleen tijdelijk gebruiken!)
+trendingVotesRouter.get("/debug-ip", (req, res) => {
+  trendingVotesDb.all(
+    `SELECT * FROM trending_votes ORDER BY voteTime DESC`,
+    [],
+    (err, rows) => {
+      if (err) {
+        console.error("Error fetching debug IPs:", err.message);
+        return res.status(500).json({ error: "Database error" });
+      }
+      res.json(rows);
     }
-  });
-}, {
-  scheduled: true,
-  timezone: "UTC"
+  );
 });
 
-app.use('/trending', trendingVotesRouter);
+// 🔥 Cronjob: Reset stemmen elke zaterdag 23:00 UTC (zondag 00:00 UTC+1)
+cron.schedule(
+  "0 23 * * 6",
+  () => {
+    trendingVotesDb.run(`DELETE FROM trending_votes`, (err) => {
+      if (err) {
+        console.error("Error resetting trending votes:", err.message);
+      } else {
+        console.log("✅ Trending votes have been reset.");
+      }
+    });
+  },
+  {
+    scheduled: true,
+    timezone: "UTC",
+  }
+);
 
-app.use('/trending', trendingVotesRouter);
+// Gebruik de router
+app.use("/trending", trendingVotesRouter);
+
 
 // === SERVER START ===
 app.listen(PORT, "0.0.0.0", () => {

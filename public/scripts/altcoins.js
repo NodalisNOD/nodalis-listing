@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Pixel Tribes Cro PTCRO",
+    contract: "0xDd8D87faF419Abad614E0D05E01c68FDfa473A6A",
+    icon: "./assets/coinIcons/ptcro.webp",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x8e032a95c05c7da2f3ad6fd5effe8f8c5f8fb7d2%2C0xab77e195d2b7c0bcd529682ab9c8883db2a6cd2a%2C0x827b6362ed5ad3f80ad4ac50fd8af22c81745ca6",
+  },
+  {
     name: "Greenstix v2 GRNSTX",
     contract: "0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b",
     icon: "./assets/coinIcons/GRNSTX.jpg",
