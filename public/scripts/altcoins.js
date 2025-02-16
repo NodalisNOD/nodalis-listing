@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Greenstix v2 GRNSTX",
+    contract: "0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b",
+    icon: "./assets/coinIcons/GRNSTX.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9",
+  },
+  {
     name: "croc with knife STAB",
     contract: "0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
     icon: "./assets/coinIcons/stab.jpg",
@@ -141,7 +148,7 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
 
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
@@ -165,7 +172,7 @@ export async function fetchCoinData(coin) {
   // Probeer data uit de cache te halen als deze recent is
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
+  if (cachedData && cachedTime && now - parseInt(cachedTime, 20) < BROWSER_CACHE_DURATION) {
     return JSON.parse(cachedData);
   }
 

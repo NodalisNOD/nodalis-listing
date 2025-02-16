@@ -55,6 +55,42 @@
         </table>
       </div>
 
+<!-- Top Community Table -->
+<div class="table-wrapper">
+  <h2>
+    <img src="./assets/UI/fire.png" alt="Community Logo" class="table-icon" />This Week's Top Community
+  </h2>
+  <!-- Reset timer element -->
+  <div id="trending-reset-timer"></div>
+  <!-- Deze wrapper plaatst de twee subtabellen naast elkaar -->
+  <div class="top-community-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Token Name</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody id="top-community-left">
+        <!-- Hier komen de eerste 5 tokens -->
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Token Name</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody id="top-community-right">
+        <!-- Hier komen de overige 5 tokens -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
       <!-- Advertisement + Twitter Feed Wrapper -->
       <div class="ad-twitter-wrapper">
         <div class="ad-container">
@@ -66,34 +102,32 @@
           <small><a href="advertise.html" target="_blank" rel="noopener noreferrer">Your ad here?</a></small>
         </div>
         
+        <!-- Sentiment -->
+        <div id="comVotes">
+          <h3>Cronos Community Sentiment</h3>
+          <div class="tooltip-wrapper" style="display: inline-block; position: relative;">
+            <img src="./assets/UI/about.png" alt="About" class="tooltip-icon">
+            <span class="tooltip-text">How do you feel about Cronos today?</span>
+          </div>
+          <div class="sentiment-bar">
+            <div id="positive-bar" class="positive-bar"></div>
+            <div id="negative-bar" class="negative-bar"></div>
+          </div>
+          <div id="total-votes"></div>
+          <div id="reset-timer"></div>
+          <div class="vote-buttons">
+            <button id="vote-positive"></button>
+            <button id="vote-negative"></button>
+          </div>
+        </div>
 
-<!-- Sentiment -->
-<!-- Sentiment -->
-<div id="comVotes">
-  <h3>Cronos Community Sentiment</h3>
-  <div class="tooltip-wrapper" style="display: inline-block; position: relative;">
-    <img src="./assets/UI/about.png" alt="About" class="tooltip-icon">
-    <span class="tooltip-text">How do you feel about Cronos today?</span>
-  </div>
-  <div class="sentiment-bar">
-    <div id="positive-bar" class="positive-bar"></div>
-    <div id="negative-bar" class="negative-bar"></div>
-  </div>
-  <div id="total-votes"></div>
-  <div id="reset-timer"></div>
-  <div class="vote-buttons">
-    <button id="vote-positive"></button>
-    <button id="vote-negative"></button>
-  </div>
-</div>
+        <!-- Sentiment Bar -->
+        <div id="sentiment-bar">
+          <div id="positive-bar" class="positive-bar"></div>
+          <div id="negative-bar" class="negative-bar"></div>
+        </div>
+      </div>
 
- <!-- Sentiment Bar -->
- <div id="sentiment-bar">
-   <div id="positive-bar" class="positive-bar"></div>
-   <div id="negative-bar" class="negative-bar"></div>
- </div>
-
-    </div>
       <!-- Stats: Market Cap and Dominance -->
       <div class="stats-wrapper">
         <div id="market-cap-container" class="stat-box">
@@ -122,37 +156,37 @@
       </div>
     </div>
 
-<!-- All Coins Table -->
-<div class="main-table-wrapper">
-  <div class="search-container">
-    <input
-      type="text"
-      id="search-bar"
-      placeholder="Search for a coin by name or contract address..."
-      aria-label="Search for a coin"
-    />
-  </div>
-  <table class="main-crypto-table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>1h Change</th>
-        <th>24h Change</th>
-        <th>Market Cap</th>
-        <th>Volume (24h)</th>
-      </tr>
-    </thead>
-    <tbody id="altcoin-table"></tbody>
-  </table>
-  <div class="table-footer-logo">
-    <a href="https://www.geckoterminal.com" target="_blank">
-      <img src="./assets/UI/geckoterminal.png" alt="Gecko Terminal Logo" />
-    </a>
-  </div>
-</div>
-
+    <!-- All Coins Table -->
+    <div class="main-table-wrapper">
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for a coin by name or contract address..."
+          aria-label="Search for a coin"
+        />
+      </div>
+      <table class="main-crypto-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>1h Change</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+            <th>Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="altcoin-table"></tbody>
+      </table>
+      <div class="table-footer-logo">
+        <a href="https://www.geckoterminal.com" target="_blank">
+          <img src="./assets/UI/geckoterminal.png" alt="Gecko Terminal Logo" />
+        </a>
+      </div>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer id="footer">
@@ -178,6 +212,7 @@
   <script src="./scripts/header.js"></script>
   <script src="./scripts/footer.js"></script>
   <script src="./scripts/info-header.js" type="module"></script>
+  <script src="./scripts/trendingVotes.js" type="module"></script>
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
   <script type="module">
     import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js";
@@ -199,12 +234,10 @@
       document.getElementById("acceptCookies").addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "accepted");
         banner.style.display = "none";
-        // Optionally, load external scripts (e.g. Twitter) here if needed.
       });
       document.getElementById("declineCookies").addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "declined");
         banner.style.display = "none";
-        // You might choose not to load external scripts if cookies are declined.
       });
     });
 

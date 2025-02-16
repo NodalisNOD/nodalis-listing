@@ -146,6 +146,42 @@ main {
 .sentiment-bar .negative {
   background-color: #f44336;
 }
+.trending-vote-container {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+#vote-trending {
+  background-color: #042c3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+}
+
+#vote-trending:hover {
+  background-color: #042c3f;
+  transform: scale(1.05);
+}
+
+#vote-trending:active {
+  background-color: #042c3f;
+  transform: scale(0.98);
+}
+
+#vote-trending .button-icon {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
 
 
 /* 🔹 Stemknoppen */

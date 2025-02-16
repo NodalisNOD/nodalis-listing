@@ -1,5 +1,39 @@
 [
   {
+    "id": "greenstixv2-GRNSTXV2",
+    "name": "Greenstix v2 GRNSTX v2",
+    "icon": "./assets/coinIcons/GRNSTX.jpg",
+    "contract": "0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b",
+    "website": "https://greenstix.fun/",
+    "explorer": "https://cronoscan.com/token/0x16a19ae876272fb9cc8df78a116c63cc1562270b",
+    "twitter": "https://x.com/greenstixv2",
+    "telegram": "https://t.me/GreenStixToken",
+    "discord": "",
+    "whitepaper": "https://medium.com/@greenstixinc/whitepaper-greenstix-keeping-it-green-irl-web3-000128770f1e",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Medium",
+        "url": "https://medium.com/@greenstixinc"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@greenstix_v2"
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Greenstix strives for a cleaner and greener tomorrow. Encouraging our community to do one small thing a day; properly recycle, pick up trash found in ground, plant some trees whatever you can think of. If we all do a little, tomorrow can be alot greener!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x16a19ae876272fb9cc8df78a116c63cc1562270b",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x09e719a6f820438c796fba25f22fe145f8b7dd5e/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9"
+    }
+  },
+  {
     "id": "croc-with-knife-stab",
     "name": "croc with knife STAB",
     "icon": "./assets/coinIcons/stab.jpg",
@@ -39,7 +73,7 @@
     "icon": "./assets/coinIcons/holic.jpg",
     "contract": "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
     "website": "https://cryptoholic.app/",
-    "explorer": "https://cronoscan.com/token/0x2829955d8Aac64f184E363516FDfbb0394042B90",
+    "explorer": "https://cronoscan.com/token/0x55e6fb1ae5e3fcd505446f501ab766d8d59b20a9",
     "twitter": "https://x.com/cryptoholic_app",
     "telegram": "",
     "discord": "https://discord.com/invite/hTSDp4Ug3K",

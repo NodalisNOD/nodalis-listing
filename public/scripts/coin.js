@@ -21,8 +21,9 @@ const dexIcons = {
   "vvs-v3": { icon: "./assets/coinIcons/vvs.jpg", name: "VVS Finance" },
   mm_finance: { icon: "./assets/coinIcons/mmf.jpg", name: "MM Finance" },
   "ebisus-bay": { icon: "./assets/coinIcons/ebisus.png", name: "Ebisus Bay" },
-  crodex: { icon: "./assets/coinIcons/crodex.png", name: "Crodex" },
+  crodex: { icon: "./assets/coinIcons/crx.png", name: "Crodex" },
   cronaswap: { icon: "./assets/coinIcons/crona.jpg", name: "CronaSwap" },
+  "phenix-finance-cronos": { icon: "./assets/coinIcons/phenix.webp", name: "PhenixFinance" },
 };
 
 // Haal coin details op
@@ -140,6 +141,29 @@ function showNotification(message, event) {
     popup.classList.add("hidden");
   }, 2000);
 }
+async function submitTrendingVote() {
+  try {
+    const response = await fetch(`/trending/${coinId}`, { method: 'POST' });
+    if (response.status === 429) {
+      alert("You can only vote once every 24 hours for this coin.");
+      return;
+    }
+    const data = await response.json();
+    alert("Your trending vote has been recorded.");
+    // (Optioneel) Update de UI met het nieuwe aantal stemmen
+  } catch (error) {
+    console.error("Error submitting trending vote:", error);
+    alert("Failed to submit trending vote.");
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const trendingBtn = document.getElementById("vote-trending");
+  if (trendingBtn) {
+    trendingBtn.addEventListener("click", submitTrendingVote);
+  }
+});
+
 
 // Haal dynamische coin data (prijs, markten, grafiek, etc.) op
 async function fetchDynamicData(dynamicData) {

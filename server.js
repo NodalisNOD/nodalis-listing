@@ -10,6 +10,8 @@ const multer = require("multer");
 const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
+const cron = require("node-cron");
+
 
 // === CONTROLLERS ===
 const authController = require("./controllers/authController");
@@ -49,15 +51,14 @@ process.on("exit", () => posthog.shutdown());
 const storage = multer.diskStorage({
   destination: "public/uploads/",
   filename: (req, file, cb) => {
-    // Zorg dat req.user beschikbaar is (bijv. via authenticateToken)
     const userId = req.user ? req.user.userId : "unknown";
     cb(null, `profile-${userId}.jpg`);
   }
 });
 const upload = multer({ storage });
 
-// ==== GLOBALE VARIABELEN VOOR VOTING ====
-// (Dit is voor de globale community votes, niet voor coin-votes)
+// ==== GLOBALE VARIABELEN VOOR VOTING (globaal en tokens) ====
+// (Dit is voor de globale community votes, niet voor de coin/trending votes)
 let globalVotes = { positive: 0, negative: 0 };
 let tokenVotes = {};
 let voteRecords = {};
@@ -73,7 +74,7 @@ function saveVoteRecords() {
     const data = {
       globalVotes,
       tokenVotes,
-      globalUserVotes: Object.fromEntries(globalUserVotes), // Converteer Map naar object
+      globalUserVotes: Object.fromEntries(globalUserVotes),
       voteTimestamps
     };
     const voteRecordsFile = path.join(__dirname, "public", "data", "voteRecords.json");
@@ -127,7 +128,7 @@ app.get("/posts/:postId", postController.getPostById);
 // ----- COIN API MET CACHING -----
 let coinDataCache = null;
 let lastCoinFetchTime = 0;
-const COIN_CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const COIN_CACHE_DURATION = 30 * 1000; // 30 sec
 
 const fetchCoinData = async () => {
   try {
@@ -331,7 +332,6 @@ comVoteRouter.post('/flush', (req, res) => {
   });
 });
 
-
 // ----- COIN VOTES ENDPOINTS (Permanente sentiment per coin) -----
 const coinVotesRouter = express.Router();
 const coinVotesDbDir = path.join(__dirname, "public", "data");
@@ -411,6 +411,105 @@ coinVotesRouter.post('/:coinId/:type', (req, res) => {
   });
 });
 app.use('/votes', coinVotesRouter);
+
+// ----- TRENDING VOTES ENDPOINTS -----
+// Maak een aparte database voor trending votes in dezelfde data-map
+const trendingVotesDbPath = path.join(coinVotesDbDir, "trending_votes.db");
+const trendingVotesDb = new sqlite3.Database(trendingVotesDbPath, (err) => {
+  if (err) {
+    console.error("Error opening trending_votes database:", err.message);
+  } else {
+    console.log("Connected to trending_votes database at", trendingVotesDbPath);
+  }
+});
+trendingVotesDb.serialize(() => {
+  trendingVotesDb.run(`
+    CREATE TABLE IF NOT EXISTS trending_votes (
+      coinId TEXT PRIMARY KEY,
+      votes INTEGER DEFAULT 0,
+      lastVote DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `, (err) => {
+    if (err) {
+      console.error("Error creating trending_votes table:", err.message);
+    }
+  });
+});
+
+// POST trending vote: Bezoeker mag 1x per 24 uur stemmen op een coin voor trending
+trendingVotesDb;
+const trendingVotesRouter = express.Router();
+trendingVotesRouter.post('/:coinId', (req, res) => {
+  const coinId = req.params.coinId;
+  const now = new Date();
+  trendingVotesDb.get(`SELECT coinId, votes, lastVote FROM trending_votes WHERE coinId = ?`, [coinId], (err, row) => {
+    if (err) {
+      console.error(err.message);
+      return res.status(500).json({ error: 'Database error' });
+    }
+    if (row) {
+      const lastVote = new Date(row.lastVote);
+      if (
+        lastVote.getUTCFullYear() === now.getUTCFullYear() &&
+        lastVote.getUTCMonth() === now.getUTCMonth() &&
+        lastVote.getUTCDate() === now.getUTCDate()
+      ) {
+        return res.status(429).json({ error: 'Already voted today for trending' });
+      }
+      const newVotes = row.votes + 1;
+      trendingVotesDb.run(`UPDATE trending_votes SET votes = ?, lastVote = ? WHERE coinId = ?`,
+        [newVotes, now.toISOString(), coinId],
+        function(err) {
+          if (err) {
+            console.error(err.message);
+            return res.status(500).json({ error: 'Database error' });
+          }
+          res.json({ coinId, votes: newVotes });
+        });
+    } else {
+      trendingVotesDb.run(`INSERT INTO trending_votes (coinId, votes, lastVote) VALUES (?, ?, ?)`,
+        [coinId, 1, now.toISOString()],
+        function(err) {
+          if (err) {
+            console.error(err.message);
+            return res.status(500).json({ error: 'Database error' });
+          }
+          res.json({ coinId, votes: 1 });
+        });
+    }
+  });
+});
+
+// GET trending coins: retourneer top 10 trending coins (gesorteerd op stemmen)
+trendingVotesRouter.get('/', (req, res) => {
+  trendingVotesDb.all(`SELECT coinId, votes FROM trending_votes ORDER BY votes DESC LIMIT 10`, [], (err, rows) => {
+    if (err) {
+      console.error(err.message);
+      return res.status(500).json({ error: 'Database error' });
+    }
+    res.json(rows);
+  });
+});
+
+// Cronjob: Reset trending votes elke week op zaterdag 23:00 UTC (wat neerkomt op zondag middernacht UTC+1)
+cron.schedule('0 23 * * 6', () => {
+  trendingVotesDb.run(`DELETE FROM trending_votes`, (err) => {
+    if (err) {
+      console.error("Error resetting trending votes:", err.message);
+    } else {
+      console.log("Trending votes have been reset.");
+    }
+  });
+}, {
+  scheduled: true,
+  timezone: "UTC"
+});
+
+app.use('/trending', trendingVotesRouter);
+
+// === LISTING FORM ROUTES & OVERIGE ROUTES (zoals eerder) ===
+
+// (Je overige routes blijven ongewijzigd)
 
 // === SERVER START ===
 app.listen(PORT, "0.0.0.0", () => {

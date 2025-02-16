@@ -1,4 +1,3 @@
-
 /* Algemene instellingen */
 body {
   margin: 0;
@@ -8,33 +7,65 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 20px;
   max-width: 95%;
   margin: 20px auto;
-  padding: 20px;
   background-color: #fff;
 }
 
+/* Main content layout */
 .main-content {
   display: flex;
-  flex-direction: column; /* Zorgt dat alles onder elkaar wordt gestapeld */
+  flex-direction: column;
 }
 
+/* Nieuwe container voor dashboard layout: tabellen en stats naast elkaar */
+.dashboard-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* De tabellen krijgen meer ruimte; de stat-boxen minder */
+.dashboard-container .tables-container {
+  flex: 3;  /* Bijvoorbeeld 75% breedte */
+}
+
+.dashboard-container .stats-wrapper {
+  flex: 1;  /* Bijvoorbeeld 25% breedte */
+}
+
+/* Container voor de drie tabellen binnen de dashboard-container */
 .tables-container {
   display: flex;
   justify-content: space-between;
+  align-items: stretch; /* Zorgt dat alle kinderen dezelfde hoogte hebben */
   gap: 1rem;
-  margin-bottom: 2rem; /* Voeg ruimte toe onder de tabellen */
+  margin-bottom: 2rem;
 }
 
+/* Algemene styling voor elke tabel-wrapper */
 .table-wrapper {
   flex: 1;
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Titel en tabel netjes gestapeld */
 }
 
+/* Titel in de tabel-wrapper */
+.table-wrapper h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  background: #eee;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Algemene tabel styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -45,7 +76,13 @@ table {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
+/* Zorg dat de tabel de resterende ruimte inneemt in de wrapper */
+.table-wrapper table {
+  flex: 1;
+}
+
+table th,
+table td {
   border: 1px solid #ddd;
   padding: 0.5rem;
   text-align: left;
@@ -56,12 +93,13 @@ table th {
   color: white;
 }
 
+/* Styling voor logo's */
 .crypto-logo {
   height: 20px;
   margin-right: 0.5rem;
 }
 
-/* 🔹 Algemene Tabelstijl */
+/* Main crypto tabel (onderaan de pagina) */
 .main-table-wrapper {
   display: block;
   margin-top: 20px;
@@ -69,10 +107,9 @@ table th {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
-  overflow-x: auto; /* Horizontaal scrollen voor mobiele weergave */
+  overflow-x: auto;
 }
 
-/* 🔹 Zorg dat tabellen correct werken */
 .main-crypto-table {
   width: 100%;
   border-collapse: collapse;
@@ -81,26 +118,24 @@ table th {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 600px; /* Voorkomt dat de tabel op mobiel te klein wordt */
+  min-width: 600px;
 }
 
-.main-crypto-table th, 
+.main-crypto-table th,
 .main-crypto-table td {
   border: 1px solid #ddd;
   padding: 0.5rem;
   text-align: left;
-  white-space: nowrap; /* Voorkomt dat cellen te veel regels krijgen */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* 🔹 Kopteksten */
 .main-crypto-table th {
   background-color: #042c3f;
   color: white;
   cursor: pointer;
   position: relative;
-  text-align: left;
   padding-right: 20px;
 }
 
@@ -109,7 +144,7 @@ table th {
   color: #ffffff;
 }
 
-/* 🔹 Pijlen voor sorteren */
+/* Pijlen voor sorteren in de main crypto tabel */
 .main-crypto-table th.sort-asc::after,
 .main-crypto-table th.sort-desc::after {
   content: '';
@@ -130,14 +165,12 @@ table th {
   border-color: #ffffff transparent transparent transparent;
 }
 
-/* 🔹 Stijl voor de eerste kolom (icon/naam) */
-.main-crypto-table td:first-child, 
+.main-crypto-table td:first-child,
 .main-crypto-table th:first-child {
   text-align: center;
   font-weight: bold;
 }
 
-/* 🔹 Afbeeldingen in de tabel */
 .crypto-table td img,
 .main-crypto-table td img {
   height: 24px !important;
@@ -147,7 +180,7 @@ table th {
   vertical-align: middle;
 }
 
-/* 🔹 Prijsveranderingen */
+/* Prijsveranderingen */
 .positive-change {
   color: #28a745;
 }
@@ -156,7 +189,7 @@ table th {
   color: #dc3545;
 }
 
-/* 🔹 Sorteerbare kolomkoppen */
+/* Algemene stijl voor icoontjes */
 .table-icon {
   height: 24px;
   width: auto;
@@ -164,7 +197,7 @@ table th {
   margin-right: 0.5rem;
 }
 
-/* 🔹 Linkjes */
+/* Link-styling */
 .coin-link {
   text-decoration: none;
   color: inherit;
@@ -175,7 +208,7 @@ table th {
   text-decoration: underline;
 }
 
-/* 🔹 Zoekbalk */
+/* Zoekbalk */
 .search-container {
   margin-bottom: 10px;
   display: flex;
@@ -191,58 +224,47 @@ table th {
   border-radius: 4px;
 }
 
-/* 🔹 Mobiele optimalisatie */
+/* Responsieve styling: Mobiele optimalisatie */
 @media (max-width: 768px) {
-  .main-table-wrapper {
-    overflow-x: auto; /* Zorgt voor horizontaal scrollen */
-    display: block;
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .tables-container,
+  .stats-wrapper {
     width: 100%;
   }
-
-  .main-crypto-table {
-    width: 100%;
-    min-width: 600px; /* Zorgt ervoor dat de tabel niet te smal wordt */
-  }
-
-  /* 🔹 Verberg minder belangrijke kolommen op mobiel */
-  .main-crypto-table th:nth-child(4),
-  .main-crypto-table td:nth-child(4), /* Verberg bijv. "Market Cap" */
-  .main-crypto-table th:nth-child(5),
-  .main-crypto-table td:nth-child(5)  /* Verberg bijv. "24h Volume" */ {
-    display: none;
-  }
-
-  /* 🔹 Maak cellen compacter */
-  .main-crypto-table th,
-  .main-crypto-table td {
-    font-size: 0.85rem;
-    padding: 0.4rem;
+  .stat-box {
+    min-width: 100%;
   }
 }
 
-.tables-container {
+/* Specifieke styling voor de Top Community tabel */
+.top-community-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem; /* Voeg ruimte toe onder de container */
+  flex: 1;
 }
 
-.table-wrapper {
-  flex: 4; /* Breedte van de Newcomers en Top Gainers tabellen */
-  background: white;
+.top-community-wrapper table {
+  width: 48%;
+  border-collapse: collapse;
+}
+
+.top-community-wrapper th,
+.top-community-wrapper td {
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column; /* Zorgt dat de inhoud goed past */
+  padding: 0.5rem;
+  text-align: left;
 }
 
+/* Statistieken (Market Cap, Dominance, etc.) */
 .stats-wrapper {
-  flex: 1.5; /* Breedte van de Market Cap en Dominance */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: space-between; /* Zorgt dat de vakken worden verdeeld */
+  justify-content: space-between;
 }
 
 .stat-box {
@@ -253,8 +275,8 @@ table th {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centreert de inhoud verticaal */
-  height: 100%; /* Zorgt dat de stat-box volledig wordt opgerekt */
+  justify-content: center;
+  height: 100%;
 }
 
 .stat-box h3 {
@@ -267,6 +289,8 @@ table th {
   font-weight: bold;
   margin: 0;
 }
+
+/* Tooltip styling */
 .tooltip-wrapper {
   display: inline-block;
   position: relative;
@@ -281,9 +305,9 @@ table th {
 }
 
 .tooltip-text {
-  display: none; /* Verberg de tooltip standaard */
+  display: none;
   position: absolute;
-  top: -45px; /* Plaats de tooltip boven het icoontje */
+  top: -45px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
@@ -293,54 +317,54 @@ table th {
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  width: 200px; /* Beperk de breedte van de tooltip */
-  text-align: center; /* Zorg dat de tekst gecentreerd is */
-  white-space: normal; /* Sta tekstafbreking toe */
-  word-wrap: break-word; /* Breek woorden indien nodig */
+  width: 200px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .tooltip-wrapper:hover .tooltip-text {
-  display: block; /* Toon de tooltip bij hover */
+  display: block;
 }
+
+/* Advertentie container */
 .ad-container {
-  width: 300px; /* Vaste breedte */
-  height: 200px; /* Vaste hoogte */
-  position: relative; /* Voor positionering van het label */
+  width: 300px;
+  height: 200px;
+  position: relative;
   text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin: 0 1rem; /* Ruimte tussen secties */
+  margin: 0 1rem;
+  box-sizing: border-box;
 }
 
-.ad-content {
-  position: relative; /* Basis voor labelpositionering */
-  display: inline-block; /* Zorgt dat de inhoud inline is */
-}
 .ad-text small {
-  font-size: 15px; /* Pas de grootte aan indien nodig */
-  color: #07b5e056; /* Optioneel: kleur aanpassen */
+  font-size: 15px;
+  color: #07b5e056;
 }
 
 .ad-image {
-  max-width: 100%; /* Laat de advertentie-afbeelding schalen */
+  max-width: 100%;
   height: auto;
 }
 
-/* Sponsored Label (ad.png) */
+/* Sponsored label */
 .sponsored-label {
   position: absolute;
-  top: 10px; /* Afstand vanaf de bovenkant */
-  left: 10px; /* Afstand vanaf de linkerkant */
-  width: 10px; /* Grootte van het label */
+  top: 10px;
+  left: 10px;
+  width: 10px;
   height: auto;
-  z-index: 2; /* Zorgt ervoor dat het altijd bovenop de advertentieafbeelding staat */
-  background: rgba(255, 255, 255, 0.8); /* Optionele achtergrond voor betere zichtbaarheid */
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
   padding: 3px 5px;
   border-radius: 3px;
 }
-/* Stijling voor de dropdown */
+
+/* Dropdown styling */
 .dropdown {
   position: relative;
 }
@@ -385,6 +409,7 @@ table th {
   display: block;
 }
 
+/* Cookie banner styling */
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 14px;
@@ -397,43 +422,25 @@ table th {
   text-decoration: underline;
 }
 
-/* Advertentie Container (voorbeeld) */
-.ad-container {
-  width: 300px; /* Vaste breedte */
-  height: 200px; /* Vaste hoogte */
-  position: relative;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  margin: 0 1rem; /* Ruimte tussen secties */
-  box-sizing: border-box;
-}
-/* 🔹 Mobile-first media queries */
-@media (max-width: 768px) {
-  .tables-container {
-    flex-direction: column; /* Stapel tabellen onder elkaar op kleinere schermen */
-  }
-
-  .table-wrapper, 
-  .stats-wrapper {
-    width: 100%; /* Laat tabellen en stats de volledige breedte innemen */
-  }
-
-  .stat-box {
-    min-width: 100%;
-  }
+/* Tabel footer logo */
+.table-footer-logo {
+  text-align: right;
+  margin-top: 10px;
+  opacity: 0.9;
 }
 
-/* 🔹 Sentiment container (Mobile Friendly) */
+.table-footer-logo img {
+  width: 250px;
+  height: auto;
+}
+
+/* Sentiment styling */
 #comVotes {
   width: 300px;
   min-height: 200px;
   text-align: center;
   padding: 10px;
-  /* Als je de rand niet wilt, verwijder of zet deze op none */
-  border: none; /* of verwijder deze regel */
+  border: none;
   border-radius: 5px;
   background-color: #f9f9f9;
   margin: 20px auto;
@@ -452,7 +459,7 @@ table th {
   color: white;
   text-align: center;
   transition: width 0.5s;
-  font-size: 0.7rem; /* Kleinere tekst in de balk, indien gewenst */
+  font-size: 0.7rem;
 }
 
 #comVotes .negative-bar {
@@ -460,10 +467,9 @@ table th {
   color: white;
   text-align: center;
   transition: width 0.5s;
-  font-size: 0.7rem; /* Kleinere tekst in de balk, indien gewenst */
+  font-size: 0.7rem;
 }
 
-/* 🔹 Vote-knoppen */
 #comVotes .vote-buttons {
   display: flex;
   gap: 15px;
@@ -475,8 +481,9 @@ table th {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  border: none;  /* Zorg dat er geen rand om de afbeeldingen zit */
+  border: none;
 }
+
 #comVotes .vote-buttons button {
   border: none;
   background: transparent;
@@ -484,6 +491,10 @@ table th {
   margin: 0;
   cursor: pointer;
   outline: none;
+}
+.top-community-wrapper a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #comVotes .vote-buttons img:hover {
@@ -495,7 +506,6 @@ table th {
   transform: scale(0.9);
 }
 
-/* Minimalistische tekst voor stemmen en reset timer */
 #total-votes,
 #reset-timer {
   font-size: 0.75rem;
@@ -503,33 +513,9 @@ table th {
   margin-top: 0.25rem;
 }
 
-
-/* 🔹 Kleine tweaks voor desktop */
+/* Extra tweaks voor grotere schermen */
 @media (min-width: 1024px) {
   .tables-container {
-    flex-direction: row; /* Zet de tabellen naast elkaar op grote schermen */
+    flex-direction: row;
   }
-}
-
-.table-footer-logo {
-  text-align: right;   /* Plaats het logo rechts in de container */
-  margin-top: 10px;     /* Ruimte boven het logo */
-  opacity: 0.9;         /* Pas de transparantie aan naar wens */
-}
-
-.table-footer-logo img {
-  width: 250px;          /* Stel de gewenste breedte in */
-  height: auto;
-}
-/* Minimalistic styling for sentiment text */
-#total-votes,
-#reset-timer {
-  font-size: 0.75rem;  /* Kleinere tekst */
-  color: #666;         /* Een lichtere tint voor een subtiel effect */
-  margin-top: 0.25rem;  /* Optionele kleine ruimte boven de tekst */
-}
-
-/* Optioneel: verklein ook de algemene sentiment-container marges */
-.sentiment-container {
-  margin-bottom: 1rem; /* Minder ruimte onder de sentiment sectie */
 }
