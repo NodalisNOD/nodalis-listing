@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Buttman On Cronos BUTT",
+    contract: "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
+    icon: "./assets/coinIcons/buttman.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e",
+  },
+  {
     name: "ryoshi with knife ryoshi",
     contract: "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
     icon: "./assets/coinIcons/ryoshi.webp",

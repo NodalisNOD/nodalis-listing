@@ -54,8 +54,11 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
-
       </ul>
     </nav>
+    <!-- Rechts in de header: de "Get isted" knop -->
+    <div class="header-right">
+      <a href="listform.html" class="get-listed-button">Get isted</a>
+    </div>
   </div>
 `;
