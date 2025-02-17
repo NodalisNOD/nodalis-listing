@@ -1,36 +1,36 @@
 [
   {
-    "id": "buttman-on-cronos",
-    "name": "Buttman On Cronos BUTT",
-    "icon": "./assets/coinIcons/buttman.jpg",
-    "contract": "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
-    "website": "https://croham-city.web.app/",
-    "explorer": "https://cronoscan.com/token/0x2dfA528939D38a3654ad44a4748BE591e283a32f",
-    "twitter": "https://x.com/ButtmanOnCro",
-    "telegram": "https://t.me/ButtmanOnCro",
+    "id": "clove-the-pig-clove",
+    "name": "Clove the Pig CLOVE",
+    "icon": "./assets/coinIcons/clove.jpg",
+    "contract": "0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
+    "website": "https://clovethepig.fun/",
+    "explorer": "https://cronoscan.com/address/0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
+    "twitter": "https://x.com/clovecronos",
+    "telegram": "https://t.me/clovecronos",
     "discord": "https://discord.gg/325Zb7c3",
     "whitepaper": "",
     "threads": "",
     "extraLinks": [
       {
-        "name": "",
-        "url": ""
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@clovecronos"
       },
       {
-        "name": "",
-        "url": ""
+        "name": "Instagram",
+        "url": "https://www.instagram.com/clovecronos/"
       },
       {
         "name": "",
         "url": ""
       }
     ],
-    "description": "Croham City—where shadows loom, and hesitation meets its match. A metropolis of towering skyscrapers and restless streets, it's home to relentless ambition and the fearless spirit of those who dare to act.\n\nAs ButtMan blazes the trail, more bold projects are rising from the shadows, ready to take the same fearless approach. This is just the beginning—Croham City is where innovation thrives, and the future is built.\n\nINTRODUCING THE FIRST CROHAM PROJECT:\n\nMeet Brandon B. Buttman the protector of Croham City and slayer of excuses.\n\n$BUTT isn't just a meme coin. It's a statement.\n\nIn addition to that, $BUTT will serve as the governance token for the first features of Croham.",
+    "description": "Clove the Pig is a entertainment based meme token on the Cronos Blockchain. Clove is a Kunekune pig who is solely focused on spreading joy and MUNCHING her way to the TOP. This is a community first meme token that is based on the actual real life pet of the founder. Clove is on mission to break into the world of TikTok & IG to help bring new users to Cronos. The Clove Drove is set on spreading joy, piggy education and positivity to everyone! ",
     "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2dfa528939d38a3654ad44a4748be591e283a32f",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa20996252cce0cbe67faf917fc110ebfe1399e8e/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e"
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8a795f3801ac51a8099724d3265f6cc0fd76f40b",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf89e1751a2757a5c6716f3332208622a71100f44/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44"
     }
   },
     {

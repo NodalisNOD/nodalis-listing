@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Clove the Pig CLOVE",
+    contract: "0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
+    icon: "./assets/coinIcons/clove.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44",
+  },
+  {
     name: "Buttman On Cronos BUTT",
     contract: "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
     icon: "./assets/coinIcons/buttman.jpg",
