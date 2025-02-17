@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "GAINZ GAINZ",
+    contract: "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
+    icon: "./assets/coinIcons/gainz.png",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
+  },
+  {
     name: "Clove the Pig CLOVE",
     contract: "0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
     icon: "./assets/coinIcons/clove.jpg",

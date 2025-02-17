@@ -24,6 +24,8 @@ const dexIcons = {
   crodex: { icon: "./assets/coinIcons/crx.png", name: "Crodex" },
   cronaswap: { icon: "./assets/coinIcons/crona.jpg", name: "CronaSwap" },
   "phenix-finance-cronos": { icon: "./assets/coinIcons/phenix.webp", name: "PhenixFinance" },
+  "candycity_finance": { icon: "./assets/UI/candycity.png", name: "Candy City" },
+  
 };
 
 // Haal coin details op

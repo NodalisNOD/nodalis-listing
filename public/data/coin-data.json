@@ -1,4 +1,72 @@
 [
+    {
+      "id": "gainz-gainz",
+      "name": "GAINZ GAINZ",
+      "icon": "./assets/coinIcons/gainz.png",
+      "contract": "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
+      "website": "https://monkeymuscle.app/",
+      "explorer": "https://cronoscan.com/token/0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
+      "twitter": "https://twitter.com/monkeymuscle121",
+      "telegram": "https://t.me/monkeymuscle121",
+      "discord": "https://discord.gg/V78eXyxVnw",
+      "whitepaper": "",
+      "threads": "",
+      "extraLinks": [
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "description": "Monkey muscle is a community project consisting of revoked community meme coin $GAINZ. Consisting of a community with innovative ideas, partnerships, fun games and giveaways and staking, including i.r.l. Launching gen1 monkey muscle nfts 22nd feb 2025.  ",
+      "dynamicData": {
+        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411",
+        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
+        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2b850b95ba0396749075d119a08b38d7a813ec45/ohlcv/minute?aggregate=15",
+        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651"
+      }
+    },
+      {
+        "id": "ryoshi-with-knife-ryoshi",
+        "name": "ryoshi with knife ryoshi",
+        "icon": "./assets/coinIcons/ryoshi.webp",
+        "contract": "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
+        "website": "https://www.ebisusbay.com/ryoshi",
+        "explorer": "https://cronoscan.com/address/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
+        "twitter": "https://x.com/ryoshiwithknife",
+        "telegram": "",
+        "discord": "https://discord.gg/ebisusbay",
+        "whitepaper": "",
+        "threads": "",
+        "extraLinks": [
+          {
+            "name": "",
+            "url": ""
+          },
+          {
+            "name": "",
+            "url": ""
+          },
+          {
+            "name": "",
+            "url": ""
+          }
+        ],
+        "description": "Sharpest meme on cronos",
+        "dynamicData": {
+          "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
+          "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
+          "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb572267d8abafcf11d2f10e48a8b752af456def4/ohlcv/minute?aggregate=15",
+          "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4"
+        }
+      },
   {
     "id": "clove-the-pig-clove",
     "name": "Clove the Pig CLOVE",
