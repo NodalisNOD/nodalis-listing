@@ -26,20 +26,6 @@ main {
   margin-bottom: 2rem;
 }
 
-/* Alleen voor de trending table header: centreer het icoon boven de tekst */
-.trending-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.trending-heading .table-icon {
-  display: block;
-  margin-bottom: 0.5rem; /* Zorgt voor wat ruimte tussen het icoon en de tekst */
-}
-
-
 /* De tabellen krijgen meer ruimte; de stat-boxen minder */
 .dashboard-container .tables-container {
   flex: 3;  /* Bijvoorbeeld 75% breedte */
@@ -79,6 +65,15 @@ main {
   padding: 0.5rem;
   border-bottom: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
+}
+/* Centreer de "Votes" kolom in de trending table */
+#top-community-left td:nth-child(3),
+#top-community-right td:nth-child(3) {
+  text-align: center;
+}
+.votes-icon {
+  width: 16px;
+  height: 16px;
 }
 
 /* Algemene tabel styling */
