@@ -1,5 +1,19 @@
 export const coins = [
   {
+    name: "ryoshi with knife ryoshi",
+    contract: "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
+    icon: "./assets/coinIcons/ryoshi.webp",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
+  },
+  {
+    name: "Fortune FRTN",
+    contract: "0xaF02D78F39C0002D14b95A3bE272DA02379AfF21",
+    icon: "./assets/coinIcons/fortune.webp",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfc0a8be90566e5329caec3d9630a603453ac7e44%2C0xaf56df060ca167361c66831801e0e17bb05bb313%2C0xa720f9e7c2067fd055b08fceb039fb798c67f44f%2C0xbc10bed82041a5d1abad43cc206656aafe9f84e6%2C0xe6ab98c145a25174c3f5c7184be96bd39faa4772%2C0x83208772584e2bafd2dd52322f9cb24f9e904762%2C0x4ae88a7a207b239b5281db37da9eb357dd8f99d1",
+  },
+  {
     name: "Retribution RETRIB",
     contract: "0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
     icon: "./assets/coinIcons/retribution.jpg",
@@ -135,7 +149,7 @@ export const coins = [
   {
     name: "Croakey CROAK",
     contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-    icon: "./assets/coinIcons/croak.webp",
+    icon: "./assets/coinIcons/croak.jpg",
     apiUrl:
       "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
   },
