@@ -582,7 +582,7 @@
     }
   },
     {
-      "id": "vvs-finance-vvs",
+      "id": "vvs-finance",
       "name": "VVS Finance VVS",
       "icon": "./assets/coinIcons/vvs.jpg",
       "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
