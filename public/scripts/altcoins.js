@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Retribution RETRIB",
+    contract: "0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
+    icon: "./assets/coinIcons/retribution.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f",
+  },
+  {
     name: "Chucky CHUCKY",
     contract: "0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2",
     icon: "./assets/coinIcons/chucky.jpg",

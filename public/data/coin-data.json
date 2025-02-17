@@ -1,5 +1,39 @@
 [
   {
+    "id": "retribution-retrib",
+    "name": "Retribution RETRIB",
+    "icon": "./assets/coinIcons/retribution.jpg",
+    "contract": "0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
+    "website": "https://retribution-finance.com/",
+    "explorer": "https://cronoscan.com/address/0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
+    "twitter": "https://x.com/CronosRugAlerts",
+    "telegram": "",
+    "discord": "https://discord.gg/Hv2v6vNxc3",
+    "whitepaper": "https://medium.com/@retribdev/retrib-retribution-cronos-chain-trading-on-vvs-finance-wolfswap-2606a8a4897d",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": "c"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$RETRIB (Retribution) By holding $RETRIB, you earn 2% of the transaction value in $CRO rewards. This means that with every transaction involving $RETRIB, 2% of the transaction amount is distributed to holders in $CRO, sent directly to your wallet NO more needing to swap. Find us as a common token on Obsidian Finance. It's just one word #RETRIBUTION",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6ad9893eb92f4916f703f660410a454f6acc3fe1",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x39017cdbc84101d737d2410d67fca3ac0783b90f/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f"
+    }
+  },
+  {
     "id": "chucky-chucky",
     "name": "Chucky CHUCKY",
     "icon": "./assets/coinIcons/chucky.jpg",
