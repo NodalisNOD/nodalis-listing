@@ -135,6 +135,40 @@
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44"
     }
   },
+  {
+    "id": "buttman-on-cronos-butt",
+    "name": "Buttman On Cronos BUTT",
+    "icon": "./assets/coinIcons/buttman.jpg",
+    "contract": "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
+    "website": "https://croham-city.web.app/",
+    "explorer": "https://cronoscan.com/token/0x2dfA528939D38a3654ad44a4748BE591e283a32f",
+    "twitter": "https://x.com/ButtmanOnCro",
+    "telegram": "https://t.me/ButtmanOnCro",
+    "discord": "https://discord.gg/325Zb7c3",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Croham City—where shadows loom, and hesitation meets its match. A metropolis of towering skyscrapers and restless streets, it's home to relentless ambition and the fearless spirit of those who dare to act.\n\nAs ButtMan blazes the trail, more bold projects are rising from the shadows, ready to take the same fearless approach. This is just the beginning—Croham City is where innovation thrives, and the future is built.\n\nINTRODUCING THE FIRST CROHAM PROJECT:\n\nMeet Brandon B. Buttman the protector of Croham City and slayer of excuses.\n\n$BUTT isn't just a meme coin. It's a statement.\n\nIn addition to that, $BUTT will serve as the governance token for the first features of Croham.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2dfa528939d38a3654ad44a4748be591e283a32f",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa20996252cce0cbe67faf917fc110ebfe1399e8e/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e"
+    }
+  },
     {
       "id": "ryoshi-with-knife-ryoshi",
       "name": "ryoshi with knife ryoshi",
