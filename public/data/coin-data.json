@@ -1,5 +1,73 @@
 [
   {
+    "id": "black-moon-bmn",
+    "name": "Black Moon BMN",
+    "icon": "./assets/coinIcons/blackmoon.jpg",
+    "contract": "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
+    "website": "https://discord.gg/D9AhGB8k",
+    "explorer": "https://cronoscan.com/token/0xcb49dd81da680ed11d10809b51d5d5d8e36f9b6d?a",
+    "twitter": "https://x.com/BlackMoonCRO/photo",
+    "telegram": "",
+    "discord": "https://discord.gg/D9AhGB8k",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Black Moon ($BMN) is an exciting new cryptocurrency coin that's about to take you on an epic journey through the world of NFTs, and blockchain innovation.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xcb49dd81da680ed11d10809b51d5d5d8e36f9b6d",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7"
+    }
+  },
+  {
+    "id": "pepe-eyes-peyes",
+    "name": "Pepe Eyes PEYES",
+    "icon": "./assets/coinIcons/pepeeyes.jpg",
+    "contract": "0xe9A4c3aba1075E1470EBe3007db11132905c9bdC",
+    "website": "https://www.pepeeyes.com/",
+    "explorer": "https://cronoscan.com/token/0xe9A4c3aba1075E1470EBe3007db11132905c9bdC",
+    "twitter": "https://x.com/PeyesCro",
+    "telegram": "",
+    "discord": "https://discord.com/invite/TPewT7n3tr",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Pepe Eyes, the meme that is revolutionizing the way we express ourselves on social media! Gone are the days of plain emojis; Pepe Eyes offers a fun and engaging way to react to posts with a unique flair while bringing eyes to Cronos!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905"
+    }
+  },
+  {
     "id": "lionel-the-lion-lion",
     "name": "Lionel The Lion LION",
     "icon": "./assets/coinIcons/lionel.jpg",

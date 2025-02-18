@@ -39,7 +39,6 @@ app.use("/uploads", express.static("public/uploads"));
 app.use(cookieParser());
 app.use(helmet());
 
-
 // Indien er geen userId-cookie is, genereer deze
 app.use((req, res, next) => {
   if (!req.cookies.userId) {
@@ -249,6 +248,14 @@ app.post("/submit-exchange-listing", (req, res) => {
   });
 });
 
+// Routes importeren
+const coingeckoRoutes = require('./routes/coingeckoRoutes');
+
+// **Statische bestanden serveren vanuit de public map**
+app.use(express.static(path.join(__dirname, 'public')));
+
+// **Gebruik de CoinGecko routes onder /api/coingecko**
+app.use('/api/coingecko', coingeckoRoutes);
 // ----- CONTACT FORM SUBMISSION -----
 app.post("/submit-contact", async (req, res) => {
   const { name, email, subject, message } = req.body;

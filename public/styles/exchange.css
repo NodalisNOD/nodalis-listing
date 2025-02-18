@@ -1,0 +1,129 @@
+/* Basis body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Algemene styling voor kaders */
+.info-card, .social-card, .trading-card, .markets {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Tabel styling (tabel gecentreerd binnen .markets) */
+.markets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Kolommen gelijkmatig verdelen */
+th:nth-child(1),
+td:nth-child(1) {
+    text-align: left;
+}
+
+/* Coin icon styling */
+.coin-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    padding: 2px;
+}
+
+/* Logo styling */
+.logo img {
+    max-width: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Social Media styling */
+.social-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    text-align: left;
+}
+
+.social-card a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-card a:hover {
+    text-decoration: underline;
+}
+
+/* Icon styling */
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Standaard link-styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}

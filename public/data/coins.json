@@ -1,0 +1,55 @@
+{
+    "0XAF02D78F39C0002D14B95A3BE272DA02379AFF21": {
+        "name": "FRTN",
+        "icon": "assets/coinIcons/fortune.webp"
+    },
+    "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23": {
+        "name": "WCRO",
+        "icon": "assets/coinIcons/cro.webp"
+    },
+    "0X055C517654D72A45B0D64DC8733F8A38E27FD49C": {
+        "name": "RYOSHI",
+        "icon": "assets/coinIcons/ryoshi.webp"
+    },
+    "0X8F857AF6EA31447BB502FE0E3F4E4340CDFCFC6C": {
+        "name": "ICY",
+        "icon": "assets/coinIcons/icycro.webp"
+    },
+    "0X288898A6057D2D4989C533E96CB3BC30843C91D7": {
+        "name": "PUUSH",
+        "icon": "assets/coinIcons/puush.webp"
+    },   
+    "0X9FAE23A2700FEECD5B93E43FDBC03C76AA7C08A6": {
+        "name": "LCRO",
+        "icon": "assets/coinIcons/LCRO.webp"
+    },
+    "0XC21223249CA28397B4B6541DFFAECC539BFF0C59": {
+        "name": "USDC",
+        "icon": "assets/coinIcons/USDC.webp"
+    },   
+    "0X212331E1435A8DF230715DB4C02B2A3A0ABF8C61": {
+        "name": "MAD",
+        "icon": "assets/coinIcons/MAD.webp"
+    },
+    "0XCCCCCCCCDBEC186DC426F8B5628AF94737DF0E60": {
+        "name": "CAW",
+        "icon": "assets/coinIcons/caw.png"
+    },
+    "0X664E4B17EA045FE92868821F3EE0A76A5DB38166": {
+        "name": "ROBIN",
+        "icon": "assets/coinIcons/robin.webp"
+    },         
+    "0X50AA2611004B3252030CC95E9C5A2A44DFED9983": {
+        "name": "CRONON",
+        "icon": "assets/coinIcons/cronon.webp"
+    },  
+    "0X13C0FF45D019A5888DB92631F18556211001883D": {
+        "name": "PLATY",
+        "icon": "assets/coinIcons/platy.webp"
+    },
+    "0XD50F5739A09F36C6F97CC9A4849C5462BA6129A3": {
+        "name": "CROGINAL",
+        "icon": "assets/coinIcons/croginal.jpg"
+    }
+    
+}

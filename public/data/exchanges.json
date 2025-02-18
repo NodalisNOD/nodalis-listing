@@ -1,0 +1,15 @@
+[
+    {
+        "id": "ebisus-bay",
+        "name": "Ebisu's Bay",
+        "icon": "public/assets/coinIcons/ebisus.png",
+        "website": "https://app.ebisusbay.com/",
+        "twitter": "https://x.com/ebisusbay,",
+        "telegram": "",
+        "discord": "https://discord.gg/ebisusbay",
+        "description": "Ebisu's Bay is a dynamic platform that combines NFT and DEX trading with GameFi, enabling users to join factions for market dominance. It transforms NFTs into engaging game elements, adding an interactive dimension to trading and gaming",
+        "api_links": {
+            "apiMain": "https://api.coingecko.com/api/v3/exchanges/ebisus-bay"
+        }
+    }
+    ]

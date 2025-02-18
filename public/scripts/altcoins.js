@@ -1,5 +1,19 @@
 export const coins = [
   {
+    name: "Black Moon BMN",
+    contract: "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
+    icon: "./assets/coinIcons/blackmoon.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7",
+  },
+  {
+    name: "Pepe Eyes PEYES",
+    contract: "0xe9A4c3aba1075E1470EBe3007db11132905c9bdC",
+    icon: "./assets/coinIcons/pepeeyes.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
+  },
+  {
     name: "Lionel The Lion LION",
     contract: "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
     icon: "./assets/coinIcons/lionel.jpg",
@@ -177,7 +191,7 @@ export const coins = [
   {
     name: "Croakey CROAK",
     contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-    icon: "./assets/coinIcons/croak.jpg",
+    icon: "./assets/coinIcons/croak - kopie.jpg",
     apiUrl:
       "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
   },
