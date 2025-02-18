@@ -569,3 +569,33 @@ table tr:hover {
     flex-direction: row;
   }
 }
+.pagination-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination-container button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-container button:hover {
+  background-color: #444;
+}
+
+.pagination-container button:disabled {
+  background-color: #555;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.pagination-container .active {
+  background-color: #07b5e056;
+  color: black;
+  font-weight: bold;
+}

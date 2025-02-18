@@ -219,6 +219,11 @@ export const coins = [
 ];
 
 const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
+const COINS_PER_PAGE = 25; // Max aantal munten per pagina
+let currentPage = 1;
+let validCoinData = [];
+let currentSortKey = "marketCap";
+let sortAscending = false;
 
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
@@ -242,7 +247,7 @@ export async function fetchCoinData(coin) {
   // Probeer data uit de cache te halen als deze recent is
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
+  if (cachedData && cachedTime && now - parseInt(cachedTime, 20) < BROWSER_CACHE_DURATION) {
     return JSON.parse(cachedData);
   }
 
@@ -334,20 +339,61 @@ export async function fetchCoinData(coin) {
   }
 }
 
-export async function populateAltcoinTable(searchQuery = "") {
+function renderTable() {
   const tableBody = document.querySelector("#altcoin-table");
-  const tableHeaders = document.querySelectorAll(".main-crypto-table th");
-
   if (!tableBody) {
     console.error("Altcoin table element not found.");
     return;
   }
 
-  let currentSortKey = "marketCap";
-  let sortAscending = false;
+  const start = (currentPage - 1) * COINS_PER_PAGE;
+  const end = start + COINS_PER_PAGE;
+  const pageData = validCoinData.slice(start, end);
 
+  const rowsHtml = pageData
+    .map((coin, index) => {
+      function formatChange(change) {
+        const arrow = change >= 0 ? "↑" : "↓";
+        const colorClass = change >= 0 ? "positive-change" : "negative-change";
+        return `<span class="${colorClass}">${arrow} ${Math.abs(change)}%</span>`;
+      }
+
+      return `
+        <tr>
+          <td>${start + index + 1}</td>
+          <td>
+            <a href="coin.html?id=${coin.name}" class="coin-link">
+              <img src="${coin.icon}" alt="${coin.name} Logo" class="crypto-logo">
+              ${coin.name}
+            </a>
+          </td>
+          <td>$${coin.price}</td>
+          <td>${formatChange(coin.priceChange1h)}</td>
+          <td>${formatChange(coin.priceChange24h)}</td>
+          <td>$${coin.marketCap}</td>
+          <td>$${coin.volume24h}</td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  tableBody.innerHTML =
+    rowsHtml || "<tr><td colspan='7'>No matching coins found.</td></tr>";
+}
+
+function sortTable(key) {
+  validCoinData.sort((a, b) => {
+    const valueA = parseFloat(a[key]?.replace(/[.,]/g, "")) || 0;
+    const valueB = parseFloat(b[key]?.replace(/[.,]/g, "")) || 0;
+    return sortAscending ? valueA - valueB : valueB - valueA;
+  });
+  renderTable();
+  renderPagination();
+}
+
+export async function populateAltcoinTable(searchQuery = "") {
   const allCoinData = await Promise.all(coins.map(fetchCoinData));
-  let validCoinData = allCoinData.filter((data) => data !== null);
+  validCoinData = allCoinData.filter((data) => data !== null);
 
   validCoinData = validCoinData.filter(
     (coin) =>
@@ -356,47 +402,7 @@ export async function populateAltcoinTable(searchQuery = "") {
         coin.contract.toLowerCase().includes(searchQuery.toLowerCase().trim()))
   );
 
-  function renderTable() {
-    const rowsHtml = validCoinData
-      .map((coin, index) => {
-        function formatChange(change) {
-          const arrow = change >= 0 ? "↑" : "↓";
-          const colorClass = change >= 0 ? "positive-change" : "negative-change";
-          return `<span class="${colorClass}">${arrow} ${Math.abs(change)}%</span>`;
-        }
-
-        return `
-          <tr>
-            <td>${index + 1}</td>
-            <td>
-              <a href="coin.html?id=${coin.name}" class="coin-link">
-                <img src="${coin.icon}" alt="${coin.name} Logo" class="crypto-logo">
-                ${coin.name}
-              </a>
-            </td>
-            <td>$${coin.price}</td>
-            <td>${formatChange(coin.priceChange1h)}</td>
-            <td>${formatChange(coin.priceChange24h)}</td>
-            <td>$${coin.marketCap}</td>
-            <td>$${coin.volume24h}</td>
-          </tr>
-        `;
-      })
-      .join("");
-
-    tableBody.innerHTML =
-      rowsHtml || "<tr><td colspan='7'>No matching coins found.</td></tr>";
-  }
-
-  function sortTable(key) {
-    validCoinData.sort((a, b) => {
-      const valueA = parseFloat(a[key]?.replace(/[.,]/g, "")) || 0;
-      const valueB = parseFloat(b[key]?.replace(/[.,]/g, "")) || 0;
-      return sortAscending ? valueA - valueB : valueB - valueA;
-    });
-    renderTable();
-  }
-
+  const tableHeaders = document.querySelectorAll(".main-crypto-table th");
   tableHeaders.forEach((header, index) => {
     header.addEventListener("click", () => {
       const sortKeys = [
@@ -419,6 +425,44 @@ export async function populateAltcoinTable(searchQuery = "") {
 
   sortTable(currentSortKey);
 }
+
+// Functie om paginering toe te voegen
+function renderPagination() {
+  const paginationContainer = document.querySelector("#pagination");
+  if (!paginationContainer) return;
+
+  const totalPages = Math.ceil(validCoinData.length / COINS_PER_PAGE);
+  if (totalPages <= 1) {
+    paginationContainer.innerHTML = ""; // Verberg paginering als er maar één pagina is
+    return;
+  }
+
+  let paginationHtml = `<button onclick="changePage(-1)" ${currentPage === 1 ? "disabled" : ""}>← Vorige</button>`;
+
+  for (let i = 1; i <= totalPages; i++) {
+    paginationHtml += `<button onclick="changePage(${i})" class="${i === currentPage ? "active" : ""}">${i}</button>`;
+  }
+
+  paginationHtml += `<button onclick="changePage(1)" ${currentPage === totalPages ? "disabled" : ""}>Volgende →</button>`;
+
+  paginationContainer.innerHTML = paginationHtml;
+}
+
+// Functie om van pagina te wisselen
+window.changePage = function (page) {
+  const totalPages = Math.ceil(validCoinData.length / COINS_PER_PAGE);
+
+  if (page === -1) {
+    if (currentPage > 1) currentPage--;
+  } else if (page === 1) {
+    if (currentPage < totalPages) currentPage++;
+  } else {
+    currentPage = page;
+  }
+
+  renderTable();
+  renderPagination();
+};
 
 export function setupSearch() {
   const searchInput = document.querySelector("#search-bar");
