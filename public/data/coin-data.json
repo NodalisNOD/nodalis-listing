@@ -1,4 +1,38 @@
 [
+  {
+    "id": "lionel-the-lion-lion",
+    "name": "Lionel The Lion LION",
+    "icon": "./assets/coinIcons/lionel.jpg",
+    "contract": "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
+    "website": "https://cronoslionel.com/",
+    "explorer": "https://cronoscan.com/address/0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
+    "twitter": "https://x.com/CronosLionel",
+    "telegram": "https://t.me/cronoslionel",
+    "discord": "https://discord.gg/cronoslionel",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "CronosLionel is a AI project graduated off agentfunai Founded by HatenCRO to build NFT lending for utility based NFTs in web3 games focused first on ManeCity.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e"
+    }
+  },
     {
       "id": "gainz-gainz",
       "name": "GAINZ GAINZ",

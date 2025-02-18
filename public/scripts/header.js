@@ -56,9 +56,9 @@ header.innerHTML = `
         </li>
       </ul>
     </nav>
-    <!-- Rechts in de header: de "Get isted" knop -->
+    <!-- Rechts in de header: de "Get listed" knop -->
     <div class="header-right">
-      <a href="/listing" class="get-listed-button">Get isted</a>
+      <a href="/listing" class="get-listed-button">Get listed</a>
     </div>
   </div>
 `;

@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Lionel The Lion LION",
+    contract: "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
+    icon: "./assets/coinIcons/lionel.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e",
+  },
+  {
     name: "GAINZ GAINZ",
     contract: "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
     icon: "./assets/coinIcons/gainz.png",
@@ -211,13 +218,15 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
+const BROWSER_CACHE_DURATION = 30 * 1000; // 30 seconds
 
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
   let fallbackPrice = null;
   try {
-    const priceResponse = await fetch(`https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/${coin.contract}`);
+    const priceResponse = await fetch(
+      `https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/${coin.contract}`
+    );
     if (priceResponse.ok) {
       const priceData = await priceResponse.json();
       const priceKey = Object.keys(priceData.data.attributes.token_prices)[0];
@@ -235,7 +244,7 @@ export async function fetchCoinData(coin) {
   // Probeer data uit de cache te halen als deze recent is
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 20) < BROWSER_CACHE_DURATION) {
+  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
     return JSON.parse(cachedData);
   }
 
@@ -330,6 +339,7 @@ export async function fetchCoinData(coin) {
 export async function populateAltcoinTable(searchQuery = "") {
   const tableBody = document.querySelector("#altcoin-table");
   const tableHeaders = document.querySelectorAll(".main-crypto-table th");
+  const paginationContainer = document.querySelector("#pagination");
 
   if (!tableBody) {
     console.error("Altcoin table element not found.");
@@ -338,6 +348,8 @@ export async function populateAltcoinTable(searchQuery = "") {
 
   let currentSortKey = "marketCap";
   let sortAscending = false;
+  let currentPage = 1;
+  const rowsPerPage = 10;
 
   const allCoinData = await Promise.all(coins.map(fetchCoinData));
   let validCoinData = allCoinData.filter((data) => data !== null);
@@ -350,7 +362,12 @@ export async function populateAltcoinTable(searchQuery = "") {
   );
 
   function renderTable() {
-    const rowsHtml = validCoinData
+    // Bepaal de data voor de huidige pagina
+    const start = (currentPage - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    const pageData = validCoinData.slice(start, end);
+
+    const rowsHtml = pageData
       .map((coin, index) => {
         function formatChange(change) {
           const arrow = change >= 0 ? "↑" : "↓";
@@ -360,7 +377,7 @@ export async function populateAltcoinTable(searchQuery = "") {
 
         return `
           <tr>
-            <td>${index + 1}</td>
+            <td>${start + index + 1}</td>
             <td>
               <a href="coin.html?id=${coin.name}" class="coin-link">
                 <img src="${coin.icon}" alt="${coin.name} Logo" class="crypto-logo">
@@ -379,6 +396,60 @@ export async function populateAltcoinTable(searchQuery = "") {
 
     tableBody.innerHTML =
       rowsHtml || "<tr><td colspan='7'>No matching coins found.</td></tr>";
+
+    renderPagination();
+  }
+
+  function renderPagination() {
+    if (!paginationContainer) return;
+
+    const totalPages = Math.ceil(validCoinData.length / rowsPerPage);
+    let paginationHtml = "";
+
+    if (totalPages > 1) {
+      if (currentPage > 1) {
+        paginationHtml += `<button id="prev-page">Prev</button>`;
+      }
+
+      for (let i = 1; i <= totalPages; i++) {
+        paginationHtml += `<button class="page-btn ${i === currentPage ? "active" : ""}" data-page="${i}">${i}</button>`;
+      }
+
+      if (currentPage < totalPages) {
+        paginationHtml += `<button id="next-page">Next</button>`;
+      }
+    }
+
+    paginationContainer.innerHTML = paginationHtml;
+
+    // Voeg event listeners toe voor de paginatieknoppen
+    const pageBtns = paginationContainer.querySelectorAll(".page-btn");
+    pageBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentPage = parseInt(btn.getAttribute("data-page"));
+        renderTable();
+      });
+    });
+
+    const prevBtn = paginationContainer.querySelector("#prev-page");
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderTable();
+        }
+      });
+    }
+
+    const nextBtn = paginationContainer.querySelector("#next-page");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderTable();
+        }
+      });
+    }
   }
 
   function sortTable(key) {
@@ -387,6 +458,7 @@ export async function populateAltcoinTable(searchQuery = "") {
       const valueB = parseFloat(b[key]?.replace(/[.,]/g, "")) || 0;
       return sortAscending ? valueA - valueB : valueB - valueA;
     });
+    currentPage = 1; // reset naar de eerste pagina bij sorteren
     renderTable();
   }
 
@@ -416,8 +488,7 @@ export async function populateAltcoinTable(searchQuery = "") {
 export function setupSearch() {
   const searchInput = document.querySelector("#search-bar");
   searchInput.addEventListener("input", (event) => {
-    const searchQuery = event.target.value;
-    populateAltcoinTable(searchQuery);
+    populateAltcoinTable(event.target.value);
   });
 }
 
