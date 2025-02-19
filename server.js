@@ -151,7 +151,7 @@ app.get("/posts/:postId", postController.getPostById);
 // ----- COIN API MET CACHING -----
 let coinDataCache = null;
 let lastCoinFetchTime = 0;
-const COIN_CACHE_DURATION = 5 * 60 * 1000; // 5 minuten
+const COIN_CACHE_DURATION = 2 * 60 * 1000; // 2 minuten
 
 const fetchCoinData = async () => {
   try {
