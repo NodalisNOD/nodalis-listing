@@ -1,5 +1,40 @@
 [ 
   {
+    "id": "mouse-in-pasta",
+    "name": "mouse in pasta",
+    "ticker": "STUCK",
+    "icon": "./assets/coinIcons/stuck.jpg",
+    "contract": "0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+    "website": "https://mouseinpasta.com/",
+    "explorer": "https://cronoscan.com/token/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+    "twitter": " https://x.com/thepastamouse",
+    "telegram": "",
+    "discord": "https://discord.com/invite/HdtyUs3p2Q",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Just a mouse in pasta",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x797604a537af0da93f09c232049f5e7dae4eabad",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x797604a537af0da93f09c232049f5e7dae4eabad/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc"
+    }
+  },
+  {
     "id": "doofie-dofi",
     "name": "Doofie ",
     "ticker": "DOFI",
