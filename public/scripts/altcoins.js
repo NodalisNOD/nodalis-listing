@@ -246,6 +246,23 @@ let validCoinData = [];
 let currentSortKey = "marketCap";
 let sortAscending = false;
 
+async function fetchWithRetry(url, retries = 3, delay = 1000) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.warn(`Poging ${attempt} voor ${url} mislukt: ${error.message}`);
+      if (attempt === retries) throw error;
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
+
+
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
   let fallbackPrice = null;
@@ -268,15 +285,12 @@ export async function fetchCoinData(coin) {
   // Probeer data uit de cache te halen als deze recent is
   const cachedData = localStorage.getItem(storageKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 20) < BROWSER_CACHE_DURATION) {
+  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
     return JSON.parse(cachedData);
   }
 
   try {
-    const response = await fetch(coin.apiUrl);
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    const data = await response.json();
-    const pools = data.data;
+    const data = await fetchWithRetry(coin.apiUrl);
 
     let combinedData = {
       totalVolumeUsd: 0,
@@ -412,8 +426,11 @@ function sortTable(key) {
   renderPagination();
 }
 
+import pLimit from 'p-limit';
+
 export async function populateAltcoinTable(searchQuery = "") {
-  const allCoinData = await Promise.all(coins.map(fetchCoinData));
+  const limit = pLimit(5); // Beperk tot 5 gelijktijdige fetches
+  const allCoinData = await Promise.all(coins.map(coin => limit(() => fetchCoinData(coin))));
   validCoinData = allCoinData.filter((data) => data !== null);
 
   validCoinData = validCoinData.filter(
