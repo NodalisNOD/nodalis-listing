@@ -239,7 +239,7 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 5 * 60 * 1000; // 2 minutes
+const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
 const COINS_PER_PAGE = 25; // Max aantal munten per pagina
 let currentPage = 1;
 let validCoinData = [];
