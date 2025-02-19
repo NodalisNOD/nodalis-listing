@@ -148,41 +148,75 @@ app.post(
 );
 app.get("/posts/:postId", postController.getPostById);
 
-// ----- COIN API MET CACHING -----
-let coinDataCache = null;
-let lastCoinFetchTime = 0;
-const COIN_CACHE_DURATION = 10 * 60 * 1000; // 10 minuten
+// ----- COIN API MET SERVER-SIDE CACHING VIA CRON -----
+// De server haalt elke 20 seconden de externe API-data op en slaat deze op in de cache.
+// Daarnaast wordt de cache altijd naar public/data/coinCache.json geschreven voor debug-doeleinden.
 
-const fetchCoinData = async () => {
+let coinDataCache = null;
+
+// Laad de handmatige coin-data
+const manualCoinDataPath = path.join(__dirname, "public", "data", "coin-data.json");
+let manualCoinData = [];
+
+try {
+  manualCoinData = JSON.parse(fs.readFileSync(manualCoinDataPath, "utf8"));
+  console.log("✅ Loaded manual coin data");
+} catch (error) {
+  console.error("❌ Error loading manual coin data:", error.message);
+}
+
+async function fetchGeneralApiData(url) {
   try {
-    const response = await axios.get(
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi"
-    );
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
-    console.error("Error fetching coin data:", error.message);
+    console.error(`❌ Error fetching data from ${url}:`, error.message);
     return null;
   }
-};
+}
 
-app.get("/api/coins", async (req, res) => {
-  const now = Date.now();
-  if (coinDataCache && now - lastCoinFetchTime < COIN_CACHE_DURATION) {
-    console.log("✅ Serving coins from cache");
-    return res.json(coinDataCache);
-  }
+async function updateCoinDataCache() {
   try {
-    console.log("⏳ Fetching fresh coin data...");
-    const coinData = await fetchCoinData();
-    if (!coinData) {
-      return res.status(500).json({ message: "Failed to fetch coin data" });
+    console.log("⏳ Updating coin data cache from generalApi links...");
+
+    const cachedData = {};
+
+    // Loop door elke coin in manualCoinData
+    for (const coin of manualCoinData) {
+      const generalApiUrl = coin.dynamicData.generalApi;
+      if (generalApiUrl) {
+        console.log(`⏳ Fetching data for ${coin.name} from ${generalApiUrl}`);
+        const data = await fetchGeneralApiData(generalApiUrl);
+        if (data) {
+          cachedData[coin.id] = data;
+          console.log(`✅ Fetched data for ${coin.name}`);
+        }
+      }
     }
-    coinDataCache = coinData;
-    lastCoinFetchTime = now;
-    res.json(coinDataCache);
+
+    // Sla de gefilterde data op
+    coinDataCache = cachedData;
+    fs.writeFileSync(
+      path.join(__dirname, "public", "data", "coinCache.json"),
+      JSON.stringify(coinDataCache, null, 2)
+    );
+    console.log("✅ Coin data cache updated with filtered data");
   } catch (error) {
-    console.error("Error processing coin data:", error);
-    res.status(500).json({ message: "Failed to process coin data" });
+    console.error("❌ Error updating coin data cache:", error.message);
+  }
+}
+
+// Plan de taak om elke 20 seconden te draaien
+cron.schedule("*/25 * * * * *", updateCoinDataCache);
+// Update direct bij serverstart
+updateCoinDataCache();
+
+app.get("/api/coins", (req, res) => {
+  if (coinDataCache) {
+    console.log("✅ Serving filtered coin data from cache");
+    res.json(coinDataCache);
+  } else {
+    res.status(503).json({ message: "Coin data not available yet" });
   }
 });
 
@@ -199,9 +233,7 @@ app.post("/submit-coin-listing", (req, res) => {
   const mailOptions = {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
-    subject: `New Coin Listing Request: ${
-      listingData.tokenName || "Unknown"
-    }`,
+    subject: `New Coin Listing Request: ${listingData.tokenName || "Unknown"}`,
     text: `A new coin listing request has been submitted:\n\n${JSON.stringify(
       listingData,
       null,
@@ -230,9 +262,7 @@ app.post("/submit-exchange-listing", (req, res) => {
   const mailOptions = {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
-    subject: `New Exchange Listing Request: ${
-      listingData.exchangeName || "Unknown"
-    }`,
+    subject: `New Exchange Listing Request: ${listingData.exchangeName || "Unknown"}`,
     text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(
       listingData,
       null,
@@ -248,11 +278,6 @@ app.post("/submit-exchange-listing", (req, res) => {
   });
 });
 
-// Routes importeren
-const coingeckoRoutes = require('./routes/coingeckoRoutes');
-
-// **Gebruik de CoinGecko routes onder /api/coingecko**
-app.use('/api/coingecko', coingeckoRoutes);
 // ----- CONTACT FORM SUBMISSION -----
 app.post("/submit-contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
@@ -432,7 +457,7 @@ coinVotesRouter.get("/:coinId", (req, res) => {
     }
     if (!row) row = { positive: 0, negative: 0 };
     row.total = (row.positive || 0) + (row.negative || 0);
-    res.json(row);
+    res.json({ votes: row });
   });
 });
 coinVotesRouter.post("/:coinId/:type", (req, res) => {
@@ -468,7 +493,6 @@ coinVotesRouter.post("/:coinId/:type", (req, res) => {
 app.use("/votes", coinVotesRouter);
 
 // ----- TRENDING VOTES ENDPOINTS -----
-// Gebruik de gemoduleerde trending votes routes
 const trendingVotesRoutes = require("./routes/trendingVotesRoutes");
 app.use("/trending", trendingVotesRoutes);
 

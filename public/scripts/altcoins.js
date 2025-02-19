@@ -14,24 +14,34 @@ const itemsPerPage = 20;
  * de tabel gerenderd en worden sorteer- en zoekfunctionaliteit geactiveerd.
  */
 export function populateAltcoinTable() {
+  console.log("⏳ Laden van coin-data.json...");
   fetch("./data/coin-data.json")
     .then((response) => response.json())
-    .then((coins) => {
-      const promises = coins.map((coin) => {
-        return fetch(coin.dynamicData.generalApi)
-          .then((resp) => resp.json())
-          .then((data) => {
-            // Dexscreener-respons: verwacht een array met pools
-            if (Array.isArray(data) && data.length > 0) {
-              const dexData = data[0];
-              // Tel het 24-uurs volume over alle pools op
-              const volume24hTotal = data.reduce((sum, pool) => {
-                return (
-                  sum +
-                  (pool.volume && pool.volume.h24
-                    ? parseFloat(pool.volume.h24)
-                    : 0)
-                );
+    .then((manualCoinData) => {
+      console.log("✅ coin-data.json geladen:", manualCoinData);
+      console.log("⏳ Laden van coinCache.json...");
+      fetch("./data/coinCache.json")
+        .then((response) => response.json())
+        .then((cachedData) => {
+          console.log("✅ coinCache.json geladen:", cachedData);
+          
+          // Verwerk de data: verwacht dat cachedData een object is met keys (coin IDs)
+          const results = Object.entries(cachedData).map(([key, coinData]) => {
+            // Normaliseer de key (bijv. lowercase en trim)
+            const normalizedKey = key.trim().toLowerCase();
+            // Gebruik de key of het id-veld uit coinData als fallback
+            const coinId = coinData.id ? coinData.id.trim().toLowerCase() : normalizedKey;
+            const coin = manualCoinData.find((c) => c.id.trim().toLowerCase() === coinId);
+            if (!coin) {
+              console.warn("Coin niet gevonden in manualCoinData:", coinId);
+              return null;
+            }
+
+            // Verwerking voor Dexscreener-respons (als array)
+            if (Array.isArray(coinData) && coinData.length > 0) {
+              const dexData = coinData[0];
+              const volume24hTotal = coinData.reduce((sum, pool) => {
+                return sum + (pool.volume && pool.volume.h24 ? parseFloat(pool.volume.h24) : 0);
               }, 0);
               return {
                 id: coin.id,
@@ -40,83 +50,66 @@ export function populateAltcoinTable() {
                 icon: coin.icon,
                 contract: coin.contract,
                 priceUsd: parseFloat(dexData.priceUsd),
-                change6h:
-                  dexData.priceChange &&
-                  dexData.priceChange.h6 !== undefined &&
-                  dexData.priceChange.h6 !== "N/A"
-                    ? parseFloat(dexData.priceChange.h6)
-                    : 0,
-                change24h:
-                  dexData.priceChange &&
-                  dexData.priceChange.h24 !== undefined &&
-                  dexData.priceChange.h24 !== "N/A"
-                    ? parseFloat(dexData.priceChange.h24)
-                    : 0,
-                marketCap:
-                  dexData.marketCap !== undefined
-                    ? parseFloat(dexData.marketCap)
-                    : null,
+                change6h: dexData.priceChange && dexData.priceChange.h6 !== undefined && dexData.priceChange.h6 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h6)
+                  : 0,
+                change24h: dexData.priceChange && dexData.priceChange.h24 !== undefined && dexData.priceChange.h24 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h24)
+                  : 0,
+                marketCap: dexData.marketCap !== undefined ? parseFloat(dexData.marketCap) : null,
                 volume24h: volume24hTotal,
               };
             }
-            // Geckoterminal-respons: verwacht een object met data.data.attributes
-            else if (data && data.data) {
-              const gt = data.data.attributes;
+            // Verwerking voor Geckoterminal-respons (als object met data)
+            else if (coinData && coinData.data) {
+              const gt = coinData.data.attributes;
               return {
                 id: coin.id,
                 name: coin.name,
                 ticker: coin.ticker,
                 icon: coin.icon,
                 contract: coin.contract,
-                priceUsd: gt.base_token_price_usd
-                  ? parseFloat(gt.base_token_price_usd)
-                  : null,
-                change6h:
-                  gt.price_change_percentage &&
-                  gt.price_change_percentage.h6 !== undefined
-                    ? parseFloat(gt.price_change_percentage.h6)
-                    : 0,
-                change24h:
-                  gt.price_change_percentage &&
-                  gt.price_change_percentage.h24 !== undefined
-                    ? parseFloat(gt.price_change_percentage.h24)
-                    : 0,
-                // Als market_cap_usd null is, gebruik fdv_usd (indien beschikbaar)
-                marketCap:
-                  (gt.market_cap_usd === null || gt.market_cap_usd === undefined)
-                    ? (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null)
-                    : parseFloat(gt.market_cap_usd),
-                volume24h:
-                  gt.volume_usd && gt.volume_usd.h24
-                    ? parseFloat(gt.volume_usd.h24)
-                    : 0,
+                priceUsd: gt.base_token_price_usd ? parseFloat(gt.base_token_price_usd) : null,
+                change6h: gt.price_change_percentage && gt.price_change_percentage.h6 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h6)
+                  : 0,
+                change24h: gt.price_change_percentage && gt.price_change_percentage.h24 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h24)
+                  : 0,
+                marketCap: (gt.market_cap_usd === null || gt.market_cap_usd === undefined)
+                  ? (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null)
+                  : parseFloat(gt.market_cap_usd),
+                volume24h: gt.volume_usd && gt.volume_usd.h24 ? parseFloat(gt.volume_usd.h24) : 0,
               };
             } else {
               console.error("Geen geldige data voor coin:", coin.name);
               return null;
             }
-          })
-          .catch((err) => {
-            console.error("Fout voor coin", coin.name, err);
-            return null;
           });
-      });
-      return Promise.all(promises);
-    })
-    .then((results) => {
-      coinTableData = results.filter((item) => item !== null);
-      // Standaard sortering: hoogste market cap bovenaan
-      coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
-      // Stel huidige getoonde data in op de volledige dataset
-      currentDisplayData = [...coinTableData];
-      renderTable(currentDisplayData, 1);
-      setupTableSort();
-      setupSearch();
+
+          console.log("✅ Verwerkte data:", results);
+          coinTableData = results.filter((item) => item !== null);
+          console.log("✅ Gefilterde data:", coinTableData);
+          coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
+          console.log("✅ Gesorteerde data:", coinTableData);
+          currentDisplayData = [...coinTableData];
+          renderTable(currentDisplayData, 1);
+          setupTableSort();
+          setupSearch();
+        })
+        .catch((error) => {
+          console.error("Fout bij ophalen van coinCache.json:", error);
+        });
     })
     .catch((error) => {
       console.error("Fout bij ophalen van coin-data.json:", error);
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM geladen, tabel wordt ingevuld...");
+  populateAltcoinTable();
+});
 
 /**
  * Render de altcoin-tabel met paginering.
