@@ -1,7 +1,8 @@
-[
+[ 
   {
     "id": "doofie-dofi",
-    "name": "Doofie DOFI",
+    "name": "Doofie ",
+    "ticker": "DOFI",
     "icon": "./assets/coinIcons/dofi.jpg",
     "contract": "0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274",
     "website": "https://doofiecoin.com/",
@@ -30,12 +31,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274"
     }
   },
   {
     "id": "black-moon-bmn",
-    "name": "Black Moon BMN",
+    "name": "Black Moon ",
+    "ticker": "BMN",
     "icon": "./assets/coinIcons/blackmoon.jpg",
     "contract": "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
     "website": "https://discord.gg/D9AhGB8k",
@@ -64,12 +66,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xcb49dd81da680ed11d10809b51d5d5d8e36f9b6d",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D"
     }
   },
   {
     "id": "pepe-eyes-peyes",
-    "name": "Pepe Eyes PEYES",
+    "name": "Pepe Eyes ",
+    "ticker": "PEYES",
     "icon": "./assets/coinIcons/pepeeyes.jpg",
     "contract": "0xe9A4c3aba1075E1470EBe3007db11132905c9bdC",
     "website": "https://www.pepeeyes.com/",
@@ -98,12 +101,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe9A4c3aba1075E1470EBe3007db11132905c9bdC"
     }
   },
   {
     "id": "lionel-the-lion-lion",
-    "name": "Lionel The Lion LION",
+    "name": "Lionel The Lion",
+    "ticker": "LION",
     "icon": "./assets/coinIcons/lionel.jpg",
     "contract": "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
     "website": "https://cronoslionel.com/",
@@ -132,80 +136,48 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5"
     }
   },
-    {
-      "id": "gainz-gainz",
-      "name": "GAINZ GAINZ",
-      "icon": "./assets/coinIcons/gainz.png",
-      "contract": "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
-      "website": "https://monkeymuscle.app/",
-      "explorer": "https://cronoscan.com/token/0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
-      "twitter": "https://twitter.com/monkeymuscle121",
-      "telegram": "https://t.me/monkeymuscle121",
-      "discord": "https://discord.gg/V78eXyxVnw",
-      "whitepaper": "",
-      "threads": "",
-      "extraLinks": [
-        {
-          "name": "",
-          "url": ""
-        },
-        {
-          "name": "",
-          "url": ""
-        },
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "description": "Monkey muscle is a community project consisting of revoked community meme coin $GAINZ. Consisting of a community with innovative ideas, partnerships, fun games and giveaways and staking, including i.r.l. Launching gen1 monkey muscle nfts 22nd feb 2025.  ",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2b850b95ba0396749075d119a08b38d7a813ec45/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651"
-      }
-    },
+  {
+    "id": "gainz-gainz",
+    "name": "GAINZ",
+    "ticker": "GAINZ",
+    "icon": "./assets/coinIcons/gainz.png",
+    "contract": "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
+    "website": "https://monkeymuscle.app/",
+    "explorer": "https://cronoscan.com/token/0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
+    "twitter": "https://twitter.com/monkeymuscle121",
+    "telegram": "https://t.me/monkeymuscle121",
+    "discord": "https://discord.gg/V78eXyxVnw",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
       {
-        "id": "ryoshi-with-knife-ryoshi",
-        "name": "ryoshi with knife ryoshi",
-        "icon": "./assets/coinIcons/ryoshi.webp",
-        "contract": "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
-        "website": "https://www.ebisusbay.com/ryoshi",
-        "explorer": "https://cronoscan.com/address/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
-        "twitter": "https://x.com/ryoshiwithknife",
-        "telegram": "",
-        "discord": "https://discord.gg/ebisusbay",
-        "whitepaper": "",
-        "threads": "",
-        "extraLinks": [
-          {
-            "name": "",
-            "url": ""
-          },
-          {
-            "name": "",
-            "url": ""
-          },
-          {
-            "name": "",
-            "url": ""
-          }
-        ],
-        "description": "Sharpest meme on cronos",
-        "dynamicData": {
-          "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
-          "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
-          "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb572267d8abafcf11d2f10e48a8b752af456def4/ohlcv/minute?aggregate=15",
-          "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4"
-        }
+        "name": "",
+        "url": ""
       },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Monkey muscle is a community project consisting of revoked community meme coin $GAINZ. Consisting of a community with innovative ideas, partnerships, fun games and giveaways and staking, including i.r.l. Launching gen1 monkey muscle nfts 22nd feb 2025.  ",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2b850b95ba0396749075d119a08b38d7a813ec45/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411"
+    }
+  },
   {
     "id": "clove-the-pig-clove",
-    "name": "Clove the Pig CLOVE",
+    "name": "Clove the Pig",
+    "ticker": "CLOVE",
     "icon": "./assets/coinIcons/clove.jpg",
     "contract": "0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
     "website": "https://clovethepig.fun/",
@@ -234,12 +206,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8a795f3801ac51a8099724d3265f6cc0fd76f40b",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf89e1751a2757a5c6716f3332208622a71100f44/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B"
     }
   },
   {
     "id": "buttman-on-cronos-butt",
-    "name": "Buttman On Cronos BUTT",
+    "name": "Buttman On Cronos",
+    "ticker": "BUTT",
     "icon": "./assets/coinIcons/buttman.jpg",
     "contract": "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
     "website": "https://croham-city.web.app/",
@@ -268,46 +241,48 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2dfa528939d38a3654ad44a4748be591e283a32f",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa20996252cce0cbe67faf917fc110ebfe1399e8e/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa20996252cce0cbe67faf917fc110ebfe1399e8e"
     }
   },
-    {
-      "id": "ryoshi-with-knife-ryoshi",
-      "name": "ryoshi with knife ryoshi",
-      "icon": "./assets/coinIcons/ryoshi.webp",
-      "contract": "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
-      "website": "https://www.ebisusbay.com/ryoshi",
-      "explorer": "https://cronoscan.com/address/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
-      "twitter": "https://x.com/ryoshiwithknife",
-      "telegram": "",
-      "discord": "https://discord.gg/ebisusbay",
-      "whitepaper": "",
-      "threads": "",
-      "extraLinks": [
-        {
-          "name": "",
-          "url": ""
-        },
-        {
-          "name": "",
-          "url": ""
-        },
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "description": "Sharpest meme on cronos",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb572267d8abafcf11d2f10e48a8b752af456def4/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4"
+  {
+    "id": "ryoshi-with-knife-ryoshi",
+    "name": "ryoshi with knife ",
+    "ticker": "ryoshi",
+    "icon": "./assets/coinIcons/ryoshi.webp",
+    "contract": "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
+    "website": "https://www.ebisusbay.com/ryoshi",
+    "explorer": "https://cronoscan.com/address/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
+    "twitter": "https://x.com/ryoshiwithknife",
+    "telegram": "",
+    "discord": "https://discord.gg/ebisusbay",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
       }
-    },
+    ],
+    "description": "Sharpest meme on cronos",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x055c517654d72a45b0d64dc8733f8a38e27fd49c",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb572267d8abafcf11d2f10e48a8b752af456def4/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C"
+    }
+  },
   {
     "id": "fortune-frtn",
-    "name": "Fortune FRTN",
+    "name": "Fortune ",
+    "ticker": "FRTN",
     "icon": "./assets/coinIcons/fortune.webp",
     "contract": "0xaF02D78F39C0002D14b95A3bE272DA02379AfF21",
     "website": "https://app.ebisusbay.com/",
@@ -336,12 +311,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xaf02d78f39c0002d14b95a3be272da02379aff21",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfc0a8be90566e5329caec3d9630a603453ac7e44%2C0xaf56df060ca167361c66831801e0e17bb05bb313%2C0xa720f9e7c2067fd055b08fceb039fb798c67f44f%2C0xbc10bed82041a5d1abad43cc206656aafe9f84e6%2C0xe6ab98c145a25174c3f5c7184be96bd39faa4772%2C0x83208772584e2bafd2dd52322f9cb24f9e904762%2C0x4ae88a7a207b239b5281db37da9eb357dd8f99d1",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfc0a8be90566e5329caec3d9630a603453ac7e44/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfc0a8be90566e5329caec3d9630a603453ac7e44%2C0xaf56df060ca167361c66831801e0e17bb05bb313%2C0xa720f9e7c2067fd055b08fceb039fb798c67f44f%2C0xbc10bed82041a5d1abad43cc206656aafe9f84e6%2C0xe6ab98c145a25174c3f5c7184be96bd39faa4772%2C0x83208772584e2bafd2dd52322f9cb24f9e904762%2C0x4ae88a7a207b239b5281db37da9eb357dd8f99d1"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xaF02D78F39C0002D14b95A3bE272DA02379AfF21"
     }
   },
   {
     "id": "retribution-retrib",
-    "name": "Retribution RETRIB",
+    "name": "Retribution",
+    "ticker": "RETRIB",
     "icon": "./assets/coinIcons/retribution.jpg",
     "contract": "0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
     "website": "https://retribution-finance.com/",
@@ -370,12 +346,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6ad9893eb92f4916f703f660410a454f6acc3fe1",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x39017cdbc84101d737d2410d67fca3ac0783b90f/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x6ad9893eB92F4916f703f660410a454f6Acc3FE1"
     }
   },
   {
     "id": "chucky-chucky",
-    "name": "Chucky CHUCKY",
+    "name": "Chucky",
+    "ticker": "CHUCKY",
     "icon": "./assets/coinIcons/chucky.jpg",
     "contract": "0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2",
     "website": "https://chucky.doonft.com/",
@@ -404,12 +381,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x08d9cb5100c306c2909b63415d7ff05268633b41",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x3e5795b89ba23c9a8d44c0bab6888cca21ce7d42%2C0x1e4d16ad0d6860435bd146e3c5a19d45b7af74be%2C0xe7f72ad51661b99a89ecaa9bcb436a9815bddd43%2C0x98a7a313844c1cf3e10ca7d3262eec38155473aa%2C0xd15179a486ecb2b3f1035bdd9ebbc2ade9947541%2C0x1e06ca44ebd9284200a671ec64839dbd184804c9",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3e5795b89ba23c9a8d44c0bab6888cca21ce7d42/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x3e5795b89ba23c9a8d44c0bab6888cca21ce7d42%2C0x1e4d16ad0d6860435bd146e3c5a19d45b7af74be%2C0xe7f72ad51661b99a89ecaa9bcb436a9815bddd43%2C0x98a7a313844c1cf3e10ca7d3262eec38155473aa%2C0xd15179a486ecb2b3f1035bdd9ebbc2ade9947541%2C0x1e06ca44ebd9284200a671ec64839dbd184804c9"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2"
     }
   },
   {
     "id": "cronos-legends-clg",
-    "name": "Cronos Legends CLG",
+    "name": "Cronos Legends",
+    "ticker": "CLG",
     "icon": "./assets/coinIcons/clg.jpg",
     "contract": "0x08d9cb5100C306C2909B63415d7ff05268633b41",
     "website": "https://cronoslegends.com/",
@@ -438,12 +416,14 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x08d9cb5100c306c2909b63415d7ff05268633b41",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x80228677d9895934eed4bdb402ac659094903298/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x08d9cb5100C306C2909B63415d7ff05268633b41"
     }
   },
+
   {
     "id": "pixel-tribes-cro-ptcro",
-    "name": "Pixel Tribes Cro PTCRO",
+    "name": "Pixel Tribes Cro",
+    "ticker": "PTCRO",
     "icon": "./assets/coinIcons/ptcro.webp",
     "contract": "0xDd8D87faF419Abad614E0D05E01c68FDfa473A6A",
     "website": "https://pixel-tribes.netlify.app/",
@@ -472,12 +452,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdd8d87faf419abad614e0d05e01c68fdfa473a6a",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x8e032a95c05c7da2f3ad6fd5effe8f8c5f8fb7d2%2C0xab77e195d2b7c0bcd529682ab9c8883db2a6cd2a%2C0x827b6362ed5ad3f80ad4ac50fd8af22c81745ca6",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x8e032a95c05c7da2f3ad6fd5effe8f8c5f8fb7d2/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x8e032a95c05c7da2f3ad6fd5effe8f8c5f8fb7d2%2C0xab77e195d2b7c0bcd529682ab9c8883db2a6cd2a%2C0x827b6362ed5ad3f80ad4ac50fd8af22c81745ca6"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xDd8D87faF419Abad614E0D05E01c68FDfa473A6A"
     }
   },
   {
-    "id": "greenstixv2-GRNSTXV2",
-    "name": "Greenstix v2 GRNSTXv2",
+    "id": "greenstix-v2-grnstx-v2",
+    "name": "Greenstix v2",
+    "ticker": "GRNSTXv2",
     "icon": "./assets/coinIcons/GRNSTX.jpg",
     "contract": "0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b",
     "website": "https://greenstix.fun/",
@@ -506,12 +487,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x16a19ae876272fb9cc8df78a116c63cc1562270b",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x09e719a6f820438c796fba25f22fe145f8b7dd5e/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b"
     }
   },
   {
     "id": "croc-with-knife-stab",
     "name": "croc with knife STAB",
+    "ticker": "STAB",
     "icon": "./assets/coinIcons/stab.jpg",
     "contract": "0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
     "website": "https://crocwithknife.fun/",
@@ -540,12 +522,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x1ebd45a0415ba286f10babd9e27c69f62b7db7d7",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x79773e4aba9f74da020a9bc4ed82377b3f374895/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x79773e4aba9f74da020a9bc4ed82377b3f374895"
     }
   },
   {
     "id": "cryptoholic-holic",
-    "name": "Cryptoholic HOLIC",
+    "name": "Cryptoholic",
+    "ticker": "HOLIC",
     "icon": "./assets/coinIcons/holic.jpg",
     "contract": "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
     "website": "https://cryptoholic.app/",
@@ -574,12 +557,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x55e6fb1ae5e3fcd505446f501ab766d8d59b20a9",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x596e0065eaa9673453e7ada85814343d2dd8dbdb/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x596e0065eaa9673453e7ada85814343d2dd8dbdb"
     }
   },
   {
     "id": "kris-kris",
-    "name": "Kris KRIS",
+    "name": "Kris",
+    "ticker": "KRIS",
     "icon": "./assets/coinIcons/kris.jpg",
     "contract": "0x2829955d8Aac64f184E363516FDfbb0394042B90",
     "website": "https://kristoken.xyz/",
@@ -608,12 +592,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2829955d8aac64f184e363516fdfbb0394042b90",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x2829955d8Aac64f184E363516FDfbb0394042B90"
     }
   },
   {
     "id": "crooks-crks",
-    "name": "Crooks CRKS",
+    "name": "Crooks",
+    "ticker": "CRKS",
     "icon": "./assets/coinIcons/crks.jpg",
     "contract": "0xe07375D293D7b8d3758B74FD6a71800A946B3b07",
     "website": "https://crooks.finance/",
@@ -642,12 +627,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe07375d293d7b8d3758b74fd6a71800a946b3b07",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3"
     }
   },
   {
     "id": "goodmorning-gm",
-    "name": "GoodMorning GM",
+    "name": "GoodMorning",
+    "ticker": "GM",
     "icon": "./assets/coinIcons/gm.png",
     "contract": "0x7492450cc8897a4e444ad972eb1619251ef15c23",
     "website": "http://gmcronos.com/",
@@ -676,12 +662,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x7492450cc8897a4e444ad972eb1619251ef15c23",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x556996d8baed07c3843dd6b21d4fcd8962b1d982/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a"
     }
   },
   {
     "id": "croginalcats-croginal",
-    "name": "Croginal Cats CROGINAL",
+    "name": "Croginal Cats ",
+    "ticker": "CROGINAL", 
     "icon": "./assets/coinIcons/croginal.jpg",
     "contract": "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
     "website": "https://www.croginalcats.xyz/",
@@ -710,12 +697,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdf782b0c50750a153b9418e85bb88ac4639c173c/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3"
     }
-  },
-  {
+  },   
+   {
     "id": "papasmerf-papacro",
-    "name": "PapaSmerf PapaCro",
+    "name": "PapaSmerf",
+    "ticker": "PapaCro", 
     "icon": "./assets/coinIcons/papacro.jpg",
     "contract": "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
     "website": "https://www.papacro.com/",
@@ -744,12 +732,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8"
     }
   },
   {
     "id": "fortune-favours-the-bozos-fftb",
-    "name": "Fortune Favors The Bozos FFTB",
+    "name": "Fortune Favors The Bozos",
+    "ticker": "FFTB", 
     "icon": "./assets/coinIcons/bozos.jpg",
     "contract": "0x8eBB879557Db19D36E69b53B99f0ab938a703BEF",
     "website": "https://the-bozos.netlify.app/",
@@ -778,12 +767,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8ebb879557db19d36e69b53b99f0ab938a703bef",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x40d2483fda3a736b292801366d80cd7ca186ac9b%2C0xc29c75cb2249583698183e070f233ac01fb1e371%2C0xed85721c972d7a1ecbcc154972dc577150124db7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xed85721c972d7a1ecbcc154972dc577150124db7/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x40d2483fda3a736b292801366d80cd7ca186ac9b%2C0xc29c75cb2249583698183e070f233ac01fb1e371%2C0xed85721c972d7a1ecbcc154972dc577150124db7"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8eBB879557Db19D36E69b53B99f0ab938a703BEF"
     }
   },
   {
     "id": "kitcoin-kitty",
-    "name": "Kitcoin KITTY",
+    "name": "Kitcoin",
+    "ticker": "KITTY", 
     "icon": "./assets/coinIcons/kitty.png",
     "contract": "0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61",
     "website": "https://www.kitcoin.io/",
@@ -812,12 +802,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61"
     }
   },
   {
     "id": "reaper-squad-reaper",
-    "name": "Reaper's Squad REAPER",
+    "name": "Reaper's Squad",
+    "ticker": "REAPER", 
     "icon": "./assets/coinIcons/reaper.png",
     "contract": "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
     "website": "https://reapers-squad.netlify.app",
@@ -830,12 +821,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x73712a912ae5e39634046f4409ef57eac34e96ba",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x73712A912AE5e39634046F4409Ef57eac34E96BA"
     }
   },
   {
     "id": "fortune-favours-thebrave-fftb",
-    "name": "FORTUNE FAVOURS THE BRAVE FFTB",
+    "name": "FORTUNE FAVOURS THE BRAVE",
+    "ticker": "FFTB", 
     "icon": "./assets/coinIcons/fftb.png",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://fftb.space//",
@@ -864,12 +856,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd677944df705924af369d2fccf4a989f343dbcdf",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xd677944Df705924AF369d2FCcf4A989f343DbCDf"
     }
-  },
+  }, 
   {
     "id": "turtle-turtle",
-    "name": "Turtle TURTLE",
+    "name": "Turtle",
+    "ticker": "TURTLE",    
     "icon": "./assets/coinIcons/turtle.jpg",
     "contract": "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
     "website": "https://turtleoncro.com/",
@@ -882,12 +875,14 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8c9e2bef2962ce302ef578113eebec62920b7e57",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb%2C0x6da125da08484b4c5cd755142205531ceb2d9a95%2C0x4b6d58436e37a941d065ba337c01b49821aad902%2C0xc1233acbd36f4ef022ef7e6292031283877c3305%2C0xc8fcfc922338d94d601758acf05e0372155c39f1%2C0x9642b3000b3a75a0037a0cb2293ab9f92049c999%2C0x890fc1a70111ef1539d1d3223f44a2d2b561c439",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xea8f22344dd9269b030381f676432270a22a5837/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8C9E2bEf2962CE302ef578113eebEc62920B7e57"
     }
   },
+
   {
     "id": "corgiai-corgiai",
-    "name": "CorgiAI CORGIAI",
+    "name": "CorgiAI ",
+    "ticker": "CORGIAI", 
     "icon": "./assets/coinIcons/corgiai.png",
     "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
     "website": "https://corgiai.xyz",
@@ -900,12 +895,13 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x189291476338446c6e62c8a18ef22d3c80eb5f72/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60"
     }
   },
   {
     "id": "crow-with-knife-caw",
-    "name": "Crow With Knife CAW",
+    "name": "Crow With Knife",
+    "ticker": "CAW", 
     "icon": "./assets/coinIcons/caw.png",
     "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
     "website": "https://www.crowwithknife.com",
@@ -918,118 +914,83 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xccccccccdbec186dc426f8b5628af94737df0e60",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5%2C"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60"
     }
   },
-    {
-      "id": "vvs-finance",
-      "name": "VVS Finance VVS",
-      "icon": "./assets/coinIcons/vvs.jpg",
-      "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-      "website": "https://vvs.finance",
-      "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-        "twitter": "https://x.com/VVS_finance",
-        "telegram": "https://t.me/VVSFinance",
-        "discord": "https://discord.com/invite/V2957zMsmg",
-      "description": "Gateway to Cronos.",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b%2C0x814920d1b8007207db6cb5a2dd92bf0b082bdba1%2C0xfc07bf38408e4326f99dec96ba94f1e28af68842%2C0x9d96706f31f520cb2404a3d2ad1a932b61a85acf%2C0x861a978dc3c8183ce245a888f32e4eedd595aaa0%2C0xa922530960a1f94828a7e132ec1ba95717ed1eab%2C0x6ae624714f221964aff3ab8d8276a7ec142a759f%2C0xb90d6e09075168281d47da6f0665ff4fd8f0ff6f%2C0x1673afb35c5ffedfa5a55460a6ae16cc4173fcaa%2C0x910c37d26a9eb4aadff925b47ffde6308e03fa37",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xbf62c67ea509e86f07c8c69d0286c0636c50270b/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b"
-       
-      }
-    },
-    {
-      "id": "moonflow-moon",
-      "name": "Moonflow",
-      "icon": "./assets/coinIcons/moon.png",
-      "contract": "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
-      "website": "https://wolfswap.app/swap",
-      "explorer": "https://cronoscan.com/address/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
-      "twitter": "https://x.com/wolfswapdotapp",
-      "discord": "https://discord.com/invite/moonflowlabs",
-      "telegram": "https://t.me/moonflowlabs",
-      "description": "Wolfswap is an Aggregator DEX that incorporates GameFi aspects to deliver the best experience for the end-user.",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae"
-      }
-    },
-    {
-      "id": "mad-meerkat-finance",
-      "name": "Mad Meerkat Finance",
-      "icon": "./assets/coinIcons/mmf.jpg",
-      "contract": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
-      "website": "https://mm.finance",
-      "explorer": "https://cronoscan.com/address/0x97749c9b61f878a880dfe312d2594ae07aed7656",
-        "twitter": "https://twitter.com/mmfinance",
-        "discord": "https://discord.gg/mmfinance",
-        "telegram": "https://telegram.me/MMFcrypto",
-      "description": "Mad Meerkat Finance is a DEX platform on Cronos.",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x97749c9b61f878a880dfe312d2594ae07aed7656",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae"
-      }
-    },
-    {
-      "id": "croakey-croak",
-      "name": "Croakey",
-      "icon": "./assets/coinIcons/croak.jpg",
-      "contract": "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-      "website": "https://croakey.io",
-      "explorer": "https://cronoscan.com/address/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-        "twitter": "https://x.com/croakcronos",
-        "discord": "https://discord.com/invite/croakeycronos",
-        "telegram": "https://t.me/+514AfwaUi2swY2I0",
-      "description": "Croakey’s on a mission to become the #1 Frog.",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8"
-      }
-    },
-    {
-      "id": "crodex-token-crx",
-      "name": "Crodex",
-      "icon": "./assets/coinIcons/crx.png",
-      "contract": "0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
-      "website": "https://swap.crodex.app/#/swap",
-      "explorer": "https://cronoscan.com/address/0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
-        "twitter": "https://x.com/crodexapp",
-        "discord": "/",
-        "telegram": "https://t.me/crodexofficial",
-      "description": "CRODEX Exchange is working to be the best trading platform for all upcoming projects that are being developed to take advantage of Cronos’ blazing fast speed. CRODEX enjoys the enviable position of being amongst Cronos’ first and most widely recognized Decentralized Exchanges (DEX).",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe243ccab9e66e6cf1215376980811ddf1eb7f689",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd141aed3fa86f411808d5d74bebbc038e94f300d/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe243ccab9e66e6cf1215376980811ddf1eb7f689"
-      }
-    },
-    {
-      "id": "mistery-mery",
-      "name": "Mistery MERY",
-      "icon": "./assets/coinIcons/mistery.png",
-      "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-      "website": "https://vvs.finance",
-      "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-        "twitter": "https://x.com/Misteryoncro",
-        "discord": "https://discord.com/invite/mery",
-        "telegram": "https://t.me/misteryoncro",
-      "description": ".",
-      "dynamicData": {
-        "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-        "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
-        "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa51231984ff01f4933a9fa24e8fd143f18ae6772/ohlcv/minute?aggregate=15",
-        "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b"
-       
-      }
+  {
+    "id": "vvs-finance",
+    "name": "VVS Finance",
+    "ticker": "VVS",  
+    "icon": "./assets/coinIcons/vvs.jpg",
+    "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+    "website": "https://vvs.finance",
+    "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "twitter": "https://x.com/VVS_finance",
+      "telegram": "https://t.me/VVSFinance",
+      "discord": "https://discord.com/invite/V2957zMsmg",
+    "description": "Gateway to Cronos.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b%2C0x814920d1b8007207db6cb5a2dd92bf0b082bdba1%2C0xfc07bf38408e4326f99dec96ba94f1e28af68842%2C0x9d96706f31f520cb2404a3d2ad1a932b61a85acf%2C0x861a978dc3c8183ce245a888f32e4eedd595aaa0%2C0xa922530960a1f94828a7e132ec1ba95717ed1eab%2C0x6ae624714f221964aff3ab8d8276a7ec142a759f%2C0xb90d6e09075168281d47da6f0665ff4fd8f0ff6f%2C0x1673afb35c5ffedfa5a55460a6ae16cc4173fcaa%2C0x910c37d26a9eb4aadff925b47ffde6308e03fa37",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xbf62c67ea509e86f07c8c69d0286c0636c50270b/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x2d03bece6747adc00e1a131bba1469c15fd11e03"
+     
     }
-  ]
-  
+  },
+  {
+    "id": "moonflow-moon",
+    "name": "Moonflow",
+    "ticker": "MOON",  
+    "icon": "./assets/coinIcons/moon.png",
+    "contract": "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+    "website": "https://wolfswap.app/swap",
+    "explorer": "https://cronoscan.com/address/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+    "twitter": "https://x.com/wolfswapdotapp",
+    "discord": "https://discord.com/invite/moonflowlabs",
+    "telegram": "https://t.me/moonflowlabs",
+    "description": "Wolfswap is an Aggregator DEX that incorporates GameFi aspects to deliver the best experience for the end-user.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a"
+    }
+  }, 
+  {
+    "id": "mistery-mery",
+    "name": "Mistery",
+    "ticker": "MERY",   
+    "icon": "./assets/coinIcons/mistery.png",
+    "contract": "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+    "website": "https://vvs.finance",
+    "explorer": "https://cronoscan.com/address/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "twitter": "https://x.com/Misteryoncro",
+      "discord": "https://discord.com/invite/mery",
+      "telegram": "https://t.me/misteryoncro",
+    "description": ".",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa51231984ff01f4933a9fa24e8fd143f18ae6772/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x3b41B27E74Dd366CE27cB389dc7877D4e1516d4d"  
+    }
+  },
+  {
+  "id": "croakey-croak",
+  "name": "Croakey",
+  "ticker": "CROAK",
+  "icon": "./assets/coinIcons/croak.jpg",
+  "contract": "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+  "website": "https://croakey.io",
+  "explorer": "https://cronoscan.com/address/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+    "twitter": "https://x.com/croakcronos",
+    "discord": "https://discord.com/invite/croakeycronos",
+    "telegram": "https://t.me/+514AfwaUi2swY2I0",
+  "description": "Croakey’s on a mission to become the #1 Frog.",
+  "dynamicData": {
+    "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
+    "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
+    "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52/ohlcv/minute?aggregate=15",
+    "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8"
+  }
+}]

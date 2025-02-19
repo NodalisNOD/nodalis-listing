@@ -14,19 +14,19 @@ async function fetchTrendingTokens() {
  * Maakt een <tr>-element voor een token op basis van de token data en de rank.
  */
 function createTokenRow(token, rank) {
-  const coinData = coins.find(c =>
-    c.name.toLowerCase().replace(/\s+/g, "-") === token.coinId
-  );
+  // Zoek nu op coin.id in plaats van de bewerkte coin.name
+  const coinData = coins.find(c => c.id === token.coinId);
   
   let ticker = token.coinId; // fallback
   let iconHTML = '';
 
+  // Speciale case voor Greenstix v2
   if (token.coinId.toLowerCase() === "greenstix-v2-grnstx-v2") {
     ticker = "GRNSTX v2";
     iconHTML = `<img src="./assets/coinIcons/GRNSTX.jpg" alt="GRNSTX v2" class="table-icon">`;
   } else if (coinData) {
-    const nameParts = coinData.name.split(" ");
-    ticker = nameParts[nameParts.length - 1].toUpperCase();
+    // Gebruik de toegevoegde ticker als deze beschikbaar is, anders de coin naam
+    ticker = coinData.ticker ? coinData.ticker.toUpperCase() : coinData.name;
     iconHTML = `<img src="${coinData.icon}" alt="${ticker}" class="table-icon">`;
   }
 
@@ -38,17 +38,17 @@ function createTokenRow(token, rank) {
 
 /**
  * Populeert de twee tabellen met de top 10 tokens.
- * De eerste 5 tokens worden in de linker tabel geplaatst, de volgende 5 in de rechter.
+ * De eerste 5 tokens komen in de linker tabel, de volgende 5 in de rechter.
  */
 function populateTrendingTables(tokens) {
   const leftTableBody = document.getElementById('top-community-left');
   const rightTableBody = document.getElementById('top-community-right');
 
-  // Leegmaken bestaande inhoud
+  // Maak bestaande inhoud leeg
   leftTableBody.innerHTML = '';
   rightTableBody.innerHTML = '';
 
-  // Neem maximaal 10 tokens
+  // Gebruik maximaal 10 tokens
   tokens.slice(0, 10).forEach((token, index) => {
     const row = createTokenRow(token, index + 1);
     if (index < 5) {

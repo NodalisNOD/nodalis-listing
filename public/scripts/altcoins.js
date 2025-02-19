@@ -1,499 +1,283 @@
-export const coins = [
-  {
-    name: "Doofie DOFI",
-    contract: "0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274",
-    icon: "./assets/coinIcons/dofi.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b",
-  },
-  {
-    name: "Black Moon BMN",
-    contract: "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
-    icon: "./assets/coinIcons/blackmoon.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xccc1bdd3f58a11b62ceadb7ad728478dc05114c7",
-  },
-  {
-    name: "Pepe Eyes PEYES",
-    contract: "0xe9A4c3aba1075E1470EBe3007db11132905c9bdC",
-    icon: "./assets/coinIcons/pepeeyes.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
-  },
-  {
-    name: "Lionel The Lion LION",
-    contract: "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
-    icon: "./assets/coinIcons/lionel.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2113f58fdd359e93a82a1009cb76838f12c1ea9f%2C0xb04a05b006da71e08f62797c69b44f1fa9246eea%2C0x9d25be84fa321157cd3a4f3b11fff0fde54ea73e",
-  },
-  {
-    name: "GAINZ GAINZ",
-    contract: "0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411",
-    icon: "./assets/coinIcons/gainz.png",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
-  },
-  {
-    name: "Clove the Pig CLOVE",
-    contract: "0x8A795f3801AC51A8099724D3265F6Cc0Fd76F40B",
-    icon: "./assets/coinIcons/clove.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44",
-  },
-  {
-    name: "Buttman On Cronos BUTT",
-    contract: "0x2dfA528939D38a3654ad44a4748BE591e283a32f",
-    icon: "./assets/coinIcons/buttman.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa20996252cce0cbe67faf917fc110ebfe1399e8e",
-  },
-  {
-    name: "ryoshi with knife ryoshi",
-    contract: "0x055c517654d72A45B0d64Dc8733f8A38E27Fd49C",
-    icon: "./assets/coinIcons/ryoshi.webp",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ca1087f79044151092287f4eb6d0cf7d622cd39%2C0x4b572f3acb7dcc9ef64f193e53fea6ef6ac4ad65%2C0xd641a5d83d14d56eefa809c01b3800d11473ab5e%2C0x7d8ead9a57e70515fefe535d11bfa7eda6b4b864%2C0xeb792a1a2dd0819c50c854c00f2c748e5ce60bf0%2C0xfc9a7a5c531cb2f851626772592ad90d244da2ea%2C0xb4aedd93299bbbfa4728a4b6f616f92027233026%2C0xdf9836a22aa2728edb587d622cde261016ff5bbe%2C0xe6030588669f9a3221d1f3500ee8eeee4535a12c%2C0xb572267d8abafcf11d2f10e48a8b752af456def4",
-  },
-  {
-    name: "Fortune FRTN",
-    contract: "0xaF02D78F39C0002D14b95A3bE272DA02379AfF21",
-    icon: "./assets/coinIcons/fortune.webp",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfc0a8be90566e5329caec3d9630a603453ac7e44%2C0xaf56df060ca167361c66831801e0e17bb05bb313%2C0xa720f9e7c2067fd055b08fceb039fb798c67f44f%2C0xbc10bed82041a5d1abad43cc206656aafe9f84e6%2C0xe6ab98c145a25174c3f5c7184be96bd39faa4772%2C0x83208772584e2bafd2dd52322f9cb24f9e904762%2C0x4ae88a7a207b239b5281db37da9eb357dd8f99d1",
-  },
-  {
-    name: "Retribution RETRIB",
-    contract: "0x6ad9893eB92F4916f703f660410a454f6Acc3FE1",
-    icon: "./assets/coinIcons/retribution.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f",
-  },
-  {
-    name: "Chucky CHUCKY",
-    contract: "0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2",
-    icon: "./assets/coinIcons/chucky.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x3e5795b89ba23c9a8d44c0bab6888cca21ce7d42%2C0x1e4d16ad0d6860435bd146e3c5a19d45b7af74be%2C0xe7f72ad51661b99a89ecaa9bcb436a9815bddd43%2C0x98a7a313844c1cf3e10ca7d3262eec38155473aa%2C0xd15179a486ecb2b3f1035bdd9ebbc2ade9947541%2C0x1e06ca44ebd9284200a671ec64839dbd184804c9",
-  },
-  {
-    name: "Cronos Legends CLG",
-    contract: "0x85608d6373FDCfc9fB1582187dC3A81C2942F3f2",
-    icon: "./assets/coinIcons/clg.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
-  },  
-  {
-    name: "Pixel Tribes Cro PTCRO",
-    contract: "0xDd8D87faF419Abad614E0D05E01c68FDfa473A6A",
-    icon: "./assets/coinIcons/ptcro.webp",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x8e032a95c05c7da2f3ad6fd5effe8f8c5f8fb7d2%2C0xab77e195d2b7c0bcd529682ab9c8883db2a6cd2a%2C0x827b6362ed5ad3f80ad4ac50fd8af22c81745ca6",
-  },
-  {
-    name: "Greenstix v2 GRNSTX",
-    contract: "0x16a19Ae876272fb9Cc8dF78a116C63Cc1562270b",
-    icon: "./assets/coinIcons/GRNSTX.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x09e719a6f820438c796fba25f22fe145f8b7dd5e%2C0x5eb156f8787339fb21ee1509d44df7671b4123a8%2C0x696f03be45b82464d8e838ade9717cf0c286ba6a%2C0x84fdeffacfe6c051e7765686a63c8799c5e4613f%2C0xa387f012402062fc7b48c59b9854599a38944c72%2C0x235d8f316f6c22774d3b20e2970dd420a3b98007%2C0xc9225ad971d1614b23a9bd6a72dec1291ce1b27b0xb197d5d313c07159c3e638779634ed200ff035a4%2C0x19b2f9081525bcc64c76a0bd058eb9d36d10ef44%2C0xce5bdb11abe20442acbd7de098aba927077baba9",
-  },
-  {
-    name: "croc with knife STAB",
-    contract: "0x1EBd45a0415bA286f10Babd9E27c69F62B7dB7d7",
-    icon: "./assets/coinIcons/stab.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835",
-  },
-  {
-    name: "Cryptoholic HOLIC",
-    contract: "0x55E6Fb1Ae5E3FCd505446F501AB766D8d59b20A9",
-    icon: "./assets/coinIcons/holic.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x596e0065eaa9673453e7ada85814343d2dd8dbdb%2C0x6e33f6351ddf78584bb51820f5cd073d32bf47f0",
-  },
-  {
-    name: "Kris KRIS",
-    contract: "0x2829955d8Aac64f184E363516FDfbb0394042B90",
-    icon: "./assets/coinIcons/kris.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa32dfb9c6694c64b0412aa8d2cd49ab95b028930",
-  },
-  {
-    name: "Crooks CRKS",
-    contract: "0xe07375D293D7b8d3758B74FD6a71800A946B3b07",
-    icon: "./assets/coinIcons/crks.jpg",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xef3fecabf7bc105aa3d3e66f2daa4a797e3326b3%2C0x556996d8baed07c3843dd6b21d4fcd8962b1d982",
-  },
-  {
-    name: "GoodMorning GM",
-    contract: "0x7492450cc8897a4e444ad972eb1619251ef15c23",
-    icon: "./assets/coinIcons/gm.png",
-    apiUrl:
-    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x7fe46295d0bb9b425c8f19999ba296a024a5e21a%2C0x49965aa2c52a780ae8a47a41bdf63fb33fec6416",
-  },
-  {
-    name: "Croginal Cats CROGINAL",
-    contract: "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3",
-    icon: "./assets/coinIcons/croginal.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C",
-  },
-  {
-    name: "PapaSmerf PapaCro",
-    contract: "0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8",
-    icon: "./assets/coinIcons/papacro.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69",
-  },
-  {
-    name: "Fortune Favors The Bozos FFTB",
-    contract: "0x8eBB879557Db19D36E69b53B99f0ab938a703BEF",
-    icon: "./assets/coinIcons/bozos.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x40d2483fda3a736b292801366d80cd7ca186ac9b%2C0xc29c75cb2249583698183e070f233ac01fb1e371%2C0xed85721c972d7a1ecbcc154972dc577150124db7",
-  },
-  {
-    name: "Kitcoin KITTY",
-    contract: "0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61",
-    icon: "./assets/coinIcons/kitty.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C",
-  },
-  {
-    name: "Reaper's Squad REAPER",
-    contract: "0x73712A912AE5e39634046F4409Ef57eac34E96BA",
-    icon: "./assets/coinIcons/reaper.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa46e17e884b4f7c0db252fc055ef8d14b2271d7c%2C0x078150fdeedb5b8f16a4b2950f839eda393d2fc7%2C0x3fd9ead82392898e185c0619baf66dbc00b3196c%2C0xba12e9c4ea0f64ecef217905ccfa97421a74e54e%2C",
-  },
-  {
-    name: "FORTUNE FAVOURS THE BRAVE FFTB",
-    contract: "0xd677944Df705924AF369d2FCcf4A989f343DbCDf",
-    icon: "./assets/coinIcons/fftb.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5aa62d8711ca4af5c3f809a3cbe8d7ed6a0bd9c2%2C0xab708f371cb3568531822936bba1ae87fa3c1d00%2C0x40e4a6bd76dd986ec310bdfdf230a4cd2f0086de%2C",
-  },
-  {
-    name: "Turtle TURTLE",
-    contract: "0x8C9E2bEf2962CE302ef578113eebEc62920B7e57",
-    icon: "./assets/coinIcons/turtle.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb",
-  },
-  {
-    name: "CorgiAI CORGIAI",
-    contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
-    icon: "./assets/coinIcons/corgiai.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
-  },
-  {
-    name: "crow with knife CAW",
-    contract: "0xccccccccdbec186dc426f8b5628af94737df0e60",
-    icon: "./assets/coinIcons/caw.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc7a139c804a3bbdfe90d32c100dffeca1a2f735c%2C0xbd7662497dad446047d74d55f8244a5161b78eec%2C0xaef7fb05f05aa35d3a8bca11f16f0d3387f47191%2C0x6023768757d8749066597403510b3f69c39f03c5",
-  },
-  {
-    name: "Croakey CROAK",
-    contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-    icon: "./assets/coinIcons/croak.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
-  },
-  {
-    name: "Moonflow MOON",
-    contract: "0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a",
-    icon: "./assets/coinIcons/moon.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9e5a2f511cfc1eb4a6be528437b9f2ddcaef9975%2C0x478b6c0f22927d97ef686632ea2d34a47dd22eed%2C0x886fd55d15bbfc444c23ac5f6dbebeeca4832971%2C0xedb5b48958b09f670866f51c6680b6b07af955dc",
-  },
-  {
-    name: "Mistery MERY",
-    contract: "0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d",
-    icon: "./assets/coinIcons/mistery.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa51231984ff01f4933a9fa24e8fd143f18ae6772%2C0x06465ee5c246ee82b1eed2b2bd9a3a5457013c5a%2C0x54efb7841bc8f454799f78c33e6001fea296d71f%2C0xe1e46f2f4fb12b35c466b468650b2b7f61bbcbfc%2C0x779ac56c17c353cf6c7681bea60de189b0429575",
-  },
-  {
-    name: "VVS Finance VVS",
-    contract: "0x2d03bece6747adc00e1a131bba1469c15fd11e03",
-    icon: "./assets/coinIcons/vvs.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b",
-  },
-  {
-    name: "Mad Meerkat Finance",
-    contract: "0x1a9f22b4c385f78650e7874d64e442839dc32327",
-    icon: "./assets/coinIcons/mmf.jpg",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xba452a1c0875d33a440259b1ea4dca8f5d86d9ae%2C0x722f19bd9a1e5ba97b3020c6028c279d27e4293c%2C0x5801d37e04ab1f266c35a277e06c9d3afa1c9ca2",
-  },
-  {
-    name: "Crodex Token CRX",
-    contract: "0x4d03f8b5d8fbe17d84e1b709b0d5e17eb9a6b7b8",
-    icon: "./assets/coinIcons/crx.png",
-    apiUrl:
-      "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xd141aed3fa86f411808d5d74bebbc038e94f300d%2C0x77c30a3940a7178683afc75e1e97dd51ad80bdd0%2C0xa6e9f20a93e0b50f074bc2fc693e8add3812f8c4%2C0x89e1135b2c82feb19f5ecb78e35c309a6aef7b01",
-  },
-];
+// altcoins copy.js
 
-const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
-const COINS_PER_PAGE = 25; // Max aantal munten per pagina
+// Globale variabelen
+let coinTableData = [];         // Alle coins (volledige data van API)
+let currentDisplayData = [];    // Huidige data (bijv. na filtering)
 let currentPage = 1;
-let validCoinData = [];
-let currentSortKey = "marketCap";
-let sortAscending = false;
+const itemsPerPage = 20;
 
-export async function fetchCoinData(coin) {
-  // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
-  let fallbackPrice = null;
-  try {
-    const priceResponse = await fetch(`https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/${coin.contract}`);
-    if (priceResponse.ok) {
-      const priceData = await priceResponse.json();
-      const priceKey = Object.keys(priceData.data.attributes.token_prices)[0];
-      fallbackPrice = parseFloat(priceData.data.attributes.token_prices[priceKey]);
-    }
-  } catch (error) {
-    console.error(`Error fetching fallback price for ${coin.name}:`, error);
-  }
-
-  // Gebruik de apiUrl voor pool data
-  const storageKey = "coinData_" + encodeURIComponent(coin.apiUrl);
-  const cacheTimeKey = storageKey + "_time";
-  const now = Date.now();
-
-  // Probeer data uit de cache te halen als deze recent is
-  const cachedData = localStorage.getItem(storageKey);
-  const cachedTime = localStorage.getItem(cacheTimeKey);
-  if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < BROWSER_CACHE_DURATION) {
-    return JSON.parse(cachedData);
-  }
-
-  try {
-    const response = await fetch(coin.apiUrl);
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    const data = await response.json();
-    const pools = data.data;
-
-    let combinedData = {
-      totalVolumeUsd: 0,
-      totalBasePriceUsd: 0,
-      priceChange1h: 0,
-      priceChange24h: 0,
-      marketCap: null,
-    };
-
-    const processedPools = new Set();
-
-    pools.forEach((pool) => {
-      const poolId = pool.id;
-      if (processedPools.has(poolId)) {
-        console.log(`Skipping duplicate pool: ${poolId}`);
-        return;
-      }
-      processedPools.add(poolId);
-
-      const attributes = pool.attributes;
-      const volume = parseFloat(attributes.volume_usd?.h24) || 0;
-      const basePrice = parseFloat(attributes.base_token_price_usd) || 0;
-
-      combinedData.totalVolumeUsd += volume;
-
-      if (!combinedData.marketCap) {
-        if (attributes.market_cap_usd) {
-          combinedData.marketCap = parseFloat(attributes.market_cap_usd);
-        } else if (attributes.fdv_usd) {
-          combinedData.marketCap = parseFloat(attributes.fdv_usd);
-        } else if (attributes.reserve_in_usd && attributes.base_token_price_usd) {
-          const reserveUsd = parseFloat(attributes.reserve_in_usd);
-          const baseTokenPrice = parseFloat(attributes.base_token_price_usd);
-          combinedData.marketCap = reserveUsd / baseTokenPrice;
-          console.log(`Calculated Market Cap: ${combinedData.marketCap}`);
-        }
-      }
-
-      combinedData.totalBasePriceUsd += volume > 0 ? basePrice * volume : 0;
-      combinedData.priceChange1h += parseFloat(attributes.price_change_percentage?.h1 || 0) * volume;
-      combinedData.priceChange24h += parseFloat(attributes.price_change_percentage?.h24 || 0) * volume;
-    });
-
-    const result = {
-      name: coin.name,
-      contract: coin.contract,
-      icon: coin.icon,
-      price:
-        combinedData.totalVolumeUsd > 0
-          ? (combinedData.totalBasePriceUsd / combinedData.totalVolumeUsd).toFixed(10)
-          : fallbackPrice !== null
-          ? fallbackPrice.toFixed(10)
-          : "0",
-      priceChange1h:
-        combinedData.totalVolumeUsd > 0
-          ? (combinedData.priceChange1h / combinedData.totalVolumeUsd).toFixed(2)
-          : "0.00",
-      priceChange24h:
-        combinedData.totalVolumeUsd > 0
-          ? (combinedData.priceChange24h / combinedData.totalVolumeUsd).toFixed(2)
-          : "0.00",
-      marketCap: combinedData.marketCap
-        ? combinedData.marketCap.toLocaleString("en-US", {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
+/**
+ * Haalt eerst de coin-data op uit coin-data.json en voor elke coin haalt hij
+ * de actuele gegevens op via de generalApi. Hierbij wordt gecontroleerd of
+ * de respons afkomstig is van Dexscreener (array) of Geckoterminal (object met data).
+ * Na het ophalen wordt de standaard sortering (market cap DESC) toegepast,
+ * de tabel gerenderd en worden sorteer- en zoekfunctionaliteit geactiveerd.
+ */
+export function populateAltcoinTable() {
+  fetch("./data/coin-data.json")
+    .then((response) => response.json())
+    .then((coins) => {
+      const promises = coins.map((coin) => {
+        return fetch(coin.dynamicData.generalApi)
+          .then((resp) => resp.json())
+          .then((data) => {
+            // Dexscreener-respons: verwacht een array met pools
+            if (Array.isArray(data) && data.length > 0) {
+              const dexData = data[0];
+              // Tel het 24-uurs volume over alle pools op
+              const volume24hTotal = data.reduce((sum, pool) => {
+                return (
+                  sum +
+                  (pool.volume && pool.volume.h24
+                    ? parseFloat(pool.volume.h24)
+                    : 0)
+                );
+              }, 0);
+              return {
+                id: coin.id,
+                name: coin.name,
+                ticker: coin.ticker,
+                icon: coin.icon,
+                contract: coin.contract,
+                priceUsd: parseFloat(dexData.priceUsd),
+                change6h:
+                  dexData.priceChange &&
+                  dexData.priceChange.h6 !== undefined &&
+                  dexData.priceChange.h6 !== "N/A"
+                    ? parseFloat(dexData.priceChange.h6)
+                    : 0,
+                change24h:
+                  dexData.priceChange &&
+                  dexData.priceChange.h24 !== undefined &&
+                  dexData.priceChange.h24 !== "N/A"
+                    ? parseFloat(dexData.priceChange.h24)
+                    : 0,
+                marketCap:
+                  dexData.marketCap !== undefined
+                    ? parseFloat(dexData.marketCap)
+                    : null,
+                volume24h: volume24hTotal,
+              };
+            }
+            // Geckoterminal-respons: verwacht een object met data.data.attributes
+            else if (data && data.data) {
+              const gt = data.data.attributes;
+              return {
+                id: coin.id,
+                name: coin.name,
+                ticker: coin.ticker,
+                icon: coin.icon,
+                contract: coin.contract,
+                priceUsd: gt.base_token_price_usd
+                  ? parseFloat(gt.base_token_price_usd)
+                  : null,
+                change6h:
+                  gt.price_change_percentage &&
+                  gt.price_change_percentage.h6 !== undefined
+                    ? parseFloat(gt.price_change_percentage.h6)
+                    : 0,
+                change24h:
+                  gt.price_change_percentage &&
+                  gt.price_change_percentage.h24 !== undefined
+                    ? parseFloat(gt.price_change_percentage.h24)
+                    : 0,
+                // Als market_cap_usd null is, gebruik fdv_usd (indien beschikbaar)
+                marketCap:
+                  (gt.market_cap_usd === null || gt.market_cap_usd === undefined)
+                    ? (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null)
+                    : parseFloat(gt.market_cap_usd),
+                volume24h:
+                  gt.volume_usd && gt.volume_usd.h24
+                    ? parseFloat(gt.volume_usd.h24)
+                    : 0,
+              };
+            } else {
+              console.error("Geen geldige data voor coin:", coin.name);
+              return null;
+            }
           })
-        : "0",
-      volume24h:
-        typeof combinedData.totalVolumeUsd === "number"
-          ? combinedData.totalVolumeUsd.toLocaleString()
-          : "0",
-    };
-
-    localStorage.setItem(storageKey, JSON.stringify(result));
-    localStorage.setItem(cacheTimeKey, now.toString());
-
-    return result;
-  } catch (error) {
-    console.error(`Error fetching data for ${coin.name}:`, error);
-    return null;
-  }
-}
-
-function renderTable() {
-  const tableBody = document.querySelector("#altcoin-table");
-  if (!tableBody) {
-    console.error("Altcoin table element not found.");
-    return;
-  }
-
-  const start = (currentPage - 1) * COINS_PER_PAGE;
-  const end = start + COINS_PER_PAGE;
-  const pageData = validCoinData.slice(start, end);
-
-  const rowsHtml = pageData
-    .map((coin, index) => {
-      function formatChange(change) {
-        const arrow = change >= 0 ? "↑" : "↓";
-        const colorClass = change >= 0 ? "positive-change" : "negative-change";
-        return `<span class="${colorClass}">${arrow} ${Math.abs(change)}%</span>`;
-      }
-
-      return `
-        <tr>
-          <td>${start + index + 1}</td>
-          <td>
-            <a href="coin.html?id=${coin.name}" class="coin-link">
-              <img src="${coin.icon}" alt="${coin.name} Logo" class="crypto-logo">
-              ${coin.name}
-            </a>
-          </td>
-          <td>$${coin.price}</td>
-          <td>${formatChange(coin.priceChange1h)}</td>
-          <td>${formatChange(coin.priceChange24h)}</td>
-          <td>$${coin.marketCap}</td>
-          <td>$${coin.volume24h}</td>
-        </tr>
-      `;
+          .catch((err) => {
+            console.error("Fout voor coin", coin.name, err);
+            return null;
+          });
+      });
+      return Promise.all(promises);
     })
-    .join("");
-
-  tableBody.innerHTML =
-    rowsHtml || "<tr><td colspan='7'>No matching coins found.</td></tr>";
-}
-
-function sortTable(key) {
-  validCoinData.sort((a, b) => {
-    const valueA = parseFloat(a[key]?.replace(/[.,]/g, "")) || 0;
-    const valueB = parseFloat(b[key]?.replace(/[.,]/g, "")) || 0;
-    return sortAscending ? valueA - valueB : valueB - valueA;
-  });
-  renderTable();
-  renderPagination();
-}
-
-export async function populateAltcoinTable(searchQuery = "") {
-  const allCoinData = await Promise.all(coins.map(fetchCoinData));
-  validCoinData = allCoinData.filter((data) => data !== null);
-
-  validCoinData = validCoinData.filter(
-    (coin) =>
-      coin &&
-      (coin.name.toLowerCase().includes(searchQuery.toLowerCase().trim()) ||
-        coin.contract.toLowerCase().includes(searchQuery.toLowerCase().trim()))
-  );
-
-  const tableHeaders = document.querySelectorAll(".main-crypto-table th");
-  tableHeaders.forEach((header, index) => {
-    header.addEventListener("click", () => {
-      const sortKeys = [
-        null,
-        "name",
-        "price",
-        "priceChange1h",
-        "priceChange24h",
-        "marketCap",
-        "volume24h",
-      ];
-      const key = sortKeys[index];
-      if (key) {
-        sortAscending = currentSortKey === key ? !sortAscending : false;
-        currentSortKey = key;
-        sortTable(key);
-      }
+    .then((results) => {
+      coinTableData = results.filter((item) => item !== null);
+      // Standaard sortering: hoogste market cap bovenaan
+      coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
+      // Stel huidige getoonde data in op de volledige dataset
+      currentDisplayData = [...coinTableData];
+      renderTable(currentDisplayData, 1);
+      setupTableSort();
+      setupSearch();
+    })
+    .catch((error) => {
+      console.error("Fout bij ophalen van coin-data.json:", error);
     });
-  });
-
-  sortTable(currentSortKey);
 }
 
-// Functie om paginering toe te voegen
-function renderPagination() {
-  const paginationContainer = document.querySelector("#pagination");
-  if (!paginationContainer) return;
+/**
+ * Render de altcoin-tabel met paginering.
+ * @param {Array} data - De data-array die gerenderd moet worden (bijv. volledige of gefilterde data)
+ * @param {number} page - Het huidige paginanummer (default: currentPage)
+ */
+function renderTable(data = coinTableData, page = currentPage) {
+  currentDisplayData = data;
+  currentPage = page;
+  const tableBody = document.getElementById("altcoin-table");
+  tableBody.innerHTML = "";
 
-  const totalPages = Math.ceil(validCoinData.length / COINS_PER_PAGE);
-  if (totalPages <= 1) {
-    paginationContainer.innerHTML = ""; // Verberg paginering als er maar één pagina is
-    return;
+  const startIndex = (page - 1) * itemsPerPage;
+  const pageData = data.slice(startIndex, startIndex + itemsPerPage);
+
+  pageData.forEach((coin, index) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${startIndex + index + 1}</td>
+      <td>
+        <a href="coin.html?id=${coin.id}" style="display: block; text-decoration: none; color: inherit;">
+          <img src="${coin.icon}" alt="${coin.name}" class="coin-icon" style="width:20px; height:20px; margin-right:5px; vertical-align:middle;">
+          ${coin.name} <strong>${coin.ticker}</strong>
+        </a>
+      </td>
+      <td>${
+        coin.priceUsd !== null ? coin.priceUsd.toFixed(10) : "N/A"
+      }</td>
+      <td style="color: ${coin.change6h >= 0 ? "green" : "red"};">
+        ${coin.change6h.toFixed(2)}%
+      </td>
+      <td style="color: ${coin.change24h >= 0 ? "green" : "red"};">
+        ${coin.change24h.toFixed(2)}%
+      </td>
+      <td>${
+        coin.marketCap !== null
+          ? "$" + coin.marketCap.toLocaleString()
+          : "N/A"
+      }</td>
+      <td>${
+        coin.volume24h !== null
+          ? "$" + coin.volume24h.toLocaleString()
+          : "N/A"
+      }</td>
+    `;
+    tableBody.appendChild(tr);
+  });
+  renderPagination(data, page);
+}
+
+/**
+ * Rendert de pagineringsknoppen in de container met id="pagination"
+ * @param {Array} data - De data-array waarop gepagineerd wordt.
+ * @param {number} page - Het huidige paginanummer.
+ */
+function renderPagination(data, page) {
+  const paginationContainer = document.getElementById("pagination");
+  paginationContainer.innerHTML = "";
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+  if (totalPages <= 1) return; // Geen paginering nodig
+
+  // Vorige knop
+  if (page > 1) {
+    const prevButton = document.createElement("button");
+    prevButton.innerText = "Previous";
+    prevButton.addEventListener("click", () => {
+      renderTable(data, page - 1);
+    });
+    paginationContainer.appendChild(prevButton);
   }
 
-  let paginationHtml = `<button onclick="changePage(-1)" ${currentPage === 1 ? "disabled" : ""}>← Vorige</button>`;
-
+  // Paginaknoppen
   for (let i = 1; i <= totalPages; i++) {
-    paginationHtml += `<button onclick="changePage(${i})" class="${i === currentPage ? "active" : ""}">${i}</button>`;
+    const pageButton = document.createElement("button");
+    pageButton.innerText = i;
+    if (i === page) {
+      pageButton.classList.add("active"); // styling via CSS
+    }
+    pageButton.addEventListener("click", () => {
+      renderTable(data, i);
+    });
+    paginationContainer.appendChild(pageButton);
   }
 
-  paginationHtml += `<button onclick="changePage(1)" ${currentPage === totalPages ? "disabled" : ""}>Volgende →</button>`;
-
-  paginationContainer.innerHTML = paginationHtml;
+  // Volgende knop
+  if (page < totalPages) {
+    const nextButton = document.createElement("button");
+    nextButton.innerText = "Next";
+    nextButton.addEventListener("click", () => {
+      renderTable(data, page + 1);
+    });
+    paginationContainer.appendChild(nextButton);
+  }
 }
 
-// Functie om van pagina te wisselen
-window.changePage = function (page) {
-  const totalPages = Math.ceil(validCoinData.length / COINS_PER_PAGE);
-
-  if (page === -1) {
-    if (currentPage > 1) currentPage--;
-  } else if (page === 1) {
-    if (currentPage < totalPages) currentPage++;
-  } else {
-    currentPage = page;
+/**
+ * Zet sorteer-functionaliteit op. De gebruiker kan op de volgende kolommen sorteren:
+ * - Naam (alfabetisch)
+ * - Price (priceUsd)
+ * - 6h Change (change6h)
+ * - 24h Change (change24h)
+ * - Market Cap (marketCap)
+ * - Volume (volume24h)
+ *
+ * Na sorteren wordt de getoonde data (currentDisplayData) opnieuw gerenderd (pagina 1).
+ */
+function setupTableSort() {
+  const ths = document.querySelectorAll(".main-crypto-table thead th");
+  const sortKeys = [
+    "name",
+    "priceUsd",
+    "change6h",
+    "change24h",
+    "marketCap",
+    "volume24h",
+  ];
+  for (let i = 1; i < ths.length; i++) {
+    let key = sortKeys[i - 1];
+    ths[i].style.cursor = "pointer";
+    ths[i].addEventListener("click", () => {
+      // Toggle sorteerorde
+      if (!ths[i].dataset.order || ths[i].dataset.order === "desc") {
+        ths[i].dataset.order = "asc";
+      } else {
+        ths[i].dataset.order = "desc";
+      }
+      const order = ths[i].dataset.order;
+      currentDisplayData.sort((a, b) => {
+        let aValue = a[key] !== null ? a[key] : -Infinity;
+        let bValue = b[key] !== null ? b[key] : -Infinity;
+        if (key === "name") {
+          return order === "asc"
+            ? aValue.localeCompare(bValue)
+            : bValue.localeCompare(aValue);
+        } else {
+          return order === "asc" ? aValue - bValue : bValue - aValue;
+        }
+      });
+      // Na sorteren altijd weer naar pagina 1
+      renderTable(currentDisplayData, 1);
+    });
   }
+}
 
-  renderTable();
-  renderPagination();
-};
-
-export function setupSearch() {
-  const searchInput = document.querySelector("#search-bar");
-  searchInput.addEventListener("input", (event) => {
-    const searchQuery = event.target.value;
-    populateAltcoinTable(searchQuery);
+/**
+ * Zet de zoekfunctionaliteit op. De gebruiker kan zoeken op coin-naam of contractadres.
+ * Na filtering wordt de paginering opnieuw opgebouwd en naar pagina 1 gesprongen.
+ */
+function setupSearch() {
+  const searchInput = document.getElementById("search-bar");
+  if (!searchInput) return;
+  searchInput.addEventListener("input", function () {
+    const filter = this.value.toLowerCase();
+    const filteredData = coinTableData.filter(
+      (coin) =>
+        coin.name.toLowerCase().includes(filter) ||
+        coin.contract.toLowerCase().includes(filter)
+    );
+    renderTable(filteredData, 1);
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  populateAltcoinTable();
-  setupSearch();
-});
+// Exporteer de functies zodat ze vanuit de HTML na DOMContentLoaded worden aangeroepen
+export { renderTable, setupSearch, setupTableSort };

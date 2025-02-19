@@ -173,7 +173,7 @@
         <th>#</th>
         <th>Name</th>
         <th>Price</th>
-        <th>1h Change</th>
+        <th>6h Change</th>
         <th>24h Change</th>
         <th>Market Cap</th>
         <th>Volume (24h)</th>
@@ -185,6 +185,9 @@
   <!-- Voeg hier de paginering toe -->
   <div id="pagination" class="pagination-container"></div>
 
+  <div class="table-footer-logo">
+    <a href="https://www.geckoterminal.com" target="_blank">
+      <img src="./assets/UI/geckoterminal.png" alt="Gecko Terminal Logo" />
     </a>
   </div>
 </div>
@@ -218,7 +221,7 @@
   <script src="./scripts/trendingVotes.js" type="module"></script>
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
   <script type="module">
-    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js?v=20250219";
+    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins_copy.js?v=20250219";
     document.addEventListener("DOMContentLoaded", () => {
       populateAltcoinTable(); // Fill the table with all coins
       setupSearch(); // Activate search functionality
