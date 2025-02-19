@@ -1,83 +1,154 @@
-import { coins, fetchCoinData } from "./altcoins.js";
+// stats-dashboard.js
 
-// variables to store cache
+// Cache voor stats
 let statsCache = null;
 let statsCacheTime = 0;
-const STATS_CACHE_DURATION = 1 * 60 * 1000; // 1 minutes
+const STATS_CACHE_DURATION = 1 * 60 * 1000; // 1 minuut
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchMarketCapAndDominance();
 });
 
-// function to fetch coin data
+/**
+ * Haalt alle coin-data op uit het JSON-bestand en verwerkt de API-responsen.
+ * Ondersteunt zowel Dexscreener (array) als Geckoterminal (object met data).
+ * Retourneert een array van coin-objecten.
+ */
+async function fetchAllCoinData() {
+  try {
+    const response = await fetch("./data/coin-data.json");
+    const coins = await response.json();
+    const promises = coins.map((coin) => {
+      return fetch(coin.dynamicData.generalApi)
+        .then((resp) => resp.json())
+        .then((data) => {
+          // Dexscreener-respons (verwacht een array met pools)
+          if (Array.isArray(data) && data.length > 0) {
+            const dexData = data[0];
+            // Totaal 24u-volume over alle pools
+            const volume24hTotal = data.reduce((sum, pool) => {
+              return sum + (pool.volume && pool.volume.h24 ? parseFloat(pool.volume.h24) : 0);
+            }, 0);
+            return {
+              id: coin.id,
+              name: coin.name,
+              ticker: coin.ticker,
+              icon: coin.icon,
+              contract: coin.contract,
+              priceUsd: parseFloat(dexData.priceUsd),
+              change6h:
+                dexData.priceChange &&
+                dexData.priceChange.h6 !== undefined &&
+                dexData.priceChange.h6 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h6)
+                  : 0,
+              change24h:
+                dexData.priceChange &&
+                dexData.priceChange.h24 !== undefined &&
+                dexData.priceChange.h24 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h24)
+                  : 0,
+              marketCap: dexData.marketCap !== undefined ? parseFloat(dexData.marketCap) : 0,
+              volume24h: volume24hTotal,
+            };
+          }
+          // Geckoterminal-respons (verwacht een object met data.data.attributes)
+          else if (data && data.data) {
+            const gt = data.data.attributes;
+            return {
+              id: coin.id,
+              name: coin.name,
+              ticker: coin.ticker,
+              icon: coin.icon,
+              contract: coin.contract,
+              priceUsd: gt.base_token_price_usd ? parseFloat(gt.base_token_price_usd) : 0,
+              change6h:
+                gt.price_change_percentage && gt.price_change_percentage.h6 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h6)
+                  : 0,
+              change24h:
+                gt.price_change_percentage && gt.price_change_percentage.h24 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h24)
+                  : 0,
+              marketCap:
+                (gt.market_cap_usd === null || gt.market_cap_usd === undefined)
+                  ? (gt.fdv_usd ? parseFloat(gt.fdv_usd) : 0)
+                  : parseFloat(gt.market_cap_usd),
+              volume24h: gt.volume_usd && gt.volume_usd.h24 ? parseFloat(gt.volume_usd.h24) : 0,
+            };
+          } else {
+            console.error("Geen geldige data voor coin:", coin.name);
+            return null;
+          }
+        })
+        .catch((err) => {
+          console.error("Fout bij ophalen van data voor coin:", coin.name, err);
+          return null;
+        });
+    });
+    const results = await Promise.all(promises);
+    return results.filter((item) => item !== null);
+  } catch (err) {
+    console.error("Fout bij ophalen van coin-data.json:", err);
+    return [];
+  }
+}
+
+/**
+ * Haalt de totale market cap en dominantie op.
+ * De dominantie wordt berekend aan de hand van de Cronos market cap (opgehaald via Geckoterminal)
+ * en de totale market cap van alle coins in ons platform.
+ * Caching wordt toegepast voor 1 minuut.
+ */
 async function fetchMarketCapAndDominance() {
   const now = Date.now();
   
-  // if cache is valid, load from cache
+  // Gebruik cache indien geldig
   if (statsCache && now - statsCacheTime < STATS_CACHE_DURATION) {
     updateDOM(statsCache);
     return;
   }
 
   try {
-    // calculate total market cap
-    const allCoinData = await Promise.all(coins.map(fetchCoinData));
-    const validCoinData = allCoinData.filter((data) => data !== null);
+    const allCoinData = await fetchAllCoinData();
+    const totalMarketCap = allCoinData.reduce((acc, coin) => acc + (coin.marketCap || 0), 0);
 
-    const totalMarketCap = validCoinData.reduce((acc, coin) => {
-      const marketCap = coin.marketCap
-        ? parseFloat(coin.marketCap.replace(/,/g, ""))
-        : 0;
-      return acc + marketCap;
-    }, 0);
-
-    // fetch Cronos market cap
+    // Haal Cronos market cap op via Geckoterminal
     const response = await fetch(
       "https://api.geckoterminal.com/api/v2/networks/eth/tokens/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b"
     );
     const data = await response.json();
-    const cronosMarketCap = parseFloat(
-      data.data.attributes.market_cap_usd
-    ) || 0;
+    const cronosMarketCap = parseFloat(data.data.attributes.market_cap_usd) || 0;
 
-    // calculate dominance
-    const dominance =
-      totalMarketCap > 0
-        ? ((cronosMarketCap / totalMarketCap) * 100).toFixed(2)
-        : 0;
+    // Bereken dominantie (%)
+    const dominance = totalMarketCap > 0 ? ((cronosMarketCap / totalMarketCap) * 100).toFixed(2) : 0;
 
-    // create stats data object
-    const statsData = {
-      totalMarketCap,
-      dominance,
-    };
-
-    // Update de cache
+    const statsData = { totalMarketCap, dominance };
     statsCache = statsData;
     statsCacheTime = now;
 
-    // update DOM
     updateDOM(statsData);
   } catch (error) {
     console.error("Error fetching market cap and dominance:", error);
   }
 }
 
-// help function to update the DOM
+/**
+ * Werkt de DOM bij met de opgehaalde stats.
+ */
 function updateDOM(statsData) {
-  document.getElementById("market-cap").textContent = `$${statsData.totalMarketCap.toLocaleString(undefined, {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })}`;
-  document.getElementById("dominance").innerHTML = `
-    <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
-    ${statsData.dominance}%
-  `;
-}
-
-// help function to parse market cap value
-function parseMarketCap(value) {
-  if (!value) return 0;
-  const cleanedValue = value.replace(/\./g, "").replace(/,/g, ".");
-  return parseFloat(cleanedValue);
+  const marketCapEl = document.getElementById("market-cap");
+  const dominanceEl = document.getElementById("dominance");
+  if (marketCapEl) {
+    marketCapEl.textContent = `$${statsData.totalMarketCap.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })}`;
+  }
+  if (dominanceEl) {
+    dominanceEl.innerHTML = `
+      <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;">
+      ${statsData.dominance}%
+    `;
+  }
 }

@@ -1,4 +1,20 @@
-import { coins } from "./altcoins.js";
+// trendingVotes.js
+
+// Globale variabele om de coin data op te slaan
+let coinsData = [];
+
+// Laad de coin data uit het JSON-bestand (éénmalig laden)
+async function loadCoinsData() {
+  if (coinsData.length === 0) {
+    try {
+      const response = await fetch("./data/coin-data.json");
+      coinsData = await response.json();
+    } catch (error) {
+      console.error("Error loading coin data:", error);
+    }
+  }
+  return coinsData;
+}
 
 async function fetchTrendingTokens() {
   try {
@@ -14,20 +30,19 @@ async function fetchTrendingTokens() {
  * Maakt een <tr>-element voor een token op basis van de token data en de rank.
  */
 function createTokenRow(token, rank) {
-  // Zoek nu op coin.id in plaats van de bewerkte coin.name
-  const coinData = coins.find(c => c.id === token.coinId);
+  // Zoek de coin in de geladen coinsData op basis van id
+  const coinData = coinsData.find(c => c.id === token.coinId);
   
   let ticker = token.coinId; // fallback
   let iconHTML = '';
 
-  // Speciale case voor Greenstix v2
   if (token.coinId.toLowerCase() === "greenstix-v2-grnstx-v2") {
     ticker = "GRNSTX v2";
     iconHTML = `<img src="./assets/coinIcons/GRNSTX.jpg" alt="GRNSTX v2" class="table-icon">`;
   } else if (coinData) {
     // Gebruik de toegevoegde ticker als deze beschikbaar is, anders de coin naam
     ticker = coinData.ticker ? coinData.ticker.toUpperCase() : coinData.name;
-    iconHTML = `<img src="${coinData.icon}" alt="${ticker}" class="table-icon">`;
+    iconHTML = `<img src="${coinData.icon}" alt="${coinData.name}" class="table-icon">`;
   }
 
   const tokenLink = `<a href="coin.html?id=${encodeURIComponent(token.coinId)}">${iconHTML} ${ticker}</a>`;
@@ -108,7 +123,8 @@ function updateTrendingResetTimer() {
   resetTimerEl.textContent = `Reset in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadCoinsData();
   fetchTrendingTokens();
   updateTrendingResetTimer();
   setInterval(updateTrendingResetTimer, 1000);
