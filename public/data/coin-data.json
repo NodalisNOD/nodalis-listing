@@ -1,5 +1,39 @@
 [
   {
+    "id": "doofie-dofi",
+    "name": "Doofie DOFI",
+    "icon": "./assets/coinIcons/dofi.jpg",
+    "contract": "0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274",
+    "website": "https://doofiecoin.com/",
+    "explorer": "https://cronoscan.com/token/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274",
+    "twitter": "https://x.com/doofie_coin?lang=en&mx=2\nTG",
+    "telegram": "https://t.me/Doofiecoin\nDiscord",
+    "discord": "https://discord.gg/24G3CrmX8g",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Doofie coin is a meme coin on Cronos chain.\nStarted as a simple, CTO token, to a thriving enclosed team where we are bridging the meme coin idea to a gamiFi platform.\nNFT project and Music production, Radio station will soon be implemented.\n\nDoofinian is to be a brand.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b"
+    }
+  },
+  {
     "id": "black-moon-bmn",
     "name": "Black Moon BMN",
     "icon": "./assets/coinIcons/blackmoon.jpg",

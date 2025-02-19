@@ -1,5 +1,12 @@
 export const coins = [
   {
+    name: "Doofie DOFI",
+    contract: "0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274",
+    icon: "./assets/coinIcons/blackmoon.jpg",
+    apiUrl:
+    "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b",
+  },
+  {
     name: "Black Moon BMN",
     contract: "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
     icon: "./assets/coinIcons/blackmoon.jpg",
