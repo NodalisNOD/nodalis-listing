@@ -239,14 +239,12 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 4 * 60 * 1000; // 3 minutes
+const BROWSER_CACHE_DURATION = 5 * 60 * 1000; // 2 minutes
 const COINS_PER_PAGE = 25; // Max aantal munten per pagina
 let currentPage = 1;
 let validCoinData = [];
 let currentSortKey = "marketCap";
 let sortAscending = false;
-
-
 
 export async function fetchCoinData(coin) {
   // Probeer een fallback prijs te verkrijgen via de token_price API op basis van het contract
