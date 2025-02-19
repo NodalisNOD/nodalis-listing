@@ -239,28 +239,13 @@ export const coins = [
   },
 ];
 
-const BROWSER_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
+const BROWSER_CACHE_DURATION = 4 * 60 * 1000; // 3 minutes
 const COINS_PER_PAGE = 25; // Max aantal munten per pagina
 let currentPage = 1;
 let validCoinData = [];
 let currentSortKey = "marketCap";
 let sortAscending = false;
 
-async function fetchWithRetry(url, retries = 3, delay = 1000) {
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return await response.json();
-    } catch (error) {
-      console.warn(`Poging ${attempt} voor ${url} mislukt: ${error.message}`);
-      if (attempt === retries) throw error;
-      await new Promise(resolve => setTimeout(resolve, delay));
-    }
-  }
-}
 
 
 export async function fetchCoinData(coin) {
@@ -290,7 +275,10 @@ export async function fetchCoinData(coin) {
   }
 
   try {
-    const data = await fetchWithRetry(coin.apiUrl);
+    const response = await fetch(coin.apiUrl);
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    const data = await response.json();
+    const pools = data.data;
 
     let combinedData = {
       totalVolumeUsd: 0,
@@ -426,11 +414,8 @@ function sortTable(key) {
   renderPagination();
 }
 
-import pLimit from 'p-limit';
-
 export async function populateAltcoinTable(searchQuery = "") {
-  const limit = pLimit(5); // Beperk tot 5 gelijktijdige fetches
-  const allCoinData = await Promise.all(coins.map(coin => limit(() => fetchCoinData(coin))));
+  const allCoinData = await Promise.all(coins.map(fetchCoinData));
   validCoinData = allCoinData.filter((data) => data !== null);
 
   validCoinData = validCoinData.filter(
