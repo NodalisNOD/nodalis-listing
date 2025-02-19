@@ -34,7 +34,7 @@ const PORT = process.env.PORT || 3001;
 // === MIDDLEWARE ===
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"), { maxAge: 0 }));
 app.use("/uploads", express.static("public/uploads"));
 app.use(cookieParser());
 app.use(helmet());
@@ -250,9 +250,6 @@ app.post("/submit-exchange-listing", (req, res) => {
 
 // Routes importeren
 const coingeckoRoutes = require('./routes/coingeckoRoutes');
-
-// **Statische bestanden serveren vanuit de public map**
-app.use(express.static(path.join(__dirname, 'public')));
 
 // **Gebruik de CoinGecko routes onder /api/coingecko**
 app.use('/api/coingecko', coingeckoRoutes);

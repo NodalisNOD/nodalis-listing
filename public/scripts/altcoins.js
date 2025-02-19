@@ -198,7 +198,7 @@ export const coins = [
   {
     name: "Croakey CROAK",
     contract: "0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
-    icon: "./assets/coinIcons/croak - kopie.jpg",
+    icon: "./assets/coinIcons/croak.jpg",
     apiUrl:
       "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
   },

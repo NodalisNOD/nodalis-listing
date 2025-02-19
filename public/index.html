@@ -221,12 +221,12 @@
   <script src="./scripts/trendingVotes.js" type="module"></script>
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
   <script type="module">
-    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js";
+    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js?v=20250218";
     document.addEventListener("DOMContentLoaded", () => {
       populateAltcoinTable(); // Fill the table with all coins
       setupSearch(); // Activate search functionality
     });
-  </script>
+  </script>  
   <script src="./scripts/stats-dashboard.js" type="module"></script>
   <script src="./scripts/comVote.js"></script>
   <script>
