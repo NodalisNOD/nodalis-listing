@@ -1,10 +1,5 @@
 // stats-dashboard.js
 
-// Cache voor stats
-let statsCache = null;
-let statsCacheTime = 0;
-const STATS_CACHE_DURATION = 1 * 60 * 1000; // 1 minuut
-
 document.addEventListener("DOMContentLoaded", () => {
   fetchMarketCapAndDominance();
 });
@@ -98,17 +93,9 @@ async function fetchAllCoinData() {
  * Haalt de totale market cap en dominantie op.
  * De dominantie wordt berekend aan de hand van de Cronos market cap (opgehaald via Geckoterminal)
  * en de totale market cap van alle coins in ons platform.
- * Caching wordt toegepast voor 1 minuut.
+ * Er wordt geen caching meer toegepast.
  */
 async function fetchMarketCapAndDominance() {
-  const now = Date.now();
-  
-  // Gebruik cache indien geldig
-  if (statsCache && now - statsCacheTime < STATS_CACHE_DURATION) {
-    updateDOM(statsCache);
-    return;
-  }
-
   try {
     const allCoinData = await fetchAllCoinData();
     const totalMarketCap = allCoinData.reduce((acc, coin) => acc + (coin.marketCap || 0), 0);
@@ -124,8 +111,6 @@ async function fetchMarketCapAndDominance() {
     const dominance = totalMarketCap > 0 ? ((cronosMarketCap / totalMarketCap) * 100).toFixed(2) : 0;
 
     const statsData = { totalMarketCap, dominance };
-    statsCache = statsData;
-    statsCacheTime = now;
 
     updateDOM(statsData);
   } catch (error) {

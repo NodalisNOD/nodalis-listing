@@ -24,16 +24,12 @@ const itemsPerPage = 20;
  * Na verwerking wordt de data gesorteerd (market cap DESC), de tabel gerenderd en de sorteer- en zoekfunctionaliteit geactiveerd.
  */
 export function populateAltcoinTable() {
-  console.log("⏳ Laden van coin-data.json...");
   fetchWithRetry("./data/coin-data.json")
     .then((response) => response.json())
     .then((manualCoinData) => {
-      console.log("✅ coin-data.json geladen:", manualCoinData);
-      console.log("⏳ Laden van coinCache.json...");
       fetchWithRetry("./data/coinCache.json")
         .then((response) => response.json())
         .then((cachedData) => {
-          console.log("✅ coinCache.json geladen:", cachedData);
           
           // Verwerk de data: verwacht dat cachedData een object is met keys (coin IDs)
           const results = Object.entries(cachedData).map(([key, coinData]) => {
@@ -97,7 +93,6 @@ export function populateAltcoinTable() {
             }
           });
 
-          console.log("✅ Verwerkte data:", results);
           coinTableData = results.filter((item) => item !== null);
           console.log("✅ Gefilterde data:", coinTableData);
           coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));

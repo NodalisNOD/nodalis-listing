@@ -31,7 +31,7 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// === Route ===
+// === ROUTES ===
 
 // Importeer de ads-route
 const adsRoute = require('./routes/ads');
@@ -155,7 +155,7 @@ app.post(
 app.get("/posts/:postId", postController.getPostById);
 
 // ----- COIN API MET SERVER-SIDE CACHING VIA CRON -----
-// De server haalt elke 20 seconden de externe API-data op en slaat deze op in de cache.
+// De server haalt elke 30 seconden de externe API-data op en slaat deze op in de cache.
 // Daarnaast wordt de cache altijd naar public/data/coinCache.json geschreven voor debug-doeleinden.
 
 let coinDataCache = null;
@@ -184,7 +184,6 @@ async function fetchGeneralApiData(url) {
 async function updateCoinDataCache() {
   try {
     console.log("⏳ Updating coin data cache from generalApi links...");
-
     const cachedData = {};
 
     // Loop door elke coin in manualCoinData
@@ -501,6 +500,96 @@ app.use("/votes", coinVotesRouter);
 // ----- TRENDING VOTES ENDPOINTS -----
 const trendingVotesRoutes = require("./routes/trendingVotesRoutes");
 app.use("/trending", trendingVotesRoutes);
+
+// ----- LISTING FORM: COIN LISTING -----
+app.post("/submit-coin-listing", (req, res) => {
+  const listingData = req.body;
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
+  const mailOptions = {
+    from: "nodalisn@gmail.com",
+    to: "nodalisn@gmail.com",
+    subject: `New Coin Listing Request: ${listingData.tokenName || "Unknown"}`,
+    text: `A new coin listing request has been submitted:\n\n${JSON.stringify(
+      listingData,
+      null,
+      2
+    )}`,
+  };
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("❌ Email error:", error);
+      return res.status(500).json({ message: "Failed to send email." });
+    }
+    res.json({ message: "Coin listing submitted successfully.", info });
+  });
+});
+
+// ----- LISTING FORM: EXCHANGE LISTING -----
+app.post("/submit-exchange-listing", (req, res) => {
+  const listingData = req.body;
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
+  const mailOptions = {
+    from: "nodalisn@gmail.com",
+    to: "nodalisn@gmail.com",
+    subject: `New Exchange Listing Request: ${listingData.exchangeName || "Unknown"}`,
+    text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(
+      listingData,
+      null,
+      2
+    )}`,
+  };
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("❌ Email error:", error);
+      return res.status(500).json({ message: "Failed to send email." });
+    }
+    res.json({ message: "Exchange listing submitted successfully.", info });
+  });
+});
+
+// ----- CONTACT FORM SUBMISSION -----
+app.post("/submit-contact", async (req, res) => {
+  const { name, email, subject, message } = req.body;
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ message: "All fields are required!" });
+  }
+  console.log("📩 New Contact Message:");
+  console.log(`From: ${name} (${email})`);
+  console.log(`Subject: ${subject}`);
+  console.log(`Message: ${message}`);
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
+  const mailOptions = {
+    from: email,
+    to: "nodalisn@gmail.com",
+    subject: `Contact Form Submission: ${subject}`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+  };
+  try {
+    await transporter.sendMail(mailOptions);
+    res.json({ message: "Your message has been sent successfully!" });
+  } catch (error) {
+    console.error("❌ Email error:", error);
+    res.status(500).json({ message: "Failed to send email." });
+  }
+});
 
 // === SERVER START ===
 app.listen(PORT, "0.0.0.0", () => {
