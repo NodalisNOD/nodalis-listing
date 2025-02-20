@@ -385,9 +385,44 @@ table tr:hover {
 /* Spotlight-tekst styling */
 .spotlight-text small {
   font-size: 15px;
-  /* Pas de kleur aan voor goede zichtbaarheid, zonder transparantie */
   color: #07b5e0;
 }
+
+/* Tooltip styling (centreren in de container) */
+.tooltip-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto; /* Centraal binnen de container */
+}
+
+.tooltip-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px;
+  text-align: center;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  display: block;
+}
+
 
 
 /* Dropdown styling */
@@ -461,41 +496,36 @@ table tr:hover {
 }
 
 /* Sentiment styling */
-#comVotes {
-  width: 100%;
-  max-width: 300px;
-  min-height: 200px;
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  border: 1px solid transparent;
-}
-
 #comVotes .sentiment-bar {
   display: flex;
+  flex-wrap: nowrap; /* Zorgt dat de div's niet naar de volgende regel gaan */
   height: 20px;
   border-radius: 5px;
   background: #ccc;
   margin-bottom: 10px;
+  overflow: hidden; /* Voorkomt dat er iets uit de container steekt */
 }
 
+#comVotes .positive-bar,
+#comVotes .negative-bar {
+  /* Geen automatische uitrekking: de breedte wordt via JS ingesteld */
+  flex-shrink: 0;
+  transition: width 0.5s;
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
+}
+
+/* Specifieke styling voor de positieve sectie */
 #comVotes .positive-bar {
   background: green;
-  color: white;
-  text-align: center;
-  transition: width 0.5s;
-  font-size: 0.7rem;
 }
 
+/* Specifieke styling voor de negatieve sectie */
 #comVotes .negative-bar {
   background: red;
-  color: white;
-  text-align: center;
-  transition: width 0.5s;
-  font-size: 0.7rem;
 }
+
 
 #comVotes .vote-buttons {
   display: flex;
