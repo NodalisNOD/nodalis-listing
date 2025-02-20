@@ -1,5 +1,75 @@
 [ 
   {
+    "id": "crazzy-token",
+    "name": "Crazzzy Token",
+    "ticker": "CRY",
+    "icon": "./assets/coinIcons/cry.png",
+    "contract": "0xB770074eA2A8325440798fDF1c29B235b31922Ae",
+    "website": "https://www.crazzzymonsters.com/",
+    "explorer": "https://cronoscan.com/token/0xB770074eA2A8325440798fDF1c29B235b31922Ae",
+    "twitter": " https://twitter.com/CRY_Token",
+    "telegram": "",
+    "discord": "https://discord.gg/ZtBPhPKXYc",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "We are a NFT project called Crazzzy Monster and our utility token is $CRY.\nWe have sold out our gen1 collection and had part of our gen2 drop on crypto.com/nft part 2 mint is still live!\nWe have our fun Originz dapp where you can stake and earn your NFT’s and $CRY and we have much more in store…Stay tuned! Stay Crazzzy",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xb770074ea2a8325440798fdf1c29b235b31922ae",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5ed3bc0e3745a453b51ee3106f89c858dd69816b",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x5ed3bc0e3745a453b51ee3106f89c858dd69816b/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x5ed3bc0e3745a453b51ee3106f89c858dd69816b"
+    }
+  },
+  {
+    "id": "mouse-in-pasta",
+    "name": "mouse in pasta",
+    "ticker": "STUCK",
+    "icon": "./assets/coinIcons/stuck.jpg",
+    "contract": "0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+    "website": "https://mouseinpasta.com/",
+    "explorer": "https://cronoscan.com/token/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+    "twitter": " https://x.com/thepastamouse",
+    "telegram": "",
+    "discord": "https://discord.com/invite/HdtyUs3p2Q",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Just a mouse in pasta",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x797604a537af0da93f09c232049f5e7dae4eabad",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x797604a537af0da93f09c232049f5e7dae4eabad/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc"
+    }
+  },
+  {
     "id": "mouse-in-pasta",
     "name": "mouse in pasta",
     "ticker": "STUCK",
