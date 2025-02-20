@@ -241,7 +241,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x2b850b95ba0396749075d119a08b38d7a813ec45%2C0x3a26c936973635dff0a89ca93e4e62f70514c210%2C0x1c9548c165fe816b438514cc40899c91178e3651",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x2b850b95ba0396749075d119a08b38d7a813ec45/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xF7b1095D2af6C81c2d88f0ab44c7c2341BFfc411"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3a26c936973635dff0a89ca93e4e62f70514c210"
     }
   },
   {
@@ -954,7 +954,7 @@
     "name": "CorgiAI ",
     "ticker": "CORGIAI", 
     "icon": "./assets/coinIcons/corgiai.png",
-    "contract": "0xccccccccdbec186dc426f8b5628af94737df0e60",
+    "contract": "0x6b431b8a964bfcf28191b07c91189ff4403957d0",
     "website": "https://corgiai.xyz",
     "explorer": "https://cronoscan.com/address/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
     "twitter": "https://x.com/corgiaiclub",
@@ -965,7 +965,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6b431b8a964bfcf28191b07c91189ff4403957d0",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x189291476338446c6e62c8a18ef22d3c80eb5f72%2C0x8f9baccf9a130a755520cbabb20543adb3006f14%2C0xd459cf47ee9df418388eb2a7a46f5e30d15757d7%2C0xd3ac6188048459253dab087de984e72e344a8233%2C0xd7c950dcefec084c66cf0fa9e3b545da2424fe1a",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x189291476338446c6e62c8a18ef22d3c80eb5f72/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x6b431b8a964bfcf28191b07c91189ff4403957d0"
     }
   },
   {

@@ -1,26 +1,36 @@
-// altcoins copy.js
+// altcoins.js
+
+// Helper functie: fetch met retry bij 429-fouten (rate limiting)
+function fetchWithRetry(url, options = {}, retries = 3, delay = 1000) {
+  return fetch(url, options).then((response) => {
+    if (response.status === 429 && retries > 0) {
+      console.warn(`429 ontvangen voor ${url}. Opnieuw proberen in ${delay}ms...`);
+      return new Promise((resolve) => setTimeout(resolve, delay))
+        .then(() => fetchWithRetry(url, options, retries - 1, delay * 2));
+    }
+    return response;
+  });
+}
 
 // Globale variabelen
-let coinTableData = [];         // Alle coins (volledige data van API)
-let currentDisplayData = [];    // Huidige data (bijv. na filtering)
+let coinTableData = [];      // Alle coins (volledige data van API)
+let currentDisplayData = []; // Huidige data (bijv. na filtering)
 let currentPage = 1;
 const itemsPerPage = 20;
 
 /**
- * Haalt eerst de coin-data op uit coin-data.json en voor elke coin haalt hij
- * de actuele gegevens op via de generalApi. Hierbij wordt gecontroleerd of
- * de respons afkomstig is van Dexscreener (array) of Geckoterminal (object met data).
- * Na het ophalen wordt de standaard sortering (market cap DESC) toegepast,
- * de tabel gerenderd en worden sorteer- en zoekfunctionaliteit geactiveerd.
+ * Haalt eerst de coin-data op uit coin-data.json en vervolgens uit coinCache.json.
+ * Voor elke coin wordt bepaald of de data afkomstig is van Dexscreener (array) of Geckoterminal (object met data).
+ * Na verwerking wordt de data gesorteerd (market cap DESC), de tabel gerenderd en de sorteer- en zoekfunctionaliteit geactiveerd.
  */
 export function populateAltcoinTable() {
   console.log("⏳ Laden van coin-data.json...");
-  fetch("./data/coin-data.json")
+  fetchWithRetry("./data/coin-data.json")
     .then((response) => response.json())
     .then((manualCoinData) => {
       console.log("✅ coin-data.json geladen:", manualCoinData);
       console.log("⏳ Laden van coinCache.json...");
-      fetch("./data/coinCache.json")
+      fetchWithRetry("./data/coinCache.json")
         .then((response) => response.json())
         .then((cachedData) => {
           console.log("✅ coinCache.json geladen:", cachedData);
@@ -135,25 +145,11 @@ function renderTable(data = coinTableData, page = currentPage) {
           ${coin.name} <strong>${coin.ticker}</strong>
         </a>
       </td>
-      <td>${
-        coin.priceUsd !== null ? coin.priceUsd.toFixed(10) : "N/A"
-      }</td>
-      <td style="color: ${coin.change6h >= 0 ? "green" : "red"};">
-        ${coin.change6h.toFixed(2)}%
-      </td>
-      <td style="color: ${coin.change24h >= 0 ? "green" : "red"};">
-        ${coin.change24h.toFixed(2)}%
-      </td>
-      <td>${
-        coin.marketCap !== null
-          ? "$" + coin.marketCap.toLocaleString()
-          : "N/A"
-      }</td>
-      <td>${
-        coin.volume24h !== null
-          ? "$" + coin.volume24h.toLocaleString()
-          : "N/A"
-      }</td>
+      <td>${ coin.priceUsd !== null ? coin.priceUsd.toFixed(10) : "N/A" }</td>
+      <td style="color: ${coin.change6h >= 0 ? "green" : "red"};">${coin.change6h.toFixed(2)}%</td>
+      <td style="color: ${coin.change24h >= 0 ? "green" : "red"};">${coin.change24h.toFixed(2)}%</td>
+      <td>${ coin.marketCap !== null ? "$" + coin.marketCap.toLocaleString() : "N/A" }</td>
+      <td>${ coin.volume24h !== null ? "$" + coin.volume24h.toLocaleString() : "N/A" }</td>
     `;
     tableBody.appendChild(tr);
   });
@@ -186,7 +182,7 @@ function renderPagination(data, page) {
     const pageButton = document.createElement("button");
     pageButton.innerText = i;
     if (i === page) {
-      pageButton.classList.add("active"); // styling via CSS
+      pageButton.classList.add("active");
     }
     pageButton.addEventListener("click", () => {
       renderTable(data, i);
