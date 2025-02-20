@@ -31,6 +31,12 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// === Route ===
+
+// Importeer de ads-route
+const adsRoute = require('./routes/ads');
+app.use(adsRoute);
+
 // === MIDDLEWARE ===
 app.use(bodyParser.json());
 app.use(cors());
@@ -206,8 +212,8 @@ async function updateCoinDataCache() {
   }
 }
 
-// Plan de taak om elke 20 seconden te draaien
-cron.schedule("*/25 * * * * *", updateCoinDataCache);
+// Plan de taak om elke 30 seconden te draaien
+cron.schedule("*/30 * * * * *", updateCoinDataCache);
 // Update direct bij serverstart
 updateCoinDataCache();
 

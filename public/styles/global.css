@@ -19,44 +19,47 @@ main {
   flex-direction: column;
 }
 
-/* Nieuwe container voor dashboard layout: tabellen en stats naast elkaar */
-.dashboard-container {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-/* De tabellen krijgen meer ruimte; de stat-boxen minder */
-.dashboard-container .tables-container {
-  flex: 3;  /* Bijvoorbeeld 75% breedte */
-}
-
-.dashboard-container .stats-wrapper {
-  flex: 1;  /* Bijvoorbeeld 25% breedte */
-}
-
-/* Container voor de drie tabellen binnen de dashboard-container */
+/* Bovenste dashboard: Gebruik een grid voor de vier blokken */
 .tables-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; /* Zorgt dat alle kinderen dezelfde hoogte hebben */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Vier gelijke kolommen */
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-/* Algemene styling voor elke tabel-wrapper */
-.table-wrapper {
+/* Dashboard Bottom: Advertisement & Stats naast elkaar */
+.dashboard-bottom {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Zorg dat het linkerblok (Ads & Community Sentiment) en de stats evenveel ruimte krijgen */
+.dashboard-bottom > .table-wrapper,
+.dashboard-bottom > .stats-wrapper {
   flex: 1;
+  min-height: 300px; /* Pas deze waarde aan voor een evenwichtige hoogte */
+}
+
+/* Algemene styling voor elk blok (tabellen, ad-sentiment, etc.) */
+.table-wrapper,
+.ad-sentiment-wrapper {
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
   display: flex;
-  flex-direction: column; /* Titel en tabel netjes gestapeld */
-  margin-bottom: 1rem;
+  flex-direction: column;
 }
 
-/* Titel in de tabel-wrapper */
+/* Specifieke styling voor het gecombineerde advertentie en community sentiment blok */
+.ad-sentiment-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Titel in de blokken */
 .table-wrapper h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -66,17 +69,8 @@ main {
   border-bottom: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
 }
-/* Centreer de "Votes" kolom in de trending table */
-#top-community-left td:nth-child(3),
-#top-community-right td:nth-child(3) {
-  text-align: center;
-}
-.votes-icon {
-  width: 16px;
-  height: 16px;
-}
 
-/* General styling*/
+/* Tabel styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -87,7 +81,6 @@ table {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Zorg dat de tabel de resterende ruimte inneemt in de wrapper */
 .table-wrapper table {
   flex: 1;
 }
@@ -95,7 +88,7 @@ table {
 table th,
 table td {
   border: 1px solid #ddd;
-  padding: 0.5rem; /* Reduced padding to reduce white space */
+  padding: 0.5rem;
   text-align: left;
   font-size: 0.9rem;
 }
@@ -216,6 +209,13 @@ table tr:hover {
   width: auto;
   vertical-align: middle;
   margin-right: 0.5rem;
+  object-fit: contain;
+}
+
+.votes-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 /* Link-styling */
@@ -247,23 +247,12 @@ table tr:hover {
 
 /* Responsieve styling: Mobiele optimalisatie */
 @media (max-width: 768px) {
-  .dashboard-container {
-    flex-direction: column;
+  .tables-container {
+    grid-template-columns: 1fr;
   }
-  .tables-container,
-  .stats-wrapper {
-    width: 100%;
-  }
-  .stat-box {
-    min-width: 100%;
-  }
-  .table-wrapper {
-    margin-bottom: 1rem;
-  }
-
   table th,
   table td {
-    padding: 0.3rem; /* Further reduced padding for smaller screens */
+    padding: 0.3rem;
     font-size: 0.8rem;
   }
 }
@@ -271,8 +260,6 @@ table tr:hover {
 /* Specifieke styling voor de Top Community tabel */
 .top-community-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   gap: 1rem;
   flex: 1;
 }
@@ -289,26 +276,7 @@ table tr:hover {
   text-align: left;
 }
 
-/* Specific styling for the Top Community table */
-#top-community-wrapper {
-  max-height: 300px; /* Set a maximum height */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
-}
-
-#top-community-wrapper table th,
-#top-community-wrapper table td {
-  padding: 0.3rem; /* Further reduced padding for smaller height */
-  font-size: 0.8rem;
-}
-
 /* Statistieken (Market Cap, Dominance, etc.) */
-.stats-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-between;
-}
-
 .stat-box {
   background-color: #f9f9f9;
   border: 3px solid #042c3f;
@@ -318,7 +286,6 @@ table tr:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 
 .stat-box h3 {
@@ -361,26 +328,52 @@ table tr:hover {
   z-index: 10;
   width: 200px;
   text-align: center;
-  white-space: normal;
-  word-wrap: break-word;
 }
 
 .tooltip-wrapper:hover .tooltip-text {
   display: block;
 }
 
-/* Advertentie container */
+/* Advertentie container: behoudt de vaste afmetingen en padding */
 .ad-container {
   width: 300px;
   height: 200px;
   position: relative;
-  text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin: 0 1rem;
+  margin: 0 auto;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* (Optioneel) Inner wrapper als je deze gebruikt voor cycling ads */
+.ad-inner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.ad-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.ad-item.active {
+  display: block;
+}
+
+.ad-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .ad-text small {
@@ -388,18 +381,12 @@ table tr:hover {
   color: #07b5e056;
 }
 
-.ad-image {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Sponsored label */
 .sponsored-label {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 10px;
-  height: auto;
+  width: auto;
   z-index: 2;
   background: rgba(255, 255, 255, 0.8);
   padding: 3px 5px;
@@ -478,14 +465,15 @@ table tr:hover {
 
 /* Sentiment styling */
 #comVotes {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   min-height: 200px;
   text-align: center;
   padding: 10px;
-  border: none;
-  border-radius: 5px;
+  margin: 0 auto;
   background-color: #f9f9f9;
-  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
 }
 
 #comVotes .sentiment-bar {
@@ -534,6 +522,7 @@ table tr:hover {
   cursor: pointer;
   outline: none;
 }
+
 .top-community-wrapper a {
   text-decoration: none;
   color: inherit;
@@ -555,20 +544,14 @@ table tr:hover {
   margin-top: 0.25rem;
 }
 
-/* Styling for the reset timer element */
 #trending-reset-timer {
-  font-size: 0.6rem; /* Adjust the font size to make it smaller */
-  color: #666; /* Adjust the color if needed */
-  margin-top: 0.25rem; /* Adjust the margin if needed */
-  text-align: center; /* Center the text */
+  font-size: 0.6rem;
+  color: #666;
+  margin-top: 0.25rem;
+  text-align: center;
 }
 
-/* Extra tweaks voor grotere schermen */
-@media (min-width: 1024px) {
-  .tables-container {
-    flex-direction: row;
-  }
-}
+/* Paginering */
 .pagination-container {
   text-align: center;
   margin-top: 15px;
