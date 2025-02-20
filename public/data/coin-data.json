@@ -486,7 +486,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x08d9cb5100c306c2909b63415d7ff05268633b41",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x80228677d9895934eed4bdb402ac659094903298%2C0x08d9cb5100C306C2909B63415d7ff05268633b41%2C0x92395334e0bf4718b77b6a235b069ae55d8b5bc8%2C0x38ce1218940ad5efdb151fb0e78928673666432f%2C0x44f96e9f971c0d9615e24a25e22fbf4e18ff6230%2C0xca5176685b6ad2478771ae8b0b190fc3758678ad%2C0x05c319848ab1cc7e8d0e972978a80da4c8c2d893",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x80228677d9895934eed4bdb402ac659094903298/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x08d9cb5100C306C2909B63415d7ff05268633b41"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x80228677d9895934eed4bdb402ac659094903298"
     }
   },
 
@@ -1061,6 +1061,6 @@
     "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8",
     "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
     "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52/ohlcv/minute?aggregate=15",
-    "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xed70e1b02a63fafd5ece7c0a2a1b12d4b424b4a8"
+    "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52"
   }
 }]
