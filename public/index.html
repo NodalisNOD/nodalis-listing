@@ -16,6 +16,7 @@
       gap: 1rem;
       margin-bottom: 2rem;
     }
+
     /* Box 5: Stats gecombineerd in één vak */
     .stats-combined {
       background: white;
@@ -26,6 +27,7 @@
       flex-direction: column;
       justify-content: space-around;
     }
+
     .stats-combined .stat-box {
       background-color: #f9f9f9;
       border: 3px solid #042c3f;
@@ -35,6 +37,7 @@
       margin-bottom: 0.5rem;
       flex: 1;
     }
+
     .stats-combined .stat-box:last-child {
       margin-bottom: 0;
     }
@@ -50,109 +53,105 @@
   <!-- Info Header -->
   <div id="info-header" class="info-header"></div>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    <!-- Dashboard Grid: 5 vakken naast elkaar -->
-    <div class="dashboard-grid">
-      <!-- Box 1: Newcomers Table -->
-      <div class="table-wrapper">
-        <h2>
-          <img src="./assets/UI/plant.png" alt="Plant Logo" class="table-icon" />Newcomers
-        </h2>
+ <!-- Main Content -->
+<main class="main-content">
+  <!-- Dashboard Grid: 5 vakken naast elkaar -->
+  <div class="dashboard-grid">
+    <!-- Box 1: Newcomers Table -->
+    <div class="table-wrapper">
+      <h2>
+        <img src="./assets/UI/plant.png" alt="Plant Logo" class="table-icon" />Newcomers
+      </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Token Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="newcomers-table"></tbody>
+      </table>
+    </div>
+
+    <!-- Box 2: Top Gainers Table -->
+    <div class="table-wrapper">
+      <h2>
+        <img src="./assets/UI/rocket.png" alt="Rocket Logo" class="table-icon" />Top Gainers
+      </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Token Name</th>
+            <th>%</th>
+          </tr>
+        </thead>
+        <tbody id="top-gainers-table"></tbody>
+      </table>
+    </div>
+
+    <!-- Box 3: Top Community Table -->
+    <div class="table-wrapper">
+      <h2>
+        <img src="./assets/UI/fire.png" alt="Community Logo" class="table-icon" />This Week's Top Community
+      </h2>
+      <!-- Reset timer element -->
+      <div id="trending-reset-timer"></div>
+      <!-- Wrapper voor de twee subtabellen naast elkaar -->
+      <div class="top-community-wrapper">
         <table>
           <thead>
             <tr>
               <th>#</th>
               <th>Token Name</th>
-              <th>Price</th>
+              <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
             </tr>
           </thead>
-          <tbody id="newcomers-table"></tbody>
+          <tbody id="top-community-left">
+            <!-- Hier komen de eerste 5 tokens -->
+          </tbody>
         </table>
-      </div>
-
-      <!-- Box 2: Top Gainers Table -->
-      <div class="table-wrapper">
-        <h2>
-          <img src="./assets/UI/rocket.png" alt="Rocket Logo" class="table-icon" />Top Gainers
-        </h2>
         <table>
           <thead>
             <tr>
               <th>#</th>
               <th>Token Name</th>
-              <th>%</th>
+              <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
             </tr>
           </thead>
-          <tbody id="top-gainers-table"></tbody>
+          <tbody id="top-community-right">
+            <!-- Hier komen de overige 5 tokens -->
+          </tbody>
         </table>
       </div>
+    </div>
 
-      <!-- Box 3: Top Community Table -->
-      <div class="table-wrapper">
-        <h2>
-          <img src="./assets/UI/fire.png" alt="Community Logo" class="table-icon" />This Week's Top Community
-        </h2>
-        <!-- Reset timer element -->
-        <div id="trending-reset-timer"></div>
-        <!-- Wrapper voor de twee subtabellen naast elkaar -->
-        <div class="top-community-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Token Name</th>
-                <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
-              </tr>
-            </thead>
-            <tbody id="top-community-left">
-              <!-- Hier komen de eerste 5 tokens -->
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Token Name</th>
-                <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
-              </tr>
-            </thead>
-            <tbody id="top-community-right">
-              <!-- Hier komen de overige 5 tokens -->
-            </tbody>
-          </table>
+    <!-- Box 4: Spotlight, Ads & Community Sentiment -->
+    <div class="spotlight-sentiment-wrapper table-wrapper">
+      <!-- Spotlight -->
+      <div class="spotlight-twitter-wrapper">
+        <!-- Vast container voor de spotlight -->
+        <div class="spotlight-container" id="spotlight-container">
+          <!-- Dynamisch toegevoegd door spotlightCycler.js -->
         </div>
       </div>
-
-      <!-- Box 4: Ads & Community Sentiment -->
-      <div class="ad-sentiment-wrapper table-wrapper">
-        <!-- Advertisement + Twitter Feed -->
-        <div class="ad-twitter-wrapper">
-          <!-- Vast container voor de ads -->
-          <div class="ad-container" id="ad-container">
-            <!-- Advertenties worden hier dynamisch toegevoegd door adCycler.js -->
-          </div>
-          <!-- Advertentie tekst -->
-          <div class="ad-text">
-          </div>
+      <!-- Community Sentiment (onder de spotlight, in hetzelfde vak) -->
+      <div id="comVotes">
+        <h3>Cronos Community Sentiment</h3>
+        <div class="tooltip-wrapper" style="display: inline-block; position: relative;">
+          <img src="./assets/UI/about.png" alt="About" class="tooltip-icon">
+          <span class="tooltip-text">How do you feel about Cronos today?</span>
         </div>
-        <!-- Community Sentiment -->
-        <div id="comVotes">
-          <h3>Cronos Community Sentiment</h3>
-          <div class="tooltip-wrapper" style="display: inline-block; position: relative;">
-            <img src="./assets/UI/about.png" alt="About" class="tooltip-icon">
-            <span class="tooltip-text">How do you feel about Cronos today?</span>
-          </div>
-          <div class="sentiment-bar">
-            <div id="positive-bar" class="positive-bar"></div>
-            <div id="negative-bar" class="negative-bar"></div>
-          </div>
-          <div id="total-votes"></div>
-          <div id="reset-timer"></div>
-          <div class="vote-buttons">
-            <button id="vote-positive"></button>
-            <button id="vote-negative"></button>
-          </div>
+        <div class="sentiment-bar">
+          <div id="positive-bar" class="positive-bar"></div>
+          <div id="negative-bar" class="negative-bar"></div>
+        </div>
+        <div id="total-votes"></div>
+        <div id="reset-timer"></div>
+        <div class="vote-buttons">
+          <button id="vote-positive"></button>
+          <button id="vote-negative"></button>
         </div>
         <!-- (Optioneel) Extra Sentiment Bar -->
         <div id="sentiment-bar">
@@ -160,39 +159,43 @@
           <div id="negative-bar" class="negative-bar"></div>
         </div>
       </div>
+    </div>
 
-      <!-- Box 5: Market Cap & Dominance in één vak -->
-      <div class="stats-combined">
-        <div id="market-cap-container" class="stat-box">
-          <h3>
-            <div class="tooltip-wrapper">
-              <img src="./assets/UI/about.png" alt="About Market Cap" class="tooltip-icon" />
-              <span class="tooltip-text">The total market value on Nodalis.</span>
-            </div>
-            Market Cap
-          </h3>
-          <p id="market-cap">$0</p>
-        </div>
-        <div id="dominance-container" class="stat-box">
-          <h3>
-            <div class="tooltip-wrapper">
-              <img src="./assets/UI/about.png" alt="About Dominance" class="tooltip-icon" />
-              <span class="tooltip-text">The percentage of this platform's market cap relative to the Cronos market cap.</span>
-            </div>
-            Dominance
-          </h3>
-          <p id="dominance">
-            <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;" />
-            0%
-          </p>
-        </div>
+    <!-- Box 5: Market Cap & Dominance -->
+    <div class="stats-combined">
+      <div id="market-cap-container" class="stat-box">
+        <h3>
+          <div class="tooltip-wrapper">
+            <img src="./assets/UI/about.png" alt="About Market Cap" class="tooltip-icon" />
+            <span class="tooltip-text">The total market value on Nodalis.</span>
+          </div>
+          Market Cap
+        </h3>
+        <p id="market-cap">$0</p>
+      </div>
+      <div id="dominance-container" class="stat-box">
+        <h3>
+          <div class="tooltip-wrapper">
+            <img src="./assets/UI/about.png" alt="About Dominance" class="tooltip-icon" />
+            <span class="tooltip-text">The percentage of this platform's market cap relative to the Cronos market cap.</span>
+          </div>
+          Dominance
+        </h3>
+        <p id="dominance">
+          <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" style="width: 20px; vertical-align: middle;" />
+          0%
+        </p>
       </div>
     </div>
+  </div>
+</main>
+
 
     <!-- All Coins Table (onder de 5 vakken) -->
     <div class="main-table-wrapper">
       <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..." aria-label="Search for a coin" />
+        <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..."
+          aria-label="Search for a coin" />
       </div>
       <table class="main-crypto-table">
         <thead>
@@ -238,7 +241,7 @@
   <script src="./scripts/info-header.js" type="module"></script>
   <script src="./scripts/trendingVotes.js" type="module"></script>
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
-  <script src="./scripts/adCycler.js"></script>
+  <script src="./scripts/spotlightCycler.js"></script>
   <script type="module">
     import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js?v=20250219";
     document.addEventListener("DOMContentLoaded", () => {
@@ -273,28 +276,28 @@
         function g(t, e) {
           var o = e.split(".");
           2 == o.length && (t = t[o[0]], e = o[1]),
-          t[e] = function () {
-            t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-          }
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+            }
         }
         (p = t.createElement("script")).type = "text/javascript",
-        p.crossOrigin = "anonymous",
-        p.async = !0,
-        p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js",
-        (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+          p.crossOrigin = "anonymous",
+          p.async = !0,
+          p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js",
+          (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
         var u = e;
         for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) {
           var e = "posthog";
           return "posthog" !== a && (e += "." + a),
-          t || (e += " (stub)"),
-          e
+            t || (e += " (stub)"),
+            e
         }, u.people.toString = function () {
           return u.toString(1) + ".people (stub)"
         }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetGroupPropertiesForFlags resetPersonPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),
-        n = 0; n < o.length; n++) g(u, o[n]);
+          n = 0; n < o.length; n++) g(u, o[n]);
         e._i.push([i, s, a])
       },
-      e.__SV = 1)
+        e.__SV = 1)
     }(document, window.posthog || []);
     posthog.init('phc_4GifZdg799FxUjonRWB7EpOowLNfFj01CmVo24INpzA', { api_host: 'https://eu.i.posthog.com' });
   </script>

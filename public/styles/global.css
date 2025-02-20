@@ -334,8 +334,8 @@ table tr:hover {
   display: block;
 }
 
-/* Advertentie container: behoudt de vaste afmetingen en padding */
-.ad-container {
+/* Spotlight container: behoudt de vaste afmetingen en padding */
+.spotlight-container {
   width: 300px;
   height: 200px;
   position: relative;
@@ -349,8 +349,8 @@ table tr:hover {
   overflow: hidden;
 }
 
-/* (Optioneel) Inner wrapper als je deze gebruikt voor cycling ads */
-.ad-inner {
+/* (Optioneel) Inner wrapper als je deze gebruikt voor cycling spotlight */
+.spotlight-inner {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -358,8 +358,8 @@ table tr:hover {
   bottom: 10px;
 }
 
-/* Ad-item: absoluut gepositioneerd binnen .ad-container */
-.ad-item {
+/* Spotlight-item: absoluut gepositioneerd binnen .spotlight-container */
+.spotlight-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -370,26 +370,24 @@ table tr:hover {
   background-color: rgba(0, 255, 0, 0.2); /* Groen met 20% transparantie */
 }
 
-/* Actieve advertentie tonen */
-.ad-item.active {
+/* Actieve spotlight tonen */
+.spotlight-item.active {
   display: block;
 }
 
-/* Zorg dat de afbeeldingen binnen ad-items goed schalen */
-.ad-item img {
+/* Zorg dat de afbeeldingen binnen spotlight-items goed schalen */
+.spotlight-item img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-
-/* Advertentietekst styling */
-.ad-text small {
+/* Spotlight-tekst styling */
+.spotlight-text small {
   font-size: 15px;
   /* Pas de kleur aan voor goede zichtbaarheid, zonder transparantie */
   color: #07b5e0;
 }
-
 
 
 /* Dropdown styling */
