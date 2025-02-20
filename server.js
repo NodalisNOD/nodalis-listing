@@ -34,8 +34,8 @@ const PORT = process.env.PORT || 3001;
 // === ROUTES ===
 
 // Importeer de ads-route
-const adsRoute = require('./routes/ads');
-app.use(adsRoute);
+const spotlightRoute = require('./routes/spotlight');
+app.use(spotlightRoute);
 
 // === MIDDLEWARE ===
 app.use(bodyParser.json());
