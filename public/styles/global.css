@@ -342,7 +342,8 @@ table tr:hover {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  /* Originele achtergrondkleur: #f9f9f9, hier tijdelijk met transparante rood voor debug */
+  background-color: rgba(255, 0, 0, 0.2); /* Rood met 20% transparantie */
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -357,6 +358,7 @@ table tr:hover {
   bottom: 10px;
 }
 
+/* Ad-item: absoluut gepositioneerd binnen .ad-container */
 .ad-item {
   position: absolute;
   top: 0;
@@ -364,34 +366,30 @@ table tr:hover {
   width: 100%;
   height: 100%;
   display: none;
+  /* Voor debugging: voeg een lichte achtergrondkleur toe */
+  background-color: rgba(0, 255, 0, 0.2); /* Groen met 20% transparantie */
 }
 
+/* Actieve advertentie tonen */
 .ad-item.active {
   display: block;
 }
 
+/* Zorg dat de afbeeldingen binnen ad-items goed schalen */
 .ad-item img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+/* Advertentietekst styling */
 .ad-text small {
   font-size: 15px;
-  color: #07b5e056;
+  /* Pas de kleur aan voor goede zichtbaarheid, zonder transparantie */
+  color: #07b5e0;
 }
 
-/* Sponsored label */
-.sponsored-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 3px 5px;
-  border-radius: 3px;
-}
+
 
 /* Dropdown styling */
 .dropdown {
