@@ -8,7 +8,7 @@ const path = require('path');
 // Route: GET /api/ads
 router.get('/api/ads', (req, res) => {
   // Bepaal het pad naar de map met advertenties
-  const adsDirectory = path.join(__dirname, '..', 'public', 'assets', 'ADS', 'FrontCycle');
+  const adsDirectory = path.join(__dirname, '..', 'public', 'assets', 'promoImages', 'FrontCycle');
 
   fs.readdir(adsDirectory, (err, files) => {
     if (err) {

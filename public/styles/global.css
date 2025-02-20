@@ -380,7 +380,6 @@ table tr:hover {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 2px solid blue; /* Voeg een opvallende blauwe rand toe */
 }
 
 

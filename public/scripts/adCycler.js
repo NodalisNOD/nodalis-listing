@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
           a.rel = "noopener noreferrer";
   
           const img = document.createElement('img');
-          img.src = `/assets/ADS/FrontCycle/${file}`;
-          img.alt = 'Advertisement';
+          img.src = `/assets/promoImages/FrontCycle/${file}`;
+          img.alt = 'picture';
           console.log("Afbeeldingssrc ingesteld op:", img.src);
   
           a.appendChild(img);
