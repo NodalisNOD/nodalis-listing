@@ -59,7 +59,7 @@
           "h6": "0.0",
           "h24": "0.0"
         },
-        "reserve_in_usd": "38426.6594"
+        "reserve_in_usd": "38390.3538"
       },
       "relationships": {
         "base_token": {
@@ -140,7 +140,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xa0d445dc147f598d63518b5783ca97cd8bd9f5bc.png?key=219708",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xa0d445dc147f598d63518b5783ca97cd8bd9f5bc/header.png?key=219708",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xa0d445dc147f598d63518b5783ca97cd8bd9f5bc?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xa0d445dc147f598d63518b5783ca97cd8bd9f5bc?timestamp=1740057000000",
         "websites": [],
         "socials": [
           {
@@ -215,7 +215,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274.png?key=3e2592",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274/header.png?key=3e2592",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3475785dbb1f35d84d1aab6ddd6978257f3f8274?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -456,7 +456,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc.png?key=8ebc58",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc/header.png?key=8ebc58",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -500,7 +500,7 @@
           "sells": 0
         },
         "h1": {
-          "buys": 1,
+          "buys": 0,
           "sells": 0
         },
         "h6": {
@@ -515,11 +515,10 @@
       "volume": {
         "h24": 30.02,
         "h6": 0.85,
-        "h1": 0.85,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": 1.57,
         "h6": 1.57,
         "h24": 0.31
       },
@@ -534,7 +533,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5.png?key=0bbc3c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5/header.png?key=0bbc3c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -619,7 +618,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5.png?key=0bbc3c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5/header.png?key=0bbc3c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -705,7 +704,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5.png?key=0bbc3c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5/header.png?key=0bbc3c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -791,7 +790,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411.png?key=590ab1",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411/header.png?key=590ab1",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -875,7 +874,7 @@
           "h6": "0.0",
           "h24": "0.0"
         },
-        "reserve_in_usd": "15978.3953"
+        "reserve_in_usd": "15963.2989"
       },
       "relationships": {
         "base_token": {
@@ -1000,47 +999,48 @@
         "symbol": "WCRO"
       },
       "priceNative": "0.000000003187",
-      "priceUsd": "0.0000000002718",
+      "priceUsd": "0.0000000002741",
       "txns": {
         "m5": {
           "buys": 0,
           "sells": 0
         },
         "h1": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h6": {
-          "buys": 7,
+          "buys": 8,
           "sells": 2
         },
         "h24": {
-          "buys": 16,
+          "buys": 17,
           "sells": 12
         }
       },
       "volume": {
-        "h24": 1473.72,
-        "h6": 1060.75,
-        "h1": 0,
+        "h24": 1476.49,
+        "h6": 1063.52,
+        "h1": 2.76,
         "m5": 0
       },
       "priceChange": {
-        "h6": -3.5,
-        "h24": -2.03
+        "h1": 0.84,
+        "h6": -2.68,
+        "h24": -1.21
       },
       "liquidity": {
-        "usd": 101802.03,
-        "base": 187249231499292,
-        "quote": 596870
+        "usd": 102654.69,
+        "base": 187239173706116,
+        "quote": 596903
       },
-      "fdv": 211384,
-      "marketCap": 211428,
+      "fdv": 213166,
+      "marketCap": 213210,
       "pairCreatedAt": 1711746179000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1115,7 +1115,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1190,7 +1190,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1265,7 +1265,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1337,7 +1337,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1412,7 +1412,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1446,8 +1446,8 @@
         "name": "crow with knife",
         "symbol": "CAW"
       },
-      "priceNative": "0.01169",
-      "priceUsd": "0.0000000002839",
+      "priceNative": "0.01099",
+      "priceUsd": "0.0000000002765",
       "txns": {
         "m5": {
           "buys": 0,
@@ -1455,39 +1455,40 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         },
         "h6": {
           "buys": 0,
-          "sells": 1
+          "sells": 2
         },
         "h24": {
           "buys": 0,
-          "sells": 2
+          "sells": 3
         }
       },
       "volume": {
-        "h24": 4.66,
-        "h6": 2.97,
-        "h1": 0,
+        "h24": 7.52,
+        "h6": 5.83,
+        "h1": 2.86,
         "m5": 0
       },
       "priceChange": {
-        "h6": 2.23,
-        "h24": 2.23
+        "h1": -2.59,
+        "h6": -0.42,
+        "h24": -0.42
       },
       "liquidity": {
-        "usd": 180.52,
-        "base": 317915662260,
-        "quote": 3719393497
+        "usd": 181.42,
+        "base": 327973455436,
+        "quote": 3605664490
       },
-      "fdv": 220785,
-      "marketCap": 220830,
+      "fdv": 215076,
+      "marketCap": 215121,
       "pairCreatedAt": 1711826924000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1559,7 +1560,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1631,7 +1632,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7.png?key=707386",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7/header.png?key=707386",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1758,7 +1759,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab.png?key=182921",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab/header.png?key=182921",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1834,7 +1835,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be.png?key=c278bf",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be/header.png?key=c278bf",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1874,49 +1875,49 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.02225",
-      "priceUsd": "0.001910",
+      "priceNative": "0.02227",
+      "priceUsd": "0.001921",
       "txns": {
         "m5": {
           "buys": 0,
           "sells": 0
         },
         "h1": {
-          "buys": 1,
+          "buys": 2,
           "sells": 1
         },
         "h6": {
-          "buys": 3,
+          "buys": 4,
           "sells": 9
         },
         "h24": {
-          "buys": 16,
+          "buys": 17,
           "sells": 38
         }
       },
       "volume": {
-        "h24": 1165.53,
-        "h6": 442.4,
-        "h1": 10.49,
+        "h24": 1241.53,
+        "h6": 518.34,
+        "h1": 86.38,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.03,
-        "h6": 0.5,
-        "h24": 0.76
+        "h1": 0.7,
+        "h6": 1.16,
+        "h24": 0.85
       },
       "liquidity": {
-        "usd": 229915.84,
-        "base": 60171975,
-        "quote": 1339011
+        "usd": 231089.73,
+        "base": 60137100,
+        "quote": 1339791
       },
-      "fdv": 1874415,
-      "marketCap": 650663,
+      "fdv": 1885077,
+      "marketCap": 654365,
       "pairCreatedAt": 1711507196000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21.png?key=cac354",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21/header.png?key=cac354",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -1986,17 +1987,17 @@
         "h24": 0.32
       },
       "liquidity": {
-        "usd": 69769.05,
-        "base": 18312316,
-        "quote": 34884
+        "usd": 69759.05,
+        "base": 18314949,
+        "quote": 34879
       },
-      "fdv": 1869005,
-      "marketCap": 648786,
+      "fdv": 1868469,
+      "marketCap": 648599,
       "pairCreatedAt": 1711505491000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21.png?key=cac354",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21/header.png?key=cac354",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -2074,7 +2075,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21.png?key=cac354",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21/header.png?key=cac354",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xaf02d78f39c0002d14b95a3be272da02379aff21?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -2153,7 +2154,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -2229,7 +2230,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x6ad9893eb92f4916f703f660410a454f6acc3fe1.png?key=f44fde",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x6ad9893eb92f4916f703f660410a454f6acc3fe1/header.png?key=f44fde",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x6ad9893eb92f4916f703f660410a454f6acc3fe1?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x6ad9893eb92f4916f703f660410a454f6acc3fe1?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -2306,7 +2307,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x85608d6373fdcfc9fb1582187dc3a81c2942f3f2.png?key=fc61d3",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x85608d6373fdcfc9fb1582187dc3a81c2942f3f2/header.png?key=fc61d3",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x85608d6373fdcfc9fb1582187dc3a81c2942f3f2?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x85608d6373fdcfc9fb1582187dc3a81c2942f3f2?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -2552,7 +2553,7 @@
           "h6": "0.0",
           "h24": "0.0"
         },
-        "reserve_in_usd": "5472.0922"
+        "reserve_in_usd": "5466.9222"
       },
       "relationships": {
         "base_token": {
@@ -2636,7 +2637,7 @@
           "h6": "0.0",
           "h24": "61.7864772945"
         },
-        "reserve_in_usd": "6838.4568"
+        "reserve_in_usd": "6831.9958"
       },
       "relationships": {
         "base_token": {
@@ -2720,7 +2721,7 @@
           "h6": "0.0",
           "h24": "0.0"
         },
-        "reserve_in_usd": "2920.9126"
+        "reserve_in_usd": "2918.1529"
       },
       "relationships": {
         "base_token": {
@@ -2769,7 +2770,7 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h6": {
           "buys": 0,
@@ -2783,11 +2784,10 @@
       "volume": {
         "h24": 800.48,
         "h6": 141.35,
-        "h1": 141.35,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -4.35,
         "h6": -4.35,
         "h24": 9.4
       },
@@ -2802,7 +2802,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x2829955d8aac64f184e363516fdfbb0394042b90.png?key=b3feac",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x2829955d8aac64f184e363516fdfbb0394042b90/header.png?key=b3feac",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x2829955d8aac64f184e363516fdfbb0394042b90?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x2829955d8aac64f184e363516fdfbb0394042b90?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3050,7 +3050,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3.png?key=e40d3e",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3/header.png?key=e40d3e",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3130,7 +3130,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8.png?key=0f22ea",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8/header.png?key=0f22ea",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3211,7 +3211,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef.png?key=ae91d2",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef/header.png?key=ae91d2",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef?timestamp=1740057000000",
         "websites": [],
         "socials": [
           {
@@ -3281,7 +3281,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef.png?key=ae91d2",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef/header.png?key=ae91d2",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8ebb879557db19d36e69b53b99f0ab938a703bef?timestamp=1740057000000",
         "websites": [],
         "socials": [
           {
@@ -3352,7 +3352,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61.png?key=3a3d77",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61/header.png?key=3a3d77",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3449,7 +3449,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61.png?key=3a3d77",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61/header.png?key=3a3d77",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x4d7c922d6c12cfbf5bc85f56c9ccb1f61f49bf61?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3522,7 +3522,7 @@
         },
         "h6": {
           "buys": 2,
-          "sells": 2
+          "sells": 1
         },
         "h24": {
           "buys": 14,
@@ -3531,13 +3531,13 @@
       },
       "volume": {
         "h24": 590.04,
-        "h6": 116.89,
+        "h6": 68.38,
         "h1": 0.85,
         "m5": 0
       },
       "priceChange": {
         "h1": 0.48,
-        "h6": 0.92,
+        "h6": 1.46,
         "h24": 3.47
       },
       "liquidity": {
@@ -3551,7 +3551,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba.png?key=91eb6b",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba/header.png?key=91eb6b",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3601,7 +3601,7 @@
           "sells": 0
         },
         "h6": {
-          "buys": 1,
+          "buys": 0,
           "sells": 0
         },
         "h24": {
@@ -3611,12 +3611,11 @@
       },
       "volume": {
         "h24": 244.56,
-        "h6": 48.16,
+        "h6": 0,
         "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h6": 1.48,
         "h24": 1.19
       },
       "liquidity": {
@@ -3630,7 +3629,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba.png?key=91eb6b",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba/header.png?key=91eb6b",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x73712a912ae5e39634046f4409ef57eac34e96ba?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3711,7 +3710,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd677944df705924af369d2fccf4a989f343dbcdf.png?key=bb0745",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd677944df705924af369d2fccf4a989f343dbcdf/header.png?key=bb0745",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd677944df705924af369d2fccf4a989f343dbcdf?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd677944df705924af369d2fccf4a989f343dbcdf?timestamp=1740057000000",
         "websites": [
           {
             "label": "Website",
@@ -3791,7 +3790,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -3861,7 +3860,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -3929,7 +3928,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -3997,7 +3996,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4067,7 +4066,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4138,7 +4137,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4209,7 +4208,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4277,7 +4276,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4345,7 +4344,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4413,7 +4412,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc.png?key=ede6cd",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc/header.png?key=ede6cd",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4457,50 +4456,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002924",
-      "priceUsd": "0.00000002514",
+      "priceNative": "0.0000002929",
+      "priceUsd": "0.00000002526",
       "txns": {
         "m5": {
-          "buys": 6,
-          "sells": 1
+          "buys": 4,
+          "sells": 0
         },
         "h1": {
-          "buys": 62,
-          "sells": 26
+          "buys": 74,
+          "sells": 17
         },
         "h6": {
-          "buys": 319,
+          "buys": 328,
           "sells": 115
         },
         "h24": {
-          "buys": 644,
-          "sells": 282
+          "buys": 678,
+          "sells": 283
         }
       },
       "volume": {
-        "h24": 285434.2,
-        "h6": 163080.11,
-        "h1": 14161.21,
-        "m5": 906.25
+        "h24": 288945.85,
+        "h6": 161488.53,
+        "h1": 16690.5,
+        "m5": 246.71
       },
       "priceChange": {
-        "m5": 0.14,
-        "h1": 2.32,
-        "h6": 7.07,
-        "h24": 17.85
+        "m5": 0.04,
+        "h1": 2.1,
+        "h6": 6.71,
+        "h24": 18.89
       },
       "liquidity": {
-        "usd": 2268840.04,
-        "base": 45110094404701,
-        "quote": 13192553
+        "usd": 2277538.02,
+        "base": 45069823484009,
+        "quote": 13204506
       },
-      "fdv": 19335133,
-      "marketCap": 19335133,
+      "fdv": 19426600,
+      "marketCap": 19426600,
       "pairCreatedAt": 1710414599000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4538,11 +4537,11 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002919",
-      "priceUsd": "0.00000002510",
+      "priceNative": "0.0000002922",
+      "priceUsd": "0.00000002520",
       "txns": {
         "m5": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h1": {
@@ -4550,37 +4549,38 @@
           "sells": 0
         },
         "h6": {
-          "buys": 26,
+          "buys": 23,
           "sells": 12
         },
         "h24": {
-          "buys": 58,
+          "buys": 59,
           "sells": 20
         }
       },
       "volume": {
-        "h24": 27303.24,
-        "h6": 14645.3,
-        "h1": 2329.33,
-        "m5": 0
+        "h24": 27444.2,
+        "h6": 13982.04,
+        "h1": 2342.04,
+        "m5": 140.96
       },
       "priceChange": {
-        "h1": 2.24,
-        "h6": 7.21,
-        "h24": 18.07
+        "m5": 0.41,
+        "h1": 2.61,
+        "h6": 6.93,
+        "h24": 18.56
       },
       "liquidity": {
-        "usd": 472261.18,
-        "base": 9406372004681,
-        "quote": 2746042
+        "usd": 473924.45,
+        "base": 9400785864632,
+        "quote": 2747676
       },
-      "fdv": 19300881,
-      "marketCap": 19300881,
+      "fdv": 19380366,
+      "marketCap": 19380366,
       "pairCreatedAt": 1710190675000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4660,7 +4660,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4739,7 +4739,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4777,49 +4777,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002882",
-      "priceUsd": "0.00000002499",
+      "priceNative": "0.0000002929",
+      "priceUsd": "0.00000002524",
       "txns": {
         "m5": {
-          "buys": 0,
-          "sells": 0
-        },
-        "h1": {
           "buys": 1,
           "sells": 0
         },
+        "h1": {
+          "buys": 2,
+          "sells": 0
+        },
         "h6": {
-          "buys": 3,
+          "buys": 4,
           "sells": 0
         },
         "h24": {
-          "buys": 8,
+          "buys": 9,
           "sells": 0
         }
       },
       "volume": {
-        "h24": 122.65,
-        "h6": 50.58,
-        "h1": 13.35,
-        "m5": 0
+        "h24": 136.74,
+        "h6": 64.66,
+        "h1": 27.43,
+        "m5": 14.08
       },
       "priceChange": {
-        "h1": 2.86,
-        "h6": 7.76,
-        "h24": 15.34
+        "m5": 0.99,
+        "h1": 3.88,
+        "h6": 8.83,
+        "h24": 16.48
       },
       "liquidity": {
-        "usd": 2377.63,
-        "base": 54740988002,
-        "quote": 11639
+        "usd": 2384.99,
+        "base": 54184091799,
+        "quote": 11803
       },
-      "fdv": 19217563,
-      "marketCap": 19217563,
+      "fdv": 19408703,
+      "marketCap": 19408703,
       "pairCreatedAt": 1710420183000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4857,48 +4858,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002898",
-      "priceUsd": "0.00000002499",
+      "priceNative": "0.0000002923",
+      "priceUsd": "0.00000002519",
       "txns": {
         "m5": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h1": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h6": {
-          "buys": 2,
+          "buys": 3,
           "sells": 2
         },
         "h24": {
-          "buys": 5,
+          "buys": 6,
           "sells": 3
         }
       },
       "volume": {
-        "h24": 231.87,
-        "h6": 193.98,
-        "h1": 0,
-        "m5": 0
+        "h24": 245.95,
+        "h6": 208.07,
+        "h1": 14.08,
+        "m5": 14.08
       },
       "priceChange": {
-        "h6": 9.55,
-        "h24": 12.6
+        "m5": 0.79,
+        "h1": 0.79,
+        "h6": 10.41,
+        "h24": 13.49
       },
       "liquidity": {
-        "usd": 1726.5,
-        "base": 62584017144,
-        "quote": 1881.07589
+        "usd": 1738.66,
+        "base": 62024175226,
+        "quote": 2044.5177
       },
-      "fdv": 19217533,
-      "marketCap": 19217533,
+      "fdv": 19368581,
+      "marketCap": 19368581,
       "pairCreatedAt": 1711219128000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -4978,7 +4981,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5028,7 +5031,7 @@
           "sells": 0
         },
         "h6": {
-          "buys": 1,
+          "buys": 0,
           "sells": 0
         },
         "h24": {
@@ -5038,12 +5041,11 @@
       },
       "volume": {
         "h24": 2.17,
-        "h6": 1.06,
+        "h6": 0,
         "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h6": 7.06,
         "h24": 7.06
       },
       "liquidity": {
@@ -5057,7 +5059,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5133,7 +5135,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5209,7 +5211,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5287,7 +5289,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9.png?key=0fae6c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9/header.png?key=0fae6c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9?timestamp=1740057300000",
         "websites": [],
         "socials": [
           {
@@ -5325,7 +5327,7 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 10
+          "sells": 0
         },
         "h6": {
           "buys": 0,
@@ -5339,11 +5341,10 @@
       "volume": {
         "h24": 177.45,
         "h6": 138.38,
-        "h1": 138.38,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -4.08,
         "h6": -4.08,
         "h24": -0.08
       },
@@ -5358,7 +5359,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef.png?key=017630",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef/header.png?key=017630",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5433,7 +5434,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5463,8 +5464,8 @@
         "name": "crow with knife",
         "symbol": "CAW"
       },
-      "priceNative": "0.01169",
-      "priceUsd": "0.0000000002839",
+      "priceNative": "0.01099",
+      "priceUsd": "0.0000000002765",
       "txns": {
         "m5": {
           "buys": 0,
@@ -5472,39 +5473,40 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         },
         "h6": {
           "buys": 0,
-          "sells": 1
+          "sells": 2
         },
         "h24": {
           "buys": 0,
-          "sells": 2
+          "sells": 3
         }
       },
       "volume": {
-        "h24": 4.66,
-        "h6": 2.97,
-        "h1": 0,
+        "h24": 7.52,
+        "h6": 5.83,
+        "h1": 2.86,
         "m5": 0
       },
       "priceChange": {
-        "h6": 2.23,
-        "h24": 2.23
+        "h1": -2.59,
+        "h6": -0.42,
+        "h24": -0.42
       },
       "liquidity": {
-        "usd": 180.52,
-        "base": 317915662260,
-        "quote": 3719393497
+        "usd": 181.42,
+        "base": 327973455436,
+        "quote": 3605664490
       },
-      "fdv": 220785,
-      "marketCap": 220830,
+      "fdv": 215076,
+      "marketCap": 215121,
       "pairCreatedAt": 1711826924000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5579,7 +5581,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7.png?key=e23f82",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7/header.png?key=e23f82",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5659,7 +5661,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf.png?key=d8be32",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf/header.png?key=d8be32",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5735,7 +5737,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79.png?key=8f5971",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79/header.png?key=8f5971",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5819,7 +5821,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -5891,6 +5893,57 @@
       "fdv": 57739,
       "marketCap": 57739,
       "pairCreatedAt": 1729828095000
+    },
+    {
+      "chainId": "cronos",
+      "dexId": "vvsfinance",
+      "url": "https://dexscreener.com/cronos/0xf0dc4c2bf8da4e66860aa7cbbe4c51951cf16575",
+      "pairAddress": "0xF0DC4c2Bf8DA4E66860aA7cbBe4c51951Cf16575",
+      "baseToken": {
+        "address": "0x9Fae23A2700FEeCd5b93e43fDBc03c76AA7C08A6",
+        "name": "Liquid CRO",
+        "symbol": "LCRO"
+      },
+      "quoteToken": {
+        "address": "0xcCcCcCcCdbEC186DC426F8B5628AF94737dF0E60",
+        "name": "crow with knife",
+        "symbol": "CAW"
+      },
+      "priceNative": "4085201.7909",
+      "priceUsd": "0.1033",
+      "txns": {
+        "m5": {
+          "buys": 0,
+          "sells": 0
+        },
+        "h1": {
+          "buys": 0,
+          "sells": 1
+        },
+        "h6": {
+          "buys": 0,
+          "sells": 1
+        },
+        "h24": {
+          "buys": 0,
+          "sells": 1
+        }
+      },
+      "volume": {
+        "h24": 1.28,
+        "h6": 1.28,
+        "h1": 1.28,
+        "m5": 0
+      },
+      "priceChange": {},
+      "liquidity": {
+        "usd": 40.21,
+        "base": 194.5569,
+        "quote": 794804421
+      },
+      "fdv": 26352869,
+      "marketCap": 1642746,
+      "pairCreatedAt": 1711380491000
     },
     {
       "chainId": "cronos",
@@ -5996,7 +6049,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab.png?key=182921",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab/header.png?key=182921",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6330,7 +6383,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be.png?key=c278bf",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be/header.png?key=c278bf",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6370,50 +6423,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002924",
-      "priceUsd": "0.00000002514",
+      "priceNative": "0.0000002929",
+      "priceUsd": "0.00000002526",
       "txns": {
         "m5": {
-          "buys": 6,
-          "sells": 1
+          "buys": 4,
+          "sells": 0
         },
         "h1": {
-          "buys": 62,
-          "sells": 26
+          "buys": 74,
+          "sells": 17
         },
         "h6": {
-          "buys": 319,
+          "buys": 328,
           "sells": 115
         },
         "h24": {
-          "buys": 644,
-          "sells": 282
+          "buys": 678,
+          "sells": 283
         }
       },
       "volume": {
-        "h24": 285434.2,
-        "h6": 163080.11,
-        "h1": 14161.21,
-        "m5": 906.25
+        "h24": 288945.85,
+        "h6": 161488.53,
+        "h1": 16690.5,
+        "m5": 246.71
       },
       "priceChange": {
-        "m5": 0.14,
-        "h1": 2.32,
-        "h6": 7.07,
-        "h24": 17.85
+        "m5": 0.04,
+        "h1": 2.1,
+        "h6": 6.71,
+        "h24": 18.89
       },
       "liquidity": {
-        "usd": 2268840.04,
-        "base": 45110094404701,
-        "quote": 13192553
+        "usd": 2277538.02,
+        "base": 45069823484009,
+        "quote": 13204506
       },
-      "fdv": 19335133,
-      "marketCap": 19335133,
+      "fdv": 19426600,
+      "marketCap": 19426600,
       "pairCreatedAt": 1710414599000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6451,11 +6504,11 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002919",
-      "priceUsd": "0.00000002510",
+      "priceNative": "0.0000002922",
+      "priceUsd": "0.00000002520",
       "txns": {
         "m5": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h1": {
@@ -6463,37 +6516,38 @@
           "sells": 0
         },
         "h6": {
-          "buys": 26,
+          "buys": 23,
           "sells": 12
         },
         "h24": {
-          "buys": 58,
+          "buys": 59,
           "sells": 20
         }
       },
       "volume": {
-        "h24": 27303.24,
-        "h6": 14645.3,
-        "h1": 2329.33,
-        "m5": 0
+        "h24": 27444.2,
+        "h6": 13982.04,
+        "h1": 2342.04,
+        "m5": 140.96
       },
       "priceChange": {
-        "h1": 2.24,
-        "h6": 7.21,
-        "h24": 18.07
+        "m5": 0.41,
+        "h1": 2.61,
+        "h6": 6.93,
+        "h24": 18.56
       },
       "liquidity": {
-        "usd": 472261.18,
-        "base": 9406372004681,
-        "quote": 2746042
+        "usd": 473924.45,
+        "base": 9400785864632,
+        "quote": 2747676
       },
-      "fdv": 19300881,
-      "marketCap": 19300881,
+      "fdv": 19380366,
+      "marketCap": 19380366,
       "pairCreatedAt": 1710190675000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6573,7 +6627,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6652,7 +6706,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6690,49 +6744,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002882",
-      "priceUsd": "0.00000002499",
+      "priceNative": "0.0000002929",
+      "priceUsd": "0.00000002524",
       "txns": {
         "m5": {
-          "buys": 0,
-          "sells": 0
-        },
-        "h1": {
           "buys": 1,
           "sells": 0
         },
+        "h1": {
+          "buys": 2,
+          "sells": 0
+        },
         "h6": {
-          "buys": 3,
+          "buys": 4,
           "sells": 0
         },
         "h24": {
-          "buys": 8,
+          "buys": 9,
           "sells": 0
         }
       },
       "volume": {
-        "h24": 122.65,
-        "h6": 50.58,
-        "h1": 13.35,
-        "m5": 0
+        "h24": 136.74,
+        "h6": 64.66,
+        "h1": 27.43,
+        "m5": 14.08
       },
       "priceChange": {
-        "h1": 2.86,
-        "h6": 7.76,
-        "h24": 15.34
+        "m5": 0.99,
+        "h1": 3.88,
+        "h6": 8.83,
+        "h24": 16.48
       },
       "liquidity": {
-        "usd": 2377.63,
-        "base": 54740988002,
-        "quote": 11639
+        "usd": 2384.99,
+        "base": 54184091799,
+        "quote": 11803
       },
-      "fdv": 19217563,
-      "marketCap": 19217563,
+      "fdv": 19408703,
+      "marketCap": 19408703,
       "pairCreatedAt": 1710420183000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6770,48 +6825,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.0000002898",
-      "priceUsd": "0.00000002499",
+      "priceNative": "0.0000002923",
+      "priceUsd": "0.00000002519",
       "txns": {
         "m5": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h1": {
-          "buys": 0,
+          "buys": 1,
           "sells": 0
         },
         "h6": {
-          "buys": 2,
+          "buys": 3,
           "sells": 2
         },
         "h24": {
-          "buys": 5,
+          "buys": 6,
           "sells": 3
         }
       },
       "volume": {
-        "h24": 231.87,
-        "h6": 193.98,
-        "h1": 0,
-        "m5": 0
+        "h24": 245.95,
+        "h6": 208.07,
+        "h1": 14.08,
+        "m5": 14.08
       },
       "priceChange": {
-        "h6": 9.55,
-        "h24": 12.6
+        "m5": 0.79,
+        "h1": 0.79,
+        "h6": 10.41,
+        "h24": 13.49
       },
       "liquidity": {
-        "usd": 1726.5,
-        "base": 62584017144,
-        "quote": 1881.07589
+        "usd": 1738.66,
+        "base": 62024175226,
+        "quote": 2044.5177
       },
-      "fdv": 19217533,
-      "marketCap": 19217533,
+      "fdv": 19368581,
+      "marketCap": 19368581,
       "pairCreatedAt": 1711219128000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6891,7 +6948,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -6941,7 +6998,7 @@
           "sells": 0
         },
         "h6": {
-          "buys": 1,
+          "buys": 0,
           "sells": 0
         },
         "h24": {
@@ -6951,12 +7008,11 @@
       },
       "volume": {
         "h24": 2.17,
-        "h6": 1.06,
+        "h6": 0,
         "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h6": 7.06,
         "h24": 7.06
       },
       "liquidity": {
@@ -6970,7 +7026,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7046,7 +7102,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7122,7 +7178,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60.png?key=5076af",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60/header.png?key=5076af",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xccccccccdbec186dc426f8b5628af94737df0e60?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7200,7 +7256,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9.png?key=0fae6c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9/header.png?key=0fae6c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd4bf11c2f75e5e4574feb931cbc8268885f792f9?timestamp=1740057300000",
         "websites": [],
         "socials": [
           {
@@ -7238,7 +7294,7 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 10
+          "sells": 0
         },
         "h6": {
           "buys": 0,
@@ -7252,11 +7308,10 @@
       "volume": {
         "h24": 177.45,
         "h6": 138.38,
-        "h1": 138.38,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -4.08,
         "h6": -4.08,
         "h24": -0.08
       },
@@ -7271,7 +7326,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef.png?key=017630",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef/header.png?key=017630",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc84398e9bbbc028ba81e61d2c45194049d0173ef?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7346,7 +7401,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7376,8 +7431,8 @@
         "name": "crow with knife",
         "symbol": "CAW"
       },
-      "priceNative": "0.01169",
-      "priceUsd": "0.0000000002839",
+      "priceNative": "0.01099",
+      "priceUsd": "0.0000000002765",
       "txns": {
         "m5": {
           "buys": 0,
@@ -7385,39 +7440,40 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         },
         "h6": {
           "buys": 0,
-          "sells": 1
+          "sells": 2
         },
         "h24": {
           "buys": 0,
-          "sells": 2
+          "sells": 3
         }
       },
       "volume": {
-        "h24": 4.66,
-        "h6": 2.97,
-        "h1": 0,
+        "h24": 7.52,
+        "h6": 5.83,
+        "h1": 2.86,
         "m5": 0
       },
       "priceChange": {
-        "h6": 2.23,
-        "h24": 2.23
+        "h1": -2.59,
+        "h6": -0.42,
+        "h24": -0.42
       },
       "liquidity": {
-        "usd": 180.52,
-        "base": 317915662260,
-        "quote": 3719393497
+        "usd": 181.42,
+        "base": 327973455436,
+        "quote": 3605664490
       },
-      "fdv": 220785,
-      "marketCap": 220830,
+      "fdv": 215076,
+      "marketCap": 215121,
       "pairCreatedAt": 1711826924000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7492,7 +7548,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7.png?key=e23f82",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7/header.png?key=e23f82",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x288898a6057d2d4989c533e96cb3bc30843c91d7?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7572,7 +7628,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf.png?key=d8be32",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf/header.png?key=d8be32",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x04632ba88ae963a21a3e07781ec5bf07223e2cbf?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7648,7 +7704,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79.png?key=8f5971",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79/header.png?key=8f5971",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x7a3f6ffc0b5bb6f18736e4f21b3715932c2fcf79?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7732,7 +7788,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -7804,6 +7860,57 @@
       "fdv": 57739,
       "marketCap": 57739,
       "pairCreatedAt": 1729828095000
+    },
+    {
+      "chainId": "cronos",
+      "dexId": "vvsfinance",
+      "url": "https://dexscreener.com/cronos/0xf0dc4c2bf8da4e66860aa7cbbe4c51951cf16575",
+      "pairAddress": "0xF0DC4c2Bf8DA4E66860aA7cbBe4c51951Cf16575",
+      "baseToken": {
+        "address": "0x9Fae23A2700FEeCd5b93e43fDBc03c76AA7C08A6",
+        "name": "Liquid CRO",
+        "symbol": "LCRO"
+      },
+      "quoteToken": {
+        "address": "0xcCcCcCcCdbEC186DC426F8B5628AF94737dF0E60",
+        "name": "crow with knife",
+        "symbol": "CAW"
+      },
+      "priceNative": "4085201.7909",
+      "priceUsd": "0.1033",
+      "txns": {
+        "m5": {
+          "buys": 0,
+          "sells": 0
+        },
+        "h1": {
+          "buys": 0,
+          "sells": 1
+        },
+        "h6": {
+          "buys": 0,
+          "sells": 1
+        },
+        "h24": {
+          "buys": 0,
+          "sells": 1
+        }
+      },
+      "volume": {
+        "h24": 1.28,
+        "h6": 1.28,
+        "h1": 1.28,
+        "m5": 0
+      },
+      "priceChange": {},
+      "liquidity": {
+        "usd": 40.21,
+        "base": 194.5569,
+        "quote": 794804421
+      },
+      "fdv": 26352869,
+      "marketCap": 1642746,
+      "pairCreatedAt": 1711380491000
     },
     {
       "chainId": "cronos",
@@ -7909,7 +8016,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab.png?key=182921",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab/header.png?key=182921",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd3f953042b6b194f9530fc2639170f998a5d35ab?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -8243,7 +8350,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be.png?key=c278bf",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be/header.png?key=c278bf",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xefe15a7232b9f0aa890ff97aaf53afe87d00f8be?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -8284,43 +8391,43 @@
         "symbol": "WCRO"
       },
       "priceNative": "0.00002479",
-      "priceUsd": "0.000002132",
+      "priceUsd": "0.000002138",
       "txns": {
         "m5": {
           "buys": 0,
           "sells": 1
         },
         "h1": {
-          "buys": 3,
-          "sells": 8
+          "buys": 1,
+          "sells": 12
         },
         "h6": {
-          "buys": 25,
-          "sells": 100
+          "buys": 22,
+          "sells": 99
         },
         "h24": {
           "buys": 83,
-          "sells": 358
+          "sells": 360
         }
       },
       "volume": {
-        "h24": 98876.96,
-        "h6": 48657.7,
-        "h1": 177.03,
-        "m5": 27.36
+        "h24": 98876.65,
+        "h6": 48635.79,
+        "h1": 200.86,
+        "m5": 0.01
       },
       "priceChange": {
-        "h1": 0.19,
-        "h6": 0.5,
-        "h24": 0.6
+        "h1": 0.55,
+        "h6": 0.88,
+        "h24": 0.99
       },
       "liquidity": {
-        "usd": 67654636.17,
-        "base": 15863831057327,
-        "quote": 393389295
+        "usd": 67852473.92,
+        "base": 15863842530529,
+        "quote": 393389012
       },
-      "fdv": 199802749,
-      "marketCap": 102055898
+      "fdv": 200386873,
+      "marketCap": 102354258
     },
     {
       "chainId": "cronos",
@@ -8342,39 +8449,39 @@
       "txns": {
         "m5": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         },
         "h1": {
-          "buys": 2,
-          "sells": 7
+          "buys": 1,
+          "sells": 2
         },
         "h6": {
           "buys": 19,
-          "sells": 39
+          "sells": 34
         },
         "h24": {
           "buys": 72,
-          "sells": 97
+          "sells": 98
         }
       },
       "volume": {
-        "h24": 39896.53,
-        "h6": 8980.26,
-        "h1": 1537.41,
-        "m5": 0
+        "h24": 39896.63,
+        "h6": 8963,
+        "h1": 1387.59,
+        "m5": 0.09
       },
       "priceChange": {
-        "h1": 0.61,
-        "h6": 0.81,
+        "h1": 0.59,
+        "h6": 0.82,
         "h24": 0.93
       },
       "liquidity": {
-        "usd": 902422.46,
-        "base": 211229391770,
+        "usd": 902422.27,
+        "base": 211229437348,
         "quote": 451211
       },
-      "fdv": 200155498,
-      "marketCap": 102236076,
+      "fdv": 200155411,
+      "marketCap": 102236032,
       "pairCreatedAt": 1636453423000
     },
     {
@@ -8393,7 +8500,7 @@
         "symbol": "WCRO"
       },
       "priceNative": "0.00002483",
-      "priceUsd": "0.000002153",
+      "priceUsd": "0.000002136",
       "txns": {
         "m5": {
           "buys": 0,
@@ -8401,35 +8508,35 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 12
+          "sells": 13
         },
         "h6": {
           "buys": 0,
-          "sells": 70
+          "sells": 71
         },
         "h24": {
           "buys": 1,
-          "sells": 133
+          "sells": 135
         }
       },
       "volume": {
-        "h24": 15814.96,
-        "h6": 9465.47,
-        "h1": 4177.87,
+        "h24": 15904.61,
+        "h6": 9546.79,
+        "h1": 4177.96,
         "m5": 0
       },
       "priceChange": {
-        "h1": 1.15,
-        "h6": 1.57,
-        "h24": 1.08
+        "h1": 0.31,
+        "h6": 0.96,
+        "h24": 0.28
       },
       "liquidity": {
-        "usd": 314152.89,
-        "base": 91915555641,
-        "quote": 1339720
+        "usd": 311687.32,
+        "base": 91957610855,
+        "quote": 1338678
       },
-      "fdv": 201813405,
-      "marketCap": 103084686,
+      "fdv": 200228409,
+      "marketCap": 102275083,
       "pairCreatedAt": 1695194631000
     },
     {
@@ -8455,7 +8562,7 @@
           "sells": 0
         },
         "h1": {
-          "buys": 3,
+          "buys": 1,
           "sells": 0
         },
         "h6": {
@@ -8470,11 +8577,11 @@
       "volume": {
         "h24": 7424,
         "h6": 1335.03,
-        "h1": 963.25,
+        "h1": 787.94,
         "m5": 0
       },
       "priceChange": {
-        "h1": 0.93,
+        "h1": 0.58,
         "h6": 0.8,
         "h24": 0.83
       },
@@ -8623,7 +8730,7 @@
         },
         "h6": {
           "buys": 3,
-          "sells": 3
+          "sells": 1
         },
         "h24": {
           "buys": 4,
@@ -8632,13 +8739,13 @@
       },
       "volume": {
         "h24": 1.47,
-        "h6": 0.66,
+        "h6": 0.65,
         "h1": 0.32,
         "m5": 0
       },
       "priceChange": {
         "h1": 1.69,
-        "h6": 2.76,
+        "h6": 2.06,
         "h24": 2.92
       },
       "liquidity": {
@@ -8780,7 +8887,7 @@
         },
         "h6": {
           "buys": 0,
-          "sells": 4
+          "sells": 3
         },
         "h24": {
           "buys": 0,
@@ -8789,13 +8896,13 @@
       },
       "volume": {
         "h24": 569.24,
-        "h6": 56.38,
+        "h6": 47.46,
         "h1": 3.77,
         "m5": 0
       },
       "priceChange": {
         "h1": 0.55,
-        "h6": 0.77,
+        "h6": 0.3,
         "h24": 0.37
       },
       "liquidity": {
@@ -8809,7 +8916,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c.png?key=a756ba",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c/header.png?key=a756ba",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -8847,8 +8954,8 @@
         "name": "VVSToken",
         "symbol": "VVS"
       },
-      "priceNative": "101.6402",
-      "priceUsd": "0.0002163",
+      "priceNative": "101.5936",
+      "priceUsd": "0.0002172",
       "txns": {
         "m5": {
           "buys": 0,
@@ -8860,31 +8967,31 @@
         },
         "h6": {
           "buys": 2,
-          "sells": 17
+          "sells": 18
         },
         "h24": {
           "buys": 4,
-          "sells": 69
+          "sells": 68
         }
       },
       "volume": {
-        "h24": 4586.13,
-        "h6": 482.7,
-        "h1": 171.91,
+        "h24": 4644.91,
+        "h6": 557.05,
+        "h1": 234.02,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.07,
-        "h6": -0.21,
-        "h24": -2.5
+        "h1": 0.44,
+        "h6": 0.2,
+        "h24": -2.3
       },
       "liquidity": {
-        "usd": 645595.47,
-        "base": 1491737025,
-        "quote": 151620588788
+        "usd": 648379.54,
+        "base": 1492080167,
+        "quote": 151585824291
       },
-      "fdv": 78146742,
-      "marketCap": 74336629,
+      "fdv": 78465692,
+      "marketCap": 74640029,
       "pairCreatedAt": 1685957537000
     },
     {
@@ -8902,44 +9009,45 @@
         "name": "VVSToken",
         "symbol": "VVS"
       },
-      "priceNative": "809.9086",
-      "priceUsd": "0.001724",
+      "priceNative": "809.5471",
+      "priceUsd": "0.001731",
       "txns": {
         "m5": {
           "buys": 0,
-          "sells": 0
+          "sells": 3
         },
         "h1": {
           "buys": 0,
-          "sells": 3
+          "sells": 5
         },
         "h6": {
           "buys": 4,
-          "sells": 16
+          "sells": 18
         },
         "h24": {
           "buys": 14,
-          "sells": 68
+          "sells": 71
         }
       },
       "volume": {
-        "h24": 2859.03,
-        "h6": 1347.45,
-        "h1": 60.69,
-        "m5": 0
+        "h24": 2879.39,
+        "h6": 1358.84,
+        "h1": 74.38,
+        "m5": 20.35
       },
       "priceChange": {
-        "h1": -0.27,
-        "h6": 0.52,
-        "h24": -0.42
+        "m5": 0.41,
+        "h1": 0.42,
+        "h6": 0.98,
+        "h24": -0.02
       },
       "liquidity": {
-        "usd": 181881.74,
-        "base": 52741291,
-        "quote": 42715628023
+        "usd": 182661.61,
+        "base": 52753083,
+        "quote": 42706108055
       },
-      "fdv": 8606105,
-      "marketCap": 2398721,
+      "fdv": 8641074,
+      "marketCap": 2408468,
       "pairCreatedAt": 1654580154000
     },
     {
@@ -8962,10 +9070,10 @@
       "txns": {
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h1": {
-          "buys": 2,
+          "buys": 0,
           "sells": 1
         },
         "h6": {
@@ -8973,21 +9081,20 @@
           "sells": 9
         },
         "h24": {
-          "buys": 30,
+          "buys": 29,
           "sells": 42
         }
       },
       "volume": {
-        "h24": 19481.06,
+        "h24": 19468.74,
         "h6": 1081.75,
-        "h1": 201.2,
-        "m5": 20.14
+        "h1": 20.14,
+        "m5": 0
       },
       "priceChange": {
-        "m5": 0.26,
-        "h1": 0.47,
+        "h1": 0.26,
         "h6": -0.2,
-        "h24": -4.87
+        "h24": -5.06
       },
       "liquidity": {
         "usd": 237332.62,
@@ -9022,11 +9129,11 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 2
+          "sells": 1
         },
         "h6": {
-          "buys": 4,
-          "sells": 7
+          "buys": 3,
+          "sells": 6
         },
         "h24": {
           "buys": 18,
@@ -9035,13 +9142,13 @@
       },
       "volume": {
         "h24": 5194.58,
-        "h6": 144.6,
-        "h1": 70.48,
+        "h6": 142.06,
+        "h1": 66.21,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.13,
-        "h6": 0.14,
+        "h1": 0.03,
+        "h6": 0.23,
         "h24": -1.63
       },
       "liquidity": {
@@ -9077,11 +9184,11 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h6": {
           "buys": 0,
-          "sells": 20
+          "sells": 19
         },
         "h24": {
           "buys": 8,
@@ -9090,13 +9197,12 @@
       },
       "volume": {
         "h24": 3280.97,
-        "h6": 288.83,
-        "h1": 6.17,
+        "h6": 283.12,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.27,
-        "h6": -0.27,
+        "h6": -0.03,
         "h24": 1.28
       },
       "liquidity": {
@@ -9136,7 +9242,7 @@
         },
         "h6": {
           "buys": 0,
-          "sells": 8
+          "sells": 6
         },
         "h24": {
           "buys": 1,
@@ -9145,13 +9251,13 @@
       },
       "volume": {
         "h24": 1367.87,
-        "h6": 313.26,
+        "h6": 305.57,
         "h1": 1.7,
         "m5": 0
       },
       "priceChange": {
         "h1": 0.19,
-        "h6": 0.47,
+        "h6": 0.25,
         "h24": 0.4
       },
       "liquidity": {
@@ -9187,11 +9293,11 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h6": {
           "buys": 1,
-          "sells": 9
+          "sells": 8
         },
         "h24": {
           "buys": 3,
@@ -9200,13 +9306,12 @@
       },
       "volume": {
         "h24": 1078.65,
-        "h6": 585.93,
-        "h1": 8.25,
+        "h6": 566.61,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.17,
-        "h6": 1.03,
+        "h6": 0.61,
         "h24": 0.17
       },
       "liquidity": {
@@ -9237,7 +9342,7 @@
       "priceUsd": "2.27",
       "txns": {
         "m5": {
-          "buys": 1,
+          "buys": 0,
           "sells": 0
         },
         "h1": {
@@ -9257,10 +9362,9 @@
         "h24": 3655.02,
         "h6": 72.71,
         "h1": 6.85,
-        "m5": 6.85
+        "m5": 0
       },
       "priceChange": {
-        "m5": 0.14,
         "h1": 0.14,
         "h6": 0.22,
         "h24": -1.6
@@ -9544,7 +9648,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd.png?key=41ba8f",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd/header.png?key=41ba8f",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -9643,7 +9747,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c.png?key=8680e5",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c/header.png?key=8680e5",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740055500000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x055c517654d72a45b0d64dc8733f8a38e27fd49c?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -9737,15 +9841,15 @@
       "txns": {
         "m5": {
           "buys": 0,
-          "sells": 2
+          "sells": 0
         },
         "h1": {
           "buys": 0,
-          "sells": 4
+          "sells": 3
         },
         "h6": {
           "buys": 0,
-          "sells": 5
+          "sells": 4
         },
         "h24": {
           "buys": 6,
@@ -9754,14 +9858,13 @@
       },
       "volume": {
         "h24": 514.44,
-        "h6": 50.03,
-        "h1": 49.84,
-        "m5": 34.3
+        "h6": 49.84,
+        "h1": 40.54,
+        "m5": 0
       },
       "priceChange": {
-        "m5": -0.29,
-        "h1": 0.12,
-        "h6": 0.05,
+        "h1": -0.05,
+        "h6": 0.12,
         "h24": -2.31
       },
       "liquidity": {
@@ -9957,7 +10060,7 @@
         },
         "h1": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h6": {
           "buys": 0,
@@ -9971,11 +10074,10 @@
       "volume": {
         "h24": 43.09,
         "h6": 43.09,
-        "h1": 21.69,
+        "h1": 0,
         "m5": 0
       },
       "priceChange": {
-        "h1": -0.47,
         "h6": -0.47,
         "h24": -0.47
       },
@@ -10005,50 +10107,50 @@
         "name": "Wrapped CRO",
         "symbol": "WCRO"
       },
-      "priceNative": "0.001558",
-      "priceUsd": "0.0001339",
+      "priceNative": "0.001541",
+      "priceUsd": "0.0001329",
       "txns": {
         "m5": {
-          "buys": 2,
-          "sells": 0
+          "buys": 0,
+          "sells": 1
         },
         "h1": {
-          "buys": 9,
-          "sells": 4
+          "buys": 7,
+          "sells": 6
         },
         "h6": {
           "buys": 38,
-          "sells": 35
+          "sells": 34
         },
         "h24": {
-          "buys": 175,
-          "sells": 182
+          "buys": 174,
+          "sells": 183
         }
       },
       "volume": {
-        "h24": 38586.64,
-        "h6": 7067.86,
-        "h1": 1235.84,
-        "m5": 233.88
+        "h24": 38498.75,
+        "h6": 6997.35,
+        "h1": 1288.18,
+        "m5": 95.55
       },
       "priceChange": {
-        "m5": 0.95,
-        "h1": 2.22,
-        "h6": 0.74,
-        "h24": 0.54
+        "m5": -0.39,
+        "h1": 0.17,
+        "h6": 1.3,
+        "h24": 0.21
       },
       "liquidity": {
-        "usd": 99231.47,
-        "base": 370290479,
-        "quote": 576998
+        "usd": 98977.87,
+        "base": 372334316,
+        "quote": 573845
       },
-      "fdv": 1339895,
-      "marketCap": 1339895,
+      "fdv": 1329135,
+      "marketCap": 1329135,
       "pairCreatedAt": 1714494599000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a.png?key=cd418c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a/header.png?key=cd418c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10131,7 +10233,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a.png?key=cd418c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a/header.png?key=cd418c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10211,7 +10313,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a.png?key=cd418c",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a/header.png?key=cd418c",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10293,7 +10395,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xec5de11ece7f27d5689fb340851d77193357513d.png?key=9ecc31",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xec5de11ece7f27d5689fb340851d77193357513d/header.png?key=9ecc31",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xec5de11ece7f27d5689fb340851d77193357513d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xec5de11ece7f27d5689fb340851d77193357513d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10365,7 +10467,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xcb86bf86814ab48791b4435a1fb8958b7103b6b0.png?key=a53486",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xcb86bf86814ab48791b4435a1fb8958b7103b6b0/header.png?key=a53486",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xcb86bf86814ab48791b4435a1fb8958b7103b6b0?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xcb86bf86814ab48791b4435a1fb8958b7103b6b0?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10441,7 +10543,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10578,49 +10680,48 @@
         "symbol": "WCRO"
       },
       "priceNative": "0.0001217",
-      "priceUsd": "0.00001047",
+      "priceUsd": "0.00001050",
       "txns": {
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         },
         "h1": {
-          "buys": 1,
+          "buys": 3,
           "sells": 1
         },
         "h6": {
-          "buys": 12,
+          "buys": 14,
           "sells": 7
         },
         "h24": {
-          "buys": 81,
+          "buys": 82,
           "sells": 89
         }
       },
       "volume": {
-        "h24": 36800.06,
-        "h6": 4668.45,
-        "h1": 250.44,
-        "m5": 10.91
+        "h24": 36725.56,
+        "h6": 4708.55,
+        "h1": 290.54,
+        "m5": 0
       },
       "priceChange": {
-        "m5": 0.15,
-        "h1": 0.33,
-        "h6": -0.44,
-        "h24": 0.77
+        "h1": 0.64,
+        "h6": -0.12,
+        "h24": 1.17
       },
       "liquidity": {
-        "usd": 770831.27,
-        "base": 36809215057,
-        "quote": 4482128
+        "usd": 773166.11,
+        "base": 36805408364,
+        "quote": 4482593
       },
-      "fdv": 4402737,
-      "marketCap": 4402737,
+      "fdv": 4416529,
+      "marketCap": 4416529,
       "pairCreatedAt": 1711620508000,
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d.png?key=0f0216",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d/header.png?key=0f0216",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10702,7 +10803,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d.png?key=0f0216",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d/header.png?key=0f0216",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10782,7 +10883,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d.png?key=0f0216",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d/header.png?key=0f0216",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10862,7 +10963,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d.png?key=0f0216",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d/header.png?key=0f0216",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -10944,7 +11045,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x6135c840c511a112457d647aad82a26412a4fa7d.png?key=a5cdb0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x6135c840c511a112457d647aad82a26412a4fa7d/header.png?key=a5cdb0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x6135c840c511a112457d647aad82a26412a4fa7d?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x6135c840c511a112457d647aad82a26412a4fa7d?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -11034,7 +11135,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57.png?key=0828f0",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57/header.png?key=0828f0",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x8c9e2bef2962ce302ef578113eebec62920b7e57?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -11105,7 +11206,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc.png?key=ede6cd",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc/header.png?key=ede6cd",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
@@ -11185,7 +11286,7 @@
       "info": {
         "imageUrl": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc6f67bf5a83b062c0cde06543551740bf804c775.png?key=74cca4",
         "header": "https://dd.dexscreener.com/ds-data/tokens/cronos/0xc6f67bf5a83b062c0cde06543551740bf804c775/header.png?key=74cca4",
-        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc6f67bf5a83b062c0cde06543551740bf804c775?timestamp=1740055800000",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/cronos/0xc6f67bf5a83b062c0cde06543551740bf804c775?timestamp=1740057300000",
         "websites": [
           {
             "label": "Website",
