@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "puush-puush",
+    "name": "PUUSH",
+    "ticker": "PUUSH",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/puush.webp",
+    "contract": "0x288898a6057d2D4989c533E96Cb3bc30843c91D7",
+    "website": "https://puush.fun/",
+    "explorer": "https://cronoscan.com/token/0x288898a6057d2D4989c533E96Cb3bc30843c91D7",
+    "twitter": " https://x.com/PUUSHDABUTTON",
+    "telegram": "",
+    "discord": "https://discord.gg/YWsKDxfZ2N",
+    "whitepaper": "https://boomer-squad.gitbook.io/boomersquad-puush/fundamentals/usdpuush-token",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Meme token launcher, SWAP, GameFi, Events, DeFi Tooling,Community Oriented, utility Meme",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x288898a6057d2d4989c533e96cb3bc30843c91d7",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x4c24189004401d056af75610211bbe2dfab12ba1%2C0x76636a55ea9bf728206ac175db9787f66b9eeec7%2C0x2f623d36581fe1029a32ef0f21731ee910b1d45c%2C0x36e4f3d5d01c545062f2a6c074e7f0ad348f9ea3%2C0xe6c85ec33d9f0707fbb2f9ef71b5f7dde2f5327c%2C0xa845c8869f77b75620b8de082e639439a2511d83%2C0x246535ff3f25c9f1ac8e9dae557da1c8f5ee81d8",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4c24189004401d056af75610211bbe2dfab12ba1/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x288898a6057d2D4989c533E96Cb3bc30843c91D7"
+    }
+  },
+  {
     "id": "lex-the-husky",
     "name": "Lex The Husky",
     "ticker": "LEX",
