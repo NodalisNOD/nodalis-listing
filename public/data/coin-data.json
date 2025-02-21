@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "president-platy-platy",
+    "name": "President Platy",
+    "ticker": "PLATY",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/platy.jpg",
+    "contract": "0x13c0ff45d019a5888db92631f18556211001883d",
+    "website": "https://platikistan.com/",
+    "explorer": "https://cronoscan.com/token/0x13c0ff45d019a5888db92631f18556211001883d",
+    "twitter": "ttps://x.com/PresidentPlaty",
+    "telegram": "https://t.me/PresPlaty",
+    "discord": "http://discord.gg/TnuhW2vfmk",
+    "whitepaper": "https://platikistan.com/wp-content/uploads/2025/01/PDRP-Constitution-of-1st-January-2025.pdf",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Based in Germany, the People's Democratic Republic of Platikistan is a CTO-Micronation that seeks to promote its official currency, President Platy (PLATY). It has a committed government and innovative tokenomics.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x13c0ff45d019a5888db92631f18556211001883d",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x31dc582183e6c350b83a1e5a62c2869ad9cac578%2C0xe59209d3049eba33e6508c4118b458f1feba6cb9%2C0x62beb9ee7e35f849a5ff0a7a9a36932c74c5ecdb",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xcf55fa49344d19f62816c43f9dcb3b704fe796e4/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x13c0ff45d019a5888db92631f18556211001883d"
+    }
+  },
+  {
     "id": "faf-faf",
     "name": "FAF",
     "ticker": "$FAF",
