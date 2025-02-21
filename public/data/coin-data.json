@@ -1,8 +1,45 @@
 [ 
   {
+    "id": "lex-the-husky",
+    "name": "Lex The Husky",
+    "ticker": "LEX",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/lex.jpg",
+    "contract": "0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb",
+    "website": "https://discord.gg/B7e6yemnw7",
+    "explorer": "https://cronoscan.com/token/0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb",
+    "twitter": " https://x.com/lexthehusky?s=21&t=4Zw2ZbFTOb18UXMNTCajBw",
+    "telegram": "",
+    "discord": "https://discord.gg/B7e6yemnw7",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Lex The Husky is a meme token founded on the cronos chain, here to take over not to take part.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x25b7449e2416e0ef0f244f6cc34eb31c4902d9cb",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb"
+    }
+  },
+  {
     "id": "crazzy-token",
     "name": "Crazzzy Token",
     "ticker": "CRY",
+    "chain": "Cronos",
     "icon": "./assets/coinIcons/cry.png",
     "contract": "0xB770074eA2A8325440798fDF1c29B235b31922Ae",
     "website": "https://www.crazzzymonsters.com/",
