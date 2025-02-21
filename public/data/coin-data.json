@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "faf-faf",
+    "name": "FAF",
+    "ticker": "$FAF",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/faf.webp",
+    "contract": "0xBf004bD24b13f79aD2861290fe3507599d879845",
+    "website": "https://frog-n-friends.netlify.app/",
+    "explorer": "https://cronoscan.com/token/0xBf004bD24b13f79aD2861290fe3507599d879845",
+    "twitter": "https://x.com/TimeMachines101",
+    "telegram": "",
+    "discord": "https://discord.gg/hsaFAVmMhc",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Frog & Friends is a ERC404 orginal standard built on the Cronos Chain to help projects in need, Old projects, and rugpulled projects. FAF NFTs earns 50% of project Revenue.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xbf004bd24b13f79ad2861290fe3507599d879845",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xcf55fa49344d19f62816c43f9dcb3b704fe796e4",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xcf55fa49344d19f62816c43f9dcb3b704fe796e4/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xBf004bD24b13f79aD2861290fe3507599d879845"
+    }
+  },
+  {
+    "id": "emit-emit",
+    "name": "Emit",
+    "ticker": "$Emit",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/emit.webp",
+    "contract": "0x9FA6552c1E9df51070A3b456355B5d76cBD59B5A",
+    "website": "https://frog-n-friends.netlify.app/",
+    "explorer": "https://cronoscan.com/token/0x9FA6552c1E9df51070A3b456355B5d76cBD59B5A",
+    "twitter": "https://x.com/TimeMachines101",
+    "telegram": "",
+    "discord": "https://discord.gg/hsaFAVmMhc",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Frog & Friends is a ERC404 orginal standard built on the Cronos Chain to help projects in need, Old projects, and rugpulled projects. FAF NFTs earns 50% of project Revenue.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x9fa6552c1e9df51070a3b456355b5d76cbd59b5a",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x609f5982a60ba35d6749c8617771ff5ad65e2f0d",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x609f5982a60ba35d6749c8617771ff5ad65e2f0d/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x9FA6552c1E9df51070A3b456355B5d76cBD59B5A"
+    }
+  },
+  {
     "id": "fish-fish",
     "name": "Fish",
     "ticker": "FISH",
