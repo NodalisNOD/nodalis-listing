@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "fish-fish",
+    "name": "Fish",
+    "ticker": "FISH",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/fish.jpg",
+    "contract": "0xba69b94c2e2c961226d25Cc3d0255e5845Fd34E7",
+    "website": "https://thefish.io/",
+    "explorer": "https://cronoscan.com/address/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7",
+    "twitter": "https://x.com/thefishio",
+    "telegram": "https://t.me/thefishio",
+    "discord": "https://discord.com/invite/thefishio",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "HOW MUCH IS THE FISH 🎣?",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xba69b94c2e2c961226d25cc3d0255e5845fd34e7",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf6191ebd6fef9b07a8d60b7bf8801f418b08ae5d%2C0xed091840668f9df377857f3dab2e435353520bb0%2C0x1a81f823d77e4224aa389ea470fcd5ba21643576%2C0xec3a3fc80e94227a130aee1532c69c133c5f74da%2C0xc6119fd6ce2d7b0cd97019d26aa039874e7ade6a",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf6191ebd6fef9b07a8d60b7bf8801f418b08ae5d/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xba69b94c2e2c961226d25Cc3d0255e5845Fd34E7"
+    }
+  },
+  {
     "id": "puush-puush",
     "name": "PUUSH",
     "ticker": "PUUSH",
