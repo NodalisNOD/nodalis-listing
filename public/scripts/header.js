@@ -6,11 +6,12 @@ header.innerHTML = `
       <img src="./assets/logo.png" alt="Crypto Logo" class="logo">
       <span class="site-title">Nodalis Listing</span>
     </a>
+    <!-- Hamburger-menu voor mobiel -->
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
     <nav>
       <ul class="nav-list">
         <li><a href="index.html">Tokens</a></li>
         <li><a href="dexs.html">Exchanges</a></li>
-
         <!-- Uitklapbaar "Products" menu -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Products</a>
@@ -35,7 +36,6 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
-
         <!-- Extra uitklapbaar "Crypto.com" menu -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Crypto.com</a>
@@ -54,11 +54,19 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
+        <!-- "Get listed" knop als nav-item -->
+        <li class="get-listed">
+          <a href="/listing" class="get-listed-button">Get listed</a>
+        </li>
       </ul>
     </nav>
-    <!-- Rechts in de header: de "Get listed" knop -->
-    <div class="header-right">
-      <a href="/listing" class="get-listed-button">Get listed</a>
-    </div>
   </div>
 `;
+
+// Toggle de navigatie op mobiel
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});

@@ -44,6 +44,8 @@ app.use(express.static(path.join(__dirname, "public"), { maxAge: 0 }));
 app.use("/uploads", express.static("public/uploads"));
 app.use(cookieParser());
 app.use(helmet());
+app.use(express.static('public'));
+
 
 // Indien er geen userId-cookie is, genereer deze
 app.use((req, res, next) => {
@@ -155,10 +157,12 @@ app.post(
 app.get("/posts/:postId", postController.getPostById);
 
 // ----- COIN API MET SERVER-SIDE CACHING VIA CRON -----
-// De server haalt elke 30 seconden de externe API-data op en slaat deze op in de cache.
-// Daarnaast wordt de cache altijd naar public/data/coinCache.json geschreven voor debug-doeleinden.
+// De server haalt elke 20 seconden de externe API-data op voor een chunk van 10 coins
+// en slaat deze op in de cache. De cache wordt ook geschreven naar public/data/coinCache.json voor debug-doeleinden.
 
 let coinDataCache = null;
+let currentChunkIndex = 0;
+const chunkSize = 10; // Verwerk 10 coins per update
 
 // Laad de handmatige coin-data
 const manualCoinDataPath = path.join(__dirname, "public", "data", "coin-data.json");
@@ -183,36 +187,53 @@ async function fetchGeneralApiData(url) {
 
 async function updateCoinDataCache() {
   try {
-    console.log("⏳ Updating coin data cache from generalApi links...");
-    const cachedData = {};
+    console.log("⏳ Updating coin data cache for a chunk...");
 
-    // Loop door elke coin in manualCoinData
-    for (const coin of manualCoinData) {
+    const cachedData = coinDataCache || {};
+
+    const totalCoins = manualCoinData.length;
+    const totalChunks = Math.ceil(totalCoins / chunkSize);
+    const start = currentChunkIndex * chunkSize;
+    const end = start + chunkSize;
+    const coinsToUpdate = manualCoinData.slice(start, end);
+
+    console.log(`⏳ Processing chunk ${currentChunkIndex + 1} of ${totalChunks}: coins ${start} to ${end}`);
+
+    for (const coin of coinsToUpdate) {
       const generalApiUrl = coin.dynamicData.generalApi;
       if (generalApiUrl) {
         console.log(`⏳ Fetching data for ${coin.name} from ${generalApiUrl}`);
         const data = await fetchGeneralApiData(generalApiUrl);
-        if (data) {
+
+        const isValidData = data && (
+          (Array.isArray(data) && data.length > 0) ||
+          (typeof data === "object" && !Array.isArray(data) && Object.keys(data).length > 0)
+        );
+
+        if (isValidData) {
           cachedData[coin.id] = data;
           console.log(`✅ Fetched data for ${coin.name}`);
+        } else {
+          console.warn(`⚠️ Received empty data for ${coin.name}, keeping previous data (if any).`);
         }
       }
     }
 
-    // Sla de gefilterde data op
     coinDataCache = cachedData;
     fs.writeFileSync(
       path.join(__dirname, "public", "data", "coinCache.json"),
       JSON.stringify(coinDataCache, null, 2)
     );
-    console.log("✅ Coin data cache updated with filtered data");
+    console.log("✅ Coin data cache updated with current chunk");
+
+    currentChunkIndex = (currentChunkIndex + 1) % totalChunks;
   } catch (error) {
     console.error("❌ Error updating coin data cache:", error.message);
   }
 }
 
-// Plan de taak om elke 30 seconden te draaien
-cron.schedule("*/30 * * * * *", updateCoinDataCache);
+// Plan de taak om elke 20 seconden te draaien
+cron.schedule("*/25 * * * * *", updateCoinDataCache);
 // Update direct bij serverstart
 updateCoinDataCache();
 
@@ -224,6 +245,7 @@ app.get("/api/coins", (req, res) => {
     res.status(503).json({ message: "Coin data not available yet" });
   }
 });
+
 
 // ----- LISTING FORM: COIN LISTING -----
 app.post("/submit-coin-listing", (req, res) => {

@@ -1,47 +1,49 @@
-/* Algemene stijlen voor DEX- en Aggregator-tabellen */
-.dex-table {
+/* Algemene stijlen voor de Exchanges tabel (main-crypto-table) */
+.main-crypto-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
 
-.dex-table th, .dex-table td {
+.main-crypto-table th,
+.main-crypto-table td {
   border: 1px solid #ddd;
   padding: 0.8rem;
   text-align: left;
 }
 
-.dex-table th {
-  background-color: #4caf50;
+.main-crypto-table th {
+  background-color: #042c3f;
   color: white;
 }
 
-/* Links binnen de tabel (zoals namen van DEX en Aggregators) */
-.dex-table td a {
+/* Links binnen de tabel */
+.main-crypto-table td a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
 }
 
-.dex-table td a:hover {
+.main-crypto-table td a:hover {
   color: #1a664f;
 }
 
 /* Stijl voor positieve en negatieve veranderingen */
-.dex-table td.change-positive {
+.change-positive {
   color: green;
   font-weight: bold;
 }
 
-.dex-table td.change-negative {
+.change-negative {
   color: red;
   font-weight: bold;
 }
 
-/* Stijl voor DEX- en Aggregator-logo's */
+/* Stijl voor logo's (bijvoorbeeld in de Exchange kolom) */
 .dex-logo {
-  height: 24px;
-  margin-right: 0.5rem;
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -64,7 +66,7 @@
   height: auto;
 }
 
-/* Algemeen */
+/* Algemene link styling */
 .no-underline {
   text-decoration: none;
   color: inherit;
@@ -75,19 +77,29 @@
   color: #1a664f;
 }
 
-/* Positieve en negatieve verandering */
-.change-positive {
-  color: green;
-}
-
-.change-negative {
-  color: red;
-}
-
-/* DEX Logo */
-.dex-logo {
-  height: 30px;
-  width: auto;
-  margin-right: 10px;
-  vertical-align: middle;
+/* Responsive styling voor mobiele apparaten */
+@media (max-width: 768px) {
+  /* Maak de tabel horizontaal scrollbaar indien nodig */
+  .main-crypto-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .main-crypto-table th,
+  .main-crypto-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Ad-banner aanpassen voor mobiele schermen */
+  #ad-banner {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+  
+  #ad-banner img {
+    width: 100%;
+    height: auto;
+  }
 }

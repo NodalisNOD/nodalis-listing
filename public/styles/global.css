@@ -69,6 +69,10 @@ main {
   border-bottom: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
 }
+.top-community-wrapper table th,
+.top-community-wrapper table td {
+  font-size: 0.6rem; /* Pas dit aan naar wens */
+}
 
 /* Tabel styling */
 table {
@@ -112,6 +116,31 @@ table tr:hover {
   height: 20px;
   margin-right: 0.5rem;
 }
+
+/* Voor desktop blijft de dashboard-grid ongewijzigd */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 vakken naast elkaar */
+  gap: 1rem;
+}
+
+/* Op mobile: maak de dashboard-grid scrollable */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Geen wrapping, zodat ze naast elkaar blijven */
+    overflow-x: auto;  /* Horizontale scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling op iOS */
+    gap: 1rem;
+    padding-bottom: 1rem; /* Optioneel, voor wat ruimte onder de scrollbalk */
+  }
+  /* Zorg dat elk vak een minimale breedte heeft zodat ze goed zichtbaar zijn */
+  .dashboard-grid > * {
+    flex: 0 0 auto;
+    min-width: 300px; /* Pas deze waarde aan naar wens */
+  }
+}
+
 
 /* Main crypto tabel (onderaan de pagina) */
 .main-table-wrapper {
@@ -608,4 +637,64 @@ table tr:hover {
   background-color: #07b5e056;
   color: black;
   font-weight: bold;
+}
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* optioneel, voor wat ruimte tussen label en dropdown */
+}
+
+.filter-container label {
+  font-weight: bold;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 200px; /* Pas de breedte naar wens aan */
+}
+
+.custom-dropdown-selected {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-dropdown-selected img.chain-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.custom-dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-dropdown-option {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-dropdown-option img.chain-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.custom-dropdown-option:hover {
+  background: #f0f0f0;
 }

@@ -194,6 +194,27 @@
         <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..."
           aria-label="Search for a coin" />
       </div>
+        <!-- Chain Filter Dropdown -->
+        <div class="filter-container">
+          <label for="chain-filter">Filter by Chain:</label>
+          <div id="chain-filter" class="custom-dropdown">
+            <div class="custom-dropdown-selected">
+              <img src="default.png" alt="All Chains" class="chain-icon"> All Chains
+            </div>
+            <div class="custom-dropdown-options">
+              <!-- Voorbeeldopties; vul hier je eigen chains en iconen in -->
+              <div class="custom-dropdown-option" data-value="">
+                <img src="./assets/UI/all.png" alt="All Chains" class="chain-icon"> All Chains
+              </div>
+              <div class="custom-dropdown-option" data-value="Cronos">
+                <img src="./assets/chains/cronos.png" alt="Cronos" class="chain-icon"> Cronos
+              </div>
+              <!-- Voeg hier extra opties toe -->
+            </div>
+          </div>
+        </div>
+        
+
       <table class="main-crypto-table">
         <thead>
           <tr>
