@@ -89,12 +89,6 @@ async function fetchAllCoinData() {
   }
 }
 
-/**
- * Haalt de totale market cap en dominantie op.
- * De dominantie wordt berekend aan de hand van de Cronos market cap (opgehaald via Geckoterminal)
- * en de totale market cap van alle coins in ons platform.
- * Er wordt geen caching meer toegepast.
- */
 async function fetchMarketCapAndDominance() {
   try {
     const allCoinData = await fetchAllCoinData();

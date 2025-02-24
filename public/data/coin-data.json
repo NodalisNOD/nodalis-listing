@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "papparico-finance",
+    "name": "Papparico Finance Token",
+    "ticker": "PPFT",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ppft.webp",
+    "contract": "0x59BAfb7168972EcCA5e395F7dA88e71eCe47a260",
+    "website": "https://papparico.finance/home",
+    "explorer": "https://cronoscan.com/token/0x59BAfb7168972EcCA5e395F7dA88e71eCe47a260",
+    "twitter": "https://x.com/PappFinance",
+    "telegram": "https://t.me/papparicofinance",
+    "discord": "https://discord.com/invite/nV2p9ntAWG",
+    "whitepaper": "https://capybara-nation.gitbook.io/capybara-nation",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "DeFi and Gaming - We provide an innovative earn experience",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x59bafb7168972ecca5e395f7da88e71ece47a260",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xb036145476ad16782ec05c7ec340d7e3ce6d09b7%2C0x67d91c58116285eaf29487ed85a62c423710212b%2C0xa672f73c29a9078cea3da5412d7079524691a21f%2C0x8924f9bbbf154bb23d83a158b07c1c1af2e77beb",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb036145476ad16782ec05c7ec340d7e3ce6d09b7/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x59bafb7168972ecca5e395f7da88e71ece47a260"
+    }
+  },
+  {
     "id": "capybara-nation",
     "name": "Capybara Nation",
     "ticker": "BARA",
