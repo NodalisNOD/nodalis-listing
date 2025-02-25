@@ -238,7 +238,8 @@ function renderGraph(graphApi) {
   fetch(graphApi)
     .then((response) => response.json())
     .then((data) => {
-      const ctx = document.getElementById("price-graph").getContext("2d");
+      const canvas = document.getElementById("price-graph");
+      const ctx = canvas.getContext("2d");
       const ohlcvList = data.data.attributes.ohlcv_list.reverse();
       const labels = ohlcvList.map((entry) =>
         new Date(entry[0] * 1000).toLocaleString("en-US", {
@@ -250,23 +251,23 @@ function renderGraph(graphApi) {
       );
       const prices = ohlcvList.map((entry) => parseFloat(entry[4]));
 
+      // Maak een blauw gradient met een vollere look
+const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');  // Start: hoog opaciteit blauw
+gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)'); // Midden: tussentijdse opaciteit
+gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');   // Eind: lager opaciteit blauw
+
+
       const dataset = {
         label: "Price (USD)",
         data: prices,
-        borderColor: "#4caf50",
+        borderColor: "rgba(0, 123, 255, 1)", // Blauwe lijn
         borderWidth: 2,
         pointRadius: 1,
         pointHoverRadius: 2,
         pointBackgroundColor: "rgba(255, 255, 255, 0.8)",
-        fill: false,
-        segment: {
-          borderColor: (ctx) => {
-            const index = ctx.p1DataIndex;
-            return prices[index] > prices[index - 1]
-              ? "rgba(0, 200, 0, 1)"
-              : "rgb(253, 121, 121)";
-          },
-        },
+        fill: true,                        // Vul de onderkant van de lijn
+        backgroundColor: gradient,         // Gebruik de vollere gradient als fill
       };
 
       new Chart(ctx, {
@@ -301,6 +302,7 @@ function renderGraph(graphApi) {
     })
     .catch((error) => console.error("Error rendering graph:", error));
 }
+
 
 /* ===================== */
 /* Coin Sentiment Votes  */

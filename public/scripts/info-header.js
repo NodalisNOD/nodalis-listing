@@ -3,18 +3,17 @@
 // HTML-element waarin de info-header komt te staan
 const infoHeader = document.getElementById("info-header");
 
-// Haal Cronos-prijs op via de Geckoterminal API
+// Haal Cronos-prijs op uit de lokale croPrice.json
 async function fetchCronosPrice() {
   try {
-    const response = await fetch(
-      "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23"
-    );
+    const response = await fetch("./data/croPrice.json");
+    if (!response.ok) {
+      throw new Error("Fout bij ophalen van croPrice.json");
+    }
     const data = await response.json();
-    return parseFloat(
-      data.data.attributes.token_prices["0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23"]
-    );
+    return parseFloat(data.cronosPrice);
   } catch (error) {
-    console.error("Error fetching Cronos price:", error);
+    console.error("Error fetching Cronos price from local file:", error);
     return null;
   }
 }

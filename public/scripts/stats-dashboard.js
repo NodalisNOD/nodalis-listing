@@ -1,12 +1,10 @@
-// stats-dashboard.js
-
 document.addEventListener("DOMContentLoaded", () => {
   fetchMarketCapAndDominance();
 });
 
 /**
  * Haalt alle coin-data op uit het JSON-bestand en verwerkt de API-responsen.
- * Ondersteunt zowel Dexscreener (array) als Geckoterminal (object met data).
+ * Ondersteunt zowel Dexscreener (array) als Geckoterminal (object met data.data.attributes).
  * Retourneert een array van coin-objecten.
  */
 async function fetchAllCoinData() {
@@ -94,12 +92,10 @@ async function fetchMarketCapAndDominance() {
     const allCoinData = await fetchAllCoinData();
     const totalMarketCap = allCoinData.reduce((acc, coin) => acc + (coin.marketCap || 0), 0);
 
-    // Haal Cronos market cap op via Geckoterminal
-    const response = await fetch(
-      "https://api.geckoterminal.com/api/v2/networks/eth/tokens/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b"
-    );
-    const data = await response.json();
-    const cronosMarketCap = parseFloat(data.data.attributes.market_cap_usd) || 0;
+    // Haal Cronos market cap op uit de lokale cache (croPrice.json)
+    const response = await fetch("./data/croPrice.json");
+    const cacheData = await response.json();
+    const cronosMarketCap = parseFloat(cacheData.cronosMarketCap) || 0;
 
     // Bereken dominantie (%)
     const dominance = totalMarketCap > 0 ? ((cronosMarketCap / totalMarketCap) * 100).toFixed(2) : 0;

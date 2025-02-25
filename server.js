@@ -12,6 +12,7 @@ const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
 const cron = require("node-cron");
 const cookieParser = require("cookie-parser");
+const fetch = require('node-fetch');
 
 // Bestand waarin globale vote-records worden opgeslagen
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
@@ -245,7 +246,70 @@ app.get("/api/coins", (req, res) => {
     res.status(503).json({ message: "Coin data not available yet" });
   }
 });
+const CACHE_DURATION = 30000; // 30 seconds in milliseconds
+// Zorg dat de directory public/data bestaat
+const dataDir = path.join(__dirname, 'public', 'data');
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
+const cacheFilePath = path.join(dataDir, 'croPrice.json');
 
+// Functie om de Cronos market cap op te halen via Geckoterminal (ETH-netwerk endpoint)
+async function fetchCronosMarketCap() {
+  try {
+    const response = await fetch("https://api.geckoterminal.com/api/v2/networks/eth/tokens/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    // Pas de key aan indien nodig, bijvoorbeeld:
+    const marketCap = parseFloat(data.data.attributes.market_cap_usd);
+    if (isNaN(marketCap)) {
+      throw new Error(`Invalid market cap value: ${data.data.attributes.market_cap_usd}`);
+    }
+    return marketCap;
+  } catch (error) {
+    console.error("Error fetching Cronos market cap:", error);
+    return 0;
+  }
+}
+
+
+// Functie om de Cronos-tokenprijs (en market cap) op te halen en te cachen
+async function updateCroPrice() {
+  try {
+    // Haal tokenprijs op via het CRO-netwerk endpoint
+    const response = await fetch("https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    const tokenPriceStr = data.data.attributes.token_prices["0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23"];
+    const price = parseFloat(tokenPriceStr);
+    if (isNaN(price)) {
+      throw new Error(`Invalid price value: ${tokenPriceStr}`);
+    }
+
+    // Haal de Cronos market cap op
+    const marketCap = await fetchCronosMarketCap();
+
+    const cacheData = {
+      cronosPrice: price,
+      cronosMarketCap: marketCap,
+      timestamp: Date.now()
+    };
+
+    await fs.promises.writeFile(cacheFilePath, JSON.stringify(cacheData, null, 2));
+    console.log("✅ Cronos data updated:", cacheData);
+  } catch (error) {
+    console.error("Error updating Cronos data:", error);
+  }
+}
+
+// Update direct bij serverstart en daarna elke CACHE_DURATION milliseconden
+updateCroPrice();
+setInterval(updateCroPrice, CACHE_DURATION);
 
 // ----- LISTING FORM: COIN LISTING -----
 app.post("/submit-coin-listing", (req, res) => {

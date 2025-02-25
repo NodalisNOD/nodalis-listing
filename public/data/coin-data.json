@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "miguel-leugim",
+    "name": "Miguel",
+    "ticker": "LEUGIM",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/miguel.webp",
+    "contract": "0xD307c7BC07A30723c712617b1544b0Fd1A16298B",
+    "website": "https://leugim.fun/",
+    "explorer": "https://cronoscan.com/token/0xd307c7bc07a30723c712617b1544b0fd1a16298b",
+    "twitter": "https://x.com/leugimcro",
+    "telegram": "https://t.me/leugimcro",
+    "discord": "https://discord.com/invite/XxupNCXKPS",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "One day, Miguel devised a grand plan to steal $5000 from Señor Dip. However, his thieving adventure didn’t go as planned. Señor Dip quickly posted a notice searching for Miguel. The notice read: \"Wanted! Miguel stole $5000 and fled. A big reward for anyone who catches him!\"\n\nTo avoid getting caught after seeing the notice, Miguel took Sonorc King's advice from Señor Shrek and reversed his name to LEUGIM to hide. Unfortunately, the plan didn’t work out very well. We caught him with the stolen money and decided to imprison him on the blockchain instead of letting him go! And thus, LEUGIM was born.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd307c7bc07a30723c712617b1544b0fd1a16298b",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfd072bc4d70a9f4d763f28befa1b1dcc0054b4dc%2C0x308236dc2a62f01cf362ff9ef83209e38c684e6d",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfd072bc4d70a9f4d763f28befa1b1dcc0054b4dc/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfd072bc4d70a9f4d763f28befa1b1dcc0054b4dc"
+    }
+  },
+  {
     "id": "papparico-finance",
     "name": "Papparico Finance Token",
     "ticker": "PPFT",
@@ -11,7 +47,7 @@
     "twitter": "https://x.com/PappFinance",
     "telegram": "https://t.me/papparicofinance",
     "discord": "https://discord.com/invite/nV2p9ntAWG",
-    "whitepaper": "https://capybara-nation.gitbook.io/capybara-nation",
+    "whitepaper": "https://papparico.finance/home",
     "threads": "",
     "extraLinks": [
       {
@@ -1113,7 +1149,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x061D2F9F1ca6fC368fa34AbA1E8767d6234C27b8"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe1c434eabc8707757717aa9f421dc4d8ef3a3e69"
     }
   },
   {
