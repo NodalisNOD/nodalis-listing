@@ -12,7 +12,8 @@ const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
 const cron = require("node-cron");
 const cookieParser = require("cookie-parser");
-const fetch = require('node-fetch');
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 // Bestand waarin globale vote-records worden opgeslagen
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
