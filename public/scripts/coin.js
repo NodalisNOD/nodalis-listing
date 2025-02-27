@@ -25,7 +25,6 @@ const dexIcons = {
   cronaswap: { icon: "./assets/coinIcons/crona.jpg", name: "CronaSwap" },
   "phenix-finance-cronos": { icon: "./assets/coinIcons/phenix.webp", name: "PhenixFinance" },
   "candycity_finance": { icon: "./assets/UI/candycity.png", name: "Candy City" },
-  
 };
 
 // Haal coin details op
@@ -122,7 +121,7 @@ async function fetchCoinDetails() {
     }
 
     await fetchDynamicData(coin.dynamicData);
-    fetchVotes(); // Haal de permanente coin sentiment votes op
+    fetchVotes(); // Haal de coin sentiment votes op
   } catch (error) {
     console.error("Error loading coin details:", error);
   }
@@ -252,22 +251,21 @@ function renderGraph(graphApi) {
       const prices = ohlcvList.map((entry) => parseFloat(entry[4]));
 
       // Maak een blauw gradient met een vollere look
-const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');  // Start: hoog opaciteit blauw
-gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)'); // Midden: tussentijdse opaciteit
-gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');   // Eind: lager opaciteit blauw
-
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');
+      gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)');
+      gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');
 
       const dataset = {
         label: "Price (USD)",
         data: prices,
-        borderColor: "rgba(0, 123, 255, 1)", // Blauwe lijn
+        borderColor: "rgba(0, 123, 255, 1)",
         borderWidth: 2,
         pointRadius: 1,
         pointHoverRadius: 2,
         pointBackgroundColor: "rgba(255, 255, 255, 0.8)",
-        fill: true,                        // Vul de onderkant van de lijn
-        backgroundColor: gradient,         // Gebruik de vollere gradient als fill
+        fill: true,
+        backgroundColor: gradient,
       };
 
       new Chart(ctx, {
@@ -302,7 +300,6 @@ gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');   // Eind: lager opaciteit b
     })
     .catch((error) => console.error("Error rendering graph:", error));
 }
-
 
 /* ===================== */
 /* Coin Sentiment Votes  */
@@ -351,10 +348,15 @@ function canVoteCoin() {
 async function fetchVotes() {
   try {
     const response = await fetch(`/votes/${coinId}`);
+    if (!response.ok) throw new Error("Network error");
     const votes = await response.json();
-    updateSentimentBar(votes);
+    // Zorg voor standaardwaarden als er nog geen stemmen zijn
+    const positiveVotes = Number(votes.positive) || 0;
+    const negativeVotes = Number(votes.negative) || 0;
+    updateSentimentBar({ positive: positiveVotes, negative: negativeVotes });
   } catch (error) {
     console.error("Error fetching coin votes:", error);
+    updateSentimentBar({ positive: 0, negative: 0 });
   }
 }
 
@@ -371,7 +373,9 @@ async function submitVote(type, event) {
       return;
     }
     const data = await response.json();
-    updateSentimentBar(data.votes);
+    const positiveVotes = Number(data.votes.positive) || 0;
+    const negativeVotes = Number(data.votes.negative) || 0;
+    updateSentimentBar({ positive: positiveVotes, negative: negativeVotes });
     showNotification("Your vote has been recorded.", event);
     // Sla de stemtijd op voor deze coin
     localStorage.setItem(`coin_vote_${coinId}`, new Date().toISOString());
@@ -383,9 +387,11 @@ async function submitVote(type, event) {
 
 // Update de sentimentbalk en de "Votes:" display
 function updateSentimentBar(votes) {
-  const totalVotes = votes.positive + votes.negative;
-  const positivePercentage = totalVotes > 0 ? ((votes.positive / totalVotes) * 100).toFixed(1) : 0;
-  const negativePercentage = totalVotes > 0 ? ((votes.negative / totalVotes) * 100).toFixed(1) : 0;
+  const positiveVotes = Number(votes.positive) || 0;
+  const negativeVotes = Number(votes.negative) || 0;
+  const totalVotes = positiveVotes + negativeVotes;
+  const positivePercentage = totalVotes > 0 ? ((positiveVotes / totalVotes) * 100).toFixed(1) : 0;
+  const negativePercentage = totalVotes > 0 ? ((negativeVotes / totalVotes) * 100).toFixed(1) : 0;
 
   const positiveBar = document.getElementById("positive-bar");
   const negativeBar = document.getElementById("negative-bar");
@@ -395,7 +401,6 @@ function updateSentimentBar(votes) {
   negativeBar.style.width = `${negativePercentage}%`;
   negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
 
-  // Update de total votes display (indien element met id "total-votes" aanwezig is)
   const totalVotesEl = document.getElementById("total-votes");
   if (totalVotesEl) {
     totalVotesEl.textContent = `Votes: ${totalVotes}`;
@@ -411,6 +416,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchCoinDetails();
   fetchVotes();
   setInterval(updateCoinVoteTimer, 1000);
+  // Voeg polling toe voor live updates van de votes (elke 10 seconden)
+  setInterval(fetchVotes, 10000);
   
   // Koppel de trending stemknop
   const trendingBtn = document.getElementById("vote-trending");

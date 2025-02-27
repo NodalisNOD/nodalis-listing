@@ -19,18 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Variabele om te voorkomen dat flushVotes meerdere keren wordt aangeroepen
   let flushCalled = false;
 
-  // Update de reset‑afteller en controleer of deze 0 is
+  // Update de reset‑afteller en controleer of deze minder dan 1 seconde (1000 ms) over heeft
   function updateResetTimer() {
     const timerEl = document.getElementById('reset-timer');
     const remaining = getTimeRemaining();
     timerEl.textContent = `Reset in: ${formatTime(remaining)}`;
 
-    // Als de timer 0 is en flush nog niet is uitgevoerd, flush de stemmen
-    if (remaining === 0 && !flushCalled) {
+    // Als de resterende tijd minder dan 1 seconde is en flush nog niet is uitgevoerd, flush de stemmen
+    if (remaining < 1000 && !flushCalled) {
       flushVotes();
       flushCalled = true;
-    } else if (remaining > 0) {
-      flushCalled = false; // reset de flag zodra de timer weer op een positieve waarde staat
+    } else if (remaining >= 1000) {
+      flushCalled = false; // reset de flag zodra de timer weer boven 1 seconde komt
     }
   }
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(result => {
         if (result.success) {
           updateVotes();
-          // Sla de stemtijd op zodat pas morgen gestemd kan worden
+          // Sla de stemtijd op zodat er pas morgen weer gestemd kan worden
           localStorage.setItem('lastVoteTime', new Date().toISOString());
           updateVoteButtons();
         } else {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (result.success) {
           console.log('Votes flushed successfully.');
           updateVotes();
-          // Verwijder lokale stemtijd zodat opnieuw gestemd kan worden
+          // Verwijder de lokale stemtijd zodat er opnieuw gestemd kan worden
           localStorage.removeItem('lastVoteTime');
           updateVoteButtons();
         } else {
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Initial updates
+  // Initiale updates bij het laden
   updateVotes();
   updateVoteButtons();
   updateResetTimer();
