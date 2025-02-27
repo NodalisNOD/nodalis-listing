@@ -27,7 +27,7 @@
         "url": ""
       }
     ],
-    "description": "One day, Miguel devised a grand plan to steal $5000 from Señor Dip. However, his thieving adventure didn’t go as planned. Señor Dip quickly posted a notice searching for Miguel. The notice read: \"Wanted! Miguel stole $5000 and fled. A big reward for anyone who catches him!\"\n\nTo avoid getting caught after seeing the notice, Miguel took Sonorc King's advice from Señor Shrek and reversed his name to LEUGIM to hide. Unfortunately, the plan didn’t work out very well. We caught him with the stolen money and decided to imprison him on the blockchain instead of letting him go! And thus, LEUGIM was born.",
+    "description": "ROBIN is now the core token of Obsidian Finance, and our vision remains true to its roots: ROBIN is a community-driven meme token on the Cronos network. But who is Robin? Robin is a fictional superhero from the Cronos universe, born out of the vibrant Cronos community.\n\nObsidian Finance provides a range of utilities for ROBIN, making it more than just a meme token. With Obsidian, users can stake their ROBIN to earn rewards, and access exclusive liquidity pools.",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x664e4b17ea045fe92868821f3ee0a76a5db38166",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x5a2a27235fe78c21d2876bf393c3ebb96ddced52%2C0x1001f85cf99ee37ac5e4f8733273b8f3ecbdd4c7%2C0xa3980697680f4e9686809486954c943f614adeba%2C0x0d03a2b97b0ea2683f21fb393ec95ff620afe7e0%2C0x664e4b17ea045fe92868821f3ee0a76a5db38166",
