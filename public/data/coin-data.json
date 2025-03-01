@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "neuro-neuro",
+    "name": "NeurotiCat",
+    "ticker": "NEURO",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/neur.jpg",
+    "contract": "0xCFE223d06b86568C24ffd17E8ac748DbAC096b3b",
+    "website": "https://neuroticat.eu/",
+    "explorer": "https://cronoscan.com/address/0xCFE223d06b86568C24ffd17E8ac748DbAC096b3b",
+    "twitter": "https://twitter.com/neuroticatcro/",
+    "telegram": "https://t.me/neuroticat",
+    "discord": "https://discord.gg/7tg429TYjK",
+    "whitepaper": "https://neuroticat.eu/whitepaper",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/croneuroticat/?__coig_challenged=1"
+      },
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/@NeurotiCatMeme/shorts"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@neuroticatnft"
+      }
+    ],
+    "description": "NeurotiCat is a meme coin created on the Cronos Chain. He's a full-fledged part of the Crofam family! If you’re a beer enthusiast, and not only, here you will find our first collection on Pixel art NFTs. 500 unique pieces... Have you ever seen Batman o Gandhi with a thing and a beer in hand?",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xcfe223d06b86568c24ffd17e8ac748dbac096b3b",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc4512c14f199b8403dc6ae797b4eb0dcf7563927",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xc4512c14f199b8403dc6ae797b4eb0dcf7563927/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xCFE223d06b86568C24ffd17E8ac748DbAC096b3b"
+    }
+  },
+  {
     "id": "robin-on-cronos",
     "name": "Robin on Cronos",
     "ticker": "ROBIN",
