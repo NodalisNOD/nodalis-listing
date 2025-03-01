@@ -572,7 +572,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe9A4c3aba1075E1470EBe3007db11132905c9bdC"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905"
     }
   },
   {
