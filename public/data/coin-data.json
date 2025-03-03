@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "loaded-lions",
+    "name": "Loaded Lions",
+    "ticker": "LION",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/lion.jpg",
+    "contract": "0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
+    "website": "https://loadedlions.com",
+    "explorer": "https://cronoscan.com/address/0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
+    "twitter": "https://twitter.com/neuroticatcro/",
+    "telegram": "https://t.me/neuroticat",
+    "discord": "https://discord.com/invite/manecity",
+    "whitepaper": "https://whitepaper.loadedlions.com",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Crpyto.com Loaded Lion Nft page",
+        "url": "https://crypto.com/nft/loaded-lions?tab=loaded+lions"
+      },
+      {
+        "name": "$LION staking",
+        "url": "https://loadedlions.com/staking/"
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "It's $LION season! Let the TAKEOVER begin.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x4903e929bd08ca44f57470add6b4eb89ce0e36dd%2C0x0ff77843925a137390123e2cf50019038feee8a5",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4903e929bd08ca44f57470add6b4eb89ce0e36dd/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x9D8c68F185A04314DDC8B8216732455e8dbb7E45"
+    }
+  },
+  {
     "id": "neuro-neuro",
     "name": "NeurotiCat",
     "ticker": "NEURO",
