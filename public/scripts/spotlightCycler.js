@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
           a.href = "https://www.crooks.finance";
         } else if (file.toLowerCase().includes('cm')) {
           a.href = "https://cmacmint.netlify.app";
+        } else if (file.toLowerCase().includes('neuro')) {
+          a.href = "https://linktr.ee/neuroticat";
         } else {
           a.href = "#"; // fallback link
         }

@@ -1,8 +1,10 @@
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const path = require("path");
-const router = express.Router();
 const fs = require("fs");
+const cron = require("node-cron");  // Node-cron toevoegen
+
+const router = express.Router();
 
 // Pad naar de database-map en databasebestand
 const comVoteDbDir = path.join(__dirname, "..", "public", "data");
@@ -39,6 +41,18 @@ comVoteDb.serialize(() => {
       }
     }
   );
+});
+
+// Server-side cronjob: elke dag om middernacht UTC (ervan uitgaande dat de server-uur in UTC staat)
+// Voer de DELETE-query uit om de stemmen te flushen.
+cron.schedule("0 0 * * *", () => {
+  comVoteDb.run("DELETE FROM votes", function (err) {
+    if (err) {
+      console.error("Error flushing global votes via cron:", err.message);
+    } else {
+      console.log("Global votes flushed successfully via cron.");
+    }
+  });
 });
 
 // Endpoint: Haal globale stemmen op
@@ -101,7 +115,7 @@ router.post("/vote", (req, res) => {
   stmt.finalize();
 });
 
-// Endpoint: Flush (reset) alle globale stemmen
+// Endpoint: Flush (reset) alle globale stemmen (handmatige flush)
 router.post("/flush", (req, res) => {
   comVoteDb.run("DELETE FROM votes", function (err) {
     if (err) {
