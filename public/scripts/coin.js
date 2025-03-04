@@ -26,7 +26,39 @@ const dexIcons = {
   "candycity_finance": { icon: "./assets/UI/candycity.png", name: "Candy City" },
 };
 
-// Aggregatie van dynamische data uit de cache (verzamelt waarden over meerdere paren)
+/**
+ * Haal de relevante waarden uit een pair-object.
+ * Deze functie ondersteunt zowel de geneste structuur (geckoterminal)
+ * als de vlakke structuur (dexscreener).
+ */
+function getPairValues(pair) {
+  let vol = 0, liq = 0, price = 0, mc = 0;
+  // Controleer of dit een geneste structuur is
+  if (pair.data && pair.data.attributes) {
+    const attr = pair.data.attributes;
+    vol = parseFloat(attr.volume_usd?.h24) || 0;
+    liq = parseFloat(attr.reserve_in_usd) || 0;
+    price = parseFloat(attr.base_token_price_usd) || 0;
+    mc = parseFloat(attr.market_cap_usd);
+    if (isNaN(mc)) {
+      mc = parseFloat(attr.fdv_usd) || 0;
+    }
+  } else {
+    // Veronderstel vlakke structuur (dexscreener)
+    vol = parseFloat(pair.volume?.h24) || 0;
+    liq = parseFloat(pair.liquidity?.usd) || 0;
+    price = parseFloat(pair.priceUsd) || 0;
+    mc = parseFloat(pair.marketCap);
+    if (isNaN(mc)) {
+      mc = parseFloat(pair.fdv) || 0;
+    }
+  }
+  return { vol, liq, price, mc };
+}
+
+/**
+ * Aggregatie van dynamische data uit de cache (over meerdere paren)
+ */
 function aggregateDynamicData(pairs) {
   let totalVolume = 0;
   let totalLiquidity = 0;
@@ -34,11 +66,7 @@ function aggregateDynamicData(pairs) {
   let totalMarketCap = 0;
   
   pairs.forEach(pair => {
-    const vol = parseFloat(pair.volume?.h24) || 0;
-    const liq = parseFloat(pair.liquidity?.usd) || 0;
-    const price = parseFloat(pair.priceUsd) || 0;
-    const mc = parseFloat(pair.marketCap) || 0;
-    
+    const { vol, liq, price, mc } = getPairValues(pair);
     totalVolume += vol;
     totalLiquidity += liq;
     weightedPriceSum += price * liq;
@@ -92,7 +120,7 @@ async function fetchCoinDetails() {
         });
     });
     
-    // Vul de standaard links in
+    // Vul de standaard links in (worden uit de statische coin-data gehaald)
     document.getElementById("coin-website").innerHTML = `
       <img src="./assets/UI/domain.png" alt="Website Icon" class="icon">
       <a href="${coinStatic.website}" target="_blank">${coinStatic.website}</a>
@@ -146,7 +174,7 @@ async function fetchCoinDetails() {
       document.getElementById("coin-extra-links").innerHTML = "";
     }
     
-    // Nu de dynamische data uit de cache ophalen
+    // Haal de dynamische data uit de cache op en werk de pagina bij
     await fetchAndMergeDynamicData(coinStatic);
     
     // Haal coin sentiment votes op (blijft realtime)
@@ -167,7 +195,7 @@ async function fetchAndMergeDynamicData(coinStatic) {
     if (coinCachePairs && coinCachePairs.length > 0) {
       const aggregated = aggregateDynamicData(coinCachePairs);
       
-      // Update de dynamische elementen
+      // Update de dynamische elementen op de pagina
       if (aggregated.price) {
         document.getElementById("coin-price").textContent = `$${aggregated.price.toFixed(10)}`;
       } else {
@@ -189,31 +217,26 @@ async function fetchAndMergeDynamicData(coinStatic) {
         document.getElementById("coin-liquidity").textContent = "N/A";
       }
       
-      // Indien er markten worden meegegeven in de cache, update deze
-      // Bijvoorbeeld, als je de array zelf wilt tonen:
+      // Indien de cache markten bevat, update deze (voorbeeld: gebruik de array zelf)
       if (coinCachePairs[0].marketApi) {
         marketData = coinCachePairs;
         renderMarkets(marketData);
       }
       
-      // Voor grafiekdata: als de cache grafiekdata bevat (bijvoorbeeld als onderdeel van de cache) gebruik deze
+      // Voor grafiekdata: als er gecachte grafiekdata aanwezig is (bijv. in coinStatic.graphData), gebruik deze
       if (coinStatic.graphData) {
         renderGraphFromCache(coinStatic.graphData);
       } else if (coinStatic.dynamicData && coinStatic.dynamicData.graphApi) {
-        // Fallback: gebruik de oude graph API uit coin-data.json
+        // Fallback: gebruik de oude graph API uit de statische data
         renderGraph(coinStatic.dynamicData.graphApi);
       }
     } else {
-      // Geen cache gevonden, gebruik fallback via de dynamicData uit coin-data.json
+      // Geen cache gevonden: fallback op de dynamicData uit coin-data.json
       if (coinStatic.dynamicData && coinStatic.dynamicData.priceApi) {
-        // Je zou hier eventueel een aparte fetchDynamicData() functie kunnen aanroepen.
-        // Voor nu tonen we "Loading..." of N/A.
         document.getElementById("coin-price").textContent = "Loading...";
         document.getElementById("coin-marketcap").textContent = "N/A";
         document.getElementById("coin-volume").textContent = "N/A";
         document.getElementById("coin-liquidity").textContent = "N/A";
-        
-        // Grafiek fallback
         if (coinStatic.dynamicData.graphApi) {
           renderGraph(coinStatic.dynamicData.graphApi);
         }
@@ -264,7 +287,7 @@ function renderGraphFromCache(graphData) {
   try {
     const canvas = document.getElementById("price-graph");
     const ctx = canvas.getContext("2d");
-    const { labels, prices } = graphData; // Verwacht dat deze arrays aanwezig zijn
+    const { labels, prices } = graphData; // Verwacht arrays
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');
     gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)');

@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "pidgeon-token",
+    "name": "PigeonToken",
+    "ticker": "PIQ",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/piq.jpg",
+    "contract": "0xfdEA7ab3cE8cd76d6bf8D430BEB9E0cb602AD392",
+    "website": "https://pigeonquestnft.com/",
+    "explorer": "https://cronoscan.com/address/0xfdEA7ab3cE8cd76d6bf8D430BEB9E0cb602AD392",
+    "twitter": "https://x.com/PigeonQuest,",
+    "telegram": "https://t.me/PigeonQuestToken",
+    "discord": "https://discord.gg/zBVQaChZ6n",
+    "whitepaper": "https://whitepaper.loadedlions.com",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/pigeon.quest/"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@pigeon.quest"
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Pigeon Token $PIQ is a digital asset project aimed at bringing together the humor and popular interest of memes with real-world value. It will be part of the Pigeon Quest NFT project, an NFT collection, in continuous development, where each design is crafted handmade and with precision and care. Unlike traditional meme coins, Pigeon Token offers utility and real-world applications beyond mere amusement. With $PIQ, holders will have the opportunity to purchase merchandise items related to the Pigeon Quest project, creating a tangible link between digital assets and physical products.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xfdEA7ab3cE8cd76d6bf8D430BEB9E0cb602AD392",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28bd2b738f7dfcde3a970d19cd316a81ce0c6f59",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28bd2b738f7dfcde3a970d19cd316a81ce0c6f59/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28bd2b738f7dfcde3a970d19cd316a81ce0c6f59"
+    }
+  },
+  {
     "id": "loaded-lions",
     "name": "Loaded Lions",
     "ticker": "LION",
@@ -8,8 +44,8 @@
     "contract": "0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
     "website": "https://loadedlions.com",
     "explorer": "https://cronoscan.com/address/0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
-    "twitter": "https://twitter.com/neuroticatcro/",
-    "telegram": "https://t.me/neuroticat",
+    "twitter": "https://x.com/LoadedLions_CDC",
+    "telegram": "https://t.me/manecity",
     "discord": "https://discord.com/invite/manecity",
     "whitepaper": "https://whitepaper.loadedlions.com",
     "threads": "",
