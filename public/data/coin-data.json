@@ -1,6 +1,6 @@
 [ 
   {
-    "id": "pidgeon-token",
+    "id": "pigeon-token",
     "name": "PigeonToken",
     "ticker": "PIQ",
     "chain": "Cronos",
@@ -436,7 +436,7 @@
     "name": "Lex The Husky",
     "ticker": "LEX",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/lex.jpg",
+    "icon": "./assets/coinIcons/lex.png",
     "contract": "0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb",
     "website": "https://lexthehusky.com",
     "explorer": "https://cronoscan.com/token/0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb",
