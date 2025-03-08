@@ -38,40 +38,40 @@ main {
 .dashboard-bottom > .table-wrapper,
 .dashboard-bottom > .stats-wrapper {
   flex: 1;
-  min-height: 300px; /* Pas deze waarde aan voor een evenwichtige hoogte */
+  min-height: 300px;
 }
 
 /* Algemene styling voor elk blok (tabellen, ad-sentiment, etc.) */
 .table-wrapper,
-.ad-sentiment-wrapper {
+.ad-sentiment-wrapper,
+.stats-combined {
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 1rem;
+  /* Minder padding voor een compacter uiterlijk */
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
 /* Specifieke styling voor het gecombineerde advertentie en community sentiment blok */
 .ad-sentiment-wrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 /* Titel in de blokken */
 .table-wrapper h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
   background: #f1f1f1;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-bottom: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
 }
 .top-community-wrapper table th,
 .top-community-wrapper table td {
-  font-size: 0.6rem; /* Pas dit aan naar wens */
+  font-size: 0.6rem;
 }
 
 /* Tabel styling */
@@ -92,7 +92,7 @@ table {
 table th,
 table td {
   border: 1px solid #ddd;
-  padding: 0.5rem;
+  padding: 0.3rem;  /* Verminderde padding voor minder ruimte */
   text-align: left;
   font-size: 0.9rem;
 }
@@ -117,10 +117,10 @@ table tr:hover {
   margin-right: 0.5rem;
 }
 
-/* Voor desktop blijft de dashboard-grid ongewijzigd */
+/* Dashboard grid: 5 vakken naast elkaar – oorspronkelijke instelling */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 vakken naast elkaar */
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -128,19 +128,17 @@ table tr:hover {
 @media (max-width: 768px) {
   .dashboard-grid {
     display: flex;
-    flex-wrap: nowrap; /* Geen wrapping, zodat ze naast elkaar blijven */
-    overflow-x: auto;  /* Horizontale scroll */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling op iOS */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     gap: 1rem;
-    padding-bottom: 1rem; /* Optioneel, voor wat ruimte onder de scrollbalk */
+    padding-bottom: 1rem;
   }
-  /* Zorg dat elk vak een minimale breedte heeft zodat ze goed zichtbaar zijn */
   .dashboard-grid > * {
     flex: 0 0 auto;
-    min-width: 300px; /* Pas deze waarde aan naar wens */
+    min-width: 300px;
   }
 }
-
 
 /* Main crypto tabel (onderaan de pagina) */
 .main-table-wrapper {
@@ -238,7 +236,6 @@ table tr:hover {
   width: auto;
   vertical-align: middle;
   margin-right: 0.5rem;
-  object-fit: contain;
 }
 
 .votes-icon {
@@ -363,97 +360,6 @@ table tr:hover {
   display: block;
 }
 
-/* Spotlight container: behoudt de vaste afmetingen en padding */
-.spotlight-container {
-  width: 300px;
-  height: 200px;
-  position: relative;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  /* Originele achtergrondkleur: #f9f9f9, hier tijdelijk met transparante rood voor debug */
-  background-color: rgba(255, 0, 0, 0.2); /* Rood met 20% transparantie */
-  margin: 0 auto;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-/* (Optioneel) Inner wrapper als je deze gebruikt voor cycling spotlight */
-.spotlight-inner {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
-
-/* Spotlight-item: absoluut gepositioneerd binnen .spotlight-container */
-.spotlight-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  /* Voor debugging: voeg een lichte achtergrondkleur toe */
-  background-color: rgba(0, 255, 0, 0.2); /* Groen met 20% transparantie */
-}
-
-/* Actieve spotlight tonen */
-.spotlight-item.active {
-  display: block;
-}
-
-/* Zorg dat de afbeeldingen binnen spotlight-items goed schalen */
-.spotlight-item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Spotlight-tekst styling */
-.spotlight-text small {
-  font-size: 15px;
-  color: #07b5e0;
-}
-
-/* Tooltip styling (centreren in de container) */
-.tooltip-wrapper {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto; /* Centraal binnen de container */
-}
-
-.tooltip-icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.tooltip-text {
-  display: none;
-  position: absolute;
-  top: -45px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  width: 200px;
-  text-align: center;
-}
-
-.tooltip-wrapper:hover .tooltip-text {
-  display: block;
-}
-
-
-
 /* Dropdown styling */
 .dropdown {
   position: relative;
@@ -500,6 +406,20 @@ table tr:hover {
 }
 
 /* Cookie banner styling */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 14px;
@@ -524,20 +444,56 @@ table tr:hover {
   height: auto;
 }
 
+/* Spotlights en advertenties */
+
+/* Spotlight container: geen extra padding zodat de items elkaar volledig overlappen */
+.spotlight-container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Spotlight-items: absoluut gepositioneerd zodat telkens één zichtbaar is */
+.spotlight-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  /* Debugkleur (verwijder of pas aan) */
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.spotlight-item.active {
+  display: block;
+}
+
+.spotlight-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Sentiment styling */
 #comVotes .sentiment-bar {
   display: flex;
-  flex-wrap: nowrap; /* Zorgt dat de div's niet naar de volgende regel gaan */
+  flex-wrap: nowrap;
   height: 20px;
   border-radius: 5px;
   background: #ccc;
   margin-bottom: 10px;
-  overflow: hidden; /* Voorkomt dat er iets uit de container steekt */
+  overflow: hidden;
 }
 
 #comVotes .positive-bar,
 #comVotes .negative-bar {
-  /* Geen automatische uitrekking: de breedte wordt via JS ingesteld */
   flex-shrink: 0;
   transition: width 0.5s;
   font-size: 0.7rem;
@@ -545,16 +501,13 @@ table tr:hover {
   color: white;
 }
 
-/* Specifieke styling voor de positieve sectie */
 #comVotes .positive-bar {
   background: green;
 }
 
-/* Specifieke styling voor de negatieve sectie */
 #comVotes .negative-bar {
   background: red;
 }
-
 
 #comVotes .vote-buttons {
   display: flex;
@@ -638,21 +591,24 @@ table tr:hover {
   color: black;
   font-weight: bold;
 }
+
+/* Filter container */
 .filter-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* optioneel, voor wat ruimte tussen label en dropdown */
+  gap: 10px;
 }
 
 .filter-container label {
   font-weight: bold;
 }
 
+/* Custom dropdown */
 .custom-dropdown {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 200px; /* Pas de breedte naar wens aan */
+  width: 200px;
 }
 
 .custom-dropdown-selected {
@@ -697,4 +653,34 @@ table tr:hover {
 
 .custom-dropdown-option:hover {
   background: #f0f0f0;
+}
+
+/* Dropdown hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Cookie banner styling */
+.cookie-banner button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.cookie-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Table footer logo */
+.table-footer-logo {
+  text-align: right;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.table-footer-logo img {
+  width: 250px;
+  height: auto;
 }
