@@ -1,88 +1,92 @@
-/* Algemene instellingen */
-body {
+/* === GLOBALE VARIABELEN & RESET === */
+:root {
+  --primary-color: #042c3f;
+  --secondary-color: #05a6c9;
+  --bg-color: #f9fafa;
+  --card-bg: #fff;
+  --text-color: #333;
+  --border-color: #ddd;
+  --hover-bg: #f1f1f1;
+  --transition: 0.3s ease;
+  --font: 'Poppins', Arial, sans-serif;
+}
+
+/* Algemene reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f9fafa;
-  color: #333;
+  padding: 0;
+}
+
+/* === BASE STYLES === */
+body {
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 main {
   padding: 20px;
   max-width: 95%;
   margin: 20px auto;
-  background-color: #fff;
+  background-color: var(--card-bg);
 }
 
-/* Main content layout */
+/* Zorg dat chain-icoontjes altijd klein zijn */
+.chain-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  object-fit: contain;
+}
+
+/* === LAYOUT & DASHBOARD === */
 .main-content {
   display: flex;
   flex-direction: column;
 }
 
-/* Bovenste dashboard: Gebruik een grid voor de vier blokken */
-.tables-container {
+/* Dashboard-grid: 5 gelijke kolommen */
+.dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Vier gelijke kolommen */
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-/* Dashboard Bottom: Advertisement & Stats naast elkaar */
-.dashboard-bottom {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-/* Zorg dat het linkerblok (Ads & Community Sentiment) en de stats evenveel ruimte krijgen */
-.dashboard-bottom > .table-wrapper,
-.dashboard-bottom > .stats-wrapper {
-  flex: 1;
-  min-height: 300px;
-}
-
-/* Algemene styling voor elk blok (tabellen, ad-sentiment, etc.) */
+/* Standaard card styling voor dashboard vakken */
 .table-wrapper,
 .ad-sentiment-wrapper,
 .stats-combined {
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  /* Minder padding voor een compacter uiterlijk */
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  transition: all var(--transition);
 }
 
-/* Specifieke styling voor het gecombineerde advertentie en community sentiment blok */
-.ad-sentiment-wrapper {
-  justify-content: space-between;
-}
-
-/* Titel in de blokken */
+/* Header van een card */
 .table-wrapper h2 {
   text-align: center;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   background: #f1f1f1;
   padding: 0.3rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
 }
-.top-community-wrapper table th,
-.top-community-wrapper table td {
-  font-size: 0.6rem;
-}
 
-/* Tabel styling */
+/* === TABELSTYLING === */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .table-wrapper table {
@@ -91,46 +95,48 @@ table {
 
 table th,
 table td {
-  border: 1px solid #ddd;
-  padding: 0.3rem;  /* Verminderde padding voor minder ruimte */
+  border: 1px solid var(--border-color);
+  padding: 0.3rem;
   text-align: left;
   font-size: 0.9rem;
 }
 
 table th {
-  background-color: #042c3f;
-  color: white;
+  background-color: var(--primary-color);
+  color: #fff;
   font-weight: bold;
+  position: relative;
+  padding-right: 20px;
 }
 
 table tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: var(--bg-color);
 }
 
 table tr:hover {
-  background-color: #f1f1f1;
+  background-color: var(--hover-bg);
 }
 
-/* Styling voor logo's */
-.crypto-logo {
-  height: 20px;
+/* === LOGO'S & ICONS (naast chain-icon regels, voor andere afbeeldingen) === */
+.crypto-logo,
+.table-icon {
+  height: 24px;
   margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
-/* Dashboard grid: 5 vakken naast elkaar – oorspronkelijke instelling */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+.votes-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
-/* Op mobile: maak de dashboard-grid scrollable */
+/* === RESPONSIEVE DASHBOARD GRID === */
 @media (max-width: 768px) {
   .dashboard-grid {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     gap: 1rem;
     padding-bottom: 1rem;
   }
@@ -140,12 +146,11 @@ table tr:hover {
   }
 }
 
-/* Main crypto tabel (onderaan de pagina) */
+/* === MAIN CRYPTO TABEL (onder dashboard) === */
 .main-table-wrapper {
-  display: block;
   margin-top: 20px;
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 1rem;
   overflow-x: auto;
@@ -155,16 +160,16 @@ table tr:hover {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   min-width: 600px;
 }
 
 .main-crypto-table th,
 .main-crypto-table td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 0.5rem;
   text-align: left;
   white-space: nowrap;
@@ -173,19 +178,17 @@ table tr:hover {
 }
 
 .main-crypto-table th {
-  background-color: #042c3f;
-  color: white;
+  background-color: var(--primary-color);
+  color: #fff;
   cursor: pointer;
   position: relative;
   padding-right: 20px;
 }
 
 .main-crypto-table th:hover {
-  background-color: #05a6c9;
-  color: #ffffff;
+  background-color: var(--secondary-color);
 }
 
-/* Pijlen voor sorteren in de main crypto tabel */
 .main-crypto-table th.sort-asc::after,
 .main-crypto-table th.sort-desc::after {
   content: '';
@@ -198,12 +201,12 @@ table tr:hover {
 
 .main-crypto-table th.sort-asc::after {
   border-width: 0 5px 5px 5px;
-  border-color: transparent transparent #ffffff transparent;
+  border-color: transparent transparent #fff transparent;
 }
 
 .main-crypto-table th.sort-desc::after {
   border-width: 5px 5px 0 5px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 
 .main-crypto-table td:first-child,
@@ -214,14 +217,13 @@ table tr:hover {
 
 .crypto-table td img,
 .main-crypto-table td img {
-  height: 24px !important;
-  width: auto !important;
-  max-width: 40px !important;
+  height: 24px;
+  max-width: 40px;
   margin-right: 0.5rem;
   vertical-align: middle;
 }
 
-/* Prijsveranderingen */
+/* === PRIJSVERANDERINGEN === */
 .positive-change {
   color: #28a745;
 }
@@ -230,82 +232,53 @@ table tr:hover {
   color: #dc3545;
 }
 
-/* Algemene stijl voor icoontjes */
-.table-icon {
-  height: 24px;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-
-.votes-icon {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-}
-
-/* Link-styling */
+/* === LINK STYLING === */
 .coin-link {
   text-decoration: none;
   color: inherit;
 }
 
 .coin-link:hover {
-  color: #05a6c9;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
-/* Zoekbalk */
+/* === ZOEKBAARHEID === */
 .search-container {
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-start;
 }
-
 #search-bar {
   width: 100%;
   max-width: 300px;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
-/* Responsieve styling: Mobiele optimalisatie */
-@media (max-width: 768px) {
-  .tables-container {
-    grid-template-columns: 1fr;
-  }
-  table th,
-  table td {
-    padding: 0.3rem;
-    font-size: 0.8rem;
-  }
-}
-
-/* Specifieke styling voor de Top Community tabel */
+/* === TOP COMMUNITY TABEL === */
 .top-community-wrapper {
   display: flex;
   gap: 1rem;
   flex: 1;
 }
-
 .top-community-wrapper table {
   width: 48%;
   border-collapse: collapse;
 }
-
 .top-community-wrapper th,
 .top-community-wrapper td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 0.5rem;
   text-align: left;
 }
 
-/* Statistieken (Market Cap, Dominance, etc.) */
+/* === STATISTIEKEN (Market Cap & Dominance) === */
 .stat-box {
   background-color: #f9f9f9;
-  border: 3px solid #042c3f;
+  border: 3px solid var(--primary-color);
   border-radius: 5px;
   padding: 15px;
   text-align: center;
@@ -313,24 +286,21 @@ table tr:hover {
   flex-direction: column;
   justify-content: center;
 }
-
 .stat-box h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-
 .stat-box p {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 0;
 }
 
-/* Tooltip styling */
+/* === TOOLTIP STYLING === */
 .tooltip-wrapper {
   display: inline-block;
   position: relative;
 }
-
 .tooltip-icon {
   width: 24px;
   height: 24px;
@@ -338,7 +308,6 @@ table tr:hover {
   vertical-align: middle;
   cursor: pointer;
 }
-
 .tooltip-text {
   display: none;
   position: absolute;
@@ -350,62 +319,61 @@ table tr:hover {
   font-size: 0.75rem;
   padding: 5px 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   z-index: 10;
   width: 200px;
   text-align: center;
 }
-
 .tooltip-wrapper:hover .tooltip-text {
   display: block;
 }
 
-/* Dropdown styling */
-.dropdown {
+/* === CUSTOM DROPDOWN STYLING === */
+.custom-dropdown {
   position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 200px;
 }
-
-.dropdown-menu {
-  display: none;
+.custom-dropdown-selected {
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-dropdown-selected img.chain-icon {
+  /* Gebruik de globale .chain-icon styling */
+}
+.custom-dropdown-options {
   position: absolute;
-  background: #042c3f;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  list-style: none;
-  padding: 8px 0;
-  min-width: 200px;
-  z-index: 1000;
-}
-
-.dropdown-menu li {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-}
-
-.dropdown-menu li a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
+  top: 100%;
+  left: 0;
   width: 100%;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
 }
-
-.dropdown-menu li:hover {
-  background: #05a6c9;
+.custom-dropdown-option {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
 }
-
-.dropdown-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.custom-dropdown-option img.chain-icon {
+  /* Gebruik de globale .chain-icon styling */
 }
-
+.custom-dropdown-option:hover {
+  background: var(--hover-bg);
+}
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Cookie banner styling */
+/* === COOKIE BANNER === */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -419,7 +387,6 @@ table tr:hover {
   align-items: center;
   z-index: 10000;
 }
-
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 14px;
@@ -432,34 +399,29 @@ table tr:hover {
   text-decoration: underline;
 }
 
-/* Tabel footer logo */
+/* === TABLE FOOTER LOGO === */
 .table-footer-logo {
   text-align: right;
   margin-top: 10px;
   opacity: 0.9;
 }
-
 .table-footer-logo img {
   width: 250px;
   height: auto;
 }
 
-/* Spotlights en advertenties */
-
-/* Spotlight container: geen extra padding zodat de items elkaar volledig overlappen */
+/* === SPOTLIGHTS & ADVERTENTIES === */
 .spotlight-container {
   width: 300px;
   height: 200px;
   position: relative;
   padding: 0;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   margin: 0 auto;
-  box-sizing: border-box;
   overflow: hidden;
+  box-sizing: border-box;
 }
-
-/* Spotlight-items: absoluut gepositioneerd zodat telkens één zichtbaar is */
 .spotlight-item {
   position: absolute;
   top: 0;
@@ -467,21 +429,18 @@ table tr:hover {
   width: 100%;
   height: 100%;
   display: none;
-  /* Debugkleur (verwijder of pas aan) */
   background-color: rgba(0, 255, 0, 0.2);
 }
-
 .spotlight-item.active {
   display: block;
 }
-
 .spotlight-item img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Sentiment styling */
+/* === SENTIMENT STYLING === */
 #comVotes .sentiment-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -491,7 +450,6 @@ table tr:hover {
   margin-bottom: 10px;
   overflow: hidden;
 }
-
 #comVotes .positive-bar,
 #comVotes .negative-bar {
   flex-shrink: 0;
@@ -500,29 +458,24 @@ table tr:hover {
   text-align: center;
   color: white;
 }
-
 #comVotes .positive-bar {
   background: green;
 }
-
 #comVotes .negative-bar {
   background: red;
 }
-
 #comVotes .vote-buttons {
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
 }
-
 #comVotes .vote-buttons img {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease, opacity 0.2s ease;
   border: none;
 }
-
 #comVotes .vote-buttons button {
   border: none;
   background: transparent;
@@ -531,28 +484,23 @@ table tr:hover {
   cursor: pointer;
   outline: none;
 }
-
 .top-community-wrapper a {
   text-decoration: none;
   color: inherit;
 }
-
 #comVotes .vote-buttons img:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
-
 #comVotes .vote-buttons img:active {
   transform: scale(0.9);
 }
-
 #total-votes,
 #reset-timer {
   font-size: 0.75rem;
   color: #666;
   margin-top: 0.25rem;
 }
-
 #trending-reset-timer {
   font-size: 0.6rem;
   color: #666;
@@ -560,12 +508,11 @@ table tr:hover {
   text-align: center;
 }
 
-/* Paginering */
+/* === PAGINERING === */
 .pagination-container {
   text-align: center;
   margin-top: 15px;
 }
-
 .pagination-container button {
   background-color: #222;
   color: white;
@@ -575,112 +522,16 @@ table tr:hover {
   cursor: pointer;
   border-radius: 4px;
 }
-
 .pagination-container button:hover {
   background-color: #444;
 }
-
 .pagination-container button:disabled {
   background-color: #555;
   cursor: default;
   opacity: 0.5;
 }
-
 .pagination-container .active {
   background-color: #07b5e056;
   color: black;
   font-weight: bold;
-}
-
-/* Filter container */
-.filter-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.filter-container label {
-  font-weight: bold;
-}
-
-/* Custom dropdown */
-.custom-dropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 200px;
-}
-
-.custom-dropdown-selected {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.custom-dropdown-selected img.chain-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.custom-dropdown-options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #fff;
-  z-index: 1000;
-  display: none;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.custom-dropdown-option {
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-}
-
-.custom-dropdown-option img.chain-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.custom-dropdown-option:hover {
-  background: #f0f0f0;
-}
-
-/* Dropdown hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Cookie banner styling */
-.cookie-banner button {
-  padding: 6px 12px;
-  font-size: 14px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
-.cookie-banner a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* Table footer logo */
-.table-footer-logo {
-  text-align: right;
-  margin-top: 10px;
-  opacity: 0.9;
-}
-
-.table-footer-logo img {
-  width: 250px;
-  height: auto;
 }
