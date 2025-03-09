@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange Info</title>
-    <link rel="stylesheet" href="./styles/exchange.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exchange Info</title>
+  <link rel="stylesheet" href="./styles/exchange.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
 </head>
+<body>
   <!-- Header -->
   <header id="header"></header>
-  <body>
 
-    <div class="container">
-        <h2 id="exchange-name">Loading...</h2>
-    
-        <div class="logo">
-            <img id="exchange-logo" src="" alt="Exchange Logo">
-        </div>
-    
-        <div class="info-card">
-            <h3>Exchange Information</h3>
-            <p id="website"></p> 
-            <p><strong>Name:</strong> <span id="name">Loading...</span></p>
-            <p><strong>Year Established:</strong> <span id="year">Loading...</span></p>
-            <p><strong>Description:</strong> <span id="description">Loading...</span></p>
-        </div>
-        
-        <div class="social-card">
-            <h3>Social Media</h3>
-            <p>
-                <a id="twitter" href="#" target="_blank"><img src="assets/UI/twitter.png" class="icon"></a>
-                <a id="facebook" href="#" target="_blank"><img src="assets/UI/facebook.png" class="icon"></a>
-                <a id="reddit" href="#" target="_blank"><img src="assets/UI/reddit.png" class="icon"></a>
-                <a id="telegram" href="#" target="_blank"><img src="assets/UI/telegram.png" class="icon"></a>
-                <a id="discord" href="#" target="_blank"><img src="assets/UI/discord.png" class="icon"></a>
-                <a id="other-links" href="#" target="_blank"><img src="assets/UI/link.png" class="icon"></a>
-            </p>
-        </div>
-        
-    
-        <div class="trading-card">
-            <h3>Trading Data</h3>
-            <p><strong>Pairs:</strong> <span id="pairs">Loading...</span></p>
-            <p><strong>24h Trade Volume:</strong> <span id="trade-volume">Loading...</span></p>
-        </div>
-    
-        <div class="markets">
-            <h3>Trading Pairs</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Base Coin</th>
-                        <th>Target Coin</th>
-                        <th>Last Price (USD)</th>
-                        <th>Volume (24h)</th>
-                    </tr>
-                </thead>
-                <tbody id="market-table">
-                    <!-- Dynamic data will be inserted here -->
-                </tbody>
-            </table>
-        </div>
+  <div class="container">
+    <h2 id="exchange-name">Loading...</h2>
+
+    <div class="logo">
+      <img id="exchange-logo" src="" alt="Exchange Logo" />
     </div>
+
+    <div class="info-card">
+      <h3>Exchange Information</h3>
+      <p id="website"></p>
+      <p><strong>Name:</strong> <span id="name">Loading...</span></p>
+      <p><strong>Year Established:</strong> <span id="year">Loading...</span></p>
+      <p><strong>Description:</strong> <span id="description">Loading...</span></p>
+    </div>
+
+    <div class="social-card">
+      <h3>Social Media</h3>
+      <p>
+        <a id="twitter" href="#" target="_blank"><img src="assets/UI/twitter.png" class="icon" /></a>
+        <a id="facebook" href="#" target="_blank"><img src="assets/UI/facebook.png" class="icon" /></a>
+        <a id="reddit" href="#" target="_blank"><img src="assets/UI/reddit.png" class="icon" /></a>
+        <a id="telegram" href="#" target="_blank"><img src="assets/UI/telegram.png" class="icon" /></a>
+        <a id="discord" href="#" target="_blank"><img src="assets/UI/discord.png" class="icon" /></a>
+        <a id="other-links" href="#" target="_blank"><img src="assets/UI/link.png" class="icon" /></a>
+      </p>
+    </div>
+
+    <div class="trading-card">
+      <h3>Trading Data</h3>
+      <p><strong>Pairs:</strong> <span id="pairs">Loading...</span></p>
+      <p><strong>24h Trade Volume:</strong> <span id="trade-volume">Loading...</span></p>
+    </div>
+
+    <div class="markets">
+      <h3>Trading Pairs</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Base Coin</th>
+            <th>Target Coin</th>
+            <th>Last Price (USD)</th>
+            <th>Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="market-table">
+          <!-- Dynamische data wordt hier ingevuld -->
+        </tbody>
+      </table>
+      <!-- Pagination container: De knoppen worden hier via JS ingevuld -->
+      <div id="pagination" class="pagination-container"></div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer id="footer">
     <p>&copy; 2025 Nodalis. All rights reserved.</p>
   </footer>
-<script src="./scripts/exchange.js"></script>
-<script src="./scripts/header.js"></script>
-<script src="./scripts/footer.js"></script>
+
+  <script src="./scripts/exchange.js"></script>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
 </body>
 </html>

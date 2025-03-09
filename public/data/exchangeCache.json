@@ -1,0 +1,3706 @@
+{
+  "ebisus-bay": {
+    "name": "Ebisu's Bay",
+    "year_established": 2021,
+    "country": null,
+    "description": "",
+    "url": "https://swap.ebisusbay.com/#/swap",
+    "image": "https://coin-images.coingecko.com/markets/images/1532/small/ebisusbay.jpeg?1711939020",
+    "facebook_url": "",
+    "reddit_url": "",
+    "telegram_url": "",
+    "slack_url": "",
+    "other_url_1": "",
+    "other_url_2": "",
+    "twitter_handle": "EbisusBay",
+    "has_trading_incentive": false,
+    "centralized": false,
+    "public_notice": "",
+    "alert_notice": "",
+    "trust_score": 2,
+    "trust_score_rank": 656,
+    "coins": 11,
+    "pairs": 14,
+    "trade_volume_24h_btc": 0.153060472704504,
+    "trade_volume_24h_btc_normalized": 0,
+    "tickers": [
+      {
+        "base": "0XAF02D78F39C0002D14B95A3BE272DA02379AFF21",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.02197018288,
+        "volume": 2259513.62834783,
+        "converted_last": {
+          "btc": 2.1786e-8,
+          "eth": 8.86736e-7,
+          "usd": 0.00179792
+        },
+        "converted_volume": {
+          "btc": 0.04868694,
+          "eth": 1.981694,
+          "usd": 4018.03
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604548,
+        "timestamp": "2025-03-09T19:15:16+00:00",
+        "last_traded_at": "2025-03-09T19:15:16+00:00",
+        "last_fetch_at": "2025-03-09T19:17:41+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0xaf02d78f39c0002d14b95a3be272da02379aff21&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "ebisusbay-fortune",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XAF02D78F39C0002D14B95A3BE272DA02379AFF21",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.00178914267,
+        "volume": 1929920.18528222,
+        "converted_last": {
+          "btc": 2.1755e-8,
+          "eth": 8.85497e-7,
+          "usd": 0.00179541
+        },
+        "converted_volume": {
+          "btc": 0.0443551,
+          "eth": 1.805376,
+          "usd": 3660.53
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.608636,
+        "timestamp": "2025-03-09T18:19:55+00:00",
+        "last_traded_at": "2025-03-09T18:19:55+00:00",
+        "last_fetch_at": "2025-03-09T19:17:41+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0xaf02d78f39c0002d14b95a3be272da02379aff21&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "ebisusbay-fortune",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.08154899265,
+        "volume": 43790.9537570131,
+        "converted_last": {
+          "btc": 9.916e-7,
+          "eth": 0.00004042,
+          "usd": 0.081713
+        },
+        "converted_volume": {
+          "btc": 0.04607204,
+          "eth": 1.878128,
+          "usd": 3796.58
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.615963,
+        "timestamp": "2025-03-09T19:10:43+00:00",
+        "last_traded_at": "2025-03-09T19:10:43+00:00",
+        "last_fetch_at": "2025-03-09T19:15:29+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "wrapped-cro",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X288898A6057D2D4989C533E96CB3BC30843C91D7",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 4.800117965e-7,
+        "volume": 19034717708.7665,
+        "converted_last": {
+          "btc": 4.7598e-13,
+          "eth": 1.9374e-11,
+          "usd": 3.9282e-8
+        },
+        "converted_volume": {
+          "btc": 0.00913647,
+          "eth": 0.37187988,
+          "usd": 754.01
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606472,
+        "timestamp": "2025-03-09T19:05:03+00:00",
+        "last_traded_at": "2025-03-09T19:05:03+00:00",
+        "last_fetch_at": "2025-03-09T19:17:41+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x288898a6057d2d4989c533e96cb3bc30843c91d7&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "puush-da-button",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X055C517654D72A45B0D64DC8733F8A38E27FD49C",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 3.382049375e-9,
+        "volume": 636136691825.759,
+        "converted_last": {
+          "btc": 3.354e-15,
+          "eth": 1.36502e-13,
+          "usd": 2.76769e-10
+        },
+        "converted_volume": {
+          "btc": 0.00214211,
+          "eth": 0.08718992,
+          "usd": 176.78
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606898,
+        "timestamp": "2025-03-09T18:51:45+00:00",
+        "last_traded_at": "2025-03-09T18:51:45+00:00",
+        "last_fetch_at": "2025-03-09T19:17:41+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x055c517654d72a45b0d64dc8733f8a38e27fd49c&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "ryoshi-with-knife",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X8F857AF6EA31447BB502FE0E3F4E4340CDFCFC6C",
+        "target": "0X9FAE23A2700FEECD5B93E43FDBC03C76AA7C08A6",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.237617449,
+        "volume": 191.2771269017,
+        "converted_last": {
+          "btc": 2.47737e-7,
+          "eth": 0.00000895,
+          "usd": 0.02357363
+        },
+        "converted_volume": {
+          "btc": 0.00001626,
+          "eth": 0.00058757,
+          "usd": 1.55
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 0.619141,
+        "timestamp": "2025-03-09T17:35:21+00:00",
+        "last_traded_at": "2025-03-09T17:35:21+00:00",
+        "last_fetch_at": "2025-03-09T19:15:29+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x8f857af6ea31447bb502fe0e3f4e4340cdfcfc6c&outputCurrency=0x9fae23a2700feecd5b93e43fdbc03c76aa7c08a6",
+        "token_info_url": null,
+        "coin_id": "icycro",
+        "target_coin_id": "liquid-cro"
+      },
+      {
+        "base": "0XCCCCCCCCDBEC186DC426F8B5628AF94737DF0E60",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 2.810059505e-7,
+        "volume": 1887012941.14332,
+        "converted_last": {
+          "btc": 2.78758e-13,
+          "eth": 1.138e-11,
+          "usd": 2.2981e-8
+        },
+        "converted_volume": {
+          "btc": 0.00053209,
+          "eth": 0.02172243,
+          "usd": 43.87
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 0.674625,
+        "timestamp": "2025-03-09T16:45:30+00:00",
+        "last_traded_at": "2025-03-09T16:45:30+00:00",
+        "last_fetch_at": "2025-03-09T19:07:49+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0xccccccccdbec186dc426f8b5628af94737df0e60&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crow-with-knife",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X664E4B17EA045FE92868821F3EE0A76A5DB38166",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.00001427613089,
+        "volume": 98440385.5316661,
+        "converted_last": {
+          "btc": 1.4654e-11,
+          "eth": 5.98238e-10,
+          "usd": 0.00000121
+        },
+        "converted_volume": {
+          "btc": 0.00142679,
+          "eth": 0.05824807,
+          "usd": 117.62
+        },
+        "trust_score": null,
+        "bid_ask_spread_percentage": 0.872865,
+        "timestamp": "2025-03-09T19:07:49+00:00",
+        "last_traded_at": "2025-03-09T19:07:49+00:00",
+        "last_fetch_at": "2025-03-09T19:07:49+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x664e4b17ea045fe92868821f3ee0a76a5db38166&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "robin-on-cronos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XCCCCCCCCDBEC186DC426F8B5628AF94737DF0E60",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 3.033893164e-8,
+        "volume": 2616947748.05871,
+        "converted_last": {
+          "btc": 3.26447e-13,
+          "eth": 1.232e-11,
+          "usd": 3.0359e-8
+        },
+        "converted_volume": {
+          "btc": 0.0007527,
+          "eth": 0.02840685,
+          "usd": 70
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.996664,
+        "timestamp": "2025-03-03T01:44:31+00:00",
+        "last_traded_at": "2025-03-03T01:44:31+00:00",
+        "last_fetch_at": "2025-03-03T01:57:19+00:00",
+        "is_anomaly": false,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0xccccccccdbec186dc426f8b5628af94737df0e60&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "crow-with-knife",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X212331E1435A8DF230715DB4C02B2A3A0ABF8C61",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.05090960954,
+        "volume": 14081.8082304527,
+        "converted_last": {
+          "btc": 5.0502e-8,
+          "eth": 0.00000206,
+          "usd": 0.00416342
+        },
+        "converted_volume": {
+          "btc": 0.00070742,
+          "eth": 0.02888003,
+          "usd": 58.32
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 0.752066,
+        "timestamp": "2025-03-09T09:08:27+00:00",
+        "last_traded_at": "2025-03-09T09:08:27+00:00",
+        "last_fetch_at": "2025-03-09T19:07:49+00:00",
+        "is_anomaly": false,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x212331e1435a8df230715db4c02b2a3a0abf8c61&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "mad-bucks",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X055C517654D72A45B0D64DC8733F8A38E27FD49C",
+        "target": "0XAF02D78F39C0002D14B95A3BE272DA02379AFF21",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 1.55491215e-7,
+        "volume": 20097677942.3128,
+        "converted_last": {
+          "btc": 3.389e-15,
+          "eth": 1.38352e-13,
+          "usd": 2.79146e-10
+        },
+        "converted_volume": {
+          "btc": 0.00006811,
+          "eth": 0.00278055,
+          "usd": 5.61
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 0.812883,
+        "timestamp": "2025-03-09T04:55:59+00:00",
+        "last_traded_at": "2025-03-09T04:55:59+00:00",
+        "last_fetch_at": "2025-03-09T19:08:50+00:00",
+        "is_anomaly": false,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x055c517654d72a45b0d64dc8733f8a38e27fd49c&outputCurrency=0xaf02d78f39c0002d14b95a3be272da02379aff21",
+        "token_info_url": null,
+        "coin_id": "ryoshi-with-knife",
+        "target_coin_id": "ebisusbay-fortune"
+      },
+      {
+        "base": "0X13C0FF45D019A5888DB92631F18556211001883D",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.002889203507,
+        "volume": 96135.8135686965,
+        "converted_last": {
+          "btc": 2.673e-9,
+          "eth": 1.04353e-7,
+          "usd": 0.00024593
+        },
+        "converted_volume": {
+          "btc": 0.00025569,
+          "eth": 0.0099815,
+          "usd": 23.52
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 0.963156,
+        "timestamp": "2025-03-03T02:51:44+00:00",
+        "last_traded_at": "2025-03-03T02:51:44+00:00",
+        "last_fetch_at": "2025-03-03T10:31:31+00:00",
+        "is_anomaly": true,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x13c0ff45d019a5888db92631f18556211001883d&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "president-platy",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XD50F5739A09F36C6F97CC9A4849C5462BA6129A3",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.00118325117,
+        "volume": 189502.784945378,
+        "converted_last": {
+          "btc": 1.253e-9,
+          "eth": 4.9437e-8,
+          "usd": 0.00010761
+        },
+        "converted_volume": {
+          "btc": 0.00024288,
+          "eth": 0.00958401,
+          "usd": 20.86
+        },
+        "trust_score": "gray",
+        "bid_ask_spread_percentage": 1.02764,
+        "timestamp": "2025-03-09T05:59:13+00:00",
+        "last_traded_at": "2025-03-09T05:59:13+00:00",
+        "last_fetch_at": "2025-03-09T06:25:44+00:00",
+        "is_anomaly": true,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "croginal-cats",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X50AA2611004B3252030CC95E9C5A2A44DFED9983",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "Ebisu's Bay",
+          "identifier": "ebisus-bay",
+          "has_trading_incentive": false
+        },
+        "last": 0.000001233401965,
+        "volume": 28387806.9403248,
+        "converted_last": {
+          "btc": 1.195e-12,
+          "eth": 4.845e-11,
+          "usd": 1.05324e-7
+        },
+        "converted_volume": {
+          "btc": 0.00003392,
+          "eth": 0.00137538,
+          "usd": 2.99
+        },
+        "trust_score": null,
+        "bid_ask_spread_percentage": 0.613822,
+        "timestamp": "2025-03-07T14:40:15+00:00",
+        "last_traded_at": "2025-03-07T14:40:15+00:00",
+        "last_fetch_at": "2025-03-07T18:06:57+00:00",
+        "is_anomaly": true,
+        "is_stale": true,
+        "trade_url": "https://swap.ebisusbay.com/#/swap?inputCurrency=0x50aa2611004b3252030cc95e9c5a2a44dfed9983&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crononymous",
+        "target_coin_id": "wrapped-cro"
+      }
+    ],
+    "status_updates": []
+  },
+  "vvs-finance": {
+    "name": "VVS Finance",
+    "year_established": 2021,
+    "country": null,
+    "description": "",
+    "url": "https://vvs.finance/swap",
+    "image": "https://coin-images.coingecko.com/markets/images/736/small/vvs-finance.jpeg?1706864699",
+    "facebook_url": "",
+    "reddit_url": "",
+    "telegram_url": "",
+    "slack_url": "",
+    "other_url_1": "",
+    "other_url_2": "",
+    "twitter_handle": "",
+    "has_trading_incentive": false,
+    "centralized": false,
+    "public_notice": "",
+    "alert_notice": "",
+    "trust_score": 5,
+    "trust_score_rank": 191,
+    "coins": 79,
+    "pairs": 144,
+    "trade_volume_24h_btc": 80.47022811783597,
+    "trade_volume_24h_btc_normalized": 20.415751956884353,
+    "tickers": [
+      {
+        "base": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.08211600435,
+        "volume": 28240726.8563233,
+        "converted_last": {
+          "btc": 9.94971e-7,
+          "eth": 0.00004049,
+          "usd": 0.082145
+        },
+        "converted_volume": {
+          "btc": 29.56208,
+          "eth": 1203,
+          "usd": 2440666
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.602772,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "wrapped-cro",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X9D8C68F185A04314DDC8B8216732455E8DBB7E45",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.06615442682,
+        "volume": 375763855.39802,
+        "converted_last": {
+          "btc": 6.5585e-8,
+          "eth": 0.00000267,
+          "usd": 0.00541471
+        },
+        "converted_volume": {
+          "btc": 24.419826,
+          "eth": 993.8,
+          "usd": 2016118
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.602749,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x9d8c68f185a04314ddc8b8216732455e8dbb7e45&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "loaded-lions",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X062E66477FAF219F25D27DCED647BF57C3107D52",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1006171.76035331,
+        "volume": 4.92598318,
+        "converted_last": {
+          "btc": 0.99919273,
+          "eth": 40.663586,
+          "usd": 82494
+        },
+        "converted_volume": {
+          "btc": 4.790754,
+          "eth": 194.967,
+          "usd": 395528
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.602829,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x062e66477faf219f25d27dced647bf57c3107d52&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-wbtc-cronos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 24696.4009488576,
+        "volume": 134.6523678013,
+        "converted_last": {
+          "btc": 0.02448895,
+          "eth": 0.99661311,
+          "usd": 2021.83
+        },
+        "converted_volume": {
+          "btc": 3.300819,
+          "eth": 134.332,
+          "usd": 272518
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.602973,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "bridged-weth",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 12.1869930409,
+        "volume": 210541.236588,
+        "converted_last": {
+          "btc": 0.00001208,
+          "eth": 0.0004918,
+          "usd": 0.997715
+        },
+        "converted_volume": {
+          "btc": 2.430176,
+          "eth": 98.9,
+          "usd": 200637
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.603335,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdt-cronos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 12.2270574646,
+        "volume": 93254.9457750755,
+        "converted_last": {
+          "btc": 0.00001212,
+          "eth": 0.00049342,
+          "usd": 1.001
+        },
+        "converted_volume": {
+          "btc": 1.075545,
+          "eth": 43.770845,
+          "usd": 88798
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.603137,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "orby-network-usc-stablecoin",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XB888D8DD1733D72681B30C00EE76BDE93AE7AA93",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 46.2216220089,
+        "volume": 15722.842197,
+        "converted_last": {
+          "btc": 0.00004583,
+          "eth": 0.00186525,
+          "usd": 3.78
+        },
+        "converted_volume": {
+          "btc": 0.7242222,
+          "eth": 29.473265,
+          "usd": 59792
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.603278,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xb888d8dd1733d72681b30c00ee76bde93ae7aa93&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "cosmos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 494369.440733153,
+        "volume": 38616.010305,
+        "converted_last": {
+          "btc": 0.00001208,
+          "eth": 0.0004918,
+          "usd": 0.997715
+        },
+        "converted_volume": {
+          "btc": 0.44076742,
+          "eth": 17.937664,
+          "usd": 36390
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.603469,
+        "timestamp": "2025-03-09T19:14:53+00:00",
+        "last_traded_at": "2025-03-09T19:14:53+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdt-cronos",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001700185266,
+        "volume": 206172391.072589,
+        "converted_last": {
+          "btc": 2.067e-9,
+          "eth": 8.4111e-8,
+          "usd": 0.00017064
+        },
+        "converted_volume": {
+          "btc": 0.4487913,
+          "eth": 18.264208,
+          "usd": 37053
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.604604,
+        "timestamp": "2025-03-09T19:08:35+00:00",
+        "last_traded_at": "2025-03-09T19:08:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.002084293854,
+        "volume": 193923665.201272,
+        "converted_last": {
+          "btc": 2.067e-9,
+          "eth": 8.4111e-8,
+          "usd": 0.00017064
+        },
+        "converted_volume": {
+          "btc": 0.39917315,
+          "eth": 16.244926,
+          "usd": 32956
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.603795,
+        "timestamp": "2025-03-09T19:16:25+00:00",
+        "last_traded_at": "2025-03-09T19:16:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X1A8E39AE59E5556B56B76FCBA98D22C9AE557396",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 2.0814357292,
+        "volume": 124786.36274292,
+        "converted_last": {
+          "btc": 0.00000206,
+          "eth": 0.000084,
+          "usd": 0.170401
+        },
+        "converted_volume": {
+          "btc": 0.2655794,
+          "eth": 10.808136,
+          "usd": 21926
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.604916,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x1a8e39ae59e5556b56b76fcba98d22c9ae557396&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "dogecoin",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X747D6C858168B8CD6E537160320B5DE58FD3367C",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 3.2501847128,
+        "volume": 52508.379129,
+        "converted_last": {
+          "btc": 0.00000322,
+          "eth": 0.00013116,
+          "usd": 0.266084
+        },
+        "converted_volume": {
+          "btc": 0.16473006,
+          "eth": 6.703927,
+          "usd": 13600.23
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.605338,
+        "timestamp": "2025-03-09T18:57:33+00:00",
+        "last_traded_at": "2025-03-09T18:57:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x747d6c858168b8cd6e537160320b5de58fd3367c&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "stellar",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X45C135C1CDCE8D25A3B729A28659561385C52671",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.06684759223,
+        "volume": 2328712.34279005,
+        "converted_last": {
+          "btc": 6.5792e-8,
+          "eth": 0.00000268,
+          "usd": 0.0054318
+        },
+        "converted_volume": {
+          "btc": 0.15640685,
+          "eth": 6.365202,
+          "usd": 12913.06
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.605913,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x45c135c1cdce8d25a3b729a28659561385c52671&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "alethea-artificial-liquid-intelligence-token",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XF2001B145B43032AAF5EE2884E456CCD805F677D",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 12.2198532628,
+        "volume": 11223.5524816942,
+        "converted_last": {
+          "btc": 0.00001216,
+          "eth": 0.00049468,
+          "usd": 1.004
+        },
+        "converted_volume": {
+          "btc": 0.12899192,
+          "eth": 5.249512,
+          "usd": 10649.66
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.607925,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xf2001b145b43032aaf5ee2884e456ccd805f677d&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crypto-com-bridged-dai-cronos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.01061329977,
+        "volume": 810803.10824299,
+        "converted_last": {
+          "btc": 1.28247e-7,
+          "eth": 0.00000522,
+          "usd": 0.01058819
+        },
+        "converted_volume": {
+          "btc": 0.10785759,
+          "eth": 4.38942,
+          "usd": 8904.8
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.610045,
+        "timestamp": "2025-03-09T18:23:33+00:00",
+        "last_traded_at": "2025-03-09T18:23:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0224010ba2d567ffa014222ed960d1fa43b8c8e1&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "minted",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X39BC1E38C842C60775CE37566D03B41A7A66C782",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.001146947148,
+        "volume": 1271230.75567525,
+        "converted_last": {
+          "btc": 1.3922e-8,
+          "eth": 5.67253e-7,
+          "usd": 0.0011474
+        },
+        "converted_volume": {
+          "btc": 0.01895059,
+          "eth": 0.7721243,
+          "usd": 1561.8
+        },
+        "trust_score": "green",
+        "bid_ask_spread_percentage": 0.620176,
+        "timestamp": "2025-03-09T19:01:23+00:00",
+        "last_traded_at": "2025-03-09T19:01:23+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x39bc1e38c842c60775ce37566d03b41a7a66c782&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "ferro",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00002463619748,
+        "volume": 84557364277.2143,
+        "converted_last": {
+          "btc": 2.4429e-11,
+          "eth": 9.94184e-10,
+          "usd": 0.00000202
+        },
+        "converted_volume": {
+          "btc": 2.068829,
+          "eth": 84.194,
+          "usd": 170804
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602718,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.9965774134,
+        "volume": 13311.524161,
+        "converted_last": {
+          "btc": 0.00001208,
+          "eth": 0.0004918,
+          "usd": 0.997715
+        },
+        "converted_volume": {
+          "btc": 0.16108197,
+          "eth": 6.555463,
+          "usd": 13299.04
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602721,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdt-cronos",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000002020542509,
+        "volume": 61118288112.3224,
+        "converted_last": {
+          "btc": 2.4577e-11,
+          "eth": 1e-9,
+          "usd": 0.00000203
+        },
+        "converted_volume": {
+          "btc": 1.595484,
+          "eth": 64.931,
+          "usd": 131724
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603165,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X63ED0A82CAC237667C89CD6AC5BFA2317186FDAA",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.1576256028,
+        "volume": 913745.08861728,
+        "converted_last": {
+          "btc": 1.56302e-7,
+          "eth": 0.00000636,
+          "usd": 0.01290437
+        },
+        "converted_volume": {
+          "btc": 0.14319234,
+          "eth": 5.827418,
+          "usd": 11822.06
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602748,
+        "timestamp": "2025-03-09T19:03:32+00:00",
+        "last_traded_at": "2025-03-09T19:03:32+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x63ed0a82cac237667c89cd6ac5bfa2317186fdaa&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crob-mob",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X3B41B27E74DD366CE27CB389DC7877D4E1516D4D",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001507917958,
+        "volume": 8327137031.03135,
+        "converted_last": {
+          "btc": 1.49525e-10,
+          "eth": 6.085e-9,
+          "usd": 0.00001234
+        },
+        "converted_volume": {
+          "btc": 1.241728,
+          "eth": 50.534,
+          "usd": 102518
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603196,
+        "timestamp": "2025-03-09T19:14:53+00:00",
+        "last_traded_at": "2025-03-09T19:14:53+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x3b41b27e74dd366ce27cb389dc7877d4e1516d4d&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "mistery",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XCCCCCCCCDBEC186DC426F8B5628AF94737DF0E60",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 2.757047617e-7,
+        "volume": 2975583456570.64,
+        "converted_last": {
+          "btc": 2.75027e-13,
+          "eth": 1.1193e-11,
+          "usd": 2.2706e-8
+        },
+        "converted_volume": {
+          "btc": 0.83978539,
+          "eth": 34.176275,
+          "usd": 69333
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602901,
+        "timestamp": "2025-03-09T19:18:26+00:00",
+        "last_traded_at": "2025-03-09T19:18:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xccccccccdbec186dc426f8b5628af94737df0e60&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crow-with-knife",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X7A7C9DB510AB29A2FC362A4C34260BECB5CE3446",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.0457393137,
+        "volume": 4.0106119611,
+        "converted_last": {
+          "btc": 0.02561825,
+          "eth": 1.042572,
+          "usd": 2115.06
+        },
+        "converted_volume": {
+          "btc": 0.10242806,
+          "eth": 4.168457,
+          "usd": 8456.53
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602771,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x7a7c9db510ab29a2fc362a4c34260becb5ce3446&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "crypto-com-staked-eth",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.0044988043,
+        "volume": 30544.4132094648,
+        "converted_last": {
+          "btc": 0.00001217,
+          "eth": 0.00049532,
+          "usd": 1.005
+        },
+        "converted_volume": {
+          "btc": 0.3713808,
+          "eth": 15.113876,
+          "usd": 30661
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602823,
+        "timestamp": "2025-03-09T19:16:25+00:00",
+        "last_traded_at": "2025-03-09T19:16:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "orby-network-usc-stablecoin",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X9BE47E9DCA99A6F5CB3666D079571EC229AE2CA4",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.006248405232,
+        "volume": 17610721.3792343,
+        "converted_last": {
+          "btc": 6.196e-9,
+          "eth": 2.52152e-7,
+          "usd": 0.00051154
+        },
+        "converted_volume": {
+          "btc": 0.10886211,
+          "eth": 4.4303,
+          "usd": 8987.73
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602813,
+        "timestamp": "2025-03-09T18:57:34+00:00",
+        "last_traded_at": "2025-03-09T18:57:34+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x9be47e9dca99a6f5cb3666d079571ec229ae2ca4&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "buy-the-dip",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X75689264A5E2DAB1B27DDFB2B10592872139659A",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.07978267787,
+        "volume": 334392.894211966,
+        "converted_last": {
+          "btc": 7.9113e-8,
+          "eth": 0.00000322,
+          "usd": 0.00653158
+        },
+        "converted_volume": {
+          "btc": 0.02648349,
+          "eth": 1.077784,
+          "usd": 2186.5
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.60281,
+        "timestamp": "2025-03-09T19:08:35+00:00",
+        "last_traded_at": "2025-03-09T19:08:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x75689264a5e2dab1b27ddfb2b10592872139659a&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "loaf-token",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X96733708C4157218B6E6889EB9E16B1DF7873061",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 22.4939973552,
+        "volume": 10536.5512676967,
+        "converted_last": {
+          "btc": 0.00002231,
+          "eth": 0.00090774,
+          "usd": 1.84
+        },
+        "converted_volume": {
+          "btc": 0.23616265,
+          "eth": 9.610979,
+          "usd": 19497.76
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602894,
+        "timestamp": "2025-03-09T19:16:25+00:00",
+        "last_traded_at": "2025-03-09T19:16:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x96733708c4157218b6e6889eb9e16b1df7873061&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "agentfun-ai",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X02DCCAF514C98451320A9365C5B46C61D3246FF3",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000001639900988,
+        "volume": 295776145378.429,
+        "converted_last": {
+          "btc": 1.634e-12,
+          "eth": 6.6513e-11,
+          "usd": 1.34934e-7
+        },
+        "converted_volume": {
+          "btc": 0.48345221,
+          "eth": 19.674783,
+          "usd": 39914
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.605403,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x02dccaf514c98451320a9365c5b46c61d3246ff3&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "dogelon-mars",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001421816675,
+        "volume": 3134711029.5894,
+        "converted_last": {
+          "btc": 1.40987e-10,
+          "eth": 5.738e-9,
+          "usd": 0.00001164
+        },
+        "converted_volume": {
+          "btc": 0.44005153,
+          "eth": 17.90853,
+          "usd": 36331
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604295,
+        "timestamp": "2025-03-09T18:37:33+00:00",
+        "last_traded_at": "2025-03-09T18:37:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xbed48612bc69fa1cab67052b42a95fb30c1bcfee&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "shiba-inu",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X9D8C68F185A04314DDC8B8216732455E8DBB7E45",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0003744746917,
+        "volume": 17165232883.96,
+        "converted_last": {
+          "btc": 2.456e-11,
+          "eth": 9.99496e-10,
+          "usd": 0.00000203
+        },
+        "converted_volume": {
+          "btc": 0.42460918,
+          "eth": 17.280082,
+          "usd": 35056
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604494,
+        "timestamp": "2025-03-09T18:59:36+00:00",
+        "last_traded_at": "2025-03-09T18:59:36+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x9d8c68f185a04314ddc8b8216732455e8dbb7e45",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "loaded-lions"
+      },
+      {
+        "base": "0XF24409D155965CA87C45AD5BC084AD8AD3BE4F39",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00001592774585,
+        "volume": 9178304477.37503,
+        "converted_last": {
+          "btc": 1.5794e-11,
+          "eth": 6.42758e-10,
+          "usd": 0.0000013
+        },
+        "converted_volume": {
+          "btc": 0.14541752,
+          "eth": 5.917975,
+          "usd": 12005.77
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.602955,
+        "timestamp": "2025-03-09T19:14:53+00:00",
+        "last_traded_at": "2025-03-09T19:14:53+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xf24409d155965ca87c45ad5bc084ad8ad3be4f39&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "capybara-nation",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.01182265995,
+        "volume": 8061181770.03394,
+        "converted_last": {
+          "btc": 2.4435e-11,
+          "eth": 9.94414e-10,
+          "usd": 0.00000202
+        },
+        "converted_volume": {
+          "btc": 0.19870779,
+          "eth": 8.086699,
+          "usd": 16405.46
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603428,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "corgiai"
+      },
+      {
+        "base": "0XD2EE4BD0D1BE7E84160DC459006F6E0970F8313C",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.03227221868,
+        "volume": 5834537.74273515,
+        "converted_last": {
+          "btc": 3.2001e-8,
+          "eth": 0.0000013,
+          "usd": 0.00264204
+        },
+        "converted_volume": {
+          "btc": 0.18947317,
+          "eth": 7.710883,
+          "usd": 15643.04
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603468,
+        "timestamp": "2025-03-09T19:12:33+00:00",
+        "last_traded_at": "2025-03-09T19:12:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "h2",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XDD73DEA10ABC2BFF99C60882EC5B2B81BB1DC5B2",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 3.085508093e-8,
+        "volume": 569781119036.441,
+        "converted_last": {
+          "btc": 3.7386e-13,
+          "eth": 1.5215e-11,
+          "usd": 3.0866e-8
+        },
+        "converted_volume": {
+          "btc": 0.22206507,
+          "eth": 9.037258,
+          "usd": 18333.85
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604378,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xdd73dea10abc2bff99c60882ec5b2b81bb1dc5b2&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "tectonic",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0588926688,
+        "volume": 3140368.59396748,
+        "converted_last": {
+          "btc": 5.8398e-8,
+          "eth": 0.00000238,
+          "usd": 0.00482138
+        },
+        "converted_volume": {
+          "btc": 0.18244807,
+          "eth": 7.424987,
+          "usd": 15063.04
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603912,
+        "timestamp": "2025-03-09T19:10:35+00:00",
+        "last_traded_at": "2025-03-09T19:10:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x83afb1c32e5637acd0a452d87c3249f4a9f0013a&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "fulcrom",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XDD73DEA10ABC2BFF99C60882EC5B2B81BB1DC5B2",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 3.759102373e-7,
+        "volume": 484378115089.573,
+        "converted_last": {
+          "btc": 3.72753e-13,
+          "eth": 1.517e-11,
+          "usd": 3.0775e-8
+        },
+        "converted_volume": {
+          "btc": 0.17770455,
+          "eth": 7.231942,
+          "usd": 14671.41
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603959,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xdd73dea10abc2bff99c60882ec5b2b81bb1dc5b2&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "tectonic",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "target": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.9976581814,
+        "volume": 3910.3142422736,
+        "converted_last": {
+          "btc": 0.0000122,
+          "eth": 0.00049657,
+          "usd": 1.007
+        },
+        "converted_volume": {
+          "btc": 0.04807685,
+          "eth": 1.956557,
+          "usd": 3969.26
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603076,
+        "timestamp": "2025-03-09T18:05:29+00:00",
+        "last_traded_at": "2025-03-09T18:05:29+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78&outputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770",
+        "token_info_url": null,
+        "coin_id": "orby-network-usc-stablecoin",
+        "target_coin_id": "cronos-bridged-usdt-cronos"
+      },
+      {
+        "base": "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 15792.3296353368,
+        "volume": 371001.184131386,
+        "converted_last": {
+          "btc": 3.88026e-7,
+          "eth": 0.00001579,
+          "usd": 0.03203569
+        },
+        "converted_volume": {
+          "btc": 0.14381782,
+          "eth": 5.852873,
+          "usd": 11873.7
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604313,
+        "timestamp": "2025-03-09T18:53:33+00:00",
+        "last_traded_at": "2025-03-09T18:53:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xcbf0adea24fd5f32c6e7f0474f0d1b94ace4e2e7&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "cronos-id",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001706428033,
+        "volume": 64274551.0856438,
+        "converted_last": {
+          "btc": 2.062e-9,
+          "eth": 8.3922e-8,
+          "usd": 0.00017025
+        },
+        "converted_volume": {
+          "btc": 0.13716597,
+          "eth": 5.582166,
+          "usd": 11324.52
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606862,
+        "timestamp": "2025-03-09T18:19:33+00:00",
+        "last_traded_at": "2025-03-09T18:19:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "cronos-bridged-usdt-cronos"
+      },
+      {
+        "base": "0X062E66477FAF219F25D27DCED647BF57C3107D52",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 82461.855921261,
+        "volume": 0.11760488,
+        "converted_last": {
+          "btc": 0.99916143,
+          "eth": 40.662312,
+          "usd": 82491
+        },
+        "converted_volume": {
+          "btc": 0.12012158,
+          "eth": 4.888521,
+          "usd": 9917.32
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604579,
+        "timestamp": "2025-03-09T19:08:35+00:00",
+        "last_traded_at": "2025-03-09T19:08:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x062e66477faf219f25d27dced647bf57c3107d52&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-wbtc-cronos",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0XB157C8560984EBA102334C5EB4F0416952747A6E",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.01016349678,
+        "volume": 2563784.8688478,
+        "converted_last": {
+          "btc": 1.0078e-8,
+          "eth": 4.10144e-7,
+          "usd": 0.00083206
+        },
+        "converted_volume": {
+          "btc": 0.02577747,
+          "eth": 1.049051,
+          "usd": 2128.21
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603148,
+        "timestamp": "2025-03-09T18:05:29+00:00",
+        "last_traded_at": "2025-03-09T18:05:29+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xb157c8560984eba102334c5eb4f0416952747a6e&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "ballz-of-steel",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X9FAE23A2700FEECD5B93E43FDBC03C76AA7C08A6",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.1696903913,
+        "volume": 25337.5758647753,
+        "converted_last": {
+          "btc": 0.00000116,
+          "eth": 0.0000472,
+          "usd": 0.095759
+        },
+        "converted_volume": {
+          "btc": 0.02921851,
+          "eth": 1.189089,
+          "usd": 2412.3
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.60322,
+        "timestamp": "2025-03-09T18:51:31+00:00",
+        "last_traded_at": "2025-03-09T18:51:31+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x9fae23a2700feecd5b93e43fdbc03c76aa7c08a6&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "liquid-cro",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X96733708C4157218B6E6889EB9E16B1DF7873061",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000001096153443,
+        "volume": 1659027647.32589,
+        "converted_last": {
+          "btc": 2.4429e-11,
+          "eth": 9.94184e-10,
+          "usd": 0.00000202
+        },
+        "converted_volume": {
+          "btc": 0.04033209,
+          "eth": 1.641373,
+          "usd": 3329.85
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603335,
+        "timestamp": "2025-03-09T19:12:33+00:00",
+        "last_traded_at": "2025-03-09T19:12:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x96733708c4157218b6e6889eb9e16b1df7873061",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "agentfun-ai"
+      },
+      {
+        "base": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0004931287857,
+        "volume": 8245.328473,
+        "converted_last": {
+          "btc": 0.00001208,
+          "eth": 0.00049163,
+          "usd": 0.997378
+        },
+        "converted_volume": {
+          "btc": 0.09666648,
+          "eth": 3.933982,
+          "usd": 7980.85
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.605519,
+        "timestamp": "2025-03-09T19:18:25+00:00",
+        "last_traded_at": "2025-03-09T19:18:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdc-cronos",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000420844965,
+        "volume": 3277955500.28709,
+        "converted_last": {
+          "btc": 2.4576e-11,
+          "eth": 1e-9,
+          "usd": 0.00000203
+        },
+        "converted_volume": {
+          "btc": 0.08081478,
+          "eth": 3.288874,
+          "usd": 6672.12
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604575,
+        "timestamp": "2025-03-09T19:10:35+00:00",
+        "last_traded_at": "2025-03-09T19:10:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x83afb1c32e5637acd0a452d87c3249f4a9f0013a",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "fulcrom"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0XDD73DEA10ABC2BFF99C60882EC5B2B81BB1DC5B2",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 65.5433847569,
+        "volume": 2302078122.36185,
+        "converted_last": {
+          "btc": 2.4431e-11,
+          "eth": 9.94274e-10,
+          "usd": 0.00000202
+        },
+        "converted_volume": {
+          "btc": 0.0571493,
+          "eth": 2.325773,
+          "usd": 4718.29
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.603727,
+        "timestamp": "2025-03-09T19:01:38+00:00",
+        "last_traded_at": "2025-03-09T19:01:38+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0xdd73dea10abc2bff99c60882ec5b2b81bb1dc5b2",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "tectonic"
+      },
+      {
+        "base": "0XDB7D0A1EC37DE1DE924F8E8ADAC6ED338D4404E9",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 9324.2732477731,
+        "volume": 166506.865412783,
+        "converted_last": {
+          "btc": 2.30594e-7,
+          "eth": 0.00000938,
+          "usd": 0.01903802
+        },
+        "converted_volume": {
+          "btc": 0.03857114,
+          "eth": 1.569708,
+          "usd": 3184.46
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.60375,
+        "timestamp": "2025-03-09T18:59:35+00:00",
+        "last_traded_at": "2025-03-09T18:59:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xdb7d0a1ec37de1de924f8e8adac6ed338d4404e9&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "veno-finance",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 5247.5450634888,
+        "volume": 397182.336119021,
+        "converted_last": {
+          "btc": 1.28968e-7,
+          "eth": 0.00000525,
+          "usd": 0.01064765
+        },
+        "converted_volume": {
+          "btc": 0.05024514,
+          "eth": 2.044798,
+          "usd": 4148.27
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604112,
+        "timestamp": "2025-03-09T18:35:34+00:00",
+        "last_traded_at": "2025-03-09T18:35:34+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0224010ba2d567ffa014222ed960d1fa43b8c8e1&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "minted",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X7A7C9DB510AB29A2FC362A4C34260BECB5CE3446",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 2111.5597144313,
+        "volume": 2.2757940414,
+        "converted_last": {
+          "btc": 0.02558503,
+          "eth": 1.04122,
+          "usd": 2112.32
+        },
+        "converted_volume": {
+          "btc": 0.0599818,
+          "eth": 2.441046,
+          "usd": 4952.14
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.605773,
+        "timestamp": "2025-03-09T19:12:33+00:00",
+        "last_traded_at": "2025-03-09T19:12:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x7a7c9db510ab29a2fc362a4c34260becb5ce3446&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "crypto-com-staked-eth",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0XDB7D0A1EC37DE1DE924F8E8ADAC6ED338D4404E9",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.2325475863,
+        "volume": 183850.96977814,
+        "converted_last": {
+          "btc": 2.30594e-7,
+          "eth": 0.00000938,
+          "usd": 0.01903802
+        },
+        "converted_volume": {
+          "btc": 0.04222413,
+          "eth": 1.718372,
+          "usd": 3486.05
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604363,
+        "timestamp": "2025-03-09T18:19:33+00:00",
+        "last_traded_at": "2025-03-09T18:19:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xdb7d0a1ec37de1de924f8e8adac6ed338d4404e9&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "veno-finance",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.03198821193,
+        "volume": 139903.071216927,
+        "converted_last": {
+          "btc": 3.8759e-7,
+          "eth": 0.00001577,
+          "usd": 0.0319997
+        },
+        "converted_volume": {
+          "btc": 0.05729853,
+          "eth": 2.331846,
+          "usd": 4730.61
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606183,
+        "timestamp": "2025-03-09T18:53:33+00:00",
+        "last_traded_at": "2025-03-09T18:53:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xcbf0adea24fd5f32c6e7f0474f0d1b94ace4e2e7&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "cronos-id",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0XD2EE4BD0D1BE7E84160DC459006F6E0970F8313C",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000762265137,
+        "volume": 1586965092.61369,
+        "converted_last": {
+          "btc": 2.4393e-11,
+          "eth": 9.92722e-10,
+          "usd": 0.00000201
+        },
+        "converted_volume": {
+          "btc": 0.0383618,
+          "eth": 1.561189,
+          "usd": 3167.18
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604628,
+        "timestamp": "2025-03-09T19:06:39+00:00",
+        "last_traded_at": "2025-03-09T19:06:39+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "h2"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000002018273261,
+        "volume": 1897174760.68473,
+        "converted_last": {
+          "btc": 2.4627e-11,
+          "eth": 1.002e-9,
+          "usd": 0.00000203
+        },
+        "converted_volume": {
+          "btc": 0.04932339,
+          "eth": 2.007286,
+          "usd": 4072.17
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.607202,
+        "timestamp": "2025-03-09T18:21:33+00:00",
+        "last_traded_at": "2025-03-09T18:21:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "orby-network-usc-stablecoin"
+      },
+      {
+        "base": "0X1A8E39AE59E5556B56B76FCBA98D22C9AE557396",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 83726.3582533894,
+        "volume": 20388.20210252,
+        "converted_last": {
+          "btc": 0.00000206,
+          "eth": 0.000084,
+          "usd": 0.170401
+        },
+        "converted_volume": {
+          "btc": 0.04383909,
+          "eth": 1.784095,
+          "usd": 3619.39
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.609194,
+        "timestamp": "2025-03-09T18:29:31+00:00",
+        "last_traded_at": "2025-03-09T18:29:31+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x1a8e39ae59e5556b56b76fcba98d22c9ae557396&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "dogecoin",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X062E66477FAF219F25D27DCED647BF57C3107D52",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 40.7454013518,
+        "volume": 0.02939072,
+        "converted_last": {
+          "btc": 0.99817026,
+          "eth": 40.621975,
+          "usd": 82410
+        },
+        "converted_volume": {
+          "btc": 0.02882727,
+          "eth": 1.173167,
+          "usd": 2380
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.605048,
+        "timestamp": "2025-03-09T19:12:33+00:00",
+        "last_traded_at": "2025-03-09T19:12:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x062e66477faf219f25d27dced647bf57c3107d52&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-wbtc-cronos",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 5.7513806498,
+        "volume": 262302431.436998,
+        "converted_last": {
+          "btc": 1.4135e-10,
+          "eth": 5.752e-9,
+          "usd": 0.00001167
+        },
+        "converted_volume": {
+          "btc": 0.03691997,
+          "eth": 1.502511,
+          "usd": 3048.14
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.611708,
+        "timestamp": "2025-03-09T18:41:35+00:00",
+        "last_traded_at": "2025-03-09T18:41:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xbed48612bc69fa1cab67052b42a95fb30c1bcfee&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "shiba-inu",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X39BC1E38C842C60775CE37566D03B41A7A66C782",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 575.0984810212,
+        "volume": 1477127.31749384,
+        "converted_last": {
+          "btc": 1.3886e-8,
+          "eth": 5.6511e-7,
+          "usd": 0.00114644
+        },
+        "converted_volume": {
+          "btc": 0.02045224,
+          "eth": 0.83233328,
+          "usd": 1688.55
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.60552,
+        "timestamp": "2025-03-09T18:57:33+00:00",
+        "last_traded_at": "2025-03-09T18:57:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x39bc1e38c842c60775ce37566d03b41a7a66c782&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "ferro",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X59BAFB7168972ECCA5E395F7DA88E71ECE47A260",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001285289929,
+        "volume": 188404518.051868,
+        "converted_last": {
+          "btc": 1.27449e-10,
+          "eth": 5.187e-9,
+          "usd": 0.00001052
+        },
+        "converted_volume": {
+          "btc": 0.02473385,
+          "eth": 1.00658,
+          "usd": 2042.04
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.607715,
+        "timestamp": "2025-03-09T18:57:33+00:00",
+        "last_traded_at": "2025-03-09T18:57:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x59bafb7168972ecca5e395f7da88e71ece47a260&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "papparico-finance-token",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X02DCCAF514C98451320A9365C5B46C61D3246FF3",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.06663879303,
+        "volume": 16620778115.0091,
+        "converted_last": {
+          "btc": 1.638e-12,
+          "eth": 6.6729e-11,
+          "usd": 1.34976e-7
+        },
+        "converted_volume": {
+          "btc": 0.02708542,
+          "eth": 1.103571,
+          "usd": 2232.23
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.616332,
+        "timestamp": "2025-03-09T17:56:04+00:00",
+        "last_traded_at": "2025-03-09T17:56:04+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x02dccaf514c98451320a9365c5b46c61d3246ff3&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "dogelon-mars",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0XDB7D0A1EC37DE1DE924F8E8ADAC6ED338D4404E9",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.01884274059,
+        "volume": 100043.694674918,
+        "converted_last": {
+          "btc": 2.28724e-7,
+          "eth": 0.00000932,
+          "usd": 0.01885021
+        },
+        "converted_volume": {
+          "btc": 0.02447049,
+          "eth": 0.99702787,
+          "usd": 2016.72
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.612923,
+        "timestamp": "2025-03-09T18:31:13+00:00",
+        "last_traded_at": "2025-03-09T18:31:13+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xdb7d0a1ec37de1de924f8e8adac6ed338d4404e9&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "veno-finance",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0XEBACEB7F193955B946CC5DD8F8724A80671A1F2F",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.2362658701,
+        "volume": 3890.3113974561,
+        "converted_last": {
+          "btc": 0.00000123,
+          "eth": 0.00004989,
+          "usd": 0.10121
+        },
+        "converted_volume": {
+          "btc": 0.00474778,
+          "eth": 0.19321772,
+          "usd": 391.98
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.604738,
+        "timestamp": "2025-03-09T17:15:47+00:00",
+        "last_traded_at": "2025-03-09T17:15:47+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xebaceb7f193955b946cc5dd8f8724a80671a1f2f&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "bonded-cronos",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.3913129248,
+        "volume": 56519.0496871636,
+        "converted_last": {
+          "btc": 3.88026e-7,
+          "eth": 0.00001579,
+          "usd": 0.03203569
+        },
+        "converted_volume": {
+          "btc": 0.02169082,
+          "eth": 0.88273925,
+          "usd": 1790.81
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.611548,
+        "timestamp": "2025-03-09T19:08:35+00:00",
+        "last_traded_at": "2025-03-09T19:08:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xcbf0adea24fd5f32c6e7f0474f0d1b94ace4e2e7&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "cronos-id",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XC4A174CCB5FB54A6721E11E0CA961E42715023F9",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.003507434782,
+        "volume": 4566355.1967936,
+        "converted_last": {
+          "btc": 3.478e-9,
+          "eth": 1.41541e-7,
+          "usd": 0.00028714
+        },
+        "converted_volume": {
+          "btc": 0.01634336,
+          "eth": 0.66511643,
+          "usd": 1349.32
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.610103,
+        "timestamp": "2025-03-09T18:21:33+00:00",
+        "last_traded_at": "2025-03-09T18:21:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xc4a174ccb5fb54a6721e11e0ca961e42715023f9&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "crogecoin",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0004960464495,
+        "volume": 1618.316136,
+        "converted_last": {
+          "btc": 0.00001216,
+          "eth": 0.00049555,
+          "usd": 1.002
+        },
+        "converted_volume": {
+          "btc": 0.01891224,
+          "eth": 0.7705618,
+          "usd": 1558.64
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.614585,
+        "timestamp": "2025-03-09T18:41:14+00:00",
+        "last_traded_at": "2025-03-09T18:41:14+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdt-cronos",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0X7A7C9DB510AB29A2FC362A4C34260BECB5CE3446",
+        "target": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 2117.2142567717,
+        "volume": 0.5908975278,
+        "converted_last": {
+          "btc": 0.02561248,
+          "eth": 1.042337,
+          "usd": 2114.58
+        },
+        "converted_volume": {
+          "btc": 0.01570642,
+          "eth": 0.63919552,
+          "usd": 1296.73
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.609996,
+        "timestamp": "2025-03-09T19:12:33+00:00",
+        "last_traded_at": "2025-03-09T19:12:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x7a7c9db510ab29a2fc362a4c34260becb5ce3446&outputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770",
+        "token_info_url": null,
+        "coin_id": "crypto-com-staked-eth",
+        "target_coin_id": "cronos-bridged-usdt-cronos"
+      },
+      {
+        "base": "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A",
+        "target": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.004822149913,
+        "volume": 288406.474167674,
+        "converted_last": {
+          "btc": 5.8398e-8,
+          "eth": 0.00000238,
+          "usd": 0.00481484
+        },
+        "converted_volume": {
+          "btc": 0.01765715,
+          "eth": 0.71894203,
+          "usd": 1455.81
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.614045,
+        "timestamp": "2025-03-09T18:07:11+00:00",
+        "last_traded_at": "2025-03-09T18:07:11+00:00",
+        "last_fetch_at": "2025-03-09T19:17:27+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x83afb1c32e5637acd0a452d87c3249f4a9f0013a&outputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78",
+        "token_info_url": null,
+        "coin_id": "fulcrom",
+        "target_coin_id": "orby-network-usc-stablecoin"
+      },
+      {
+        "base": "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.1293337151,
+        "volume": 101697.389534639,
+        "converted_last": {
+          "btc": 1.28247e-7,
+          "eth": 0.00000522,
+          "usd": 0.01058819
+        },
+        "converted_volume": {
+          "btc": 0.01281142,
+          "eth": 0.52137902,
+          "usd": 1057.72
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.610405,
+        "timestamp": "2025-03-09T19:04:36+00:00",
+        "last_traded_at": "2025-03-09T19:04:36+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0224010ba2d567ffa014222ed960d1fa43b8c8e1&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "minted",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X181CC996EEA445212E61BD45FF742B88C3907287",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 3.823426815e-9,
+        "volume": 1835200462471.16,
+        "converted_last": {
+          "btc": 3.791e-15,
+          "eth": 1.54293e-13,
+          "usd": 3.13013e-10
+        },
+        "converted_volume": {
+          "btc": 0.00697213,
+          "eth": 0.28374074,
+          "usd": 575.62
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606796,
+        "timestamp": "2025-03-09T18:25:36+00:00",
+        "last_traded_at": "2025-03-09T18:25:36+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x181cc996eea445212e61bd45ff742b88c3907287&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "krees",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X4DDA1BB6E378DCEF97BFF1057B6452615E86373C",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 498.5383710642,
+        "volume": 1122083.94240418,
+        "converted_last": {
+          "btc": 1.222e-8,
+          "eth": 4.9731e-7,
+          "usd": 0.00100889
+        },
+        "converted_volume": {
+          "btc": 0.01376589,
+          "eth": 0.56022282,
+          "usd": 1136.52
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.611814,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x4dda1bb6e378dcef97bff1057b6452615e86373c&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "kaching",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7",
+        "target": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.03212362505,
+        "volume": 34279.8414153133,
+        "converted_last": {
+          "btc": 3.88202e-7,
+          "eth": 0.00001581,
+          "usd": 0.03200677
+        },
+        "converted_volume": {
+          "btc": 0.01400337,
+          "eth": 0.57017221,
+          "usd": 1154.56
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.615219,
+        "timestamp": "2025-03-09T18:27:17+00:00",
+        "last_traded_at": "2025-03-09T18:27:17+00:00",
+        "last_fetch_at": "2025-03-09T19:17:27+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xcbf0adea24fd5f32c6e7f0474f0d1b94ace4e2e7&outputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770",
+        "token_info_url": null,
+        "coin_id": "cronos-id",
+        "target_coin_id": "cronos-bridged-usdt-cronos"
+      },
+      {
+        "base": "0X88BF399D2BBBE7BA3C1EBEF2AC83AE7571FF10D7",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.102691421e-8,
+        "volume": 258275192647.838,
+        "converted_last": {
+          "btc": 1.0934e-14,
+          "eth": 4.44987e-13,
+          "usd": 9.02743e-10
+        },
+        "converted_volume": {
+          "btc": 0.00283441,
+          "eth": 0.1153503,
+          "usd": 234.01
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.606694,
+        "timestamp": "2025-03-09T17:35:26+00:00",
+        "last_traded_at": "2025-03-09T17:35:26+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x88bf399d2bbbe7ba3c1ebef2ac83ae7571ff10d7&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "frogs-2",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7",
+        "target": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0322176465,
+        "volume": 24522.1510652507,
+        "converted_last": {
+          "btc": 3.88026e-7,
+          "eth": 0.0000158,
+          "usd": 0.03199226
+        },
+        "converted_volume": {
+          "btc": 0.00989878,
+          "eth": 0.40304647,
+          "usd": 816.14
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.617479,
+        "timestamp": "2025-03-09T18:17:14+00:00",
+        "last_traded_at": "2025-03-09T18:17:14+00:00",
+        "last_fetch_at": "2025-03-09T19:17:27+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xcbf0adea24fd5f32c6e7f0474f0d1b94ace4e2e7&outputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78",
+        "token_info_url": null,
+        "coin_id": "cronos-id",
+        "target_coin_id": "orby-network-usc-stablecoin"
+      },
+      {
+        "base": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "target": "0X062E66477FAF219F25D27DCED647BF57C3107D52",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00001214773418,
+        "volume": 556.432527,
+        "converted_last": {
+          "btc": 0.00001214,
+          "eth": 0.00049397,
+          "usd": 1.002
+        },
+        "converted_volume": {
+          "btc": 0.00659464,
+          "eth": 0.26837845,
+          "usd": 544.46
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.611875,
+        "timestamp": "2025-03-09T18:59:35+00:00",
+        "last_traded_at": "2025-03-09T18:59:35+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770&outputCurrency=0x062e66477faf219f25d27dced647bf57c3107d52",
+        "token_info_url": null,
+        "coin_id": "cronos-bridged-usdt-cronos",
+        "target_coin_id": "cronos-bridged-wbtc-cronos"
+      },
+      {
+        "base": "0X34ACEA6CC02578AF041A5E976B7289CA23CCB7A8",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 1.448992235e-9,
+        "volume": 71629354415.904,
+        "converted_last": {
+          "btc": 1.437e-15,
+          "eth": 5.8473e-14,
+          "usd": 1.18625e-10
+        },
+        "converted_volume": {
+          "btc": 0.00010347,
+          "eth": 0.00421102,
+          "usd": 8.54
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.607161,
+        "timestamp": "2025-03-09T19:04:36+00:00",
+        "last_traded_at": "2025-03-09T19:04:36+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x34acea6cc02578af041a5e976b7289ca23ccb7a8&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "skull-with-ripped-hood",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "target": "0XDB7D0A1EC37DE1DE924F8E8ADAC6ED338D4404E9",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 52.6034938618,
+        "volume": 730.9032020487,
+        "converted_last": {
+          "btc": 0.00001213,
+          "eth": 0.0004939,
+          "usd": 1
+        },
+        "converted_volume": {
+          "btc": 0.00840651,
+          "eth": 0.34228592,
+          "usd": 693.11
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.624725,
+        "timestamp": "2025-03-09T18:22:13+00:00",
+        "last_traded_at": "2025-03-09T18:22:13+00:00",
+        "last_fetch_at": "2025-03-09T19:17:27+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78&outputCurrency=0xdb7d0a1ec37de1de924f8e8adac6ed338d4404e9",
+        "token_info_url": null,
+        "coin_id": "orby-network-usc-stablecoin",
+        "target_coin_id": "veno-finance"
+      },
+      {
+        "base": "0X40914BBDDEA0EC8D22E044CD3131F1B5ED4E866D",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.05904401178,
+        "volume": 17403.0462054658,
+        "converted_last": {
+          "btc": 5.8548e-8,
+          "eth": 0.00000238,
+          "usd": 0.00483377
+        },
+        "converted_volume": {
+          "btc": 0.00101659,
+          "eth": 0.04137173,
+          "usd": 83.93
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.608827,
+        "timestamp": "2025-03-09T18:57:33+00:00",
+        "last_traded_at": "2025-03-09T18:57:33+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x40914bbddea0ec8d22e044cd3131f1b5ed4e866d&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "orb",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X85608D6373FDCFC9FB1582187DC3A81C2942F3F2",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0008788927769,
+        "volume": 716670.635318391,
+        "converted_last": {
+          "btc": 8.7151e-10,
+          "eth": 3.5467e-8,
+          "usd": 0.00007195
+        },
+        "converted_volume": {
+          "btc": 0.0006229,
+          "eth": 0.02534991,
+          "usd": 51.43
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.608612,
+        "timestamp": "2025-03-09T18:10:30+00:00",
+        "last_traded_at": "2025-03-09T18:10:30+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x85608d6373fdcfc9fb1582187dc3a81c2942f3f2&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "chucky",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0001716449406,
+        "volume": 3039183.03890994,
+        "converted_last": {
+          "btc": 2.094e-9,
+          "eth": 8.5276e-8,
+          "usd": 0.00017268
+        },
+        "converted_volume": {
+          "btc": 0.0065859,
+          "eth": 0.26815669,
+          "usd": 543
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.630892,
+        "timestamp": "2025-03-09T18:42:07+00:00",
+        "last_traded_at": "2025-03-09T18:42:07+00:00",
+        "last_fetch_at": "2025-03-09T19:17:27+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0xd42e078cea2be8d03cd9dfecc1f0d28915edea78",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "orby-network-usc-stablecoin"
+      },
+      {
+        "base": "0X0804702A4E749D39A35FDE73D1DF0B1F1D6B8347",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.000271418495,
+        "volume": 1565294.94499008,
+        "converted_last": {
+          "btc": 3.295e-9,
+          "eth": 1.34237e-7,
+          "usd": 0.00027153
+        },
+        "converted_volume": {
+          "btc": 0.00514348,
+          "eth": 0.20956646,
+          "usd": 423.9
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.619536,
+        "timestamp": "2025-03-09T19:06:18+00:00",
+        "last_traded_at": "2025-03-09T19:06:18+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0804702a4e749d39a35fde73d1df0b1f1d6b8347&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "single-finance",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X0CEFCD5F75907B38C308B06B70D392FF19123094",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00001595885207,
+        "volume": 120220668.470256,
+        "converted_last": {
+          "btc": 1.5825e-11,
+          "eth": 6.44013e-10,
+          "usd": 0.00000131
+        },
+        "converted_volume": {
+          "btc": 0.00190779,
+          "eth": 0.07764009,
+          "usd": 157.51
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.611207,
+        "timestamp": "2025-03-09T18:13:27+00:00",
+        "last_traded_at": "2025-03-09T18:13:27+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0cefcd5f75907b38c308b06b70d392ff19123094&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "sonorc",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X4DDA1BB6E378DCEF97BFF1057B6452615E86373C",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.001009340993,
+        "volume": 356715.057907545,
+        "converted_last": {
+          "btc": 1.223e-8,
+          "eth": 4.97711e-7,
+          "usd": 0.0010097
+        },
+        "converted_volume": {
+          "btc": 0.00460926,
+          "eth": 0.18758036,
+          "usd": 380.54
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.64543,
+        "timestamp": "2025-03-09T18:21:04+00:00",
+        "last_traded_at": "2025-03-09T18:21:04+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x4dda1bb6e378dcef97bff1057b6452615e86373c&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "kaching",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X288898A6057D2D4989C533E96CB3BC30843C91D7",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 4.807383777e-7,
+        "volume": 2604519057.67511,
+        "converted_last": {
+          "btc": 4.767e-13,
+          "eth": 1.9423e-11,
+          "usd": 3.9287e-8
+        },
+        "converted_volume": {
+          "btc": 0.00124385,
+          "eth": 0.05067968,
+          "usd": 102.51
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.623049,
+        "timestamp": "2025-03-09T17:42:56+00:00",
+        "last_traded_at": "2025-03-09T17:42:56+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x288898a6057d2d4989c533e96cb3bc30843c91d7&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "puush-da-button",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X47A9D630DC5B28F75D3AF3BE3AAA982512CD89AA",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.0003520821431,
+        "volume": 68742.6240088991,
+        "converted_last": {
+          "btc": 4.274e-9,
+          "eth": 1.74131e-7,
+          "usd": 0.00035222
+        },
+        "converted_volume": {
+          "btc": 0.00029483,
+          "eth": 0.01201274,
+          "usd": 24.3
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.619133,
+        "timestamp": "2025-03-09T17:56:04+00:00",
+        "last_traded_at": "2025-03-09T17:56:04+00:00",
+        "last_fetch_at": "2025-03-09T19:16:21+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x47a9d630dc5b28f75d3af3be3aaa982512cd89aa&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "argo-finance",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X9FAE23A2700FEECD5B93E43FDBC03C76AA7C08A6",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.09644433311,
+        "volume": 1979.7563355939,
+        "converted_last": {
+          "btc": 0.00000117,
+          "eth": 0.00004756,
+          "usd": 0.096479
+        },
+        "converted_volume": {
+          "btc": 0.00243277,
+          "eth": 0.09900493,
+          "usd": 200.85
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.711993,
+        "timestamp": "2025-03-09T18:09:52+00:00",
+        "last_traded_at": "2025-03-09T18:09:52+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x9fae23a2700feecd5b93e43fdbc03c76aa7c08a6&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "liquid-cro",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X0804702A4E749D39A35FDE73D1DF0B1F1D6B8347",
+        "target": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 133.2365239546,
+        "volume": 743464.81330687,
+        "converted_last": {
+          "btc": 3.292e-9,
+          "eth": 1.34409e-7,
+          "usd": 0.00027115
+        },
+        "converted_volume": {
+          "btc": 0.00231585,
+          "eth": 0.09454999,
+          "usd": 190.74
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.698867,
+        "timestamp": "2025-03-09T19:09:01+00:00",
+        "last_traded_at": "2025-03-09T19:09:01+00:00",
+        "last_fetch_at": "2025-03-09T19:09:01+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0804702a4e749d39a35fde73d1df0b1f1d6b8347&outputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+        "token_info_url": null,
+        "coin_id": "single-finance",
+        "target_coin_id": "vvs-finance"
+      },
+      {
+        "base": "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A",
+        "target": "0X66E428C3F67A68878562E79A0234C1F83C208770",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.004859452161,
+        "volume": 23575.9557465704,
+        "converted_last": {
+          "btc": 5.9267e-8,
+          "eth": 0.00000242,
+          "usd": 0.00488136
+        },
+        "converted_volume": {
+          "btc": 0.00145912,
+          "eth": 0.05957207,
+          "usd": 120.18
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.753292,
+        "timestamp": "2025-03-09T18:02:49+00:00",
+        "last_traded_at": "2025-03-09T18:02:49+00:00",
+        "last_fetch_at": "2025-03-09T19:09:02+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x83afb1c32e5637acd0a452d87c3249f4a9f0013a&outputCurrency=0x66e428c3f67a68878562e79a0234c1f83c208770",
+        "token_info_url": null,
+        "coin_id": "fulcrom",
+        "target_coin_id": "cronos-bridged-usdt-cronos"
+      },
+      {
+        "base": "0X9D8C68F185A04314DDC8B8216732455E8DBB7E45",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00538401093,
+        "volume": 26033.4019794907,
+        "converted_last": {
+          "btc": 6.5535e-8,
+          "eth": 0.00000268,
+          "usd": 0.00540253
+        },
+        "converted_volume": {
+          "btc": 0.00176031,
+          "eth": 0.07186728,
+          "usd": 145.12
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 1.005071,
+        "timestamp": "2025-03-09T19:08:00+00:00",
+        "last_traded_at": "2025-03-09T19:08:00+00:00",
+        "last_fetch_at": "2025-03-09T19:08:00+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x9d8c68f185a04314ddc8b8216732455e8dbb7e45&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "loaded-lions",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0XAF02D78F39C0002D14B95A3BE272DA02379AFF21",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.001823409229,
+        "volume": 56668.6281544844,
+        "converted_last": {
+          "btc": 2.2094e-8,
+          "eth": 8.99131e-7,
+          "usd": 0.00182406
+        },
+        "converted_volume": {
+          "btc": 0.0013326,
+          "eth": 0.054232,
+          "usd": 110.02
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.958706,
+        "timestamp": "2025-03-09T18:21:04+00:00",
+        "last_traded_at": "2025-03-09T18:21:04+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xaf02d78f39c0002d14b95a3be272da02379aff21&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "ebisusbay-fortune",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0X8F857AF6EA31447BB502FE0E3F4E4340CDFCFC6C",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.2782337504,
+        "volume": 191.2771269017,
+        "converted_last": {
+          "btc": 2.75897e-7,
+          "eth": 0.00001123,
+          "usd": 0.02277822
+        },
+        "converted_volume": {
+          "btc": 0.00005277,
+          "eth": 0.00214766,
+          "usd": 4.36
+        },
+        "trust_score": "yellow",
+        "bid_ask_spread_percentage": 0.847478,
+        "timestamp": "2025-03-09T17:36:36+00:00",
+        "last_traded_at": "2025-03-09T17:36:36+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x8f857af6ea31447bb502fe0e3f4e4340cdfcfc6c&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "icycro",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X13C0FF45D019A5888DB92631F18556211001883D",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.002640741236,
+        "volume": 77583.0128117872,
+        "converted_last": {
+          "btc": 2.619e-9,
+          "eth": 1.06566e-7,
+          "usd": 0.00021619
+        },
+        "converted_volume": {
+          "btc": 0.00020251,
+          "eth": 0.00824162,
+          "usd": 16.72
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.605642,
+        "timestamp": "2025-03-09T15:00:34+00:00",
+        "last_traded_at": "2025-03-09T15:00:34+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x13c0ff45d019a5888db92631f18556211001883d&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "president-platy",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X59E60D641677CECAE77868176F314F42572F5284",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00002419428518,
+        "volume": 23693596.1981674,
+        "converted_last": {
+          "btc": 2.3991e-11,
+          "eth": 9.7635e-10,
+          "usd": 0.00000198
+        },
+        "converted_volume": {
+          "btc": 0.00056858,
+          "eth": 0.02313937,
+          "usd": 46.94
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.606534,
+        "timestamp": "2025-03-09T14:46:38+00:00",
+        "last_traded_at": "2025-03-09T14:46:38+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x59e60d641677cecae77868176f314f42572f5284&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "nuts-2",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03",
+        "target": "0X7A7C9DB510AB29A2FC362A4C34260BECB5CE3446",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 9.647856718e-10,
+        "volume": 88369843.6707265,
+        "converted_last": {
+          "btc": 2.4721e-11,
+          "eth": 1.009e-9,
+          "usd": 0.00000204
+        },
+        "converted_volume": {
+          "btc": 0.00216907,
+          "eth": 0.08855763,
+          "usd": 178.65
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.652956,
+        "timestamp": "2025-03-09T14:44:33+00:00",
+        "last_traded_at": "2025-03-09T14:44:33+00:00",
+        "last_fetch_at": "2025-03-09T19:09:02+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2d03bece6747adc00e1a131bba1469c15fd11e03&outputCurrency=0x7a7c9db510ab29a2fc362a4c34260becb5ce3446",
+        "token_info_url": null,
+        "coin_id": "vvs-finance",
+        "target_coin_id": "crypto-com-staked-eth"
+      },
+      {
+        "base": "0X83B2AC8642AE46FC2823BC959FFEB3C1742C48B5",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.02220956345,
+        "volume": 81947.3565672263,
+        "converted_last": {
+          "btc": 2.2023e-8,
+          "eth": 8.96258e-7,
+          "usd": 0.00181823
+        },
+        "converted_volume": {
+          "btc": 0.00176339,
+          "eth": 0.07176378,
+          "usd": 145.59
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.713064,
+        "timestamp": "2025-03-09T19:18:10+00:00",
+        "last_traded_at": "2025-03-09T19:18:10+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x83b2ac8642ae46fc2823bc959ffeb3c1742c48b5&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "darkcrypto",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 14.7638358549,
+        "volume": 606049.696612916,
+        "converted_last": {
+          "btc": 2.082e-9,
+          "eth": 8.5017e-8,
+          "usd": 0.00017151
+        },
+        "converted_volume": {
+          "btc": 0.00122423,
+          "eth": 0.04998196,
+          "usd": 100.83
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.740722,
+        "timestamp": "2025-03-09T15:06:36+00:00",
+        "last_traded_at": "2025-03-09T15:06:36+00:00",
+        "last_fetch_at": "2025-03-09T19:09:02+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0xbed48612bc69fa1cab67052b42a95fb30c1bcfee",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "shiba-inu"
+      },
+      {
+        "base": "0X6B431B8A964BFCF28191B07C91189FF4403957D0",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 8.360400136e-8,
+        "volume": 453507.186862747,
+        "converted_last": {
+          "btc": 2.051e-9,
+          "eth": 8.3725e-8,
+          "usd": 0.0001689
+        },
+        "converted_volume": {
+          "btc": 0.00090401,
+          "eth": 0.03690828,
+          "usd": 74.46
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.750592,
+        "timestamp": "2025-03-09T15:06:37+00:00",
+        "last_traded_at": "2025-03-09T15:06:37+00:00",
+        "last_fetch_at": "2025-03-09T19:09:02+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x6b431b8a964bfcf28191b07c91189ff4403957d0&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "corgiai",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0X00D7699B71290094CCB1A5884CD835BD65A78C17",
+        "target": "0XC21223249CA28397B4B6541DFFAECC539BFF0C59",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.003049069145,
+        "volume": 5518.6502421721,
+        "converted_last": {
+          "btc": 3.6983e-8,
+          "eth": 0.00000151,
+          "usd": 0.003046
+        },
+        "converted_volume": {
+          "btc": 0.00020476,
+          "eth": 0.00835974,
+          "usd": 16.86
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.783455,
+        "timestamp": "2025-03-09T16:45:38+00:00",
+        "last_traded_at": "2025-03-09T16:45:38+00:00",
+        "last_fetch_at": "2025-03-09T19:09:02+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x00d7699b71290094ccb1a5884cd835bd65a78c17&outputCurrency=0xc21223249ca28397b4b6541dffaecc539bff0c59",
+        "token_info_url": null,
+        "coin_id": "versagames",
+        "target_coin_id": "cronos-bridged-usdc-cronos"
+      },
+      {
+        "base": "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE",
+        "target": "0XE44FD7FCB2B1581822D0C862B68222998A0C299A",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 5.753928091e-9,
+        "volume": 1580074.69533538,
+        "converted_last": {
+          "btc": 1.40958e-10,
+          "eth": 5.736e-9,
+          "usd": 0.00001164
+        },
+        "converted_volume": {
+          "btc": 0.00022456,
+          "eth": 0.00913874,
+          "usd": 18.54
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.814609,
+        "timestamp": "2025-03-09T14:40:18+00:00",
+        "last_traded_at": "2025-03-09T14:40:18+00:00",
+        "last_fetch_at": "2025-03-09T19:18:10+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0xbed48612bc69fa1cab67052b42a95fb30c1bcfee&outputCurrency=0xe44fd7fcb2b1581822d0c862b68222998a0c299a",
+        "token_info_url": null,
+        "coin_id": "shiba-inu",
+        "target_coin_id": "bridged-weth"
+      },
+      {
+        "base": "0X2C43D9F78E4132FBE40BEBB8EC5F61377472B2C0",
+        "target": "0X83B2AC8642AE46FC2823BC959FFEB3C1742C48B5",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.05038545956,
+        "volume": 74730.8399568081,
+        "converted_last": {
+          "btc": 1.11e-9,
+          "eth": 4.5321e-8,
+          "usd": 0.00009151
+        },
+        "converted_volume": {
+          "btc": 0.00008384,
+          "eth": 0.00342292,
+          "usd": 6.91
+        },
+        "trust_score": "red",
+        "bid_ask_spread_percentage": 0.960668,
+        "timestamp": "2025-03-09T14:30:46+00:00",
+        "last_traded_at": "2025-03-09T14:30:46+00:00",
+        "last_fetch_at": "2025-03-09T19:08:00+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x2c43d9f78e4132fbe40bebb8ec5f61377472b2c0&outputCurrency=0x83b2ac8642ae46fc2823bc959ffeb3c1742c48b5",
+        "token_info_url": null,
+        "coin_id": "darkgang-finance",
+        "target_coin_id": "darkcrypto"
+      },
+      {
+        "base": "0X0E517979C2C1C1522DDB0C73905E0D39B3F990C0",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 8.8654807398,
+        "volume": 85931.5259890001,
+        "converted_last": {
+          "btc": 0.00000879,
+          "eth": 0.00035776,
+          "usd": 0.725792
+        },
+        "converted_volume": {
+          "btc": 0.75143431,
+          "eth": 30.5807,
+          "usd": 62039
+        },
+        "trust_score": null,
+        "bid_ask_spread_percentage": 0.606229,
+        "timestamp": "2025-03-09T19:16:24+00:00",
+        "last_traded_at": "2025-03-09T19:16:24+00:00",
+        "last_fetch_at": "2025-03-09T19:18:25+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x0e517979c2c1c1522ddb0c73905e0d39b3f990c0&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "wrapped-ada",
+        "target_coin_id": "wrapped-cro"
+      },
+      {
+        "base": "0X46E2B5423F6FF46A8A35861EC9DAFF26AF77AB9A",
+        "target": "0X5C7F8A570D578ED84E63FDFA7B1EE72DEAE1AE23",
+        "market": {
+          "name": "VVS Finance",
+          "identifier": "vvs",
+          "has_trading_incentive": false
+        },
+        "last": 0.00131531557,
+        "volume": 275617327.219958,
+        "converted_last": {
+          "btc": 1.304e-9,
+          "eth": 5.3079e-8,
+          "usd": 0.00010768
+        },
+        "converted_volume": {
+          "btc": 0.36917744,
+          "eth": 15.024207,
+          "usd": 30480
+        },
+        "trust_score": null,
+        "bid_ask_spread_percentage": 0.607355,
+        "timestamp": "2025-03-09T19:16:25+00:00",
+        "last_traded_at": "2025-03-09T19:16:25+00:00",
+        "last_fetch_at": "2025-03-09T19:18:26+00:00",
+        "is_anomaly": false,
+        "is_stale": false,
+        "trade_url": "https://vvs.finance/swap?inputCurrency=0x46e2b5423f6ff46a8a35861ec9daff26af77ab9a&outputCurrency=0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+        "token_info_url": null,
+        "coin_id": "moonflow",
+        "target_coin_id": "wrapped-cro"
+      }
+    ],
+    "status_updates": []
+  }
+}

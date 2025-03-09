@@ -276,6 +276,81 @@ async function fetchCronosMarketCap() {
   }
 }
 
+// ----- EXCHANGE CACHE -----
+
+// Variabele voor de exchange-cache
+let exchangeDataCache = null;
+
+// Pad naar de handmatige exchange data (exchanges.json)
+const manualExchangesPath = path.join(__dirname, "public", "data", "exchanges.json");
+let manualExchangeData = [];
+
+try {
+  manualExchangeData = JSON.parse(fs.readFileSync(manualExchangesPath, "utf8"));
+  console.log("✅ Loaded manual exchange data");
+} catch (error) {
+  console.error("❌ Error loading manual exchange data:", error.message);
+}
+
+// Helper: Haal data op van een externe API URL (via Axios)
+async function fetchExchangeApiData(url) {
+  try {
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    console.error(`❌ Error fetching data from ${url}:`, error.message);
+    return null;
+  }
+}
+
+// Update de exchange-cache door voor iedere exchange de API op te halen
+async function updateExchangeDataCache() {
+  try {
+    console.log("⏳ Updating exchange data cache...");
+    const cachedData = exchangeDataCache || {};
+
+    // Itereer over alle exchanges uit de handmatige data
+    for (const exchange of manualExchangeData) {
+      const apiUrl = exchange.api_links && exchange.api_links.apiMain;
+      if (apiUrl) {
+        console.log(`⏳ Fetching data for ${exchange.name} from ${apiUrl}`);
+        const data = await fetchExchangeApiData(apiUrl);
+
+        // Als er geldige data is, sla deze op in de cache onder de exchange id
+        if (data && Object.keys(data).length > 0) {
+          cachedData[exchange.id] = data;
+          console.log(`✅ Fetched data for ${exchange.name}`);
+        } else {
+          console.warn(`⚠️ Received empty data for ${exchange.name}, keeping previous data (if any).`);
+        }
+      }
+    }
+
+    exchangeDataCache = cachedData;
+    // Schrijf de cache weg naar public/data/exchangeCache.json (voor debugging of client-side gebruik)
+    const exchangeCachePath = path.join(__dirname, "public", "data", "exchangeCache.json");
+    fs.writeFileSync(exchangeCachePath, JSON.stringify(exchangeDataCache, null, 2));
+    console.log("✅ Exchange data cache updated.");
+  } catch (error) {
+    console.error("❌ Error updating exchange data cache:", error.message);
+  }
+}
+
+// Plan de taak om elke 60 seconden de exchange-cache te updaten (pas de frequentie aan indien nodig)
+cron.schedule("*/60 * * * * *", updateExchangeDataCache);
+// Update direct bij serverstart
+updateExchangeDataCache();
+
+// Route: Serve de exchange-cache
+app.get("/api/exchanges", (req, res) => {
+  if (exchangeDataCache) {
+    console.log("✅ Serving exchange data from cache");
+    res.json(exchangeDataCache);
+  } else {
+    res.status(503).json({ message: "Exchange data not available yet" });
+  }
+});
+
 
 // Functie om de Cronos-tokenprijs (en market cap) op te halen en te cachen
 async function updateCroPrice() {

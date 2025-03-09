@@ -11,5 +11,18 @@
         "api_links": {
             "apiMain": "https://api.coingecko.com/api/v3/exchanges/ebisus-bay"
         }
+    },
+    {
+        "id": "vvs-finance",
+        "name": "VVS Finance",
+        "icon": "public/assets/coinIcons/vvs.jpg",
+        "website": "https://vvs.finance/",
+        "twitter": "https://x.com/VVS_finance",
+        "telegram": "https://t.me/VVSFinance",
+        "discord": "https://discord.com/invite/V2957zMsmg",
+        "description": "Gateway to Cronos",
+        "api_links": {
+            "apiMain": "https://api.coingecko.com/api/v3/exchanges/vvs"
+        }
     }
     ]

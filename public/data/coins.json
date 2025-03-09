@@ -50,6 +50,239 @@
     "0XD50F5739A09F36C6F97CC9A4849C5462BA6129A3": {
         "name": "CROGINAL",
         "icon": "assets/coinIcons/croginal.jpg"
+    },
+    "0X9D8C68F185A04314DDC8B8216732455E8DBB7E45": {
+        "name": "LION",
+        "icon": "assets/coinIcons/lion.jpg"
+    },
+    "0X062E66477FAF219F25D27DCED647BF57C3107D52": {
+        "name": "WBTC",
+        "icon": "assets/coinIcons/wbtc.webp"
+    },
+    "0XE44FD7FCB2B1581822D0C862B68222998A0C299A": {
+        "name": "WETH",
+        "icon": "assets/coinIcons/WETH.webp"
+    },
+    "0X66E428C3F67A68878562E79A0234C1F83C208770": {
+        "name": "USDT",
+        "icon": "assets/coinIcons/USDT.webp"
+    },
+    "0X66E428C3F67A68878562E79A0234C1F83C208770": {
+        "name": "USDT",
+        "icon": "assets/coinIcons/USDT.webp"
+    },
+    "0XD42E078CEA2BE8D03CD9DFECC1F0D28915EDEA78": {
+        "name": "USC",
+        "icon": "assets/coinIcons/USC.webp"
+    },
+    "0XB888D8DD1733D72681B30C00EE76BDE93AE7AA93": {
+        "name": "ATOM",
+        "icon": "assets/coinIcons/cosmos_32.png"
+    },
+    "0X0E517979C2C1C1522DDB0C73905E0D39B3F990C0": {
+        "name": "ADA",
+        "icon": "assets/coinIcons/ADA.webp"
+    },
+    "0X6B431B8A964BFCF28191B07C91189FF4403957D0": {
+        "name": "CORGIAI",
+        "icon": "assets/coinIcons/corgiai.png"
+    },
+    "0X6B431B8A964BFCF28191B07C91189FF4403957D0": {
+        "name": "CORGIAI",
+        "icon": "assets/coinIcons/corgiai.png"
+    },
+    "0X1A8E39AE59E5556B56B76FCBA98D22C9AE557396": {
+        "name": "DOGE",
+        "icon": "assets/coinIcons/doge.png"
+    },
+    "0X747D6C858168B8CD6E537160320B5DE58FD3367C": {
+        "name": "XLM",
+        "icon": "assets/coinIcons/xlm.png"
+    },
+    "0XF2001B145B43032AAF5EE2884E456CCD805F677D": {
+        "name": "DAI",
+        "icon": "assets/coinIcons/dai.png"
+    },
+    "0X45C135C1CDCE8D25A3B729A28659561385C52671": {
+        "name": "ALI",
+        "icon": "assets/coinIcons/ali.png"
+    },
+    "0X45C135C1CDCE8D25A3B729A28659561385C52671": {
+        "name": "ALI",
+        "icon": "assets/coinIcons/ali.png"
+    },
+    "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1": {
+        "name": "MTD",
+        "icon": "assets/coinIcons/mtd.png"
+    },
+    "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A": {
+        "name": "FUL",
+        "icon": "assets/coinIcons/FUL.png"
+    },
+    "0X2D03BECE6747ADC00E1A131BBA1469C15FD11E03": {
+        "name": "VVS",
+        "icon": "assets/coinIcons/vvs.jpg"
+    },
+    "0X63ED0A82CAC237667C89CD6AC5BFA2317186FDAA": {
+        "name": "CROB",
+        "icon": "assets/coinIcons/CROB.png"
+    },
+    "0X3B41B27E74DD366CE27CB389DC7877D4E1516D4D": {
+        "name": "MERY",
+        "icon": "assets/coinIcons/mistery.png"
+    },
+    "0X9BE47E9DCA99A6F5CB3666D079571EC229AE2CA4": {
+        "name": "DIP",
+        "icon": "assets/coinIcons/DIP.webp"
+    },
+    "0X96733708C4157218B6E6889EB9E16B1DF7873061": {
+        "name": "AGENTFUN",
+        "icon": "assets/coinIcons/AGENTFUN.png"
+    },
+    "0X75689264A5E2DAB1B27DDFB2B10592872139659A": {
+        "name": "LOAF",
+        "icon": "assets/coinIcons/loaf.jpg"
+    },
+    "0X02DCCAF514C98451320A9365C5B46C61D3246FF3": {
+        "name": "ELON",
+        "icon": "assets/coinIcons/dogeelon.png"
+    },
+    "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE": {
+        "name": "SHIB",
+        "icon": "assets/coinIcons/SHIB.png"
+    },
+    "0XF24409D155965CA87C45AD5BC084AD8AD3BE4F39": {
+        "name": "BARA",
+        "icon": "assets/coinIcons/bara.png"
+    },
+    "0X7A7C9DB510AB29A2FC362A4C34260BECB5CE3446": {
+        "name": "CDCETH",
+        "icon": "assets/coinIcons/CDCETH.png"
+    },
+    "0X46E2B5423F6FF46A8A35861EC9DAFF26AF77AB9A": {
+        "name": "MOON",
+        "icon": "assets/coinIcons/moon.png"
+    },
+    "0XD2EE4BD0D1BE7E84160DC459006F6E0970F8313C": {
+        "name": "H2",
+        "icon": "assets/coinIcons/h2.webp"
+    },
+    "0XDD73DEA10ABC2BFF99C60882EC5B2B81BB1DC5B2": {
+        "name": "TONIC",
+        "icon": "assets/coinIcons/tonic.png"
+    },
+    "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7": {
+        "name": "CROID",
+        "icon": "assets/coinIcons/CROID.png"
+    },
+    "0XCBF0ADEA24FD5F32C6E7F0474F0D1B94ACE4E2E7": {
+        "name": "CROID",
+        "icon": "assets/coinIcons/CROID.png"
+    },
+    "0XB157C8560984EBA102334C5EB4F0416952747A6E": {
+        "name": "BALLZ",
+        "icon": "assets/coinIcons/BALLZ.png"
+    },
+    "0XDB7D0A1EC37DE1DE924F8E8ADAC6ED338D4404E9": {
+        "name": "VNO",
+        "icon": "assets/coinIcons/VENO.png"
+    },
+    "0X39BC1E38C842C60775CE37566D03B41A7A66C782": {
+        "name": "FER",
+        "icon": "assets/coinIcons/FER.png"
+    },
+    "0XEBACEB7F193955B946CC5DD8F8724A80671A1F2F": {
+        "name": "bCRO",
+        "icon": "assets/coinIcons/bCRO.png"
+    },
+    "0XC4A174CCB5FB54A6721E11E0CA961E42715023F9": {
+        "name": "CROGE",
+        "icon": "assets/coinIcons/CROGE.png"
+    },
+    "0XC4A174CCB5FB54A6721E11E0CA961E42715023F9": {
+        "name": "CROGE",
+        "icon": "assets/coinIcons/CROGE.png"
+    },
+    "0X59BAFB7168972ECCA5E395F7DA88E71ECE47A260": {
+        "name": "PPFT",
+        "icon": "assets/coinIcons/ppft.webp"
+    },
+    "0X59E60D641677CECAE77868176F314F42572F5284": {
+        "name": "NUTS",
+        "icon": "assets/coinIcons/NUTS.png"
+    },
+    "0X04632BA88AE963A21A3E07781EC5BF07223E2CBF": {
+        "name": "CROFAM",
+        "icon": "assets/coinIcons/CROFAM.png"
+    },
+    "0X0CEFCD5F75907B38C308B06B70D392FF19123094": {
+        "name": "SONORC",
+        "icon": "assets/coinIcons/SONORC.webp"
+    },
+    "0XD677944DF705924AF369D2FCCF4A989F343DBCDF": {
+        "name": "FFTB",
+        "icon": "assets/coinIcons/fftb.png"
+    },
+    "0X4DDA1BB6E378DCEF97BFF1057B6452615E86373C": {
+        "name": "KCH",
+        "icon": "assets/coinIcons/KCH.png"
+    },
+    "0X47A9D630DC5B28F75D3AF3BE3AAA982512CD89AA": {
+        "name": "ARGO",
+        "icon": "assets/coinIcons/ARGO.png"
+    },
+    "0X85608D6373FDCFC9FB1582187DC3A81C2942F3F2": {
+        "name": "CHUCKY",
+        "icon": "assets/coinIcons/chucky.jpg"
+    },
+    "0X0804702A4E749D39A35FDE73D1DF0B1F1D6B8347": {
+        "name": "SINGLE",
+        "icon": "assets/coinIcons/SINGLE.png"
+    },
+    "0XDCC261C03CD2F33EBEA404318CDC1D9F8B78E1AD": {
+        "name": "VSHARE",
+        "icon": "assets/coinIcons/VSHARE.png"
+    },
+    "0X00D7699B71290094CCB1A5884CD835BD65A78C17": {
+        "name": "VERSA",
+        "icon": "assets/coinIcons/VERSA.png"
+    },
+    "0X181CC996EEA445212E61BD45FF742B88C3907287": {
+        "name": "KREES",
+        "icon": "assets/coinIcons/KREES.webp"
+    },
+    "0X88BF399D2BBBE7BA3C1EBEF2AC83AE7571FF10D7": {
+        "name": "FROGS",
+        "icon": "assets/coinIcons/FROGS.webp"
+    },
+    "0X88BF399D2BBBE7BA3C1EBEF2AC83AE7571FF10D7": {
+        "name": "BAD",
+        "icon": "assets/coinIcons/BAD.webp"
+    },
+    "0X88BF399D2BBBE7BA3C1EBEF2AC83AE7571FF10D7": {
+        "name": "BAD",
+        "icon": "assets/coinIcons/BAD.webp"
+    },
+    "0X7492450CC8897A4E444AD972EB1619251EF15C23": {
+        "name": "GM",
+        "icon": "assets/coinIcons/gm.png"
+    },
+    "0X2C43D9F78E4132FBE40BEBB8EC5F61377472B2C0": {
+        "name": "DARKG",
+        "icon": "assets/coinIcons/DARKG.png"
+    },
+    "0X83B2AC8642AE46FC2823BC959FFEB3C1742C48B5": {
+        "name": "DARK",
+        "icon": "assets/coinIcons/DARK.png"
+    },
+    "0X34ACEA6CC02578AF041A5E976B7289CA23CCB7A8": {
+        "name": "RIP",
+        "icon": "assets/coinIcons/RIP.jpg"
+    },
+    "0X40914BBDDEA0EC8D22E044CD3131F1B5ED4E866D": {
+        "name": "CANDY",
+        "icon": "assets/coinIcons/candycity.png"
     }
-    
+
 }
+
