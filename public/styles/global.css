@@ -46,15 +46,16 @@ main {
   flex-direction: column;
 }
 
-/* Dashboard-grid: 5 kolommen met aangepaste breedtes:
-   - Box 1: Newcomers = 1fr
-   - Box 2: Top Gainers = 1fr
-   - Box 3: Top Community = 1.5fr (50% breder)
-   - Box 4: Spotlight & Sentiment = 0.75fr (25% smaller)
-   - Box 5: Market Cap & Dominance = 0.75fr (25% smaller) */
+/* Dashboard-grid:
+   - Box 1: Newcomers: 1fr
+   - Box 2: Top Gainers: 1fr
+   - Box 3: Top Community: calc(1fr + 20px)
+   - Box 4: Spotlight/Sentiment: calc(1fr - 10px)
+   - Box 5: Market Cap & Dominance: calc(1fr - 10px)
+*/
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr 0.75fr 0.75fr;
+  grid-template-columns: 1fr 1fr calc(1fr + 25px) calc(1fr - 15px) calc(1fr - 10px);
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -278,6 +279,9 @@ table tr:hover {
   border: 1px solid var(--border-color);
   padding: 0.5rem;
   text-align: left;
+  white-space: nowrap; /* Zorg dat de tekst op 1 lijn blijft */
+  font-size: 0.85rem;  /* Iets kleiner lettertype */
+  font-weight: bold;   /* Vet */
 }
 
 /* === STATISTIEKEN (Market Cap & Dominance) === */
