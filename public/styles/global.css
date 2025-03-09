@@ -46,10 +46,15 @@ main {
   flex-direction: column;
 }
 
-/* Dashboard-grid: 5 gelijke kolommen */
+/* Dashboard-grid: 5 kolommen met aangepaste breedtes:
+   - Box 1: Newcomers = 1fr
+   - Box 2: Top Gainers = 1fr
+   - Box 3: Top Community = 1.5fr (50% breder)
+   - Box 4: Spotlight & Sentiment = 0.75fr (25% smaller)
+   - Box 5: Market Cap & Dominance = 0.75fr (25% smaller) */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1.5fr 0.75fr 0.75fr;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -117,7 +122,7 @@ table tr:hover {
   background-color: var(--hover-bg);
 }
 
-/* === LOGO'S & ICONS (naast chain-icon regels, voor andere afbeeldingen) === */
+/* === LOGO'S & ICONS === */
 .crypto-logo,
 .table-icon {
   height: 24px;
