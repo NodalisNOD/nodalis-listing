@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "rumham-ham",
+    "name": "RumHam",
+    "ticker": "ham",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ham.jpg",
+    "contract": "0xD4Bf11c2f75e5E4574FEb931Cbc8268885f792f9",
+    "website": "https://rumhamoncronos.wixsite.com/rumham",
+    "explorer": "https://cronoscan.com/address/0xD4Bf11c2f75e5E4574FEb931Cbc8268885f792f9",
+    "twitter": "https://x.com/rumhamcro?t=I8x3XbenGWDqY5X_ipA7uA&s=09",
+    "telegram": "https://t.me/+FetWLd0zCJwyMjcx",
+    "discord": "https://discord.com/invite/wAuA3KdDe3",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@rumhamcro?_t=8s08bldClcW&_r=1"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "This is ham soaked in rum. It is loaded with booze. Goddammit, Frank, eating your drinks? That is genius!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xD4Bf11c2f75e5E4574FEb931Cbc8268885f792f9",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc0b91fe1d1e376b7c5b0686779828fdf07f3b830",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xc0b91fe1d1e376b7c5b0686779828fdf07f3b830/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD4Bf11c2f75e5E4574FEb931Cbc8268885f792f9"
+    }
+  },
+  {
     "id": "pigeon-token",
     "name": "PigeonToken",
     "ticker": "PIQ",
