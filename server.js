@@ -112,51 +112,6 @@ function loadVoteRecords() {
   return new Map();
 }
 
-// === ROUTES ===
-
-// ----- AUTH ROUTES -----
-app.post("/auth/register", authController.register);
-app.post("/auth/login", authController.login);
-app.get(
-  "/auth/user",
-  authController.authenticateToken,
-  authController.getUserInfo
-);
-app.get("/hashtags/trending", hashtagController.getTrendingHashtags);
-app.get(
-  "/auth/profile",
-  authController.authenticateToken,
-  authController.getProfile
-);
-app.post(
-  "/auth/update-bio",
-  authController.authenticateToken,
-  authController.updateBio
-);
-app.post(
-  "/auth/follow",
-  authController.authenticateToken,
-  authController.followUser
-);
-app.post(
-  "/auth/upload-profile",
-  authController.authenticateToken,
-  upload.single("profilePicture"),
-  authController.uploadProfilePicture
-);
-
-// ----- POST ROUTES -----
-app.post("/posts", authController.authenticateToken, postController.createPost);
-app.get("/posts", postController.getPosts);
-app.get("/users/:userId", userController.getUserById);
-app.get("/posts/trending", postController.getTrendingPosts);
-app.post("/posts/:postId/vote", postController.votePost);
-app.post(
-  "/posts/:postId/comments",
-  authController.authenticateToken,
-  postController.addComment
-);
-app.get("/posts/:postId", postController.getPostById);
 
 // ----- COIN API MET SERVER-SIDE CACHING VIA CRON -----
 // De server haalt elke 20 seconden de externe API-data op voor een chunk van 10 coins
