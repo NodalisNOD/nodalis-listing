@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "aryoshin-ary",
+    "name": "Aryoshin ",
+    "ticker": "ARY",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ary.png",
+    "contract": "0x41bc026dabe978bc2fafea1850456511ca4b01bc",
+    "website": "https://www.aryoshin.com",
+    "explorer": "https://cronoscan.com/token/0x41bc026dabe978bc2fafea1850456511ca4b01bc",
+    "twitter": "https://x.com/CronosAry?t=3QjYobaPvCGsZMAXbYmN_Q&s=08",
+    "telegram": "https://t.me/ARY_FAM",
+    "discord": "https://discord.com/invite/fY9CK4EcG4",
+    "whitepaper": "https://www.aryoshin.com/litepaper",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "The limitless Cronos meme!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x41bc026dabe978bc2fafea1850456511ca4b01bc",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc0b91fe1d1e376b7c5b0686779828fdf07f3b830",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x22dd457625e287a9c4b83aea0c384c235c00ec02/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc"
+    }
+  },
+  {
     "id": "crofam-crofam",
     "name": "CROFam",
     "ticker": "CROFAM",
