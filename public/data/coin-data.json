@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "crofam-crofam",
+    "name": "CROFam",
+    "ticker": "CROFAM",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/crofam.jpg",
+    "contract": "0x04632bA88Ae963a21A3E07781eC5BF07223e2cbF",
+    "website": "https://crofam-token.com/",
+    "explorer": "https://cronoscan.com/token/0x04632bA88Ae963a21A3E07781eC5BF07223e2cbF",
+    "twitter": "https://x.com/HQCroFam?s=09",
+    "telegram": "",
+    "discord": "https://discord.gg/Cbsjz4Vs93",
+    "whitepaper": "https://crofam-token.com/wp-content/uploads/2024/03/whitepaper_crofam.pdf",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "CROFam is more than just a token; it is a beacon of unity, symbolizing the strength and potential of collective effort. \nWe believe in growing together, reaching new heights not as individuals, but as a united family bound by shared values and goals.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x04632bA88Ae963a21A3E07781eC5BF07223e2cbF",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc0b91fe1d1e376b7c5b0686779828fdf07f3b830",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x6671c3f8cc69210c97eb31cf20d914e8be568d3a/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x04632bA88Ae963a21A3E07781eC5BF07223e2cbF"
+    }
+  },
+  {
     "id": "rumham-ham",
     "name": "RumHam",
     "ticker": "ham",
