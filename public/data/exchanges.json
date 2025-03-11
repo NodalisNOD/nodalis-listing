@@ -1,5 +1,18 @@
 [
     {
+        "id": "crypto-com",
+        "name": "Crypto.com Exchange",
+        "icon": "public/assets/coinIcons/cryptocom.jpg",
+        "website": "https://crypto.com/exchange",
+        "twitter": "https://twitter.com/cryptocom",
+        "telegram": "https://t.me/CryptocomOfficial",
+        "discord": "",
+        "description": "Crypto.com Exchange is the best place to trade crypto, with deep liquidity, low fees and best execution prices, users can trade major cryptocurrencies like Bitcoin, Ethereum, and many more and receive great CRO-powered rewards",
+        "api_links": {
+            "apiMain": "https://api.coingecko.com/api/v3/exchanges/crypto_com"
+        }
+    },
+    {
         "id": "ebisus-bay",
         "name": "Ebisu's Bay",
         "icon": "public/assets/coinIcons/ebisus.png",

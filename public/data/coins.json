@@ -18,7 +18,7 @@
     "0X288898A6057D2D4989C533E96CB3BC30843C91D7": {
         "name": "PUUSH",
         "icon": "assets/coinIcons/puush.webp"
-    },   
+    },
     "0X9FAE23A2700FEECD5B93E43FDBC03C76AA7C08A6": {
         "name": "LCRO",
         "icon": "assets/coinIcons/LCRO.webp"
@@ -26,7 +26,7 @@
     "0XC21223249CA28397B4B6541DFFAECC539BFF0C59": {
         "name": "USDC",
         "icon": "assets/coinIcons/USDC.webp"
-    },   
+    },
     "0X212331E1435A8DF230715DB4C02B2A3A0ABF8C61": {
         "name": "MAD",
         "icon": "assets/coinIcons/MAD.webp"
@@ -38,11 +38,11 @@
     "0X664E4B17EA045FE92868821F3EE0A76A5DB38166": {
         "name": "ROBIN",
         "icon": "assets/coinIcons/robin.webp"
-    },         
+    },
     "0X50AA2611004B3252030CC95E9C5A2A44DFED9983": {
         "name": "CRONON",
         "icon": "assets/coinIcons/cronon.webp"
-    },  
+    },
     "0X13C0FF45D019A5888DB92631F18556211001883D": {
         "name": "PLATY",
         "icon": "assets/coinIcons/platy.webp"
@@ -107,10 +107,6 @@
         "name": "ALI",
         "icon": "assets/coinIcons/ali.png"
     },
-    "0X45C135C1CDCE8D25A3B729A28659561385C52671": {
-        "name": "ALI",
-        "icon": "assets/coinIcons/ali.png"
-    },
     "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1": {
         "name": "MTD",
         "icon": "assets/coinIcons/mtd.png"
@@ -149,7 +145,7 @@
     },
     "0XBED48612BC69FA1CAB67052B42A95FB30C1BCFEE": {
         "name": "SHIB",
-        "icon": "assets/coinIcons/SHIB.png"
+        "icon": "assets/coinIcons/SHIB.webp"
     },
     "0XF24409D155965CA87C45AD5BC084AD8AD3BE4F39": {
         "name": "BARA",
@@ -282,7 +278,723 @@
     "0X40914BBDDEA0EC8D22E044CD3131F1B5ED4E866D": {
         "name": "CANDY",
         "icon": "assets/coinIcons/candycity.png"
+    },
+    "BTC": {
+        "name": "BTC",
+        "icon": "assets/coinIcons/btc.webp"
+    },
+    "USDT": {
+        "name": "USDT",
+        "icon": "assets/coinIcons/USDT.webp"
+    },
+    "ETH": {
+        "name": "ETH",
+        "icon": "assets/coinIcons/ETH.webp"
+    },
+    "CRO": {
+        "name": "CRO",
+        "icon": "assets/coinIcons/CRONOS.webp"
+    },
+    "SUI": {
+        "name": "SUI",
+        "icon": "assets/coinIcons/SUI.webp"
+    },
+    "HBAR": {
+        "name": "HBAR",
+        "icon": "assets/coinIcons/HBAR.webp"
+    },
+    "TRUMP": {
+        "name": "TRUMP",
+        "icon": "assets/coinIcons/TRUMP.webp"
+    },
+    "AAVE": {
+        "name": "AAVE",
+        "icon": "assets/coinIcons/AAVE.webp"
+    },
+    "RARE": {
+        "name": "RARE",
+        "icon": "assets/coinIcons/RARE.webp"
+    },
+    "S": {
+        "name": "S",
+        "icon": "assets/coinIcons/S.webp"
+    },
+    "STX": {
+        "name": "STX",
+        "icon": "assets/coinIcons/STX.webp"
+    },
+    "DOT": {
+        "name": "DOT",
+        "icon": "assets/coinIcons/DOT.webp"
+    },
+    "LDO": {
+        "name": "LDO",
+        "icon": "assets/coinIcons/LDO.webp"
+    },
+    "MELANIA": {
+        "name": "MELANIA",
+        "icon": "assets/coinIcons/MELANIA.webp"
+    },
+    "LMWR": {
+        "name": "LMWR",
+        "icon": "assets/coinIcons/LMWR.webp"
+    },
+    "ARKM": {
+        "name": "ARKM",
+        "icon": "assets/coinIcons/ARKM.webp"
+    },
+    "MOODENG": {
+        "name": "MOODENG",
+        "icon": "assets/coinIcons/MOODENG.jpg"
+    },
+    "XRP": {
+        "name": "XRP",
+        "icon": "assets/coinIcons/XRP.webp"
+    },
+    "ALGO": {
+        "name": "ALGO",
+        "icon": "assets/coinIcons/ALGO.webp"
+    },
+    "GALA": {
+        "name": "GALA",
+        "icon": "assets/coinIcons/GALA.webp"
+    },
+    "POL": {
+        "name": "POL",
+        "icon": "assets/coinIcons/POL.webp"
+    },
+    "LION": {
+        "name": "LION",
+        "icon": "assets/coinIcons/lion.jpg"
+    },
+    "PEPE": {
+        "name": "PEPE",
+        "icon": "assets/coinIcons/PEPE.webp"
+    },
+    "OP": {
+        "name": "OP",
+        "icon": "assets/coinIcons/OP.webp"
+    },
+    "XTZ": {
+        "name": "XTZ",
+        "icon": "assets/coinIcons/XTZ.webp"
+    },
+    "ATH": {
+        "name": "ATH",
+        "icon": "assets/coinIcons/ATH.webp"
+    },
+    "RUNE": {
+        "name": "RUNE",
+        "icon": "assets/coinIcons/RUNE.webp"
+    },
+    "WBTC": {
+        "name": "WBTC",
+        "icon": "assets/coinIcons/wbtc.webp"
+    },
+    "FLIP": {
+        "name": "FLIP",
+        "icon": "assets/coinIcons/FLIP.webp"
+    },
+    "PYTH": {
+        "name": "PYTH",
+        "icon": "assets/coinIcons/PYTH.webp"
+    },
+    "ETC": {
+        "name": "ETC",
+        "icon": "assets/coinIcons/ETC.webp"
+    },
+    "APT": {
+        "name": "APT",
+        "icon": "assets/coinIcons/APT.webp"
+    },
+    "TAO": {
+        "name": "TAO",
+        "icon": "assets/coinIcons/TAO.webp"
+    },
+    "PYUSD": {
+        "name": "PYUSD",
+        "icon": "assets/coinIcons/PYUSD.webp"
+    },
+    "XLM": {
+        "name": "XLM",
+        "icon": "assets/coinIcons/xlm.png"
+    },
+    "ARB": {
+        "name": "ARB",
+        "icon": "assets/coinIcons/ARB.webp"
+    },
+    "WLD": {
+        "name": "WLD",
+        "icon": "assets/coinIcons/WLD.jpeg"
+    },
+    "SUSHI": {
+        "name": "SUSHI",
+        "icon": "assets/coinIcons/SUSHI.webp"
+    },
+    "WIF": {
+        "name": "WIF",
+        "icon": "assets/coinIcons/WIF.jpg"
+    },
+    "ENS": {
+        "name": "ENS",
+        "icon": "assets/coinIcons/ENS.webp"
+    },
+    "BOME": {
+        "name": "BOME",
+        "icon": "assets/coinIcons/BOME.webp"
+    },
+    "ZK": {
+        "name": "ZK",
+        "icon": "assets/coinIcons/ZK.webp"
+    },
+    "AUDIO": {
+        "name": "AUDIO",
+        "icon": "assets/coinIcons/AUDIO.webp"
+    },
+    "ENA": {
+        "name": "ENA",
+        "icon": "assets/coinIcons/ENA.webp"
+    },
+    "AIOZ": {
+        "name": "AIOZ",
+        "icon": "assets/coinIcons/AIOZ.webp"
+    },
+    "ONE": {
+        "name": "ARB",
+        "icon": "assets/coinIcons/ONE.webp"
+    },
+    "SOL": {
+        "name": "SOL",
+        "icon": "assets/coinIcons/SOL.webp"
+    },
+    "JUP": {
+        "name": "JUP",
+        "icon": "assets/coinIcons/JUP.webp"
+    },
+    "INJ": {
+        "name": "INJ",
+        "icon": "assets/coinIcons/INJ.webp"
+    },
+    "DGB": {
+        "name": "DGB",
+        "icon": "assets/coinIcons/DGB.webp"
+    },
+    "EGLD": {
+        "name": "EGLD",
+        "icon": "assets/coinIcons/EGLD.webp"
+    },
+    "ATOM": {
+        "name": "ATOM",
+        "icon": "assets/coinIcons/ATOM.webp"
+    },
+    "DYDX": {
+        "name": "DYDX",
+        "icon": "assets/coinIcons/DYDX.webp"
+    },
+    "VTHO": {
+        "name": "VTHO",
+        "icon": "assets/coinIcons/VTHO.webp"
+    },
+    "KAIA": {
+        "name": "KAIA",
+        "icon": "assets/coinIcons/KAIA.webp"
+    },
+    "BADGER": {
+        "name": "BADGER",
+        "icon": "assets/coinIcons/BADGER.webp"
+    },
+    "UNI": {
+        "name": "UNI",
+        "icon": "assets/coinIcons/UNI.webp"
+    },
+    "REQ": {
+        "name": "REQ",
+        "icon": "assets/coinIcons/REQ.webp"
+    },
+    "RLC": {
+        "name": "RLC",
+        "icon": "assets/coinIcons/RLC.webp"
+    },
+    "VINE": {
+        "name": "VINE",
+        "icon": "assets/coinIcons/VINE.webp"
+    },
+    "LINK": {
+        "name": "LINK",
+        "icon": "assets/coinIcons/LINK.webp"
+    },
+    "FLR": {
+        "name": "FLR",
+        "icon": "assets/coinIcons/FLR.webp"
+    },
+    "ICP": {
+        "name": "ICP",
+        "icon": "assets/coinIcons/ICP.webp"
+    },
+    "AKT": {
+        "name": "AKT",
+        "icon": "assets/coinIcons/AKT.webp"
+    },
+    "POLYX": {
+        "name": "POLYX",
+        "icon": "assets/coinIcons/POLYX.webp"
+    },
+    "AI16Z": {
+        "name": "AI16Z",
+        "icon": "assets/coinIcons/AI16Z.jpg"
+    },
+    "ME": {
+        "name": "ME",
+        "icon": "assets/coinIcons/ME.webp"
+    },
+    "EIGEN": {
+        "name": "EIGEN",
+        "icon": "assets/coinIcons/EIGEN.webp"
+    },
+    "ZRC": {
+        "name": "ZRC",
+        "icon": "assets/coinIcons/ZRC.webp"
+    },
+    "ENJ": {
+        "name": "ENJ",
+        "icon": "assets/coinIcons/ENJ.webp"
+    },
+    "SC": {
+        "name": "SC",
+        "icon": "assets/coinIcons/SC.webp"
+    },
+    "ASTR": {
+        "name": "ASTR",
+        "icon": "assets/coinIcons/ASTR.webp"
+    },
+    "ADA": {
+        "name": "ADA",
+        "icon": "assets/coinIcons/ADA.webp"
+    },
+    "VOXEL": {
+        "name": "VOXEL",
+        "icon": "assets/coinIcons/VOXEL.webp"
+    },
+    "YGG": {
+        "name": "YGG",
+        "icon": "assets/coinIcons/YGG.webp"
+    },
+    "ALI": {
+        "name": "ALI",
+        "icon": "assets/coinIcons/ali.png"
+    },
+    "FIL": {
+        "name": "FIL",
+        "icon": "assets/coinIcons/FIL.webp"
+    },
+    "MKR": {
+        "name": "MKR",
+        "icon": "assets/coinIcons/MKR.webp"
+    },
+    "BCH": {
+        "name": "BCH",
+        "icon": "assets/coinIcons/BCH.webp"
+    },
+    "SAFE": {
+        "name": "SAFE",
+        "icon": "assets/coinIcons/SAFE.webp"
+    },
+    "DOGE": {
+        "name": "DOGE",
+        "icon": "assets/coinIcons/doge.png"
+    },
+    "CHR": {
+        "name": "CHR",
+        "icon": "assets/coinIcons/CHR.webp"
+    },
+    "ORCA": {
+        "name": "ORCA",
+        "icon": "assets/coinIcons/ORCA.webp"
+    },
+    "BAND": {
+        "name": "BAND",
+        "icon": "assets/coinIcons/BAND.webp"
+    },
+    "CELR": {
+        "name": "CELR",
+        "icon": "assets/coinIcons/CELR.webp"
+    },
+    "POND": {
+        "name": "POND",
+        "icon": "assets/coinIcons/POND.webp"
+    },
+    "THETA": {
+        "name": "THETA",
+        "icon": "assets/coinIcons/THETA.webp"
+    },
+    "AERO": {
+        "name": "AERO",
+        "icon": "assets/coinIcons/AERO.webp"
+    },
+    "POPCAT": {
+        "name": "POPCAT",
+        "icon": "assets/coinIcons/POPCAT.webp"
+    },
+    "CETUS": {
+        "name": "CETUS",
+        "icon": "assets/coinIcons/CETUS.webp"
+    },
+    "FWOG": {
+        "name": "FWOG",
+        "icon": "assets/coinIcons/FWOG.webp"
+    },
+    "AURORA": {
+        "name": "AURORO",
+        "icon": "assets/coinIcons/AURORA.webp"
+    },
+    "XPLA": {
+        "name": "XPLA",
+        "icon": "assets/coinIcons/XPLA.webp"
+    },
+    "KSM": {
+        "name": "KSM",
+        "icon": "assets/coinIcons/KSM.webp"
+    },
+    "GEL": {
+        "name": "GEL",
+        "icon": "assets/coinIcons/GEL.webp"
+    },
+    "PONKE": {
+        "name": "PONKE",
+        "icon": "assets/coinIcons/PONKE.webp"
+    },
+    "LTC": {
+        "name": "LTC",
+        "icon": "assets/coinIcons/LTC.webp"
+    },
+    "AXS": {
+        "name": "AXS",
+        "icon": "assets/coinIcons/AXS.webp"
+    },
+    "ZIL": {
+        "name": "ZIL",
+        "icon": "assets/coinIcons/ZIL.webp"
+    },
+    "ACA": {
+        "name": "ACA",
+        "icon": "assets/coinIcons/ACA.webp"
+    },
+    "ORDI": {
+        "name": "ORDI",
+        "icon": "assets/coinIcons/ORDI.webp"
+    },
+    "MANA": {
+        "name": "MANA",
+        "icon": "assets/coinIcons/MANA.webp"
+    },
+    "BIGTIME": {
+        "name": "BIGTIME",
+        "icon": "assets/coinIcons/BIGTIME.webp"
+    },
+    "API3": {
+        "name": "API3",
+        "icon": "assets/coinIcons/API3.webp"
+    },
+    "BOSON": {
+        "name": "BOSON",
+        "icon": "assets/coinIcons/BOSON.webp"
+    },
+    "BCUT": {
+        "name": "BCUT",
+        "icon": "assets/coinIcons/BCUT.webp"
+    },
+    "NEO": {
+        "name": "NEO",
+        "icon": "assets/coinIcons/NEO.webp"
+    },
+    "BCUT": {
+        "name": "BCUT",
+        "icon": "assets/coinIcons/BCUT.webp"
+    },
+    "L3": {
+        "name": "L3",
+        "icon": "assets/coinIcons/L3.webp"
+    },
+    "COMP": {
+        "name": "COMP",
+        "icon": "assets/coinIcons/COMP.webp"
+    },
+    "METIS": {
+        "name": "METIS",
+        "icon": "assets/coinIcons/METIS.webp"
+    },
+    "FLOW": {
+        "name": "FLOW",
+        "icon": "assets/coinIcons/FLOW.webp"
+    },
+    "ALICE": {
+        "name": "ALICE",
+        "icon": "assets/coinIcons/ALICE.webp"
+    },
+    "ZERC": {
+        "name": "ZERC",
+        "icon": "assets/coinIcons/ZERC.webp"
+    },
+    "CROID": {
+        "name": "CROID",
+        "icon": "assets/coinIcons/CROID.png"
+    },
+    "TIA": {
+        "name": "TIA",
+        "icon": "assets/coinIcons/TIA.webp"
+    },
+    "AVAX": {
+        "name": "AVAX",
+        "icon": "assets/coinIcons/AVAX.webp"
+    },
+    "JASMY": {
+        "name": "JASMY",
+        "icon": "assets/coinIcons/JASMY.webp"
+    },
+    "VET": {
+        "name": "VET",
+        "icon": "assets/coinIcons/VET.webp"
+    },
+    "CRV": {
+        "name": "CRV",
+        "icon": "assets/coinIcons/CRV.webp"
+    },
+    "AMP": {
+        "name": "AMP",
+        "icon": "assets/coinIcons/AMP.webp"
+    },
+    "CHZ": {
+        "name": "CHZ",
+        "icon": "assets/coinIcons/CHZ.webp"
+    },
+    "STG": {
+        "name": "STG",
+        "icon": "assets/coinIcons/STG.webp"
+    },
+    "NEON": {
+        "name": "NEON",
+        "icon": "assets/coinIcons/NEON.webp"
+    },
+    "GLMR": {
+        "name": "GLMR",
+        "icon": "assets/coinIcons/GLMR.webp"
+    },
+    "PLUME": {
+        "name": "PLUME",
+        "icon": "assets/coinIcons/PLUME.webp"
+    },
+    "FET": {
+        "name": "FET",
+        "icon": "assets/coinIcons/FET.webp"
+    },
+    "NOS": {
+        "name": "NOS",
+        "icon": "assets/coinIcons/NOS.webp"
+    },
+    "TRAC": {
+        "name": "TRAC",
+        "icon": "assets/coinIcons/TRAC.webp"
+    },
+    "NEAR": {
+        "name": "NEAR",
+        "icon": "assets/coinIcons/NEAR.webp"
+    },
+    "SAND": {
+        "name": "SAND",
+        "icon": "assets/coinIcons/SAND.webp"
+    },
+    "SEI": {
+        "name": "SEI",
+        "icon": "assets/coinIcons/SEI.webp"
+    },
+    "HOT": {
+        "name": "HOT",
+        "icon": "assets/coinIcons/HOT.webp"
+    },
+    "XNO": {
+        "name": "XNO",
+        "icon": "assets/coinIcons/XNO.webp"
+    },
+    "MLN": {
+        "name": "MLN",
+        "icon": "assets/coinIcons/MLN.webp"
+    },
+    "HEHE": {
+        "name": "HEHE",
+        "icon": "assets/coinIcons/HEHE.webp"
+    },
+    "CSPR": {
+        "name": "CSPR",
+        "icon": "assets/coinIcons/CSPR.webp"
+    },
+    "SHIB": {
+        "name": "SHIB",
+        "icon": "assets/coinIcons/SHIB.webp"
+    },
+    "VRA": {
+        "name": "VRA",
+        "icon": "assets/coinIcons/VRA.webp"
+    },
+    "IO": {
+        "name": "IO",
+        "icon": "assets/coinIcons/IO.webp"
+    },
+    "QNT": {
+        "name": "QNT",
+        "icon": "assets/coinIcons/QNT.webp"
+    },
+    "PDA": {
+        "name": "PDA",
+        "icon": "assets/coinIcons/PDA.webp"
+    },
+    "SHDW": {
+        "name": "SHDW",
+        "icon": "assets/coinIcons/SHDW.webp"
+    },
+    "FUL": {
+        "name": "FUL",
+        "icon": "assets/coinIcons/FUL.png"
+    },
+    "RAD": {
+        "name": "RAD",
+        "icon": "assets/coinIcons/RAD.webp"
+    },
+    "BOBA": {
+        "name": "BOBA",
+        "icon": "assets/coinIcons/BOBA.webp"
+    },
+    "PNUT": {
+        "name": "PNUT",
+        "icon": "assets/coinIcons/PNUT.webp"
+    },
+    "IDEX": {
+        "name": "IDEX",
+        "icon": "assets/coinIcons/IDEX.webp"
+    },
+    "0X431469CE9D70A5879E959BF15CFFAD003DC7F69F": {
+        "name": "DAMOON",
+        "icon": "assets/coinIcons/DAMOON.webp"
+    },
+    "0XED70E1B02A63FAFD5ECE7C0A2A1B12D4B424B4A8": {
+        "name": "CROAKEY",
+        "icon": "assets/coinIcons/croak.jpg"
+    },
+    "0X06C04B0AD236E7CA3B3189B1D049FE80109C7977": {
+        "name": "CANDY",
+        "icon": "assets/coinIcons/candycity.png"
+    },
+    "0X679F6863A653251C8C215E77205A7058B5BF676A": {
+        "name": "TROLL",
+        "icon": "assets/coinIcons/TROLL.webp"
+    },
+    "0X87EFB3EC1576DEC8ED47E58B832BEDCD86EE186E": {
+        "name": "TUSD",
+        "icon": "assets/coinIcons/tusd.jpg"
+    },
+    "0XA0D445DC147F598D63518B5783CA97CD8BD9F5BC": {
+        "name": "STUCK",
+        "icon": "assets/coinIcons/stuck.jpg"
+    },
+    "MASK": {
+        "name": "MASK",
+        "icon": "assets/coinIcons/MASK.jpg"
+    },
+    "ANIME": {
+        "name": "ANIME",
+        "icon": "assets/coinIcons/ANIME.webp"
+    },
+    "LAYER": {
+        "name": "LAYER",
+        "icon": "assets/coinIcons/LAYER.webp"
+    },
+    "VELO": {
+        "name": "VELO",
+        "icon": "assets/coinIcons/VELO.webp"
+    },
+    "RED": {
+        "name": "RED",
+        "icon": "assets/coinIcons/RED.webp"
+    },
+    "KAVA": {
+        "name": "KAVA",
+        "icon": "assets/coinIcons/KAVA.webp"
+    },
+    "GRT": {
+        "name": "GRT",
+        "icon": "assets/coinIcons/GRT.webp"
+    },
+    "FARM": {
+        "name": "FARM",
+        "icon": "assets/coinIcons/FARM.webp"
+    },
+    "STRAX": {
+        "name": "STRAX",
+        "icon": "assets/coinIcons/STRAX.webp"
+    },
+    "ZBCN": {
+        "name": "ZBCN",
+        "icon": "assets/coinIcons/ZBCN.webp"
+    },
+    "AXL": {
+        "name": "AXL",
+        "icon": "assets/coinIcons/AXL.webp"
+    },
+    "W": {
+        "name": "W",
+        "icon": "assets/coinIcons/W.webp"
+    },
+    "GNO": {
+        "name": "GNO",
+        "icon": "assets/coinIcons/GNO.webp"
+    },
+    "VNO": {
+        "name": "VNO",
+        "icon": "assets/coinIcons/VNO.webp"
+    },
+    "YFI": {
+        "name": "YFI",
+        "icon": "assets/coinIcons/YFI.webp"
+    },
+    "UMA": {
+        "name": "UMA",
+        "icon": "assets/coinIcons/UMA.webp"
+    },
+    "ALCX": {
+        "name": "UALCXMA",
+        "icon": "assets/coinIcons/ALCX.webp"
+    },
+    "RVN": {
+        "name": "RVN",
+        "icon": "assets/coinIcons/RVN.webp"
+    },
+    "AGLD": {
+        "name": "AGLD",
+        "icon": "assets/coinIcons/AGLD.webp"
+    },
+    "DRIFT": {
+        "name": "DRIFT",
+        "icon": "assets/coinIcons/DRIFT.webp"
+    },
+    "DRIFT": {
+        "name": "DRIFT",
+        "icon": "assets/coinIcons/DRIFT.webp"
+    },
+    "MAVIA": {
+        "name": "MAVIA",
+        "icon": "assets/coinIcons/MAVIA.webp"
+    },
+    "LQTY": {
+        "name": "LQTY",
+        "icon": "assets/coinIcons/LQTY.webp"
+    },
+    "LQTY": {
+        "name": "LQTY",
+        "icon": "assets/coinIcons/LQTY.webp"
+    },
+    "NTRN": {
+        "name": "NTRN ",
+        "icon": "assets/coinIcons/NTRN.webp"
     }
+    
 
 }
-

@@ -18,12 +18,7 @@ const fetch = (...args) =>
 // Bestand waarin globale vote-records worden opgeslagen
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
 
-// === CONTROLLERS ===
-const authController = require("./controllers/authController");
-const postController = require("./controllers/postController");
-const userController = require("./controllers/userController");
-const hashtagController = require("./controllers/hashtagController");
-const moderatorController = require("./controllers/moderatorController");
+
 
 // Haal de JWT_SECRET uit de omgeving
 const JWT_SECRET = process.env.JWT_SECRET;
