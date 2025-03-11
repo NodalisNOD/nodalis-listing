@@ -994,7 +994,11 @@
     "NTRN": {
         "name": "NTRN ",
         "icon": "assets/coinIcons/NTRN.webp"
+    },
+    "RENDER": {
+        "name": "RENDER ",
+        "icon": "assets/coinIcons/RENDER.webp"
     }
-    
+
 
 }
