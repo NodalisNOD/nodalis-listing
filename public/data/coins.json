@@ -281,7 +281,7 @@
     },
     "BTC": {
         "name": "BTC",
-        "icon": "assets/coinIcons/btc.webp"
+        "icon": "assets/coinIcons/BTC.webp"
     },
     "USDT": {
         "name": "USDT",
@@ -998,7 +998,9 @@
     "RENDER": {
         "name": "RENDER ",
         "icon": "assets/coinIcons/RENDER.webp"
+    },
+    "ONDO": {
+        "name": "ONDO ",
+        "icon": "assets/coinIcons/ONDO.webp"
     }
-
-
 }
