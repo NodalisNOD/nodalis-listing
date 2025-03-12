@@ -490,15 +490,20 @@ async function fetchVotes() {
   try {
     const response = await fetch(`/votes/${coinId}`);
     if (!response.ok) throw new Error("Network error");
-    const votes = await response.json();
-    const positiveVotes = Number(votes.positive) || 0;
-    const negativeVotes = Number(votes.negative) || 0;
+    const data = await response.json();
+    
+    // Correctie: Gebruik data.votes in plaats van directe toegang
+    const positiveVotes = Number(data.votes?.positive) || 0;
+    const negativeVotes = Number(data.votes?.negative) || 0;
+    
+    console.log("Ontvangen stemmen:", { positive: positiveVotes, negative: negativeVotes }); // Debugging
     updateSentimentBar({ positive: positiveVotes, negative: negativeVotes });
   } catch (error) {
-    console.error("Error fetching coin votes:", error);
+    console.error("Fout bij ophalen van stemmen:", error);
     updateSentimentBar({ positive: 0, negative: 0 });
   }
 }
+
 
 // Verstuur een stem voor de coin (1x per dag per coin)
 async function submitVote(type, event) {
