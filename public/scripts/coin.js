@@ -529,19 +529,21 @@ function updateSentimentBar(votes) {
   const positiveVotes = Number(votes.positive) || 0;
   const negativeVotes = Number(votes.negative) || 0;
   const totalVotes = positiveVotes + negativeVotes;
-  const positivePercentage = totalVotes > 0 ? ((positiveVotes / totalVotes) * 100).toFixed(1) : 0;
-  const negativePercentage = totalVotes > 0 ? ((negativeVotes / totalVotes) * 100).toFixed(1) : 0;
+  const positivePercentage = totalVotes > 0 ? ((positiveVotes / totalVotes) * 100).toFixed(1) : 50; // Default to 50% if no votes
+  const negativePercentage = totalVotes > 0 ? ((negativeVotes / totalVotes) * 100).toFixed(1) : 50; // Default to 50% if no votes
   
   const positiveBar = document.getElementById("positive-bar");
   const negativeBar = document.getElementById("negative-bar");
+  
   positiveBar.style.width = `${positivePercentage}%`;
-  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}%` : "0%";
+  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}% (${positiveVotes})` : "0% (0)";
+  
   negativeBar.style.width = `${negativePercentage}%`;
-  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
+  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}% (${negativeVotes})` : "0% (0)";
   
   const totalVotesEl = document.getElementById("total-votes");
   if (totalVotesEl) {
-    totalVotesEl.textContent = `Votes: ${totalVotes}`;
+    totalVotesEl.textContent = `Total Votes: ${totalVotes}`;
   }
 }
 
