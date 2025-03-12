@@ -541,10 +541,10 @@ function updateSentimentBar(votes) {
   const negativeBar = document.getElementById("negative-bar");
   
   positiveBar.style.width = `${positivePercentage}%`;
-  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}% (${positiveVotes})` : "0% (0)";
+  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}%` : "0%";
   
   negativeBar.style.width = `${negativePercentage}%`;
-  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}% (${negativeVotes})` : "0% (0)";
+  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
   
   const totalVotesEl = document.getElementById("total-votes");
   if (totalVotesEl) {

@@ -111,6 +111,14 @@ main {
 }
 
 /* 🔹 Sentiment Sectie */
+.sentiment-title {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #042c3f;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 100%;
+}
 .sentiment-container {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -119,7 +127,7 @@ main {
 .sentiment-bar {
   position: relative;
   display: flex; /* Zorgt ervoor dat de kinderen naast elkaar komen */
-  width: 100%;
+  width: 70%;
   height: 24px;
   margin: 0 auto 1rem;
   border-radius: 12px;
