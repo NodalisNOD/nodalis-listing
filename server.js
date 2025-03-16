@@ -18,8 +18,6 @@ const fetch = (...args) =>
 // Bestand waarin globale vote-records worden opgeslagen
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
 
-
-
 // Haal de JWT_SECRET uit de omgeving
 const JWT_SECRET = process.env.JWT_SECRET;
 console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
@@ -28,20 +26,25 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// === ROUTES ===
+require("dotenv").config(); // Laad .env variabelen
+console.log("🔑 JWT_SECRET geladen:", process.env.JWT_SECRET);
 
 // Importeer de ads-route
 const spotlightRoute = require('./routes/spotlight');
 app.use(spotlightRoute);
 
+// Importeer de swapper-route (zorg dat ./routes/swapRoutes.js bestaat en de juiste endpoints bevat)
+const swapRoutes = require('./routes/swapRoutes');
+app.use("/api", swapRoutes);
+
 // === MIDDLEWARE ===
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public"), { maxAge: 0 }));
-app.use("/uploads", express.static("public/uploads"));
 app.use(cookieParser());
 app.use(helmet());
-app.use(express.static('public'));
 
 
 // Indien er geen userId-cookie is, genereer deze
@@ -56,16 +59,6 @@ app.use((req, res, next) => {
   }
   next();
 });
-
-// === MULTER CONFIGURATIE VOOR PROFIELAFBEELDINGEN ===
-const storage = multer.diskStorage({
-  destination: "public/uploads/",
-  filename: (req, file, cb) => {
-    const userId = req.user ? req.user.userId : "unknown";
-    cb(null, `profile-${userId}.jpg`);
-  },
-});
-const upload = multer({ storage });
 
 // === GLOBALE VOTING VARIABELEN (voor community votes) ===
 let globalVotes = { positive: 0, negative: 0 };
@@ -109,7 +102,7 @@ function loadVoteRecords() {
 
 
 // ----- COIN API MET SERVER-SIDE CACHING VIA CRON -----
-// De server haalt elke 20 seconden de externe API-data op voor een chunk van 10 coins
+// De server haalt elke 25 seconden de externe API-data op voor een chunk van 10 coins
 // en slaat deze op in de cache. De cache wordt ook geschreven naar public/data/coinCache.json voor debug-doeleinden.
 
 let coinDataCache = null;
@@ -140,9 +133,7 @@ async function fetchGeneralApiData(url) {
 async function updateCoinDataCache() {
   try {
     console.log("⏳ Updating coin data cache for a chunk...");
-
     const cachedData = coinDataCache || {};
-
     const totalCoins = manualCoinData.length;
     const totalChunks = Math.ceil(totalCoins / chunkSize);
     const start = currentChunkIndex * chunkSize;
@@ -184,7 +175,7 @@ async function updateCoinDataCache() {
   }
 }
 
-// Plan de taak om elke 20 seconden te draaien
+// Plan de taak om elke 25 seconden te draaien
 cron.schedule("*/25 * * * * *", updateCoinDataCache);
 // Update direct bij serverstart
 updateCoinDataCache();
@@ -197,7 +188,8 @@ app.get("/api/coins", (req, res) => {
     res.status(503).json({ message: "Coin data not available yet" });
   }
 });
-const CACHE_DURATION = 30000; // 30 seconds in milliseconds
+
+const CACHE_DURATION = 30000; // 30 seconden in milliseconden
 // Zorg dat de directory public/data bestaat
 const dataDir = path.join(__dirname, 'public', 'data');
 if (!fs.existsSync(dataDir)) {
@@ -213,8 +205,6 @@ async function fetchCronosMarketCap() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-
-    // Pas de key aan indien nodig, bijvoorbeeld:
     const marketCap = parseFloat(data.data.attributes.market_cap_usd);
     if (isNaN(marketCap)) {
       throw new Error(`Invalid market cap value: ${data.data.attributes.market_cap_usd}`);
@@ -227,7 +217,6 @@ async function fetchCronosMarketCap() {
 }
 
 // ----- EXCHANGE CACHE -----
-
 // Variabele voor de exchange-cache
 let exchangeDataCache = null;
 
@@ -286,7 +275,7 @@ async function updateExchangeDataCache() {
   }
 }
 
-// Plan de taak om elke 60 seconden de exchange-cache te updaten (pas de frequentie aan indien nodig)
+// Plan de taak om elke 60 seconden de exchange-cache te updaten
 cron.schedule("*/60 * * * * *", updateExchangeDataCache);
 // Update direct bij serverstart
 updateExchangeDataCache();
@@ -300,7 +289,6 @@ app.get("/api/exchanges", (req, res) => {
     res.status(503).json({ message: "Exchange data not available yet" });
   }
 });
-
 
 // Functie om de Cronos-tokenprijs (en market cap) op te halen en te cachen
 async function updateCroPrice() {
@@ -351,11 +339,7 @@ app.post("/submit-coin-listing", (req, res) => {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
     subject: `New Coin Listing Request: ${listingData.tokenName || "Unknown"}`,
-    text: `A new coin listing request has been submitted:\n\n${JSON.stringify(
-      listingData,
-      null,
-      2
-    )}`,
+    text: `A new coin listing request has been submitted:\n\n${JSON.stringify(listingData, null, 2)}`
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -380,11 +364,7 @@ app.post("/submit-exchange-listing", (req, res) => {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
     subject: `New Exchange Listing Request: ${listingData.exchangeName || "Unknown"}`,
-    text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(
-      listingData,
-      null,
-      2
-    )}`,
+    text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(listingData, null, 2)}`
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -416,7 +396,7 @@ app.post("/submit-contact", async (req, res) => {
     from: email,
     to: "nodalisn@gmail.com",
     subject: `Contact Form Submission: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
   try {
     await transporter.sendMail(mailOptions);
@@ -627,11 +607,7 @@ app.post("/submit-coin-listing", (req, res) => {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
     subject: `New Coin Listing Request: ${listingData.tokenName || "Unknown"}`,
-    text: `A new coin listing request has been submitted:\n\n${JSON.stringify(
-      listingData,
-      null,
-      2
-    )}`,
+    text: `A new coin listing request has been submitted:\n\n${JSON.stringify(listingData, null, 2)}`
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -656,11 +632,7 @@ app.post("/submit-exchange-listing", (req, res) => {
     from: "nodalisn@gmail.com",
     to: "nodalisn@gmail.com",
     subject: `New Exchange Listing Request: ${listingData.exchangeName || "Unknown"}`,
-    text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(
-      listingData,
-      null,
-      2
-    )}`,
+    text: `A new exchange listing request has been submitted:\n\n${JSON.stringify(listingData, null, 2)}`
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -692,7 +664,7 @@ app.post("/submit-contact", async (req, res) => {
     from: email,
     to: "nodalisn@gmail.com",
     subject: `Contact Form Submission: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
   try {
     await transporter.sendMail(mailOptions);

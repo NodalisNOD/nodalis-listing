@@ -287,40 +287,49 @@ async function fetchAndMergeDynamicData(coinStatic) {
   }
 }
 
-// Toon een notificatie (bijv. voor kopiëren of stemmen)
-function showNotification(message, event) {
-  const popup = document.getElementById("notification-popup");
-  popup.textContent = message;
-  const xOffset = 20;
-  const yOffset = 20;
-  popup.style.left = `${event.pageX + xOffset}px`;
-  popup.style.top = `${event.pageY + yOffset}px`;
-  popup.classList.remove("hidden");
-  popup.classList.add("visible");
-  setTimeout(() => {
-    popup.classList.remove("visible");
-    popup.classList.add("hidden");
-  }, 2000);
-}
 
-// Verstuur een trending stem voor de huidige coin
-async function submitTrendingVote() {
+// 🔥 Toon een melding op het scherm
+function showNotification(message, event = null) {
+  alert(message); // Je kan dit vervangen door een mooiere UI-popup als nodig
+  console.warn(message);
+}
+// Verstuur een trending stem voor de huidige coin (alleen ingelogde gebruikers)
+async function submitTrendingVote(event) {
+  if (!currentUser) {
+    showNotification("❌ You need to log in to vote!", event);
+    return; // ❌ Blijf op dezelfde pagina
+  }
+
   try {
     const response = await fetch(`/trending/${coinId}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId: currentUser.uid }),
     });
+
     if (response.status === 429) {
-      alert("You can only vote once every 24 hours for this coin.");
+      showNotification("⚠️ You can only vote once every 24 hours for this coin.", event);
       return;
     }
+
     const data = await response.json();
-    alert("Your trending vote has been recorded.");
+    showNotification("✅ Your trending vote has been recorded.", event);
   } catch (error) {
     console.error("Error submitting trending vote:", error);
-    alert("Failed to submit trending vote.");
+    showNotification("❌ Failed to submit trending vote.", event);
   }
 }
+
+// Koppel de trending stemknop indien aanwezig
+document.addEventListener("DOMContentLoaded", () => {
+  const trendingBtn = document.getElementById("vote-trending");
+  if (trendingBtn) {
+    trendingBtn.addEventListener("click", submitTrendingVote);
+  }
+});
+
 
 // Grafiek weergeven vanuit de cache (indien grafiekdata direct beschikbaar is)
 function renderGraphFromCache(graphData) {
@@ -444,15 +453,26 @@ function renderGraph(graphApi) {
 
 /* ===================== */
 /* Coin Sentiment Votes  */
-/* (Permanente votes per coin met dagelijkse beperking) */
 /* ===================== */
+
+// Firebase authenticatiecontrole
+let currentUser = null;
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log("Gebruiker ingelogd:", user.displayName);
+    currentUser = user;
+  } else {
+    console.log("Gebruiker is niet ingelogd.");
+    currentUser = null;
+  }
+});
 
 // Helper: Bereken het aantal milliseconden tot de volgende UTC-middernacht
 function getTimeRemainingForCoinVote() {
   const now = new Date();
   const nextMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
-  const diff = nextMidnight - now;
-  return diff > 0 ? diff : 0;
+  return nextMidnight - now > 0 ? nextMidnight - now : 0;
 }
 
 // Helper: Formatteer milliseconden naar HH:MM:SS
@@ -468,14 +488,18 @@ function formatTime(ms) {
 function updateCoinVoteTimer() {
   const timerEl = document.getElementById("reset-timer");
   if (!timerEl) return;
-  const remaining = getTimeRemainingForCoinVote();
-  timerEl.textContent = `Reset in: ${formatTime(remaining)}`;
+  timerEl.textContent = `Reset in: ${formatTime(getTimeRemainingForCoinVote())}`;
 }
 
 // Controleer of de gebruiker voor deze coin al heeft gestemd (op basis van UTC-datum)
 function canVoteCoin() {
-  const lastVote = localStorage.getItem(`coin_vote_${coinId}`);
+  if (!currentUser) {
+    return false; // Niet ingelogd = niet stemmen
+  }
+
+  const lastVote = localStorage.getItem(`coin_vote_${coinId}_${currentUser.uid}`);
   if (!lastVote) return true;
+
   const lastVoteDate = new Date(lastVote);
   const now = new Date();
   return (
@@ -485,19 +509,57 @@ function canVoteCoin() {
   );
 }
 
-// Haal de coin votes op (via endpoint /votes/:coinId) en update de sentimentbalk en het totaal aantal stemmen
+
+// Verstuur een stem (alleen als gebruiker is ingelogd)
+async function submitVote(type, event) {
+  if (!currentUser) {
+    showNotification("❌ You need to log in to vote!", event);
+    return;
+  }
+
+  if (!canVoteCoin()) {
+    showNotification("⚠️ You have already voted today.", event);
+    return;
+  }
+
+  try {
+    const response = await fetch(`/votes/${coinId}/${type}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId: currentUser.uid }),
+    });
+
+    if (response.status === 429) {
+      showNotification("⚠️ You can only vote once every 24 hours.", event);
+      return;
+    }
+
+    const data = await response.json();
+    updateSentimentBar({
+      positive: Number(data.votes.positive) || 0,
+      negative: Number(data.votes.negative) || 0,
+    });
+
+    showNotification("✅ Your vote has been recorded.", event);
+    localStorage.setItem(`coin_vote_${coinId}_${currentUser.uid}`, new Date().toISOString());
+  } catch (error) {
+    console.error("Error submitting coin vote:", error);
+    showNotification("❌ Failed to submit vote.", event);
+  }
+}
+// Haal de coin votes op en update de UI
 async function fetchVotes() {
   try {
     const response = await fetch(`/votes/${coinId}`);
     if (!response.ok) throw new Error("Network error");
+
     const data = await response.json();
-    
-    // Correctie: Gebruik data.votes in plaats van directe toegang
-    const positiveVotes = Number(data.votes?.positive) || 0;
-    const negativeVotes = Number(data.votes?.negative) || 0;
-    
-    console.log("Ontvangen stemmen:", { positive: positiveVotes, negative: negativeVotes }); // Debugging
-    updateSentimentBar({ positive: positiveVotes, negative: negativeVotes });
+    updateSentimentBar({
+      positive: Number(data.votes?.positive) || 0,
+      negative: Number(data.votes?.negative) || 0,
+    });
   } catch (error) {
     console.error("Fout bij ophalen van stemmen:", error);
     updateSentimentBar({ positive: 0, negative: 0 });
@@ -505,47 +567,19 @@ async function fetchVotes() {
 }
 
 
-// Verstuur een stem voor de coin (1x per dag per coin)
-async function submitVote(type, event) {
-  if (!canVoteCoin()) {
-    showNotification("You have already voted today.", event);
-    return;
-  }
-  try {
-    const response = await fetch(`/votes/${coinId}/${type}`, { method: "POST" });
-    if (response.status === 429) {
-      showNotification("You can only vote once every 24 hours.", event);
-      return;
-    }
-    const data = await response.json();
-    const positiveVotes = Number(data.votes.positive) || 0;
-    const negativeVotes = Number(data.votes.negative) || 0;
-    updateSentimentBar({ positive: positiveVotes, negative: negativeVotes });
-    showNotification("Your vote has been recorded.", event);
-    localStorage.setItem(`coin_vote_${coinId}`, new Date().toISOString());
-  } catch (error) {
-    console.error("Error submitting coin vote:", error);
-    showNotification("Failed to submit vote.", event);
-  }
-}
 
 // Update de sentimentbalk en het totaal aantal stemmen
 function updateSentimentBar(votes) {
-  const positiveVotes = Number(votes.positive) || 0;
-  const negativeVotes = Number(votes.negative) || 0;
-  const totalVotes = positiveVotes + negativeVotes;
-  const positivePercentage = totalVotes > 0 ? ((positiveVotes / totalVotes) * 100).toFixed(1) : 50; // Default to 50% if no votes
-  const negativePercentage = totalVotes > 0 ? ((negativeVotes / totalVotes) * 100).toFixed(1) : 50; // Default to 50% if no votes
-  
-  const positiveBar = document.getElementById("positive-bar");
-  const negativeBar = document.getElementById("negative-bar");
-  
-  positiveBar.style.width = `${positivePercentage}%`;
-  positiveBar.textContent = totalVotes > 0 ? `${positivePercentage}%` : "0%";
-  
-  negativeBar.style.width = `${negativePercentage}%`;
-  negativeBar.textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
-  
+  const totalVotes = votes.positive + votes.negative;
+  const positivePercentage = totalVotes > 0 ? ((votes.positive / totalVotes) * 100).toFixed(1) : 50;
+  const negativePercentage = totalVotes > 0 ? ((votes.negative / totalVotes) * 100).toFixed(1) : 50;
+
+  document.getElementById("positive-bar").style.width = `${positivePercentage}%`;
+  document.getElementById("positive-bar").textContent = totalVotes > 0 ? `${positivePercentage}%` : "0%";
+
+  document.getElementById("negative-bar").style.width = `${negativePercentage}%`;
+  document.getElementById("negative-bar").textContent = totalVotes > 0 ? `${negativePercentage}%` : "0%";
+
   const totalVotesEl = document.getElementById("total-votes");
   if (totalVotesEl) {
     totalVotesEl.textContent = `Total Votes: ${totalVotes}`;
@@ -562,7 +596,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchVotes();
   setInterval(updateCoinVoteTimer, 1000);
   setInterval(fetchVotes, 10000);
-  
+
   // Koppel de trending stemknop indien aanwezig
   const trendingBtn = document.getElementById("vote-trending");
   if (trendingBtn) {

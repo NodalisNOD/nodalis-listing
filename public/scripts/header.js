@@ -58,9 +58,16 @@ header.innerHTML = `
         <li class="get-listed">
           <a href="/listing" class="get-listed-button">Get listed</a>
         </li>
-      </ul>
-    </nav>
-  </div>
+<!-- Login/Register knop -->
+<li class="login-btn" id="auth-btn-container">
+  <button id="google-signin" class="auth-btn">
+    Login / Register
+  </button>
+</li>
+</ul>
+</nav>
+</div>
+
 `;
 
 // Toggle de navigatie op mobiel
@@ -69,4 +76,48 @@ const nav = document.querySelector("header nav");
 
 menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
+});
+
+// Firebase Google Sign-In functionaliteit
+function signInWithGoogle() {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+      console.log("✅ Gebruiker ingelogd:", result.user);
+      // Hier kun je eventueel de gebruikersdata naar je server sturen voor verdere verwerking
+    })
+    .catch((error) => {
+      console.error("❌ Fout tijdens inloggen:", error);
+    });
+}
+
+const authBtnContainer = document.getElementById("auth-btn-container");
+
+// Stel de click event listener in voor de login-knop
+document.getElementById("google-signin").addEventListener("click", signInWithGoogle);
+
+// Update de header op basis van de authenticatiestatus
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // Als de gebruiker ingelogd is, toon dan een welkombericht en een uitlogknop
+    authBtnContainer.innerHTML = `
+      <span>Welcome, ${user.displayName}</span>
+      <button id="signout-btn" class="auth-btn">Uitloggen</button>
+    `;
+    document.getElementById("signout-btn").addEventListener("click", () => {
+      firebase.auth().signOut()
+        .then(() => {
+          console.log("✅ Uitgelogd");
+        })
+        .catch((error) => {
+          console.error("❌ Fout tijdens uitloggen:", error);
+        });
+    });
+  } else {
+    // Als er geen gebruiker ingelogd is, toon dan de login/register-knop
+    authBtnContainer.innerHTML = `
+      <button id="google-signin" class="auth-btn">Login / Register</button>
+    `;
+    document.getElementById("google-signin").addEventListener("click", signInWithGoogle);
+  }
 });

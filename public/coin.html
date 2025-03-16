@@ -124,6 +124,24 @@
   </main>
 
   <footer id="footer"></footer>
+  
+<!-- Firebase SDK's (moeten vóór je andere scripts worden geladen) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+<!-- Firebase-configuratie (init Firebase) -->
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+    authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+    projectId: "nodalis-network-c1d0f",
+    storageBucket: "nodalis-network-c1d0f.appspot.com",
+    messagingSenderId: "909094640371",
+    appId: "1:909094640371:web:7da1e9d4f5434927667586",
+    measurementId: "G-10HBE0H9R6"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./scripts/header.js" type="module"></script>

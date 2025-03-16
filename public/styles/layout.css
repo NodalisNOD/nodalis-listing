@@ -14,8 +14,8 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling voor de "Get listed" knop */
-.get-listed-button {
+.get-listed-button,
+.auth-btn {
   background-color: #05a6c9;
   color: #fff;
   padding: 10px 20px;
@@ -24,12 +24,34 @@ header {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Zorgt voor horizontale centrering */
+  height: 40px; /* Zet expliciete hoogte om verschil te voorkomen */
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.get-listed-button:hover {
+/* Zorg dat de knoppen correct zijn uitgelijnd */
+.get-listed-button:hover,
+.auth-btn:hover {
   background-color: #3f8899;
   transform: translateY(-2px);
+}
+
+/* Fix verschil tussen <a> en <button> */
+.auth-btn {
+  border: none;
+  outline: none;
+  appearance: none; /* Verwijdert browser-specifieke styling */
+  font-family: inherit; /* Zorgt dat button dezelfde lettertype heeft */
+}
+
+/* Zorg dat de container beide knoppen goed uitlijnt */
+.auth-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Ruimte tussen de knoppen */
 }
 
 header .logo-container {
@@ -70,6 +92,8 @@ header .nav-list {
 }
 
 header .nav-list li a {
+  display: flex;
+  align-items: center; /* Hierdoor blijven ook de links correct uitgelijnd */
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -77,6 +101,7 @@ header .nav-list li a {
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  height: 100%; /* Dit voorkomt dat sommige links hoger lijken */
 }
 
 header .nav-list li a:hover {

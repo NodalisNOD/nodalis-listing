@@ -7,3 +7,6 @@ public/data/croPrice.json
 public/data/exchangeCache.json
 NodalisChain
 node.js
+public/scripts/swapper/app.js
+public/swapper.html
+routes/swapRoutes.js
