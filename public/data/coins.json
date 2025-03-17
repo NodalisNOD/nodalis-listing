@@ -1094,5 +1094,25 @@
     "LEASH": {
         "name": "LEASH",
         "icon": "assets/coinIcons/LEASH.webp"
+    },
+    "RSR": {
+        "name": "RSR",
+        "icon": "assets/coinIcons/RSR.webp"
+    },
+    "SKL": {
+        "name": "SKL",
+        "icon": "assets/coinIcons/SKL.webp"
+    },
+    "DEGEN": {
+        "name": "DEGEN",
+        "icon": "assets/coinIcons/DEGEN.webp"
+    },
+    "SLN": {
+        "name": "SLN",
+        "icon": "assets/coinIcons/SLN.jpeg"
+    },
+    "COW": {
+        "name": "COW",
+        "icon": "assets/coinIcons/COW.jpeg"
     }
 }
