@@ -109,7 +109,7 @@
     },
     "0X0224010BA2D567FFA014222ED960D1FA43B8C8E1": {
         "name": "MTD",
-        "icon": "assets/coinIcons/mtd.png"
+        "icon": "assets/coinIcons/MTD.png"
     },
     "0X83AFB1C32E5637ACD0A452D87C3249F4A9F0013A": {
         "name": "FUL",
@@ -1002,5 +1002,73 @@
     "ONDO": {
         "name": "ONDO ",
         "icon": "assets/coinIcons/ONDO.webp"
+    },
+    "CATI": {
+        "name": "CATI",
+        "icon": "assets/coinIcons/CATI.webp"
+    },
+    "ZRO": {
+        "name": "ZRO",
+        "icon": "assets/coinIcons/ZRO.webp"
+    },
+    "BERA": {
+        "name": "BERA",
+        "icon": "assets/coinIcons/BERA.webp"
+    },
+    "NMR": {
+        "name": "NMR",
+        "icon": "assets/coinIcons/NMR.webp"
+    },
+    "PEAQ": {
+        "name": "PEAQ",
+        "icon": "assets/coinIcons/PEAQ.webp"
+    },
+    "SHRAP": {
+        "name": "SHRAP",
+        "icon": "assets/coinIcons/SHRAP.webp"
+    },
+    "IMX": {
+        "name": "IMX",
+        "icon": "assets/coinIcons/IMX.webp"
+    },
+    "TSNR": {
+        "name": "TSNR",
+        "icon": "assets/coinIcons/TSNR.webp"
+    },
+    "APE": {
+        "name": "APE",
+        "icon": "assets/coinIcons/APE.webp"
+    },
+    "ZKCRO": {
+        "name": "ZKCRO",
+        "icon": "assets/coinIcons/ZKCRO.webp"
+    },
+    "SNX": {
+        "name": "SNX",
+        "icon": "assets/coinIcons/SNX.webp"
+    },
+    "CTSI": {
+        "name": "CTSI",
+        "icon": "assets/coinIcons/CTSI.webp"
+    },
+    "EPIC": {
+        "name": "EPIC",
+        "icon": "assets/coinIcons/EPIC.webp"
+    },
+    "MDT": {
+        "name": "MDT",
+        "icon": "assets/coinIcons/MDT.webp"
+    },
+    "AIXBT": {
+        "name": "AIXBT",
+        "icon": "assets/coinIcons/AIXBT.webp"
+    },
+    "PUSH": {
+        "name": "PUSH",
+        "icon": "assets/coinIcons/PUSH.webp"
+    },
+    "0X9FA6552C1E9DF51070A3B456355B5D76CBD59B5A": {
+        "name": "EMIT",
+        "icon": "assets/coinIcons/emit.webp"
     }
 }
