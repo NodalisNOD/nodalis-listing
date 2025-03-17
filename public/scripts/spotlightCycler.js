@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const a = document.createElement('a');
         if (file.toLowerCase().includes('mine')) {
           a.href = "https://degenmole.fun";
-        } else if (file.toLowerCase().includes('cm')) {
-          a.href = "https://cmacmint.netlify.app";
         } else if (file.toLowerCase().includes('neuro')) {
           a.href = "https://linktr.ee/neuroticat";
         } else {
