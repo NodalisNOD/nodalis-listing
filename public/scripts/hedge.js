@@ -6,7 +6,7 @@ console.log("🔍 Gecontroleerde Kanaal-ID:", process.env.DESTINATION_CHANNEL_ID
 
 
 const { Client, GatewayIntentBits } = require('discord.js');
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 // API-sleutels veilig laden vanuit .env
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
