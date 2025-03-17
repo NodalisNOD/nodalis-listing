@@ -12,7 +12,7 @@ header.innerHTML = `
       <ul class="nav-list">
         <li><a href="index.html">Tokens</a></li>
         <li><a href="dexs.html">Exchanges</a></li>
-        <!-- Uitklapbaar "Products" menu -->
+        <!-- Dropdown "Products" menu -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Products</a>
           <ul class="dropdown-menu">
@@ -36,7 +36,7 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
-        <!-- Extra uitklapbaar "Crypto.com" menu -->
+        <!-- Dropdown "Crypto.com" menu -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Crypto.com</a>
           <ul class="dropdown-menu">
@@ -54,20 +54,17 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
-        <!-- "Get listed" knop als nav-item -->
+        <!-- "Get listed" knop -->
         <li class="get-listed">
           <a href="/listing" class="get-listed-button">Get listed</a>
         </li>
-<!-- Login/Register knop -->
-<li class="login-btn" id="auth-btn-container">
-  <button id="google-signin" class="auth-btn">
-    Login / Register
-  </button>
-</li>
-</ul>
-</nav>
-</div>
-
+        <!-- Login/Register knop zonder afbeelding -->
+        <li class="login-btn auth-container" id="auth-btn-container">
+          <button id="google-signin" class="auth-btn">Login / Register</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
 `;
 
 // Toggle de navigatie op mobiel
@@ -83,11 +80,11 @@ function signInWithGoogle() {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider)
     .then((result) => {
-      console.log("✅ Gebruiker ingelogd:", result.user);
-      // Hier kun je eventueel de gebruikersdata naar je server sturen voor verdere verwerking
+      console.log("✅ User logged in:", result.user);
+      // Eventueel: stuur gebruikersdata naar je server voor verdere verwerking
     })
     .catch((error) => {
-      console.error("❌ Fout tijdens inloggen:", error);
+      console.error("❌ Error during login:", error);
     });
 }
 
@@ -99,24 +96,22 @@ document.getElementById("google-signin").addEventListener("click", signInWithGoo
 // Update de header op basis van de authenticatiestatus
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    // Als de gebruiker ingelogd is, toon dan een welkombericht en een uitlogknop
     authBtnContainer.innerHTML = `
       <span>Welcome, ${user.displayName}</span>
-      <button id="signout-btn" class="auth-btn">Uitloggen</button>
+      <button id="signout-btn" class="auth-btn">Logout</button>
     `;
     document.getElementById("signout-btn").addEventListener("click", () => {
       firebase.auth().signOut()
         .then(() => {
-          console.log("✅ Uitgelogd");
+          console.log("✅ User logged out");
         })
         .catch((error) => {
-          console.error("❌ Fout tijdens uitloggen:", error);
+          console.error("❌ Error during logout:", error);
         });
     });
   } else {
-    // Als er geen gebruiker ingelogd is, toon dan de login/register-knop
     authBtnContainer.innerHTML = `
-      <button id="google-signin" class="auth-btn">Login / Register</button>
+      <button id="google-signin" class="auth-btn">Login</button>
     `;
     document.getElementById("google-signin").addEventListener("click", signInWithGoogle);
   }

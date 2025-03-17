@@ -1,5 +1,3 @@
-// Calculator script: haalt tokendata uit coin-data.json en prijsgegevens uit coinCache.json en croPrice.json
-
 // Vul de token dropdown met data uit coin-data.json
 async function populateTokens() {
   const tokenSelect = document.getElementById("token");
@@ -8,8 +6,9 @@ async function populateTokens() {
     const coins = await response.json();
     coins.forEach((coin) => {
       const option = document.createElement("option");
-      // Gebruik het coin-id (zoals "pigeon-token") als value
-      option.value = coin.id;
+      // Zorg ervoor dat de coin-id in lowercase en met dashes komt,
+      // zodat het overeenkomt met de keys in coinCache.json.
+      option.value = coin.id.toLowerCase().replace(/\s+/g, "-");
       option.textContent = coin.name; // bv. "PigeonToken"
       // Sla statische info op voor gebruik in de dropdown
       option.dataset.icon = coin.icon; // Logo zoals "./assets/coinIcons/piq.jpg"
@@ -39,10 +38,13 @@ async function fetchTokenPrice(coinId) {
   try {
     const response = await fetch("/data/coinCache.json");
     const coinCache = await response.json();
-    const coinData = coinCache[coinId];
-    if (coinData && coinData.data && coinData.data.attributes) {
-      // Gebruik de prijs uit base_token_price_usd
-      const priceStr = coinData.data.attributes.base_token_price_usd;
+    // Verwacht dat coinCache[coinId] een array is
+    const coinDataArray = coinCache[coinId];
+    if (coinDataArray && coinDataArray.length > 0) {
+      // Gebruik de eerste entry uit de array
+      const coinData = coinDataArray[0];
+      // Haal de prijs op uit het veld "priceUsd"
+      const priceStr = coinData.priceUsd;
       const price = parseFloat(priceStr);
       return price;
     } else {
@@ -54,6 +56,7 @@ async function fetchTokenPrice(coinId) {
     return null;
   }
 }
+
 
 // Haal de CRO-prijs op uit het lokale croPrice.json-bestand
 async function fetchCronosPrice() {
@@ -74,7 +77,7 @@ async function calculateValue() {
   const tokenSelect = document.getElementById("token");
   const selectedOption = tokenSelect.options[tokenSelect.selectedIndex];
   const tokenName = selectedOption.textContent;
-  const coinId = selectedOption.value; // Dit is het coin id
+  const coinId = selectedOption.value; // Dit is nu bijvoorbeeld "degen-mole"
 
   if (isNaN(amount) || amount <= 0) {
     document.getElementById("result").textContent = "Enter a valid amount.";
@@ -91,7 +94,6 @@ async function calculateValue() {
   let formulaText = "";
 
   if (currency === "USD") {
-    // 1 USD blijft 1 USD
     const tokenAmount = amount / tokenPrice;
     resultText = `${amount} USD = ${tokenAmount.toFixed(6)} ${tokenName}`;
     formulaText = `Formula: ${amount} USD ÷ ${tokenPrice.toFixed(6)} = ${tokenAmount.toFixed(6)} ${tokenName}`;
