@@ -1037,7 +1037,7 @@
     },
     "APE": {
         "name": "APE",
-        "icon": "assets/coinIcons/APE.webp"
+        "icon": "assets/coinIcons/APE.jpg"
     },
     "ZKCRO": {
         "name": "ZKCRO",
@@ -1053,7 +1053,7 @@
     },
     "EPIC": {
         "name": "EPIC",
-        "icon": "assets/coinIcons/EPIC.webp"
+        "icon": "assets/coinIcons/EPIC.jpg"
     },
     "MDT": {
         "name": "MDT",
@@ -1065,10 +1065,34 @@
     },
     "PUSH": {
         "name": "PUSH",
-        "icon": "assets/coinIcons/PUSH.webp"
+        "icon": "assets/coinIcons/PUSH.jpeg"
     },
     "0X9FA6552C1E9DF51070A3B456355B5D76CBD59B5A": {
         "name": "EMIT",
         "icon": "assets/coinIcons/emit.webp"
+    },
+    "CVX": {
+        "name": "CVX",
+        "icon": "assets/coinIcons/CVX.webp"
+    },
+    "TNSR": {
+        "name": "TNSR",
+        "icon": "assets/coinIcons/TNSR.webp"
+    },
+    "GLM": {
+        "name": "GLM",
+        "icon": "assets/coinIcons/GLM.webp"
+    },
+    "HIGH": {
+        "name": "HIGH",
+        "icon": "assets/coinIcons/HIGH.jpeg"
+    },
+    "XYO": {
+        "name": "XYO",
+        "icon": "assets/coinIcons/XYO.webp"
+    },
+    "LEASH": {
+        "name": "LEASH",
+        "icon": "assets/coinIcons/LEASH.webp"
     }
 }
