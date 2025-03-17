@@ -4,7 +4,7 @@
     "name": "CrogeCoin",
     "ticker": "CROGE",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/CROGE.WEBP",
+    "icon": "./assets/coinIcons/CROGE.png",
     "contract": "0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9",
     "website": "https://x.com/CrogeCoin",
     "explorer": "https://cronoscan.com/token/0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9",
