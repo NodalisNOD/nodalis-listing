@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "croge-coin",
+    "name": "CrogeCoin",
+    "ticker": "CROGE",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/CROGE.WEBP",
+    "contract": "0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9",
+    "website": "https://x.com/CrogeCoin",
+    "explorer": "https://cronoscan.com/token/0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9",
+    "twitter": "https://x.com/CrogeCoin",
+    "telegram": "https://t.me/crogecoin",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "NFT Collection",
+        "url": "https://app.ebisusbay.com/collection/cronos/croge-nft"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "The first meme on Cronos.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb7b49d3c3f94c32c8b3e8f065ddb8d31edd13157/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xC4a174cCb5fb54a6721e11e0Ca961e42715023F9"
+    }
+  },
+  {
     "id": "degen-mole",
     "name": "DegenMole",
     "ticker": "MINE",
