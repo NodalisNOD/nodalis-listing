@@ -1,12 +1,6 @@
-require('dotenv').config({ path: __dirname + '/../../.env' });
-
-console.log("🔍 Gecontroleerde API-key:", process.env.OPENAI_API_KEY ? "✅ Gevonden" : "❌ Niet gevonden");
-console.log("🔍 Gecontroleerde Bot-token:", process.env.DISCORD_BOT_TOKEN ? "✅ Gevonden" : "❌ Niet gevonden");
-console.log("🔍 Gecontroleerde Kanaal-ID:", process.env.DESTINATION_CHANNEL_ID ? "✅ Gevonden" : "❌ Niet gevonden");
-
-
-const { Client, GatewayIntentBits } = require('discord.js');
+import 'dotenv/config'; // Laadt .env automatisch
 import fetch from 'node-fetch';
+import { Client, GatewayIntentBits } from 'discord.js';
 
 // API-sleutels veilig laden vanuit .env
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -14,6 +8,10 @@ const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const DESTINATION_CHANNEL_ID = process.env.DESTINATION_CHANNEL_ID; // Zet je aggregatiekanaal in .env
 
 // Controleer of de variabelen goed geladen zijn
+console.log("🔍 Gecontroleerde API-key:", OPENAI_API_KEY ? "✅ Gevonden" : "❌ Niet gevonden");
+console.log("🔍 Gecontroleerde Bot-token:", DISCORD_BOT_TOKEN ? "✅ Gevonden" : "❌ Niet gevonden");
+console.log("🔍 Gecontroleerde Kanaal-ID:", DESTINATION_CHANNEL_ID ? "✅ Gevonden" : "❌ Niet gevonden");
+
 if (!OPENAI_API_KEY || !DISCORD_BOT_TOKEN || !DESTINATION_CHANNEL_ID) {
   console.error("❌ Fout: Zorg ervoor dat je .env correct hebt ingesteld met OPENAI_API_KEY, DISCORD_BOT_TOKEN en DESTINATION_CHANNEL_ID.");
   process.exit(1);
