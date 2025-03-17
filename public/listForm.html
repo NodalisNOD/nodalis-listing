@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>List Your Token or Exchange</title>
+  <title>Nodalis - List Your Token or Exchange</title>
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/layout.css">
   <link rel="stylesheet" href="./styles/listForm.css">
   <link rel="icon" type="image/png" href="./assets/logo.png">
+  <!-- Firebase SDK's: Zorg dat deze vóór header.js worden geladen -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
   <script>
+    // Firebase initialisatie – vervang de waarden met jouw configuratie
     const firebaseConfig = {
       apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
       authDomain: "nodalis-network-c1d0f.firebaseapp.com",
@@ -21,6 +23,9 @@
       measurementId: "G-10HBE0H9R6"
     };
     firebase.initializeApp(firebaseConfig);
+    // Zet firebase op het globale window-object zodat header.js er toegang toe heeft
+    window.firebase = firebase;
+    console.log("Firebase loaded:", firebase);
   </script>
 </head>
 <body>
@@ -81,8 +86,8 @@
       <label for="submitter-role">Submitter's Role:</label>
       <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
 
-      <label for="submitter-role">Contact e-mail adress:</label>
-      <input type="text" id="submitter-role" name="submitterRole" placeholder=" support@nodalisting.com" required>
+      <label for="submitter-role">Way to get contacted:</label>
+      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Discord, e-mail,..." required>
 
       <!-- Section 2: Project Information -->
       <h2>Project Information</h2>
