@@ -1,4 +1,6 @@
 // === MODULES & CONFIGURATIE ===
+require("dotenv").config(); // Laad .env variabelen
+console.log("🔑 JWT_SECRET geladen:", process.env.JWT_SECRET);
 const helmet = require("helmet");
 const express = require("express");
 const path = require("path");
@@ -25,9 +27,6 @@ console.log("🔑 JWT_SECRET geladen:", JWT_SECRET);
 // === EXPRESS APP INITIALISATIE ===
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-require("dotenv").config(); // Laad .env variabelen
-console.log("🔑 JWT_SECRET geladen:", process.env.JWT_SECRET);
 
 // Importeer de ads-route
 const spotlightRoute = require('./routes/spotlight');
