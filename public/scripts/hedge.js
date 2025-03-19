@@ -1,11 +1,11 @@
-require('dotenv').config({ path: __dirname + '/../../.env' });
+import { config } from 'dotenv';
+config({ path: '../../.env' }); // Laadt het .env bestand dat twee niveaus boven dit script staat
 
 console.log("🔍 Gecontroleerde API-key:", process.env.OPENAI_API_KEY ? "✅ Gevonden" : "❌ Niet gevonden");
 console.log("🔍 Gecontroleerde Bot-token:", process.env.DISCORD_BOT_TOKEN ? "✅ Gevonden" : "❌ Niet gevonden");
 console.log("🔍 Gecontroleerde Kanaal-ID:", process.env.DESTINATION_CHANNEL_ID ? "✅ Gevonden" : "❌ Niet gevonden");
 
-
-const { Client, GatewayIntentBits } = require('discord.js');
+import { Client, GatewayIntentBits } from 'discord.js';
 import fetch from 'node-fetch';
 
 // API-sleutels veilig laden vanuit .env
@@ -109,3 +109,4 @@ async function classifyAnnouncement(text) {
 
 // 🔑 Log in met de bot-token vanuit .env
 client.login(DISCORD_BOT_TOKEN);
+
