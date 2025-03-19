@@ -5,7 +5,7 @@ footer.innerHTML = `
     <!-- Deel 1: Tekst met logo -->
     <div class="footer-section">
       <div class="footer-logo-text">
-        <img src="./assets/logo.png" alt="Nodalis Logo" class="footer-logo" />
+        <img src="/assets/logo.png" alt="Nodalis Logo" class="footer-logo" />
         <p>
           Nodalis provides in-depth insights into the Cronos ecosystem and strives to empower users with actionable data.
         </p>
@@ -16,10 +16,10 @@ footer.innerHTML = `
     <div class="footer-section">
       <h3>Support</h3>
       <ul>
-        <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Advertise with us</a></li>
-        <li><a href="listForm.html" target="_blank" rel="noopener noreferrer">Get listed</a></li>
-        <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
-        <li><a href="faq.html" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+        <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">Advertise with us</a></li>
+        <li><a href="/listForm.html" target="_blank" rel="noopener noreferrer">Get listed</a></li>
+        <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        <li><a href="/faq.html" target="_blank" rel="noopener noreferrer">FAQ</a></li>
       </ul>
     </div>
 
@@ -33,26 +33,27 @@ footer.innerHTML = `
       </ul>
     </div>
 
- <!-- Deel 4: About -->
-<div class="footer-section">
-  <h3>Donations</h3>
-  <ul>
-    <li><a href="/donate.html">Cronos</a></li>
-  </ul>
-<div>
-  <h3>Legal</h3>
-  <ul>
-    <li><a href="/tos.html">Terms of Service</a></li>
-    <li><a href="/pos.html">Privacy Policy</a></li>
-    <li><img src="./assets/ssl.png" alt="SSL" /></li>
-  </ul>
-</div>
+    <!-- Deel 4: About -->
+    <div class="footer-section">
+      <h3>Donations</h3>
+      <ul>
+        <li><a href="/donate.html">Cronos</a></li>
+      </ul>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/tos.html">Terms of Service</a></li>
+          <li><a href="/pos.html">Privacy Policy</a></li>
+          <li><img src="/assets/ssl.png" alt="SSL" /></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Deel 5: Business -->
     <div class="footer-section">
       <h3>Business</h3>
       <ul>
-        <li><a href="advertise.html" target="_blank" rel="noopener noreferrer">Advertise with us</a></li>
+        <li><a href="/advertise.html" target="_blank" rel="noopener noreferrer">Advertise with us</a></li>
       </ul>
     </div>
   </div>
@@ -64,5 +65,4 @@ footer.innerHTML = `
   </div>
 
   <p class="footer-bottom">&copy; 2025 Nodalis Platform. All rights reserved.</p>
-  
 `;

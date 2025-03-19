@@ -33,9 +33,6 @@ console.log("🔑 JWT_SECRET geladen:", process.env.JWT_SECRET);
 const spotlightRoute = require('./routes/spotlight');
 app.use(spotlightRoute);
 
-// Importeer de swapper-route (zorg dat ./routes/swapRoutes.js bestaat en de juiste endpoints bevat)
-const swapRoutes = require('./routes/swapRoutes');
-app.use("/api", swapRoutes);
 
 // === MIDDLEWARE ===
 app.use(express.json());
