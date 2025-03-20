@@ -1,5 +1,5 @@
 [ 
-    {
+  {
     "id": "aurumtrust",
     "name": "AurumTrust",
     "ticker": "AUT",
@@ -104,7 +104,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x499170bfd30df1c55a458d492925f7cec7350da6",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa23c46472ad49385796774bc98c9903f901b75a0/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x499170bfd30dF1C55A458D492925F7ceC7350da6"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa23c46472ad49385796774bc98c9903f901b75a0"
     }
   },
   {
