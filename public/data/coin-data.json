@@ -1,4 +1,40 @@
 [ 
+    {
+    "id": "aurumtrust",
+    "name": "AurumTrust",
+    "ticker": "AUT",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/AUT.jpg",
+    "contract": "0xD896aA25da8e3832d68d1C05fEE9C851d42F1dC1",
+    "website": "https://x.com/aurumtrustcro",
+    "explorer": "https://cronoscan.com/token/0xD896aA25da8e3832d68d1C05fEE9C851d42F1dC1",
+    "twitter": "https://x.com/aurumtrustcro",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "AurumTrust: Deflationary Token on Cronos Chain\nFounder: Wyll_BBK\n\nOverview\nAurumTrust is an experimental token featuring a buy-back and burn mechanism funded by gold trading profits.\n\nMechanism\n15% of weekly gold trading profits will be used to buy back and burn tokens.\nThe first burn is set for April 14, 2025, but may happen earlier if profits allow.\n\nFounder’s Role\nThe founder holds 40% of the supply and will only sell tokens to fund the trading account.\nAny unused tokens will be burned.\n\nTransparency & Duration\nWeekly profits and buy-back transactions will be posted on the official X (Twitter) account.\nThe experiment continues until all tokens are burned or the trading account is liquidated.\n\nAurumTrust’s deflationary model, backed by gold trading, aims to increase scarcity over time.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd896aa25da8e3832d68d1c05fee9c851d42f1dc1",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x874c5832bd42ab63f19ad2b3b8d7e7ac3bffcfa7/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD896aA25da8e3832d68d1C05fEE9C851d42F1dC1"
+    }
+  },
   {
     "id": "croge-coin",
     "name": "CrogeCoin",
