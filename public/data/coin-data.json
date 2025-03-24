@@ -72,42 +72,6 @@
     }
   },
   {
-    "id": "degen-mole",
-    "name": "DegenMole",
-    "ticker": "MINE",
-    "chain": "Cronos",
-    "icon": "./assets/coinIcons/MINE.jpg",
-    "contract": "0x499170bfd30dF1C55A458D492925F7ceC7350da6",
-    "website": "https://degenmole.fun/",
-    "explorer": "https://cronoscan.com/token/0x499170bfd30dF1C55A458D492925F7ceC7350da6",
-    "twitter": "https://twitter.com/DegenMole",
-    "telegram": "https://t.me/DegenMole",
-    "discord": "",
-    "whitepaper": "https://randomtoken.net/whitepaper",
-    "threads": "",
-    "extraLinks": [
-      {
-        "name": "",
-        "url": ""
-      },
-      {
-        "name": "",
-        "url": ""
-      },
-      {
-        "name": "",
-        "url": ""
-      }
-    ],
-    "description": "DegenMole, mine crypto without the dirt! Own NFT miners, soup them up, and rake in CRO rewards. Keep your rigs running with MINE tokens –70% gets burned with every repair and boost, making your stash more valuable as we go. A shrinking supply means growing demand! On Cronos chain, regular miners get dirty, but DegenMole's get filthy rich! 💎⛏️",
-    "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x499170bfd30df1c55a458d492925f7cec7350da6",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa23c46472ad49385796774bc98c9903f901b75a0/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x499170bfd30dF1C55A458D492925F7ceC7350da6"
-    }
-  },
-  {
     "id": "random-token",
     "name": "Random Token",
     "ticker": "RAT",

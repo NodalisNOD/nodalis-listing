@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (index === 0) item.classList.add('active'); // toon de eerste spotlight standaard
 
         const a = document.createElement('a');
-        if (file.toLowerCase().includes('mine')) {
-          a.href = "https://degenmole.fun";
+        if (file.toLowerCase().includes('crooks')) {
+          a.href = "https://www.crooks.finance/";
         } else if (file.toLowerCase().includes('neuro')) {
           a.href = "https://linktr.ee/neuroticat";
         } else {
