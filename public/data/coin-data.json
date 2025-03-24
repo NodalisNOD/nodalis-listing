@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "cara-cara",
+    "name": "CARA",
+    "ticker": "CARA",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/CARA.jpg",
+    "contract": "0x3Caf0136302440Ebb68f41D6c57b7bEbDE9E12ca",
+    "website": "https://cronoslegends.com/",
+    "explorer": "https://cronoscan.com/token/0x3Caf0136302440Ebb68f41D6c57b7bEbDE9E12ca",
+    "twitter": "https://x.com/CronosCara",
+    "telegram": "https://t.me/caracryptoz",
+    "discord": "https://discord.gg/cronoslegends",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Esports Discord",
+        "url": "https://discord.gg/TxsNzvkCXc"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "(≧◡≦) 🌸 $CARA Coin Overview 🌸 (≧◡≦)\n\nIntroducing $CARA, the token created by the Cronos Community to honor the legendary @CaraCryptoZ that was made by Official Cronos Team! This coin blends community spirit with a touch of anime magic. Here’s how the allocation shapes up:\n\n🔥 50% Burned – Half of $CARA's supply is sent to the abyss, increasing its rarity and value! 🔥\n\n👑 10% to @CaraCryptoZ – Reserved as a tribute to the hero herself, recognizing her influence and legacy. 👑\n\n💧 30% Liquidity Pool (LP) – Locked and burned, ensuring a strong and stable foundation for trading. 💧\n\n🎏 10% Team & Marketing – Fueling $CARA's development and keeping the magic alive. 🎏\n\n@CaraCryptoZ greetings about the token: \"CAW-inspired meme coin, merging anime & crypto worlds, led by Cara, the Cronos queen.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x3Caf0136302440Ebb68f41D6c57b7bEbDE9E12ca",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x05ba4c5741613894840f7d8d5084cfc22dc3b232/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x3Caf0136302440Ebb68f41D6c57b7bEbDE9E12ca"
+    }
+  },
+  {
+    "id": "darmatter-esports",
+    "name": "Dark Matter Esports",
+    "ticker": "DME",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/DME.png",
+    "contract": "0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
+    "website": "https://www.darkmatteresports.org/",
+    "explorer": "https://cronoscan.com/token/0xd7f099c7a26466702cdbd1cac3447dbebe9ce6cf",
+    "twitter": "https://x.com/darkmatesports?s=21&t=QWNi1HejW0d1aGhoPI8IwQ",
+    "telegram": "",
+    "discord": "https://discord.gg/7zU3SMQw",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Esports Discord",
+        "url": "https://discord.gg/TxsNzvkCXc"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Dark Matter Esports has been a multi-gaming community since early 2024, making friendships, forming teams, and going into big named tournaments in the Esports scene. The token was founded as a way for our members to hold and use as a form of currency for betting on games, purchasing merchandise and other products, and carrying a piece of the community in the form of digital currency.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3d93672c28da896c76c8ab9c03101ff00ced1e46/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF"
+    }
+  },
+  {
     "id": "aurumtrust",
     "name": "AurumTrust",
     "ticker": "AUT",
