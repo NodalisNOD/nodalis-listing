@@ -36,27 +36,26 @@
   <main class="container">
     <h1>Get Listed</h1>
 
-<!-- Introductory Text -->
-<div class="form-intro">
-    <p>
-      Kindly complete the form as per your request. If your specific request(s) are not covered by this form, please contact us by submitting a ticket at 
-      <a href="mailto:support@nodalisting.com">support@nodalisting.com</a>.
-    </p>
-  </div>
-  
-  <!-- Keuzemenu -->
-  <div class="listing-choice">
-    <button id="choose-coin" class="listing-option">
-      <img src="./assets/UI/coin.png" alt="Coin/Token">
-      <span>Coin/Token</span>
-    </button>
-    <button id="choose-exchange" class="listing-option">
-      <img src="./assets/UI/stock.png" alt="Exchange">
-      <span>Exchange</span>
-    </button>
-  </div>
-  
-
+    <!-- Introductory Text -->
+    <div class="form-intro">
+      <p>
+        Kindly complete the form as per your request. If your specific request(s) are not covered by this form, please contact us by submitting a ticket at 
+        <a href="mailto:support@nodalisting.com">support@nodalisting.com</a>.
+      </p>
+    </div>
+    
+    <!-- Keuzemenu -->
+    <div class="listing-choice">
+      <button id="choose-coin" class="listing-option">
+        <img src="./assets/UI/coin.png" alt="Coin/Token">
+        <span>Coin/Token</span>
+      </button>
+      <button id="choose-exchange" class="listing-option">
+        <img src="./assets/UI/stock.png" alt="Exchange">
+        <span>Exchange</span>
+      </button>
+    </div>
+    
     <!-- Coin/Token Form -->
     <form id="coin-form" class="hidden" action="/submit-coin-listing" method="POST" enctype="multipart/form-data">
       <h2>List Your Coin/Token</h2>
@@ -86,8 +85,12 @@
       <label for="submitter-role">Submitter's Role:</label>
       <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
 
-      <label for="submitter-role">Way to get contacted:</label>
-      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Discord, e-mail,..." required>
+      <label for="contact-method">Way to get contacted:</label>
+      <input type="text" id="contact-method" name="contactMethod" placeholder="E.g., Discord, etc." required>
+      
+      <!-- Nieuw: e-mail veld -->
+      <label for="contact-email">Contact Email:</label>
+      <input type="email" id="contact-email" name="contactEmail" placeholder="your-email@example.com" required>
 
       <!-- Section 2: Project Information -->
       <h2>Project Information</h2>
@@ -99,18 +102,19 @@
 
       <label for="cronoscan-link">Cronoscan Link:</label>
       <input type="url" id="cronoscan-link" name="cronoscanLink" required>
+      
       <button type="submit" class="btn-submit">Submit</button>
     </form>
-
+    
     <!-- Exchange Form -->
-    <form id="exchange-form" class="hidden" action="/submit-exchange-listing" method="POST">
+    <form id="exchange-form" class="hidden" action="/submit-exchange-listing" method="POST" enctype="multipart/form-data">
       <h2>List Your Exchange</h2>
       <!-- Fields for Exchange -->
       <label for="exchange-name">Exchange Name:</label>
       <input type="text" id="exchange-name" name="exchangeName" required>
 
-      <label for="token-image">Upload Picture (256x256):</label>
-      <input type="file" id="token-image" name="tokenImage" accept="image/*" required>
+      <label for="token-image-exchange">Upload Picture (256x256):</label>
+      <input type="file" id="token-image-exchange" name="tokenImage" accept="image/*" required>
 
       <label for="exchange-url">Exchange URL:</label>
       <input type="url" id="exchange-url" name="exchangeUrl" required>
@@ -118,14 +122,18 @@
       <label for="exchange-description">Description:</label>
       <textarea id="exchange-description" name="exchangeDescription" rows="5" required></textarea>
 
-      <label for="social-links">Social Media Links (Separate with commas):</label>
-      <textarea id="social-links" name="socialLinks" rows="3" placeholder="E.g., Twitter: https://twitter.com/example, Telegram: https://t.me/example"></textarea>
+      <label for="social-links-exchange">Social Media Links (Separate with commas):</label>
+      <textarea id="social-links-exchange" name="socialLinks" rows="3" placeholder="E.g., Twitter: https://twitter.com/example, Telegram: https://t.me/example"></textarea>
 
-      <label for="submitter-role">Submitter's Role:</label>
-      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
+      <label for="submitter-role-exchange">Submitter's Role:</label>
+      <input type="text" id="submitter-role-exchange" name="submitterRole" placeholder="E.g., Founder, Developer, Marketing Manager" required>
 
-      <label for="submitter-role">Way to get contacted:</label>
-      <input type="text" id="submitter-role" name="submitterRole" placeholder="E.g., Discord, e-mail,..." required>
+      <label for="contact-method-exchange">Way to get contacted:</label>
+      <input type="text" id="contact-method-exchange" name="contactMethod" placeholder="E.g., Discord, etc." required>
+
+      <!-- Nieuw: e-mail veld -->
+      <label for="contact-email-exchange">Contact Email:</label>
+      <input type="email" id="contact-email-exchange" name="contactEmail" placeholder="your-email@example.com" required>
 
       <button type="submit" class="btn-submit">Submit</button>
     </form>

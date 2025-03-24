@@ -1,5 +1,149 @@
 [ 
   {
+    "id": "cronon-cronon",
+    "name": "CRONON",
+    "ticker": "CRONON",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/cronon.webp",
+    "contract": "0x50aa2611004B3252030Cc95E9c5A2a44DFED9983",
+    "website": "https://crononymous.com/",
+    "explorer": "https://cronoscan.com/token/0x50aa2611004B3252030Cc95E9c5A2a44DFED9983",
+    "twitter": "https://x.com/CronosLegends",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "https://crononymous.com/roadmap",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "It's time to take your mask and join Crononymous on their way to the moon $CRONON\n\nJoin the movement, join #Crononymous\n\nCrononymous is a real DAO project run by and for the community #Crofam",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x50aa2611004B3252030Cc95E9c5A2a44DFED9983",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdf0ea947d7f15d835061339db378bd80519b7a8d/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x50aa2611004B3252030Cc95E9c5A2a44DFED9983"
+    }
+  },
+  {
+    "id": "guardian-guardian",
+    "name": "GUARDIAN",
+    "ticker": "GUARDIAN",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/GUARDIAN.webp",
+    "contract": "0x1E1dcCC5d99376cEC178b7f1B9C846324910C559",
+    "website": "https://cronoslegends.com/",
+    "explorer": "https://cronoscan.com/token/0x1E1dcCC5d99376cEC178b7f1B9C846324910C559",
+    "twitter": "https://x.com/CronosLegends",
+    "telegram": "",
+    "discord": "https://discord.gg/cronoslegends",
+    "whitepaper": "https://cronoslegends.com/whitepaper/",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Faction coin of $CLG",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x1E1dcCC5d99376cEC178b7f1B9C846324910C559",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf375399b6c269e729238fbc2d2beb549c76d9f43/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x1E1dcCC5d99376cEC178b7f1B9C846324910C559"
+    }
+  },
+  {
+    "id": "chaos-chaos",
+    "name": "CHAOS",
+    "ticker": "CHAOS",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/CHAOS.webp",
+    "contract": "0xBf364eaCb031977cAb65EAFA47b85dDB27a21A80",
+    "website": "https://cronoslegends.com/",
+    "explorer": "https://cronoscan.com/token/0xBf364eaCb031977cAb65EAFA47b85dDB27a21A80",
+    "twitter": "https://x.com/CronosLegends",
+    "telegram": "",
+    "discord": "https://discord.gg/cronoslegends",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Faction coin of $CLG",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xBf364eaCb031977cAb65EAFA47b85dDB27a21A80",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3a1c8259a51b9a94ba4c438d6bb3351b8227ce4e/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xBf364eaCb031977cAb65EAFA47b85dDB27a21A80"
+    }
+  },
+  {
+    "id": "darmatter-esports",
+    "name": "Dark Matter Esports",
+    "ticker": "DME",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/DME.png",
+    "contract": "0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
+    "website": "https://www.darkmatteresports.org/",
+    "explorer": "https://cronoscan.com/token/0xd7f099c7a26466702cdbd1cac3447dbebe9ce6cf",
+    "twitter": "https://x.com/darkmatesports?s=21&t=QWNi1HejW0d1aGhoPI8IwQ",
+    "telegram": "",
+    "discord": "https://discord.gg/7zU3SMQw",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Esports Discord",
+        "url": "https://discord.gg/TxsNzvkCXc"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Dark Matter Esports has been a multi-gaming community since early 2024, making friendships, forming teams, and going into big named tournaments in the Esports scene. The token was founded as a way for our members to hold and use as a form of currency for betting on games, purchasing merchandise and other products, and carrying a piece of the community in the form of digital currency.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3d93672c28da896c76c8ab9c03101ff00ced1e46/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF"
+    }
+  },  
+{
     "id": "cara-cara",
     "name": "CARA",
     "ticker": "CARA",
