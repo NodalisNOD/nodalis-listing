@@ -8,6 +8,25 @@
   <link rel="stylesheet" href="./styles/nodaLink.css">
   <link rel="stylesheet" href="./styles/layout.css">
   <link rel="stylesheet" href="./styles/global.css">
+    <!-- Firebase SDK's: Zorg dat deze vóór header.js worden geladen -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script>
+      // Firebase initialisatie – vervang de waarden met jouw configuratie
+      const firebaseConfig = {
+        apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+        authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+        projectId: "nodalis-network-c1d0f",
+        storageBucket: "nodalis-network-c1d0f.appspot.com",
+        messagingSenderId: "909094640371",
+        appId: "1:909094640371:web:7da1e9d4f5434927667586",
+        measurementId: "G-10HBE0H9R6"
+      };
+      firebase.initializeApp(firebaseConfig);
+      // Zet firebase op het globale window-object zodat header.js er toegang toe heeft
+      window.firebase = firebase;
+      console.log("Firebase loaded:", firebase);
+    </script>
 </head>
 <body>
   <!-- Header -->
