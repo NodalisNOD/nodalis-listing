@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
           a.href = "https://www.crooks.finance/";
         } else if (file.toLowerCase().includes('neuro')) {
           a.href = "https://linktr.ee/neuroticat";
+        } else if (file.toLowerCase().includes('nodalis')) {
+          a.href = "nodaLink.html"; // Nieuwe optie voor "nodalis"
         } else {
           a.href = "#"; // fallback link
         }

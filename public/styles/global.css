@@ -1,4 +1,12 @@
-/* === GLOBALE VARIABELEN & RESET === */
+@font-face {
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ----- CSS Variables & Reset ----- */
 :root {
   --primary-color: #042c3f;
   --secondary-color: #05a6c9;
@@ -8,7 +16,7 @@
   --border-color: #ddd;
   --hover-bg: #f1f1f1;
   --transition: 0.3s ease;
-  --font: 'Poppins', Arial, sans-serif;
+  --font: 'Eurostile Regular', sans-serif;
 }
 
 /* Algemene reset */
@@ -18,11 +26,23 @@
   padding: 0;
 }
 
-/* === BASE STYLES === */
+/* ----- Basis Styling ----- */
+html, body {
+  overflow-x: hidden;
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  letter-spacing: 0.05em; /* Pas deze waarde aan naar wens */
+}
+html {
+  font-size: 18px; /* Verhoog de basis lettergrootte */
+}
 body {
   font-family: var(--font);
   background-color: var(--bg-color);
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -40,19 +60,13 @@ main {
   object-fit: contain;
 }
 
-/* === LAYOUT & DASHBOARD === */
+/* ----- LAYOUT & DASHBOARD ----- */
 .main-content {
   display: flex;
   flex-direction: column;
 }
 
-/* Dashboard-grid:
-   - Box 1: Newcomers: 1fr
-   - Box 2: Top Gainers: 1fr
-   - Box 3: Top Community: calc(1fr + 20px)
-   - Box 4: Spotlight/Sentiment: calc(1fr - 10px)
-   - Box 5: Market Cap & Dominance: calc(1fr - 10px)
-*/
+/* Dashboard-grid */
 .dashboard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr calc(1fr + 25px) calc(1fr - 15px) calc(1fr - 10px);
@@ -84,7 +98,7 @@ main {
   border-radius: 5px 5px 0 0;
 }
 
-/* === TABELSTYLING === */
+/* ----- TABELSTYLING ----- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -123,7 +137,7 @@ table tr:hover {
   background-color: var(--hover-bg);
 }
 
-/* === LOGO'S & ICONS === */
+/* ----- LOGO'S & ICONS ----- */
 .crypto-logo,
 .table-icon {
   height: 24px;
@@ -137,7 +151,7 @@ table tr:hover {
   object-fit: contain;
 }
 
-/* === RESPONSIEVE DASHBOARD GRID === */
+/* ----- RESPONSIEVE DASHBOARD GRID ----- */
 @media (max-width: 768px) {
   .dashboard-grid {
     display: flex;
@@ -152,7 +166,7 @@ table tr:hover {
   }
 }
 
-/* === MAIN CRYPTO TABEL (onder dashboard) === */
+/* ----- MAIN CRYPTO TABEL (onder dashboard) ----- */
 .main-table-wrapper {
   margin-top: 20px;
   background: var(--card-bg);
@@ -229,7 +243,7 @@ table tr:hover {
   vertical-align: middle;
 }
 
-/* === PRIJSVERANDERINGEN === */
+/* ----- PRIJSVERANDERINGEN ----- */
 .positive-change {
   color: #28a745;
 }
@@ -238,7 +252,7 @@ table tr:hover {
   color: #dc3545;
 }
 
-/* === LINK STYLING === */
+/* ----- LINK STYLING ----- */
 .coin-link {
   text-decoration: none;
   color: inherit;
@@ -249,7 +263,7 @@ table tr:hover {
   text-decoration: underline;
 }
 
-/* === ZOEKBAARHEID === */
+/* ----- ZOEKBAARHEID ----- */
 .search-container {
   margin-bottom: 10px;
   display: flex;
@@ -259,12 +273,12 @@ table tr:hover {
   width: 100%;
   max-width: 300px;
   padding: 8px;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
-/* === TOP COMMUNITY TABEL === */
+/* ----- TOP COMMUNITY TABEL ----- */
 .top-community-wrapper {
   display: flex;
   gap: 1rem;
@@ -279,12 +293,12 @@ table tr:hover {
   border: 1px solid var(--border-color);
   padding: 0.5rem;
   text-align: left;
-  white-space: nowrap; /* Zorg dat de tekst op 1 lijn blijft */
-  font-size: 0.85rem;  /* Iets kleiner lettertype */
-  font-weight: bold;   /* Vet */
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 
-/* === STATISTIEKEN (Market Cap & Dominance) === */
+/* ----- STATISTIEKEN (Market Cap & Dominance) ----- */
 .stat-box {
   background-color: #f9f9f9;
   border: 3px solid var(--primary-color);
@@ -305,7 +319,7 @@ table tr:hover {
   margin: 0;
 }
 
-/* === TOOLTIP STYLING === */
+/* ----- TOOLTIP STYLING ----- */
 .tooltip-wrapper {
   display: inline-block;
   position: relative;
@@ -337,7 +351,7 @@ table tr:hover {
   display: block;
 }
 
-/* === CUSTOM DROPDOWN STYLING === */
+/* ----- CUSTOM DROPDOWN STYLING ----- */
 .custom-dropdown {
   position: relative;
   display: inline-block;
@@ -382,7 +396,7 @@ table tr:hover {
   display: block;
 }
 
-/* === COOKIE BANNER === */
+/* ----- COOKIE BANNER ----- */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -398,7 +412,7 @@ table tr:hover {
 }
 .cookie-banner button {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -408,7 +422,7 @@ table tr:hover {
   text-decoration: underline;
 }
 
-/* === TABLE FOOTER LOGO === */
+/* ----- TABLE FOOTER LOGO ----- */
 .table-footer-logo {
   text-align: right;
   margin-top: 10px;
@@ -419,7 +433,7 @@ table tr:hover {
   height: auto;
 }
 
-/* === SPOTLIGHTS & ADVERTENTIES === */
+/* ----- SPOTLIGHTS & ADVERTENTIES ----- */
 .spotlight-container {
   width: 300px;
   height: 200px;
@@ -449,7 +463,7 @@ table tr:hover {
   height: auto;
 }
 
-/* === SENTIMENT STYLING === */
+/* ----- SENTIMENT STYLING ----- */
 #comVotes .sentiment-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -517,7 +531,7 @@ table tr:hover {
   text-align: center;
 }
 
-/* === PAGINERING === */
+/* ----- PAGINERING ----- */
 .pagination-container {
   text-align: center;
   margin-top: 15px;

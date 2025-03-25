@@ -5,6 +5,10 @@ body {
   padding: 0;
   background-color: #f9fafa;
   color: #333;
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  letter-spacing: 0.05em; /* Pas deze waarde aan naar wens */
 }
 
 /* 🔹 Main Container */

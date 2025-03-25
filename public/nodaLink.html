@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NodaLink - Nodalis Network Connect</title>
+  <!-- Externe CSS voor NodaLink -->
+  <link rel="stylesheet" href="./styles/nodaLink.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
+
+  <!-- De NodaLink Banner wordt door de JavaScript direct onder de header geplaatst -->
+
+  <main class="container">
+    <!-- Overview Section: projectbeschrijving en de Link-knop -->
+    <section id="overview">
+      <div class="overview-boxes">
+        <!-- Vak 1: Get linked -->
+        <div class="intro-box">
+          <div class="box-content">
+            <p>
+              Welcome to NodaLink – the extension platform of the Nodalis Network. Discover who’s behind innovative projects, meet the passionate members of the crofam community, and explore the builders driving success on the Cronos chain. Showcase your project and yourself, connect with like-minded professionals, and unlock valuable opportunities.
+            </p>
+          </div>
+          <div class="apply-section">
+            <a href="https://forms.gle/TJsPrumy8mnmLNky7" class="btn-apply" target="_blank">
+              <img src="./assets/UI/linked.png" alt="Linked Icon" class="btn-icon">
+              Get linked
+            </a>
+          </div>
+        </div>
+    
+        <!-- Vak 2: Get listed -->
+        <div class="listing-box">
+          <div class="box-content">
+            <p>
+              Submit your Tokens and Exchanges via the Nodalisting form. Share detailed information about your project so that the community can see who’s behind it, who’s active in the crofam, and who’s building on the Cronos chain.
+            </p>
+          </div>
+          <div class="apply-section">
+            <a href="listing" class="btn-apply" target="_blank">
+              <img src="./assets/UI/listed.png" alt="Listed Icon" class="btn-icon">
+              Get listed
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Search Section with filters -->
+    <section id="searchSection">
+      <h3>Search</h3>
+      <form id="searchForm">
+        <input type="text" id="searchQuery" placeholder="Search by name..." />
+        <select id="filterRole">
+          <option value="">Select Role</option>
+          <option value="founder">Founder</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="marketer">Marketer</option>
+        </select>
+        <!-- Custom Affiliations Dropdown -->
+        <div id="customAffiliationDropdown" class="custom-dropdown">
+          <div class="custom-dropdown-selected">Select Affiliation</div>
+          <ul class="custom-dropdown-options"></ul>
+        </div>
+        <!-- Verborgen input waarin de geselecteerde affiliatie wordt opgeslagen -->
+        <input type="hidden" id="filterAffiliation" value="">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    
+    <!-- Results Section -->
+    <section id="resultsSection">
+      <h3>Links</h3>
+      <div id="resultsContainer">
+        <!-- Hier komen de links -->
+      </div>
+      <div id="paginationContainer"></div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <!-- Laad de scripts -->
+  <script src="./scripts/footer.js"></script>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/nodalinkBanner.js"></script>
+  <script src="./scripts/nodaLink.js"></script>
+</body>
+</html>

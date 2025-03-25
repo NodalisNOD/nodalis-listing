@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         coinForm.classList.add("hidden");
     });
 
-    // Voeg event listener toe aan elk formulier
+    // add event listener to each form
     document.querySelectorAll("form").forEach((form) => {
         form.addEventListener("submit", async (e) => {
             e.preventDefault();

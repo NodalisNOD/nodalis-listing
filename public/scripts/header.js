@@ -4,7 +4,7 @@ header.innerHTML = `
   <div class="logo-container">
     <a href="/index.html" class="logo-link">
       <img src="/assets/logo.png" alt="Crypto Logo" class="logo">
-      <span class="site-title">Nodalis Listing</span>
+      <span class="site-title">Nodalis Network</span>
     </a>
     <!-- Hamburger-menu voor mobiel -->
     <button class="menu-toggle" aria-label="Menu">&#9776;</button>
@@ -34,6 +34,12 @@ header.innerHTML = `
                 Get listed
               </a>
             </li>
+            <li>
+              <a href="/nodalink.html">
+                <img src="/assets/UI/linked.png" alt="Noda Link" class="dropdown-icon">
+                Noda Link
+              </a>
+            </li>
           </ul>
         </li>
         <!-- Dropdown "Crypto.com" menu -->
@@ -58,7 +64,7 @@ header.innerHTML = `
         <li class="get-listed">
           <a href="/listing" class="get-listed-button">Get listed</a>
         </li>
-        <!-- Login/Register knop zonder afbeelding -->
+        <!-- Login/Register knop -->
         <li class="login-btn auth-container" id="auth-btn-container">
           <button id="google-signin" class="auth-btn">Login / Register</button>
         </li>

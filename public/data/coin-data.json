@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "lumi-shards",
+    "name": "Lumin Shards",
+    "ticker": "LUMI",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/LUMI.webp",
+    "contract": "0xF810cDfF0207F4225516D53f05E8337c3226981C",
+    "website": "https://discord.gg/QFsNtQdHKg",
+    "explorer": "https://cronoscan.com/token/0xf810cdff0207f4225516d53f05e8337c3226981c",
+    "twitter": "https://x.com/RosarianLabs",
+    "telegram": "",
+    "discord": "https://discord.gg/QFsNtQdHKg",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Rosarian Labs strives to be a \"fun first\" indie game studio based on Cronos Chain. Lumin Shards ($LUMI) was launched to be the ecosystem token of Rosarian Labs and will have major utility as the world currency within our Tales of Endaria game.\n\nTales of Endaria: The Adventurers Guild, is a text-based RPG right within our own Discord server and will be free to play. This means you can play on PC or mobile! Create your adventurer, complete quests, craft items, and earn $LUMI while doing it!\n\nNot enough? $LUMI will have plenty of LP incentives as the banks all over Endaria are scrambling for this new asset. Revenue from the game will not only go towards development, but also buybacks, LP formation, and burns. All of this worked into the story and events of the game.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xF810cDfF0207F4225516D53f05E8337c3226981C",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x26a8760847b6a997c252016041c4503e2bfd9130/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xF810cDfF0207F4225516D53f05E8337c3226981C"
+    }
+  },
+  {
     "id": "cronon-cronon",
     "name": "CRONON",
     "ticker": "CRONON",
