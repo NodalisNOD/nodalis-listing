@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (file.toLowerCase().includes('neuro')) {
           a.href = "https://linktr.ee/neuroticat";
         } else if (file.toLowerCase().includes('nodalis')) {
-          a.href = "nodaLink.html"; // Nieuwe optie voor "nodalis"
+          a.href = "NodaLink"; // Nieuwe optie voor "nodalis"
         } else {
           a.href = "#"; // fallback link
         }

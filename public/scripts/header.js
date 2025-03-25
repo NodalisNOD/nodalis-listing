@@ -35,7 +35,7 @@ header.innerHTML = `
               </a>
             </li>
             <li>
-              <a href="/nodalink.html">
+              <a href="/NodaLink">
                 <img src="/assets/UI/linked.png" alt="Noda Link" class="dropdown-icon">
                 Noda Link
               </a>
