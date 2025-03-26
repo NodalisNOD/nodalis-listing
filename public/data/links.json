@@ -1,5 +1,12 @@
 [
   {
+    "name": "Mike Fitzgerald",
+    "profilePicture": "assets/links/cryptowarehouse.png",
+    "affiliation": "Crypto Warehouse",
+    "role": "Influencer",
+    "twitter": "https://x.com/GibCryptoNews" 
+  },
+  {
     "name": "Finchy",
     "profilePicture": "assets/links/finchy.jpg",
     "affiliation": "For Fox Sake!",
