@@ -2,7 +2,7 @@
   {
     "id": "lildavid-ghost",
     "name": "LILDAVID",
-    "ticker": "Ghost",
+    "ticker": "LILDAVID",
     "chain": "Cronos",
     "icon": "./assets/coinIcons/ghost.jpg",
     "contract": "0x06E63c83129a1D51Edb1cEDbFAe5514A0031c48c",
