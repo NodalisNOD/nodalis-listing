@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const a = document.createElement('a');
         if (file.toLowerCase().includes('crooks')) {
           a.href = "https://www.crooks.finance/";
-        } else if (file.toLowerCase().includes('neuro')) {
-          a.href = "https://linktr.ee/neuroticat";
+        } else if (file.toLowerCase().includes('david')) {
+          a.href = "https://x.com/lildavid_cro?s=21";
         } else if (file.toLowerCase().includes('nodalis')) {
           a.href = "NodaLink"; // Nieuwe optie voor "nodalis"
         } else {
