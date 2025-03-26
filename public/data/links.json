@@ -1,5 +1,26 @@
 [
   {
+    "name": "Alex",
+    "profilePicture": "assets/links/alex.jpeg",
+    "affiliation": "WolfSwap",
+    "role": "Co-Founder",
+    "twitter": "https://x.com/axldefi" 
+  },
+  {
+    "name": "CoinBaron",
+    "profilePicture": "assets/links/coinbaron.jpg",
+    "affiliation": "CoinBaron",
+    "role": "Influencer",
+    "twitter": "https://x.com/thecoinbaron" 
+  },
+  {
+    "name": "B54",
+    "profilePicture": "assets/links/b54.jpeg",
+    "affiliation": "Lex The Husky",
+    "role": "Founder",
+    "twitter": "https://x.com/b54_btc?s=21&t=4Zw2ZbFTOb18UXMNTCajBw" 
+  },
+  {
     "name": "Mike Fitzgerald",
     "profilePicture": "assets/links/cryptowarehouse.png",
     "affiliation": "Crypto Warehouse",

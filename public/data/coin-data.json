@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "eric-eric",
+    "name": "LILDAVID",
+    "ticker": "Ghost",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ghost.jpg",
+    "contract": "0x06E63c83129a1D51Edb1cEDbFAe5514A0031c48c",
+    "website": "https://x.com/lildavid_cro?s=21",
+    "explorer": "https://cronoscan.com/token/0x06E63c83129a1D51Edb1cEDbFAe5514A0031c48c",
+    "twitter": "https://x.com/lildavid_cro?s=21",
+    "telegram": "https://t.me/+dRISvXW78MU4NmQ0",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$LILDAVID is paired whit $MERY is the most important paired on cronos chain.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x06E63c83129a1D51Edb1cEDbFAe5514A0031c48c",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x66568c743b61af7c1cbfe3460aef8f852e235d4d/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x06E63c83129a1D51Edb1cEDbFAe5514A0031c48c"
+    }
+  },
+  {
+    "id": "eric-eric",
+    "name": "Eric",
+    "ticker": "ERIC",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/eric.webp",
+    "contract": "0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
+    "website": "https://eric-cro.squarespace.com/",
+    "explorer": "https://cronoscan.com/token/0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
+    "twitter": "https://x.com/MCOWOLF101",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "ERIC Twitter",
+        "url": "https://x.com/Eric_on_CRO"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Community Takeover Alert! \n\nAfter the dev sold out and left, the community took over! Now under the leadership of @MCOWOLF101 on X, alongside dedicated Cronos builders, we're pushing forward stronger than ever. Built by the people, for the people.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x518ca065916bac99d1d8e6d6d7cccb17f09ceeff/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca"
+    }
+  },
+  {
     "id": "lumi-shards",
     "name": "Lumin Shards",
     "ticker": "LUMI",
@@ -142,43 +214,7 @@
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3a1c8259a51b9a94ba4c438d6bb3351b8227ce4e/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xBf364eaCb031977cAb65EAFA47b85dDB27a21A80"
     }
-  },
-  {
-    "id": "darmatter-esports",
-    "name": "Dark Matter Esports",
-    "ticker": "DME",
-    "chain": "Cronos",
-    "icon": "./assets/coinIcons/DME.png",
-    "contract": "0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
-    "website": "https://www.darkmatteresports.org/",
-    "explorer": "https://cronoscan.com/token/0xd7f099c7a26466702cdbd1cac3447dbebe9ce6cf",
-    "twitter": "https://x.com/darkmatesports?s=21&t=QWNi1HejW0d1aGhoPI8IwQ",
-    "telegram": "",
-    "discord": "https://discord.gg/7zU3SMQw",
-    "whitepaper": "",
-    "threads": "",
-    "extraLinks": [
-      {
-        "name": "Esports Discord",
-        "url": "https://discord.gg/TxsNzvkCXc"
-      },
-      {
-        "name": "",
-        "url": ""
-      },
-      {
-        "name": "",
-        "url": ""
-      }
-    ],
-    "description": "Dark Matter Esports has been a multi-gaming community since early 2024, making friendships, forming teams, and going into big named tournaments in the Esports scene. The token was founded as a way for our members to hold and use as a form of currency for betting on games, purchasing merchandise and other products, and carrying a piece of the community in the form of digital currency.",
-    "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x3d93672c28da896c76c8ab9c03101ff00ced1e46/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD7F099C7A26466702Cdbd1caC3447DbeBe9ce6cF"
-    }
-  },  
+  }, 
 {
     "id": "cara-cara",
     "name": "CARA",

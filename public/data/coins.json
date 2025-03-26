@@ -1114,5 +1114,46 @@
     "COW": {
         "name": "COW",
         "icon": "assets/coinIcons/COW.webp"
+    },
+    "0X26E11C74793977E4D719E449AA08B0D65CB45C9C": {
+        "name": "LFC",
+        "icon": "assets/coinIcons/LFC.webp"
+    },
+    "0X2829955D8AAC64F184E363516FDFBB0394042B90": {
+        "name": "KRIS",
+        "icon": "assets/coinIcons/kris.jpg"
+    },
+    "FLUX": {
+        "name": "FLUX",
+        "icon": "assets/coinIcons/FLUX.webp"
+    },
+    "HNT": {
+        "name": "HNT",
+        "icon": "assets/coinIcons/HNT.webp"
+    },
+    "HFT": {
+        "name": "HFT",
+        "icon": "assets/coinIcons/HFT.webp"
+    },
+    "IP": {
+        "name": "IP",
+        "icon": "assets/coinIcons/IP.webp"
+    },
+    "MOVE": {
+        "name": "MOVE",
+        "icon": "assets/coinIcons/MOVE.webp"
+    },
+    "TURBO": {
+        "name": "TURBO",
+        "icon": "assets/coinIcons/TURBO.webp"
+    },
+    "BLAST": {
+        "name": "BLAST",
+        "icon": "assets/coinIcons/BLAST.webp"
+    },
+    "BMT": {
+        "name": "BMT",
+        "icon": "assets/coinIcons/BMT.webp"
     }
+    
 }
