@@ -1,5 +1,113 @@
 [ 
   {
+    "id": "crovino-wine",
+    "name": "CroVino WINE",
+    "ticker": "WINE",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/WINE.png",
+    "contract": "0xEc5DE11ecE7f27D5689Fb340851D77193357513d",
+    "website": "https://www.crovinowine.com/",
+    "explorer": "https://cronoscan.com/token/0xEc5DE11ecE7f27D5689Fb340851D77193357513d",
+    "twitter": "https://x.com/CroVinoWine?t=ylCHhlomliWEWYsVI-9QJw&s=09,",
+    "telegram": "",
+    "discord": "https://discord.gg/KBXD3qVsM7",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Wine is for crofam culture. We have held staking vaults on wolfswap.app but now have an NFT collection geared at giving crofam a choice of which tokens to buy/support for distribution of NFT rewards fuelled by a $MOON vault on wolfswap.app.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xEc5DE11ecE7f27D5689Fb340851D77193357513d",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x6deed3c4ed8eeb3ff8328fe905bb49c62fa51832/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x6deed3c4ed8eeb3ff8328fe905bb49c62fa51832"
+    }
+  },
+  {
+    "id": "lazy-lion",
+    "name": "LAZY LION",
+    "ticker": "LAZY",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/lazy.webp",
+    "contract": "0x6135c840c511a112457d647Aad82a26412a4fa7D",
+    "website": "https://lazylioncro.com/",
+    "explorer": "https://cronoscan.com/token/0x6135c840c511a112457d647Aad82a26412a4fa7D",
+    "twitter": "https://x.com/LazyLion_CRO?t=VYdeFJzIWQ4appLrVjCmHA&s=09,",
+    "telegram": "",
+    "discord": "https://discord.gg/rU2nmx6KnU",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "LAZY LION was the first 100% $MERY paired meme on meme token. We all know cronos gets LAZY so let's feed the LION meme. We have an amazing ShadowBright made NFT collection that generates LP building and BURNING. This Lion stands in support of the haunt of CRONOS.\n\nWhitelisted on:\n VVS, OBSIDIAN, WOLFSWAP.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x6135c840c511a112457d647Aad82a26412a4fa7D",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd9a74f078418e66bf787036c2a722b3c38704281/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x6135c840c511a112457d647Aad82a26412a4fa7D"
+    }
+  },
+  {
+    "id": "cat-wif-gat",
+    "name": "Cat Wif Gat",
+    "ticker": "GAT",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/GAT.webp",
+    "contract": "0x8Ab1C78364eB29aD4aE509fF6b03E3E7bD4f8d10",
+    "website": "https://www.catgat.xyz/",
+    "explorer": "https://cronoscan.com/token/0x8Ab1C78364eB29aD4aE509fF6b03E3E7bD4f8d10",
+    "twitter": "https://x.com/CatWifGat_CRO",
+    "telegram": "https://t.me/catwifgatcro",
+    "discord": "https://discord.com/invite/aUmD32JRkr",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Cat Wif Gat is a project based on cats from another world. The mysterious cats continue their invasion of cronos chain.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8ab1c78364eb29ad4ae509ff6b03e3e7bd4f8d10",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4f70fdcfa6e9d68f6614b3af00e0739125b186b2/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8ab1c78364eb29ad4ae509ff6b03e3e7bd4f8d10"
+    }
+  },
+  {
     "id": "lildavid-ghost",
     "name": "LILDAVID",
     "ticker": "LILDAVID",
