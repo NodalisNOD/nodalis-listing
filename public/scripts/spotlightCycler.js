@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (index === 0) item.classList.add('active'); // toon de eerste spotlight standaard
 
         const a = document.createElement('a');
-        if (file.toLowerCase().includes('crooks')) {
-          a.href = "https://www.crooks.finance/";
+        if (file.toLowerCase().includes('kitty')) {
+          a.href = "https://www.kitcoin.io";
         } else if (file.toLowerCase().includes('david')) {
           a.href = "https://x.com/lildavid_cro?s=21";
         } else if (file.toLowerCase().includes('nodalis')) {
