@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aggregator Info</title>
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <!-- Indien er een specifieke aggregator CSS is, kun je deze linken -->
+  <link rel="stylesheet" href="./styles/aggregator.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+      authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+      projectId: "nodalis-network-c1d0f",
+      storageBucket: "nodalis-network-c1d0f.appspot.com",
+      messagingSenderId: "909094640371",
+      appId: "1:909094640371:web:7da1e9d4f5434927667586",
+      measurementId: "G-10HBE0H9R6"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
+
+  <div class="container">
+    <h2 id="aggregator-name">Loading...</h2>
+
+    <div class="logo">
+      <img id="aggregator-logo" src="" alt="Aggregator Logo" />
+    </div>
+
+    <div class="info-card">
+      <h3>Aggregator Information</h3>
+      <p id="website"></p>
+      <p><strong>Name:</strong> <span id="name">Loading...</span></p>
+      <p><strong>Year Established:</strong> <span id="year">Loading...</span></p>
+      <p><strong>Description:</strong> <span id="description">Loading...</span></p>
+    </div>
+
+    <div class="social-card">
+      <h3>Social Media</h3>
+      <p>
+        <a id="twitter" href="#" target="_blank"><img src="assets/UI/twitter.png" class="icon" /></a>
+        <a id="facebook" href="#" target="_blank"><img src="assets/UI/facebook.png" class="icon" /></a>
+        <a id="reddit" href="#" target="_blank"><img src="assets/UI/reddit.png" class="icon" /></a>
+        <a id="telegram" href="#" target="_blank"><img src="assets/UI/telegram.png" class="icon" /></a>
+        <a id="discord" href="#" target="_blank"><img src="assets/UI/discord.png" class="icon" /></a>
+        <a id="other-links" href="#" target="_blank"><img src="assets/UI/link.png" class="icon" /></a>
+      </p>
+    </div>
+
+    <div class="trading-card">
+      <h3>Aggregator Data</h3>
+      <!-- Bijvoorbeeld: white listed tokens (het totale aantal tokens) en 24h Trade Volume -->
+      <p><strong>White Listed Tokens:</strong> <span id="whitelisted">Loading...</span></p>
+      <p><strong>24h Trade Volume:</strong> <span id="trade-volume">Loading...</span></p>
+    </div>
+
+    <div class="markets">
+      <h3>White Listed Tokens</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Token</th>
+            <th>Symbol</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody id="market-table">
+          <!-- Dynamische data wordt hier ingevuld -->
+        </tbody>
+      </table>
+      <!-- Paginatie: De knoppen worden hier via JS ingevuld -->
+      <div id="pagination" class="pagination-container"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Nodalis. All rights reserved.</p>
+  </footer>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+  <!-- Gebruik nu aggregator.js voor de detailpagina -->
+  <script src="./scripts/aggregator.js"></script>
+</body>
+</html>
