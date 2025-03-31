@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Eurostile Regular';
+    src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  :root {
+    --primary-color: #042c3f;
+    --secondary-color: #05a6c9;
+    --bg-color: #f9fafa;
+    --card-bg: #fff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --hover-bg: #f1f1f1;
+    --transition: 0.3s ease;
+    --font: 'Eurostile Regular', sans-serif;
+  }
+  
+.timeline-section {
+    background: #fff;
+    padding: 60px 20px;
+    font-family: Eurostile Regular, sans-serif;
+  }
+  
+  .timeline-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #222;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 40px;
+    max-width: 800px;
+    border-left: 4px solid #05a6c9;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .timeline-date-bubble {
+    position: absolute;
+    left: -90px;
+    top: -5px;
+  }
+  
+  .timeline-date {
+    display: inline-block;
+    background: #05a6c9;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -13px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #007aff;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #007aff33;
+  }
+  
+  .timeline-content {
+    background: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-left: 20px;
+  }
+  
+  .timeline-content ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+  }
+  
+  .timeline-content li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline {
+      padding-left: 20px;
+    }
+  
+    .timeline-date-bubble {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 10px;
+    }
+  
+    .timeline-content {
+      margin-left: 0;
+    }
+  }
+  .status-label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  /* Labels voor verschillende statussen */
+  .status-label.complete {
+    background-color: #4CAF50; /* Groen */
+    color: #fff;
+  }
+  
+  .status-label.in-development {
+    background-color: #FFC107; /* Oranje/Geel */
+    color: #fff;
+  }
+  
+  .status-label.planned {
+    background-color: #2196F3; /* Blauw */
+    color: #fff;
+  }
+  
+  /* Extra voorbeeld labels */
+  .status-label.on-hold {
+    background-color: #9E9E9E; /* Grijs */
+    color: #fff;
+  }
+  
+  .status-label.under-review {
+    background-color: #FF5722; /* Diep oranje */
+    color: #fff;
+  }
+  
+  .status-label.concept {
+    background-color: #673AB7; /* Paars */
+    color: #fff;
+  }
+  

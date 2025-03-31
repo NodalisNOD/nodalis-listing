@@ -286,6 +286,102 @@ app.get("/api/exchanges", (req, res) => {
   }
 });
 
+
+// ----- AGGREGATOR CACHE -----
+// Variabele voor de aggregator-cache
+let aggregatorDataCache = null;
+
+// Functie om de aggregator data cache bij te werken
+async function updateAggregatorDataCache() {
+  try {
+    console.log("⏳ Updating aggregator data cache...");
+    const aggregatorApiUrl = "https://api.llama.fi/overview/aggregators?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyVolume";
+    const data = await fetchExchangeApiData(aggregatorApiUrl);
+    if (data && Object.keys(data).length > 0) {
+      aggregatorDataCache = data;
+      console.log("✅ Aggregator data fetched successfully.");
+    } else {
+      console.warn("⚠️ Received empty data for aggregators, keeping previous data (if any).");
+    }
+    // Schrijf de aggregator-cache weg naar public/data/aggregators.json (voor debugging of client-side gebruik)
+    const aggregatorCachePath = path.join(__dirname, "public", "data", "aggregators.json");
+    fs.writeFileSync(aggregatorCachePath, JSON.stringify(aggregatorDataCache, null, 2));
+    console.log("✅ Aggregator data cache updated.");
+  } catch (error) {
+    console.error("❌ Error updating aggregator data cache:", error.message);
+  }
+}
+
+// Plan de taak om elke 60 seconden de aggregator-cache te updaten
+cron.schedule("*/60 * * * * *", updateAggregatorDataCache);
+// Update direct bij serverstart
+updateAggregatorDataCache();
+
+// Route: Serve de aggregator-cache
+app.get("/api/aggregators", (req, res) => {
+  if (aggregatorDataCache) {
+    console.log("✅ Serving aggregator data from cache");
+    res.json(aggregatorDataCache);
+  } else {
+    res.status(503).json({ message: "Aggregator data not available yet" });
+  }
+});
+// ----- WOLFSWAP CACHE -----
+// Variabele voor de Wolfswap-cache
+let wolfswapDataCache = null;
+
+// Functie om de Wolfswap data cache bij te werken
+async function updateWolfswapDataCache() {
+  try {
+    console.log("⏳ Updating Wolfswap data cache...");
+
+    // Haal top performers op
+    const topPerformersUrl = "https://api.factionsnft.com/dex/tokenlist/cronos/top-tokens";
+    const topPerformers = await fetchExchangeApiData(topPerformersUrl);
+
+    // Haal alle listed tokens op
+    const allListedTokensUrl = "https://api.factionsnft.com/dex/tokenlist/cronos/more-tokens";
+    const allListedTokens = await fetchExchangeApiData(allListedTokensUrl);
+
+    // Haal boosted tokens op
+    const boostedTokensUrl = "https://api.factionsnft.com/dex/tokenlist/cronos/boost-tokens";
+    const boostedTokens = await fetchExchangeApiData(boostedTokensUrl);
+
+    // Combineer de data in één object
+    const combinedData = {
+      topPerformers: topPerformers || [],
+      allListedTokens: allListedTokens || [],
+      boostedTokens: boostedTokens || []
+    };
+
+    // Sla de gecombineerde data op in de cache
+    wolfswapDataCache = combinedData;
+
+    // Schrijf de cache weg naar public/data/wolfswap.json (voor debugging of client-side gebruik)
+    const wolfswapCachePath = path.join(__dirname, "public", "data", "wolfswap.json");
+    fs.writeFileSync(wolfswapCachePath, JSON.stringify(wolfswapDataCache, null, 2));
+    console.log("✅ Wolfswap data cache updated.");
+  } catch (error) {
+    console.error("❌ Error updating Wolfswap data cache:", error.message);
+  }
+}
+
+// Plan de taak om elke 60 seconden de Wolfswap-cache te updaten
+cron.schedule("*/60 * * * * *", updateWolfswapDataCache);
+// Update direct bij serverstart
+updateWolfswapDataCache();
+
+// Route: Serve de Wolfswap-cache
+app.get("/api/wolfswap", (req, res) => {
+  if (wolfswapDataCache) {
+    console.log("✅ Serving Wolfswap data from cache");
+    res.json(wolfswapDataCache);
+  } else {
+    res.status(503).json({ message: "Wolfswap data not available yet" });
+  }
+});
+
+
 // Functie om de Cronos-tokenprijs (en market cap) op te halen en te cachen
 async function updateCroPrice() {
   try {
