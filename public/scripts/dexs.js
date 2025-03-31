@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Haal de Wolfswap-cache op (die is opgeslagen in wolfswap.json)
     let wolfswapCache = {};
     try {
-      const response = await fetch('/api/wolfswap');
+      const response = await fetch('./data/wolfswap.json');
       if (!response.ok) {
         throw new Error('Netwerk response was niet ok');
       }

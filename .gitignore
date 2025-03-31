@@ -11,4 +11,5 @@ public/scripts/swapper/app.js
 public/swapper.html
 routes/swapRoutes.js
 node_modules/
-
+public/data/aggregators.json
+public/data/wolfswap.json
