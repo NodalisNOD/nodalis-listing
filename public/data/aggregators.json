@@ -1,0 +1,6572 @@
+{
+  "totalDataChart": [],
+  "totalDataChartBreakdown": [],
+  "breakdown24h": null,
+  "breakdown30d": null,
+  "chain": null,
+  "allChains": [
+    "Solana",
+    "Ethereum",
+    "Sui",
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Avalanche",
+    "BSC",
+    "Sonic",
+    "Aptos",
+    "Polygon",
+    "OP Mainnet",
+    "CORE",
+    "TON",
+    "ZKsync Era",
+    "Mantle",
+    "Taiko",
+    "Gnosis",
+    "Linea",
+    "Tron",
+    "Cardano",
+    "Bitcoin",
+    "Fraxtal",
+    "Starknet",
+    "Fuel Ignition",
+    "Scroll",
+    "Soneium",
+    "Fantom",
+    "Ink",
+    "Injective",
+    "Cronos",
+    "Blast",
+    "Hemi",
+    "Mode",
+    "Movement",
+    "Radix",
+    "Manta",
+    "Abstract",
+    "Terra2",
+    "Sei",
+    "Archway",
+    "Celo",
+    "PulseChain",
+    "Cronos zkEVM",
+    "Polygon zkEVM",
+    "Morph",
+    "Hedera",
+    "Boba",
+    "ThunderCore",
+    "Zircuit",
+    "Metis",
+    "Kava",
+    "Arbitrum Nova",
+    "Canto",
+    "Algorand",
+    "zkLink Nova",
+    "ApeChain",
+    "ZetaChain",
+    "ZKsync Lite",
+    "Unichain",
+    "Aurora",
+    "Moonbeam",
+    "Fuse",
+    "opBNB",
+    "Gravity",
+    "Moonriver",
+    "Kaia",
+    "Migaloo",
+    "Merlin",
+    "X Layer",
+    "Flare",
+    "Zero Network",
+    "Boba_Bnb",
+    "Bittorrent",
+    "Telos",
+    "OKTChain",
+    "Bitlayer",
+    "Rootstock",
+    "Kroma",
+    "Horizen EON",
+    "Bahamut",
+    "Astar zkEVM",
+    "Velas",
+    "Syscoin",
+    "Bitcoincash",
+    "Litecoin",
+    "Dogechain",
+    "CosmosHub",
+    "UNIT0",
+    "WEMIX3.0",
+    "Chihuahua",
+    "Dymension",
+    "Juno",
+    "Kujira",
+    "Neutron",
+    "Oraichain",
+    "Osmosis",
+    "XDC",
+    "BSquared",
+    "Evmos",
+    "Harmony",
+    "Wanchain",
+    "Conflux",
+    "Stacks",
+    "Archway-1",
+    "BOB",
+    "Celestia",
+    "World Chain"
+  ],
+  "total24h": 2045097032,
+  "total48hto24h": 2710022304,
+  "total7d": 20272918158,
+  "total14dto7d": 15825000822,
+  "total60dto30d": 171586030880,
+  "total30d": 107349666831,
+  "total1y": 1167074412770,
+  "change_1d": -24.54,
+  "change_7d": 23.86,
+  "change_1m": -64.14,
+  "change_7dover7d": 28.11,
+  "change_30dover30d": -37.44,
+  "total7DaysAgo": 1651165234,
+  "total30DaysAgo": 5702835103,
+  "protocols": [
+    {
+      "total24h": 4517572,
+      "total48hto24h": 3309931,
+      "total7d": 31812350,
+      "total14dto7d": 31123874,
+      "total60dto30d": 360953363,
+      "total30d": 166599104,
+      "total1y": 2696425122,
+      "totalAllTime": 2610016544,
+      "average1y": null,
+      "change_1d": 36.49,
+      "change_7d": -8.1,
+      "change_1m": -20.01,
+      "change_7dover7d": 2.21,
+      "change_30dover30d": -53.84,
+      "breakdown24h": {
+        "arbitrum": {
+          "agg-dex": 514388
+        },
+        "arbitrum_nova": {
+          "agg-dex": 916
+        },
+        "avax": {
+          "agg-dex": 7470
+        },
+        "base": {
+          "agg-dex": 0
+        },
+        "blast": {
+          "agg-dex": 3790
+        },
+        "boba": {
+          "agg-dex": 1717
+        },
+        "boba_bnb": {
+          "agg-dex": 0
+        },
+        "bsc": {
+          "agg-dex": 310412
+        },
+        "bittorrent": {
+          "agg-dex": 0
+        },
+        "celo": {
+          "agg-dex": 4740
+        },
+        "core": {
+          "agg-dex": 1817448
+        },
+        "ethereum": {
+          "agg-dex": 1506009
+        },
+        "fantom": {
+          "agg-dex": 3422
+        },
+        "fuse": {
+          "agg-dex": 39
+        },
+        "xdai": {
+          "agg-dex": 586
+        },
+        "kava": {
+          "agg-dex": 1000
+        },
+        "linea": {
+          "agg-dex": 40224
+        },
+        "metis": {
+          "agg-dex": 749
+        },
+        "moonbeam": {
+          "agg-dex": 52
+        },
+        "moonriver": {
+          "agg-dex": 13
+        },
+        "optimism": {
+          "agg-dex": 87225
+        },
+        "polygon": {
+          "agg-dex": 151188
+        },
+        "polygon_zkevm": {
+          "agg-dex": 1402
+        },
+        "scroll": {
+          "agg-dex": 480
+        },
+        "thundercore": {
+          "agg-dex": 1590
+        },
+        "zeta": {
+          "agg-dex": 111
+        },
+        "mantle": {
+          "agg-dex": 7794
+        },
+        "era": {
+          "agg-dex": 3136
+        },
+        "manta": {
+          "agg-dex": 38
+        },
+        "mode": {
+          "agg-dex": 1329
+        },
+        "taiko": {
+          "agg-dex": 710
+        },
+        "zklink": {
+          "agg-dex": 3
+        },
+        "apechain": {
+          "agg-dex": 132
+        },
+        "sonic": {
+          "agg-dex": 10485
+        },
+        "hemi": {
+          "agg-dex": 38974
+        }
+      },
+      "breakdown30d": {
+        "arbitrum": {
+          "SushiSwap": 17924383
+        },
+        "arbitrum_nova": {
+          "SushiSwap": 35290
+        },
+        "avax": {
+          "SushiSwap": 13230596
+        },
+        "base": {
+          "SushiSwap": 35174869
+        },
+        "blast": {
+          "SushiSwap": 287331
+        },
+        "boba": {
+          "SushiSwap": 80364
+        },
+        "boba_bnb": {
+          "SushiSwap": 0
+        },
+        "bsc": {
+          "SushiSwap": 15171127
+        },
+        "bittorrent": {
+          "SushiSwap": 0
+        },
+        "celo": {
+          "SushiSwap": 223635
+        },
+        "core": {
+          "SushiSwap": 5499978
+        },
+        "ethereum": {
+          "SushiSwap": 64094253
+        },
+        "fantom": {
+          "SushiSwap": 36904
+        },
+        "fuse": {
+          "SushiSwap": 370
+        },
+        "xdai": {
+          "SushiSwap": 116986
+        },
+        "kava": {
+          "SushiSwap": 888810
+        },
+        "linea": {
+          "SushiSwap": 911169
+        },
+        "metis": {
+          "SushiSwap": 30684
+        },
+        "moonbeam": {
+          "SushiSwap": 4105
+        },
+        "moonriver": {
+          "SushiSwap": 34331
+        },
+        "optimism": {
+          "SushiSwap": 3853100
+        },
+        "polygon": {
+          "SushiSwap": 6002174
+        },
+        "polygon_zkevm": {
+          "SushiSwap": 22106
+        },
+        "scroll": {
+          "SushiSwap": 58641
+        },
+        "thundercore": {
+          "SushiSwap": 75072
+        },
+        "zeta": {
+          "SushiSwap": 13475
+        },
+        "mantle": {
+          "SushiSwap": 349379
+        },
+        "era": {
+          "SushiSwap": 205080
+        },
+        "manta": {
+          "SushiSwap": 4583
+        },
+        "mode": {
+          "SushiSwap": 141886
+        },
+        "taiko": {
+          "SushiSwap": 212654
+        },
+        "zklink": {
+          "SushiSwap": 113
+        },
+        "apechain": {
+          "SushiSwap": 16415
+        },
+        "sonic": {
+          "SushiSwap": 1285830
+        },
+        "hemi": {
+          "SushiSwap": 613411
+        }
+      },
+      "total7DaysAgo": 4915605,
+      "total30DaysAgo": 5647355,
+      "defillamaId": "5061",
+      "name": "SushiSwap Agg",
+      "displayName": "SushiSwap Agg",
+      "module": "sushiswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/sushiswap-agg.jpg",
+      "chains": [
+        "Arbitrum",
+        "Arbitrum Nova",
+        "Avalanche",
+        "Base",
+        "Blast",
+        "Boba",
+        "Boba_Bnb",
+        "BSC",
+        "Bittorrent",
+        "Celo",
+        "CORE",
+        "Ethereum",
+        "Fantom",
+        "Fuse",
+        "Gnosis",
+        "Kava",
+        "Linea",
+        "Metis",
+        "Moonbeam",
+        "Moonriver",
+        "OP Mainnet",
+        "Polygon",
+        "Polygon zkEVM",
+        "Scroll",
+        "ThunderCore",
+        "ZetaChain",
+        "Mantle",
+        "ZKsync Era",
+        "Manta",
+        "Mode",
+        "Taiko",
+        "zkLink Nova",
+        "ApeChain",
+        "Sonic",
+        "Hemi"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/dexs/sushiswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#sushi",
+      "slug": "sushiswap-agg",
+      "linkedProtocols": [
+        "Sushi",
+        "SushiSwap Agg"
+      ],
+      "id": "5061"
+    },
+    {
+      "total24h": 214188341,
+      "total48hto24h": 322954359,
+      "total7d": 2060488306,
+      "total14dto7d": 1959456633,
+      "total60dto30d": 11000183763,
+      "total30d": 7846981653,
+      "total1y": 115345820783,
+      "totalAllTime": 150875172418,
+      "average1y": null,
+      "change_1d": -33.68,
+      "change_7d": -3.27,
+      "change_1m": -15.19,
+      "change_7dover7d": 5.16,
+      "change_30dover30d": -28.66,
+      "breakdown24h": {
+        "ethereum": {
+          "1inch Network": 138263864
+        },
+        "arbitrum": {
+          "1inch Network": 35228403
+        },
+        "polygon": {
+          "1inch Network": 1373016
+        },
+        "bsc": {
+          "1inch Network": 15766273
+        },
+        "avax": {
+          "1inch Network": 8667502
+        },
+        "optimism": {
+          "1inch Network": 711338
+        },
+        "base": {
+          "1inch Network": 13911424
+        },
+        "xdai": {
+          "1inch Network": 202579
+        },
+        "fantom": {
+          "1inch Network": 63942
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "1inch Network": 4224289822
+        },
+        "arbitrum": {
+          "1inch Network": 1598995812
+        },
+        "polygon": {
+          "1inch Network": 62890897
+        },
+        "bsc": {
+          "1inch Network": 832145673
+        },
+        "avax": {
+          "1inch Network": 320495899
+        },
+        "optimism": {
+          "1inch Network": 83447702
+        },
+        "base": {
+          "1inch Network": 633533222
+        },
+        "xdai": {
+          "1inch Network": 87348966
+        },
+        "fantom": {
+          "1inch Network": 3833660
+        }
+      },
+      "total7DaysAgo": 221419868,
+      "total30DaysAgo": 252536553,
+      "defillamaId": "189",
+      "name": "1inch Network",
+      "displayName": "1inch Network",
+      "module": "1inch-agg",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/1inch-network.jpg",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Polygon",
+        "BSC",
+        "Avalanche",
+        "OP Mainnet",
+        "Base",
+        "Gnosis",
+        "Fantom"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/1inch-agg",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "1inch-network",
+      "id": "189"
+    },
+    {
+      "total24h": 14684251,
+      "total48hto24h": 14167427,
+      "total7d": 126463908,
+      "total14dto7d": 96788523,
+      "total60dto30d": 682273533,
+      "total30d": 529448915,
+      "total1y": 5257217246,
+      "totalAllTime": 5768105776,
+      "average1y": null,
+      "change_1d": 3.65,
+      "change_7d": 142.13,
+      "change_1m": -68.19,
+      "change_7dover7d": 30.66,
+      "change_30dover30d": -22.4,
+      "breakdown24h": {
+        "ethereum": {
+          "tokenlon-agg": 14675896
+        },
+        "polygon": {
+          "tokenlon-agg": 162
+        },
+        "arbitrum": {
+          "tokenlon-agg": 92
+        },
+        "base": {
+          "tokenlon-agg": 0
+        },
+        "bsc": {
+          "tokenlon-agg": 8101
+        },
+        "optimism": {
+          "tokenlon-agg": 0
+        },
+        "era": {
+          "tokenlon-agg": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Tokenlon AMM": 526247794
+        },
+        "polygon": {
+          "Tokenlon AMM": 34468
+        },
+        "arbitrum": {
+          "Tokenlon AMM": 1276712
+        },
+        "base": {
+          "Tokenlon AMM": 1556966
+        },
+        "bsc": {
+          "Tokenlon AMM": 329029
+        },
+        "optimism": {
+          "Tokenlon AMM": 3941
+        },
+        "era": {
+          "Tokenlon AMM": 5
+        }
+      },
+      "total7DaysAgo": 6064702,
+      "total30DaysAgo": 46163393,
+      "defillamaId": "5063",
+      "name": "Tokenlon Agg",
+      "displayName": "Tokenlon Agg",
+      "module": "tokenlon",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/tokenlon-agg.jpg",
+      "chains": [
+        "Ethereum",
+        "Polygon",
+        "Arbitrum",
+        "Base",
+        "BSC",
+        "OP Mainnet",
+        "ZKsync Era"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/dexs/tokenlon",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#tokenlon",
+      "slug": "tokenlon-agg",
+      "linkedProtocols": [
+        "Tokenlon",
+        "Tokenlon Agg"
+      ],
+      "id": "5063"
+    },
+    {
+      "total24h": 512553,
+      "total48hto24h": 173831,
+      "total7d": 4517411,
+      "total14dto7d": 2339087,
+      "total60dto30d": 21457173,
+      "total30d": 15803598,
+      "total1y": 322021101,
+      "totalAllTime": 580617220,
+      "average1y": null,
+      "change_1d": 194.86,
+      "change_7d": 537.56,
+      "change_1m": -62.63,
+      "change_7dover7d": 93.13,
+      "change_30dover30d": -26.35,
+      "breakdown24h": {
+        "avax": {
+          "Yield Yak Aggregator": 512552
+        },
+        "arbitrum": {
+          "Yield Yak Aggregator": 1
+        }
+      },
+      "breakdown30d": {
+        "avax": {
+          "Yield Yak Aggregator": 15675257
+        },
+        "arbitrum": {
+          "Yield Yak Aggregator": 128341
+        }
+      },
+      "total7DaysAgo": 80393,
+      "total30DaysAgo": 1371716,
+      "defillamaId": "475",
+      "name": "Yield Yak Aggregator",
+      "displayName": "Yield Yak Aggregator",
+      "module": "yield-yak",
+      "category": "Yield Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/yield-yak-aggregator.png",
+      "chains": [
+        "Avalanche",
+        "Arbitrum"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/yield-yak",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#yield-yak",
+      "slug": "yield-yak-aggregator",
+      "linkedProtocols": [
+        "Yield Yak",
+        "Yield Yak Aggregator"
+      ],
+      "id": "475"
+    },
+    {
+      "total24h": 84749672,
+      "total48hto24h": 68706252,
+      "total7d": 560788936,
+      "total14dto7d": 422241180,
+      "total60dto30d": 3969328770,
+      "total30d": 2935846971,
+      "total1y": 36025669212,
+      "totalAllTime": 101760797112,
+      "average1y": null,
+      "change_1d": 23.35,
+      "change_7d": 137.66,
+      "change_1m": -66.78,
+      "change_7dover7d": 32.81,
+      "change_30dover30d": -26.04,
+      "breakdown24h": {
+        "ethereum": {
+          "Paraswap": 65580681
+        },
+        "polygon": {
+          "Paraswap": 3615544
+        },
+        "bsc": {
+          "Paraswap": 660170
+        },
+        "avax": {
+          "Paraswap": 2149416
+        },
+        "fantom": {
+          "Paraswap": 4819
+        },
+        "arbitrum": {
+          "Paraswap": 6723821
+        },
+        "optimism": {
+          "Paraswap": 514019
+        },
+        "base": {
+          "Paraswap": 5501202
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Paraswap": 2017680227
+        },
+        "polygon": {
+          "Paraswap": 157248588
+        },
+        "bsc": {
+          "Paraswap": 47986355
+        },
+        "avax": {
+          "Paraswap": 112455238
+        },
+        "fantom": {
+          "Paraswap": 317088
+        },
+        "arbitrum": {
+          "Paraswap": 315296356
+        },
+        "optimism": {
+          "Paraswap": 40061023
+        },
+        "base": {
+          "Paraswap": 244802000
+        },
+        "polygon_zkevm": {
+          "Paraswap": 96
+        }
+      },
+      "total7DaysAgo": 35660705,
+      "total30DaysAgo": 255129290,
+      "defillamaId": "894",
+      "name": "Paraswap",
+      "displayName": "Paraswap",
+      "module": "paraswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/paraswap.jpg",
+      "chains": [
+        "Ethereum",
+        "Polygon",
+        "BSC",
+        "Avalanche",
+        "Fantom",
+        "Arbitrum",
+        "OP Mainnet",
+        "Base",
+        "Polygon zkEVM"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/paraswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "paraswap",
+      "id": "894"
+    },
+    {
+      "total24h": 1814711,
+      "total48hto24h": 1882970,
+      "total7d": 12707009,
+      "total14dto7d": 10203372,
+      "total60dto30d": 161104609,
+      "total30d": 84461854,
+      "total1y": 604345665,
+      "totalAllTime": 730182161,
+      "average1y": null,
+      "change_1d": -3.63,
+      "change_7d": 141.39,
+      "change_1m": -61.07,
+      "change_7dover7d": 24.54,
+      "change_30dover30d": -47.57,
+      "breakdown24h": {
+        "solana": {
+          "Rubic": 7
+        },
+        "ethereum": {
+          "Rubic": 29058
+        },
+        "bsc": {
+          "Rubic": 1188
+        },
+        "avax": {
+          "Rubic": 102
+        },
+        "polygon": {
+          "Rubic": 3702
+        },
+        "arbitrum": {
+          "Rubic": 10
+        },
+        "zksync": {
+          "Rubic": 0
+        },
+        "blast": {
+          "Rubic": 0
+        },
+        "linea": {
+          "Rubic": 0
+        },
+        "scroll": {
+          "Rubic": 0
+        },
+        "zeta": {
+          "Rubic": 33
+        },
+        "mantle": {
+          "Rubic": 0
+        },
+        "manta": {
+          "Rubic": 0
+        },
+        "polygon_zkevm": {
+          "Rubic": 17
+        },
+        "pulse": {
+          "Rubic": 9015
+        },
+        "base": {
+          "Rubic": 9618
+        },
+        "fantom": {
+          "Rubic": 0
+        },
+        "boba": {
+          "Rubic": 0
+        },
+        "telos": {
+          "Rubic": 0
+        },
+        "kava": {
+          "Rubic": 0
+        },
+        "optimism": {
+          "Rubic": 87
+        },
+        "aurora": {
+          "Rubic": 0
+        },
+        "metis": {
+          "Rubic": 21
+        },
+        "moonriver": {
+          "Rubic": 0
+        },
+        "tron": {
+          "Rubic": 0
+        },
+        "moonbeam": {
+          "Rubic": 0
+        },
+        "fuse": {
+          "Rubic": 0
+        },
+        "celo": {
+          "Rubic": 0
+        },
+        "okexchain": {
+          "Rubic": 0
+        },
+        "cronos": {
+          "Rubic": 0
+        },
+        "mode": {
+          "Rubic": 1
+        },
+        "merlin": {
+          "Rubic": 7
+        },
+        "core": {
+          "Rubic": 0
+        },
+        "taiko": {
+          "Rubic": 1759508
+        },
+        "zklink": {
+          "Rubic": 461
+        },
+        "bitlayer": {
+          "Rubic": 0
+        },
+        "berachain": {
+          "Rubic": 12
+        },
+        "ton": {
+          "Rubic": 0
+        },
+        "sui": {
+          "Rubic": 0
+        },
+        "unichain": {
+          "Rubic": 139
+        },
+        "morph": {
+          "Rubic": 6
+        },
+        "fraxtal": {
+          "Rubic": 7
+        },
+        "sonic": {
+          "Rubic": 0
+        },
+        "soneium": {
+          "Rubic": 1703
+        },
+        "gravity": {
+          "Rubic": 4
+        },
+        "rsk": {
+          "Rubic": 0
+        },
+        "kroma": {
+          "Rubic": 0
+        },
+        "xlayer": {
+          "Rubic": 3
+        },
+        "sei": {
+          "Rubic": 0
+        },
+        "eon": {
+          "Rubic": 0
+        },
+        "ftn": {
+          "Rubic": 0
+        },
+        "klaytn": {
+          "Rubic": 0
+        },
+        "astrzk": {
+          "Rubic": 0
+        },
+        "velas": {
+          "Rubic": 0
+        },
+        "syscoin": {
+          "Rubic": 0
+        },
+        "boba_bnb": {
+          "Rubic": 0
+        },
+        "flare": {
+          "Rubic": 2
+        }
+      },
+      "breakdown30d": {
+        "solana": {
+          "Rubic": 1871
+        },
+        "ethereum": {
+          "Rubic": 1971189
+        },
+        "bsc": {
+          "Rubic": 203726
+        },
+        "avax": {
+          "Rubic": 12085
+        },
+        "polygon": {
+          "Rubic": 30434
+        },
+        "arbitrum": {
+          "Rubic": 89973
+        },
+        "zksync": {
+          "Rubic": 37
+        },
+        "blast": {
+          "Rubic": 730
+        },
+        "linea": {
+          "Rubic": 2826
+        },
+        "scroll": {
+          "Rubic": 71
+        },
+        "zeta": {
+          "Rubic": 9453
+        },
+        "mantle": {
+          "Rubic": 142
+        },
+        "manta": {
+          "Rubic": 22398
+        },
+        "polygon_zkevm": {
+          "Rubic": 310
+        },
+        "pulse": {
+          "Rubic": 136045
+        },
+        "base": {
+          "Rubic": 86352
+        },
+        "fantom": {
+          "Rubic": 99
+        },
+        "boba": {
+          "Rubic": 9
+        },
+        "telos": {
+          "Rubic": 207
+        },
+        "kava": {
+          "Rubic": 1
+        },
+        "optimism": {
+          "Rubic": 7618
+        },
+        "aurora": {
+          "Rubic": 0
+        },
+        "metis": {
+          "Rubic": 465
+        },
+        "moonriver": {
+          "Rubic": 25
+        },
+        "tron": {
+          "Rubic": 2221
+        },
+        "moonbeam": {
+          "Rubic": 0
+        },
+        "fuse": {
+          "Rubic": 0
+        },
+        "celo": {
+          "Rubic": 209
+        },
+        "okexchain": {
+          "Rubic": 0
+        },
+        "cronos": {
+          "Rubic": 24
+        },
+        "mode": {
+          "Rubic": 32
+        },
+        "merlin": {
+          "Rubic": 71
+        },
+        "core": {
+          "Rubic": 0
+        },
+        "taiko": {
+          "Rubic": 81875934
+        },
+        "zklink": {
+          "Rubic": 674
+        },
+        "bitlayer": {
+          "Rubic": 148
+        },
+        "berachain": {
+          "Rubic": 484
+        },
+        "ton": {
+          "Rubic": 0
+        },
+        "sui": {
+          "Rubic": 1552
+        },
+        "unichain": {
+          "Rubic": 194
+        },
+        "morph": {
+          "Rubic": 29
+        },
+        "fraxtal": {
+          "Rubic": 36
+        },
+        "sonic": {
+          "Rubic": 0
+        },
+        "soneium": {
+          "Rubic": 4138
+        },
+        "gravity": {
+          "Rubic": 6
+        },
+        "rsk": {
+          "Rubic": 0
+        },
+        "kroma": {
+          "Rubic": 0
+        },
+        "xlayer": {
+          "Rubic": 18
+        },
+        "sei": {
+          "Rubic": 0
+        },
+        "eon": {
+          "Rubic": 0
+        },
+        "ftn": {
+          "Rubic": 0
+        },
+        "klaytn": {
+          "Rubic": 0
+        },
+        "astrzk": {
+          "Rubic": 0
+        },
+        "velas": {
+          "Rubic": 0
+        },
+        "syscoin": {
+          "Rubic": 0
+        },
+        "boba_bnb": {
+          "Rubic": 0
+        },
+        "flare": {
+          "Rubic": 18
+        }
+      },
+      "total7DaysAgo": 751786,
+      "total30DaysAgo": 4661848,
+      "defillamaId": "1282",
+      "name": "Rubic",
+      "displayName": "Rubic",
+      "module": "rubic",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/rubic.jpg",
+      "chains": [
+        "Solana",
+        "Ethereum",
+        "BSC",
+        "Avalanche",
+        "Polygon",
+        "Arbitrum",
+        "ZKsync Lite",
+        "Blast",
+        "Linea",
+        "Scroll",
+        "ZetaChain",
+        "Mantle",
+        "Manta",
+        "Polygon zkEVM",
+        "PulseChain",
+        "Base",
+        "Fantom",
+        "Boba",
+        "Telos",
+        "Kava",
+        "OP Mainnet",
+        "Aurora",
+        "Metis",
+        "Moonriver",
+        "Tron",
+        "Moonbeam",
+        "Fuse",
+        "Celo",
+        "OKTChain",
+        "Cronos",
+        "Mode",
+        "Merlin",
+        "CORE",
+        "Taiko",
+        "zkLink Nova",
+        "Bitlayer",
+        "Berachain",
+        "TON",
+        "Sui",
+        "Unichain",
+        "Morph",
+        "Fraxtal",
+        "Sonic",
+        "Soneium",
+        "Gravity",
+        "Rootstock",
+        "Kroma",
+        "X Layer",
+        "Sei",
+        "Horizen EON",
+        "Bahamut",
+        "Kaia",
+        "Astar zkEVM",
+        "Velas",
+        "Syscoin",
+        "Boba_Bnb",
+        "Flare"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/rubic",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "rubic",
+      "id": "1282"
+    },
+    {
+      "total24h": 710619,
+      "total48hto24h": 429210,
+      "total7d": 3517269,
+      "total14dto7d": 3672405,
+      "total60dto30d": 16322246,
+      "total30d": 7995977,
+      "total1y": 112516968,
+      "totalAllTime": 106596433,
+      "average1y": null,
+      "change_1d": 65.56,
+      "change_7d": 34.31,
+      "change_7dover7d": -4.22,
+      "change_30dover30d": -51.01,
+      "breakdown24h": {
+        "ethereum": {
+          "Unizen": 85703
+        },
+        "bsc": {
+          "Unizen": 492916
+        },
+        "polygon": {
+          "Unizen": 10208
+        },
+        "avax": {
+          "Unizen": 2705
+        },
+        "fantom": {
+          "Unizen": 2
+        },
+        "arbitrum": {
+          "Unizen": 1035
+        },
+        "optimism": {
+          "Unizen": 469
+        },
+        "base": {
+          "Unizen": 109764
+        },
+        "berachain": {
+          "Unizen": 7813
+        },
+        "sonic": {
+          "Unizen": 0
+        },
+        "unichain": {
+          "Unizen": 4
+        },
+        "bitcoin": {
+          "Unizen": 0
+        },
+        "bitcoincash": {
+          "Unizen": 0
+        },
+        "litecoin": {
+          "Unizen": 0
+        },
+        "dogechain": {
+          "Unizen": 0
+        },
+        "cosmos": {
+          "Unizen": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Unizen": 2193305
+        },
+        "bsc": {
+          "Unizen": 4349409
+        },
+        "polygon": {
+          "Unizen": 136812
+        },
+        "avax": {
+          "Unizen": 116397
+        },
+        "fantom": {
+          "Unizen": 491
+        },
+        "arbitrum": {
+          "Unizen": 154601
+        },
+        "optimism": {
+          "Unizen": 19550
+        },
+        "base": {
+          "Unizen": 950134
+        },
+        "bitcoin": {
+          "Unizen": 0
+        },
+        "bitcoincash": {
+          "Unizen": 0
+        },
+        "litecoin": {
+          "Unizen": 0
+        },
+        "dogechain": {
+          "Unizen": 0
+        },
+        "cosmos": {
+          "Unizen": 0
+        },
+        "berachain": {
+          "Unizen": 74192
+        },
+        "sonic": {
+          "Unizen": 0
+        },
+        "unichain": {
+          "Unizen": 1086
+        }
+      },
+      "total7DaysAgo": 529092,
+      "defillamaId": "1336",
+      "name": "Unizen",
+      "displayName": "Unizen",
+      "module": "unizen",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/unizen.jpg",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "Polygon",
+        "Avalanche",
+        "Fantom",
+        "Arbitrum",
+        "OP Mainnet",
+        "Base",
+        "Berachain",
+        "Sonic",
+        "Unichain",
+        "Bitcoin",
+        "Bitcoincash",
+        "Litecoin",
+        "Dogechain",
+        "CosmosHub"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/unizen",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "unizen",
+      "id": "1336"
+    },
+    {
+      "total24h": 929735692,
+      "total48hto24h": 1412257957,
+      "total7d": 8494674202,
+      "total14dto7d": 6895894151,
+      "total60dto30d": 107368419128,
+      "total30d": 60000018028,
+      "total1y": 673881882141,
+      "totalAllTime": 2356426697240,
+      "average1y": null,
+      "change_1d": -34.17,
+      "change_7d": 28.23,
+      "change_1m": -72.52,
+      "change_7dover7d": 23.18,
+      "change_30dover30d": -44.12,
+      "breakdown24h": {
+        "solana": {
+          "Jupiter Aggregator": 929735692
+        }
+      },
+      "breakdown30d": {
+        "solana": {
+          "Jupiter Aggregator": 60000018028
+        }
+      },
+      "total7DaysAgo": 725063937,
+      "total30DaysAgo": 3383005468,
+      "defillamaId": "2141",
+      "name": "Jupiter Aggregator",
+      "displayName": "Jupiter Aggregator",
+      "module": "jupiter-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/jupiter-aggregator.png",
+      "chains": [
+        "Solana"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/jupiter-aggregator",
+      "methodology": {
+        "totalVolume": "Volume is calculated by summing the token volume of all trades settled on the protocol since launch.",
+        "dailyVolume": "Volume is calculated by summing the token volume of all trades settled on the protocol that day."
+      },
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#jupiter",
+      "slug": "jupiter-aggregator",
+      "linkedProtocols": [
+        "Jupiter",
+        "Jupiter Aggregator"
+      ],
+      "id": "2141"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "totalAllTime": 315798616,
+      "breakdown24h": null,
+      "breakdown30d": null,
+      "defillamaId": "2249",
+      "name": "Dexible V2",
+      "disabled": true,
+      "displayName": "Dexible V2",
+      "module": "dexible",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/dexible.png",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Avalanche",
+        "BSC",
+        "Fantom",
+        "OP Mainnet",
+        "Polygon"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/dexible",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "dexible-v2",
+      "id": "2249"
+    },
+    {
+      "total24h": 883,
+      "total48hto24h": 3292,
+      "total7d": 23086,
+      "total14dto7d": 16390,
+      "total60dto30d": 207529,
+      "total30d": 95909,
+      "total1y": 10534348,
+      "totalAllTime": 23573595,
+      "average1y": null,
+      "change_1d": -73.18,
+      "change_7d": -55.04,
+      "change_1m": -5.36,
+      "change_7dover7d": 40.85,
+      "change_30dover30d": -53.79,
+      "breakdown24h": {
+        "algorand": {
+          "Deflex": 883
+        }
+      },
+      "breakdown30d": {
+        "algorand": {
+          "Deflex": 95909
+        }
+      },
+      "total7DaysAgo": 1964,
+      "total30DaysAgo": 933,
+      "defillamaId": "2420",
+      "name": "Deflex",
+      "displayName": "Deflex",
+      "module": "deflex",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/deflex.png",
+      "chains": [
+        "Algorand"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/deflex",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "deflex",
+      "id": "2420"
+    },
+    {
+      "total24h": 199335691,
+      "total48hto24h": 224821911,
+      "total7d": 2034883310,
+      "total14dto7d": 1868451926,
+      "total60dto30d": 8056156829,
+      "total30d": 9150744453,
+      "total1y": 58354460887,
+      "totalAllTime": 66277311342,
+      "average1y": null,
+      "change_1d": -11.34,
+      "change_7d": 17.99,
+      "change_1m": -59.03,
+      "change_7dover7d": 8.91,
+      "change_30dover30d": 13.59,
+      "breakdown24h": {
+        "ethereum": {
+          "CoWSwap": 196546449
+        },
+        "xdai": {
+          "CoWSwap": 1634796
+        },
+        "arbitrum": {
+          "CoWSwap": 1154142
+        },
+        "base": {
+          "CoWSwap": 304
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "CoWSwap": 8819319271
+        },
+        "xdai": {
+          "CoWSwap": 42722363
+        },
+        "arbitrum": {
+          "CoWSwap": 119581327
+        },
+        "base": {
+          "CoWSwap": 169121492
+        }
+      },
+      "total7DaysAgo": 168944587,
+      "total30DaysAgo": 486496246,
+      "defillamaId": "2643",
+      "name": "CoWSwap",
+      "displayName": "CoWSwap",
+      "module": "cowswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/cowswap.jpg",
+      "chains": [
+        "Ethereum",
+        "Gnosis",
+        "Arbitrum",
+        "Base"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/cowswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "cowswap",
+      "id": "2643"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total60dto30d": 184,
+      "total30d": 0,
+      "total1y": 212484801,
+      "totalAllTime": 528409711,
+      "average1y": null,
+      "change_30dover30d": -100,
+      "breakdown24h": null,
+      "breakdown30d": {
+        "ethereum": {
+          "PLEXUS": 0
+        },
+        "optimism": {
+          "PLEXUS": 0
+        },
+        "bsc": {
+          "PLEXUS": 0
+        },
+        "xdai": {
+          "PLEXUS": 0
+        },
+        "polygon": {
+          "PLEXUS": 0
+        },
+        "fantom": {
+          "PLEXUS": 0
+        },
+        "polygon_zkevm": {
+          "PLEXUS": 0
+        },
+        "kava": {
+          "PLEXUS": 0
+        },
+        "klaytn": {
+          "PLEXUS": 0
+        },
+        "arbitrum": {
+          "PLEXUS": 0
+        },
+        "avax": {
+          "PLEXUS": 0
+        },
+        "aurora": {
+          "PLEXUS": 0
+        }
+      },
+      "total30DaysAgo": 0,
+      "defillamaId": "2740",
+      "name": "PLEXUS",
+      "displayName": "PLEXUS",
+      "module": "plexus",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/plexus.jpg",
+      "chains": [
+        "Ethereum",
+        "OP Mainnet",
+        "BSC",
+        "Gnosis",
+        "Polygon",
+        "Fantom",
+        "Polygon zkEVM",
+        "Kava",
+        "Kaia",
+        "Arbitrum",
+        "Avalanche",
+        "Aurora"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/plexus",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "plexus",
+      "id": "2740"
+    },
+    {
+      "total24h": 280062,
+      "total48hto24h": 597151,
+      "total7d": 3386308,
+      "total14dto7d": 4704855,
+      "total60dto30d": 53663739,
+      "total30d": 34436856,
+      "total1y": 949660416,
+      "totalAllTime": 2802257150,
+      "average1y": null,
+      "change_1d": -53.1,
+      "change_7d": -3.13,
+      "change_1m": -89.89,
+      "change_7dover7d": -28.03,
+      "change_30dover30d": -35.83,
+      "breakdown24h": {
+        "starknet": {
+          "AVNU": 280062
+        }
+      },
+      "breakdown30d": {
+        "starknet": {
+          "AVNU": 34436856
+        }
+      },
+      "total7DaysAgo": 289100,
+      "total30DaysAgo": 2769548,
+      "defillamaId": "3154",
+      "name": "AVNU",
+      "displayName": "AVNU",
+      "module": "avnu",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/avnu.jpg",
+      "chains": [
+        "Starknet"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/avnu",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "avnu",
+      "id": "3154"
+    },
+    {
+      "total24h": 7174430,
+      "total48hto24h": 10281982,
+      "total7d": 1509051008,
+      "total14dto7d": 161839272,
+      "total60dto30d": 472078142,
+      "total30d": 2149429261,
+      "total1y": 4056760635,
+      "totalAllTime": 29718725024,
+      "average1y": null,
+      "change_1d": -30.22,
+      "change_7d": -59.97,
+      "change_1m": -61.44,
+      "change_7dover7d": 832.44,
+      "change_30dover30d": 355.31,
+      "breakdown24h": {
+        "aptos": {
+          "Bitget Swap": 186
+        },
+        "arbitrum": {
+          "Bitget Swap": 39319
+        },
+        "avax": {
+          "Bitget Swap": 14704
+        },
+        "blast": {
+          "Bitget Swap": 18
+        },
+        "bsc": {
+          "Bitget Swap": 3843298
+        },
+        "bitcoin": {
+          "Bitget Swap": 376513
+        },
+        "celo": {
+          "Bitget Swap": 0
+        },
+        "core": {
+          "Bitget Swap": 1448
+        },
+        "fantom": {
+          "Bitget Swap": 7069
+        },
+        "klaytn": {
+          "Bitget Swap": 18
+        },
+        "linea": {
+          "Bitget Swap": 1016
+        },
+        "polygon": {
+          "Bitget Swap": 677001
+        },
+        "mantle": {
+          "Bitget Swap": 68
+        },
+        "morph": {
+          "Bitget Swap": 5758
+        },
+        "op_bnb": {
+          "Bitget Swap": 77
+        },
+        "optimism": {
+          "Bitget Swap": 3378
+        },
+        "solana": {
+          "Bitget Swap": 1315475
+        },
+        "sui": {
+          "Bitget Swap": 48837
+        },
+        "ton": {
+          "Bitget Swap": 4782
+        },
+        "tron": {
+          "Bitget Swap": 835226
+        },
+        "zksync": {
+          "Bitget Swap": 239
+        }
+      },
+      "breakdown30d": {
+        "aptos": {
+          "Bitget Swap": 56284
+        },
+        "arbitrum": {
+          "Bitget Swap": 25146448
+        },
+        "avax": {
+          "Bitget Swap": 1389647
+        },
+        "base": {
+          "Bitget Swap": 20125265
+        },
+        "blast": {
+          "Bitget Swap": 12732
+        },
+        "bsc": {
+          "Bitget Swap": 805112814
+        },
+        "bitcoin": {
+          "Bitget Swap": 37181591
+        },
+        "core": {
+          "Bitget Swap": 23536
+        },
+        "ethereum": {
+          "Bitget Swap": 116019821
+        },
+        "fantom": {
+          "Bitget Swap": 572944
+        },
+        "klaytn": {
+          "Bitget Swap": 3086033
+        },
+        "linea": {
+          "Bitget Swap": 187317
+        },
+        "polygon": {
+          "Bitget Swap": 46096553
+        },
+        "mantle": {
+          "Bitget Swap": 23672
+        },
+        "morph": {
+          "Bitget Swap": 276256
+        },
+        "near": {
+          "Bitget Swap": 4138
+        },
+        "op_bnb": {
+          "Bitget Swap": 364600
+        },
+        "optimism": {
+          "Bitget Swap": 271377
+        },
+        "solana": {
+          "Bitget Swap": 1053309808
+        },
+        "ton": {
+          "Bitget Swap": 511492
+        },
+        "tron": {
+          "Bitget Swap": 38626471
+        },
+        "zksync": {
+          "Bitget Swap": 97566
+        },
+        "manta": {
+          "Bitget Swap": 5446
+        },
+        "sui": {
+          "Bitget Swap": 927224
+        },
+        "celo": {
+          "Bitget Swap": 226
+        }
+      },
+      "total7DaysAgo": 17922820,
+      "total30DaysAgo": 18603899,
+      "defillamaId": "3207",
+      "name": "Bitget Swap",
+      "displayName": "Bitget Swap",
+      "module": "bitgetwallet",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/bitget-swap.jpg",
+      "chains": [
+        "Aptos",
+        "Arbitrum",
+        "Avalanche",
+        "Base",
+        "Blast",
+        "BSC",
+        "Bitcoin",
+        "Celo",
+        "CORE",
+        "Ethereum",
+        "Fantom",
+        "Heco",
+        "Kaia",
+        "Linea",
+        "Manta",
+        "Polygon",
+        "Mantle",
+        "Morph",
+        "Near",
+        "opBNB",
+        "OP Mainnet",
+        "Solana",
+        "Sui",
+        "TON",
+        "Tron",
+        "Zkfair",
+        "ZKsync Lite"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/bitgetwallet",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "bitget-swap",
+      "id": "3207"
+    },
+    {
+      "total24h": 9539143,
+      "total48hto24h": 7644087,
+      "total7d": 85624622,
+      "total14dto7d": 84081043,
+      "total60dto30d": 307287826,
+      "total30d": 314574203,
+      "total1y": 3772180605,
+      "totalAllTime": 4708003960,
+      "average1y": null,
+      "change_1d": 24.79,
+      "change_7d": 5.28,
+      "change_1m": -36.25,
+      "change_7dover7d": 1.84,
+      "change_30dover30d": 2.37,
+      "breakdown24h": {
+        "aurora": {
+          "Jumper Exchange": 132
+        },
+        "arbitrum": {
+          "Jumper Exchange": 1275901
+        },
+        "optimism": {
+          "Jumper Exchange": 718944
+        },
+        "base": {
+          "Jumper Exchange": 0
+        },
+        "ethereum": {
+          "Jumper Exchange": 4915689
+        },
+        "avax": {
+          "Jumper Exchange": 870333
+        },
+        "bsc": {
+          "Jumper Exchange": 293662
+        },
+        "linea": {
+          "Jumper Exchange": 252130
+        },
+        "manta": {
+          "Jumper Exchange": 0
+        },
+        "polygon": {
+          "Jumper Exchange": 104586
+        },
+        "polygon_zkevm": {
+          "Jumper Exchange": 4403
+        },
+        "fantom": {
+          "Jumper Exchange": 233
+        },
+        "mode": {
+          "Jumper Exchange": 7712
+        },
+        "scroll": {
+          "Jumper Exchange": 29234
+        },
+        "era": {
+          "Jumper Exchange": 15771
+        },
+        "metis": {
+          "Jumper Exchange": 22
+        },
+        "xdai": {
+          "Jumper Exchange": 29092
+        },
+        "taiko": {
+          "Jumper Exchange": 1011226
+        },
+        "blast": {
+          "Jumper Exchange": 8005
+        },
+        "boba": {
+          "Jumper Exchange": 292
+        },
+        "fuse": {
+          "Jumper Exchange": 11
+        },
+        "cronos": {
+          "Jumper Exchange": 1690
+        },
+        "gravity": {
+          "Jumper Exchange": 75
+        }
+      },
+      "breakdown30d": {
+        "aurora": {
+          "Jumper Exchange": 8876
+        },
+        "arbitrum": {
+          "Jumper Exchange": 44737829
+        },
+        "optimism": {
+          "Jumper Exchange": 18659463
+        },
+        "base": {
+          "Jumper Exchange": 58364345
+        },
+        "ethereum": {
+          "Jumper Exchange": 129797007
+        },
+        "avax": {
+          "Jumper Exchange": 10347214
+        },
+        "bsc": {
+          "Jumper Exchange": 8359022
+        },
+        "linea": {
+          "Jumper Exchange": 9235514
+        },
+        "manta": {
+          "Jumper Exchange": 0
+        },
+        "polygon": {
+          "Jumper Exchange": 8627456
+        },
+        "polygon_zkevm": {
+          "Jumper Exchange": 37779
+        },
+        "fantom": {
+          "Jumper Exchange": 12394
+        },
+        "mode": {
+          "Jumper Exchange": 722134
+        },
+        "scroll": {
+          "Jumper Exchange": 2244296
+        },
+        "era": {
+          "Jumper Exchange": 7621185
+        },
+        "metis": {
+          "Jumper Exchange": 27665
+        },
+        "xdai": {
+          "Jumper Exchange": 1498015
+        },
+        "taiko": {
+          "Jumper Exchange": 13037714
+        },
+        "blast": {
+          "Jumper Exchange": 741550
+        },
+        "boba": {
+          "Jumper Exchange": 1455
+        },
+        "fuse": {
+          "Jumper Exchange": 1809
+        },
+        "cronos": {
+          "Jumper Exchange": 471667
+        },
+        "gravity": {
+          "Jumper Exchange": 19814
+        }
+      },
+      "total7DaysAgo": 9060981,
+      "total30DaysAgo": 14963921,
+      "defillamaId": "3524",
+      "name": "Jumper Exchange",
+      "displayName": "Jumper Exchange",
+      "module": "jumper-exchange",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/jumper-exchange.jpg",
+      "chains": [
+        "Aurora",
+        "Arbitrum",
+        "OP Mainnet",
+        "Base",
+        "Ethereum",
+        "Avalanche",
+        "BSC",
+        "Linea",
+        "Manta",
+        "Polygon",
+        "Polygon zkEVM",
+        "Fantom",
+        "Mode",
+        "Scroll",
+        "ZKsync Era",
+        "Metis",
+        "Gnosis",
+        "Taiko",
+        "Blast",
+        "Boba",
+        "Fuse",
+        "Cronos",
+        "Gravity"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/jumper-exchange",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "jumper-exchange",
+      "id": "3524"
+    },
+    {
+      "total24h": 24516,
+      "total48hto24h": 149020,
+      "total7d": 385229,
+      "total14dto7d": 365947,
+      "total60dto30d": 1914215,
+      "total30d": 1776148,
+      "total1y": 25260895,
+      "totalAllTime": 53589888,
+      "average1y": null,
+      "change_1d": -83.55,
+      "change_7d": 2.54,
+      "change_1m": -16.56,
+      "change_7dover7d": 5.27,
+      "change_30dover30d": -7.21,
+      "breakdown24h": {
+        "radixdlt": {
+          "aggregator": 24516
+        }
+      },
+      "breakdown30d": {
+        "radixdlt": {
+          "CaviarNine Shape Liquidity": 1776148
+        }
+      },
+      "total7DaysAgo": 23908,
+      "total30DaysAgo": 29383,
+      "defillamaId": "5064",
+      "name": "CaviarNine Agg",
+      "displayName": "CaviarNine Agg",
+      "module": "caviarnine",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/caviarnine-agg.jpg",
+      "chains": [
+        "Radix"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/dexs/caviarnine",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#caviarnine",
+      "slug": "caviarnine-agg",
+      "linkedProtocols": [
+        "CaviarNine",
+        "CaviarNine Agg"
+      ],
+      "id": "5064"
+    },
+    {
+      "total24h": 30706,
+      "total48hto24h": 3093,
+      "total7d": 83699,
+      "total14dto7d": 194613,
+      "total60dto30d": 1511556,
+      "total30d": 862441,
+      "total1y": 118733070,
+      "totalAllTime": 764586759,
+      "average1y": null,
+      "change_1d": 892.76,
+      "change_7d": 276.99,
+      "change_1m": -47.48,
+      "change_7dover7d": -56.99,
+      "change_30dover30d": -42.94,
+      "breakdown24h": {
+        "arbitrum": {
+          "Slingshot": 642
+        },
+        "ethereum": {
+          "Slingshot": 27564
+        },
+        "polygon": {
+          "Slingshot": 570
+        },
+        "optimism": {
+          "Slingshot": 690
+        },
+        "bsc": {
+          "Slingshot": 0
+        },
+        "canto": {
+          "Slingshot": 1240
+        }
+      },
+      "breakdown30d": {
+        "arbitrum": {
+          "Slingshot": 485320
+        },
+        "ethereum": {
+          "Slingshot": 76285
+        },
+        "polygon": {
+          "Slingshot": 68511
+        },
+        "optimism": {
+          "Slingshot": 143399
+        },
+        "bsc": {
+          "Slingshot": 5329
+        },
+        "canto": {
+          "Slingshot": 83597
+        }
+      },
+      "total7DaysAgo": 8145,
+      "total30DaysAgo": 58465,
+      "defillamaId": "3681",
+      "name": "Slingshot",
+      "displayName": "Slingshot",
+      "module": "slingshot",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/slingshot.jpg",
+      "chains": [
+        "Arbitrum",
+        "Ethereum",
+        "Polygon",
+        "OP Mainnet",
+        "BSC",
+        "Canto"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/dexs/slingshot",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "slingshot",
+      "id": "3681"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 0,
+      "total30d": 0,
+      "total1y": 0,
+      "totalAllTime": 257852,
+      "breakdown24h": {
+        "scroll": {
+          "Aggre": 0
+        }
+      },
+      "breakdown30d": {
+        "scroll": {
+          "Aggre": 0
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "3809",
+      "name": "Aggre",
+      "displayName": "Aggre",
+      "module": "aggre",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/aggre.jpg",
+      "chains": [
+        "Scroll"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/aggre",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "aggre",
+      "id": "3809"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 0,
+      "total30d": 0,
+      "total1y": 2,
+      "totalAllTime": 15815,
+      "average1y": null,
+      "breakdown24h": {
+        "arbitrum": {
+          "Arcane Dex": 0
+        }
+      },
+      "breakdown30d": {
+        "arbitrum": {
+          "Arcane Dex": 0
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "3885",
+      "name": "Arcane Dex",
+      "displayName": "Arcane Dex",
+      "module": "arcane-dex",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/arcane-dex.jpg",
+      "chains": [
+        "Arbitrum"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/arcane-dex",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "arcane-dex",
+      "id": "3885"
+    },
+    {
+      "total24h": 84432732,
+      "total48hto24h": 83035144,
+      "total7d": 756185266,
+      "total14dto7d": 744084391,
+      "total60dto30d": 2932625131,
+      "total30d": 3909592309,
+      "total1y": 17453028625,
+      "totalAllTime": 17392187749,
+      "average1y": null,
+      "change_1d": 1.68,
+      "change_7d": 43.31,
+      "change_1m": -2.73,
+      "change_7dover7d": 1.63,
+      "change_30dover30d": 33.31,
+      "breakdown24h": {
+        "arbitrum": {
+          "Bebop": 638523
+        },
+        "ethereum": {
+          "Bebop": 80522650
+        },
+        "polygon": {
+          "Bebop": 3909
+        },
+        "bsc": {
+          "Bebop": 18171
+        },
+        "blast": {
+          "Bebop": 0
+        },
+        "era": {
+          "Bebop": 0
+        },
+        "optimism": {
+          "Bebop": 9384
+        },
+        "mode": {
+          "Bebop": 0
+        },
+        "base": {
+          "Bebop": 3240094
+        },
+        "scroll": {
+          "Bebop": 1
+        },
+        "taiko": {
+          "Bebop": 0
+        }
+      },
+      "breakdown30d": {
+        "arbitrum": {
+          "Bebop": 86494593
+        },
+        "ethereum": {
+          "Bebop": 3649538919
+        },
+        "polygon": {
+          "Bebop": 190617
+        },
+        "bsc": {
+          "Bebop": 110626
+        },
+        "blast": {
+          "Bebop": 0
+        },
+        "era": {
+          "Bebop": 0
+        },
+        "optimism": {
+          "Bebop": 752319
+        },
+        "mode": {
+          "Bebop": 0
+        },
+        "base": {
+          "Bebop": 172485218
+        },
+        "scroll": {
+          "Bebop": 20017
+        },
+        "taiko": {
+          "Bebop": 0
+        }
+      },
+      "total7DaysAgo": 58917060,
+      "total30DaysAgo": 86800352,
+      "defillamaId": "3927",
+      "name": "Bebop",
+      "displayName": "Bebop",
+      "module": "bebop",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/bebop.png",
+      "chains": [
+        "Arbitrum",
+        "Ethereum",
+        "Polygon",
+        "BSC",
+        "Blast",
+        "ZKsync Era",
+        "OP Mainnet",
+        "Mode",
+        "Base",
+        "Scroll",
+        "Taiko"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/bebop",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "bebop",
+      "id": "3927"
+    },
+    {
+      "total24h": 42263314,
+      "total48hto24h": 79439037,
+      "total7d": 726491111,
+      "total14dto7d": 817224503,
+      "total60dto30d": 6035961551,
+      "total30d": 3827000130,
+      "total1y": 58867264114,
+      "totalAllTime": 61340193096,
+      "average1y": null,
+      "change_1d": -46.8,
+      "change_7d": -50.38,
+      "change_1m": -82.83,
+      "change_7dover7d": -11.1,
+      "change_30dover30d": -36.6,
+      "breakdown24h": {
+        "ethereum": {
+          "ODOS": 12608423
+        },
+        "arbitrum": {
+          "ODOS": 3195318
+        },
+        "optimism": {
+          "ODOS": 2327281
+        },
+        "base": {
+          "ODOS": 0
+        },
+        "polygon": {
+          "ODOS": 1021318
+        },
+        "avax": {
+          "ODOS": 5337011
+        },
+        "bsc": {
+          "ODOS": 1139592
+        },
+        "fantom": {
+          "ODOS": 26377
+        },
+        "era": {
+          "ODOS": 1786379
+        },
+        "mode": {
+          "ODOS": 48812
+        },
+        "linea": {
+          "ODOS": 414198
+        },
+        "mantle": {
+          "ODOS": 2985739
+        },
+        "scroll": {
+          "ODOS": 63492
+        },
+        "fraxtal": {
+          "ODOS": 328978
+        },
+        "sonic": {
+          "ODOS": 10980396
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "ODOS": 690061701
+        },
+        "arbitrum": {
+          "ODOS": 338563252
+        },
+        "optimism": {
+          "ODOS": 94213526
+        },
+        "base": {
+          "ODOS": 789414059
+        },
+        "polygon": {
+          "ODOS": 45945127
+        },
+        "avax": {
+          "ODOS": 417721867
+        },
+        "bsc": {
+          "ODOS": 61278671
+        },
+        "fantom": {
+          "ODOS": 6046054
+        },
+        "era": {
+          "ODOS": 160940490
+        },
+        "mode": {
+          "ODOS": 2798919
+        },
+        "linea": {
+          "ODOS": 25534588
+        },
+        "mantle": {
+          "ODOS": 372209145
+        },
+        "scroll": {
+          "ODOS": 3091921
+        },
+        "fraxtal": {
+          "ODOS": 17182770
+        },
+        "sonic": {
+          "ODOS": 801998040
+        }
+      },
+      "total7DaysAgo": 85178788,
+      "total30DaysAgo": 246166725,
+      "defillamaId": "3951",
+      "name": "ODOS",
+      "displayName": "ODOS",
+      "module": "odos",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/odos.jpg",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "OP Mainnet",
+        "Base",
+        "Polygon",
+        "Avalanche",
+        "BSC",
+        "Fantom",
+        "ZKsync Era",
+        "Mode",
+        "Linea",
+        "Mantle",
+        "Scroll",
+        "Fraxtal",
+        "Sonic"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/odos",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "odos",
+      "id": "3951"
+    },
+    {
+      "total24h": 535218,
+      "total48hto24h": 812345,
+      "total7d": 7237256,
+      "total14dto7d": 6549290,
+      "total60dto30d": 82321685,
+      "total30d": 53403480,
+      "total1y": 953729837,
+      "totalAllTime": 1614973779,
+      "average1y": null,
+      "change_1d": -34.11,
+      "change_7d": -47.73,
+      "change_1m": -54.98,
+      "change_7dover7d": 10.5,
+      "change_30dover30d": -35.13,
+      "breakdown24h": {
+        "cardano": {
+          "DexHunter": 535218
+        }
+      },
+      "breakdown30d": {
+        "cardano": {
+          "DexHunter": 53403480
+        }
+      },
+      "total7DaysAgo": 1023921,
+      "total30DaysAgo": 1188967,
+      "defillamaId": "3979",
+      "name": "DexHunter",
+      "displayName": "DexHunter",
+      "module": "dexhunter",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/dexhunter.jpg",
+      "chains": [
+        "Cardano"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/dexhunter",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "dexhunter",
+      "id": "3979"
+    },
+    {
+      "total24h": 63742,
+      "total48hto24h": 46995,
+      "total7d": 326008,
+      "total14dto7d": 258468,
+      "total60dto30d": 6448564,
+      "total30d": 1319699,
+      "total1y": 86734852,
+      "totalAllTime": 85361787,
+      "average1y": null,
+      "change_1d": 35.64,
+      "change_7d": 133.56,
+      "change_1m": -51.45,
+      "change_7dover7d": 26.13,
+      "change_30dover30d": -79.53,
+      "breakdown24h": {
+        "ethereum": {
+          "Conveyor": 55877
+        },
+        "arbitrum": {
+          "Conveyor": 299
+        },
+        "polygon": {
+          "Conveyor": 9
+        },
+        "bsc": {
+          "Conveyor": 112
+        },
+        "optimism": {
+          "Conveyor": 284
+        },
+        "base": {
+          "Conveyor": 7161
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Conveyor": 224291
+        },
+        "arbitrum": {
+          "Conveyor": 163197
+        },
+        "polygon": {
+          "Conveyor": 1805
+        },
+        "bsc": {
+          "Conveyor": 30642
+        },
+        "optimism": {
+          "Conveyor": 27401
+        },
+        "base": {
+          "Conveyor": 872363
+        }
+      },
+      "total7DaysAgo": 27291,
+      "total30DaysAgo": 131279,
+      "defillamaId": "3980",
+      "name": "Conveyor",
+      "displayName": "Conveyor",
+      "module": "conveyor",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/conveyor.png",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Polygon",
+        "BSC",
+        "OP Mainnet",
+        "Base"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/conveyor",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "conveyor",
+      "id": "3980"
+    },
+    {
+      "total24h": 7975636,
+      "total48hto24h": 8392067,
+      "total7d": 96580119,
+      "total14dto7d": 49279117,
+      "total60dto30d": 508113168,
+      "total30d": 399740401,
+      "total1y": 2936944508,
+      "totalAllTime": 3056600190,
+      "average1y": null,
+      "change_1d": -4.96,
+      "change_7d": 46.24,
+      "change_1m": 8.99,
+      "change_7dover7d": 95.99,
+      "change_30dover30d": -21.33,
+      "breakdown24h": {
+        "sui": {
+          "Aftermath Aggregator": 7975636
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "Aftermath Aggregator": 399740401
+        }
+      },
+      "total7DaysAgo": 5453680,
+      "total30DaysAgo": 7318046,
+      "defillamaId": "3981",
+      "name": "Aftermath Aggregator",
+      "displayName": "Aftermath Aggregator",
+      "module": "aftermath-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/aftermath-aggregator.png",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/aftermath-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#aftermath-finance",
+      "slug": "aftermath-aggregator",
+      "linkedProtocols": [
+        "Aftermath Finance",
+        "Aftermath Aggregator"
+      ],
+      "id": "3981"
+    },
+    {
+      "total24h": 80838687,
+      "total48hto24h": 101177239,
+      "total7d": 1060350691,
+      "total14dto7d": 737190507,
+      "total60dto30d": 4586296720,
+      "total30d": 3473642978,
+      "total1y": 35247505712,
+      "totalAllTime": 38613409940,
+      "average1y": null,
+      "change_1d": -20.1,
+      "change_7d": 8.29,
+      "change_1m": -64.38,
+      "change_7dover7d": 43.84,
+      "change_30dover30d": -24.26,
+      "breakdown24h": {
+        "base": {
+          "KyberSwap Aggregator": 9656428
+        },
+        "mantle": {
+          "KyberSwap Aggregator": 0
+        },
+        "blast": {
+          "KyberSwap Aggregator": 25385
+        },
+        "polygon_zkevm": {
+          "KyberSwap Aggregator": 0
+        },
+        "ethereum": {
+          "KyberSwap Aggregator": 48253436
+        },
+        "arbitrum": {
+          "KyberSwap Aggregator": 4295627
+        },
+        "avax": {
+          "KyberSwap Aggregator": 4614342
+        },
+        "bsc": {
+          "KyberSwap Aggregator": 4350317
+        },
+        "fantom": {
+          "KyberSwap Aggregator": 50463
+        },
+        "optimism": {
+          "KyberSwap Aggregator": 1365352
+        },
+        "polygon": {
+          "KyberSwap Aggregator": 603276
+        },
+        "linea": {
+          "KyberSwap Aggregator": 410720
+        },
+        "scroll": {
+          "KyberSwap Aggregator": 74534
+        },
+        "era": {
+          "KyberSwap Aggregator": 766905
+        },
+        "sonic": {
+          "KyberSwap Aggregator": 2527213
+        },
+        "berachain": {
+          "KyberSwap Aggregator": 3844689
+        }
+      },
+      "breakdown30d": {
+        "base": {
+          "KyberSwap Aggregator": 492204409
+        },
+        "mantle": {
+          "KyberSwap Aggregator": 0
+        },
+        "blast": {
+          "KyberSwap Aggregator": 1538016
+        },
+        "polygon_zkevm": {
+          "KyberSwap Aggregator": 0
+        },
+        "ethereum": {
+          "KyberSwap Aggregator": 2057681237
+        },
+        "arbitrum": {
+          "KyberSwap Aggregator": 183876887
+        },
+        "avax": {
+          "KyberSwap Aggregator": 109465089
+        },
+        "bsc": {
+          "KyberSwap Aggregator": 186630721
+        },
+        "fantom": {
+          "KyberSwap Aggregator": 1022111
+        },
+        "optimism": {
+          "KyberSwap Aggregator": 48408404
+        },
+        "polygon": {
+          "KyberSwap Aggregator": 29254364
+        },
+        "linea": {
+          "KyberSwap Aggregator": 11210032
+        },
+        "scroll": {
+          "KyberSwap Aggregator": 1985702
+        },
+        "era": {
+          "KyberSwap Aggregator": 63038651
+        },
+        "sonic": {
+          "KyberSwap Aggregator": 226310722
+        },
+        "berachain": {
+          "KyberSwap Aggregator": 61016633
+        }
+      },
+      "total7DaysAgo": 74650669,
+      "total30DaysAgo": 226945324,
+      "defillamaId": "3982",
+      "name": "KyberSwap Aggregator",
+      "displayName": "KyberSwap Aggregator",
+      "module": "kyberswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/kyberswap-aggregator.png",
+      "chains": [
+        "Base",
+        "Mantle",
+        "Blast",
+        "Polygon zkEVM",
+        "Ethereum",
+        "Arbitrum",
+        "Avalanche",
+        "BSC",
+        "Fantom",
+        "OP Mainnet",
+        "Polygon",
+        "Linea",
+        "Scroll",
+        "ZKsync Era",
+        "Sonic",
+        "Berachain"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/kyberswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#kyberswap",
+      "slug": "kyberswap-aggregator",
+      "linkedProtocols": [
+        "KyberSwap",
+        "KyberSwap Aggregator"
+      ],
+      "id": "3982"
+    },
+    {
+      "total24h": 5312679,
+      "total48hto24h": 6477614,
+      "total7d": 39687702,
+      "total14dto7d": 25927152,
+      "total60dto30d": 229462622,
+      "total30d": 171882543,
+      "total1y": 5390988066,
+      "totalAllTime": 5944488061,
+      "average1y": null,
+      "change_1d": -17.98,
+      "change_7d": 24.41,
+      "change_1m": -77.86,
+      "change_7dover7d": 53.07,
+      "change_30dover30d": -25.09,
+      "breakdown24h": {
+        "aptos": {
+          "Panora": 5312679
+        }
+      },
+      "breakdown30d": {
+        "aptos": {
+          "Panora": 171882543
+        }
+      },
+      "total7DaysAgo": 4270278,
+      "total30DaysAgo": 23991931,
+      "defillamaId": "4008",
+      "name": "Panora",
+      "displayName": "Panora",
+      "module": "swapgpt",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/panora.jpg",
+      "chains": [
+        "Aptos"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/swapgpt",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "panora",
+      "id": "4008"
+    },
+    {
+      "total24h": 14751323,
+      "total48hto24h": 42207855,
+      "total7d": 189115735,
+      "total14dto7d": 220811410,
+      "total60dto30d": 839136952,
+      "total30d": 859669801,
+      "total1y": 8997562123,
+      "totalAllTime": 9179045428,
+      "average1y": null,
+      "change_1d": -65.05,
+      "change_7d": -50.76,
+      "change_1m": -53.38,
+      "change_7dover7d": -14.35,
+      "change_30dover30d": 2.45,
+      "breakdown24h": {
+        "ethereum": {
+          "Kana Labs": 0
+        },
+        "bsc": {
+          "Kana Labs": 0
+        },
+        "avax": {
+          "Kana Labs": 0
+        },
+        "arbitrum": {
+          "Kana Labs": 0
+        },
+        "polygon": {
+          "Kana Labs": 0
+        },
+        "era": {
+          "Kana Labs": 0
+        },
+        "aptos": {
+          "Kana Labs": 14751323
+        },
+        "sui": {
+          "Kana Labs": 0
+        },
+        "solana": {
+          "Kana Labs": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Kana Labs": 0
+        },
+        "bsc": {
+          "Kana Labs": 0
+        },
+        "avax": {
+          "Kana Labs": 0
+        },
+        "arbitrum": {
+          "Kana Labs": 0
+        },
+        "polygon": {
+          "Kana Labs": 0
+        },
+        "era": {
+          "Kana Labs": 0
+        },
+        "aptos": {
+          "Kana Labs": 859669801
+        },
+        "sui": {
+          "Kana Labs": 0
+        },
+        "solana": {
+          "Kana Labs": 0
+        }
+      },
+      "total7DaysAgo": 29960000,
+      "total30DaysAgo": 31641720,
+      "defillamaId": "4016",
+      "name": "Kana Labs",
+      "displayName": "Kana Labs",
+      "module": "kanalabs",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/kana-labs.png",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "Avalanche",
+        "Arbitrum",
+        "Polygon",
+        "ZKsync Era",
+        "Aptos",
+        "Sui",
+        "Solana"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/kanalabs",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "kana-labs",
+      "id": "4016"
+    },
+    {
+      "total24h": 934392,
+      "total48hto24h": 660185,
+      "total7d": 5779738,
+      "total14dto7d": 8125918,
+      "total60dto30d": 65395266,
+      "total30d": 41928288,
+      "total1y": 1544515316,
+      "totalAllTime": 1616065558,
+      "average1y": null,
+      "change_1d": 41.53,
+      "change_7d": 92.13,
+      "change_1m": -75.59,
+      "change_7dover7d": -28.87,
+      "change_30dover30d": -35.88,
+      "breakdown24h": {
+        "ethereum": {
+          "WOWMAX Exchange": 4725
+        },
+        "bsc": {
+          "WOWMAX Exchange": 16795
+        },
+        "base": {
+          "WOWMAX Exchange": 4211
+        },
+        "linea": {
+          "WOWMAX Exchange": 56556
+        },
+        "scroll": {
+          "WOWMAX Exchange": 14461
+        },
+        "cronos": {
+          "WOWMAX Exchange": 27580
+        },
+        "manta": {
+          "WOWMAX Exchange": 18711
+        },
+        "blast": {
+          "WOWMAX Exchange": 21564
+        },
+        "xlayer": {
+          "WOWMAX Exchange": 0
+        },
+        "metis": {
+          "WOWMAX Exchange": 640
+        },
+        "arbitrum": {
+          "WOWMAX Exchange": 561407
+        },
+        "zeta": {
+          "WOWMAX Exchange": 0
+        },
+        "soneium": {
+          "WOWMAX Exchange": 207742
+        },
+        "unit0": {
+          "WOWMAX Exchange": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "WOWMAX Exchange": 299387
+        },
+        "bsc": {
+          "WOWMAX Exchange": 401059
+        },
+        "base": {
+          "WOWMAX Exchange": 7150237
+        },
+        "linea": {
+          "WOWMAX Exchange": 3205247
+        },
+        "scroll": {
+          "WOWMAX Exchange": 510974
+        },
+        "cronos": {
+          "WOWMAX Exchange": 64625
+        },
+        "manta": {
+          "WOWMAX Exchange": 1483957
+        },
+        "blast": {
+          "WOWMAX Exchange": 1807974
+        },
+        "xlayer": {
+          "WOWMAX Exchange": 1
+        },
+        "metis": {
+          "WOWMAX Exchange": 444053
+        },
+        "arbitrum": {
+          "WOWMAX Exchange": 18032388
+        },
+        "zeta": {
+          "WOWMAX Exchange": 200
+        },
+        "soneium": {
+          "WOWMAX Exchange": 8521165
+        },
+        "unit0": {
+          "WOWMAX Exchange": 7021
+        }
+      },
+      "total7DaysAgo": 486332,
+      "total30DaysAgo": 3827673,
+      "defillamaId": "4192",
+      "name": "WOWMAX Exchange",
+      "displayName": "WOWMAX Exchange",
+      "module": "wowmax",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/wowmax-exchange.jpg",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "Base",
+        "Linea",
+        "Scroll",
+        "Cronos",
+        "Manta",
+        "Blast",
+        "X Layer",
+        "Metis",
+        "Arbitrum",
+        "ZetaChain",
+        "Soneium",
+        "UNIT0"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/wowmax",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "wowmax-exchange",
+      "id": "4192"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 0,
+      "total30d": 0,
+      "total1y": 2962000,
+      "totalAllTime": 7873744,
+      "average1y": null,
+      "breakdown24h": {
+        "wemix": {
+          "OPT Finance": 0
+        }
+      },
+      "breakdown30d": {
+        "wemix": {
+          "OPT Finance": 0
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "4277",
+      "name": "OPT Finance",
+      "displayName": "OPT Finance",
+      "module": "opt-agg",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/opt-finance.jpg",
+      "chains": [
+        "WEMIX3.0"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/opt-agg",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "opt-finance",
+      "id": "4277"
+    },
+    {
+      "total24h": 29557,
+      "total48hto24h": 41161,
+      "total7d": 373224,
+      "total14dto7d": 482676,
+      "total60dto30d": 3138821,
+      "total30d": 1658668,
+      "total1y": 98024911,
+      "totalAllTime": 377466564,
+      "average1y": null,
+      "change_1d": -28.19,
+      "change_7d": 3.61,
+      "change_1m": -44.67,
+      "change_7dover7d": -22.68,
+      "change_30dover30d": -47.16,
+      "breakdown24h": {
+        "starknet": {
+          "Fibrous Finance": 29557
+        }
+      },
+      "breakdown30d": {
+        "starknet": {
+          "Fibrous Finance": 1658668
+        }
+      },
+      "total7DaysAgo": 28527,
+      "total30DaysAgo": 53418,
+      "defillamaId": "4278",
+      "name": "Fibrous Finance",
+      "displayName": "Fibrous Finance",
+      "module": "fibrous-finance",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/fibrous-finance.jpg",
+      "chains": [
+        "Starknet"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/fibrous-finance",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "fibrous-finance",
+      "id": "4278"
+    },
+    {
+      "total24h": 14059606,
+      "total48hto24h": 15890111,
+      "total7d": 129411055,
+      "total14dto7d": 103061836,
+      "total60dto30d": 213126833,
+      "total30d": 422980421,
+      "total1y": 3718159679,
+      "totalAllTime": 4532526928,
+      "average1y": null,
+      "change_1d": -11.52,
+      "change_7d": 2.02,
+      "change_1m": 7.18,
+      "change_7dover7d": 25.57,
+      "change_30dover30d": 98.46,
+      "breakdown24h": {
+        "ethereum": {
+          "Magpie Protocol": 151185
+        },
+        "arbitrum": {
+          "Magpie Protocol": 22020
+        },
+        "polygon": {
+          "Magpie Protocol": 91999
+        },
+        "avax": {
+          "Magpie Protocol": 60280
+        },
+        "bsc": {
+          "Magpie Protocol": 311413
+        },
+        "optimism": {
+          "Magpie Protocol": 1742
+        },
+        "base": {
+          "Magpie Protocol": 218459
+        },
+        "scroll": {
+          "Magpie Protocol": 13
+        },
+        "manta": {
+          "Magpie Protocol": 1050
+        },
+        "taiko": {
+          "Magpie Protocol": 3270
+        },
+        "polygon_zkevm": {
+          "Magpie Protocol": 172
+        },
+        "blast": {
+          "Magpie Protocol": 252
+        },
+        "metis": {
+          "Magpie Protocol": 136
+        },
+        "fantom": {
+          "Magpie Protocol": 205
+        },
+        "sonic": {
+          "Magpie Protocol": 12315881
+        },
+        "era": {
+          "Magpie Protocol": 8890
+        },
+        "berachain": {
+          "Magpie Protocol": 620775
+        },
+        "linea": {
+          "Magpie Protocol": 102459
+        },
+        "ink": {
+          "Magpie Protocol": 149405
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Magpie Protocol": 38743968
+        },
+        "arbitrum": {
+          "Magpie Protocol": 7882825
+        },
+        "polygon": {
+          "Magpie Protocol": 3014999
+        },
+        "avax": {
+          "Magpie Protocol": 3864753
+        },
+        "bsc": {
+          "Magpie Protocol": 8639515
+        },
+        "optimism": {
+          "Magpie Protocol": 501766
+        },
+        "base": {
+          "Magpie Protocol": 15095953
+        },
+        "scroll": {
+          "Magpie Protocol": 52437
+        },
+        "manta": {
+          "Magpie Protocol": 51201
+        },
+        "taiko": {
+          "Magpie Protocol": 111488
+        },
+        "polygon_zkevm": {
+          "Magpie Protocol": 3273
+        },
+        "blast": {
+          "Magpie Protocol": 140751
+        },
+        "metis": {
+          "Magpie Protocol": 30214
+        },
+        "fantom": {
+          "Magpie Protocol": 103132
+        },
+        "sonic": {
+          "Magpie Protocol": 324190012
+        },
+        "era": {
+          "Magpie Protocol": 415834
+        },
+        "berachain": {
+          "Magpie Protocol": 13609858
+        },
+        "linea": {
+          "Magpie Protocol": 1432860
+        },
+        "ink": {
+          "Magpie Protocol": 5095582
+        }
+      },
+      "total7DaysAgo": 13780653,
+      "total30DaysAgo": 13118027,
+      "defillamaId": "4457",
+      "name": "Magpie Protocol",
+      "displayName": "Magpie Protocol",
+      "module": "magpie",
+      "category": "Cross Chain Bridge",
+      "logo": "https://icons.llamao.fi/icons/protocols/magpie-protocol.png",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Polygon",
+        "Avalanche",
+        "BSC",
+        "OP Mainnet",
+        "Base",
+        "Scroll",
+        "Manta",
+        "Taiko",
+        "Polygon zkEVM",
+        "Blast",
+        "Metis",
+        "Fantom",
+        "Sonic",
+        "ZKsync Era",
+        "Berachain",
+        "Linea",
+        "Ink"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/magpie",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "magpie-protocol",
+      "id": "4457"
+    },
+    {
+      "total24h": 4671,
+      "total48hto24h": 4747,
+      "total7d": 59272,
+      "total14dto7d": 52107,
+      "total60dto30d": 455025,
+      "total30d": 419793,
+      "total1y": 4688799,
+      "totalAllTime": 4720947,
+      "average1y": null,
+      "change_1d": -1.6,
+      "change_7d": -7.25,
+      "change_1m": -36.56,
+      "change_7dover7d": 13.75,
+      "change_30dover30d": -7.74,
+      "breakdown24h": {
+        "hedera": {
+          "EtaSwap": 4671
+        }
+      },
+      "breakdown30d": {
+        "hedera": {
+          "EtaSwap": 419793
+        }
+      },
+      "total7DaysAgo": 5036,
+      "total30DaysAgo": 7363,
+      "defillamaId": "4475",
+      "name": "EtaSwap",
+      "displayName": "EtaSwap",
+      "module": "etaswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/etaswap.jpg",
+      "chains": [
+        "Hedera"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/etaswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "etaswap",
+      "id": "4475"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 78749,
+      "total14dto7d": 41282,
+      "total60dto30d": 4796470,
+      "total30d": 9673705,
+      "total1y": 183030882,
+      "totalAllTime": 211812066,
+      "average1y": null,
+      "change_7d": -100,
+      "change_1m": -100,
+      "change_7dover7d": 90.76,
+      "change_30dover30d": 101.68,
+      "breakdown24h": null,
+      "breakdown30d": {
+        "ethereum": {
+          "Hinkal": 9436594
+        },
+        "base": {
+          "Hinkal": 141280
+        },
+        "arbitrum": {
+          "Hinkal": 15142
+        },
+        "polygon": {
+          "Hinkal": 5523
+        },
+        "bsc": {
+          "Hinkal": 57930
+        },
+        "avax": {
+          "Hinkal": 1583
+        },
+        "optimism": {
+          "Hinkal": 15653
+        }
+      },
+      "total7DaysAgo": 3503,
+      "total30DaysAgo": 1096,
+      "defillamaId": "4487",
+      "name": "Hinkal",
+      "displayName": "Hinkal",
+      "module": "hinkal",
+      "category": "Privacy",
+      "logo": "https://icons.llamao.fi/icons/protocols/hinkal.jpg",
+      "chains": [
+        "Ethereum",
+        "Base",
+        "Arbitrum",
+        "Polygon",
+        "BSC",
+        "Avalanche",
+        "OP Mainnet"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/hinkal",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "hinkal",
+      "id": "4487"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 27377,
+      "total30d": 4207,
+      "total1y": 940694,
+      "totalAllTime": 345894,
+      "average1y": null,
+      "change_30dover30d": -84.63,
+      "breakdown24h": {
+        "starknet": {
+          "Bountive": 0
+        }
+      },
+      "breakdown30d": {
+        "starknet": {
+          "Bountive": 4207
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "4516",
+      "name": "Bountive",
+      "displayName": "Bountive",
+      "module": "bountive",
+      "category": "Yield",
+      "logo": "https://icons.llamao.fi/icons/protocols/bountive.png",
+      "chains": [
+        "Starknet"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/bountive",
+      "methodology": {
+        "UserFees": "Pays management + performance fees",
+        "Fees": "Yield",
+        "Revenue": "Management + performance fees",
+        "ProtocolRevenue": "Gets management + performance fees",
+        "SupplySideRevenue": "Generated yield excluding protocol fees"
+      },
+      "latestFetchIsOk": true,
+      "slug": "bountive",
+      "id": "4516"
+    },
+    {
+      "total24h": 36765653,
+      "total48hto24h": 26992736,
+      "total7d": 376822724,
+      "total14dto7d": 305719712,
+      "total60dto30d": 2538421215,
+      "total30d": 1704636733,
+      "total1y": 21641013356,
+      "totalAllTime": 61256682653,
+      "average1y": null,
+      "change_1d": 36.21,
+      "change_7d": 22.68,
+      "change_1m": -70.27,
+      "change_7dover7d": 23.26,
+      "change_30dover30d": -32.85,
+      "breakdown24h": {
+        "arbitrum": {
+          "0x Aggregator": 3440857
+        },
+        "avax": {
+          "0x Aggregator": 139729
+        },
+        "base": {
+          "0x Aggregator": 9050927
+        },
+        "bsc": {
+          "0x Aggregator": 2171783
+        },
+        "ethereum": {
+          "0x Aggregator": 20037632
+        },
+        "optimism": {
+          "0x Aggregator": 477781
+        },
+        "polygon": {
+          "0x Aggregator": 1333703
+        },
+        "blast": {
+          "0x Aggregator": 6038
+        },
+        "linea": {
+          "0x Aggregator": 72548
+        },
+        "scroll": {
+          "0x Aggregator": 4210
+        },
+        "mantle": {
+          "0x Aggregator": 27365
+        },
+        "mode": {
+          "0x Aggregator": 3080
+        }
+      },
+      "breakdown30d": {
+        "arbitrum": {
+          "0x Aggregator": 112557037
+        },
+        "avax": {
+          "0x Aggregator": 33221014
+        },
+        "base": {
+          "0x Aggregator": 369334022
+        },
+        "bsc": {
+          "0x Aggregator": 122092500
+        },
+        "ethereum": {
+          "0x Aggregator": 983028954
+        },
+        "optimism": {
+          "0x Aggregator": 16769662
+        },
+        "polygon": {
+          "0x Aggregator": 61615593
+        },
+        "blast": {
+          "0x Aggregator": 2002543
+        },
+        "linea": {
+          "0x Aggregator": 1838821
+        },
+        "scroll": {
+          "0x Aggregator": 627375
+        },
+        "mantle": {
+          "0x Aggregator": 1287676
+        },
+        "mode": {
+          "0x Aggregator": 261536
+        }
+      },
+      "total7DaysAgo": 29969911,
+      "total30DaysAgo": 123670087,
+      "defillamaId": "4628",
+      "name": "0x Aggregator",
+      "displayName": "0x Aggregator",
+      "module": "zrx",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/0x.png",
+      "chains": [
+        "Arbitrum",
+        "Avalanche",
+        "Base",
+        "BSC",
+        "Ethereum",
+        "OP Mainnet",
+        "Polygon",
+        "Blast",
+        "Linea",
+        "Scroll",
+        "Mantle",
+        "Mode"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/zrx",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "0x-aggregator",
+      "id": "4628"
+    },
+    {
+      "total24h": 32265,
+      "total48hto24h": 16926,
+      "total7d": 261284,
+      "total14dto7d": 151347,
+      "total60dto30d": 1713941,
+      "total30d": 1106270,
+      "total1y": 45266120,
+      "totalAllTime": 45423367,
+      "average1y": null,
+      "change_1d": 90.62,
+      "change_7d": 132.09,
+      "change_1m": -27.89,
+      "change_7dover7d": 72.64,
+      "change_30dover30d": -35.45,
+      "breakdown24h": {
+        "berachain": {
+          "EISEN Finance": 957
+        },
+        "scroll": {
+          "EISEN Finance": 655
+        },
+        "zircuit": {
+          "EISEN Finance": 2723
+        },
+        "linea": {
+          "EISEN Finance": 2
+        },
+        "mantle": {
+          "EISEN Finance": 11274
+        },
+        "blast": {
+          "EISEN Finance": 1363
+        },
+        "base": {
+          "EISEN Finance": 0
+        },
+        "core": {
+          "EISEN Finance": 6938
+        },
+        "bitlayer": {
+          "EISEN Finance": 0
+        },
+        "cronos": {
+          "EISEN Finance": 0
+        },
+        "taiko": {
+          "EISEN Finance": 1331
+        },
+        "mode": {
+          "EISEN Finance": 240
+        },
+        "soneium": {
+          "EISEN Finance": 4915
+        },
+        "hemi": {
+          "EISEN Finance": 1867
+        },
+        "rsk": {
+          "EISEN Finance": 0
+        }
+      },
+      "breakdown30d": {
+        "berachain": {
+          "EISEN Finance": 240978
+        },
+        "scroll": {
+          "EISEN Finance": 36700
+        },
+        "zircuit": {
+          "EISEN Finance": 132584
+        },
+        "linea": {
+          "EISEN Finance": 12556
+        },
+        "mantle": {
+          "EISEN Finance": 169582
+        },
+        "blast": {
+          "EISEN Finance": 59019
+        },
+        "base": {
+          "EISEN Finance": 67564
+        },
+        "core": {
+          "EISEN Finance": 102716
+        },
+        "bitlayer": {
+          "EISEN Finance": 0
+        },
+        "cronos": {
+          "EISEN Finance": 0
+        },
+        "taiko": {
+          "EISEN Finance": 63774
+        },
+        "mode": {
+          "EISEN Finance": 8838
+        },
+        "soneium": {
+          "EISEN Finance": 181346
+        },
+        "hemi": {
+          "EISEN Finance": 30605
+        },
+        "rsk": {
+          "EISEN Finance": 8
+        }
+      },
+      "total7DaysAgo": 13902,
+      "total30DaysAgo": 44745,
+      "defillamaId": "4691",
+      "name": "EISEN Finance",
+      "displayName": "EISEN Finance",
+      "module": "eisen",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/eisen-finance.png",
+      "chains": [
+        "Berachain",
+        "Scroll",
+        "Zircuit",
+        "Linea",
+        "Mantle",
+        "Blast",
+        "Base",
+        "CORE",
+        "Bitlayer",
+        "Cronos",
+        "Taiko",
+        "Mode",
+        "Soneium",
+        "Hemi",
+        "Rootstock"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/eisen",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "eisen-finance",
+      "id": "4691"
+    },
+    {
+      "total24h": 131,
+      "total48hto24h": 117,
+      "total7d": 7733,
+      "total14dto7d": 1104125,
+      "total60dto30d": 7785951,
+      "total30d": 1599837,
+      "total1y": 1774600056,
+      "totalAllTime": 1771929268,
+      "average1y": null,
+      "change_1d": 11.97,
+      "change_7d": -99.96,
+      "change_1m": -99.69,
+      "change_7dover7d": -99.3,
+      "change_30dover30d": -79.45,
+      "breakdown24h": {
+        "bsc": {
+          "uDEX": 128
+        },
+        "polygon": {
+          "uDEX": 0
+        },
+        "ethereum": {
+          "uDEX": 0
+        },
+        "base": {
+          "uDEX": 0
+        },
+        "op_bnb": {
+          "uDEX": 3
+        }
+      },
+      "breakdown30d": {
+        "bsc": {
+          "uDEX": 1594608
+        },
+        "polygon": {
+          "uDEX": 45
+        },
+        "ethereum": {
+          "uDEX": 0
+        },
+        "base": {
+          "uDEX": 4817
+        },
+        "op_bnb": {
+          "uDEX": 367
+        }
+      },
+      "total7DaysAgo": 355220,
+      "total30DaysAgo": 41930,
+      "defillamaId": "4704",
+      "name": "uDEX",
+      "displayName": "uDEX",
+      "module": "udex-agg",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/udex.jpg",
+      "chains": [
+        "BSC",
+        "Polygon",
+        "Ethereum",
+        "Base",
+        "opBNB"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/udex-agg",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "udex",
+      "id": "4704"
+    },
+    {
+      "total24h": 9,
+      "total48hto24h": 815,
+      "total7d": 3444,
+      "total14dto7d": 3212,
+      "total60dto30d": 23626,
+      "total30d": 11077,
+      "total1y": 1148591,
+      "totalAllTime": 1186972,
+      "average1y": null,
+      "change_1d": -98.9,
+      "change_7d": -96.46,
+      "change_1m": -55,
+      "change_7dover7d": 7.22,
+      "change_30dover30d": -53.12,
+      "breakdown24h": {
+        "injective": {
+          "Injex Finance": 9
+        }
+      },
+      "breakdown30d": {
+        "injective": {
+          "Injex Finance": 11077
+        }
+      },
+      "total7DaysAgo": 254,
+      "total30DaysAgo": 20,
+      "defillamaId": "4762",
+      "name": "Injex Finance",
+      "displayName": "Injex Finance",
+      "module": "injex",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/injex-finance.png",
+      "chains": [
+        "Injective"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/injex",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "injex-finance",
+      "id": "4762"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total1y": 2345038322,
+      "totalAllTime": 3496716896,
+      "average1y": null,
+      "breakdown24h": null,
+      "breakdown30d": null,
+      "defillamaId": "4791",
+      "name": "Hop Aggregator",
+      "displayName": "Hop Aggregator",
+      "module": "hop-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/hop-aggregator.png",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/hop-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "hop-aggregator",
+      "id": "4791"
+    },
+    {
+      "total24h": 141815,
+      "total48hto24h": 122363,
+      "total7d": 1642951,
+      "total14dto7d": 896672,
+      "total60dto30d": 10930318,
+      "total30d": 6755568,
+      "total1y": 2969139341,
+      "totalAllTime": 697616281,
+      "average1y": null,
+      "change_1d": 15.9,
+      "change_7d": 153.05,
+      "change_1m": -67.53,
+      "change_7dover7d": 83.23,
+      "change_30dover30d": -38.19,
+      "breakdown24h": {
+        "archway": {
+          "Hallswap": 9894
+        },
+        "chihuahua": {
+          "Hallswap": 0
+        },
+        "dymension": {
+          "Hallswap": 0
+        },
+        "injective": {
+          "Hallswap": 118024
+        },
+        "juno": {
+          "Hallswap": 0
+        },
+        "kujira": {
+          "Hallswap": 0
+        },
+        "migaloo": {
+          "Hallswap": 17
+        },
+        "neutron": {
+          "Hallswap": 0
+        },
+        "orai": {
+          "Hallswap": 0
+        },
+        "osmosis": {
+          "Hallswap": 0
+        },
+        "sei": {
+          "Hallswap": 408
+        },
+        "solana": {
+          "Hallswap": 0
+        },
+        "terra2": {
+          "Hallswap": 13472
+        }
+      },
+      "breakdown30d": {
+        "archway": {
+          "Hallswap": 139440
+        },
+        "chihuahua": {
+          "Hallswap": 0
+        },
+        "dymension": {
+          "Hallswap": 0
+        },
+        "injective": {
+          "Hallswap": 6203958
+        },
+        "juno": {
+          "Hallswap": 0
+        },
+        "kujira": {
+          "Hallswap": 0
+        },
+        "migaloo": {
+          "Hallswap": 6067
+        },
+        "neutron": {
+          "Hallswap": 0
+        },
+        "orai": {
+          "Hallswap": 0
+        },
+        "osmosis": {
+          "Hallswap": 0
+        },
+        "sei": {
+          "Hallswap": 4655
+        },
+        "solana": {
+          "Hallswap": 0
+        },
+        "terra2": {
+          "Hallswap": 401448
+        }
+      },
+      "total7DaysAgo": 56042,
+      "total30DaysAgo": 436815,
+      "defillamaId": "4824",
+      "name": "Hallswap",
+      "displayName": "Hallswap",
+      "module": "hallswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/hallswap.jpg",
+      "chains": [
+        "Archway",
+        "Chihuahua",
+        "Dymension",
+        "Injective",
+        "Juno",
+        "Kujira",
+        "Migaloo",
+        "Neutron",
+        "Oraichain",
+        "Osmosis",
+        "Sei",
+        "Solana",
+        "Terra2"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/hallswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "hallswap",
+      "id": "4824"
+    },
+    {
+      "total24h": 3985293,
+      "total48hto24h": 4268598,
+      "total7d": 35153965,
+      "total14dto7d": 13838756,
+      "total60dto30d": 131886451,
+      "total30d": 132070593,
+      "total1y": 1435796826,
+      "totalAllTime": 1437894059,
+      "average1y": null,
+      "change_1d": -6.64,
+      "change_7d": 239.96,
+      "change_1m": -35.42,
+      "change_7dover7d": 154.03,
+      "change_30dover30d": 0.14,
+      "breakdown24h": {
+        "sui": {
+          "FlowX Aggregator": 3985293
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "FlowX Aggregator": 132070593
+        }
+      },
+      "total7DaysAgo": 1172290,
+      "total30DaysAgo": 6170670,
+      "defillamaId": "4825",
+      "name": "FlowX Aggregator",
+      "displayName": "FlowX Aggregator",
+      "module": "flowx-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/flowx-v3.png",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/flowx-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#flowx-finance",
+      "slug": "flowx-aggregator",
+      "linkedProtocols": [
+        "FlowX Finance",
+        "FlowX Aggregator"
+      ],
+      "id": "4825"
+    },
+    {
+      "total24h": 96194737,
+      "total48hto24h": 74694062,
+      "total7d": 430778907,
+      "total14dto7d": 248949751,
+      "total60dto30d": 852806032,
+      "total30d": 1198640203,
+      "total1y": 5478783941,
+      "totalAllTime": 5582516387,
+      "average1y": null,
+      "change_1d": 28.78,
+      "change_7d": 198.97,
+      "change_1m": 267.64,
+      "change_7dover7d": 73.04,
+      "change_30dover30d": 40.55,
+      "breakdown24h": {
+        "sui": {
+          "7K Aggregator": 96194737
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "7K Aggregator": 1198640203
+        }
+      },
+      "total7DaysAgo": 32174874,
+      "total30DaysAgo": 26165613,
+      "defillamaId": "4868",
+      "name": "7K Aggregator",
+      "displayName": "7K Aggregator",
+      "module": "7k-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/7k-aggregator.jpg",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/7k-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "7k-aggregator",
+      "id": "4868"
+    },
+    {
+      "total24h": 3117813,
+      "total48hto24h": 1608430,
+      "total7d": 16454876,
+      "total14dto7d": 1731033,
+      "total60dto30d": 1534145,
+      "total30d": 19047982,
+      "total1y": 63322722,
+      "totalAllTime": 79052280,
+      "average1y": null,
+      "change_1d": 93.84,
+      "change_7d": 734.7,
+      "change_1m": 34347.17,
+      "change_7dover7d": 850.58,
+      "change_30dover30d": 1141.6,
+      "breakdown24h": {
+        "core": {
+          "AKKA": 3117813
+        },
+        "xdc": {
+          "AKKA": 0
+        },
+        "bitlayer": {
+          "AKKA": 0
+        },
+        "bsquared": {
+          "AKKA": 0
+        }
+      },
+      "breakdown30d": {
+        "core": {
+          "AKKA": 19047765
+        },
+        "xdc": {
+          "AKKA": 0
+        },
+        "bitlayer": {
+          "AKKA": 217
+        },
+        "bsquared": {
+          "AKKA": 0
+        }
+      },
+      "total7DaysAgo": 373527,
+      "total30DaysAgo": 9051,
+      "defillamaId": "4926",
+      "name": "AKKA",
+      "displayName": "AKKA",
+      "module": "akka",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/akka.png",
+      "chains": [
+        "CORE",
+        "XDC",
+        "Bitlayer",
+        "BSquared"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/akka",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "akka",
+      "id": "4926"
+    },
+    {
+      "total24h": 64520974,
+      "total48hto24h": 68614449,
+      "total7d": 596761986,
+      "total14dto7d": 312407774,
+      "total60dto30d": 2238527760,
+      "total30d": 1974102703,
+      "total1y": 14774843333,
+      "totalAllTime": 14817428071,
+      "average1y": null,
+      "change_1d": -5.97,
+      "change_7d": 99.32,
+      "change_1m": -29.83,
+      "change_7dover7d": 91.02,
+      "change_30dover30d": -11.81,
+      "breakdown24h": {
+        "sui": {
+          "Cetus Aggregator": 64520974
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "Cetus Aggregator": 1974102703
+        }
+      },
+      "total7DaysAgo": 32370301,
+      "total30DaysAgo": 91950301,
+      "defillamaId": "4958",
+      "name": "Cetus Aggregator",
+      "displayName": "Cetus Aggregator",
+      "module": "cetus-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/cetus-aggregator.png",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/cetus-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#cetus",
+      "slug": "cetus-aggregator",
+      "linkedProtocols": [
+        "Cetus",
+        "Cetus Aggregator"
+      ],
+      "id": "4958"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 191448,
+      "total14dto7d": 185088,
+      "total60dto30d": 5546414,
+      "total30d": 464349,
+      "total1y": 11006593,
+      "totalAllTime": 11006593,
+      "average1y": null,
+      "change_7d": -100,
+      "change_1m": -100,
+      "change_7dover7d": 3.44,
+      "change_30dover30d": -91.63,
+      "breakdown24h": {
+        "ethereum": {
+          "Chainspot": 0
+        },
+        "polygon": {
+          "Chainspot": 0
+        },
+        "bsc": {
+          "Chainspot": 0
+        },
+        "avax": {
+          "Chainspot": 0
+        },
+        "optimism": {
+          "Chainspot": 0
+        },
+        "fantom": {
+          "Chainspot": 0
+        },
+        "arbitrum": {
+          "Chainspot": 0
+        },
+        "aurora": {
+          "Chainspot": 0
+        },
+        "celo": {
+          "Chainspot": 0
+        },
+        "boba": {
+          "Chainspot": 0
+        },
+        "xdai": {
+          "Chainspot": 0
+        },
+        "telos": {
+          "Chainspot": 0
+        },
+        "base": {
+          "Chainspot": 0
+        },
+        "linea": {
+          "Chainspot": 0
+        },
+        "mantle": {
+          "Chainspot": 0
+        },
+        "moonbeam": {
+          "Chainspot": 0
+        },
+        "cronos": {
+          "Chainspot": 0
+        },
+        "blast": {
+          "Chainspot": 0
+        },
+        "evmos": {
+          "Chainspot": 0
+        },
+        "fuse": {
+          "Chainspot": 0
+        },
+        "harmony": {
+          "Chainspot": 0
+        },
+        "kava": {
+          "Chainspot": 0
+        },
+        "moonriver": {
+          "Chainspot": 0
+        },
+        "okexchain": {
+          "Chainspot": 0
+        },
+        "scroll": {
+          "Chainspot": 0
+        },
+        "tron": {
+          "Chainspot": 0
+        },
+        "ton": {
+          "Chainspot": 0
+        },
+        "wan": {
+          "Chainspot": 0
+        },
+        "zklink": {
+          "Chainspot": 0
+        },
+        "zksync": {
+          "Chainspot": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Chainspot": 85333
+        },
+        "polygon": {
+          "Chainspot": 0
+        },
+        "bsc": {
+          "Chainspot": 71424
+        },
+        "avax": {
+          "Chainspot": 5213
+        },
+        "optimism": {
+          "Chainspot": 20
+        },
+        "fantom": {
+          "Chainspot": 46
+        },
+        "arbitrum": {
+          "Chainspot": 122732
+        },
+        "aurora": {
+          "Chainspot": 0
+        },
+        "celo": {
+          "Chainspot": 0
+        },
+        "boba": {
+          "Chainspot": 0
+        },
+        "xdai": {
+          "Chainspot": 0
+        },
+        "telos": {
+          "Chainspot": 0
+        },
+        "base": {
+          "Chainspot": 176148
+        },
+        "linea": {
+          "Chainspot": 749
+        },
+        "mantle": {
+          "Chainspot": 239
+        },
+        "moonbeam": {
+          "Chainspot": 0
+        },
+        "cronos": {
+          "Chainspot": 271
+        },
+        "blast": {
+          "Chainspot": 0
+        },
+        "evmos": {
+          "Chainspot": 0
+        },
+        "fuse": {
+          "Chainspot": 0
+        },
+        "harmony": {
+          "Chainspot": 0
+        },
+        "kava": {
+          "Chainspot": 0
+        },
+        "moonriver": {
+          "Chainspot": 0
+        },
+        "okexchain": {
+          "Chainspot": 0
+        },
+        "scroll": {
+          "Chainspot": 0
+        },
+        "tron": {
+          "Chainspot": 1452
+        },
+        "ton": {
+          "Chainspot": 0
+        },
+        "wan": {
+          "Chainspot": 0
+        },
+        "zklink": {
+          "Chainspot": 0
+        },
+        "zksync": {
+          "Chainspot": 722
+        }
+      },
+      "total7DaysAgo": 125,
+      "total30DaysAgo": 277,
+      "defillamaId": "5028",
+      "name": "Chainspot",
+      "displayName": "Chainspot",
+      "module": "chainspot",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/chainspot.png",
+      "chains": [
+        "Ethereum",
+        "Polygon",
+        "BSC",
+        "Avalanche",
+        "OP Mainnet",
+        "Fantom",
+        "Arbitrum",
+        "Aurora",
+        "Celo",
+        "Boba",
+        "Gnosis",
+        "Telos",
+        "Base",
+        "Linea",
+        "Mantle",
+        "Moonbeam",
+        "Cronos",
+        "Blast",
+        "Evmos",
+        "Fuse",
+        "Harmony",
+        "Kava",
+        "Moonriver",
+        "OKTChain",
+        "Scroll",
+        "Tron",
+        "TON",
+        "Wanchain",
+        "zkLink Nova",
+        "ZKsync Lite"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/chainspot",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "chainspot",
+      "id": "5028"
+    },
+    {
+      "total24h": 124569,
+      "total48hto24h": 227763,
+      "total7d": 6158610,
+      "total14dto7d": 3133640,
+      "total60dto30d": 3596638095,
+      "total30d": 20082925,
+      "total1y": 5633056641,
+      "totalAllTime": 5597520045,
+      "average1y": null,
+      "change_1d": -45.31,
+      "change_7d": -53.6,
+      "change_1m": -90.02,
+      "change_7dover7d": 96.53,
+      "change_30dover30d": -99.44,
+      "breakdown24h": {
+        "ethereum": {
+          "DODO Agg": 84130
+        },
+        "optimism": {
+          "DODO Agg": 3
+        },
+        "bsc": {
+          "DODO Agg": 28507
+        },
+        "polygon": {
+          "DODO Agg": 7621
+        },
+        "boba": {
+          "DODO Agg": 0
+        },
+        "conflux": {
+          "DODO Agg": 0
+        },
+        "moonriver": {
+          "DODO Agg": 0
+        },
+        "mantle": {
+          "DODO Agg": 0
+        },
+        "base": {
+          "DODO Agg": 0
+        },
+        "avax": {
+          "DODO Agg": 397
+        },
+        "arbitrum": {
+          "DODO Agg": 3251
+        },
+        "linea": {
+          "DODO Agg": 299
+        },
+        "scroll": {
+          "DODO Agg": 0
+        },
+        "manta": {
+          "DODO Agg": 243
+        },
+        "zero_network": {
+          "DODO Agg": 1
+        },
+        "zircuit": {
+          "DODO Agg": 117
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "DODO Agg": 8007397
+        },
+        "optimism": {
+          "DODO Agg": 13537
+        },
+        "bsc": {
+          "DODO Agg": 9577867
+        },
+        "polygon": {
+          "DODO Agg": 640536
+        },
+        "boba": {
+          "DODO Agg": 0
+        },
+        "conflux": {
+          "DODO Agg": 0
+        },
+        "moonriver": {
+          "DODO Agg": 0
+        },
+        "mantle": {
+          "DODO Agg": 321
+        },
+        "base": {
+          "DODO Agg": 1507131
+        },
+        "avax": {
+          "DODO Agg": 11517
+        },
+        "arbitrum": {
+          "DODO Agg": 287591
+        },
+        "linea": {
+          "DODO Agg": 22472
+        },
+        "scroll": {
+          "DODO Agg": 0
+        },
+        "manta": {
+          "DODO Agg": 9044
+        },
+        "zero_network": {
+          "DODO Agg": 203
+        },
+        "zircuit": {
+          "DODO Agg": 5309
+        }
+      },
+      "total7DaysAgo": 268465,
+      "total30DaysAgo": 1248322,
+      "defillamaId": "5062",
+      "name": "DODO Agg",
+      "displayName": "DODO Agg",
+      "module": "dodo-agg",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/dodo-agg.jpg",
+      "chains": [
+        "Ethereum",
+        "OP Mainnet",
+        "BSC",
+        "Polygon",
+        "Boba",
+        "Conflux",
+        "Moonriver",
+        "Mantle",
+        "Base",
+        "Avalanche",
+        "Arbitrum",
+        "Linea",
+        "Scroll",
+        "Manta",
+        "Zero Network",
+        "Zircuit"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/dodo-agg",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#dodo",
+      "slug": "dodo-agg",
+      "linkedProtocols": [
+        "DODO",
+        "DODO Agg"
+      ],
+      "id": "5062"
+    },
+    {
+      "total24h": 351767,
+      "total48hto24h": 656374,
+      "total7d": 5771719,
+      "total14dto7d": 3913885,
+      "total60dto30d": 36199511,
+      "total30d": 19649993,
+      "total1y": 343953765,
+      "totalAllTime": 344897164,
+      "average1y": null,
+      "change_1d": -46.41,
+      "change_7d": 327.19,
+      "change_1m": -69.18,
+      "change_7dover7d": 47.47,
+      "change_30dover30d": -45.72,
+      "breakdown24h": {
+        "sui": {
+          "Scallop Aggregator": 351767
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "Scallop Aggregator": 19649993
+        }
+      },
+      "total7DaysAgo": 82345,
+      "total30DaysAgo": 1141264,
+      "defillamaId": "5087",
+      "name": "Scallop Aggregator",
+      "displayName": "Scallop Aggregator",
+      "module": "scallop",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/scallop-aggregator.png",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/scallop",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#scallop",
+      "slug": "scallop-aggregator",
+      "linkedProtocols": [
+        "Scallop",
+        "Scallop Aggregator"
+      ],
+      "id": "5087"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 7938690,
+      "total30d": 0,
+      "total1y": 391988578,
+      "totalAllTime": 463148186,
+      "average1y": null,
+      "change_30dover30d": -100,
+      "breakdown24h": {
+        "ethereum": {
+          "Orion Aggregator": 0
+        },
+        "bsc": {
+          "Orion Aggregator": 0
+        },
+        "polygon": {
+          "Orion Aggregator": 0
+        },
+        "arbitrum": {
+          "Orion Aggregator": 0
+        },
+        "op_bnb": {
+          "Orion Aggregator": 0
+        },
+        "linea": {
+          "Orion Aggregator": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Orion Aggregator": 0
+        },
+        "bsc": {
+          "Orion Aggregator": 0
+        },
+        "polygon": {
+          "Orion Aggregator": 0
+        },
+        "arbitrum": {
+          "Orion Aggregator": 0
+        },
+        "op_bnb": {
+          "Orion Aggregator": 0
+        },
+        "linea": {
+          "Orion Aggregator": 0
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "5098",
+      "name": "Orion Aggregator",
+      "displayName": "Orion Aggregator",
+      "module": "lumia",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/orion-aggregator.jpg",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "Polygon",
+        "Arbitrum",
+        "opBNB",
+        "Linea"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/lumia",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#orion-protocol",
+      "slug": "orion-aggregator",
+      "linkedProtocols": [
+        "Orion",
+        "Orion Aggregator"
+      ],
+      "id": "5098"
+    },
+    {
+      "total24h": 11554,
+      "total48hto24h": 5397,
+      "total7d": 244541,
+      "total14dto7d": 87712,
+      "total60dto30d": 1409212,
+      "total30d": 609824,
+      "total1y": 30960068,
+      "totalAllTime": 30960214,
+      "average1y": null,
+      "change_1d": 114.08,
+      "change_7d": 96.26,
+      "change_1m": -1.73,
+      "change_7dover7d": 178.8,
+      "change_30dover30d": -56.73,
+      "breakdown24h": {
+        "ton": {
+          "Rainbow Swap": 11554
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "Rainbow Swap": 609824
+        }
+      },
+      "total7DaysAgo": 5887,
+      "total30DaysAgo": 11758,
+      "defillamaId": "5110",
+      "name": "Rainbow Swap",
+      "displayName": "Rainbow Swap",
+      "module": "rainbow-swap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/rainbow-swap.jpg",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/rainbow-swap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "rainbow-swap",
+      "id": "5110"
+    },
+    {
+      "total24h": 94807,
+      "total48hto24h": 110541,
+      "total7d": 1109501,
+      "total14dto7d": 873123,
+      "total60dto30d": 2216437,
+      "total30d": 5536191,
+      "total1y": 37156971,
+      "totalAllTime": 36639562,
+      "average1y": null,
+      "change_1d": -14.23,
+      "change_7d": -23.78,
+      "change_1m": -38.15,
+      "change_7dover7d": 27.07,
+      "change_30dover30d": 149.78,
+      "breakdown24h": {
+        "polygon": {
+          "Wolfswap": 357
+        },
+        "cronos": {
+          "Wolfswap": 70401
+        },
+        "cronos_zkevm": {
+          "Wolfswap": 8529
+        },
+        "base": {
+          "Wolfswap": 0
+        },
+        "avax": {
+          "Wolfswap": 0
+        },
+        "blast": {
+          "Wolfswap": 0
+        },
+        "sonic": {
+          "Wolfswap": 0
+        },
+        "abstract": {
+          "Wolfswap": 15520
+        }
+      },
+      "breakdown30d": {
+        "polygon": {
+          "Wolfswap": 35581
+        },
+        "cronos": {
+          "Wolfswap": 4656517
+        },
+        "cronos_zkevm": {
+          "Wolfswap": 59883
+        },
+        "base": {
+          "Wolfswap": 145
+        },
+        "avax": {
+          "Wolfswap": 0
+        },
+        "blast": {
+          "Wolfswap": 0
+        },
+        "sonic": {
+          "Wolfswap": 0
+        },
+        "abstract": {
+          "Wolfswap": 784065
+        }
+      },
+      "total7DaysAgo": 124393,
+      "total30DaysAgo": 153279,
+      "defillamaId": "5138",
+      "name": "Wolfswap",
+      "displayName": "Wolfswap",
+      "module": "wolfswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/wolfswap.jpg",
+      "chains": [
+        "Polygon",
+        "Cronos",
+        "Cronos zkEVM",
+        "Base",
+        "Avalanche",
+        "Blast",
+        "Sonic",
+        "Abstract"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/wolfswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "wolfswap",
+      "id": "5138"
+    },
+    {
+      "total24h": 3791688,
+      "total48hto24h": 2911576,
+      "total7d": 22434002,
+      "total14dto7d": 5420956,
+      "total60dto30d": 21358947,
+      "total30d": 36204677,
+      "total1y": 335455850,
+      "totalAllTime": 339033878,
+      "average1y": null,
+      "change_1d": 30.23,
+      "change_7d": 650.36,
+      "change_1m": 552.19,
+      "change_7dover7d": 313.84,
+      "change_30dover30d": 69.51,
+      "breakdown24h": {
+        "ton": {
+          "swap.coffee": 3791688
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "swap.coffee": 36204677
+        }
+      },
+      "total7DaysAgo": 505317,
+      "total30DaysAgo": 581380,
+      "defillamaId": "5150",
+      "name": "swap.coffee",
+      "displayName": "swap.coffee",
+      "module": "swap-coffee",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/swap.coffee.png",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/swap-coffee",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "swap.coffee",
+      "id": "5150"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 0,
+      "total30d": 0,
+      "total1y": 3197119,
+      "totalAllTime": 3185517,
+      "average1y": null,
+      "breakdown24h": {
+        "ton": {
+          "TON Diamonds": 0
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "TON Diamonds": 0
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 0,
+      "defillamaId": "5161",
+      "name": "TON Diamonds",
+      "displayName": "TON Diamonds",
+      "module": "tondiamonds",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/ton-diamonds.jpg",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/tondiamonds",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "ton-diamonds",
+      "id": "5161"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 4,
+      "total14dto7d": 113132811,
+      "total60dto30d": 9963654380,
+      "total30d": 3205142549,
+      "total1y": 64104288026,
+      "totalAllTime": 68611302675,
+      "average1y": null,
+      "change_1m": -100,
+      "change_7dover7d": -100,
+      "change_30dover30d": -67.83,
+      "breakdown24h": {
+        "ethereum": {
+          "OKX Swap": 0
+        },
+        "bsc": {
+          "OKX Swap": 0
+        },
+        "okexchain": {
+          "OKX Swap": 0
+        },
+        "polygon": {
+          "OKX Swap": 0
+        },
+        "tron": {
+          "OKX Swap": 0
+        },
+        "avax": {
+          "OKX Swap": 0
+        },
+        "fantom": {
+          "OKX Swap": 0
+        },
+        "arbitrum": {
+          "OKX Swap": 0
+        },
+        "optimism": {
+          "OKX Swap": 0
+        },
+        "cronos": {
+          "OKX Swap": 0
+        },
+        "solana": {
+          "OKX Swap": 0
+        },
+        "osmosis": {
+          "OKX Swap": 0
+        },
+        "aptos": {
+          "OKX Swap": 0
+        },
+        "era": {
+          "OKX Swap": 0
+        },
+        "conflux": {
+          "OKX Swap": 0
+        },
+        "sui": {
+          "OKX Swap": 0
+        },
+        "polygon_zkevm": {
+          "OKX Swap": 0
+        },
+        "sei": {
+          "OKX Swap": 0
+        },
+        "linea": {
+          "OKX Swap": 0
+        },
+        "mantle": {
+          "OKX Swap": 0
+        },
+        "base": {
+          "OKX Swap": 0
+        },
+        "stacks": {
+          "OKX Swap": 0
+        },
+        "starknet": {
+          "OKX Swap": 0
+        },
+        "scroll": {
+          "OKX Swap": 0
+        },
+        "xlayer": {
+          "OKX Swap": 0
+        },
+        "manta": {
+          "OKX Swap": 0
+        },
+        "metis": {
+          "OKX Swap": 0
+        },
+        "zeta": {
+          "OKX Swap": 0
+        },
+        "merlin": {
+          "OKX Swap": 0
+        },
+        "blast": {
+          "OKX Swap": 0
+        },
+        "mode": {
+          "OKX Swap": 0
+        },
+        "ton": {
+          "OKX Swap": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "OKX Swap": 843737656
+        },
+        "bsc": {
+          "OKX Swap": 372764351
+        },
+        "okexchain": {
+          "OKX Swap": 23277
+        },
+        "polygon": {
+          "OKX Swap": 39915519
+        },
+        "tron": {
+          "OKX Swap": 7956701
+        },
+        "avax": {
+          "OKX Swap": 78663753
+        },
+        "fantom": {
+          "OKX Swap": 53434
+        },
+        "arbitrum": {
+          "OKX Swap": 121132453
+        },
+        "optimism": {
+          "OKX Swap": 20478664
+        },
+        "cronos": {
+          "OKX Swap": 3019613
+        },
+        "solana": {
+          "OKX Swap": 1402407246
+        },
+        "osmosis": {
+          "OKX Swap": 2426
+        },
+        "aptos": {
+          "OKX Swap": 529352
+        },
+        "era": {
+          "OKX Swap": 1567614
+        },
+        "conflux": {
+          "OKX Swap": 6720
+        },
+        "sui": {
+          "OKX Swap": 29205649
+        },
+        "polygon_zkevm": {
+          "OKX Swap": 10586
+        },
+        "sei": {
+          "OKX Swap": 16
+        },
+        "linea": {
+          "OKX Swap": 3806731
+        },
+        "mantle": {
+          "OKX Swap": 16854731
+        },
+        "base": {
+          "OKX Swap": 256727530
+        },
+        "stacks": {
+          "OKX Swap": 0
+        },
+        "starknet": {
+          "OKX Swap": 0
+        },
+        "scroll": {
+          "OKX Swap": 1264727
+        },
+        "xlayer": {
+          "OKX Swap": 314009
+        },
+        "manta": {
+          "OKX Swap": 86034
+        },
+        "metis": {
+          "OKX Swap": 172006
+        },
+        "zeta": {
+          "OKX Swap": 3106
+        },
+        "merlin": {
+          "OKX Swap": 616882
+        },
+        "blast": {
+          "OKX Swap": 2936018
+        },
+        "mode": {
+          "OKX Swap": 323513
+        },
+        "ton": {
+          "OKX Swap": 562232
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 252903553,
+      "defillamaId": "5201",
+      "name": "OKX Swap",
+      "displayName": "OKX Swap",
+      "module": "okx",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/okx-swap.jpg",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "OKTChain",
+        "Polygon",
+        "Tron",
+        "Avalanche",
+        "Fantom",
+        "Arbitrum",
+        "OP Mainnet",
+        "Cronos",
+        "Solana",
+        "Osmosis",
+        "Aptos",
+        "ZKsync Era",
+        "Conflux",
+        "Sui",
+        "Polygon zkEVM",
+        "Sei",
+        "Linea",
+        "Mantle",
+        "Base",
+        "Stacks",
+        "Starknet",
+        "Scroll",
+        "X Layer",
+        "Manta",
+        "Metis",
+        "ZetaChain",
+        "Merlin",
+        "Blast",
+        "Mode",
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/okx",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#okx-dex",
+      "slug": "okx-swap",
+      "linkedProtocols": [
+        "OKX DEX",
+        "OKX Swap"
+      ],
+      "id": "5201"
+    },
+    {
+      "total24h": 624731,
+      "total48hto24h": 324606,
+      "total7d": 1002144,
+      "total14dto7d": 739039,
+      "total60dto30d": 1640795,
+      "total30d": 3566491,
+      "total1y": 40451488,
+      "totalAllTime": 42184092,
+      "average1y": null,
+      "change_1d": 92.46,
+      "change_7d": 4229.99,
+      "change_1m": 5710.37,
+      "change_7dover7d": 35.6,
+      "change_30dover30d": 117.36,
+      "breakdown24h": {
+        "ethereum": {
+          "Jeton": 1249
+        },
+        "polygon": {
+          "Jeton": 114915
+        },
+        "optimism": {
+          "Jeton": 1242
+        },
+        "bsc": {
+          "Jeton": 1020
+        },
+        "arbitrum": {
+          "Jeton": 502451
+        },
+        "avax": {
+          "Jeton": 483
+        },
+        "scroll": {
+          "Jeton": 1183
+        },
+        "era": {
+          "Jeton": 1041
+        },
+        "base": {
+          "Jeton": 1147
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Jeton": 41434
+        },
+        "polygon": {
+          "Jeton": 753374
+        },
+        "optimism": {
+          "Jeton": 284255
+        },
+        "bsc": {
+          "Jeton": 34597
+        },
+        "arbitrum": {
+          "Jeton": 2360889
+        },
+        "avax": {
+          "Jeton": 20216
+        },
+        "scroll": {
+          "Jeton": 24362
+        },
+        "era": {
+          "Jeton": 23623
+        },
+        "base": {
+          "Jeton": 23741
+        }
+      },
+      "total7DaysAgo": 14428,
+      "total30DaysAgo": 10752,
+      "defillamaId": "5213",
+      "name": "Jeton",
+      "displayName": "Jeton",
+      "module": "jeton",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/jeton.png",
+      "chains": [
+        "Ethereum",
+        "Polygon",
+        "OP Mainnet",
+        "BSC",
+        "Arbitrum",
+        "Avalanche",
+        "Scroll",
+        "ZKsync Era",
+        "Base"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/jeton",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "jeton",
+      "id": "5213"
+    },
+    {
+      "total24h": 1977757,
+      "total48hto24h": 2209105,
+      "total7d": 11242079,
+      "total14dto7d": 3225227,
+      "total60dto30d": 92553305,
+      "total30d": 36805008,
+      "total1y": 507155116,
+      "totalAllTime": 508564442,
+      "average1y": null,
+      "change_1d": -10.47,
+      "change_7d": 684.23,
+      "change_1m": -63.7,
+      "change_7dover7d": 248.57,
+      "change_30dover30d": -60.23,
+      "breakdown24h": {
+        "sui": {
+          "NAVI Aggregator": 1977757
+        }
+      },
+      "breakdown30d": {
+        "sui": {
+          "NAVI Aggregator": 36805008
+        }
+      },
+      "total7DaysAgo": 252191,
+      "total30DaysAgo": 5448595,
+      "defillamaId": "5326",
+      "name": "NAVI Aggregator",
+      "displayName": "NAVI Aggregator",
+      "module": "navi",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/navi-protocol.jpg",
+      "chains": [
+        "Sui"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/navi",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#navi-protocol",
+      "slug": "navi-aggregator",
+      "linkedProtocols": [
+        "NAVI Protocol",
+        "NAVI Aggregator"
+      ],
+      "id": "5326"
+    },
+    {
+      "total24h": 19,
+      "total48hto24h": 0,
+      "total7d": 22799,
+      "total14dto7d": 1443,
+      "total60dto30d": 1959,
+      "total30d": 25544,
+      "total1y": 5911281,
+      "totalAllTime": 96181,
+      "average1y": null,
+      "change_7d": 533.33,
+      "change_1m": -91.28,
+      "change_7dover7d": 1479.97,
+      "change_30dover30d": 1203.93,
+      "breakdown24h": {
+        "ton": {
+          "Moki": 19
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "Moki": 25544
+        }
+      },
+      "total7DaysAgo": 3,
+      "total30DaysAgo": 218,
+      "defillamaId": "5356",
+      "name": "Moki",
+      "displayName": "Moki",
+      "module": "moki",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/moki.jpg",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/moki",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "moki",
+      "id": "5356"
+    },
+    {
+      "total24h": 853,
+      "total48hto24h": 0,
+      "total7d": 5582,
+      "total14dto7d": 7323,
+      "total60dto30d": 122643,
+      "total30d": 27713,
+      "total1y": 709003,
+      "totalAllTime": 709327,
+      "average1y": null,
+      "change_1m": -94.98,
+      "change_7dover7d": -23.77,
+      "change_30dover30d": -77.4,
+      "breakdown24h": {
+        "ton": {
+          "Titan Aggregator": 853
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "Titan Aggregator": 27713
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 16980,
+      "defillamaId": "5394",
+      "name": "Titan Aggregator",
+      "displayName": "Titan Aggregator",
+      "module": "titan",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/titan-aggregator.jpg",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/titan",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "titan-aggregator",
+      "id": "5394"
+    },
+    {
+      "total24h": 20564,
+      "total48hto24h": 15373,
+      "total7d": 89130,
+      "total14dto7d": 16684,
+      "total60dto30d": 369855,
+      "total30d": 243852,
+      "total1y": 150384292,
+      "totalAllTime": 150384292,
+      "average1y": null,
+      "change_1d": 33.77,
+      "change_7d": 3980.16,
+      "change_1m": 451.17,
+      "change_7dover7d": 434.22,
+      "change_30dover30d": -34.07,
+      "breakdown24h": {
+        "solana": {
+          "Swing": 0
+        },
+        "ethereum": {
+          "Swing": 20520
+        },
+        "bsc": {
+          "Swing": 6
+        },
+        "avax": {
+          "Swing": 0
+        },
+        "polygon": {
+          "Swing": 0
+        },
+        "arbitrum": {
+          "Swing": 20
+        },
+        "archway-1": {
+          "Swing": 0
+        },
+        "bsquared": {
+          "Swing": 0
+        },
+        "base": {
+          "Swing": 0
+        },
+        "bitcoin": {
+          "Swing": 0
+        },
+        "bitlayer": {
+          "Swing": 0
+        },
+        "blast": {
+          "Swing": 0
+        },
+        "bob": {
+          "Swing": 0
+        },
+        "core": {
+          "Swing": 0
+        },
+        "cosmos": {
+          "Swing": 0
+        },
+        "fantom": {
+          "Swing": 0
+        },
+        "xdai": {
+          "Swing": 0
+        },
+        "gravity": {
+          "Swing": 0
+        },
+        "injective": {
+          "Swing": 0
+        },
+        "linea": {
+          "Swing": 0
+        },
+        "manta": {
+          "Swing": 0
+        },
+        "mantle": {
+          "Swing": 0
+        },
+        "metis": {
+          "Swing": 0
+        },
+        "mode": {
+          "Swing": 0
+        },
+        "moonbeam": {
+          "Swing": 0
+        },
+        "morph": {
+          "Swing": 0
+        },
+        "celestia": {
+          "Swing": 0
+        },
+        "optimism": {
+          "Swing": 18
+        },
+        "osmosis": {
+          "Swing": 0
+        },
+        "scroll": {
+          "Swing": 0
+        },
+        "taiko": {
+          "Swing": 0
+        },
+        "wc": {
+          "Swing": 0
+        },
+        "zksync": {
+          "Swing": 0
+        }
+      },
+      "breakdown30d": {
+        "solana": {
+          "Swing": 2
+        },
+        "ethereum": {
+          "Swing": 135003
+        },
+        "bsc": {
+          "Swing": 138
+        },
+        "avax": {
+          "Swing": 0
+        },
+        "polygon": {
+          "Swing": 79037
+        },
+        "arbitrum": {
+          "Swing": 653
+        },
+        "archway-1": {
+          "Swing": 0
+        },
+        "bsquared": {
+          "Swing": 0
+        },
+        "base": {
+          "Swing": 456
+        },
+        "bitcoin": {
+          "Swing": 0
+        },
+        "bitlayer": {
+          "Swing": 0
+        },
+        "blast": {
+          "Swing": 0
+        },
+        "bob": {
+          "Swing": 0
+        },
+        "core": {
+          "Swing": 0
+        },
+        "cosmos": {
+          "Swing": 0
+        },
+        "fantom": {
+          "Swing": 909
+        },
+        "xdai": {
+          "Swing": 0
+        },
+        "gravity": {
+          "Swing": 0
+        },
+        "injective": {
+          "Swing": 0
+        },
+        "linea": {
+          "Swing": 13
+        },
+        "manta": {
+          "Swing": 392
+        },
+        "mantle": {
+          "Swing": 24
+        },
+        "metis": {
+          "Swing": 22329
+        },
+        "mode": {
+          "Swing": 0
+        },
+        "moonbeam": {
+          "Swing": 0
+        },
+        "morph": {
+          "Swing": 0
+        },
+        "celestia": {
+          "Swing": 0
+        },
+        "optimism": {
+          "Swing": 18
+        },
+        "osmosis": {
+          "Swing": 0
+        },
+        "scroll": {
+          "Swing": 0
+        },
+        "taiko": {
+          "Swing": 0
+        },
+        "wc": {
+          "Swing": 0
+        },
+        "zksync": {
+          "Swing": 4878
+        }
+      },
+      "total7DaysAgo": 504,
+      "total30DaysAgo": 3731,
+      "defillamaId": "5474",
+      "name": "Swing",
+      "displayName": "Swing",
+      "module": "swing",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/swing.jpg",
+      "chains": [
+        "Solana",
+        "Ethereum",
+        "BSC",
+        "Avalanche",
+        "Polygon",
+        "Arbitrum",
+        "Archway-1",
+        "BSquared",
+        "Base",
+        "Bitcoin",
+        "Bitlayer",
+        "Blast",
+        "BOB",
+        "CORE",
+        "CosmosHub",
+        "Fantom",
+        "Gnosis",
+        "Gravity",
+        "Injective",
+        "Linea",
+        "Manta",
+        "Mantle",
+        "Metis",
+        "Mode",
+        "Moonbeam",
+        "Morph",
+        "Celestia",
+        "OP Mainnet",
+        "Osmosis",
+        "Scroll",
+        "Taiko",
+        "World Chain",
+        "ZKsync Lite"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/swing",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "swing",
+      "id": "5474"
+    },
+    {
+      "total24h": 1778420,
+      "total48hto24h": 1498092,
+      "total7d": 12033676,
+      "total14dto7d": 9442895,
+      "total60dto30d": 139153506,
+      "total30d": 69458595,
+      "total1y": 371923166,
+      "totalAllTime": 371923166,
+      "average1y": null,
+      "change_1d": 18.71,
+      "change_7d": 365.52,
+      "change_1m": -86.52,
+      "change_7dover7d": 27.44,
+      "change_30dover30d": -50.08,
+      "breakdown24h": {
+        "aptos": {
+          "Thetis Aggregator": 1778420
+        }
+      },
+      "breakdown30d": {
+        "aptos": {
+          "Thetis Aggregator": 69458595
+        }
+      },
+      "total7DaysAgo": 382029,
+      "total30DaysAgo": 13188633,
+      "defillamaId": "5483",
+      "name": "Thetis Aggregator",
+      "displayName": "Thetis Aggregator",
+      "module": "thetis-market",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/thetis-aggregator.jpg",
+      "chains": [
+        "Aptos"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/thetis-market",
+      "methodology": {
+        "dailyVolume": "Volume is calculated by summing the token volume of all trades settled on the protocol that day."
+      },
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#thetis-market",
+      "slug": "thetis-aggregator",
+      "linkedProtocols": [
+        "Thetis Market",
+        "Thetis Aggregator"
+      ],
+      "id": "5483"
+    },
+    {
+      "total24h": 6641942,
+      "total48hto24h": 2146784,
+      "total7d": 38432604,
+      "total14dto7d": 14977316,
+      "total60dto30d": 84761235,
+      "total30d": 145162877,
+      "total1y": 275414808,
+      "totalAllTime": 270188081,
+      "average1y": null,
+      "change_1d": 209.39,
+      "change_7d": 237.56,
+      "change_1m": -7.47,
+      "change_7dover7d": 156.61,
+      "change_30dover30d": 71.26,
+      "breakdown24h": {
+        "avax": {
+          "LFJ Aggregator": 6641769
+        },
+        "arbitrum": {
+          "LFJ Aggregator": 173
+        }
+      },
+      "breakdown30d": {
+        "avax": {
+          "LFJ Aggregator": 145127724
+        },
+        "arbitrum": {
+          "LFJ Aggregator": 35153
+        }
+      },
+      "total7DaysAgo": 1967649,
+      "total30DaysAgo": 7178533,
+      "defillamaId": "5618",
+      "name": "LFJ Aggregator",
+      "displayName": "LFJ Aggregator",
+      "module": "joe-agg",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/lfj-aggregator.png",
+      "chains": [
+        "Avalanche",
+        "Arbitrum"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/joe-agg",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "parentProtocol": "parent#trader-joe",
+      "slug": "lfj-aggregator",
+      "linkedProtocols": [
+        "LFJ",
+        "LFJ Aggregator"
+      ],
+      "id": "5618"
+    },
+    {
+      "total24h": 94464,
+      "total48hto24h": 16680,
+      "total7d": 523509,
+      "total14dto7d": 749754,
+      "total60dto30d": 699418,
+      "total30d": 1583496,
+      "total1y": 5174863,
+      "totalAllTime": 12854232,
+      "average1y": null,
+      "change_1d": 466.33,
+      "change_7d": -21.83,
+      "change_1m": 960.92,
+      "change_7dover7d": -30.18,
+      "change_30dover30d": 126.4,
+      "breakdown24h": {
+        "aptos": {
+          "Anqa": 94464
+        }
+      },
+      "breakdown30d": {
+        "aptos": {
+          "Anqa": 1583496
+        }
+      },
+      "total7DaysAgo": 120838,
+      "total30DaysAgo": 8904,
+      "defillamaId": "5621",
+      "name": "Anqa",
+      "displayName": "Anqa",
+      "module": "anqa",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/anqa.png",
+      "chains": [
+        "Aptos"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/anqa",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "anqa",
+      "id": "5621"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total7d": 0,
+      "total14dto7d": 0,
+      "total60dto30d": 9782,
+      "total30d": 74,
+      "total1y": 22789,
+      "totalAllTime": 18532,
+      "average1y": null,
+      "change_1m": -100,
+      "change_30dover30d": -99.24,
+      "breakdown24h": {
+        "ton": {
+          "OOIA": 0
+        }
+      },
+      "breakdown30d": {
+        "ton": {
+          "OOIA": 74
+        }
+      },
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 40,
+      "defillamaId": "5630",
+      "name": "OOIA",
+      "displayName": "OOIA",
+      "module": "ooia",
+      "category": "NFT Marketplace",
+      "logo": "https://icons.llamao.fi/icons/protocols/ooia.jpg",
+      "chains": [
+        "TON"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/ooia",
+      "methodology": {
+        "UserFees": "Fees paid by users",
+        "Fees": "Fees paid by users",
+        "Revenue": "Marketplace revenue",
+        "ProtocolRevenue": "Marketplace revenue"
+      },
+      "latestFetchIsOk": true,
+      "slug": "ooia",
+      "id": "5630"
+    },
+    {
+      "total24h": 11228,
+      "total48hto24h": 24896,
+      "total7d": 124300,
+      "total14dto7d": 171042,
+      "total60dto30d": 1032177,
+      "total30d": 1171062,
+      "total1y": 6018881,
+      "totalAllTime": 9843700,
+      "average1y": null,
+      "change_1d": -54.9,
+      "change_7d": -25.27,
+      "change_1m": -90.82,
+      "change_7dover7d": -27.33,
+      "change_30dover30d": 13.46,
+      "breakdown24h": {
+        "sei": {
+          "Symphony Exchange": 11228
+        }
+      },
+      "breakdown30d": {
+        "sei": {
+          "Symphony Exchange": 1171062
+        }
+      },
+      "total7DaysAgo": 15024,
+      "total30DaysAgo": 122256,
+      "defillamaId": "5637",
+      "name": "Symphony Exchange",
+      "displayName": "Symphony Exchange",
+      "module": "symphony",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/symphony-exchange.png",
+      "chains": [
+        "Sei"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/symphony",
+      "methodology": "Tracks the total value of all trades executed through Symphony Aggregator on SEI chain. Volume is calculated by summing the USD value of all trades.",
+      "latestFetchIsOk": true,
+      "slug": "symphony-exchange",
+      "id": "5637"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 0,
+      "total60dto30d": 3528627,
+      "total30d": 92915,
+      "total1y": 7076694,
+      "totalAllTime": 7062346,
+      "average1y": null,
+      "change_1m": -100,
+      "change_30dover30d": -97.37,
+      "breakdown24h": null,
+      "breakdown30d": {
+        "base": {
+          "Starbase": 92915
+        }
+      },
+      "total30DaysAgo": 3742,
+      "defillamaId": "5661",
+      "name": "Starbase",
+      "displayName": "Starbase",
+      "module": "starbase",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/starbase.png",
+      "chains": [
+        "Base"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/starbase",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "starbase",
+      "id": "5661"
+    },
+    {
+      "total24h": 19746,
+      "total48hto24h": 22191,
+      "total7d": 162041,
+      "total14dto7d": 131810,
+      "total60dto30d": 6001492,
+      "total30d": 1866317,
+      "total1y": 8723675,
+      "totalAllTime": 8749624,
+      "average1y": null,
+      "change_1d": -11.02,
+      "change_7d": 27.66,
+      "change_1m": -94.4,
+      "change_7dover7d": 22.94,
+      "change_30dover30d": -68.9,
+      "breakdown24h": {
+        "ink": {
+          "SuperSwap Ink": 19746
+        }
+      },
+      "breakdown30d": {
+        "ink": {
+          "SuperSwap Ink": 1866317
+        }
+      },
+      "total7DaysAgo": 15468,
+      "total30DaysAgo": 352680,
+      "defillamaId": "5668",
+      "name": "SuperSwap Ink",
+      "displayName": "SuperSwap Ink",
+      "module": "superswap",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/superswap-ink.png",
+      "chains": [
+        "Ink"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/superswap",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "superswap-ink",
+      "id": "5668"
+    },
+    {
+      "total24h": 276019,
+      "total48hto24h": 331232,
+      "total7d": 3248748,
+      "total14dto7d": 3928781,
+      "total60dto30d": 876747,
+      "total30d": 11902303,
+      "total1y": 12779052,
+      "totalAllTime": 13066621,
+      "average1y": null,
+      "change_1d": -16.67,
+      "change_7d": -61.17,
+      "change_7dover7d": -17.31,
+      "change_30dover30d": 1257.55,
+      "breakdown24h": {
+        "mantle": {
+          "1delta": 192
+        },
+        "optimism": {
+          "1delta": 0
+        },
+        "polygon": {
+          "1delta": 0
+        },
+        "linea": {
+          "1delta": 0
+        },
+        "bsc": {
+          "1delta": 0
+        },
+        "avax": {
+          "1delta": 0
+        },
+        "taiko": {
+          "1delta": 0
+        },
+        "base": {
+          "1delta": 0
+        },
+        "arbitrum": {
+          "1delta": 0
+        },
+        "blast": {
+          "1delta": 0
+        },
+        "metis": {
+          "1delta": 0
+        },
+        "xdai": {
+          "1delta": 0
+        },
+        "mode": {
+          "1delta": 0
+        },
+        "hemi": {
+          "1delta": 2
+        },
+        "scroll": {
+          "1delta": 0
+        },
+        "core": {
+          "1delta": 0
+        },
+        "sonic": {
+          "1delta": 0
+        },
+        "fantom": {
+          "1delta": 0
+        },
+        "fuel": {
+          "1delta": 275825
+        }
+      },
+      "breakdown30d": {
+        "fuel": {
+          "1delta": 11659890
+        },
+        "mantle": {
+          "1delta": 241997
+        },
+        "optimism": {
+          "1delta": 7
+        },
+        "polygon": {
+          "1delta": 0
+        },
+        "linea": {
+          "1delta": 9
+        },
+        "bsc": {
+          "1delta": 0
+        },
+        "avax": {
+          "1delta": 0
+        },
+        "taiko": {
+          "1delta": 257
+        },
+        "base": {
+          "1delta": 0
+        },
+        "arbitrum": {
+          "1delta": 131
+        },
+        "blast": {
+          "1delta": 0
+        },
+        "metis": {
+          "1delta": 0
+        },
+        "xdai": {
+          "1delta": 0
+        },
+        "mode": {
+          "1delta": 0
+        },
+        "hemi": {
+          "1delta": 12
+        },
+        "scroll": {
+          "1delta": 0
+        },
+        "core": {
+          "1delta": 0
+        },
+        "sonic": {
+          "1delta": 0
+        },
+        "fantom": {
+          "1delta": 0
+        }
+      },
+      "total7DaysAgo": 710782,
+      "total30DaysAgo": 0,
+      "defillamaId": "5740",
+      "name": "1delta",
+      "displayName": "1delta",
+      "module": "1delta",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/1delta.png",
+      "chains": [
+        "Mantle",
+        "OP Mainnet",
+        "Polygon",
+        "Linea",
+        "BSC",
+        "Avalanche",
+        "Taiko",
+        "Base",
+        "Arbitrum",
+        "Blast",
+        "Metis",
+        "Gnosis",
+        "Mode",
+        "Hemi",
+        "Scroll",
+        "CORE",
+        "Sonic",
+        "Fantom",
+        "Fuel Ignition"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/1delta",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "1delta",
+      "id": "5740"
+    },
+    {
+      "total24h": 1923278,
+      "total48hto24h": 2930111,
+      "total7d": 13531715,
+      "total14dto7d": 12952375,
+      "total60dto30d": 3031455832,
+      "total30d": 52396232,
+      "total1y": 3917822752,
+      "totalAllTime": 4257259503,
+      "average1y": null,
+      "change_1d": -34.36,
+      "change_7d": -31.68,
+      "change_1m": -5.89,
+      "change_7dover7d": 4.47,
+      "change_30dover30d": -98.27,
+      "breakdown24h": {
+        "ethereum": {
+          "Enso": 1872278
+        },
+        "optimism": {
+          "Enso": 2986
+        },
+        "bsc": {
+          "Enso": 11568
+        },
+        "polygon": {
+          "Enso": 13663
+        },
+        "base": {
+          "Enso": 6520
+        },
+        "arbitrum": {
+          "Enso": 16205
+        },
+        "berachain": {
+          "Enso": 0
+        },
+        "linea": {
+          "Enso": 58
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Enso": 40632122
+        },
+        "optimism": {
+          "Enso": 2659769
+        },
+        "bsc": {
+          "Enso": 569945
+        },
+        "polygon": {
+          "Enso": 3442785
+        },
+        "base": {
+          "Enso": 2210898
+        },
+        "arbitrum": {
+          "Enso": 2668745
+        },
+        "berachain": {
+          "Enso": 0
+        },
+        "linea": {
+          "Enso": 211968
+        }
+      },
+      "total7DaysAgo": 2815113,
+      "total30DaysAgo": 2043662,
+      "defillamaId": "5741",
+      "name": "Enso",
+      "displayName": "Enso",
+      "module": "enso",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/enso.png",
+      "chains": [
+        "Ethereum",
+        "OP Mainnet",
+        "BSC",
+        "Polygon",
+        "Base",
+        "Arbitrum",
+        "Berachain",
+        "Linea"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/enso",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "enso",
+      "id": "5741"
+    },
+    {
+      "total24h": 63887514,
+      "total48hto24h": 66164802,
+      "total7d": 411810498,
+      "total14dto7d": 440887587,
+      "total60dto30d": 416646442,
+      "total30d": 1624982975,
+      "total1y": 2041629417,
+      "totalAllTime": 2127384553,
+      "average1y": null,
+      "change_1d": -3.44,
+      "change_7d": -2.16,
+      "change_1m": 181.39,
+      "change_7dover7d": -6.6,
+      "change_30dover30d": 290.01,
+      "breakdown24h": {
+        "ethereum": {
+          "Defi App": 71616
+        },
+        "bsc": {
+          "Defi App": 89821
+        },
+        "arbitrum": {
+          "Defi App": 22956861
+        },
+        "base": {
+          "Defi App": 1407358
+        },
+        "solana": {
+          "Defi App": 39361858
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "Defi App": 1782298
+        },
+        "bsc": {
+          "Defi App": 4168606
+        },
+        "arbitrum": {
+          "Defi App": 994596230
+        },
+        "base": {
+          "Defi App": 50457617
+        },
+        "solana": {
+          "Defi App": 573978224
+        }
+      },
+      "total7DaysAgo": 65298192,
+      "total30DaysAgo": 22704116,
+      "defillamaId": "5819",
+      "name": "Defi App",
+      "displayName": "Defi App",
+      "module": "defiapp",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/defi-app.png",
+      "chains": [
+        "Ethereum",
+        "BSC",
+        "Arbitrum",
+        "Base",
+        "Solana"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/defiapp",
+      "methodology": {
+        "dailyVolume": "Volume is calculated by summing the usd value of all token trades routed via DefiApp protocol in the last 24h."
+      },
+      "latestFetchIsOk": true,
+      "slug": "defi-app",
+      "id": "5819"
+    },
+    {
+      "total24h": 0,
+      "total48hto24h": 23,
+      "total7d": 108,
+      "total14dto7d": 783,
+      "total60dto30d": 3812,
+      "total30d": 5810,
+      "total1y": 9622,
+      "totalAllTime": 9623,
+      "average1y": null,
+      "change_1d": -100,
+      "change_7d": -100,
+      "change_1m": -100,
+      "change_7dover7d": -86.21,
+      "change_30dover30d": 52.41,
+      "breakdown24h": {
+        "ethereum": {
+          "ERC Burner": 0
+        },
+        "arbitrum": {
+          "ERC Burner": 0
+        },
+        "base": {
+          "ERC Burner": 0
+        },
+        "bsc": {
+          "ERC Burner": 0
+        },
+        "avax": {
+          "ERC Burner": 0
+        },
+        "optimism": {
+          "ERC Burner": 0
+        },
+        "blast": {
+          "ERC Burner": 0
+        },
+        "polygon": {
+          "ERC Burner": 0
+        },
+        "era": {
+          "ERC Burner": 0
+        }
+      },
+      "breakdown30d": {
+        "ethereum": {
+          "ERC Burner": 2061
+        },
+        "arbitrum": {
+          "ERC Burner": 827
+        },
+        "base": {
+          "ERC Burner": 1445
+        },
+        "bsc": {
+          "ERC Burner": 274
+        },
+        "avax": {
+          "ERC Burner": 147
+        },
+        "optimism": {
+          "ERC Burner": 343
+        },
+        "blast": {
+          "ERC Burner": 14
+        },
+        "polygon": {
+          "ERC Burner": 693
+        },
+        "era": {
+          "ERC Burner": 6
+        }
+      },
+      "total7DaysAgo": 16,
+      "total30DaysAgo": 202,
+      "defillamaId": "5859",
+      "name": "ERC Burner",
+      "displayName": "ERC Burner",
+      "module": "erc-burner",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/erc-burner.jpg",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Base",
+        "BSC",
+        "Avalanche",
+        "OP Mainnet",
+        "Blast",
+        "Polygon",
+        "ZKsync Era"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/erc-burner",
+      "methodology": {
+        "Volume": "Volume is calculated by tracking the total amount of native tokens (ETH, AVAX, etc.) processed through the Burner contracts' swapExactInputMultiple function"
+      },
+      "latestFetchIsOk": true,
+      "slug": "erc-burner",
+      "id": "5859"
+    },
+    {
+      "total24h": 40149282,
+      "total48hto24h": 48515166,
+      "total7d": 346387095,
+      "total14dto7d": 71742494,
+      "total60dto30d": 408413338,
+      "total30d": 662285576,
+      "total1y": 1070698914,
+      "totalAllTime": 1124010082,
+      "average1y": null,
+      "change_1d": -17.24,
+      "change_7d": 128.45,
+      "change_1m": 16.06,
+      "change_7dover7d": 382.82,
+      "change_30dover30d": 62.16,
+      "breakdown24h": {
+        "berachain": {
+          "Ooga Booga": 40149282
+        }
+      },
+      "breakdown30d": {
+        "berachain": {
+          "Ooga Booga": 662285576
+        }
+      },
+      "total7DaysAgo": 17574379,
+      "total30DaysAgo": 34593055,
+      "defillamaId": "5880",
+      "name": "Ooga Booga",
+      "displayName": "Ooga Booga",
+      "module": "oogabooga",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/ooga-booga.jpg",
+      "chains": [
+        "Berachain"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/oogabooga",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "ooga-booga",
+      "id": "5880"
+    },
+    {
+      "total24h": 57741,
+      "total48hto24h": 26123,
+      "total7d": 421856,
+      "total14dto7d": 14744,
+      "total30d": 436723,
+      "total1y": 436723,
+      "totalAllTime": 1214965,
+      "average1y": null,
+      "change_1d": 121.04,
+      "change_7d": 2272.27,
+      "change_7dover7d": 2761.2,
+      "breakdown24h": {
+        "move": {
+          "Mosaic": 57741
+        }
+      },
+      "breakdown30d": {
+        "move": {
+          "Mosaic": 436723
+        }
+      },
+      "total7DaysAgo": 2434,
+      "defillamaId": "5890",
+      "name": "Mosaic",
+      "displayName": "Mosaic",
+      "module": "mosaic",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/mosaic.jpg",
+      "chains": [
+        "Movement"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/mosaic",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "mosaic",
+      "id": "5890"
+    },
+    {
+      "defillamaId": "5965",
+      "name": "Sandglass",
+      "displayName": "Sandglass",
+      "module": "sandglass",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/sandglass.jpg",
+      "chains": [
+        "Solana"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/sandglass",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "sandglass",
+      "id": "5965"
+    }
+  ]
+}
