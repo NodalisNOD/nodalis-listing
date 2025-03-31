@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     volumeCell.textContent = volume24hFormatted;
     row.appendChild(volumeCell);
-
     // Pairs-cell: toon het aantal tokens (zonder extra tekst)
     const pairsCell = document.createElement('td');
     pairsCell.textContent = tokensCount;
@@ -188,7 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tbody.appendChild(row);
   }
-
   // Start: laad zowel exchanges als aggregators zodra de DOM gereed is
   loadExchanges();
   loadAggregators();
