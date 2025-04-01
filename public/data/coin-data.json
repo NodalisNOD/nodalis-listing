@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "diamond-hands",
+    "name": "Diamond Hands",
+    "ticker": "DHANDS",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/dhands.jpg",
+    "contract": "0x8C6E04D8Be335F0D9b65Fb5946B6f2Af8cac88dd",
+    "website": "https://x.com/dmndhandcro",
+    "explorer": "https://cronoscan.com/token/0x8C6E04D8Be335F0D9b65Fb5946B6f2Af8cac88dd",
+    "twitter": "https://x.com/dmndhandcro",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "We are Diamond Hands of Crypto.Com\n\nOur token launched on puush.fun\nAfter several posts from crypto.com having diamondhands\n\nA true memecoin based on a popular saying and hashtag.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x8C6E04D8Be335F0D9b65Fb5946B6f2Af8cac88dd",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x0ff073c0d4b9cfb1035785ab7f2496f6f7f7b074/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8C6E04D8Be335F0D9b65Fb5946B6f2Af8cac88dd"
+    }
+  },
+  {
     "id": "crovino-wine",
     "name": "CroVino WINE",
     "ticker": "WINE",

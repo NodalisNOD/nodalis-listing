@@ -128,6 +128,19 @@
     {
       "chain": "cronos",
       "chainId": 25,
+      "address": "0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97",
+      "name": "Kristine",
+      "symbol": "$tine",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLI9w2KxT7suLHghNQ9ikUGKDZV4eatAYcrMd0",
+      "twitter": "kristokencro/status/1906951208746496235?t=iYcdHNDRfNPcfr6PXW68WA&s=19",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
+      "chain": "cronos",
+      "chainId": 25,
       "address": "0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
       "name": "Xitcoin",
       "symbol": "$XTC",
@@ -1303,7 +1316,7 @@
       "name": "Eric",
       "symbol": "ERIC",
       "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRLVpa2zWvtnPzXQKArlImGvL4T1pb5hMeqUZy8",
+      "logoURI": "https://assets.wolfswap.app/eric-1743488325123.jpg",
       "twitter": "",
       "twitterImageGenerated": false,
       "twitterBannerUrl": "",
@@ -3449,7 +3462,7 @@
       "address": "0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
       "chainId": 25,
       "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRLVpa2zWvtnPzXQKArlImGvL4T1pb5hMeqUZy8",
+      "logoURI": "https://assets.wolfswap.app/eric-1743488325123.jpg",
       "boost": 2
     }
   ]
