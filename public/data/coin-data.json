@@ -184,7 +184,7 @@
     "name": "Eric",
     "ticker": "ERIC",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/eric.webp",
+    "icon": "./assets/coinIcons/eric.jpg",
     "contract": "0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
     "website": "https://eric-cro.squarespace.com/",
     "explorer": "https://cronoscan.com/token/0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
