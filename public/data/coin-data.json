@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "the-pride",
+    "name": "The Pride",
+    "ticker": "PRIDE",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/pride.gif",
+    "contract": "0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
+    "website": "https://thepride.fun",
+    "explorer": "https://cronoscan.com/address/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
+    "twitter": "https://x.com/PRIDEonCRO",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Native Token of ThePRIDE NFT Collection on CRONOS!\n\nWelcome to the realm of THE PRIDE: a legendary tribe of 3,000 lions!\n\nClaim your place among THE PRIDE and be part of this extraordinary journey toward a bold new legacy.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xcb7d2be44c82f70a5ad814f31f5d239194659f04/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D"
+    }
+  },
+  {
     "id": "xitcoin",
     "name": "Xitcoin",
     "ticker": "XTC",
@@ -31,7 +67,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x0ff073c0d4b9cfb1035785ab7f2496f6f7f7b074/ohlcv/minute?aggregate=15",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4339ad632438661db56b4dd5ad82279de743676f/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd"
     }
   },
