@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Eurostile Regular';
+    src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  :root {
+    --primary-color: #042c3f;
+    --secondary-color: #05a6c9;
+    --bg-color: #f9fafa;
+    --card-bg: #fff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --hover-bg: #f1f1f1;
+    --transition: 0.3s ease;
+    --font: 'Eurostile Regular', sans-serif;
+  }
+  
+  /* Tokenomics section styling */
+  .tokenomics {
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tokenomics h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #1a664f;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #042c3f;
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  /* Responsive table */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      margin-bottom: 15px;
+    }
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    td:before {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    td:nth-of-type(1):before { content: "Allocation"; }
+    td:nth-of-type(2):before { content: "Percentage"; }
+    td:nth-of-type(3):before { content: "Token Amount"; }
+    td:nth-of-type(4):before { content: "Details"; }
+  }
+  

@@ -2506,6 +2506,19 @@
       "postedOnTwitter": true
     },
     {
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
+      "name": "The Pride",
+      "symbol": "PRIDE",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLQ3UCd2YLDZxV2FRlzcs43TMK7w1UEG0kSyat",
+      "twitter": "PRIDEonCRO",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
       "name": "PUUSH",
       "symbol": "PUUSH",
       "address": "0x288898a6057d2D4989c533E96Cb3bc30843c91D7",

@@ -12,7 +12,7 @@ header.innerHTML = `
       <ul class="nav-list">
         <li><a href="/index.html">Tokens</a></li>
         <li><a href="/dexs.html">Exchanges</a></li>
-        <!-- Dropdown "Products" menu -->
+        <!-- Dropdown "Products" menu (blijft onveranderd) -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Products</a>
           <ul class="dropdown-menu">
@@ -42,7 +42,25 @@ header.innerHTML = `
             </li>
           </ul>
         </li>
-        <!-- Dropdown "Crypto.com" menu -->
+        <!-- Nieuwe dropdown "Nodalis" menu -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Nodalis</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/roadmap.html">
+                <img src="/assets/UI/roadmap.png" alt="Roadmap" class="dropdown-icon">
+                Roadmap
+              </a>
+            </li>
+            <li>
+              <a href="/tokenomics.html">
+                <img src="/assets/UI/tokenomics.png" alt="Tokenomics" class="dropdown-icon">
+                Tokenomics
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- Dropdown "Crypto.com" menu (nu als laatst in de lijst) -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Crypto.com</a>
           <ul class="dropdown-menu">
