@@ -2740,6 +2740,19 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/serious-token.png"
     },
     {
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0xcedeC6eCd76af32aCfFFD07EB554927E0573Fb30",
+      "name": "Sesterzio",
+      "symbol": "SEST",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLsnUDtFvMK7FRvcQt52JDSPdz4OH0GyEpqLlX",
+      "twitter": "ImperiumCro",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
       "name": "Shiba Inu",
       "symbol": "SHIB",
       "address": "0xbed48612bc69fa1cab67052b42a95fb30c1bcfee",
