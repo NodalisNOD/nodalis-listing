@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "xitcoin",
+    "name": "Xitcoin",
+    "ticker": "XTC",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/xitcoin.jpg",
+    "contract": "0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
+    "website": "https://xitcoin.org/",
+    "explorer": "https://cronoscan.com/address/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
+    "twitter": "https://x.com/Xitcoin_org",
+    "telegram": "",
+    "discord": "https://discord.com/invite/u3MUHtGb",
+    "whitepaper": "https://xitcoin.org/files/xitcoin-whitepaper-en.pdf",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Xitcoin ($XTC) is more than just a utility token — it’s the foundation for a larger ecosystem, including a futur Xbank-Crypto expanding into staking, bridge functionality, and strategic token burning. Xitcoin has been built on Cronos will be deployed across 10 networks. As of today we are on Ethereum, BNB Smart Chain, Polygon, Avalanche, and recently Sonic, ensuring broad interoperability. Born with a total supply of 21 billion, Xitcoin as a unique strategy with a deflationary model including scheduled burns to reduce supply and increase scarcity. The project will offer staking rewards and a secure, transparent ecosystem.\nXitcoin positions itself as a pivotal force in uniting blockchain ecosystems. By utilizing strategic liquidity pools, implementing controlled burns, and spearheading the innovative Xbank-Crypto project, $XTC delivers a sustainable and scalable solution tailored to the demands of a rapidly evolving market.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x0ff073c0d4b9cfb1035785ab7f2496f6f7f7b074/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd"
+    }
+  },
+  {
     "id": "diamond-hands",
     "name": "Diamond Hands",
     "ticker": "DHANDS",
@@ -1112,7 +1148,7 @@
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x25b7449e2416e0ef0f244f6cc34eb31c4902d9cb",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb"
     }
   },
   {
