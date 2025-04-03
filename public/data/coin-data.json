@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "nodalis",
+    "name": "Nodalis",
+    "ticker": "NOD",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/logo.png",
+    "contract": "0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
+    "website": "https://www.nodalisting.com/home",
+    "explorer": "https://cronoscan.com/address/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
+    "twitter": "https://x.com/Nodalis_Network",
+    "telegram": "",
+    "discord": "discord.gg/dBj7r5cneg",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Noda Link",
+        "url": "https://www.nodalisting.com/NodaLink"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "The utility token powering the Nodalis data ecosystem.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd30a1624e5e3f32659b308e154f1d0dc8478a8e6/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6"
+    }
+  },
+  {
+    "id": "ai7z",
+    "name": "AI7Z",
+    "ticker": "AI7Z",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ai7z.jpg",
+    "contract": "0xe58c8e2569b631e088f54ea47cc90a1a3509c808",
+    "website": "https://www.ai7z.tech/",
+    "explorer": "https://cronoscan.com/address/0xe58c8e2569b631e088f54ea47cc90a1a3509c808",
+    "twitter": "https://x.com/genz_green",
+    "telegram": "",
+    "discord": "https://discord.com/invite/EzPhJ6dT",
+    "whitepaper": "onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDZiNTVjMWQwODNkYjZmL0VkZkFDLUhzZFExT3VTY3A3MW5vWjFJQjh3aTltb2pDNnplU0Z2c2MtUWM2b0E&cid=606B55C1D083DB6F&id=606B55C1D083DB6F%21se10bc0d775ec4e0db92729ef59e86752&parId=606B55C1D083DB6F%21s6925b15a54b14cf0b79ee334e999f8de&o=OneUp&v=validatepermission",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Zora",
+        "url": "https://zora.co/invite/ai7z"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "AI7Z agent is a community-driven meme token project built on the Cronos blockchain.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe58c8e2569b631e088f54ea47cc90a1a3509c808",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb237b551258957e65ac1aa15bf7551f07850c6ca/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe58c8e2569b631e088f54ea47cc90a1a3509c808"
+    }
+  },
+  {
     "id": "gen-z",
     "name": "Generation Z",
     "ticker": "GenZ",

@@ -2308,6 +2308,19 @@
     {
       "chain": "cronos",
       "chainId": 25,
+      "address": "0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
+      "name": "Nodalis",
+      "symbol": "NOD",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLD9QpJF4U2OteFmyzd1lrCZQkRS6vVjfKosiB",
+      "twitter": "Nodalis_Network",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
+      "chain": "cronos",
+      "chainId": 25,
       "address": "0x6d810420fcee6478ce73d4f466a094bbade11da6",
       "name": "NOVA",
       "symbol": "NOVA",
