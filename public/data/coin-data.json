@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "gen-z",
+    "name": "Generation Z",
+    "ticker": "GenZ",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/genz.jpg",
+    "contract": "0x93f2E7cb3B0Dd9897053f8c3969B57c9cD7Bdb1A",
+    "website": "https://x.com/genz_green",
+    "explorer": "https://cronoscan.com/address/0x93f2E7cb3B0Dd9897053f8c3969B57c9cD7Bdb1A",
+    "twitter": "https://x.com/genz_green",
+    "telegram": "https://t.me/genzdotgreen",
+    "discord": "https://discord.com/invite/genzdotgreen",
+    "whitepaper": "https://genz.green/white-paper/",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Designed to engage the next generation in promoting sustainable energy and environmental stewardship. By leveraging blockchain technology and the unique characteristics of Generation Z, GenZ Token aims to support green initiatives while empowering young individuals to take meaningful action towards a sustainable future.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x93f2E7cb3B0Dd9897053f8c3969B57c9cD7Bdb1A",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xe2200aa8148700967b2d854d3929d8f503a7689a/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x93f2E7cb3B0Dd9897053f8c3969B57c9cD7Bdb1A"
+    }
+  },
+  {
+    "id": "caw-777",
+    "name": "CAW777",
+    "ticker": "777",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/caw777.jpg",
+    "contract": "0x86948F9C2AD4BF5EeF10c7CB6434C9d75EC9Bb9a",
+    "website": "https://x.com/CAW777onX?t=NT_W2Fb_hAI4J7QgvrDnag&s=09",
+    "explorer": "https://cronoscan.com/address/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
+    "twitter": "https://x.com/CAW777onX?t=NT_W2Fb_hAI4J7QgvrDnag&s=09",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "🔥🔥CAW777 a @crow_with_knife DERIVATIVE born from the ashes of burned $CAW supply🔥🔥",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x86948F9C2AD4BF5EeF10c7CB6434C9d75EC9Bb9a",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x00a5bd5950e1451156bd0751da180bdb8c122464/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x86948F9C2AD4BF5EeF10c7CB6434C9d75EC9Bb9a"
+    }
+  },
+  {
     "id": "the-pride",
     "name": "The Pride",
     "ticker": "PRIDE",
