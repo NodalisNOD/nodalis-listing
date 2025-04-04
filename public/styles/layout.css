@@ -371,6 +371,12 @@ footer {
   margin-right: 0.5rem;
   vertical-align: middle;
 }
+.nodalis-logo {
+  height: 20px;
+  width: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
 
 /* Responsive Footer */
 @media (max-width: 768px) {

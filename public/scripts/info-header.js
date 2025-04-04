@@ -1,14 +1,14 @@
 // infoheader.js
 
-// HTML-element waarin de info-header komt te staan
+// HTML element in which the info header will be rendered
 const infoHeader = document.getElementById("info-header");
 
-// Haal Cronos-prijs op uit de lokale croPrice.json
+// Fetch Cronos price from local croPrice.json
 async function fetchCronosPrice() {
   try {
     const response = await fetch("./data/croPrice.json");
     if (!response.ok) {
-      throw new Error("Fout bij ophalen van croPrice.json");
+      throw new Error("Error fetching croPrice.json");
     }
     const data = await response.json();
     return parseFloat(data.cronosPrice);
@@ -18,7 +18,81 @@ async function fetchCronosPrice() {
   }
 }
 
-// Helper: Haal alle coin-data op (zelfde logica als in newcomers-topgainers.js)
+// Fetch Nodalis price from coinCache.json using the "nodalis" key
+async function fetchNodalisPrice() {
+  try {
+    const response = await fetch("./data/coinCache.json");
+    if (!response.ok) {
+      throw new Error("Error fetching coinCache.json");
+    }
+    const data = await response.json();
+    if (data.nodalis && Array.isArray(data.nodalis) && data.nodalis.length > 0) {
+      return parseFloat(data.nodalis[0].priceUsd);
+    }
+    return null;
+  } catch (error) {
+    console.error("Error fetching Nodalis price:", error);
+    return null;
+  }
+}
+
+// Helper: Fetch dynamic metrics (market cap and 24h volume) from coinCache.json
+// It iterates over all keys, deduplicates tokens (using either a Gecko Terminal "id" or the lowercased baseToken address)
+// and sums up the market cap and 24h volume.
+async function fetchCoinCacheMetrics() {
+  try {
+    const response = await fetch("./data/coinCache.json");
+    if (!response.ok) {
+      throw new Error("Error fetching coinCache.json");
+    }
+    const coinCache = await response.json();
+    let uniqueTokens = {};
+    Object.keys(coinCache).forEach((key) => {
+      const entry = coinCache[key];
+      if (Array.isArray(entry)) {
+        entry.forEach((token) => {
+          let uniqueKey = null;
+          // Prefer Gecko Terminal "id" if available; otherwise, use the baseToken address
+          if (token.id) {
+            uniqueKey = token.id.trim().toLowerCase();
+          } else if (token.baseToken && token.baseToken.address) {
+            uniqueKey = token.baseToken.address.trim().toLowerCase();
+          }
+          if (uniqueKey && !uniqueTokens[uniqueKey]) {
+            uniqueTokens[uniqueKey] = token;
+          }
+        });
+      } else if (typeof entry === "object" && entry !== null) {
+        let uniqueKey = null;
+        if (entry.id) {
+          uniqueKey = entry.id.trim().toLowerCase();
+        } else if (entry.baseToken && entry.baseToken.address) {
+          uniqueKey = entry.baseToken.address.trim().toLowerCase();
+        }
+        if (uniqueKey && !uniqueTokens[uniqueKey]) {
+          uniqueTokens[uniqueKey] = entry;
+        }
+      }
+    });
+
+    const tokensArray = Object.values(uniqueTokens);
+    const totalMarketCap = tokensArray.reduce((sum, token) => {
+      const mc = token.marketCap ? parseFloat(token.marketCap) : 0;
+      return sum + mc;
+    }, 0);
+    const totalVolume24h = tokensArray.reduce((sum, token) => {
+      const vol = token.volume && token.volume.h24 ? parseFloat(token.volume.h24) : 0;
+      return sum + vol;
+    }, 0);
+
+    return { totalMarketCap, totalVolume24h };
+  } catch (error) {
+    console.error("Error fetching metrics from coinCache.json:", error);
+    return { totalMarketCap: 0, totalVolume24h: 0 };
+  }
+}
+
+// The existing fetchAllCoinData() remains unchanged – it fetches static coin data and is used for token count.
 async function fetchAllCoinData() {
   try {
     const response = await fetch("./data/coin-data.json");
@@ -80,36 +154,37 @@ async function fetchAllCoinData() {
               addedAt: coin.addedAt || null,
             };
           } else {
-            console.error("Geen geldige data voor coin:", coin.name);
+            console.error("Invalid data for coin:", coin.name);
             return null;
           }
         })
         .catch((err) => {
-          console.error("Fout bij ophalen van data voor coin:", coin.name, err);
+          console.error("Error fetching data for coin:", coin.name, err);
           return null;
         });
     });
     const results = await Promise.all(promises);
     return results.filter((item) => item !== null);
   } catch (err) {
-    console.error("Fout bij ophalen van coin-data.json:", err);
+    console.error("Error fetching coin-data.json:", err);
     return [];
   }
 }
 
-// Update de info-header (tokens, market cap, 24h volume en Cronos-prijs)
+// Update the info header with token count (from coin-data), market cap and 24h volume (from coinCache),
+// as well as Cronos and Nodalis prices.
 async function updateInfoHeader() {
   if (!infoHeader) {
-    console.error("Info header element niet gevonden.");
+    console.error("Info header element not found.");
     return;
   }
 
   const cacheKey = "infoHeaderData";
   const cacheTimeKey = "infoHeaderDataTime";
-  const CACHE_DURATION = 1 * 60 * 1000; // 1 minuut
+  const CACHE_DURATION = 1 * 60 * 1000; // 1 minute
   const now = Date.now();
 
-  // Controleer op geldige cache-gegevens
+  // Check if data is cached
   const cachedData = localStorage.getItem(cacheKey);
   const cachedTime = localStorage.getItem(cacheTimeKey);
   if (cachedData && cachedTime && now - parseInt(cachedTime, 10) < CACHE_DURATION) {
@@ -131,28 +206,38 @@ async function updateInfoHeader() {
         <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" class="cronos-logo">
         <strong>${infoData.cronosPrice ? `$${infoData.cronosPrice.toFixed(6)}` : "N/A"}</strong>
       </div>
+      <div class="info-item" id="nodalis-price">
+        <img src="./assets/coinIcons/nod.png" alt="Nodalis Logo" class="nodalis-logo">
+        <strong>${infoData.nodalisPrice ? `$${infoData.nodalisPrice.toFixed(6)}` : "N/A"}</strong>
+      </div>
     `;
-    console.log("✅ Info header geladen uit cache");
+    console.log("✅ Info header loaded from cache");
     return;
   }
 
   try {
+    // Get token count from coin-data.json
     const allCoinData = await fetchAllCoinData();
     const totalTokens = allCoinData.length;
-    const totalMarketCap = allCoinData.reduce((acc, coin) => acc + (coin.marketCap || 0), 0);
-    const totalVolume24h = allCoinData.reduce((acc, coin) => acc + (coin.volume24h || 0), 0);
+
+    // Get market cap and volume from coinCache.json
+    const { totalMarketCap, totalVolume24h } = await fetchCoinCacheMetrics();
     const cronosPrice = await fetchCronosPrice();
+    const nodalisPrice = await fetchNodalisPrice();
 
     const infoData = {
       totalTokens,
       totalMarketCap,
       totalVolume24h,
       cronosPrice,
+      nodalisPrice,
     };
 
+    // Cache the info data
     localStorage.setItem(cacheKey, JSON.stringify(infoData));
     localStorage.setItem(cacheTimeKey, now.toString());
 
+    // Update the info header HTML
     infoHeader.innerHTML = `
       <div class="info-item">
         <span>Tokens:</span>
@@ -169,6 +254,10 @@ async function updateInfoHeader() {
       <div class="info-item" id="cronos-price">
         <img src="./assets/coinIcons/cro.png" alt="Cronos Logo" class="cronos-logo">
         <strong>${cronosPrice ? `$${cronosPrice.toFixed(6)}` : "N/A"}</strong>
+      </div>
+      <div class="info-item" id="nodalis-price">
+        <img src="./assets/coinIcons/nod.png" alt="Nodalis Logo" class="nodalis-logo">
+        <strong>${nodalisPrice ? `$${nodalisPrice.toFixed(6)}` : "N/A"}</strong>
       </div>
     `;
   } catch (error) {
