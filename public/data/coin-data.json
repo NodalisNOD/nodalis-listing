@@ -1,16 +1,16 @@
 [ 
   {
-    "id": "gang-gang",
-    "name": "Gang Gang",
-    "ticker": "GG",
+    "id": "mi-grant",
+    "name": "Mi-Grant",
+    "ticker": "Grant",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/ganggang.jpg",
-    "contract": "0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
-    "website": "https://gang-gang.netlify.app",
-    "explorer": "https://cronoscan.com/address/0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
-    "twitter": "https://x.com/GANGGANGCroFam",
-    "telegram": "https://t.me/GangGangCroFamOfficial",
-    "discord": "https://discord.gg/QFtqASUH",
+    "icon": "./assets/coinIcons/migrant.webp",
+    "contract": "0xd41C17945b4E59294b9222C5210827e34Cb33fB0",
+    "website": "https://www.grantoken.info/",
+    "explorer": "https://cronoscan.com/address/0xd41C17945b4E59294b9222C5210827e34Cb33fB0",
+    "twitter": "https://x.com/Grantoken_",
+    "telegram": "https://t.me/GRANTOKEN",
+    "discord": "",
     "whitepaper": "",
     "threads": "",
     "extraLinks": [
@@ -27,12 +27,12 @@
         "url": ""
       }
     ],
-    "description": "Gang Gang is a community token created by CroFam for CroFam. We support all projects that are trying to grow. We are a rowdy community that brings the engagement on X. We are the reply guys.",
+    "description": "For every current, ex and future Migrant. The back bone of every thriving Nation. Your hard work is a GRANT you give everywhere you go.\nYou are the Back bone of the GRANT token and ecosystem. We shall bring value to the GRANT TOKEN and use it as a Symbol and\nRepresentation of Every person who has ever had to leave his or her home town or place of birth to be inspired and be reignited in a different jurisdiction.\nIt won't be easy, it's never been easy, but this is where we PLAY DAILY. This is COMMUNITY driven project and We shall work together and tirelessly to bring every sort of value to the GRANT Ecosystem. We shall Invent, reinvent, explore, re-explore Together.\nWe are going to start SOMETHING from NOTHING.\nWe have no road map and this has been our goal from the onset. we are going to write our road map together as a community and we shall decide how we steer this ship. Come onboard with whatever expertise and experience you have. Its all valuable, its all Valid and its all accepted\nFirst things first. Let's Create value for GRANT by Holding",
     "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd41C17945b4E59294b9222C5210827e34Cb33fB0",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x601a566256b18c30f1823f14250ce99a650c0593/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xcA3aCc4cfD07159C8507C825B72D5f8489070161"
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x65f2d088613dae429d0e488ac89ba1d35ddfe2f5/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xd41C17945b4E59294b9222C5210827e34Cb33fB0"
     }
   },
   {

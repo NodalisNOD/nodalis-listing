@@ -1602,6 +1602,19 @@
     {
       "chain": "cronos",
       "chainId": 25,
+      "address": "0xd41C17945b4E59294b9222C5210827e34Cb33fB0",
+      "name": "Mi-Grant",
+      "symbol": "Grant",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLvUDuhTqzJtZBnpIjCFbaSwVmrHi5A2DlhcGo",
+      "twitter": "GrantMi55271",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
+      "chain": "cronos",
+      "chainId": 25,
       "address": "0x010e1a91103cd8f150c19007c981bb40b537f366",
       "name": "Touching Grass",
       "symbol": "GRASS",
@@ -3493,15 +3506,6 @@
       "chainId": 25,
       "decimals": 18,
       "logoURI": "https://assets.wolfswap.app/d4bb0cbf-3e4f-44fe-9b64-b9b6afc0bfdf-1743361327644.jpg",
-      "boost": 2
-    },
-    {
-      "name": "Eric",
-      "symbol": "ERIC",
-      "address": "0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
-      "chainId": 25,
-      "decimals": 18,
-      "logoURI": "https://assets.wolfswap.app/eric-1743488325123.jpg",
       "boost": 2
     },
     {
