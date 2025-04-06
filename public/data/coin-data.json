@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "kristine",
+    "name": "Kristine",
+    "ticker": "TINE",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/TINE.png",
+    "contract": "0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97",
+    "website": "https://kristoken.xyz",
+    "explorer": "https://cronoscan.com/address/0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97",
+    "twitter": "https://x.com/kristine_cro?s=11",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$TINE is a deflationary utility token driving real engagement and creator-focused tools on Cronos. Exclusively paired with $KRIS, Kristine rewards contributors with claimable airdrops, promo incentives, and access to practical dApps built for early-stage growth.\nKey Features:\n✅ Claimable Airdrops – Earn tokens from promotional clients by holding $TINE\n✅ Promotional Support – Pregrads and verified creators get exposure and growth assistance\n✅ Sustained Burn Mechanism – Select utilities trigger regular $TINE burns, reducing supply over time\n✅ Focused Utility – dApps built for traction, not hype: task hubs, reward bots, launch tools\n✅ $KRIS-Exclusive Pairing – Strengthens liquidity and community alignment\n\nNo VCs. No Paid Hype. Just Tools, Utility, and Real Movement.\nBuild with us. Grow with us. Earn it the right way.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdae6b97cff544069c9f6190f68606c1dd73cec97/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97"
+    }
+  },
+  {
+    "id": "bored-cat-wif-couch",
+    "name": "Bored Cat Wif Couch",
+    "ticker": "BORED",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/BORED.png",
+    "contract": "0xD3Ab98E84bbD69F0CeA74f6BC01FBad375C03d07",
+    "website": "https://www.degenstreet.fun/boredcatzclub404",
+    "explorer": "https://cronoscan.com/address/0xD3Ab98E84bbD69F0CeA74f6BC01FBad375C03d07",
+    "twitter": "https://x.com/BoredCatzClub?t=f6dm6Ka5T3gQMVgO3W1KxQ&s=09",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Get $BORED. Stay Entertained.\n\n$BORED is more than just a token—it's your key to the Bored Catz Club 404, a retro-inspired NFT experience powered by Puush.fun’s unique 404 function. With a capped supply of 999 NFTs, each one is permanently tied to the entire supply of $BORED, ensuring there’s always a Bored Catz Club 404 waiting in the pool.\n\nFeeling \"bored\" of your PFP? No problem. Swap it out for another for a small $BORED fee. It’s like changing outfits—only way cooler and on-chain.\n\nAll fees collected fuel the staking vaults on Puush.fun, keeping the ecosystem alive and rewarding. Stake your Bored Catz Club 404 NFTs and earn passive rewards in $BORED and other CRC-20 tokens.\n\nMint. Swap. Stake. Repeat.\nWelcome to the Club. Welcome to $BORED.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xD3Ab98E84bbD69F0CeA74f6BC01FBad375C03d07",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf658223c66281ed5990cb9969441cd6b6338ceb2/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97"
+    }
+  },
+  {
     "id": "mi-grant",
     "name": "Mi-Grant",
     "ticker": "Grant",
@@ -33,6 +105,42 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x65f2d088613dae429d0e488ac89ba1d35ddfe2f5/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xd41C17945b4E59294b9222C5210827e34Cb33fB0"
+    }
+  },
+  {
+    "id": "gang-gang",
+    "name": "Gang Gang",
+    "ticker": "GG",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/ganggang.jpg",
+    "contract": "0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
+    "website": "https://gang-gang.netlify.app/",
+    "explorer": "https://cronoscan.com/address/0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
+    "twitter": "ttps://x.com/GANGGANGCroFam",
+    "telegram": "https://t.me/GangGangCroFamOfficial",
+    "discord": "ttps://discord.gg/QFtqASUH",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Gang Gang is a community token created by CroFam for CroFam. We support all projects that are trying to grow. We are a rowdy community that brings the engagement on X. We are the reply guys.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xcA3aCc4cfD07159C8507C825B72D5f8489070161",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x921b0a42a824679877c4dca8ec45fbb413557274/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xcA3aCc4cfD07159C8507C825B72D5f8489070161"
     }
   },
   {

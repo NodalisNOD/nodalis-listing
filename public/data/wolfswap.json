@@ -3500,15 +3500,6 @@
   ],
   "boostedTokens": [
     {
-      "name": "Diamond Hands",
-      "symbol": "DHANDS",
-      "address": "0x8c6e04d8be335f0d9b65fb5946b6f2af8cac88dd",
-      "chainId": 25,
-      "decimals": 18,
-      "logoURI": "https://assets.wolfswap.app/d4bb0cbf-3e4f-44fe-9b64-b9b6afc0bfdf-1743361327644.jpg",
-      "boost": 2
-    },
-    {
       "name": "MOON",
       "symbol": "MOON",
       "address": "0x46E2B5423F6ff46A8A35861EC9DAfF26af77AB9A",
