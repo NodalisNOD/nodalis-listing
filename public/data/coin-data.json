@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "balls",
+    "name": "BALLS",
+    "ticker": "BALLS",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/balls.jpg",
+    "contract": "0x468a5236DF3EB58F6EE06ED26382A3EDB1c94Aea",
+    "website": "https://www.myballs.me/",
+    "explorer": "https://cronoscan.com/address/0x468a5236DF3EB58F6EE06ED26382A3EDB1c94Aea",
+    "twitter": "https://x.com/hodlballs",
+    "telegram": "https://t.me/Beannationballs",
+    "discord": "ttps://discord.gg/wvW7pVcfac",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "The $BALLS community is on a new path. Originally a Cronos meme token, $BALLS is now focused on bringing the catchy and funny $BALLS meme to new chains where HYPE and excitement exist.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x468a5236DF3EB58F6EE06ED26382A3EDB1c94Aea",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x468a5236DF3EB58F6EE06ED26382A3EDB1c94Aea"
+    }
+  },
+  {
+    "id": "pawsflow",
+    "name": "PAWSFLOW",
+    "ticker": "PAWSFLOW",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/pawsflow.jpg",
+    "contract": "0xDf50068a8B84028884C5725613132b2c592baa61",
+    "website": "",
+    "explorer": "https://cronoscan.com/address/0xDf50068a8B84028884C5725613132b2c592baa61",
+    "twitter": "https://x.com/pawsflow",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "It’s Wolfswap, but backwards. We are the unofficial meme token of the Wolfswap ecosystem. Community owned and operated. ",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xDf50068a8B84028884C5725613132b2c592baa61",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x0393ff327a4e43d6d7a7420450a98d40a8eec59e/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xDf50068a8B84028884C5725613132b2c592baa61"
+    }
+  },
+  {
     "id": "kristine",
     "name": "Kristine",
     "ticker": "TINE",
