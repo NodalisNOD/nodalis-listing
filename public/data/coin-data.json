@@ -436,7 +436,7 @@
     "name": "The Pride",
     "ticker": "PRIDE",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/pride.gif",
+    "icon": "./assets/coinIcons/pride.png",
     "contract": "0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
     "website": "https://thepride.fun",
     "explorer": "https://cronoscan.com/address/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
