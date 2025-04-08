@@ -1,29 +1,29 @@
 @font-face {
-    font-family: 'Eurostile Regular';
-    src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  :root {
-    --primary-color: #042c3f;
-    --secondary-color: #05a6c9;
-    --bg-color: #f9fafa;
-    --card-bg: #fff;
-    --text-color: #333;
-    --border-color: #ddd;
-    --hover-bg: #f1f1f1;
-    --transition: 0.3s ease;
-    --font: 'Eurostile Regular', sans-serif;
-  }
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #161a25;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
+  --transition: 0.3s ease;
+  --font: 'Eurostile Regular', sans-serif;
+}
   
   /* Tokenomics section styling */
   .tokenomics {
     padding: 40px;
     max-width: 900px;
     margin: 40px auto;
-    background-color: #fff;
+    background-color: #161a25;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -42,7 +42,7 @@
   
   thead {
     background-color: #1a664f;
-    color: #fff;
+    color: #161a25;
   }
   
   th, td {
@@ -52,17 +52,9 @@
   }
   
   tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #161a25;
   }
   
-  /* Footer styling */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #042c3f;
-    color: #fff;
-    margin-top: 40px;
-  }
   
   /* Responsive table */
   @media screen and (max-width: 600px) {

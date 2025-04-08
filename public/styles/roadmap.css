@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Eurostile Regular';
-    src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  :root {
-    --primary-color: #042c3f;
-    --secondary-color: #05a6c9;
-    --bg-color: #f9fafa;
-    --card-bg: #fff;
-    --text-color: #333;
-    --border-color: #ddd;
-    --hover-bg: #f1f1f1;
-    --transition: 0.3s ease;
-    --font: 'Eurostile Regular', sans-serif;
-  }
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
+  --transition: 0.3s ease;
+  --font: 'Eurostile Regular', sans-serif;
+}
   
 .timeline-section {
-    background: #fff;
+    background: #1e2536;
     padding: 60px 20px;
     font-family: Eurostile Regular, sans-serif;
   }
@@ -28,7 +28,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #222;
+    color: #ffffff;
   }
   
   .timeline {
@@ -42,6 +42,7 @@
   .timeline-item {
     position: relative;
     margin-bottom: 60px;
+    background-color: #1e2536;
   }
   
   .timeline-date-bubble {
@@ -74,11 +75,12 @@
   }
   
   .timeline-content {
-    background: #f9f9f9;
+    background: #161a25;
     padding: 20px 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     margin-left: 20px;
+
   }
   
   .timeline-content ul {
@@ -90,7 +92,7 @@
   .timeline-content li {
     margin-bottom: 10px;
     line-height: 1.6;
-    color: #333;
+    color: #ffffff;
   }
   
   /* Responsive */

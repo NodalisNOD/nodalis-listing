@@ -35,6 +35,7 @@
   ],
   "allListedTokens": [
     {
+      "_id": "673b62349ee991e29f2909f2",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x61f89eafa1251da5e8a4a9a773d01b040e2c9de7",
@@ -48,6 +49,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "66aa0ff7a3ae08c5c36fc355",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x6961398ae3bd6192a11ac0a94192d071f19ef8bc",
@@ -61,6 +63,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "6728cd7be070ec9bccd5a3f8",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd3ab98e84bbd69f0cea74f6bc01fbad375c03d07",
@@ -74,6 +77,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "6728cbcfe070ec9bccd5a3d0",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xc6f67bf5a83b062c0cde06543551740bf804c775",
@@ -87,6 +91,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "672015a5f8d6e25abcb3694b",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x344c8cc3b6c26ff096398845147a8e6ea1a922d9",
@@ -100,6 +105,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "676ff1747254e24c3bf50185",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd4bf11c2f75e5e4574feb931cbc8268885f792f9",
@@ -113,6 +119,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "6779c1c948c8f87342a9f925",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xc2bde06d1113dde0df653b9bf85141acc26bc322",
@@ -126,6 +133,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67ebfc8a2467ac2dc710cc92",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xDAe6B97Cff544069c9F6190F68606C1DD73ceC97",
@@ -139,6 +147,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67ea5ddb5cdb4d8fb2560c7d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
@@ -192,6 +201,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/072bbabbe8e2cd4cb02a365d08c882c5a14abca85dc8d40a31dbcf525fad8f14.png"
     },
     {
+      "_id": "674ee05837f0b638ef756048",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x96733708c4157218b6e6889eb9e16b1df7873061",
@@ -221,6 +231,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/a5a1539da249a69288209e94299059c074055e0ddf1b5e9c505394434c8f172c.png"
     },
     {
+      "_id": "67e144a9fdb6cd7ddcfc6308",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xE58c8E2569B631e088F54eA47cC90a1A3509C808",
@@ -330,6 +341,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/d894355ddcd7f674d5fbcb196ca937d854420ac8770cd2c7366683c9dec32147.png"
     },
     {
+      "_id": "67d3606e656f8f092ed64e68",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd896aa25da8e3832d68d1c05fee9c851d42f1dc1",
@@ -391,6 +403,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/balls-logo.png"
     },
     {
+      "_id": "6752a56020f15e2e48b085f4",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xb157c8560984eba102334c5eb4f0416952747a6e",
@@ -404,6 +417,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "673def749ee991e29f290acf",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xf24409d155965ca87c45ad5bc084ad8ad3be4f39",
@@ -425,6 +439,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/9929855e3ee895dc442cfa69ccd3490da851cb2cfac1bf178c8ce154ca8fe0d9.png"
     },
     {
+      "_id": "6689a4a65767c9f81ab5433f",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xcb86bf86814ab48791b4435a1fb8958b7103b6b0",
@@ -462,6 +477,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/95b788d81b2140b71f2d97f56c1d3e43e93b6cbf6a1a0802f75996e6f55f7b67.png"
     },
     {
+      "_id": "66cb95d40a70fe9328693c8d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xf71c93ad31f12cbf8fb0dcc79541bf4438bf2db0",
@@ -507,6 +523,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/blfc-token.jpeg"
     },
     {
+      "_id": "67b3f4d90dcaafdd75538009",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xCb49dd81da680ed11d10809B51d5D5D8e36F9B6D",
@@ -576,6 +593,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/bulls-token.png"
     },
     {
+      "_id": "677f7b5c11b83a34488b15af",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x8c40C3f1ADDf1F27FECaF64612D91E46530B6636",
@@ -621,6 +639,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/capy-token.png"
     },
     {
+      "_id": "6784348b11b83a34488bb659",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x7c62dBAf182C48b01443A17d1B88e78E4a58F76a",
@@ -634,6 +653,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "673373b451c357701d69c2cf",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x3caf0136302440ebb68f41d6c57b7bebde9e12ca",
@@ -663,6 +683,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/5e96bf8e2bc8408867b9313b7caaf0aaefb94d95032fb86bcf816b60f6acc554.png"
     },
     {
+      "_id": "6678677c81fc1d44aa80315e",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd4b9dd61eba441f706eb4728518d1efc20af4ee8",
@@ -712,6 +733,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/1aa125083e267d8d4ba455d4d17a4652c49e20be0b06969e00048ac169f6c55c.png"
     },
     {
+      "_id": "66825884fa9995d55317e3b4",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x422fbebbd8332629c1434f1ec71913f65d4b3e24",
@@ -725,6 +747,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67cebed4e4cdc4d660fe99f5",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xbf364eacb031977cab65eafa47b85ddb27a21a80",
@@ -746,6 +769,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/chi-token.webp"
     },
     {
+      "_id": "6746da6f665b51cc289ad8f4",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x8189eb5faed37d13f9b9f8b87927ada483e63ecd",
@@ -799,6 +823,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/c207cbc46cb22f2b27dc2bb31dc291398793d754898838374bd69deddd63667a.png"
     },
     {
+      "_id": "6734942ad57cc3634e3ad3df",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x08d9cb5100c306c2909b63415d7ff05268633b41",
@@ -884,6 +909,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/krayon.png"
     },
     {
+      "_id": "669d872ec328cde85bab6131",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd095bdd744a7a2967651ce7d4f531c0fd1eb35ef",
@@ -905,6 +931,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/croak-logo.png"
     },
     {
+      "_id": "66aa1041a3ae08c5c36fc357",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x45992bfa18eb52830382dfd71c33f459481718cc",
@@ -926,6 +953,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/crob-mob.png"
     },
     {
+      "_id": "67e9710adf6c4c627c04df3a",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd85328e60ac45d473b281029f53260d6ad41fd50",
@@ -947,6 +975,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/crofam-logo.png"
     },
     {
+      "_id": "66d990d0606a46e94e8c5846",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd3f953042b6b194f9530fc2639170f998a5d35ab",
@@ -968,6 +997,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/ac83b397366a91553c8a898c77cccf432370f429a6e9f3b513c7972f9491ba07.png"
     },
     {
+      "_id": "66e52833184b5ad2101de495",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd50f5739a09f36c6f97cc9a4849c5462ba6129a3",
@@ -1029,6 +1059,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/cronon-token.jpeg"
     },
     {
+      "_id": "671206dc35d7f2e881ccd220",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x6932d52658687cbe9daf357cdc5f911fe4f18950",
@@ -1042,6 +1073,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "669d86a4c328cde85bab612b",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x038d87fb2594d8e294b0e92e4b70ac503cd3ca5f",
@@ -1079,6 +1111,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/63d69dcaa42374ca9a6ee5208b45d4c68bc7088fd9476b6cf4be05c7c652e608.png"
     },
     {
+      "_id": "6780061911b83a34488b2cc4",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xa5Ad4d28ce0712bdd8937C059CDD4588b4cC082F",
@@ -1140,6 +1173,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/c838174293e55c04e4f1d26758113596d72b487f6e999fd6293d5fcc832e8b3c.png"
     },
     {
+      "_id": "67e99533df6c4c627c04e06d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x8c6e04d8be335f0d9b65fb5946b6f2af8cac88dd",
@@ -1161,6 +1195,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/dip-logo.jpg"
     },
     {
+      "_id": "67e1bb5c9d2fae66eb40bc0d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd7f099c7a26466702cdbd1cac3447dbebe9ce6cf",
@@ -1310,6 +1345,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/ereek-logo.png"
     },
     {
+      "_id": "67e0bf7efe3a5569e0cf427b",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x707056bCaF0cd3D2ffA148c5D5771DA4Efa174ca",
@@ -1339,6 +1375,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/603c756c713b9c0a714814d267fb0bbfa873c236b2295692d18fc8a2e8ffa93a.png"
     },
     {
+      "_id": "6733886f12164bd627a63d7d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xbf004bd24b13f79ad2861290fe3507599d879845",
@@ -1448,6 +1485,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/flu-token.jpg"
     },
     {
+      "_id": "67727996d65a2a6bf8bdecd8",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x88bf399d2bbbe7ba3c1ebef2ac83ae7571ff10d7",
@@ -1461,6 +1499,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "674997636319bc819025d5d2",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x63ab136554f9187505440a93ceabdd37a1ee159d",
@@ -1506,6 +1545,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/153d97949d2ccf31c726f573736c6109671308f88cdc882c56fee4b5d5a01624.png"
     },
     {
+      "_id": "667884e328a4d8a6d28fbd0e",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xf7b1095d2af6c81c2d88f0ab44c7c2341bffc411",
@@ -1547,6 +1587,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/gdrt-token.png"
     },
     {
+      "_id": "672dbd1946559c2a93da1341",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x93f2e7cb3b0dd9897053f8c3969b57c9cd7bdb1a",
@@ -1600,6 +1641,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/grams-token.png"
     },
     {
+      "_id": "67f03f7d5601a81851b9f15a",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd41C17945b4E59294b9222C5210827e34Cb33fB0",
@@ -1613,6 +1655,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67250f89724d11138b5f1213",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x010e1a91103cd8f150c19007c981bb40b537f366",
@@ -1626,6 +1669,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "6746377005f7a93fe2949740",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x673e5f1ed0130a3a605c8ad627a2eb39767dca4a",
@@ -1647,6 +1691,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/gremlin-token.jpg"
     },
     {
+      "_id": "66fc4bea536c2fd44bf26a33",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x16a19ae876272fb9cc8df78a116c63cc1562270b",
@@ -1668,6 +1713,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/5787857fa0ce7a6fe0e92779455f8c8d26523dc0fdbf9774790bda2d5ebbada9.png"
     },
     {
+      "_id": "675737a428fb7092d6483b88",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x3A8330f0c135D282cFDd748f8e4329213Da74D89",
@@ -1681,6 +1727,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67cebff3e4cdc4d660fe9a88",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x1e1dccc5d99376cec178b7f1b9c846324910c559",
@@ -1694,6 +1741,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67582a07629c9c016a311357",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd2ee4bd0d1be7e84160dc459006f6e0970f8313c",
@@ -1715,6 +1763,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/e655bb4b83144d9d6ebdd059a2fba950864cbf55bd347f2314f4a077c8ee983d.png"
     },
     {
+      "_id": "667befe068dcaf1e26080eb7",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x9826f3d67dfc4c54489627902da70b36a8fe004e",
@@ -1772,6 +1821,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/b6a24510bffb7aec4574686cb73d63eaeffa88c98e5d88c8b20b2aa9a67a96d4.png"
     },
     {
+      "_id": "66d98c4013277bbc01d71583",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x8f857af6ea31447bb502fe0e3f4e4340cdfcfc6c",
@@ -1857,6 +1907,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/kitcoin.jpeg"
     },
     {
+      "_id": "668448d979916288769d9260",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xb008f92da8de7c8cbdce0eb0d1467f4204d12033",
@@ -1886,6 +1937,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/krees-logo.webp"
     },
     {
+      "_id": "679fb6e909579b4a17e8aae6",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x2829955d8Aac64f184E363516FDfbb0394042B90",
@@ -1963,6 +2015,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/leugim-token.png"
     },
     {
+      "_id": "674f874539386cba4afa32f2",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x25b7449e2416e0ef0f244f6cc34eb31c4902d9cb",
@@ -1992,6 +2045,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/1c27e1a364077e8503a9b7ac6764f259073e82a818fbc0e0c236bb1ee5ee816a.png"
     },
     {
+      "_id": "67c55c244dd021da30bc870b",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x9d8c68f185a04314ddc8b8216732455e8dbb7e45",
@@ -2005,6 +2059,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67c74fb07cf52a18549bae95",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x88ed62a68e1eaabdfc8ba96e10a68561ab9579b5",
@@ -2034,6 +2089,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/loaf-token.jpg"
     },
     {
+      "_id": "6733735551c357701d69c2c2",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x73e212477aef26be72b7cb5d2aa0b409eb49d3fa",
@@ -2071,6 +2127,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/41f7da1f0926d0f8b20fa2e2cb291f07538b9823b3633750e5c9085191648a6f.png"
     },
     {
+      "_id": "67e015bbfe3a5569e0cf2344",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xb3551acf805d5f90a1fd7444b6571bdc069f40b2",
@@ -2084,6 +2141,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67e078b4fe3a5569e0cf31f2",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xF810cDfF0207F4225516D53f05E8337c3226981C",
@@ -2153,6 +2211,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/mystery-logo.jpg"
     },
     {
+      "_id": "668793da459403f21eaaf136",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xb8df27c687c6af9afe845a2afad2d01e199f4878",
@@ -2166,6 +2225,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67d32dbed2f440f2401a85ff",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x499170bfd30df1c55a458d492925f7cec7350da6",
@@ -2187,6 +2247,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/e6a5117e10a39dfe515eac30c7622d1ef45d9f8bdcc5df84db6afde3714fc2cb.png"
     },
     {
+      "_id": "668793a95767c9f81ab5433d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
@@ -2216,6 +2277,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/mooney-logo.jpg"
     },
     {
+      "_id": "66967c7fb86333c7565e7f5f",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x303e188d14ad08eb9702b466710686698d10b4e2",
@@ -2245,6 +2307,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/3c7c1ae73e42c271c533e003864527982036f64c3a87d89ad253b50d27b51809.png"
     },
     {
+      "_id": "677669ee16dd856d3f7b5584",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x3ef9f4312930921b003494bc707ab797c4ab32b7",
@@ -2290,6 +2353,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/6e116bd7f4c49913345f28404092e80ffa4da4eee0e3764f436cc81d7c5e77e9.png"
     },
     {
+      "_id": "67499d6356a9030764f49567",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xcfe223d06b86568c24ffd17e8ac748dbac096b3b",
@@ -2319,6 +2383,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/cronobo-logo.jpg"
     },
     {
+      "_id": "67eed5565e70754c2e3b642a",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
@@ -2332,6 +2397,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67e015eafe27ae2bb9e3ff29",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x6d810420fcee6478ce73d4f466a094bbade11da6",
@@ -2385,6 +2451,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/f50b145c2f9b8e6ade1e908a803dcc47568305833c95ccb96b9c98301e68a003.png"
     },
     {
+      "_id": "6684fdd28cd94ee4e15ce407",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x40914bbddea0ec8d22e044cd3131f1b5ed4e866d",
@@ -2406,6 +2473,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/orc-token.png"
     },
     {
+      "_id": "673211089f52add0ee74e66c",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xdadf0d3ee4844d6999a83db849ab27bb81e0f2e7",
@@ -2419,6 +2487,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "6687949f459403f21eaaf13f",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xda6c746e8a14efe6e0a031f5d632bd2b0adc28be",
@@ -2432,6 +2501,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "671bc90069475003eba00f0e",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x061d2f9f1ca6fc368fa34aba1e8767d6234c27b8",
@@ -2445,6 +2515,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67e99a1a387736219b5228a3",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xDf50068a8B84028884C5725613132b2c592baa61",
@@ -2482,6 +2553,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/e3362f1de70ca8933606fd1a6767ae0c6770fac15c79e2caad591532cb519656.png"
     },
     {
+      "_id": "667f184bfa9995d55317b470",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xfdea7ab3ce8cd76d6bf8d430beb9e0cb602ad392",
@@ -2519,6 +2591,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/pappa-logo.png"
     },
     {
+      "_id": "672cdfd9fd32cf5eb58e6da5",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xe1f64f1617f238d7deb1e0951074bf253de07e48",
@@ -2532,13 +2605,14 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "67ed938c0f4c14ac0b016661",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
       "name": "The Pride",
       "symbol": "PRIDE",
       "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRLQ3UCd2YLDZxV2FRlzcs43TMK7w1UEG0kSyat",
+      "logoURI": "https://assets.wolfswap.app/pridelogo-1744025765677.png",
       "twitter": "PRIDEonCRO",
       "twitterImageGenerated": false,
       "twitterBannerUrl": "",
@@ -2577,6 +2651,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/41678a19dd8fea130f575a69327c9075d5ab4575695be6a878fd488f03ac7ee9.png"
     },
     {
+      "_id": "66b0728b8b08cdf703de4129",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x1eedba5bc01af4d0d82745f5d9162102398f1b17",
@@ -2598,6 +2673,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/ac61a496fcb441f52cbc47e2b5374d63e29eb2c60c9cfe58a6478ddaa2ab71e9.png"
     },
     {
+      "_id": "6678682781fc1d44aa803164",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xeb92f572dcda5c214d692919c26c9c0a1cfd4b78",
@@ -2623,6 +2699,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/rco-logo.jpg"
     },
     {
+      "_id": "671b7c64eae65f42e7fdd713",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x73712a912ae5e39634046f4409ef57eac34e96ba",
@@ -2652,6 +2729,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/b766c1ec04c2fe32f2182e83b2bd8e405961af043e222ebdbacd3975cefd0ae3.png"
     },
     {
+      "_id": "674b12ba29a8857de437f910",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x8a53290c1df749b1a5b12086d08de52a48e8a513",
@@ -2665,6 +2743,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "66f19de42b795404cec97fee",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x6ad9893eb92f4916f703f660410a454f6acc3fe1",
@@ -2742,6 +2821,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/8488f147408d4ba3a405b245023f727c3fc68431ce0993d8a52c20134f8fa543.png"
     },
     {
+      "_id": "671b859669475003eba007d4",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xfbb84e105231733b61669362c2f98bfd9b2d09c3",
@@ -2779,6 +2859,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/serious-token.png"
     },
     {
+      "_id": "67ec3dd71ae11db511282c1d",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xcedeC6eCd76af32aCfFFD07EB554927E0573Fb30",
@@ -2800,6 +2881,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/923ebb123dbaf15a36c678709d6aafd2c012a1b7737357d5cb17d89dfc5ad332.png"
     },
     {
+      "_id": "667892fdbe7293e2f32d9ccd",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x101ea426c5ae08bd3e7a9cc87531a29b22dac8fb",
@@ -2833,6 +2915,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/3eb71ab728a3e66735100baee6a4becee0c87e64c8fbd97cee6582e5fcb88a9b.png"
     },
     {
+      "_id": "670fbe640083eb95cdb59186",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xcda42c3d016930c0b204955938cc1c83d68da28e",
@@ -2894,6 +2977,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/sonorc-logo.png"
     },
     {
+      "_id": "678e8d42886c7c434d50e08a",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x7aadd4D0a69a19bCc2caB927329C8a8b99F0D26E",
@@ -2947,6 +3031,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/fa1b2f40b218858f4883ddbd9928b85cf8094d7b4d4f9787219f335e15639893.png"
     },
     {
+      "_id": "67320e069f52add0ee74e5f7",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd4cd999cbeb4fb2ee2e23d092d36221d4e325c68",
@@ -3008,6 +3093,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/990f658b02976c01e48e6ee063a102cbfd53bd0ac0378cb685cf1fa9c97fc219.png"
     },
     {
+      "_id": "6706e690033f83c2b469714f",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x87a899d1fe118789f29aaeaa18df6e484398526a",
@@ -3029,6 +3115,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/swk-token.jpg"
     },
     {
+      "_id": "675469db35230af31fff72d9",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xF3eCE92E3727FFEa852a3698a2D4F44444Ac5D89",
@@ -3042,6 +3129,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "6751772cf7c60559f90597de",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xD7142E06bf2C07285cD335Ae236FE5D3B53853d9",
@@ -3055,6 +3143,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "66a0e977e1991f5984fa0775",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x22811a01b665872cd48dc9303cda2ca3188f1553",
@@ -3116,6 +3205,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/6940b9550178ea8ea4dd85bae862020fd395e71922d12ee7461d2e1208599b52.png"
     },
     {
+      "_id": "678cec440765fd41dcd32938",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xd1d7a0ff6cd3d494038b7fb93dbaef624da6f417",
@@ -3135,6 +3225,20 @@
       "chainId": 25,
       "decimals": 18,
       "logoURI": "https://cdn.moonflow.club/nfts/assets/hitemup-logo.png"
+    },
+    {
+      "_id": "67f52ca68115aafdebfec8b0",
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0x8c9e2bef2962ce302ef578113eebec62920b7e57",
+      "name": "Turtle",
+      "symbol": "Turtle",
+      "decimals": 18,
+      "logoURI": "https://assets.wolfswap.app/1000052779-1744120977150.jpg",
+      "twitter": "TurtleonCro",
+      "twitterImageGenerated": true,
+      "twitterBannerUrl": "https://assets.wolfswap.app/Turtle-twitter-image.png",
+      "postedOnTwitter": false
     },
     {
       "name": "TrueUSD",
@@ -3257,6 +3361,20 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/072be686d2cb209104ecc8b8faf58afda62784782f168a68d88e5f5eb21d489f.png"
     },
     {
+      "_id": "67f3e7af05fe843ecaf5c5ec",
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0xf925e35a634e5554a63a6106d87d311f756fdd92",
+      "name": "Cronos Mafia Club",
+      "symbol": "VIP",
+      "decimals": 18,
+      "logoURI": "https://assets.wolfswap.app/D294AEC6604049-1744037800311.jpg",
+      "twitter": null,
+      "twitterImageGenerated": true,
+      "twitterBannerUrl": "https://assets.wolfswap.app/VIP-twitter-image.png",
+      "postedOnTwitter": false
+    },
+    {
       "name": "Veno",
       "symbol": "VNO",
       "address": "0xdb7d0a1ec37de1de924f8e8adac6ed338d4404e9",
@@ -3329,6 +3447,7 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/e2fee4cfacc302d9f24044eded95f7d00b52a6f963156297c857582e5d0f4caa.png"
     },
     {
+      "_id": "67741982d65a2a6bf8be3851",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x241e0fdba0422fA0Dc56bb201f2E8b10eBab56Ad",
@@ -3342,6 +3461,7 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "6724dbf63a7cf62ef2cdb407",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x282080d3c9e6b34953737800b93fdaab28e6dbcc",
@@ -3355,6 +3475,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "668cd9935a3cfd0d68e6e808",
       "chain": "cronos",
       "chainId": 25,
       "address": "0xec5de11ece7f27d5689fb340851d77193357513d",
@@ -3368,6 +3489,7 @@
       "postedOnTwitter": true
     },
     {
+      "_id": "66f9ab56705b5a16779dcee3",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x4db0551144ae47e37c3697a1e2f00aa5f1005424",
@@ -3397,6 +3519,7 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/wpk-token.jpg"
     },
     {
+      "_id": "66825bae6964f558b1d75ce9",
       "chain": "cronos",
       "chainId": 25,
       "address": "0x1432e170219d934be92a6ad66ba5eedcf114db01",
@@ -3500,6 +3623,15 @@
   ],
   "boostedTokens": [
     {
+      "name": "AurumTrust",
+      "symbol": "AUT",
+      "address": "0xd896aa25da8e3832d68d1c05fee9c851d42f1dc1",
+      "chainId": 25,
+      "decimals": 18,
+      "logoURI": "https://assets.wolfswap.app/aurum-1741906028416.jpg",
+      "boost": 3
+    },
+    {
       "name": "MOON",
       "symbol": "MOON",
       "address": "0x46E2B5423F6ff46A8A35861EC9DAfF26af77AB9A",
@@ -3507,6 +3639,15 @@
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/34862/large/coin_big_white_logo_%281%29.png",
       "boost": 3
+    },
+    {
+      "name": "Nodalis",
+      "symbol": "NOD",
+      "address": "0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
+      "chainId": 25,
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLD9QpJF4U2OteFmyzd1lrCZQkRS6vVjfKosiB",
+      "boost": 2
     }
   ]
 }

@@ -5,19 +5,19 @@
   font-style: normal;
 }
 
-
-/* ----- CSS Variables & Reset ----- */
 :root {
-  --primary-color: #042c3f;
-  --secondary-color: #05a6c9;
-  --bg-color: #f9fafa;
-  --card-bg: #fff;
-  --text-color: #333;
-  --border-color: #ddd;
-  --hover-bg: #f1f1f1;
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
   --transition: 0.3s ease;
   --font: 'Eurostile Regular', sans-serif;
 }
+
 
 /* Algemene reset */
 * {
@@ -32,10 +32,10 @@ html, body {
   font-family: var(--font);
   background-color: var(--bg-color);
   color: var(--text-color);
-  letter-spacing: 0.05em; /* Pas deze waarde aan naar wens */
+  letter-spacing: 0.05em;
 }
 html {
-  font-size: 18px; /* Verhoog de basis lettergrootte */
+  font-size: 18px;
 }
 body {
   font-family: var(--font);
@@ -64,6 +64,7 @@ main {
 .main-content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Dashboard-grid */
@@ -92,11 +93,22 @@ main {
   text-align: center;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  background: #f1f1f1;
+  background: var(--hover-bg);
   padding: 0.3rem;
   border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
 }
+.stats-combined {
+  background-color: #161a25 !important;
+}
+.stat-box {
+  background-color: var(--card-bg) !important;
+  border: 0px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #fff;
+}
+
 
 /* ----- TABELSTYLING ----- */
 table {
@@ -143,12 +155,14 @@ table tr:hover {
   height: 24px;
   margin-right: 0.5rem;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 .votes-icon {
   width: 16px;
   height: 16px;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 /* ----- RESPONSIEVE DASHBOARD GRID ----- */
@@ -183,7 +197,7 @@ table tr:hover {
   background: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px #161a25(0,0,0,0.1);
   min-width: 600px;
 }
 
@@ -237,10 +251,11 @@ table tr:hover {
 
 .crypto-table td img,
 .main-crypto-table td img {
-  height: 24px;
-  max-width: 40px;
+  height: 40px;       /* Grotere hoogte */
+  max-width: 60px;    /* Grotere maximale breedte */
   margin-right: 0.5rem;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 /* ----- PRIJSVERANDERINGEN ----- */
@@ -255,7 +270,7 @@ table tr:hover {
 /* ----- LINK STYLING ----- */
 .coin-link {
   text-decoration: none;
-  color: inherit;
+  color: var(--accent-color);
 }
 
 .coin-link:hover {
@@ -300,7 +315,7 @@ table tr:hover {
 
 /* ----- STATISTIEKEN (Market Cap & Dominance) ----- */
 .stat-box {
-  background-color: #f9f9f9;
+  background-color: var(--bg-color);
   border: 3px solid var(--primary-color);
   border-radius: 5px;
   padding: 15px;
@@ -337,7 +352,7 @@ table tr:hover {
   top: -45px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 0.75rem;
   padding: 5px 10px;
@@ -361,7 +376,7 @@ table tr:hover {
 .custom-dropdown-selected {
   padding: 5px 10px;
   border: 1px solid var(--border-color);
-  background: #fff;
+  background: var(--card-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -375,7 +390,7 @@ table tr:hover {
   left: 0;
   width: 100%;
   border: 1px solid var(--border-color);
-  background: #fff;
+  background: var(--card-bg);
   z-index: 1000;
   display: none;
   max-height: 200px;
@@ -402,7 +417,7 @@ table tr:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #333;
+  background: var(--primary-color);
   color: #fff;
   padding: 10px;
   display: flex;

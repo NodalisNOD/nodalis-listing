@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "y2k-coin",
+    "name": "Y2K Coin",
+    "ticker": "Y2K",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/y2k.jpg",
+    "contract": "0xB4Df7d2A736Cc391146bB0dF4277E8F68247Ac6d",
+    "website": "https://y2kcoin.org/",
+    "explorer": "https://cronoscan.com/address/0xB4Df7d2A736Cc391146bB0dF4277E8F68247Ac6d",
+    "twitter": "https://x.com/y2kc0in?s=21",
+    "telegram": "",
+    "discord": "https://discord.gg/XxtpYNXX4a",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/r/Y2KCoin"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Y2K Coin is a community-driven token built on the Cronos network, designed to revive the nostalgia of the 90s and early 2000s while pushing Web3 culture forward. The ecosystem features POGS reward tokens, NFT utility, a vault staking system on Puush, and upcoming cross-chain integrations. Focused on long-term sustainability, locked liquidity, community vaults, and zero team sell pressure, Y2K is a symbol of digital rebellion and collective belief. The vision is simple: build together, win together.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xB4Df7d2A736Cc391146bB0dF4277E8F68247Ac6d",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xB4Df7d2A736Cc391146bB0dF4277E8F68247Ac6d"
+    }
+  },
+  {
     "id": "balls",
     "name": "BALLS",
     "ticker": "BALLS",
@@ -10,7 +46,7 @@
     "explorer": "https://cronoscan.com/address/0x468a5236DF3EB58F6EE06ED26382A3EDB1c94Aea",
     "twitter": "https://x.com/hodlballs",
     "telegram": "https://t.me/Beannationballs",
-    "discord": "ttps://discord.gg/wvW7pVcfac",
+    "discord": "https://discord.gg/wvW7pVcfac",
     "whitepaper": "",
     "threads": "",
     "extraLinks": [
@@ -438,7 +474,7 @@
     "chain": "Cronos",
     "icon": "./assets/coinIcons/pride.png",
     "contract": "0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
-    "website": "https://thepride.fun",
+    "website": "https://thepride.netlify.app",
     "explorer": "https://cronoscan.com/address/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D",
     "twitter": "https://x.com/PRIDEonCRO",
     "telegram": "",

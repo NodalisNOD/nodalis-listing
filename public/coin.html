@@ -21,18 +21,20 @@
       <h1 id="coin-name">Loading...</h1>
       <p id="coin-description">Loading...</p>
     </div>
-<!-- Nieuwe Trending Vote Knop (alleen de knop, geen extra tabel) -->
-<div class="trending-vote-container">
-  <button id="vote-trending">
-    <img src="./assets/UI/fire.png" alt="Fire Icon" class="button-icon">
-    Vote for Trending
-  </button>
-</div>
+    <!-- Nieuwe Trending Vote Knop (alleen de knop, geen extra tabel) -->
+    <div class="trending-vote-container">
+      <button id="vote-trending">
+        <img src="./assets/UI/fire.png" alt="Fire Icon" class="button-icon">
+        Vote for Trending
+      </button>
+    </div>
 
     <!-- Layout: Info en Graph naast elkaar -->
     <div class="layout-container">
       <!-- Info Kolom -->
       <div class="coin-info">
+        <h2>Token Info</h2>
+        <br>
         <div class="coin-details">
           <p>
             <strong>Contract:</strong>
@@ -71,7 +73,7 @@
 
         <!-- Extra links worden hier weergegeven als ze ingevuld zijn -->
         <div id="coin-extra-links"></div>
-
+<br>
         <div class="dynamic-data">
           <p><strong>Price:</strong> <span id="coin-price">Loading...</span></p>
           <p><strong>Market Cap:</strong> <span id="coin-marketcap">Loading...</span></p>
@@ -97,8 +99,12 @@
       
       <!-- Graph Kolom -->
       <div class="chart-container">
-        <h2>Price Graph (Last 24h)</h2>
-        <canvas id="price-graph"></canvas>
+        <h2>Price Graph</h2>
+        <br>
+        <!-- Wrapper voor de grafiek of de Dexscreener embed -->
+        <div id="price-graph-wrapper">
+          <canvas id="price-graph"></canvas>
+        </div>
       </div>
     </div>
 
@@ -125,23 +131,23 @@
 
   <footer id="footer"></footer>
   
-<!-- Firebase SDK's (moeten vóór je andere scripts worden geladen) -->
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <!-- Firebase SDK's (moeten vóór je andere scripts worden geladen) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
 
-<!-- Firebase-configuratie (init Firebase) -->
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
-    authDomain: "nodalis-network-c1d0f.firebaseapp.com",
-    projectId: "nodalis-network-c1d0f",
-    storageBucket: "nodalis-network-c1d0f.appspot.com",
-    messagingSenderId: "909094640371",
-    appId: "1:909094640371:web:7da1e9d4f5434927667586",
-    measurementId: "G-10HBE0H9R6"
-  };
-  firebase.initializeApp(firebaseConfig);
-</script>
+  <!-- Firebase-configuratie (init Firebase) -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+      authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+      projectId: "nodalis-network-c1d0f",
+      storageBucket: "nodalis-network-c1d0f.appspot.com",
+      messagingSenderId: "909094640371",
+      appId: "1:909094640371:web:7da1e9d4f5434927667586",
+      measurementId: "G-10HBE0H9R6"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./scripts/header.js" type="module"></script>

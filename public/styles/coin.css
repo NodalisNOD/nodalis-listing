@@ -1,10 +1,29 @@
+@font-face {
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
+  --transition: 0.3s ease;
+  --font: 'Eurostile Regular', sans-serif;
+}
 /* 🔹 Algemene Stijlen */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9fafa;
-  color: #333;
+  background-color: #161a25;
+  color: #161a25;
   font-family: var(--font);
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -13,15 +32,16 @@ body {
 
 /* 🔹 Main Container */
 main {
-  max-width: 1400px;
+  max-width: 1600px;  /* Vergroot de container */
   margin: 20px auto;
-  background-color: #fff;
+  background-color: #161a25;  /* Direct ingesteld op #161a25 */
   border: 1px solid #eee;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   overflow: hidden;
 }
+
 
 /* 🔹 Coin Header */
 .coin-header {
@@ -32,8 +52,10 @@ main {
 .coin-icon {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 50%;  /* Zorgt dat de icoontjes rond zijn */
   margin-bottom: 1rem;
+  /* Eventueel extra styling als de coin-icon nog niet helemaal rond lijkt */
+  object-fit: cover;
 }
 
 .coin-header h1 {
@@ -61,34 +83,34 @@ main {
   flex: 0 0 35%;
   max-width: 35%;
   box-sizing: border-box;
+  background-color: #161a25;  /* Direct ingesteld op #161a25 */
+  border: 0px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
 /* 🔹 Chart Column */
 .chart-container {
   flex: 0 0 65%;
   max-width: 65%;
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: #161a25;  /* Direct ingesteld op #161a25 */
+  border: 0px solid var(--border-color);
   border-radius: 8px;
   padding: 1.5rem;
   box-sizing: border-box;
+  margin-right: 1rem; /* Extra ruimte aan de rechterkant */
 }
-/* Grafiek grootte */
-.chart-container canvas {
-  width: 100% !important;
-  height: 520px !important;
-  max-width: 100%;
-  display: block;
-}
+
 
 /* 🔹 Coin Details & Dynamische Data */
 .coin-details,
 .dynamic-data {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: var(--card-bg);
+  border: 0px solid var(--border-color);
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .coin-details p,
@@ -100,7 +122,7 @@ main {
 
 .coin-details strong,
 .dynamic-data strong {
-  color: #444;
+  color: #fff;
 }
 
 .coin-details a,
@@ -118,7 +140,7 @@ main {
 .sentiment-title {
   text-align: center;
   margin: 1.5rem 0;
-  color: #042c3f;
+  color: #007bff;
   font-size: 1.4rem;
   font-weight: 600;
   width: 100%;
@@ -130,14 +152,14 @@ main {
 
 .sentiment-bar {
   position: relative;
-  display: flex; /* Zorgt ervoor dat de kinderen naast elkaar komen */
+  display: flex;
   width: 70%;
   height: 24px;
   margin: 0 auto 1rem;
   border-radius: 12px;
   overflow: hidden;
   background-color: #eee;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 
 .sentiment-bar .positive,
@@ -158,13 +180,14 @@ main {
 .sentiment-bar .negative {
   background-color: #f44336;
 }
+
 .trending-vote-container {
   text-align: right;
   margin-bottom: 15px;
 }
 
 #vote-trending {
-  background-color: #042c3f;
+  background-color: #0d3b66;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -194,8 +217,6 @@ main {
   margin-right: 8px;
 }
 
-
-
 /* 🔹 Stemknoppen */
 .vote-buttons {
   display: flex;
@@ -222,7 +243,7 @@ main {
 .coin-markets h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: #fff;
 }
 
 /* Tabellen stijl */
@@ -236,10 +257,11 @@ main {
   padding: 0.75rem;
   border: 1px solid #ddd;
   text-align: center;
+  color: #fff;
 }
 
 .coin-markets th {
-  background-color: #042c3f;
+  background-color: #161a25;
   color: #fff;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -247,11 +269,11 @@ main {
 
 .coin-markets td {
   font-size: 0.9rem;
-  color: #333;
+  color: #fff;
 }
 
 .coin-markets tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #161a25;
 }
 
 /* 🔹 Verklein Iconen */
@@ -263,18 +285,18 @@ main {
   margin: 0 auto;
 }
 
-
 img.icon {
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-left: 5px;
 }
+
 /* Zorg dat alle links dezelfde stijl hebben */
 .coin-details a,
 .dynamic-data a,
 #coin-extra-links a {
-  color: #007bff;
+  color: #bed6f0;
   text-decoration: none;
 }
 
@@ -283,8 +305,6 @@ img.icon {
 #coin-extra-links a:hover {
   text-decoration: underline;
 }
-
-
 
 /* 🔹 Notificatie Popup */
 .notification-popup {
@@ -310,9 +330,14 @@ img.icon {
 /* 🔹 Responsieve Fixes */
 @media (max-width: 1024px) {
   .layout-container {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch; /* Zorgt dat de kinderen even hoog worden */
+    gap: 2rem;
+    max-width: 100%;
   }
+  
+  
 
   .coin-info,
   .chart-container {
@@ -325,6 +350,9 @@ img.icon {
     overflow-x: auto;
     white-space: nowrap;
   }
+}
+.coin-markets img {
+  border-radius: 50%;
 }
 
 /* 🔹 Mobile-first optimalisatie */
@@ -364,4 +392,25 @@ img.icon {
     display: block;
     overflow-x: auto;
   }
+}
+
+/* Extra aanpassingen voor Info en Dynamic Data */
+.coin-details,
+.dynamic-data {
+  background-color: var(--card-bg);
+  border: 0px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.coin-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Zet de titel in wit */
+}
+
+.coin-header p {
+  font-size: 1rem;
+  color: #fff; /* Zet de ondertitel in wit */
 }

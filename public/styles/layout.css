@@ -5,18 +5,19 @@
   font-style: normal;
 }
 
-
 :root {
-  --primary-color: #042c3f;
-  --secondary-color: #05a6c9;
-  --bg-color: #f9fafa;
-  --card-bg: #fff;
-  --text-color: #333;
-  --border-color: #ddd;
-  --hover-bg: #f1f1f1;
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
   --transition: 0.3s ease;
   --font: 'Eurostile Regular', sans-serif;
 }
+
 
 /* Ensure the body and html elements do not overflow */
 html, body {
@@ -24,12 +25,12 @@ html, body {
   font-family: var(--font);
   background-color: var(--bg-color);
   color: var(--text-color);
-  letter-spacing: 0.05em; /* Pas deze waarde aan naar wens */
+  letter-spacing: 0.05em;
 }
 
 /* Header Styling */
 header {
-  background-color: #042c3f;
+  background-color: var(--primary-color);
   color: white;
   padding: 1rem;
   display: flex;
@@ -40,7 +41,7 @@ header {
 
 .get-listed-button,
 .auth-btn {
-  background-color: #05a6c9;
+  background-color: var(--secondary-color);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -50,32 +51,29 @@ header {
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center; /* Zorgt voor horizontale centrering */
-  height: 40px; /* Zet expliciete hoogte om verschil te voorkomen */
+  justify-content: center;
+  height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Zorg dat de knoppen correct zijn uitgelijnd */
 .get-listed-button:hover,
 .auth-btn:hover {
-  background-color: #3f8899;
+  background-color: #042c3f;
   transform: translateY(-2px);
 }
 
-/* Fix verschil tussen <a> en <button> */
 .auth-btn {
   border: none;
   outline: none;
-  appearance: none; /* Verwijdert browser-specifieke styling */
-  font-family: inherit; /* Zorgt dat button dezelfde lettertype heeft */
+  appearance: none;
+  font-family: inherit;
 }
 
-/* Zorg dat de container beide knoppen goed uitlijnt */
 .auth-container {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Ruimte tussen de knoppen */
+  gap: 1rem;
 }
 
 header .logo-container {
@@ -117,7 +115,7 @@ header .nav-list {
 
 header .nav-list li a {
   display: flex;
-  align-items: center; /* Hierdoor blijven ook de links correct uitgelijnd */
+  align-items: center;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -125,11 +123,11 @@ header .nav-list li a {
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  height: 100%; /* Dit voorkomt dat sommige links hoger lijken */
+  height: 100%;
 }
 
 header .nav-list li a:hover {
-  background-color: #05a6c9;
+  background-color: var(--secondary-color);
   color: #e1f4e8;
 }
 
@@ -142,7 +140,7 @@ header .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #042c3f;
+  background-color: var(--primary-color);
   padding: 0.5rem 0;
   display: none;
   list-style: none;
@@ -191,7 +189,7 @@ header .dropdown-icon {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: #042c3f;
+    background: var(--primary-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -223,8 +221,8 @@ header .dropdown-icon {
 
 /* Info Header Styling */
 .info-header {
-  background-color: #f1f5f8;
-  border-bottom: 2px solid #d3d3d3;
+  background-color: #1c2533;
+  border-bottom: 2px solid #444;
   display: flex;
   justify-content: space-around;
   padding: 0.8rem 1.5rem;
@@ -241,7 +239,7 @@ header .dropdown-icon {
 }
 
 .info-header .info-item strong {
-  color: #000;
+  color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -249,8 +247,8 @@ header .dropdown-icon {
 @media (max-width: 768px) {
   .info-header {
     flex-direction: column;
-    align-items: flex-start; /* Zorgt ervoor dat items links uitgelijnd worden */
-    text-align: left; /* Tekst links uitgelijnd */
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -263,10 +261,9 @@ footer {
   font-size: 0.9rem;
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
   width: 100%;
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-sizing: border-box;
 }
 
-/* Footer Container */
 .footer-container {
   width: 100%;
   margin: 0;
@@ -275,22 +272,21 @@ footer {
   justify-content: space-between;
   gap: 2rem;
   padding: 0 1rem;
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-sizing: border-box;
 }
 
-/* Sections (Text with logo, categories) */
 .footer-section {
   flex: 1;
   min-width: 220px;
-  word-wrap: break-word; /* Ensure text does not overflow */
-  overflow: hidden; /* Hide any overflowing content */
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .footer-section h3 {
   color: #ffffff;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #05a6c9;
+  border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 0.5rem;
 }
 
@@ -312,11 +308,10 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #05a6c9;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
-/* Text and Logo */
 .footer-logo-text {
   display: flex;
   align-items: center;
@@ -335,7 +330,6 @@ footer {
   color: #dcdcdc;
 }
 
-/* Disclaimer */
 .footer-disclaimer {
   width: 100%;
   max-width: 100%;
@@ -346,22 +340,21 @@ footer {
   color: #a9a9a9;
   line-height: 1.5;
   text-align: center;
-  word-wrap: break-word; /* Ensure text does not overflow */
-  overflow: hidden; /* Hide any overflowing content */
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .footer-disclaimer strong {
-  color: #ff6f61;
+  color: var(--accent-color);
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.85rem;
   color: #a9a9a9;
-  word-wrap: break-word; /* Ensure text does not overflow */
-  overflow: hidden; /* Hide any overflowing content */
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 /* Cronos Logo Styling */
@@ -416,7 +409,7 @@ footer {
 }
 
 .cookie-banner a {
-  color: #007bff;
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -434,9 +427,8 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-/* Accept Button */
 .cookie-banner button#acceptCookies {
-  background-color: #007bff;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
@@ -444,7 +436,6 @@ footer {
   background-color: #0056b3;
 }
 
-/* Decline Button */
 .cookie-banner button#declineCookies {
   background-color: #e0e0e0;
   color: #333;

@@ -1,114 +1,167 @@
+@font-face {
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/EuroStyle Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* Algemene layout zoals coin.css */
+:root {
+  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;       /* Accent blijft wit */
+  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;         /* Lichtere tekst */
+  --border-color: #888;          /* Lichtere borders */
+  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
+  --transition: 0.3s ease;
+  --font: 'Eurostile Regular', sans-serif;
+}
+
+/* Algemene layout */
+body {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Main container voor de pagina */
+main {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* Advertise container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  form {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input, textarea, button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  button {
-    background-color: #042c3f;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #05a6c9;
-  }
-  
-  .btn-submit {
-    text-align: center;
-  }
-  .listing-choice {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-  }
-  
-  .listing-option {
-    border: 2px solid #042c3f;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    background: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 150px;
-  }
-  .listing-option span {
-    display: block;
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333; /* Donkere kleur voor betere leesbaarheid */
-  }
-  
-  
-  .listing-option img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-  }
-  
-  .listing-option span {
-    display: block;
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .listing-option:hover {
-    background: #f0f0f0;
-    border-color: #05a6c9;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  form {
-    margin-top: 20px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--accent-color);
+}
+
+/* Form styling */
+form {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--accent-color);
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--accent-color);
+}
+
+input, textarea, button, select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--secondary-color);
+  background-color: var(--bg-color);
+  outline: none;
+}
+
+/* Button styling */
+button {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+.btn-submit {
+  text-align: center;
+}
+
+/* Listing choices */
+.listing-choice {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.listing-option {
+  border: 2px solid var(--bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+.listing-option span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.listing-option img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%; /* Zorgt dat de iconen rond zijn */
+}
+
+.listing-option:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--secondary-color);
+}
+
+/* Verberg elementen indien nodig */
+.hidden {
+  display: none;
+}
+
+/* Extra: Main container styling voor advertise page */
+main {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+}

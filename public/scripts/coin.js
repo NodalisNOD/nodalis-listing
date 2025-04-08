@@ -266,20 +266,18 @@ async function fetchAndMergeDynamicData(coinStatic) {
       marketData = coinCachePairs;
       renderMarkets(marketData);
       
-      // Grafiek: als er statische grafiekdata aanwezig is, gebruik die; anders fallback op dynamicData
-      if (coinStatic.graphData) {
-        renderGraphFromCache(coinStatic.graphData);
-      } else if (coinStatic.dynamicData && coinStatic.dynamicData.graphApi) {
-        renderGraph(coinStatic.dynamicData.graphApi);
+      // In plaats van de oude grafiek-render functies, embed nu de Dexscreener chart.
+      if (coinStatic.contract) {
+        embedDexscreenerChart(coinStatic.contract);
       }
     } else {
-      // Geen cache gevonden: fallback op dynamicData uit coin-data.json
+      // Geen cache gevonden: fallback
       document.getElementById("coin-price").textContent = "Loading...";
       document.getElementById("coin-marketcap").textContent = "N/A";
       document.getElementById("coin-volume").textContent = "N/A";
       document.getElementById("coin-liquidity").textContent = "N/A";
-      if (coinStatic.dynamicData && coinStatic.dynamicData.graphApi) {
-        renderGraph(coinStatic.dynamicData.graphApi);
+      if (coinStatic.contract) {
+        embedDexscreenerChart(coinStatic.contract);
       }
     }
   } catch (error) {
@@ -287,6 +285,34 @@ async function fetchAndMergeDynamicData(coinStatic) {
   }
 }
 
+// Functie om de Dexscreener embed te tonen
+function embedDexscreenerChart(contractAddress) {
+  const wrapper = document.getElementById("price-graph-wrapper");
+  if (!wrapper) return;
+
+  // Maak de wrapper leeg
+  wrapper.innerHTML = "";
+
+  // Voeg de CSS-styling toe
+  const style = document.createElement("style");
+  style.textContent = `
+    #dexscreener-embed { position: relative; width: 100%; padding-bottom: 125%; }
+    @media (min-width: 1400px) { #dexscreener-embed { padding-bottom: 65%; } }
+    #dexscreener-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: 0; }
+  `;
+  document.head.appendChild(style);
+
+  // Embed iframe met dynamische URL (contractAddress)
+  const div = document.createElement("div");
+  div.id = "dexscreener-embed";
+  div.innerHTML = `
+    <iframe src="https://dexscreener.com/cronos/${contractAddress}?embed=1&loadChartSettings=0&trades=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=1">
+    </iframe>
+  `;
+
+  
+  wrapper.appendChild(div);
+}
 
 // 🔥 Toon een melding op het scherm
 function showNotification(message, event = null) {
@@ -321,15 +347,6 @@ async function submitTrendingVote(event) {
     showNotification("❌ Failed to submit trending vote.", event);
   }
 }
-
-// Koppel de trending stemknop indien aanwezig
-document.addEventListener("DOMContentLoaded", () => {
-  const trendingBtn = document.getElementById("vote-trending");
-  if (trendingBtn) {
-    trendingBtn.addEventListener("click", submitTrendingVote);
-  }
-});
-
 
 // Grafiek weergeven vanuit de cache (indien grafiekdata direct beschikbaar is)
 function renderGraphFromCache(graphData) {
@@ -509,7 +526,6 @@ function canVoteCoin() {
   );
 }
 
-
 // Verstuur een stem (alleen als gebruiker is ingelogd)
 async function submitVote(type, event) {
   if (!currentUser) {
@@ -565,8 +581,6 @@ async function fetchVotes() {
     updateSentimentBar({ positive: 0, negative: 0 });
   }
 }
-
-
 
 // Update de sentimentbalk en het totaal aantal stemmen
 function updateSentimentBar(votes) {
