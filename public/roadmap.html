@@ -78,11 +78,25 @@
             </li>
             <li>
               Portfolio function
-              <span class="status-label planned">Planned</span>
+// In header.js
+function generateHeader() {
+    const header = document.getElementById('header');
+    header.innerHTML = `
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <!-- Meer links -->
+            </ul>
+        </nav>
+    `;
+}
+              <span class="status-label in-development">In development</span>
             </li>
             <li>
               Badges
-              <span class="status-label planned">Planned</span>
+              <span class="status-label in-development">In development</span>
             </li>
           </ul>
         </div>

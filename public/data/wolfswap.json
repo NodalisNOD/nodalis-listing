@@ -953,6 +953,20 @@
       "logoURI": "https://cdn.moonflow.club/nfts/assets/crob-mob.png"
     },
     {
+      "_id": "67f6e6c51a9a5e3dc2330e7a",
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0xECf3361441512c1e9F6A6e8734D86614D8e795BC",
+      "name": "Cards of Cronos",
+      "symbol": "CROCARD",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLBlNnXZ19Vty0YRNI2sq6vEjpHGiomOebDrJW",
+      "twitter": "cardscronos",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
       "_id": "67e9710adf6c4c627c04df3a",
       "chain": "cronos",
       "chainId": 25,
@@ -3630,24 +3644,6 @@
       "decimals": 18,
       "logoURI": "https://assets.wolfswap.app/aurum-1741906028416.jpg",
       "boost": 3
-    },
-    {
-      "name": "MOON",
-      "symbol": "MOON",
-      "address": "0x46E2B5423F6ff46A8A35861EC9DAfF26af77AB9A",
-      "chainId": 25,
-      "decimals": 18,
-      "logoURI": "https://assets.coingecko.com/coins/images/34862/large/coin_big_white_logo_%281%29.png",
-      "boost": 3
-    },
-    {
-      "name": "Nodalis",
-      "symbol": "NOD",
-      "address": "0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
-      "chainId": 25,
-      "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRLD9QpJF4U2OteFmyzd1lrCZQkRS6vVjfKosiB",
-      "boost": 2
     }
   ]
 }
