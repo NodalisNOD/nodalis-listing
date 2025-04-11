@@ -20,8 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
           a.href = "https://www.kitcoin.io";
         } else if (file.toLowerCase().includes('david')) {
           a.href = "https://x.com/lildavid_cro?s=21";
-        } else if (file.toLowerCase().includes('nodalis')) {
-          a.href = "NodaLink"; // Nieuwe optie voor "nodalis"
+        } else if (file.toLowerCase().includes('kwl')) {
+          // "nodalink" vervangen door "kwl" met de nieuwe link:
+          a.href = "https://x.com/KrisWifLion?t=ZQEtt9_IX6fdA_zn-KCoWQ&s=09";
         } else {
           a.href = "#"; // fallback link
         }

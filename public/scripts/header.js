@@ -58,6 +58,12 @@ header.innerHTML = `
                 Tokenomics
               </a>
             </li>
+            <li>
+              <a href="https://obsidian.finance/crommunities/GSwHZ9Cd15joMMCH0LAx/pools" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/UI/earn.png" alt="Earn" class="dropdown-icon">
+                Earn
+              </a>
+            </li>
           </ul>
         </li>
         <!-- Dropdown "Crypto.com" menu (nu als laatst in de lijst) -->
