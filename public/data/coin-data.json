@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "kris-wif-lion",
+    "name": "Kris Wif Lion",
+    "ticker": "KWL",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/kwl.jpg",
+    "contract": "0x957e685ea094DeE0784584375BD9A0B7CED40e9c",
+    "website": "https://www.puush.fun/coin/0x957e685ea094DeE0784584375BD9A0B7CED40e9c",
+    "explorer": "https://cronoscan.com/token/0x957e685ea094DeE0784584375BD9A0B7CED40e9c",
+    "twitter": "https://x.com/KrisWifLion?t=H_RQyy7ehpIfTgUKc5UmUQ&s=09",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "This is a totally decentralized meme token. Representative of the excellent relationship between Kris Marszalek and the Loaded Lions Community.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x957e685ea094DeE0784584375BD9A0B7CED40e9c",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x957e685ea094DeE0784584375BD9A0B7CED40e9c"
+    }
+  },
+  {
     "id": "cro-cards",
     "name": "Cards of Cronos",
     "ticker": "CROCARD",
