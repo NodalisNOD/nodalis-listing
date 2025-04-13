@@ -2407,6 +2407,20 @@
       "postedOnTwitter": false
     },
     {
+      "_id": "67f99c01eae0321ecc24ff8b",
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0x335Ac13e6399d55F3f26698884D2AD9E74cB2201",
+      "name": "LIONESS",
+      "symbol": "LIONESS",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRL3sClPWlBbZcMg9jdpWknIaO5QTKAoXvVy8Dl",
+      "twitter": "LoadedLioness_X",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
+    },
+    {
       "name": "LimeWire",
       "symbol": "LMWR",
       "address": "0x0ddb6540afd29b14f7e02d1292bd675b5ceea896",
@@ -3347,14 +3361,18 @@
       "top": false
     },
     {
-      "name": "Skill Token",
-      "symbol": "SKILL",
-      "address": "0x9a9635d9ff1be7fc75e8b175c9fbcee4b0c97317",
+      "_id": "67fa5013eae0321ecc25224f",
+      "chain": "cronos",
       "chainId": 25,
+      "address": "0x3356bDb870678D48346Ef69B2A972Ad81565Fd96",
+      "name": "More skills,less bills",
+      "symbol": "SKILL",
       "decimals": 18,
-      "logoURI": "https://vvs-admin-ui.vvs.finance/28deb0a11ab53c3fcb9ab929392c72762d067166af58956c9b2ec2b5e49365c0.png",
-      "customWhitelisted": true,
-      "top": false
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLID6R1dT7suLHghNQ9ikUGKDZV4eatAYcrMd0",
+      "twitter": "",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
     },
     {
       "name": "DarkCrypto Share",
@@ -3901,7 +3919,7 @@
       "symbol": "VIP",
       "decimals": 18,
       "logoURI": "https://assets.wolfswap.app/D294AEC6604049-1744037800311.jpg",
-      "twitter": null,
+      "twitter": "",
       "twitterImageGenerated": true,
       "twitterBannerUrl": "https://assets.wolfswap.app/VIP-twitter-image.png",
       "postedOnTwitter": false
@@ -3985,6 +4003,20 @@
       "logoURI": "https://vvs-admin-ui.vvs.finance/dd730a45a81c51546005faf949b53577ca29ccb46897d5a14fe6546c0474ea9b.png",
       "customWhitelisted": true,
       "top": false
+    },
+    {
+      "_id": "67fb1db5eac05f9283822d95",
+      "chain": "cronos",
+      "chainId": 25,
+      "address": "0xe68892c424E4f0EDE343F6F05c873F7b7a528048",
+      "name": "Web3Tools ",
+      "symbol": "web3tools",
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRLPuHaKemrqfAvGXNwBoPJmRYjkhMsEUeQy6C1",
+      "twitter": "https://twitter.com/Web3Tools_fun",
+      "twitterImageGenerated": false,
+      "twitterBannerUrl": "",
+      "postedOnTwitter": false
     },
     {
       "name": "WEMIX",
@@ -4206,6 +4238,15 @@
       "decimals": 18,
       "logoURI": "https://assets.wolfswap.app/aurum-1741906028416.jpg",
       "boost": 3
+    },
+    {
+      "name": "LIONESS",
+      "symbol": "LIONESS",
+      "address": "0x335Ac13e6399d55F3f26698884D2AD9E74cB2201",
+      "chainId": 25,
+      "decimals": 18,
+      "logoURI": "https://utfs.io/f/cdx60qAQskRL3sClPWlBbZcMg9jdpWknIaO5QTKAoXvVy8Dl",
+      "boost": 2
     },
     {
       "name": "MOON",

@@ -1,5 +1,77 @@
 [ 
   {
+    "id": "more-skills-less-bills",
+    "name": "More skills less bills",
+    "ticker": "Skill",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/skill.jpg",
+    "contract": "0x3356bDb870678D48346Ef69B2A972Ad81565Fd96",
+    "website": "https://x.com/skill_bills?t=UEmc61yoeEXddFPtTU4rcw&s=33",
+    "explorer": "https://cronoscan.com/token/0x3356bDb870678D48346Ef69B2A972Ad81565Fd96",
+    "twitter": "https://x.com/skill_bills?t=UEmc61yoeEXddFPtTU4rcw&s=33",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "https://web3tools.fun/token-allocation",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "More skills less bills simple as that.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x3356bDb870678D48346Ef69B2A972Ad81565Fd96",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x3356bDb870678D48346Ef69B2A972Ad81565Fd96"
+    }
+  },
+  {
+    "id": "web3tools",
+    "name": "Web3tools",
+    "ticker": "Web3tools",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/web3tools.jpg",
+    "contract": "0xe68892c424E4f0EDE343F6F05c873F7b7a528048",
+    "website": "https://web3tools.fun",
+    "explorer": "https://cronoscan.com/token/0xe68892c424E4f0EDE343F6F05c873F7b7a528048",
+    "twitter": "https://twitter.com/Web3Tools_fun",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "https://web3tools.fun/token-allocation",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Web3tools building projects and tools for web3 specially crofam",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe68892c424E4f0EDE343F6F05c873F7b7a528048",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe68892c424E4f0EDE343F6F05c873F7b7a528048"
+    }
+  },
+  {
     "id": "kris-wif-lion",
     "name": "Kris Wif Lion",
     "ticker": "KWL",
@@ -1912,7 +1984,7 @@
     "name": "Lionel The Lion",
     "ticker": "LION",
     "chain": "Cronos",
-    "icon": "./assets/coinIcons/lionel.jpg",
+    "icon": "./assets/coinIcons/lionel.gif",
     "contract": "0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
     "website": "https://cronoslionel.com/",
     "explorer": "https://cronoscan.com/address/0x88Ed62A68e1eaABdfc8bA96e10a68561Ab9579b5",
