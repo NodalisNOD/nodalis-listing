@@ -8,6 +8,41 @@
   <link rel="stylesheet" href="./styles/layout.css">
   <link rel="stylesheet" href="./styles/coin.css">
   <link rel="icon" type="image/png" href="./assets/logo.png">
+  <style>
+    /* Stijlen voor de inklapbare NodSecurity sectie */
+    .nodsecurity-section {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .nodsecurity-header {
+      background: #0d3b66;
+      cursor: pointer;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .nodsecurity-content {
+      padding: 10px;
+      display: none;
+    }
+    .audit-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+
+  </style>
 </head>
 <body>
   <!-- Notification popup -->
@@ -21,7 +56,7 @@
       <h1 id="coin-name">Loading...</h1>
       <p id="coin-description">Loading...</p>
     </div>
-    <!-- Nieuwe Trending Vote Knop (alleen de knop, geen extra tabel) -->
+    <!-- Nieuwe Trending Vote Knop -->
     <div class="trending-vote-container">
       <button id="vote-trending">
         <img src="./assets/UI/fire.png" alt="Fire Icon" class="button-icon">
@@ -71,7 +106,7 @@
           </p>
         </div>
 
-        <!-- Extra links worden hier weergegeven als ze ingevuld zijn -->
+        <!-- Extra links indien aanwezig -->
         <div id="coin-extra-links"></div>
 <br>
         <div class="dynamic-data">
@@ -81,7 +116,7 @@
           <p><strong>Liquidity:</strong> <span id="coin-liquidity">Loading...</span></p>
         </div>
 
-        <!-- Sentiment Section -->
+        <!-- Community Sentiment Sectie -->
         <h4 class="sentiment-title">Community Sentiment</h4>
         <div class="sentiment-container">
           <div class="sentiment-bar">
@@ -93,6 +128,20 @@
           <div class="vote-buttons">
             <img id="vote-positive" src="./assets/UI/like.png" alt="Like" class="vote-icon">
             <img id="vote-negative" src="./assets/UI/dislike.png" alt="Dislike" class="vote-icon">
+          </div>
+        </div>
+        
+        <!-- Inklapbare NodSecurity Sectie -->
+        <div class="nodsecurity-section">
+          <h4 class="nodsecurity-header">
+            <img src="./assets/UI/audit.png" alt="Audit Icon" class="audit-icon">
+            NodSecurity
+            <img src="./assets/UI/arrow.png" alt="Toggle Arrow" class="toggle-icon">
+          </h4>
+          
+          
+          <div class="nodsecurity-content">
+            <p id="nodsecurity-info">Loading token security data...</p>
           </div>
         </div>
       </div>
