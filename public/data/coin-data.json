@@ -2831,10 +2831,10 @@
       "discord": "https://discord.com/invite/V2957zMsmg",
     "description": "Gateway to Cronos.",
     "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2d03bece6747adc00e1a131bba1469c15fd11e03",
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x2D03bECE6747ADC00E1a131BBA1469C15fD11e03",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xbf62c67ea509e86f07c8c69d0286c0636c50270b%2C0x814920d1b8007207db6cb5a2dd92bf0b082bdba1%2C0xfc07bf38408e4326f99dec96ba94f1e28af68842%2C0x9d96706f31f520cb2404a3d2ad1a932b61a85acf%2C0x861a978dc3c8183ce245a888f32e4eedd595aaa0%2C0xa922530960a1f94828a7e132ec1ba95717ed1eab%2C0x6ae624714f221964aff3ab8d8276a7ec142a759f%2C0xb90d6e09075168281d47da6f0665ff4fd8f0ff6f%2C0x1673afb35c5ffedfa5a55460a6ae16cc4173fcaa%2C0x910c37d26a9eb4aadff925b47ffde6308e03fa37",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xbf62c67ea509e86f07c8c69d0286c0636c50270b/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x2d03bece6747adc00e1a131bba1469c15fd11e03"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xbf62c67eA509E86F07c8c69d0286C0636C50270b"
      
     }
   },
