@@ -1,5 +1,41 @@
 [ 
   {
+    "id": "baby-ryoshi-yoshi",
+    "name": "Baby Ryoshi Yoshi",
+    "ticker": "Yoshi ",
+    "chain": "Cronos",
+    "icon": "./assets/coinIcons/yoshi.jpg",
+    "contract": "0x4594104d43cEC6F5c8C6631294d5582D0d67EdE7",
+    "website": "https://app.ebisusbay.com/collection/cronos/baby-ryoshi-yoshi?chain=cronos",
+    "explorer": "https://cronoscan.com/token/0x4594104d43cEC6F5c8C6631294d5582D0d67EdE7",
+    "twitter": "https://x.com/RyoshiBaby?s=09",
+    "telegram": "",
+    "discord": "https://discord.gg/TJp8TwM6",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Baby Ryoshi is taking over the meme scene . Come grow with us as baby ryoshi roams the Cronos blockchain slicing one zero at a time. Join us and have tons of fun in the crypto space.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x4594104d43cEC6F5c8C6631294d5582D0d67EdE7",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x4594104d43cEC6F5c8C6631294d5582D0d67EdE7"
+    }
+  },
+  {
     "id": "more-skills-less-bills",
     "name": "More skills less bills",
     "ticker": "Skill",

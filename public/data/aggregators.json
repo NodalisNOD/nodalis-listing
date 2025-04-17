@@ -7,75 +7,74 @@
   "allChains": [
     "Solana",
     "Ethereum",
+    "Arbitrum",
     "Sui",
     "Base",
-    "Arbitrum",
     "Avalanche",
-    "Sonic",
-    "Aptos",
     "BSC",
+    "Sonic",
     "Berachain",
     "Polygon",
+    "Aptos",
     "OP Mainnet",
-    "Taiko",
     "Gnosis",
-    "Bitcoin",
-    "Mantle",
-    "Linea",
+    "Taiko",
     "ZKsync Era",
+    "Mantle",
     "Tron",
-    "Movement",
+    "Linea",
+    "Bitcoin",
     "Cardano",
+    "CORE",
     "Starknet",
+    "Fraxtal",
     "Scroll",
     "TON",
-    "CORE",
-    "Fraxtal",
     "Blast",
-    "Fuel Ignition",
-    "Kaia",
-    "Soneium",
-    "Abstract",
-    "Fantom",
-    "Cronos",
     "Injective",
-    "Hedera",
-    "Kava",
-    "Ink",
     "Radix",
-    "Mode",
-    "Sei",
-    "Morph",
+    "Fuel Ignition",
+    "Soneium",
+    "Kaia",
+    "Ink",
+    "Abstract",
     "Hemi",
-    "Cronos zkEVM",
+    "Cronos",
+    "Fantom",
+    "Sei",
+    "Mode",
     "Manta",
-    "Celo",
-    "Terra2",
-    "Algorand",
-    "Boba",
-    "Litecoin",
-    "XRPL",
-    "ThunderCore",
-    "Polygon zkEVM",
-    "Canto",
-    "Arbitrum Nova",
     "Zircuit",
-    "Metis",
+    "Litecoin",
+    "Terra2",
     "PulseChain",
-    "Archway",
-    "Moonriver",
-    "ZKsync Lite",
-    "ApeChain",
-    "Gravity",
+    "Morph",
+    "ThunderCore",
+    "Boba",
+    "Kava",
     "Aurora",
-    "ZetaChain",
+    "Archway",
+    "Celo",
+    "XRPL",
+    "Polygon zkEVM",
+    "Algorand",
+    "Metis",
+    "Arbitrum Nova",
+    "Hedera",
+    "ZKsync Lite",
+    "Canto",
     "opBNB",
-    "Migaloo",
-    "Flare",
+    "Cronos zkEVM",
+    "ICP",
+    "ZetaChain",
+    "Gravity",
+    "ApeChain",
+    "Moonriver",
     "X Layer",
-    "Fuse",
+    "Zero Network",
     "Boba_Bnb",
     "Bittorrent",
+    "Fuse",
     "Moonbeam",
     "zkLink Nova",
     "Telos",
@@ -89,15 +88,17 @@
     "Bahamut",
     "Velas",
     "Syscoin",
+    "Flare",
     "Bitcoincash",
     "Dogechain",
     "CosmosHub",
-    "UNIT0",
+    "Unit Zero",
     "WEMIX3.0",
     "Chihuahua",
     "Dymension",
     "Juno",
     "Kujira",
+    "Migaloo",
     "Neutron",
     "Oraichain",
     "Osmosis",
@@ -107,259 +108,258 @@
     "Harmony",
     "Wanchain",
     "Conflux",
-    "Zero Network",
     "Stacks",
     "Archway-1",
     "BOB",
     "Celestia",
     "World Chain"
   ],
-  "total24h": 2773881693,
-  "total48hto24h": 2788482996,
-  "total7d": 23725542931,
-  "total14dto7d": 18771557557,
-  "total60dto30d": 147021303959,
-  "total30d": 84027321225,
-  "total1y": 1175064084547,
-  "change_1d": -0.52,
-  "change_7d": 2.95,
-  "change_1m": -21.32,
-  "change_7dover7d": 26.39,
-  "change_30dover30d": -42.85,
-  "total7DaysAgo": 2694318120,
-  "total30DaysAgo": 3525683027,
+  "total24h": 2900047379,
+  "total48hto24h": 2826780371,
+  "total7d": 20598336961,
+  "total14dto7d": 23454230173,
+  "total60dto30d": 132592825951,
+  "total30d": 85345418840,
+  "total1y": 1175397432615,
+  "change_1d": 2.59,
+  "change_7d": -21.6,
+  "change_1m": 28.44,
+  "change_7dover7d": -12.18,
+  "change_30dover30d": -35.63,
+  "total7DaysAgo": 3698845831,
+  "total30DaysAgo": 2257976156,
   "protocols": [
     {
-      "total24h": 10758395,
-      "total48hto24h": 7902893,
-      "total7d": 71329374,
-      "total14dto7d": 57114485,
-      "total60dto30d": 187260229,
-      "total30d": 197127813,
-      "total1y": 2820351409,
-      "totalAllTime": 2739045253,
-      "average1y": 10523699.287313433,
-      "change_1d": 36.13,
-      "change_7d": 157.23,
-      "change_1m": 178.98,
-      "change_7dover7d": 24.89,
-      "change_30dover30d": 5.27,
+      "total24h": 5070263,
+      "total48hto24h": 5070263,
+      "total7d": 49479579,
+      "total14dto7d": 66761806,
+      "total60dto30d": 155330031,
+      "total30d": 205184358,
+      "total1y": 2844124309,
+      "totalAllTime": 2746989495,
+      "average1y": 10456339.37132353,
+      "change_1d": 0,
+      "change_7d": -66,
+      "change_1m": -6.99,
+      "change_7dover7d": -25.89,
+      "change_30dover30d": 32.1,
       "breakdown24h": {
         "arbitrum": {
-          "agg-dex": 322473
+          "agg-dex": 374602
         },
         "arbitrum_nova": {
-          "agg-dex": 704
+          "agg-dex": 753
         },
         "avax": {
-          "agg-dex": 21543
+          "agg-dex": 10924
         },
         "base": {
-          "agg-dex": 4046641
+          "agg-dex": 973327
         },
         "blast": {
-          "agg-dex": 49910
+          "agg-dex": 1220
         },
         "boba": {
-          "agg-dex": 2225
+          "agg-dex": 2151
         },
         "boba_bnb": {
           "agg-dex": 0
         },
         "bsc": {
-          "agg-dex": 1384829
+          "agg-dex": 347254
         },
         "bittorrent": {
           "agg-dex": 0
         },
         "celo": {
-          "agg-dex": 2492
+          "agg-dex": 997
         },
         "core": {
-          "agg-dex": 147123
+          "agg-dex": 176587
         },
         "ethereum": {
-          "agg-dex": 4248758
+          "agg-dex": 2035082
         },
         "fantom": {
-          "agg-dex": 25
+          "agg-dex": 59
         },
         "fuse": {
           "agg-dex": 0
         },
         "xdai": {
-          "agg-dex": 1673
+          "agg-dex": 1587
         },
         "kava": {
-          "agg-dex": 30437
+          "agg-dex": 2033
         },
         "linea": {
-          "agg-dex": 14529
+          "agg-dex": 10647
         },
         "metis": {
-          "agg-dex": 493
+          "agg-dex": 585
         },
         "moonbeam": {
           "agg-dex": 0
         },
         "moonriver": {
-          "agg-dex": 149
+          "agg-dex": 40
         },
         "optimism": {
-          "agg-dex": 106076
+          "agg-dex": 119397
         },
         "polygon": {
-          "agg-dex": 212231
+          "agg-dex": 972589
         },
         "polygon_zkevm": {
-          "agg-dex": 180
+          "agg-dex": 74
         },
         "scroll": {
-          "agg-dex": 975
+          "agg-dex": 789
         },
         "thundercore": {
-          "agg-dex": 1041
+          "agg-dex": 2294
         },
         "zeta": {
-          "agg-dex": 17
+          "agg-dex": 55
         },
         "mantle": {
-          "agg-dex": 9814
+          "agg-dex": 10351
         },
         "era": {
-          "agg-dex": 2250
+          "agg-dex": 2058
         },
         "manta": {
-          "agg-dex": 369
+          "agg-dex": 1041
         },
         "mode": {
-          "agg-dex": 198
+          "agg-dex": 539
         },
         "taiko": {
-          "agg-dex": 6109
+          "agg-dex": 3232
         },
         "zklink": {
           "agg-dex": 0
         },
         "apechain": {
-          "agg-dex": 28
+          "agg-dex": 41
         },
         "sonic": {
-          "agg-dex": 7606
+          "agg-dex": 6355
         },
         "hemi": {
-          "agg-dex": 10132
+          "agg-dex": 13600
         }
       },
       "breakdown30d": {
         "arbitrum": {
-          "SushiSwap": 15449632
+          "SushiSwap": 15496273
         },
         "arbitrum_nova": {
-          "SushiSwap": 27132
+          "SushiSwap": 25080
         },
         "avax": {
-          "SushiSwap": 839999
+          "SushiSwap": 482867
         },
         "base": {
-          "SushiSwap": 30420018
+          "SushiSwap": 31259699
         },
         "blast": {
-          "SushiSwap": 305158
+          "SushiSwap": 323673
         },
         "boba": {
-          "SushiSwap": 141590
+          "SushiSwap": 148600
         },
         "boba_bnb": {
           "SushiSwap": 0
         },
         "bsc": {
-          "SushiSwap": 30916346
+          "SushiSwap": 29685259
         },
         "bittorrent": {
           "SushiSwap": 0
         },
         "celo": {
-          "SushiSwap": 195754
+          "SushiSwap": 203357
         },
         "core": {
-          "SushiSwap": 10693791
+          "SushiSwap": 11399111
         },
         "ethereum": {
-          "SushiSwap": 89436179
+          "SushiSwap": 95396081
         },
         "fantom": {
-          "SushiSwap": 22916
+          "SushiSwap": 19322
         },
         "fuse": {
-          "SushiSwap": 445
+          "SushiSwap": 362
         },
         "xdai": {
-          "SushiSwap": 87715
+          "SushiSwap": 91724
         },
         "kava": {
-          "SushiSwap": 805542
+          "SushiSwap": 717572
         },
         "linea": {
-          "SushiSwap": 794538
+          "SushiSwap": 751844
         },
         "metis": {
-          "SushiSwap": 16789
+          "SushiSwap": 18149
         },
         "moonbeam": {
-          "SushiSwap": 747
+          "SushiSwap": 655
         },
         "moonriver": {
-          "SushiSwap": 31207
+          "SushiSwap": 17090
         },
         "optimism": {
-          "SushiSwap": 4928589
+          "SushiSwap": 4915092
         },
         "polygon": {
-          "SushiSwap": 7856067
+          "SushiSwap": 10255953
         },
         "polygon_zkevm": {
-          "SushiSwap": 22768
+          "SushiSwap": 18854
         },
         "scroll": {
-          "SushiSwap": 57180
+          "SushiSwap": 57200
         },
         "thundercore": {
-          "SushiSwap": 118352
+          "SushiSwap": 117483
         },
         "zeta": {
-          "SushiSwap": 14494
+          "SushiSwap": 14322
         },
         "mantle": {
-          "SushiSwap": 381234
+          "SushiSwap": 382042
         },
         "era": {
-          "SushiSwap": 152950
+          "SushiSwap": 163404
         },
         "manta": {
-          "SushiSwap": 3384
+          "SushiSwap": 5862
         },
         "mode": {
-          "SushiSwap": 46731
+          "SushiSwap": 23244
         },
         "taiko": {
-          "SushiSwap": 222018
+          "SushiSwap": 196900
         },
         "zklink": {
-          "SushiSwap": 80
+          "SushiSwap": 46
         },
         "apechain": {
-          "SushiSwap": 8437
+          "SushiSwap": 5683
         },
         "sonic": {
-          "SushiSwap": 2393907
+          "SushiSwap": 2310748
         },
         "hemi": {
-          "SushiSwap": 736124
+          "SushiSwap": 680807
         }
       },
-      "total7DaysAgo": 4182334,
-      "total30DaysAgo": 3856392,
+      "total7DaysAgo": 14912059,
+      "total30DaysAgo": 5451053,
       "defillamaId": "5061",
       "name": "SushiSwap Agg",
       "displayName": "SushiSwap Agg",
@@ -416,80 +416,80 @@
       "id": "5061"
     },
     {
-      "total24h": 265910744,
-      "total48hto24h": 246755413,
-      "total7d": 2180314728,
-      "total14dto7d": 1746128468,
-      "total60dto30d": 9171416736,
-      "total30d": 8317338397,
-      "total1y": 112589709031,
-      "totalAllTime": 154660876712,
-      "average1y": 308464956.2493151,
-      "change_1d": 7.76,
-      "change_7d": -12.06,
-      "change_1m": 15.54,
-      "change_7dover7d": 24.87,
-      "change_30dover30d": -9.31,
+      "total24h": 327146647,
+      "total48hto24h": 334952025,
+      "total7d": 1969342322,
+      "total14dto7d": 2115833081,
+      "total60dto30d": 8697648348,
+      "total30d": 8674962577,
+      "total1y": 111707538912,
+      "totalAllTime": 155822278436,
+      "average1y": 306048051.81369865,
+      "change_1d": -2.33,
+      "change_7d": 8.4,
+      "change_1m": 107.84,
+      "change_7dover7d": -6.92,
+      "change_30dover30d": -0.26,
       "breakdown24h": {
         "ethereum": {
-          "1inch Network": 188145433
+          "1inch Network": 172699890
         },
         "arbitrum": {
-          "1inch Network": 23623814
+          "1inch Network": 80643462
         },
         "polygon": {
-          "1inch Network": 1636106
+          "1inch Network": 1973818
         },
         "bsc": {
-          "1inch Network": 10690093
+          "1inch Network": 9411528
         },
         "avax": {
-          "1inch Network": 14820198
+          "1inch Network": 8697329
         },
         "optimism": {
-          "1inch Network": 857532
+          "1inch Network": 1684429
         },
         "base": {
-          "1inch Network": 15192641
+          "1inch Network": 11489910
         },
         "xdai": {
-          "1inch Network": 997018
+          "1inch Network": 980267
         },
         "fantom": {
-          "1inch Network": 34715
+          "1inch Network": 11779
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "1inch Network": 4967160646
+          "1inch Network": 5348958115
         },
         "arbitrum": {
-          "1inch Network": 1435634998
+          "1inch Network": 1418314239
         },
         "polygon": {
-          "1inch Network": 75025246
+          "1inch Network": 76881164
         },
         "bsc": {
-          "1inch Network": 787182197
+          "1inch Network": 771936594
         },
         "avax": {
-          "1inch Network": 331643506
+          "1inch Network": 350682728
         },
         "optimism": {
-          "1inch Network": 81108467
+          "1inch Network": 80470015
         },
         "base": {
-          "1inch Network": 569735104
+          "1inch Network": 561331003
         },
         "xdai": {
-          "1inch Network": 66363930
+          "1inch Network": 62857568
         },
         "fantom": {
-          "1inch Network": 3484303
+          "1inch Network": 3531151
         }
       },
-      "total7DaysAgo": 302380729,
-      "total30DaysAgo": 230154438,
+      "total7DaysAgo": 301796155,
+      "total30DaysAgo": 157403038,
       "defillamaId": "189",
       "name": "1inch Network",
       "displayName": "1inch Network",
@@ -515,38 +515,38 @@
       "id": "189"
     },
     {
-      "total24h": 11090924,
-      "total48hto24h": 15327536,
-      "total7d": 126652958,
-      "total14dto7d": 111385367,
-      "total60dto30d": 652393074,
-      "total30d": 482967698,
-      "total1y": 5437451167,
-      "totalAllTime": 5991459850,
-      "average1y": 15020583.334254144,
-      "change_1d": -27.64,
-      "change_7d": 26.82,
-      "change_1m": -39.82,
-      "change_7dover7d": 13.71,
-      "change_30dover30d": -25.97,
+      "total24h": 14505951,
+      "total48hto24h": 13388975,
+      "total7d": 86813345,
+      "total14dto7d": 126019900,
+      "total60dto30d": 634853868,
+      "total30d": 479342991,
+      "total1y": 5461750286,
+      "totalAllTime": 6039599345,
+      "average1y": 15087707.972375691,
+      "change_1d": 8.34,
+      "change_7d": -37.44,
+      "change_1m": -5.82,
+      "change_7dover7d": -31.11,
+      "change_30dover30d": -24.5,
       "breakdown24h": {
         "ethereum": {
-          "tokenlon-agg": 11014940
+          "tokenlon-agg": 14501712
         },
         "polygon": {
-          "tokenlon-agg": 8302
+          "tokenlon-agg": 247
         },
         "arbitrum": {
-          "tokenlon-agg": 646
+          "tokenlon-agg": 315
         },
         "base": {
-          "tokenlon-agg": 479
+          "tokenlon-agg": 56
         },
         "bsc": {
-          "tokenlon-agg": 66556
+          "tokenlon-agg": 2066
         },
         "optimism": {
-          "tokenlon-agg": 1
+          "tokenlon-agg": 1555
         },
         "era": {
           "tokenlon-agg": 0
@@ -554,29 +554,29 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "Tokenlon AMM": 478847050
+          "Tokenlon AMM": 476004526
         },
         "polygon": {
-          "Tokenlon AMM": 58775
+          "Tokenlon AMM": 58602
         },
         "arbitrum": {
-          "Tokenlon AMM": 812852
+          "Tokenlon AMM": 557259
         },
         "base": {
-          "Tokenlon AMM": 1046836
+          "Tokenlon AMM": 663215
         },
         "bsc": {
-          "Tokenlon AMM": 2197340
+          "Tokenlon AMM": 2051912
         },
         "optimism": {
-          "Tokenlon AMM": 4845
+          "Tokenlon AMM": 7477
         },
         "era": {
           "Tokenlon AMM": 0
         }
       },
-      "total7DaysAgo": 8745259,
-      "total30DaysAgo": 18428819,
+      "total7DaysAgo": 23188503,
+      "total30DaysAgo": 15403009,
       "defillamaId": "5063",
       "name": "Tokenlon Agg",
       "displayName": "Tokenlon Agg",
@@ -605,38 +605,38 @@
       "id": "5063"
     },
     {
-      "total24h": 345565,
-      "total48hto24h": 390698,
-      "total7d": 2497755,
-      "total14dto7d": 2004319,
-      "total60dto30d": 20331824,
-      "total30d": 11435529,
-      "total1y": 307354203,
-      "totalAllTime": 584606741,
-      "average1y": 842066.309589041,
-      "change_1d": -11.55,
-      "change_7d": 210.2,
-      "change_1m": 1.93,
-      "change_7dover7d": 24.62,
-      "change_30dover30d": -43.76,
+      "total24h": 177171,
+      "total48hto24h": 228222,
+      "total7d": 1838231,
+      "total14dto7d": 2230414,
+      "total60dto30d": 18713090,
+      "total30d": 11357031,
+      "total1y": 298591142,
+      "totalAllTime": 585294924,
+      "average1y": 818057.9232876712,
+      "change_1d": -22.37,
+      "change_7d": -70.75,
+      "change_1m": 0,
+      "change_7dover7d": -17.58,
+      "change_30dover30d": -39.31,
       "breakdown24h": {
         "avax": {
-          "Yield Yak Aggregator": 345312
+          "Yield Yak Aggregator": 160141
         },
         "arbitrum": {
-          "Yield Yak Aggregator": 253
+          "Yield Yak Aggregator": 17030
         }
       },
       "breakdown30d": {
         "avax": {
-          "Yield Yak Aggregator": 11352114
+          "Yield Yak Aggregator": 11256585
         },
         "arbitrum": {
-          "Yield Yak Aggregator": 83415
+          "Yield Yak Aggregator": 100446
         }
       },
-      "total7DaysAgo": 111400,
-      "total30DaysAgo": 339033,
+      "total7DaysAgo": 605811,
+      "total30DaysAgo": 177171,
       "defillamaId": "475",
       "name": "Yield Yak Aggregator",
       "displayName": "Yield Yak Aggregator",
@@ -660,74 +660,74 @@
       "id": "475"
     },
     {
-      "total24h": 62132789,
-      "total48hto24h": 70334013,
-      "total7d": 960105047,
-      "total14dto7d": 604026501,
-      "total60dto30d": 3839998325,
-      "total30d": 2623990743,
-      "total1y": 36551307399,
-      "totalAllTime": 103242108410,
-      "average1y": 100140568.21643835,
-      "change_1d": -11.66,
-      "change_7d": 8.02,
-      "change_1m": -32.85,
-      "change_7dover7d": 58.95,
-      "change_30dover30d": -31.67,
+      "total24h": 44029783,
+      "total48hto24h": 62544288,
+      "total7d": 509469922,
+      "total14dto7d": 935561435,
+      "total60dto30d": 3631034742,
+      "total30d": 2658146156,
+      "total1y": 36369685507,
+      "totalAllTime": 103519718086,
+      "average1y": 99642973.99178082,
+      "change_1d": -29.6,
+      "change_7d": -71.43,
+      "change_1m": -12.97,
+      "change_7dover7d": -45.54,
+      "change_30dover30d": -26.79,
       "breakdown24h": {
         "ethereum": {
-          "Velora": 39964867
+          "Velora": 27023622
         },
         "polygon": {
-          "Velora": 3216141
+          "Velora": 3088087
         },
         "bsc": {
-          "Velora": 785168
+          "Velora": 429877
         },
         "avax": {
-          "Velora": 3549430
+          "Velora": 1666146
         },
         "arbitrum": {
-          "Velora": 7633946
+          "Velora": 6836517
         },
         "optimism": {
-          "Velora": 604688
+          "Velora": 1047062
         },
         "base": {
-          "Velora": 6378549
+          "Velora": 3938472
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Velora": 1772951939
+          "Velora": 1801122298
         },
         "polygon": {
-          "Velora": 143712979
+          "Velora": 144450380
         },
         "bsc": {
-          "Velora": 45221275
+          "Velora": 40833207
         },
         "avax": {
-          "Velora": 93691956
+          "Velora": 92492303
         },
         "fantom": {
-          "Velora": 153617
+          "Velora": 130510
         },
         "arbitrum": {
-          "Velora": 307125114
+          "Velora": 320470798
         },
         "optimism": {
-          "Velora": 31149341
+          "Velora": 32419936
         },
         "base": {
-          "Velora": 229908228
+          "Velora": 226150442
         },
         "polygon_zkevm": {
-          "Velora": 76294
+          "Velora": 76282
         }
       },
-      "total7DaysAgo": 57520504,
-      "total30DaysAgo": 92529817,
+      "total7DaysAgo": 154096270,
+      "total30DaysAgo": 50590325,
       "defillamaId": "894",
       "name": "Velora",
       "displayName": "Velora",
@@ -736,14 +736,14 @@
       "logo": "https://icons.llamao.fi/icons/protocols/velora.jpg",
       "chains": [
         "Ethereum",
-        "Polygon",
-        "BSC",
-        "Avalanche",
-        "Fantom",
-        "Arbitrum",
         "OP Mainnet",
+        "BSC",
+        "Polygon",
+        "Fantom",
+        "Polygon zkEVM",
         "Base",
-        "Polygon zkEVM"
+        "Arbitrum",
+        "Avalanche"
       ],
       "protocolType": "protocol",
       "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/paraswap",
@@ -753,47 +753,47 @@
       "id": "894"
     },
     {
-      "total24h": 1889339,
-      "total48hto24h": 1800253,
-      "total7d": 12673235,
-      "total14dto7d": 12810454,
-      "total60dto30d": 142897523,
-      "total30d": 55759739,
-      "total1y": 628014643,
-      "totalAllTime": 753757216,
-      "average1y": 1815071.2225433525,
-      "change_1d": 4.95,
-      "change_7d": 2.66,
-      "change_1m": -39.52,
-      "change_7dover7d": -1.07,
-      "change_30dover30d": -60.98,
+      "total24h": 1864897,
+      "total48hto24h": 1964029,
+      "total7d": 13068409,
+      "total14dto7d": 12806801,
+      "total60dto30d": 135701573,
+      "total30d": 51236758,
+      "total1y": 635707562,
+      "totalAllTime": 761450135,
+      "average1y": 1816307.32,
+      "change_1d": -5.05,
+      "change_7d": 8.29,
+      "change_1m": -38.56,
+      "change_7dover7d": 2.04,
+      "change_30dover30d": -62.24,
       "breakdown24h": {
         "solana": {
-          "Rubic": 5
+          "Rubic": 3
         },
         "ethereum": {
-          "Rubic": 22658
+          "Rubic": 28875
         },
         "bsc": {
-          "Rubic": 5332
+          "Rubic": 1164
         },
         "avax": {
-          "Rubic": 114
+          "Rubic": 19
         },
         "polygon": {
-          "Rubic": 382
+          "Rubic": 13
         },
         "arbitrum": {
-          "Rubic": 511
+          "Rubic": 4383
         },
         "zksync": {
           "Rubic": 0
         },
         "blast": {
-          "Rubic": 2
+          "Rubic": 18
         },
         "linea": {
-          "Rubic": 0
+          "Rubic": 631
         },
         "scroll": {
           "Rubic": 0
@@ -805,16 +805,16 @@
           "Rubic": 0
         },
         "manta": {
-          "Rubic": 13
+          "Rubic": 0
         },
         "polygon_zkevm": {
           "Rubic": 0
         },
         "pulse": {
-          "Rubic": 1138
+          "Rubic": 6434
         },
         "base": {
-          "Rubic": 97
+          "Rubic": 605
         },
         "fantom": {
           "Rubic": 0
@@ -829,7 +829,7 @@
           "Rubic": 0
         },
         "optimism": {
-          "Rubic": 94
+          "Rubic": 178
         },
         "aurora": {
           "Rubic": 0
@@ -859,7 +859,7 @@
           "Rubic": 0
         },
         "mode": {
-          "Rubic": 0
+          "Rubic": 2
         },
         "merlin": {
           "Rubic": 0
@@ -868,7 +868,7 @@
           "Rubic": 0
         },
         "taiko": {
-          "Rubic": 1874861
+          "Rubic": 1919291
         },
         "zklink": {
           "Rubic": 0
@@ -877,7 +877,7 @@
           "Rubic": 0
         },
         "berachain": {
-          "Rubic": 154
+          "Rubic": 340
         },
         "ton": {
           "Rubic": 0
@@ -898,7 +898,7 @@
           "Rubic": 0
         },
         "soneium": {
-          "Rubic": 781
+          "Rubic": 552
         },
         "gravity": {
           "Rubic": 0
@@ -910,7 +910,7 @@
           "Rubic": 0
         },
         "xlayer": {
-          "Rubic": 17
+          "Rubic": 8
         },
         "sei": {
           "Rubic": 0
@@ -934,57 +934,57 @@
           "Rubic": 0
         },
         "flare": {
-          "Rubic": 18
+          "Rubic": 0
         }
       },
       "breakdown30d": {
         "solana": {
-          "Rubic": 2618
+          "Rubic": 2702
         },
         "ethereum": {
-          "Rubic": 1411722
+          "Rubic": 1288328
         },
         "bsc": {
-          "Rubic": 83085
+          "Rubic": 84177
         },
         "avax": {
-          "Rubic": 4758
+          "Rubic": 5721
         },
         "polygon": {
-          "Rubic": 33081
+          "Rubic": 33070
         },
         "arbitrum": {
-          "Rubic": 60881
+          "Rubic": 48014
         },
         "zksync": {
-          "Rubic": 29
+          "Rubic": 19
         },
         "blast": {
-          "Rubic": 210
+          "Rubic": 228
         },
         "linea": {
-          "Rubic": 2703
+          "Rubic": 3275
         },
         "scroll": {
-          "Rubic": 97
+          "Rubic": 74
         },
         "zeta": {
-          "Rubic": 9494
+          "Rubic": 9444
         },
         "mantle": {
-          "Rubic": 132
+          "Rubic": 105
         },
         "manta": {
-          "Rubic": 20558
+          "Rubic": 20549
         },
         "polygon_zkevm": {
-          "Rubic": 146
+          "Rubic": 151
         },
         "pulse": {
-          "Rubic": 87143
+          "Rubic": 95300
         },
         "base": {
-          "Rubic": 104841
+          "Rubic": 108154
         },
         "fantom": {
           "Rubic": 240
@@ -999,13 +999,13 @@
           "Rubic": 1
         },
         "optimism": {
-          "Rubic": 9991
+          "Rubic": 9868
         },
         "aurora": {
           "Rubic": 0
         },
         "metis": {
-          "Rubic": 211
+          "Rubic": 208
         },
         "moonriver": {
           "Rubic": 25
@@ -1026,10 +1026,10 @@
           "Rubic": 0
         },
         "cronos": {
-          "Rubic": 18
+          "Rubic": 16
         },
         "mode": {
-          "Rubic": 96
+          "Rubic": 95
         },
         "merlin": {
           "Rubic": 71
@@ -1038,16 +1038,16 @@
           "Rubic": 0
         },
         "taiko": {
-          "Rubic": 53873937
+          "Rubic": 49468483
         },
         "zklink": {
-          "Rubic": 681
+          "Rubic": 677
         },
         "bitlayer": {
-          "Rubic": 192
+          "Rubic": 69
         },
         "berachain": {
-          "Rubic": 4759
+          "Rubic": 6477
         },
         "ton": {
           "Rubic": 7550
@@ -1068,7 +1068,7 @@
           "Rubic": 1569
         },
         "soneium": {
-          "Rubic": 27623
+          "Rubic": 30704
         },
         "gravity": {
           "Rubic": 9
@@ -1080,7 +1080,7 @@
           "Rubic": 12
         },
         "xlayer": {
-          "Rubic": 185
+          "Rubic": 206
         },
         "sei": {
           "Rubic": 0
@@ -1107,11 +1107,11 @@
           "Rubic": 0
         },
         "flare": {
-          "Rubic": 123
+          "Rubic": 219
         }
       },
-      "total7DaysAgo": 1840400,
-      "total30DaysAgo": 3123656,
+      "total7DaysAgo": 1722145,
+      "total30DaysAgo": 3035520,
       "defillamaId": "1282",
       "name": "Rubic",
       "displayName": "Rubic",
@@ -1184,44 +1184,44 @@
       "id": "1282"
     },
     {
-      "total24h": 403290,
-      "total48hto24h": 693571,
-      "total7d": 3740411,
-      "total14dto7d": 4628786,
-      "total60dto30d": 9236169,
-      "total30d": 15503759,
-      "total1y": 120175546,
-      "totalAllTime": 114067065,
-      "average1y": 780360.6883116884,
-      "change_1d": -41.85,
-      "change_7d": 1.9,
-      "change_1m": 167.44,
-      "change_7dover7d": -19.19,
-      "change_30dover30d": 67.86,
+      "total24h": 244468,
+      "total48hto24h": 154078,
+      "total7d": 2516927,
+      "total14dto7d": 3752989,
+      "total60dto30d": 7523505,
+      "total30d": 15031462,
+      "total1y": 121005002,
+      "totalAllTime": 114737699,
+      "average1y": 765854.4430379746,
+      "change_1d": 58.67,
+      "change_7d": -29.63,
+      "change_1m": -62.17,
+      "change_7dover7d": -32.94,
+      "change_30dover30d": 99.79,
       "breakdown24h": {
         "ethereum": {
-          "Unizen": 234841
+          "Unizen": 43079
         },
         "bsc": {
-          "Unizen": 143232
+          "Unizen": 31229
         },
         "polygon": {
-          "Unizen": 29452
+          "Unizen": 4190
         },
         "avax": {
-          "Unizen": 1277
+          "Unizen": 188
         },
         "fantom": {
-          "Unizen": 34
+          "Unizen": 70
         },
         "arbitrum": {
-          "Unizen": 101285
+          "Unizen": 3382
         },
         "optimism": {
-          "Unizen": 6323
+          "Unizen": 28
         },
         "base": {
-          "Unizen": 23623
+          "Unizen": 23952
         },
         "berachain": {
           "Unizen": 0
@@ -1250,28 +1250,28 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "Unizen": 4615329
+          "Unizen": 4518780
         },
         "bsc": {
-          "Unizen": 6939233
+          "Unizen": 6592565
         },
         "polygon": {
-          "Unizen": 1258735
+          "Unizen": 1297735
         },
         "avax": {
-          "Unizen": 188263
+          "Unizen": 162532
         },
         "fantom": {
-          "Unizen": 1485
+          "Unizen": 1524
         },
         "arbitrum": {
-          "Unizen": 458978
+          "Unizen": 457481
         },
         "optimism": {
-          "Unizen": 51184
+          "Unizen": 54642
         },
         "base": {
-          "Unizen": 1892191
+          "Unizen": 1844703
         },
         "bitcoin": {
           "Unizen": 0
@@ -1289,17 +1289,17 @@
           "Unizen": 0
         },
         "berachain": {
-          "Unizen": 91157
+          "Unizen": 94026
         },
         "sonic": {
-          "Unizen": 73
+          "Unizen": 343
         },
         "unichain": {
           "Unizen": 7131
         }
       },
-      "total7DaysAgo": 395767,
-      "total30DaysAgo": 150796,
+      "total7DaysAgo": 347417,
+      "total30DaysAgo": 646246,
       "defillamaId": "1336",
       "name": "Unizen",
       "displayName": "Unizen",
@@ -1332,32 +1332,32 @@
       "id": "1336"
     },
     {
-      "total24h": 1482759517,
-      "total48hto24h": 1370813938,
-      "total7d": 11336946132,
-      "total14dto7d": 9205600343,
-      "total60dto30d": 93336203772,
-      "total30d": 38375143552,
-      "total1y": 675128621518,
-      "totalAllTime": 2376460140925,
-      "average1y": 1849667456.2136986,
-      "change_1d": 8.17,
-      "change_7d": -7.35,
-      "change_1m": -16.1,
-      "change_7dover7d": 23.15,
-      "change_30dover30d": -58.89,
+      "total24h": 1442363445,
+      "total48hto24h": 1447610995,
+      "total7d": 10862241205,
+      "total14dto7d": 11495696158,
+      "total60dto30d": 80116177060,
+      "total30d": 40023024298,
+      "total1y": 675188912266,
+      "totalAllTime": 2382329225778,
+      "average1y": 1849832636.3452055,
+      "change_1d": -0.36,
+      "change_7d": -8.5,
+      "change_1m": 56.89,
+      "change_7dover7d": -5.51,
+      "change_30dover30d": -50.04,
       "breakdown24h": {
         "solana": {
-          "Jupiter Aggregator": 1445568059
+          "Jupiter Aggregator": 1507691889
         }
       },
       "breakdown30d": {
         "solana": {
-          "Jupiter Aggregator": 38375143552
+          "Jupiter Aggregator": 40023024298
         }
       },
-      "total7DaysAgo": 1600311745,
-      "total30DaysAgo": 1767376119,
+      "total7DaysAgo": 1576364004,
+      "total30DaysAgo": 919358119,
       "defillamaId": "2141",
       "name": "Jupiter Aggregator",
       "displayName": "Jupiter Aggregator",
@@ -1412,32 +1412,32 @@
       "id": "2249"
     },
     {
-      "total24h": 3038,
-      "total48hto24h": 501,
-      "total7d": 29662,
-      "total14dto7d": 34365,
-      "total60dto30d": 107905,
-      "total30d": 113352,
-      "total1y": 10041746,
-      "totalAllTime": 23633365,
-      "average1y": 27511.63287671233,
-      "change_1d": 506.39,
-      "change_7d": 27.01,
-      "change_1m": -61.76,
-      "change_7dover7d": -13.69,
-      "change_30dover30d": 5.05,
+      "total24h": 3007,
+      "total48hto24h": 1477,
+      "total7d": 24297,
+      "total14dto7d": 35918,
+      "total60dto30d": 104394,
+      "total30d": 110707,
+      "total1y": 9692063,
+      "totalAllTime": 23645069,
+      "average1y": 26553.59726027397,
+      "change_1d": 103.59,
+      "change_7d": -37.28,
+      "change_1m": -17.57,
+      "change_7dover7d": -32.35,
+      "change_30dover30d": 6.05,
       "breakdown24h": {
         "algorand": {
-          "Deflex": 4701
+          "Deflex": 1487
         }
       },
       "breakdown30d": {
         "algorand": {
-          "Deflex": 113352
+          "Deflex": 110707
         }
       },
-      "total7DaysAgo": 2392,
-      "total30DaysAgo": 7944,
+      "total7DaysAgo": 4794,
+      "total30DaysAgo": 3648,
       "defillamaId": "2420",
       "name": "Deflex",
       "displayName": "Deflex",
@@ -1455,50 +1455,50 @@
       "id": "2420"
     },
     {
-      "total24h": 214346444,
-      "total48hto24h": 304406063,
-      "total7d": 2412239505,
-      "total14dto7d": 1779788890,
-      "total60dto30d": 8551527026,
-      "total30d": 8942743517,
-      "total1y": 61242245635,
-      "totalAllTime": 70270004046,
-      "average1y": 167786974.34246576,
-      "change_1d": -29.59,
-      "change_7d": 35.99,
-      "change_1m": -51.67,
-      "change_7dover7d": 35.54,
-      "change_30dover30d": 4.57,
+      "total24h": 304989356,
+      "total48hto24h": 201264016,
+      "total7d": 1689774761,
+      "total14dto7d": 2370058873,
+      "total60dto30d": 9216741555,
+      "total30d": 8441451359,
+      "total1y": 61762728326,
+      "totalAllTime": 71158717699,
+      "average1y": 169212954.3178082,
+      "change_1d": 51.54,
+      "change_7d": -39.73,
+      "change_1m": -11.16,
+      "change_7dover7d": -28.7,
+      "change_30dover30d": -8.41,
       "breakdown24h": {
         "ethereum": {
-          "CoWSwap": 203147683
+          "CoWSwap": 276083372
         },
         "xdai": {
-          "CoWSwap": 1771590
+          "CoWSwap": 2752926
         },
         "arbitrum": {
-          "CoWSwap": 4461048
+          "CoWSwap": 18928502
         },
         "base": {
-          "CoWSwap": 4966123
+          "CoWSwap": 7224556
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "CoWSwap": 8645772190
+          "CoWSwap": 8106869439
         },
         "xdai": {
-          "CoWSwap": 42711836
+          "CoWSwap": 48527379
         },
         "arbitrum": {
-          "CoWSwap": 125019745
+          "CoWSwap": 146352408
         },
         "base": {
-          "CoWSwap": 129239746
+          "CoWSwap": 139702133
         }
       },
-      "total7DaysAgo": 157616266,
-      "total30DaysAgo": 443544898,
+      "total7DaysAgo": 506004568,
+      "total30DaysAgo": 343290234,
       "defillamaId": "2643",
       "name": "CoWSwap",
       "displayName": "CoWSwap",
@@ -1522,9 +1522,9 @@
       "total24h": 0,
       "total48hto24h": 0,
       "total60dto30d": 0,
-      "total1y": 175659762,
+      "total1y": 162081194,
       "totalAllTime": 528409711,
-      "average1y": 552389.1886792453,
+      "average1y": 516182.14649681526,
       "breakdown24h": null,
       "breakdown30d": null,
       "defillamaId": "2740",
@@ -1555,121 +1555,124 @@
       "id": "2740"
     },
     {
-      "total24h": 1107672,
-      "total48hto24h": 1399686,
-      "total7d": 12035893,
-      "total14dto7d": 6773189,
-      "total30d": 18809082,
-      "total1y": 18809082,
-      "totalAllTime": 18809082,
-      "average1y": 1709916.5454545454,
-      "change_1d": -20.86,
-      "change_7d": -3.03,
-      "change_7dover7d": 77.7,
+      "total24h": 2002761,
+      "total48hto24h": 2138644,
+      "total7d": 11004905,
+      "total14dto7d": 12752302,
+      "total30d": 25776692,
+      "total1y": 25776692,
+      "totalAllTime": 25776692,
+      "average1y": 1718446.1333333333,
+      "change_1d": -6.35,
+      "change_7d": 5.61,
+      "change_7dover7d": -13.7,
       "breakdown24h": {
         "bitcoin": {
-          "Houdini Swap": 57527
+          "Houdini Swap": 153985
         },
         "ethereum": {
-          "Houdini Swap": 214762
+          "Houdini Swap": 510136
         },
         "bsc": {
-          "Houdini Swap": 41687
+          "Houdini Swap": 74711
         },
         "arbitrum": {
-          "Houdini Swap": 9491
+          "Houdini Swap": 59943
+        },
+        "cardano": {
+          "Houdini Swap": 278
         },
         "polygon": {
-          "Houdini Swap": 926
+          "Houdini Swap": 65033
         },
         "ripple": {
-          "Houdini Swap": 2107
+          "Houdini Swap": 1991
         },
         "solana": {
-          "Houdini Swap": 599164
+          "Houdini Swap": 849014
         },
         "tron": {
-          "Houdini Swap": 118578
+          "Houdini Swap": 123163
         },
         "litecoin": {
-          "Houdini Swap": 3814
+          "Houdini Swap": 9607
         },
         "base": {
-          "Houdini Swap": 44543
+          "Houdini Swap": 147334
         },
-        "optimism": {
-          "Houdini Swap": 19
+        "algorand": {
+          "Houdini Swap": 184
         },
         "ton": {
-          "Houdini Swap": 8947
+          "Houdini Swap": 6954
         },
-        "sui": {
-          "Houdini Swap": 4546
+        "icp": {
+          "Houdini Swap": 186
         },
         "sonic": {
-          "Houdini Swap": 1561
+          "Houdini Swap": 242
         }
       },
       "breakdown30d": {
         "bitcoin": {
-          "Houdini Swap": 1569399
+          "Houdini Swap": 1954377
         },
         "ethereum": {
-          "Houdini Swap": 5105031
+          "Houdini Swap": 7339706
         },
         "bsc": {
-          "Houdini Swap": 871704
+          "Houdini Swap": 1090434
         },
         "arbitrum": {
-          "Houdini Swap": 905997
+          "Houdini Swap": 1029059
         },
         "avax": {
-          "Houdini Swap": 25918
+          "Houdini Swap": 40774
         },
         "cardano": {
-          "Houdini Swap": 41577
+          "Houdini Swap": 42798
         },
         "polygon": {
-          "Houdini Swap": 51468
+          "Houdini Swap": 160933
         },
         "ripple": {
-          "Houdini Swap": 35261
+          "Houdini Swap": 43548
         },
         "solana": {
-          "Houdini Swap": 7187905
+          "Houdini Swap": 10168059
         },
         "tron": {
-          "Houdini Swap": 1717760
+          "Houdini Swap": 2230603
         },
         "litecoin": {
-          "Houdini Swap": 110851
+          "Houdini Swap": 140762
         },
         "base": {
-          "Houdini Swap": 633008
+          "Houdini Swap": 928950
         },
         "optimism": {
-          "Houdini Swap": 12368
+          "Houdini Swap": 22497
         },
         "ton": {
-          "Houdini Swap": 90928
+          "Houdini Swap": 122816
         },
         "sui": {
-          "Houdini Swap": 179385
+          "Houdini Swap": 182216
         },
         "sonic": {
-          "Houdini Swap": 269274
+          "Houdini Swap": 276391
         },
         "algorand": {
-          "Houdini Swap": 743
+          "Houdini Swap": 1424
         },
         "icp": {
-          "Houdini Swap": 405
+          "Houdini Swap": 1225
         },
         "linea": {
-          "Houdini Swap": 100
+          "Houdini Swap": 120
         }
       },
-      "total7DaysAgo": 1142306,
+      "total7DaysAgo": 1896358,
       "defillamaId": "3041",
       "name": "Houdini Swap",
       "displayName": "Houdini Swap",
@@ -1705,32 +1708,32 @@
       "id": "3041"
     },
     {
-      "total24h": 600101,
-      "total48hto24h": 560605,
-      "total7d": 6955701,
-      "total14dto7d": 3811616,
-      "total60dto30d": 48841209,
-      "total30d": 20677504,
-      "total1y": 909716327,
-      "totalAllTime": 2812744450,
-      "average1y": 2492373.498630137,
-      "change_1d": 7.05,
-      "change_7d": 224.38,
-      "change_1m": -51.25,
-      "change_7dover7d": 82.49,
-      "change_30dover30d": -57.66,
+      "total24h": 327684,
+      "total48hto24h": 475774,
+      "total7d": 3433979,
+      "total14dto7d": 6928305,
+      "total60dto30d": 46867201,
+      "total30d": 19074292,
+      "total1y": 889172983,
+      "totalAllTime": 2814471680,
+      "average1y": 2436090.3643835615,
+      "change_1d": -31.13,
+      "change_7d": -76.3,
+      "change_1m": -73.39,
+      "change_7dover7d": -50.44,
+      "change_30dover30d": -59.3,
       "breakdown24h": {
         "starknet": {
-          "AVNU": 600101
+          "AVNU": 327684
         }
       },
       "breakdown30d": {
         "starknet": {
-          "AVNU": 20677504
+          "AVNU": 19074292
         }
       },
-      "total7DaysAgo": 184998,
-      "total30DaysAgo": 1230895,
+      "total7DaysAgo": 1382873,
+      "total30DaysAgo": 1231215,
       "defillamaId": "3154",
       "name": "AVNU",
       "displayName": "AVNU",
@@ -1748,164 +1751,167 @@
       "id": "3154"
     },
     {
-      "total24h": 15626725,
-      "total48hto24h": 10158825,
-      "total7d": 76858474,
-      "total14dto7d": 74926121,
-      "total60dto30d": 629486993,
-      "total30d": 1852873317,
-      "total1y": 3849585038,
-      "totalAllTime": 10424450617605,
-      "average1y": 26010709.716216218,
-      "change_1d": 53.82,
-      "change_7d": -13.99,
-      "change_1m": -0.92,
-      "change_7dover7d": 2.58,
-      "change_30dover30d": 194.35,
+      "total24h": 11966169,
+      "total48hto24h": 13033382,
+      "total7d": 89490706,
+      "total14dto7d": 76400666,
+      "total60dto30d": 623880042,
+      "total30d": 1851425572,
+      "total1y": 3771364077,
+      "totalAllTime": 10424474804628,
+      "average1y": 25482189.70945946,
+      "change_1d": -8.19,
+      "change_7d": 84.97,
+      "change_1m": -15.61,
+      "change_7dover7d": 17.13,
+      "change_30dover30d": 196.76,
       "breakdown24h": {
         "aptos": {
-          "Bitget Swap": 309
+          "Bitget Swap": 456
         },
         "arbitrum": {
-          "Bitget Swap": 1120316
+          "Bitget Swap": 653221
         },
         "avax": {
-          "Bitget Swap": 13576
+          "Bitget Swap": 9320
         },
         "blast": {
-          "Bitget Swap": 193
+          "Bitget Swap": 76
         },
         "bsc": {
-          "Bitget Swap": 952182
+          "Bitget Swap": 2686896
         },
         "bitcoin": {
-          "Bitget Swap": 2405805
+          "Bitget Swap": 747103
         },
-        "core": {
-          "Bitget Swap": 534
-        },
-        "fantom": {
-          "Bitget Swap": 3130
-        },
-        "klaytn": {
-          "Bitget Swap": 135288
-        },
-        "linea": {
-          "Bitget Swap": 237
-        },
-        "manta": {
+        "celo": {
           "Bitget Swap": 0
         },
+        "core": {
+          "Bitget Swap": 1277
+        },
+        "fantom": {
+          "Bitget Swap": 3182
+        },
+        "klaytn": {
+          "Bitget Swap": 99068
+        },
+        "linea": {
+          "Bitget Swap": 282
+        },
+        "manta": {
+          "Bitget Swap": 3
+        },
         "polygon": {
-          "Bitget Swap": 903513
+          "Bitget Swap": 1260618
         },
         "mantle": {
-          "Bitget Swap": 116
+          "Bitget Swap": 217
         },
         "morph": {
-          "Bitget Swap": 20533
+          "Bitget Swap": 5280
         },
         "op_bnb": {
-          "Bitget Swap": 30
+          "Bitget Swap": 445
         },
         "optimism": {
-          "Bitget Swap": 54329
+          "Bitget Swap": 68868
         },
         "solana": {
-          "Bitget Swap": 8810745
+          "Bitget Swap": 5111896
         },
         "sui": {
-          "Bitget Swap": 35035
+          "Bitget Swap": 37758
         },
         "ton": {
-          "Bitget Swap": 8535
+          "Bitget Swap": 16053
         },
         "tron": {
-          "Bitget Swap": 1162114
+          "Bitget Swap": 1262885
         },
         "zksync": {
-          "Bitget Swap": 205
+          "Bitget Swap": 1265
         }
       },
       "breakdown30d": {
         "aptos": {
-          "Bitget Swap": 31378
+          "Bitget Swap": 31663
         },
         "arbitrum": {
-          "Bitget Swap": 18133038
+          "Bitget Swap": 21628543
         },
         "avax": {
-          "Bitget Swap": 1486712
+          "Bitget Swap": 1724875
         },
         "base": {
-          "Bitget Swap": 8659274
+          "Bitget Swap": 4056693
         },
         "blast": {
-          "Bitget Swap": 9390
+          "Bitget Swap": 7625
         },
         "bsc": {
-          "Bitget Swap": 810348426
+          "Bitget Swap": 806385194
         },
         "bitcoin": {
-          "Bitget Swap": 44442130
+          "Bitget Swap": 41022186
         },
         "core": {
-          "Bitget Swap": 27581
+          "Bitget Swap": 29628
         },
         "ethereum": {
-          "Bitget Swap": 78793082
+          "Bitget Swap": 65121703
         },
         "fantom": {
-          "Bitget Swap": 424675
+          "Bitget Swap": 330226
         },
         "klaytn": {
-          "Bitget Swap": 3571235
+          "Bitget Swap": 3298900
         },
         "linea": {
-          "Bitget Swap": 178451
-        },
-        "manta": {
-          "Bitget Swap": 5632
+          "Bitget Swap": 178052
         },
         "polygon": {
-          "Bitget Swap": 36731119
+          "Bitget Swap": 37438835
         },
         "mantle": {
-          "Bitget Swap": 24263
+          "Bitget Swap": 23629
         },
         "morph": {
-          "Bitget Swap": 582320
+          "Bitget Swap": 578459
         },
         "op_bnb": {
-          "Bitget Swap": 384826
+          "Bitget Swap": 383456
         },
         "optimism": {
-          "Bitget Swap": 703014
+          "Bitget Swap": 819390
         },
         "solana": {
-          "Bitget Swap": 789122566
+          "Bitget Swap": 809364119
         },
         "sui": {
-          "Bitget Swap": 1901669
+          "Bitget Swap": 1888743
         },
         "ton": {
-          "Bitget Swap": 1541333
+          "Bitget Swap": 1590221
         },
         "tron": {
-          "Bitget Swap": 55744368
+          "Bitget Swap": 55496122
         },
         "zksync": {
-          "Bitget Swap": 24328
+          "Bitget Swap": 18994
+        },
+        "manta": {
+          "Bitget Swap": 5912
         },
         "celo": {
-          "Bitget Swap": 119
+          "Bitget Swap": 91
         },
         "near": {
-          "Bitget Swap": 2388
+          "Bitget Swap": 2313
         }
       },
-      "total7DaysAgo": 18169302,
-      "total30DaysAgo": 15771954,
+      "total7DaysAgo": 6469122,
+      "total30DaysAgo": 14180157,
       "defillamaId": "3207",
       "name": "Bitget Swap",
       "displayName": "Bitget Swap",
@@ -1949,164 +1955,164 @@
       "id": "3207"
     },
     {
-      "total24h": 17338285,
-      "total48hto24h": 15184292,
-      "total7d": 105458385,
-      "total14dto7d": 107984245,
-      "total60dto30d": 288631356,
-      "total30d": 392011510,
-      "total1y": 3829528196,
-      "totalAllTime": 4911907447,
-      "average1y": 10972860.160458453,
-      "change_1d": 14.19,
-      "change_7d": 35.06,
-      "change_1m": 165.15,
-      "change_7dover7d": -2.34,
-      "change_30dover30d": 35.82,
+      "total24h": 10122699,
+      "total48hto24h": 13593918,
+      "total7d": 102143114,
+      "total14dto7d": 114133392,
+      "total60dto30d": 277724022,
+      "total30d": 418594649,
+      "total1y": 3825078511,
+      "totalAllTime": 4964389101,
+      "average1y": 10960110.34670487,
+      "change_1d": -25.54,
+      "change_7d": -41.68,
+      "change_1m": 35.04,
+      "change_7dover7d": -10.51,
+      "change_30dover30d": 50.72,
       "breakdown24h": {
         "aurora": {
-          "Jumper Exchange": 46
+          "Jumper Exchange": 2648
         },
         "arbitrum": {
-          "Jumper Exchange": 901081
+          "Jumper Exchange": 848857
         },
         "optimism": {
-          "Jumper Exchange": 756651
+          "Jumper Exchange": 627662
         },
         "base": {
-          "Jumper Exchange": 1782991
+          "Jumper Exchange": 2338414
         },
         "ethereum": {
-          "Jumper Exchange": 11835742
+          "Jumper Exchange": 4050737
         },
         "avax": {
-          "Jumper Exchange": 374803
+          "Jumper Exchange": 297389
         },
         "bsc": {
-          "Jumper Exchange": 82951
+          "Jumper Exchange": 124941
         },
         "linea": {
-          "Jumper Exchange": 125562
+          "Jumper Exchange": 119431
         },
         "manta": {
           "Jumper Exchange": 0
         },
         "polygon": {
-          "Jumper Exchange": 196384
+          "Jumper Exchange": 366300
         },
         "polygon_zkevm": {
-          "Jumper Exchange": 850
+          "Jumper Exchange": 1409
         },
         "fantom": {
-          "Jumper Exchange": 111
+          "Jumper Exchange": 33
         },
         "mode": {
-          "Jumper Exchange": 7126
+          "Jumper Exchange": 3864
         },
         "scroll": {
-          "Jumper Exchange": 105461
+          "Jumper Exchange": 53182
         },
         "era": {
-          "Jumper Exchange": 90424
+          "Jumper Exchange": 51527
         },
         "metis": {
-          "Jumper Exchange": 6
+          "Jumper Exchange": 215
         },
         "xdai": {
-          "Jumper Exchange": 3730
+          "Jumper Exchange": 38875
         },
         "taiko": {
-          "Jumper Exchange": 1046093
+          "Jumper Exchange": 1193166
         },
         "blast": {
-          "Jumper Exchange": 27600
+          "Jumper Exchange": 3145
         },
         "boba": {
-          "Jumper Exchange": 2
+          "Jumper Exchange": 9
         },
         "fuse": {
-          "Jumper Exchange": 7
+          "Jumper Exchange": 0
         },
         "cronos": {
-          "Jumper Exchange": 608
+          "Jumper Exchange": 805
         },
         "gravity": {
-          "Jumper Exchange": 56
+          "Jumper Exchange": 90
         }
       },
       "breakdown30d": {
         "aurora": {
-          "Jumper Exchange": 7598
+          "Jumper Exchange": 4860
         },
         "arbitrum": {
-          "Jumper Exchange": 41584929
+          "Jumper Exchange": 40887463
         },
         "optimism": {
-          "Jumper Exchange": 19169323
+          "Jumper Exchange": 20165439
         },
         "base": {
-          "Jumper Exchange": 47176591
+          "Jumper Exchange": 48480099
         },
         "ethereum": {
-          "Jumper Exchange": 210037454
+          "Jumper Exchange": 231965184
         },
         "avax": {
-          "Jumper Exchange": 13389986
+          "Jumper Exchange": 12755488
         },
         "bsc": {
-          "Jumper Exchange": 12368069
+          "Jumper Exchange": 13669280
         },
         "linea": {
-          "Jumper Exchange": 6030362
+          "Jumper Exchange": 5911986
         },
         "manta": {
           "Jumper Exchange": 0
         },
         "polygon": {
-          "Jumper Exchange": 7355017
+          "Jumper Exchange": 7588847
         },
         "polygon_zkevm": {
-          "Jumper Exchange": 63006
+          "Jumper Exchange": 60539
         },
         "fantom": {
-          "Jumper Exchange": 11151
+          "Jumper Exchange": 8598
         },
         "mode": {
-          "Jumper Exchange": 497774
+          "Jumper Exchange": 333890
         },
         "scroll": {
-          "Jumper Exchange": 2120575
+          "Jumper Exchange": 2050492
         },
         "era": {
-          "Jumper Exchange": 3776441
+          "Jumper Exchange": 2990366
         },
         "metis": {
-          "Jumper Exchange": 9955
+          "Jumper Exchange": 15329
         },
         "xdai": {
-          "Jumper Exchange": 1453650
+          "Jumper Exchange": 1471900
         },
         "taiko": {
-          "Jumper Exchange": 25912155
+          "Jumper Exchange": 29349356
         },
         "blast": {
-          "Jumper Exchange": 553831
+          "Jumper Exchange": 552372
         },
         "boba": {
-          "Jumper Exchange": 2879
+          "Jumper Exchange": 3011
         },
         "fuse": {
-          "Jumper Exchange": 1609
+          "Jumper Exchange": 1660
         },
         "cronos": {
-          "Jumper Exchange": 474349
+          "Jumper Exchange": 316883
         },
         "gravity": {
-          "Jumper Exchange": 14806
+          "Jumper Exchange": 11607
         }
       },
-      "total7DaysAgo": 12837884,
-      "total30DaysAgo": 6539138,
+      "total7DaysAgo": 17357682,
+      "total30DaysAgo": 7496157,
       "defillamaId": "3524",
       "name": "Jumper Exchange",
       "displayName": "Jumper Exchange",
@@ -2146,32 +2152,32 @@
       "id": "3524"
     },
     {
-      "total24h": 25868,
-      "total48hto24h": 5240,
-      "total7d": 190775,
-      "total14dto7d": 269881,
-      "total60dto30d": 2086287,
-      "total30d": 1493172,
-      "total1y": 22848142,
-      "totalAllTime": 54026028,
-      "average1y": 62597.64931506849,
-      "change_1d": 393.66,
-      "change_7d": -15.79,
-      "change_1m": -51.95,
-      "change_7dover7d": -29.31,
-      "change_30dover30d": -28.43,
+      "total24h": 64065,
+      "total48hto24h": 41420,
+      "total7d": 220944,
+      "total14dto7d": 216013,
+      "total60dto30d": 2418758,
+      "total30d": 1237972,
+      "total1y": 22320670,
+      "totalAllTime": 54200834,
+      "average1y": 61152.520547945205,
+      "change_1d": 54.67,
+      "change_7d": 87.88,
+      "change_1m": -48.4,
+      "change_7dover7d": 2.28,
+      "change_30dover30d": -48.82,
       "breakdown24h": {
         "radixdlt": {
-          "aggregator": 25868
+          "aggregator": 64065
         }
       },
       "breakdown30d": {
         "radixdlt": {
-          "CaviarNine Shape Liquidity": 1493172
+          "CaviarNine Shape Liquidity": 1237972
         }
       },
-      "total7DaysAgo": 30717,
-      "total30DaysAgo": 53841,
+      "total7DaysAgo": 34098,
+      "total30DaysAgo": 124150,
       "defillamaId": "5064",
       "name": "CaviarNine Agg",
       "displayName": "CaviarNine Agg",
@@ -2194,20 +2200,20 @@
       "id": "5064"
     },
     {
-      "total24h": 1467,
-      "total48hto24h": 7925,
-      "total7d": 57701,
-      "total14dto7d": 84685,
-      "total60dto30d": 1394604,
-      "total30d": 529908,
-      "total1y": 95119514,
-      "totalAllTime": 764698439,
-      "average1y": 262761.08839779004,
-      "change_1d": -81.49,
-      "change_7d": -59.13,
-      "change_1m": -96.51,
-      "change_7dover7d": -31.86,
-      "change_30dover30d": -62,
+      "total24h": 492,
+      "total48hto24h": 546,
+      "total7d": 45997,
+      "total14dto7d": 50194,
+      "total60dto30d": 1357779,
+      "total30d": 356501,
+      "total1y": 89646316,
+      "totalAllTime": 764722715,
+      "average1y": 247641.75690607735,
+      "change_1d": -9.89,
+      "change_7d": -86.93,
+      "change_1m": -99.15,
+      "change_7dover7d": -8.36,
+      "change_30dover30d": -73.74,
       "breakdown24h": {
         "arbitrum": {
           "Slingshot": 0
@@ -2225,31 +2231,31 @@
           "Slingshot": 0
         },
         "canto": {
-          "Slingshot": 1467
+          "Slingshot": 492
         }
       },
       "breakdown30d": {
         "arbitrum": {
-          "Slingshot": 257096
+          "Slingshot": 133841
         },
         "ethereum": {
-          "Slingshot": 53220
+          "Slingshot": 36897
         },
         "polygon": {
-          "Slingshot": 45297
+          "Slingshot": 32647
         },
         "optimism": {
-          "Slingshot": 57914
+          "Slingshot": 32558
         },
         "bsc": {
-          "Slingshot": 2184
+          "Slingshot": 1292
         },
         "canto": {
-          "Slingshot": 114197
+          "Slingshot": 119266
         }
       },
-      "total7DaysAgo": 3589,
-      "total30DaysAgo": 41975,
+      "total7DaysAgo": 3764,
+      "total30DaysAgo": 57767,
       "defillamaId": "3681",
       "name": "Slingshot",
       "displayName": "Slingshot",
@@ -2316,7 +2322,7 @@
       "total60dto30d": 0,
       "total30d": 0,
       "total1y": 0,
-      "totalAllTime": 14512,
+      "totalAllTime": 13937,
       "breakdown24h": {
         "arbitrum": {
           "Arcane Dex": 0
@@ -2346,32 +2352,32 @@
       "id": "3885"
     },
     {
-      "total24h": 101793154,
-      "total48hto24h": 137285509,
-      "total7d": 1277942186,
-      "total14dto7d": 610485650,
-      "total60dto30d": 3543241627,
-      "total30d": 3753399021,
-      "total1y": 19042567172,
-      "totalAllTime": 19196163864,
-      "average1y": 59322639.16510903,
-      "change_1d": -25.85,
-      "change_7d": 45.79,
-      "change_1m": -49.87,
-      "change_7dover7d": 109.33,
-      "change_30dover30d": 5.93,
+      "total24h": 102668621,
+      "total48hto24h": 73905650,
+      "total7d": 715164932,
+      "total14dto7d": 1152572933,
+      "total60dto30d": 3839764072,
+      "total30d": 3469743281,
+      "total1y": 19291238236,
+      "totalAllTime": 19522217837,
+      "average1y": 60097315.37694704,
+      "change_1d": 38.92,
+      "change_7d": -59.21,
+      "change_1m": -36.12,
+      "change_7dover7d": -37.95,
+      "change_30dover30d": -9.64,
       "breakdown24h": {
         "arbitrum": {
-          "Bebop": 2446302
+          "Bebop": 14125672
         },
         "ethereum": {
-          "Bebop": 93043930
+          "Bebop": 81578198
         },
         "polygon": {
-          "Bebop": 4190
+          "Bebop": 2920
         },
         "bsc": {
-          "Bebop": 11796
+          "Bebop": 12664
         },
         "blast": {
           "Bebop": 0
@@ -2380,16 +2386,16 @@
           "Bebop": 0
         },
         "optimism": {
-          "Bebop": 29905
+          "Bebop": 31741
         },
         "mode": {
           "Bebop": 0
         },
         "base": {
-          "Bebop": 6256821
+          "Bebop": 6917353
         },
         "scroll": {
-          "Bebop": 210
+          "Bebop": 73
         },
         "taiko": {
           "Bebop": 0
@@ -2397,16 +2403,16 @@
       },
       "breakdown30d": {
         "arbitrum": {
-          "Bebop": 91546049
+          "Bebop": 105516176
         },
         "ethereum": {
-          "Bebop": 3512876284
+          "Bebop": 3209558581
         },
         "polygon": {
-          "Bebop": 190962
+          "Bebop": 157899
         },
         "bsc": {
-          "Bebop": 147397
+          "Bebop": 259701
         },
         "blast": {
           "Bebop": 0
@@ -2415,23 +2421,23 @@
           "Bebop": 0
         },
         "optimism": {
-          "Bebop": 1019164
+          "Bebop": 1053163
         },
         "mode": {
           "Bebop": 0
         },
         "base": {
-          "Bebop": 147610065
+          "Bebop": 153188903
         },
         "scroll": {
-          "Bebop": 9100
+          "Bebop": 8858
         },
         "taiko": {
           "Bebop": 0
         }
       },
-      "total7DaysAgo": 69819481,
-      "total30DaysAgo": 203068218,
+      "total7DaysAgo": 251711880,
+      "total30DaysAgo": 160710132,
       "defillamaId": "3927",
       "name": "Bebop",
       "displayName": "Bebop",
@@ -2459,116 +2465,116 @@
       "id": "3927"
     },
     {
-      "total24h": 96385760,
-      "total48hto24h": 113121575,
-      "total7d": 858946907,
-      "total14dto7d": 607474810,
-      "total60dto30d": 5450765263,
-      "total30d": 3261150052,
-      "total1y": 59005780299,
-      "totalAllTime": 62778496854,
-      "average1y": 171031247.24347827,
-      "change_1d": -14.79,
-      "change_7d": 49.01,
-      "change_1m": -37.85,
-      "change_7dover7d": 41.4,
-      "change_30dover30d": -40.17,
+      "total24h": 73417905,
+      "total48hto24h": 82471074,
+      "total7d": 648512041,
+      "total14dto7d": 840310308,
+      "total60dto30d": 5238714344,
+      "total30d": 3168314329,
+      "total1y": 58831158708,
+      "totalAllTime": 63073753444,
+      "average1y": 170525097.70434782,
+      "change_1d": -10.98,
+      "change_7d": -50.65,
+      "change_1m": -37.67,
+      "change_7dover7d": -22.82,
+      "change_30dover30d": -39.52,
       "breakdown24h": {
         "ethereum": {
-          "ODOS": 24996932
+          "ODOS": 23924756
         },
         "arbitrum": {
-          "ODOS": 10079885
+          "ODOS": 8594145
         },
         "optimism": {
-          "ODOS": 1731327
+          "ODOS": 2637752
         },
         "base": {
-          "ODOS": 17224579
+          "ODOS": 15990829
         },
         "polygon": {
-          "ODOS": 1267940
+          "ODOS": 1822919
         },
         "avax": {
-          "ODOS": 24041147
+          "ODOS": 13104571
         },
         "bsc": {
-          "ODOS": 2855538
+          "ODOS": 1660700
         },
         "fantom": {
-          "ODOS": 49739
+          "ODOS": 20151
         },
         "era": {
-          "ODOS": 738361
+          "ODOS": 1163591
         },
         "mode": {
-          "ODOS": 33738
+          "ODOS": 10997
         },
         "linea": {
-          "ODOS": 759474
+          "ODOS": 315502
         },
         "mantle": {
-          "ODOS": 1791682
+          "ODOS": 1655292
         },
         "scroll": {
-          "ODOS": 280041
+          "ODOS": 115502
         },
         "fraxtal": {
-          "ODOS": 309928
+          "ODOS": 331213
         },
         "sonic": {
-          "ODOS": 11293117
+          "ODOS": 8727135
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "ODOS": 777494434
+          "ODOS": 786153539
         },
         "arbitrum": {
-          "ODOS": 335973435
+          "ODOS": 331406031
         },
         "optimism": {
-          "ODOS": 91760358
+          "ODOS": 91658285
         },
         "base": {
-          "ODOS": 622590005
+          "ODOS": 603920551
         },
         "polygon": {
-          "ODOS": 55226072
+          "ODOS": 54764559
         },
         "avax": {
-          "ODOS": 371409147
+          "ODOS": 399865609
         },
         "bsc": {
-          "ODOS": 76911961
+          "ODOS": 79760733
         },
         "fantom": {
-          "ODOS": 4860763
+          "ODOS": 4597020
         },
         "era": {
-          "ODOS": 102251726
+          "ODOS": 87125393
         },
         "mode": {
-          "ODOS": 1879692
+          "ODOS": 1817058
         },
         "linea": {
-          "ODOS": 19843305
+          "ODOS": 20032596
         },
         "mantle": {
-          "ODOS": 216525172
+          "ODOS": 197188258
         },
         "scroll": {
-          "ODOS": 2991031
+          "ODOS": 2956421
         },
         "fraxtal": {
-          "ODOS": 15128884
+          "ODOS": 15593489
         },
         "sonic": {
-          "ODOS": 566304067
+          "ODOS": 491474787
         }
       },
-      "total7DaysAgo": 64685751,
-      "total30DaysAgo": 155074091,
+      "total7DaysAgo": 148779087,
+      "total30DaysAgo": 117784133,
       "defillamaId": "3951",
       "name": "ODOS",
       "displayName": "ODOS",
@@ -2600,32 +2606,32 @@
       "id": "3951"
     },
     {
-      "total24h": 642622,
-      "total48hto24h": 895066,
-      "total7d": 8270762,
-      "total14dto7d": 6030753,
-      "total60dto30d": 77956768,
-      "total30d": 30833969,
-      "total1y": 932568903,
-      "totalAllTime": 1626869749,
-      "average1y": 2554983.295890411,
-      "change_1d": -28.2,
-      "change_7d": -17.57,
-      "change_1m": -51.94,
-      "change_7dover7d": 37.14,
-      "change_30dover30d": -60.45,
+      "total24h": 828946,
+      "total48hto24h": 779294,
+      "total7d": 5462910,
+      "total14dto7d": 8367359,
+      "total60dto30d": 71706367,
+      "total30d": 29571409,
+      "total1y": 929282363,
+      "totalAllTime": 1513450000,
+      "average1y": 2545979.076712329,
+      "change_1d": 6.37,
+      "change_7d": -45.11,
+      "change_1m": -18.06,
+      "change_7dover7d": -34.71,
+      "change_30dover30d": -58.76,
       "breakdown24h": {
         "cardano": {
-          "DexHunter": 642622
+          "DexHunter": 828946
         }
       },
       "breakdown30d": {
         "cardano": {
-          "DexHunter": 30833969
+          "DexHunter": 29571409
         }
       },
-      "total7DaysAgo": 779565,
-      "total30DaysAgo": 1337021,
+      "total7DaysAgo": 1510154,
+      "total30DaysAgo": 1011590,
       "defillamaId": "3979",
       "name": "DexHunter",
       "displayName": "DexHunter",
@@ -2647,16 +2653,16 @@
       "total48hto24h": 63742,
       "total7d": 446194,
       "total14dto7d": 446194,
-      "total60dto30d": 2501731,
-      "total30d": 1525367,
-      "total1y": 85927971,
-      "totalAllTime": 86190433,
-      "average1y": 241370.70505617978,
+      "total60dto30d": 2515882,
+      "total30d": 1618322,
+      "total1y": 85763024,
+      "totalAllTime": 86445401,
+      "average1y": 240907.37078651684,
       "change_1d": 0,
       "change_7d": 0,
-      "change_1m": 70.36,
+      "change_1m": 28.08,
       "change_7dover7d": 0,
-      "change_30dover30d": -39.03,
+      "change_30dover30d": -35.68,
       "breakdown24h": {
         "ethereum": {
           "Conveyor": 55877
@@ -2679,26 +2685,26 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "Conveyor": 785266
+          "Conveyor": 1006911
         },
         "arbitrum": {
-          "Conveyor": 137236
+          "Conveyor": 94987
         },
         "polygon": {
-          "Conveyor": 1798
+          "Conveyor": 1815
         },
         "bsc": {
-          "Conveyor": 3023
+          "Conveyor": 3365
         },
         "optimism": {
-          "Conveyor": 30087
+          "Conveyor": 31009
         },
         "base": {
-          "Conveyor": 567957
+          "Conveyor": 480235
         }
       },
       "total7DaysAgo": 63742,
-      "total30DaysAgo": 37415,
+      "total30DaysAgo": 49768,
       "defillamaId": "3980",
       "name": "Conveyor",
       "displayName": "Conveyor",
@@ -2721,32 +2727,32 @@
       "id": "3980"
     },
     {
-      "total24h": 10832412,
-      "total48hto24h": 6341558,
-      "total7d": 76536729,
-      "total14dto7d": 65548420,
-      "total60dto30d": 501709145,
-      "total30d": 309324272,
-      "total1y": 3043756390,
-      "totalAllTime": 3190709703,
-      "average1y": 8385003.829201102,
-      "change_1d": 70.82,
-      "change_7d": 86.58,
-      "change_1m": 361.01,
-      "change_7dover7d": 16.76,
-      "change_30dover30d": -38.35,
+      "total24h": 7465861,
+      "total48hto24h": 12218682,
+      "total7d": 64746117,
+      "total14dto7d": 74027286,
+      "total60dto30d": 484162314,
+      "total30d": 307986761,
+      "total1y": 3070064280,
+      "totalAllTime": 3227760819,
+      "average1y": 8457477.3553719,
+      "change_1d": -38.9,
+      "change_7d": -50,
+      "change_1m": -17.35,
+      "change_7dover7d": -12.54,
+      "change_30dover30d": -36.39,
       "breakdown24h": {
         "sui": {
-          "Aftermath Aggregator": 10832412
+          "Aftermath Aggregator": 7465861
         }
       },
       "breakdown30d": {
         "sui": {
-          "Aftermath Aggregator": 309324272
+          "Aftermath Aggregator": 307986761
         }
       },
-      "total7DaysAgo": 5805790,
-      "total30DaysAgo": 2349691,
+      "total7DaysAgo": 14933115,
+      "total30DaysAgo": 9033104,
       "defillamaId": "3981",
       "name": "Aftermath Aggregator",
       "displayName": "Aftermath Aggregator",
@@ -2769,122 +2775,122 @@
       "id": "3981"
     },
     {
-      "total24h": 110828234,
-      "total48hto24h": 124745187,
-      "total7d": 1061789290,
-      "total14dto7d": 771295690,
-      "total60dto30d": 3867135785,
-      "total30d": 3754392999,
-      "total1y": 35956850037,
-      "totalAllTime": 40365656233,
-      "average1y": 98511917.90958904,
-      "change_1d": -11.16,
-      "change_7d": 76.49,
-      "change_1m": -4.57,
-      "change_7dover7d": 37.66,
-      "change_30dover30d": -2.92,
+      "total24h": 123865528,
+      "total48hto24h": 100764498,
+      "total7d": 847477902,
+      "total14dto7d": 944933859,
+      "total60dto30d": 3727449761,
+      "total30d": 3841867052,
+      "total1y": 35769741236,
+      "totalAllTime": 40769431208,
+      "average1y": 97999291.05753425,
+      "change_1d": 22.93,
+      "change_7d": -8.18,
+      "change_1m": 10.9,
+      "change_7dover7d": -10.31,
+      "change_30dover30d": 3.07,
       "breakdown24h": {
         "base": {
-          "KyberSwap Aggregator": 14934946
+          "KyberSwap Aggregator": 10041835
         },
         "mantle": {
           "KyberSwap Aggregator": 0
         },
         "blast": {
-          "KyberSwap Aggregator": 4583
+          "KyberSwap Aggregator": 3179
         },
         "polygon_zkevm": {
           "KyberSwap Aggregator": 0
         },
         "ethereum": {
-          "KyberSwap Aggregator": 60791238
+          "KyberSwap Aggregator": 67149194
         },
         "arbitrum": {
-          "KyberSwap Aggregator": 7973118
+          "KyberSwap Aggregator": 7952372
         },
         "avax": {
-          "KyberSwap Aggregator": 9042551
+          "KyberSwap Aggregator": 8933007
         },
         "bsc": {
-          "KyberSwap Aggregator": 2733237
+          "KyberSwap Aggregator": 14264451
         },
         "fantom": {
-          "KyberSwap Aggregator": 9625
+          "KyberSwap Aggregator": 575
         },
         "optimism": {
-          "KyberSwap Aggregator": 346600
+          "KyberSwap Aggregator": 1713290
         },
         "polygon": {
-          "KyberSwap Aggregator": 887818
+          "KyberSwap Aggregator": 882762
         },
         "linea": {
-          "KyberSwap Aggregator": 147791
+          "KyberSwap Aggregator": 191116
         },
         "scroll": {
-          "KyberSwap Aggregator": 76948
+          "KyberSwap Aggregator": 19359
         },
         "era": {
-          "KyberSwap Aggregator": 301873
+          "KyberSwap Aggregator": 778520
         },
         "sonic": {
-          "KyberSwap Aggregator": 10922839
+          "KyberSwap Aggregator": 8757293
         },
         "berachain": {
-          "KyberSwap Aggregator": 2655067
+          "KyberSwap Aggregator": 3178575
         }
       },
       "breakdown30d": {
         "base": {
-          "KyberSwap Aggregator": 419744629
+          "KyberSwap Aggregator": 420748918
         },
         "mantle": {
           "KyberSwap Aggregator": 0
         },
         "blast": {
-          "KyberSwap Aggregator": 985352
+          "KyberSwap Aggregator": 978077
         },
         "polygon_zkevm": {
           "KyberSwap Aggregator": 0
         },
         "ethereum": {
-          "KyberSwap Aggregator": 2235354160
+          "KyberSwap Aggregator": 2249226988
         },
         "arbitrum": {
-          "KyberSwap Aggregator": 235178440
+          "KyberSwap Aggregator": 248397042
         },
         "avax": {
-          "KyberSwap Aggregator": 189746676
+          "KyberSwap Aggregator": 213373385
         },
         "bsc": {
-          "KyberSwap Aggregator": 216510084
+          "KyberSwap Aggregator": 223517969
         },
         "fantom": {
-          "KyberSwap Aggregator": 793501
+          "KyberSwap Aggregator": 769204
         },
         "optimism": {
-          "KyberSwap Aggregator": 42057324
+          "KyberSwap Aggregator": 42909165
         },
         "polygon": {
-          "KyberSwap Aggregator": 27082553
+          "KyberSwap Aggregator": 27314782
         },
         "linea": {
-          "KyberSwap Aggregator": 8955795
+          "KyberSwap Aggregator": 8657010
         },
         "scroll": {
-          "KyberSwap Aggregator": 1597842
+          "KyberSwap Aggregator": 1530958
         },
         "era": {
-          "KyberSwap Aggregator": 38128349
+          "KyberSwap Aggregator": 37490031
         },
         "sonic": {
-          "KyberSwap Aggregator": 249661357
+          "KyberSwap Aggregator": 280840539
         },
         "berachain": {
-          "KyberSwap Aggregator": 88596937
+          "KyberSwap Aggregator": 86112984
         }
       },
-      "total7DaysAgo": 62795227,
-      "total30DaysAgo": 116138965,
+      "total7DaysAgo": 134906791,
+      "total30DaysAgo": 111695414,
       "defillamaId": "3982",
       "name": "KyberSwap Aggregator",
       "displayName": "KyberSwap Aggregator",
@@ -2922,32 +2928,32 @@
       "id": "3982"
     },
     {
-      "total24h": 1521244,
-      "total48hto24h": 6196351,
-      "total7d": 102481182,
-      "total14dto7d": 51410293,
-      "total60dto30d": 206481807,
-      "total30d": 220444132,
-      "total1y": 5530295707,
-      "totalAllTime": 6088209183,
-      "average1y": 15151495.087671233,
-      "change_1d": -75.45,
-      "change_7d": -81.65,
-      "change_1m": -56.11,
-      "change_7dover7d": 99.34,
-      "change_30dover30d": 6.76,
+      "total24h": 5171734,
+      "total48hto24h": 5594195,
+      "total7d": 58739810,
+      "total14dto7d": 101246672,
+      "total60dto30d": 203461421,
+      "total30d": 244456150,
+      "total1y": 5562054255,
+      "totalAllTime": 6127268849,
+      "average1y": 15238504.808219178,
+      "change_1d": -7.55,
+      "change_7d": -58.2,
+      "change_1m": 0.63,
+      "change_7dover7d": -41.98,
+      "change_30dover30d": 20.15,
       "breakdown24h": {
         "aptos": {
-          "Panora": 9496220
+          "Panora": 3464305
         }
       },
       "breakdown30d": {
         "aptos": {
-          "Panora": 220444132
+          "Panora": 244456150
         }
       },
-      "total7DaysAgo": 8290275,
-      "total30DaysAgo": 3465865,
+      "total7DaysAgo": 12372388,
+      "total30DaysAgo": 5139606,
       "defillamaId": "4008",
       "name": "Panora",
       "displayName": "Panora",
@@ -2965,20 +2971,20 @@
       "id": "4008"
     },
     {
-      "total24h": 29598558,
-      "total48hto24h": 19299270,
-      "total7d": 187894967,
-      "total14dto7d": 215206574,
-      "total60dto30d": 866577370,
-      "total30d": 887617607,
-      "total1y": 9362265217,
-      "totalAllTime": 9567395645,
-      "average1y": 25650041.69041096,
-      "change_1d": 53.37,
-      "change_7d": -12.44,
-      "change_1m": -34.63,
-      "change_7dover7d": -12.69,
-      "change_30dover30d": 2.43,
+      "total24h": 8589737,
+      "total48hto24h": 30047046,
+      "total7d": 184235890,
+      "total14dto7d": 200840820,
+      "total60dto30d": 863278864,
+      "total30d": 882468906,
+      "total1y": 9466342397,
+      "totalAllTime": 9675287211,
+      "average1y": 25935184.649315067,
+      "change_1d": -71.41,
+      "change_7d": -62.56,
+      "change_1m": -63.76,
+      "change_7dover7d": -8.27,
+      "change_30dover30d": 2.22,
       "breakdown24h": {
         "ethereum": {
           "Kana Labs": 0
@@ -2999,7 +3005,7 @@
           "Kana Labs": 0
         },
         "aptos": {
-          "Kana Labs": 29598558
+          "Kana Labs": 8589737
         },
         "sui": {
           "Kana Labs": 0
@@ -3028,7 +3034,7 @@
           "Kana Labs": 0
         },
         "aptos": {
-          "Kana Labs": 887617607
+          "Kana Labs": 882468906
         },
         "sui": {
           "Kana Labs": 0
@@ -3037,8 +3043,8 @@
           "Kana Labs": 0
         }
       },
-      "total7DaysAgo": 33803433,
-      "total30DaysAgo": 45280351,
+      "total7DaysAgo": 22941915,
+      "total30DaysAgo": 23700023,
       "defillamaId": "4016",
       "name": "Kana Labs",
       "displayName": "Kana Labs",
@@ -3064,59 +3070,59 @@
       "id": "4016"
     },
     {
-      "total24h": 2155794,
-      "total48hto24h": 1866701,
-      "total7d": 10528924,
-      "total14dto7d": 6873410,
-      "total60dto30d": 62108488,
-      "total30d": 35887913,
-      "total1y": 1510628305,
-      "totalAllTime": 1632533500,
-      "average1y": 4138707.684931507,
-      "change_1d": 15.49,
-      "change_7d": 596.15,
-      "change_1m": 163.99,
-      "change_7dover7d": 53.18,
-      "change_30dover30d": -42.22,
+      "total24h": 560283,
+      "total48hto24h": 851729,
+      "total7d": 6852651,
+      "total14dto7d": 9460757,
+      "total60dto30d": 62975689,
+      "total30d": 30771946,
+      "total1y": 1503890313,
+      "totalAllTime": 1635090256,
+      "average1y": 4120247.432876712,
+      "change_1d": -34.22,
+      "change_7d": -72.7,
+      "change_1m": -74.04,
+      "change_7dover7d": -27.57,
+      "change_30dover30d": -51.14,
       "breakdown24h": {
         "ethereum": {
-          "WOWMAX Exchange": 3000
+          "WOWMAX Exchange": 1386
         },
         "bsc": {
-          "WOWMAX Exchange": 892
+          "WOWMAX Exchange": 9416
         },
         "base": {
-          "WOWMAX Exchange": 734780
+          "WOWMAX Exchange": 122566
         },
         "linea": {
-          "WOWMAX Exchange": 98901
+          "WOWMAX Exchange": 38237
         },
         "scroll": {
-          "WOWMAX Exchange": 412
+          "WOWMAX Exchange": 1106
         },
         "cronos": {
-          "WOWMAX Exchange": 7
+          "WOWMAX Exchange": 0
         },
         "manta": {
-          "WOWMAX Exchange": 6722
+          "WOWMAX Exchange": 16170
         },
         "blast": {
-          "WOWMAX Exchange": 0
+          "WOWMAX Exchange": 112209
         },
         "xlayer": {
           "WOWMAX Exchange": 0
         },
         "metis": {
-          "WOWMAX Exchange": 0
+          "WOWMAX Exchange": 54
         },
         "arbitrum": {
-          "WOWMAX Exchange": 1213461
+          "WOWMAX Exchange": 161092
         },
         "zeta": {
           "WOWMAX Exchange": 0
         },
         "soneium": {
-          "WOWMAX Exchange": 97619
+          "WOWMAX Exchange": 98047
         },
         "unit0": {
           "WOWMAX Exchange": 0
@@ -3124,50 +3130,50 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "WOWMAX Exchange": 237323
+          "WOWMAX Exchange": 221837
         },
         "bsc": {
-          "WOWMAX Exchange": 460286
+          "WOWMAX Exchange": 451323
         },
         "base": {
-          "WOWMAX Exchange": 5595057
+          "WOWMAX Exchange": 2587274
         },
         "linea": {
-          "WOWMAX Exchange": 1479437
+          "WOWMAX Exchange": 1474386
         },
         "scroll": {
-          "WOWMAX Exchange": 287452
+          "WOWMAX Exchange": 264933
         },
         "cronos": {
           "WOWMAX Exchange": 74750
         },
         "manta": {
-          "WOWMAX Exchange": 886473
+          "WOWMAX Exchange": 877098
         },
         "blast": {
-          "WOWMAX Exchange": 962500
+          "WOWMAX Exchange": 1010550
         },
         "xlayer": {
           "WOWMAX Exchange": 1
         },
         "metis": {
-          "WOWMAX Exchange": 386753
+          "WOWMAX Exchange": 105583
         },
         "arbitrum": {
-          "WOWMAX Exchange": 16530160
+          "WOWMAX Exchange": 14809937
         },
         "zeta": {
           "WOWMAX Exchange": 0
         },
         "soneium": {
-          "WOWMAX Exchange": 8977828
+          "WOWMAX Exchange": 8884381
         },
         "unit0": {
           "WOWMAX Exchange": 9893
         }
       },
-      "total7DaysAgo": 309675,
-      "total30DaysAgo": 816618,
+      "total7DaysAgo": 2052587,
+      "total30DaysAgo": 2158408,
       "defillamaId": "4192",
       "name": "WOWMAX Exchange",
       "displayName": "WOWMAX Exchange",
@@ -3188,7 +3194,7 @@
         "Arbitrum",
         "ZetaChain",
         "Soneium",
-        "UNIT0"
+        "Unit Zero"
       ],
       "protocolType": "protocol",
       "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/wowmax",
@@ -3204,9 +3210,9 @@
       "total14dto7d": 0,
       "total60dto30d": 0,
       "total30d": 0,
-      "total1y": 1034026,
+      "total1y": 280145,
       "totalAllTime": 7873744,
-      "average1y": 2832.9479452054793,
+      "average1y": 767.5205479452055,
       "breakdown24h": {
         "wemix": {
           "OPT Finance": 0
@@ -3236,32 +3242,32 @@
       "id": "4277"
     },
     {
-      "total24h": 27795,
-      "total48hto24h": 16485,
-      "total7d": 284785,
-      "total14dto7d": 259171,
-      "total60dto30d": 2264097,
-      "total30d": 1425482,
-      "total1y": 93138419,
-      "totalAllTime": 377755778,
-      "average1y": 255173.7506849315,
-      "change_1d": 68.61,
-      "change_7d": 2041.37,
-      "change_1m": -36.66,
-      "change_7dover7d": 9.88,
-      "change_30dover30d": -37.04,
+      "total24h": 18059,
+      "total48hto24h": 29301,
+      "total7d": 166237,
+      "total14dto7d": 205731,
+      "total60dto30d": 2209081,
+      "total30d": 1384387,
+      "total1y": 90030953,
+      "totalAllTime": 377811793,
+      "average1y": 246660.14520547946,
+      "change_1d": -38.37,
+      "change_7d": -69.06,
+      "change_1m": -67.34,
+      "change_7dover7d": -19.2,
+      "change_30dover30d": -37.33,
       "breakdown24h": {
         "starknet": {
-          "Fibrous Finance": 22769
+          "Fibrous Finance": 13031
         }
       },
       "breakdown30d": {
         "starknet": {
-          "Fibrous Finance": 1425482
+          "Fibrous Finance": 1384387
         }
       },
-      "total7DaysAgo": 1298,
-      "total30DaysAgo": 43881,
+      "total7DaysAgo": 58368,
+      "total30DaysAgo": 55295,
       "defillamaId": "4278",
       "name": "Fibrous Finance",
       "displayName": "Fibrous Finance",
@@ -3279,140 +3285,140 @@
       "id": "4278"
     },
     {
-      "total24h": 2465459,
-      "total48hto24h": 18610560,
-      "total7d": 125298918,
-      "total14dto7d": 92719478,
-      "total60dto30d": 307455628,
-      "total30d": 467070185,
-      "total1y": 3783402511,
-      "totalAllTime": 4728130835,
-      "average1y": 10365486.33150685,
-      "change_1d": -86.75,
-      "change_7d": -75.81,
-      "change_1m": -73.94,
-      "change_7dover7d": 35.14,
-      "change_30dover30d": 51.91,
+      "total24h": 3635181,
+      "total48hto24h": 13124707,
+      "total7d": 105722332,
+      "total14dto7d": 9984213,
+      "total60dto30d": 341909110,
+      "total30d": 345093627,
+      "total1y": 3707253223,
+      "totalAllTime": 4655724751,
+      "average1y": 10156858.14520548,
+      "change_1d": -72.3,
+      "change_7d": 59.65,
+      "change_1m": -79.53,
+      "change_7dover7d": 958.89,
+      "change_30dover30d": 0.93,
       "breakdown24h": {
         "ethereum": {
-          "Magpie Protocol": 324056
+          "Magpie Protocol": 347028
         },
         "arbitrum": {
-          "Magpie Protocol": 100908
+          "Magpie Protocol": 340055
         },
         "polygon": {
-          "Magpie Protocol": 90869
+          "Magpie Protocol": 195020
         },
         "avax": {
-          "Magpie Protocol": 2443043
+          "Magpie Protocol": 273047
         },
         "bsc": {
-          "Magpie Protocol": 173068
+          "Magpie Protocol": 265731
         },
         "optimism": {
-          "Magpie Protocol": 39610
+          "Magpie Protocol": 148816
         },
         "base": {
-          "Magpie Protocol": 558125
+          "Magpie Protocol": 761630
         },
         "scroll": {
-          "Magpie Protocol": 246
+          "Magpie Protocol": 257
         },
         "manta": {
-          "Magpie Protocol": 944
+          "Magpie Protocol": 1230
         },
         "taiko": {
-          "Magpie Protocol": 6214
+          "Magpie Protocol": 1907
         },
         "polygon_zkevm": {
-          "Magpie Protocol": 365
+          "Magpie Protocol": 374
         },
         "blast": {
-          "Magpie Protocol": 1365
+          "Magpie Protocol": 1681
         },
         "metis": {
-          "Magpie Protocol": 188
+          "Magpie Protocol": 92
         },
         "fantom": {
-          "Magpie Protocol": 1657
+          "Magpie Protocol": 879
         },
         "sonic": {
-          "Magpie Protocol": 14878127
+          "Magpie Protocol": 11877952
         },
         "era": {
           "Magpie Protocol": 0
         },
         "berachain": {
-          "Magpie Protocol": 183027
+          "Magpie Protocol": 311739
         },
         "linea": {
-          "Magpie Protocol": 61633
+          "Magpie Protocol": 88464
         },
         "ink": {
-          "Magpie Protocol": 36832
+          "Magpie Protocol": 67948
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Magpie Protocol": 37117008
+          "Magpie Protocol": 19417057
         },
         "arbitrum": {
-          "Magpie Protocol": 6071983
+          "Magpie Protocol": 3565523
         },
         "polygon": {
-          "Magpie Protocol": 3302164
+          "Magpie Protocol": 2864173
         },
         "avax": {
-          "Magpie Protocol": 7798224
+          "Magpie Protocol": 6792373
         },
         "bsc": {
-          "Magpie Protocol": 7892290
+          "Magpie Protocol": 7809509
         },
         "optimism": {
-          "Magpie Protocol": 430937
+          "Magpie Protocol": 453031
         },
         "base": {
-          "Magpie Protocol": 15175505
+          "Magpie Protocol": 11435841
         },
         "scroll": {
-          "Magpie Protocol": 16797
+          "Magpie Protocol": 14816
         },
         "manta": {
-          "Magpie Protocol": 50985
+          "Magpie Protocol": 33648
         },
         "taiko": {
-          "Magpie Protocol": 133611
+          "Magpie Protocol": 127946
         },
         "polygon_zkevm": {
-          "Magpie Protocol": 6567
+          "Magpie Protocol": 7108
         },
         "blast": {
-          "Magpie Protocol": 97976
+          "Magpie Protocol": 87641
         },
         "metis": {
-          "Magpie Protocol": 6011
+          "Magpie Protocol": 4939
         },
         "fantom": {
-          "Magpie Protocol": 25303
+          "Magpie Protocol": 14016
         },
         "sonic": {
-          "Magpie Protocol": 362001316
+          "Magpie Protocol": 272776122
         },
         "era": {
-          "Magpie Protocol": 295446
+          "Magpie Protocol": 190850
         },
         "berachain": {
-          "Magpie Protocol": 20487583
+          "Magpie Protocol": 14584190
         },
         "linea": {
-          "Magpie Protocol": 1595487
+          "Magpie Protocol": 1485441
         },
         "ink": {
-          "Magpie Protocol": 4564992
+          "Magpie Protocol": 3429403
         }
       },
-      "total7DaysAgo": 10191545,
-      "total30DaysAgo": 9462375,
+      "total7DaysAgo": 2276936,
+      "total30DaysAgo": 17762248,
       "defillamaId": "4457",
       "name": "Magpie Protocol",
       "displayName": "Magpie Protocol",
@@ -3448,32 +3454,32 @@
       "id": "4457"
     },
     {
-      "total24h": 71811,
-      "total48hto24h": 83872,
-      "total7d": 450827,
-      "total14dto7d": 222637,
-      "total60dto30d": 316991,
-      "total30d": 865454,
-      "total1y": 5337111,
-      "totalAllTime": 5389739,
-      "average1y": 14622.22191780822,
-      "change_1d": -14.38,
-      "change_7d": 12.71,
-      "change_1m": 1033.92,
-      "change_7dover7d": 102.49,
-      "change_30dover30d": 173.02,
+      "total24h": 1281,
+      "total48hto24h": 4550,
+      "total7d": 278033,
+      "total14dto7d": 411500,
+      "total60dto30d": 391638,
+      "total30d": 816419,
+      "total1y": 5387653,
+      "totalAllTime": 5441010,
+      "average1y": 14760.693150684932,
+      "change_1d": -71.85,
+      "change_7d": -98.4,
+      "change_1m": -91.47,
+      "change_7dover7d": -32.43,
+      "change_30dover30d": 108.46,
       "breakdown24h": {
         "hedera": {
-          "EtaSwap": 71811
+          "EtaSwap": 1281
         }
       },
       "breakdown30d": {
         "hedera": {
-          "EtaSwap": 865454
+          "EtaSwap": 816419
         }
       },
-      "total7DaysAgo": 63715,
-      "total30DaysAgo": 6333,
+      "total7DaysAgo": 80300,
+      "total30DaysAgo": 15024,
       "defillamaId": "4475",
       "name": "EtaSwap",
       "displayName": "EtaSwap",
@@ -3491,32 +3497,32 @@
       "id": "4475"
     },
     {
-      "total24h": 1191,
-      "total48hto24h": 1818,
-      "total7d": 199345,
-      "total14dto7d": 81916,
-      "total60dto30d": 13424574,
-      "total30d": 461381,
-      "total1y": 173529206,
-      "totalAllTime": 212171049,
-      "average1y": 475422.4821917808,
-      "change_1d": -34.49,
-      "change_7d": 51.91,
-      "change_1m": -99.32,
-      "change_7dover7d": 143.35,
-      "change_30dover30d": -96.56,
+      "total24h": 689454,
+      "total48hto24h": 532770,
+      "total7d": 539942,
+      "total14dto7d": 263607,
+      "total60dto30d": 13314606,
+      "total30d": 968621,
+      "total1y": 173938440,
+      "totalAllTime": 213394537,
+      "average1y": 476543.6712328767,
+      "change_1d": 29.41,
+      "change_7d": 56366.34,
+      "change_1m": 10338.36,
+      "change_7dover7d": 104.83,
+      "change_30dover30d": -92.73,
       "breakdown24h": {
         "ethereum": {
           "Hinkal": 0
         },
         "base": {
-          "Hinkal": 442
+          "Hinkal": 190
         },
         "arbitrum": {
-          "Hinkal": 1683
+          "Hinkal": 256
         },
         "polygon": {
-          "Hinkal": 0
+          "Hinkal": 3
         },
         "bsc": {
           "Hinkal": 0
@@ -3525,34 +3531,34 @@
           "Hinkal": 0
         },
         "optimism": {
-          "Hinkal": 110
+          "Hinkal": 195
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Hinkal": 14625
+          "Hinkal": 522687
         },
         "base": {
-          "Hinkal": 376218
+          "Hinkal": 372569
         },
         "arbitrum": {
-          "Hinkal": 18784
+          "Hinkal": 30780
         },
         "polygon": {
-          "Hinkal": 4809
+          "Hinkal": 3942
         },
         "bsc": {
-          "Hinkal": 32829
+          "Hinkal": 29780
         },
         "avax": {
-          "Hinkal": 1200
+          "Hinkal": 0
         },
         "optimism": {
-          "Hinkal": 12916
+          "Hinkal": 8863
         }
       },
-      "total7DaysAgo": 784,
-      "total30DaysAgo": 175108,
+      "total7DaysAgo": 1221,
+      "total30DaysAgo": 6605,
       "defillamaId": "4487",
       "name": "Hinkal",
       "displayName": "Hinkal",
@@ -3576,24 +3582,24 @@
       "id": "4487"
     },
     {
-      "total24h": 101,
+      "total24h": 74,
       "total48hto24h": 0,
-      "total7d": 101,
+      "total7d": 121,
       "total14dto7d": 0,
-      "total60dto30d": 13927,
-      "total30d": 101,
-      "total1y": 858715,
-      "totalAllTime": 427550,
-      "average1y": 2834.042904290429,
-      "change_30dover30d": -99.27,
+      "total60dto30d": 4758,
+      "total30d": 121,
+      "total1y": 857877,
+      "totalAllTime": 427644,
+      "average1y": 2831.2772277227723,
+      "change_30dover30d": -97.46,
       "breakdown24h": {
         "starknet": {
-          "Bountive": 101
+          "Bountive": 0
         }
       },
       "breakdown30d": {
         "starknet": {
-          "Bountive": 101
+          "Bountive": 121
         }
       },
       "total7DaysAgo": 0,
@@ -3621,98 +3627,98 @@
       "id": "4516"
     },
     {
-      "total24h": 49759991,
-      "total48hto24h": 57218075,
-      "total7d": 450713756,
-      "total14dto7d": 270124769,
-      "total60dto30d": 2137123598,
-      "total30d": 1422749785,
-      "total1y": 21209152875,
-      "totalAllTime": 61940755525,
-      "average1y": 58107268.15068493,
-      "change_1d": -13.03,
-      "change_7d": 335.44,
-      "change_1m": -7,
-      "change_7dover7d": 66.85,
-      "change_30dover30d": -33.43,
+      "total24h": 41842904,
+      "total48hto24h": 43095575,
+      "total7d": 333014818,
+      "total14dto7d": 381123562,
+      "total60dto30d": 1917266702,
+      "total30d": 1526852518,
+      "total1y": 21018904478,
+      "totalAllTime": 62108984636,
+      "average1y": 57586039.665753424,
+      "change_1d": -2.91,
+      "change_7d": -59.91,
+      "change_1m": 423.57,
+      "change_7dover7d": -12.62,
+      "change_30dover30d": -20.36,
       "breakdown24h": {
         "arbitrum": {
-          "0x Aggregator": 5182622
+          "0x Aggregator": 4247489
         },
         "avax": {
-          "0x Aggregator": 440701
+          "0x Aggregator": 865546
         },
         "base": {
-          "0x Aggregator": 9277213
+          "0x Aggregator": 11576337
         },
         "bsc": {
-          "0x Aggregator": 1118423
+          "0x Aggregator": 966607
         },
         "ethereum": {
-          "0x Aggregator": 31563754
+          "0x Aggregator": 21780232
         },
         "optimism": {
-          "0x Aggregator": 477533
+          "0x Aggregator": 745715
         },
         "polygon": {
-          "0x Aggregator": 1417415
+          "0x Aggregator": 1449006
         },
         "blast": {
-          "0x Aggregator": 89622
+          "0x Aggregator": 46083
         },
         "linea": {
-          "0x Aggregator": 119836
+          "0x Aggregator": 70727
         },
         "scroll": {
-          "0x Aggregator": 44576
+          "0x Aggregator": 35817
         },
         "mantle": {
-          "0x Aggregator": 24887
+          "0x Aggregator": 55218
         },
         "mode": {
-          "0x Aggregator": 3409
+          "0x Aggregator": 4127
         }
       },
       "breakdown30d": {
         "arbitrum": {
-          "0x Aggregator": 110539753
+          "0x Aggregator": 123321905
         },
         "avax": {
-          "0x Aggregator": 14693635
+          "0x Aggregator": 15559672
         },
         "base": {
-          "0x Aggregator": 303347340
+          "0x Aggregator": 322442158
         },
         "bsc": {
-          "0x Aggregator": 74397079
+          "0x Aggregator": 73606091
         },
         "ethereum": {
-          "0x Aggregator": 846832478
+          "0x Aggregator": 913387142
         },
         "optimism": {
-          "0x Aggregator": 16646423
+          "0x Aggregator": 19348838
         },
         "polygon": {
-          "0x Aggregator": 50215893
+          "0x Aggregator": 52351646
         },
         "blast": {
-          "0x Aggregator": 2027870
+          "0x Aggregator": 2349673
         },
         "linea": {
-          "0x Aggregator": 2184537
+          "0x Aggregator": 2448956
         },
         "scroll": {
-          "0x Aggregator": 689942
+          "0x Aggregator": 768277
         },
         "mantle": {
-          "0x Aggregator": 1062495
+          "0x Aggregator": 1157150
         },
         "mode": {
-          "0x Aggregator": 112340
+          "0x Aggregator": 111010
         }
       },
-      "total7DaysAgo": 11427403,
-      "total30DaysAgo": 53508137,
+      "total7DaysAgo": 104380740,
+      "total30DaysAgo": 7991901,
       "defillamaId": "4628",
       "name": "0x Aggregator",
       "displayName": "0x Aggregator",
@@ -3741,44 +3747,44 @@
       "id": "4628"
     },
     {
-      "total24h": 48530,
-      "total48hto24h": 49772,
-      "total7d": 986882,
-      "total14dto7d": 462297,
-      "total60dto30d": 1459187,
-      "total30d": 1877209,
-      "total1y": 46585511,
-      "totalAllTime": 46865899,
-      "average1y": 127631.53698630138,
-      "change_1d": -2.5,
-      "change_7d": 25.83,
-      "change_1m": 111.26,
-      "change_7dover7d": 113.47,
-      "change_30dover30d": 28.65,
+      "total24h": 44870,
+      "total48hto24h": 40044,
+      "total7d": 439188,
+      "total14dto7d": 1049452,
+      "total60dto30d": 1367002,
+      "total30d": 2029349,
+      "total1y": 46702762,
+      "totalAllTime": 47075491,
+      "average1y": 127952.77260273973,
+      "change_1d": 12.05,
+      "change_7d": -80.21,
+      "change_1m": 233.66,
+      "change_7dover7d": -58.15,
+      "change_30dover30d": 48.45,
       "breakdown24h": {
         "berachain": {
-          "EISEN Finance": 42
+          "EISEN Finance": 1500
         },
         "scroll": {
-          "EISEN Finance": 326
+          "EISEN Finance": 1816
         },
         "zircuit": {
-          "EISEN Finance": 1037
+          "EISEN Finance": 12375
         },
         "linea": {
-          "EISEN Finance": 383
+          "EISEN Finance": 476
         },
         "mantle": {
-          "EISEN Finance": 244
+          "EISEN Finance": 203
         },
         "blast": {
-          "EISEN Finance": 1301
+          "EISEN Finance": 1801
         },
         "base": {
-          "EISEN Finance": 35551
+          "EISEN Finance": 9690
         },
         "core": {
-          "EISEN Finance": 567
+          "EISEN Finance": 6638
         },
         "bitlayer": {
           "EISEN Finance": 0
@@ -3787,51 +3793,51 @@
           "EISEN Finance": 0
         },
         "taiko": {
-          "EISEN Finance": 2811
+          "EISEN Finance": 862
         },
         "mode": {
-          "EISEN Finance": 30
+          "EISEN Finance": 940
         },
         "soneium": {
-          "EISEN Finance": 19664
+          "EISEN Finance": 2627
         },
         "hemi": {
-          "EISEN Finance": 150
+          "EISEN Finance": 19532
         },
         "rsk": {
           "EISEN Finance": 0
         },
         "bsc": {
-          "EISEN Finance": 4241
+          "EISEN Finance": 0
         },
         "arbitrum": {
-          "EISEN Finance": 0
+          "EISEN Finance": 8
         }
       },
       "breakdown30d": {
         "berachain": {
-          "EISEN Finance": 68414
+          "EISEN Finance": 67517
         },
         "scroll": {
-          "EISEN Finance": 30720
+          "EISEN Finance": 34683
         },
         "zircuit": {
-          "EISEN Finance": 97353
+          "EISEN Finance": 107170
         },
         "linea": {
-          "EISEN Finance": 22680
+          "EISEN Finance": 23578
         },
         "mantle": {
-          "EISEN Finance": 202951
+          "EISEN Finance": 209757
         },
         "blast": {
-          "EISEN Finance": 64357
+          "EISEN Finance": 66241
         },
         "base": {
-          "EISEN Finance": 900507
+          "EISEN Finance": 997974
         },
         "core": {
-          "EISEN Finance": 63016
+          "EISEN Finance": 70175
         },
         "bitlayer": {
           "EISEN Finance": 0
@@ -3840,29 +3846,29 @@
           "EISEN Finance": 0
         },
         "taiko": {
-          "EISEN Finance": 98946
+          "EISEN Finance": 97620
         },
         "mode": {
-          "EISEN Finance": 14280
+          "EISEN Finance": 15311
         },
         "soneium": {
-          "EISEN Finance": 220819
+          "EISEN Finance": 225298
         },
         "hemi": {
-          "EISEN Finance": 76899
+          "EISEN Finance": 93421
         },
         "rsk": {
-          "EISEN Finance": 8
+          "EISEN Finance": 0
         },
         "bsc": {
-          "EISEN Finance": 16259
+          "EISEN Finance": 20431
         },
         "arbitrum": {
-          "EISEN Finance": 0
+          "EISEN Finance": 173
         }
       },
-      "total7DaysAgo": 38569,
-      "total30DaysAgo": 22972,
+      "total7DaysAgo": 226773,
+      "total30DaysAgo": 13448,
       "defillamaId": "4691",
       "name": "EISEN Finance",
       "displayName": "EISEN Finance",
@@ -3896,23 +3902,23 @@
       "id": "4691"
     },
     {
-      "total24h": 5,
-      "total48hto24h": 5,
-      "total7d": 978,
-      "total14dto7d": 1745,
-      "total60dto30d": 4694358,
-      "total30d": 1131883,
-      "total1y": 1774601941,
-      "totalAllTime": 1771931860,
-      "average1y": 4861923.126027397,
-      "change_1d": 0,
-      "change_7d": -92.31,
-      "change_1m": -99.91,
-      "change_7dover7d": -43.95,
-      "change_30dover30d": -75.89,
+      "total24h": 0,
+      "total48hto24h": 18,
+      "total7d": 207,
+      "total14dto7d": 1323,
+      "total60dto30d": 3140241,
+      "total30d": 1107669,
+      "total1y": 1774601849,
+      "totalAllTime": 1771931889,
+      "average1y": 4861922.873972603,
+      "change_1d": -100,
+      "change_7d": -100,
+      "change_1m": -100,
+      "change_7dover7d": -84.35,
+      "change_30dover30d": -64.73,
       "breakdown24h": {
         "bsc": {
-          "uDEX": 0
+          "uDEX": 2
         },
         "polygon": {
           "uDEX": 0
@@ -3924,12 +3930,12 @@
           "uDEX": 0
         },
         "op_bnb": {
-          "uDEX": 4
+          "uDEX": 0
         }
       },
       "breakdown30d": {
         "bsc": {
-          "uDEX": 1126841
+          "uDEX": 1102689
         },
         "polygon": {
           "uDEX": 45
@@ -3941,11 +3947,11 @@
           "uDEX": 4817
         },
         "op_bnb": {
-          "uDEX": 180
+          "uDEX": 118
         }
       },
-      "total7DaysAgo": 65,
-      "total30DaysAgo": 5372,
+      "total7DaysAgo": 56,
+      "total30DaysAgo": 6815,
       "defillamaId": "4704",
       "name": "uDEX",
       "displayName": "uDEX",
@@ -3967,30 +3973,32 @@
       "id": "4704"
     },
     {
-      "total24h": 0,
-      "total48hto24h": 236,
-      "total7d": 3397,
-      "total14dto7d": 438,
-      "total60dto30d": 15973,
-      "total30d": 10783,
-      "total1y": 1152417,
-      "totalAllTime": 1190505,
-      "average1y": 3578.9347826086955,
-      "change_1d": -100,
-      "change_7dover7d": 675.57,
-      "change_30dover30d": -32.49,
+      "total24h": 56,
+      "total48hto24h": 2,
+      "total7d": 1072,
+      "total14dto7d": 2957,
+      "total60dto30d": 15677,
+      "total30d": 10330,
+      "total1y": 1153018,
+      "totalAllTime": 1191161,
+      "average1y": 3536.865030674847,
+      "change_1d": 2700,
+      "change_7d": -95.72,
+      "change_1m": -92.56,
+      "change_7dover7d": -63.75,
+      "change_30dover30d": -34.11,
       "breakdown24h": {
         "injective": {
-          "Injex Finance": 139
+          "Injex Finance": 466
         }
       },
       "breakdown30d": {
         "injective": {
-          "Injex Finance": 10783
+          "Injex Finance": 10330
         }
       },
-      "total7DaysAgo": 0,
-      "total30DaysAgo": 0,
+      "total7DaysAgo": 1308,
+      "total30DaysAgo": 753,
       "defillamaId": "4762",
       "name": "Injex Finance",
       "displayName": "Injex Finance",
@@ -4032,23 +4040,23 @@
       "id": "4791"
     },
     {
-      "total24h": 102263,
-      "total48hto24h": 126913,
-      "total7d": 2931879,
-      "total14dto7d": 1043589,
-      "total60dto30d": 7405252,
-      "total30d": 6925621,
-      "total1y": 2972972994,
-      "totalAllTime": 701321338,
-      "average1y": 9438009.504761904,
-      "change_1d": -19.42,
-      "change_7d": 44.17,
-      "change_1m": -17.82,
-      "change_7dover7d": 180.94,
-      "change_30dover30d": -6.48,
+      "total24h": 254050,
+      "total48hto24h": 143206,
+      "total7d": 905556,
+      "total14dto7d": 3044517,
+      "total60dto30d": 7372317,
+      "total30d": 6748968,
+      "total1y": 2973535273,
+      "totalAllTime": 702046390,
+      "average1y": 9321427.188087774,
+      "change_1d": 77.4,
+      "change_7d": -67.19,
+      "change_1m": 36.16,
+      "change_7dover7d": -70.26,
+      "change_30dover30d": -8.46,
       "breakdown24h": {
         "archway": {
-          "Hallswap": 333
+          "Hallswap": 2019
         },
         "chihuahua": {
           "Hallswap": 0
@@ -4057,7 +4065,7 @@
           "Hallswap": 0
         },
         "injective": {
-          "Hallswap": 88615
+          "Hallswap": 167816
         },
         "juno": {
           "Hallswap": 0
@@ -4066,7 +4074,7 @@
           "Hallswap": 0
         },
         "migaloo": {
-          "Hallswap": 22
+          "Hallswap": 0
         },
         "neutron": {
           "Hallswap": 0
@@ -4078,18 +4086,18 @@
           "Hallswap": 0
         },
         "sei": {
-          "Hallswap": 8
+          "Hallswap": 0
         },
         "solana": {
           "Hallswap": 0
         },
         "terra2": {
-          "Hallswap": 4981
+          "Hallswap": 6788
         }
       },
       "breakdown30d": {
         "archway": {
-          "Hallswap": 117382
+          "Hallswap": 117455
         },
         "chihuahua": {
           "Hallswap": 0
@@ -4098,7 +4106,7 @@
           "Hallswap": 0
         },
         "injective": {
-          "Hallswap": 6448587
+          "Hallswap": 6279550
         },
         "juno": {
           "Hallswap": 0
@@ -4107,7 +4115,7 @@
           "Hallswap": 0
         },
         "migaloo": {
-          "Hallswap": 2262
+          "Hallswap": 1660
         },
         "neutron": {
           "Hallswap": 0
@@ -4119,17 +4127,17 @@
           "Hallswap": 0
         },
         "sei": {
-          "Hallswap": 2127
+          "Hallswap": 2109
         },
         "solana": {
           "Hallswap": 0
         },
         "terra2": {
-          "Hallswap": 355263
+          "Hallswap": 348194
         }
       },
-      "total7DaysAgo": 70934,
-      "total30DaysAgo": 124441,
+      "total7DaysAgo": 774365,
+      "total30DaysAgo": 186587,
       "defillamaId": "4824",
       "name": "Hallswap",
       "displayName": "Hallswap",
@@ -4159,32 +4167,32 @@
       "id": "4824"
     },
     {
-      "total24h": 9916298,
-      "total48hto24h": 1792646,
-      "total7d": 64197118,
-      "total14dto7d": 44177279,
-      "total60dto30d": 146287203,
-      "total30d": 164155608,
-      "total1y": 1541880219,
-      "totalAllTime": 1540110159,
-      "average1y": 4894857.838095238,
-      "change_1d": 453.17,
-      "change_7d": 79.54,
-      "change_1m": 129.71,
-      "change_7dover7d": 45.32,
-      "change_30dover30d": 12.21,
+      "total24h": 3995538,
+      "total48hto24h": 8066868,
+      "total7d": 47747297,
+      "total14dto7d": 64463758,
+      "total60dto30d": 146443368,
+      "total30d": 177949891,
+      "total1y": 1567215527,
+      "totalAllTime": 1565445467,
+      "average1y": 4912901.338557994,
+      "change_1d": -50.47,
+      "change_7d": -76.69,
+      "change_1m": 62.32,
+      "change_7dover7d": -25.93,
+      "change_30dover30d": 21.51,
       "breakdown24h": {
         "sui": {
-          "FlowX Aggregator": 9916298
+          "FlowX Aggregator": 3995538
         }
       },
       "breakdown30d": {
         "sui": {
-          "FlowX Aggregator": 164155608
+          "FlowX Aggregator": 177949891
         }
       },
-      "total7DaysAgo": 5523052,
-      "total30DaysAgo": 4316899,
+      "total7DaysAgo": 17143093,
+      "total30DaysAgo": 2461531,
       "defillamaId": "4825",
       "name": "FlowX Aggregator",
       "displayName": "FlowX Aggregator",
@@ -4207,32 +4215,32 @@
       "id": "4825"
     },
     {
-      "total24h": 77540880,
-      "total48hto24h": 66635392,
-      "total7d": 435322791,
-      "total14dto7d": 626432256,
-      "total60dto30d": 873858230,
-      "total30d": 1759232732,
-      "total1y": 6444344251,
-      "totalAllTime": 6521767243,
-      "average1y": 22852284.578014184,
-      "change_1d": 16.37,
-      "change_7d": 74.57,
-      "change_1m": 263.79,
-      "change_7dover7d": -30.51,
-      "change_30dover30d": 101.32,
+      "total24h": 17298417,
+      "total48hto24h": 32955994,
+      "total7d": 373824732,
+      "total14dto7d": 425444799,
+      "total60dto30d": 933874382,
+      "total30d": 1758774355,
+      "total1y": 6592860319,
+      "totalAllTime": 6610040848,
+      "average1y": 23051959.157342657,
+      "change_1d": -47.51,
+      "change_7d": -76.62,
+      "change_1m": -50.62,
+      "change_7dover7d": -12.13,
+      "change_30dover30d": 88.33,
       "breakdown24h": {
         "sui": {
-          "7K Aggregator": 74203800
+          "7K Aggregator": 18240141
         }
       },
       "breakdown30d": {
         "sui": {
-          "7K Aggregator": 1759232732
+          "7K Aggregator": 1758774355
         }
       },
-      "total7DaysAgo": 44419463,
-      "total30DaysAgo": 21314836,
+      "total7DaysAgo": 74001669,
+      "total30DaysAgo": 35030681,
       "defillamaId": "4868",
       "name": "7K Aggregator",
       "displayName": "7K Aggregator",
@@ -4250,23 +4258,23 @@
       "id": "4868"
     },
     {
-      "total24h": 17112,
-      "total48hto24h": 104167,
-      "total7d": 326062,
-      "total14dto7d": 7621803,
-      "total60dto30d": 1514953,
-      "total30d": 23108224,
-      "total1y": 68152774,
-      "totalAllTime": 80055067,
-      "average1y": 260125.09160305344,
-      "change_1d": -83.57,
-      "change_7d": -61.74,
-      "change_1m": 116.58,
-      "change_7dover7d": -95.72,
-      "change_30dover30d": 1425.34,
+      "total24h": 42076,
+      "total48hto24h": 8383,
+      "total7d": 285868,
+      "total14dto7d": 240295,
+      "total60dto30d": 1444430,
+      "total30d": 23055104,
+      "total1y": 68282145,
+      "totalAllTime": 80248654,
+      "average1y": 256699.79323308272,
+      "change_1d": 401.92,
+      "change_7d": -11.88,
+      "change_1m": -53.37,
+      "change_7dover7d": 18.97,
+      "change_30dover30d": 1496.14,
       "breakdown24h": {
         "core": {
-          "AKKA": 27470
+          "AKKA": 69932
         },
         "xdc": {
           "AKKA": 0
@@ -4280,20 +4288,20 @@
       },
       "breakdown30d": {
         "core": {
-          "AKKA": 23108114
+          "AKKA": 23054989
         },
         "xdc": {
           "AKKA": 0
         },
         "bitlayer": {
-          "AKKA": 110
+          "AKKA": 115
         },
         "bsquared": {
           "AKKA": 0
         }
       },
-      "total7DaysAgo": 44720,
-      "total30DaysAgo": 7901,
+      "total7DaysAgo": 47746,
+      "total30DaysAgo": 90228,
       "defillamaId": "4926",
       "name": "AKKA",
       "displayName": "AKKA",
@@ -4314,32 +4322,32 @@
       "id": "4926"
     },
     {
-      "total24h": 79505892,
-      "total48hto24h": 57846340,
-      "total7d": 651057515,
-      "total14dto7d": 616074745,
-      "total60dto30d": 2080838326,
-      "total30d": 2233205580,
-      "total1y": 15977454619,
-      "totalAllTime": 16017511389,
-      "average1y": 67701078.8940678,
-      "change_1d": 37.44,
-      "change_7d": 25.76,
-      "change_1m": 20.7,
-      "change_7dover7d": 5.68,
-      "change_30dover30d": 7.32,
+      "total24h": 56452974,
+      "total48hto24h": 80104837,
+      "total7d": 509560031,
+      "total14dto7d": 702643853,
+      "total60dto30d": 2067524488,
+      "total30d": 2354642593,
+      "total1y": 16281940714,
+      "totalAllTime": 16298944566,
+      "average1y": 67841419.64166667,
+      "change_1d": -29.53,
+      "change_7d": -51.01,
+      "change_1m": -8.39,
+      "change_7dover7d": -27.48,
+      "change_30dover30d": 13.89,
       "breakdown24h": {
         "sui": {
-          "Cetus Aggregator": 78671652
+          "Cetus Aggregator": 76546415
         }
       },
       "breakdown30d": {
         "sui": {
-          "Cetus Aggregator": 2233205580
+          "Cetus Aggregator": 2354642593
         }
       },
-      "total7DaysAgo": 63222712,
-      "total30DaysAgo": 65870370,
+      "total7DaysAgo": 115244045,
+      "total30DaysAgo": 61624548,
       "defillamaId": "4958",
       "name": "Cetus Aggregator",
       "displayName": "Cetus Aggregator",
@@ -4364,17 +4372,17 @@
     {
       "total24h": 0,
       "total48hto24h": 0,
-      "total7d": 342871,
-      "total14dto7d": 8591,
-      "total60dto30d": 2610127,
-      "total30d": 729628,
+      "total7d": 2019,
+      "total14dto7d": 346767,
+      "total60dto30d": 1863424,
+      "total30d": 727986,
       "total1y": 11358055,
       "totalAllTime": 11358055,
-      "average1y": 49169.069264069265,
+      "average1y": 48332.14893617021,
       "change_7d": -100,
       "change_1m": -100,
-      "change_7dover7d": 3891.05,
-      "change_30dover30d": -72.05,
+      "change_7dover7d": -99.42,
+      "change_30dover30d": -60.93,
       "breakdown24h": {
         "ethereum": {
           "Chainspot": 0
@@ -4469,16 +4477,16 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "Chainspot": 404537
+          "Chainspot": 404523
         },
         "polygon": {
           "Chainspot": 0
         },
         "bsc": {
-          "Chainspot": 69838
+          "Chainspot": 69775
         },
         "avax": {
-          "Chainspot": 5213
+          "Chainspot": 5118
         },
         "optimism": {
           "Chainspot": 19
@@ -4505,10 +4513,10 @@
           "Chainspot": 0
         },
         "base": {
-          "Chainspot": 109451
+          "Chainspot": 109440
         },
         "linea": {
-          "Chainspot": 57
+          "Chainspot": 48
         },
         "mantle": {
           "Chainspot": 0
@@ -4544,7 +4552,7 @@
           "Chainspot": 0
         },
         "tron": {
-          "Chainspot": 3449
+          "Chainspot": 1999
         },
         "ton": {
           "Chainspot": 0
@@ -4559,8 +4567,8 @@
           "Chainspot": 0
         }
       },
-      "total7DaysAgo": 5,
-      "total30DaysAgo": 3305,
+      "total7DaysAgo": 270296,
+      "total30DaysAgo": 12,
       "defillamaId": "5028",
       "name": "Chainspot",
       "displayName": "Chainspot",
@@ -4607,32 +4615,32 @@
       "id": "5028"
     },
     {
-      "total24h": 612820,
-      "total48hto24h": 552209,
-      "total7d": 4607271,
-      "total14dto7d": 4155881,
-      "total60dto30d": 194725125,
-      "total30d": 18972003,
-      "total1y": 5641695224,
-      "totalAllTime": 5606158628,
-      "average1y": 23312790.181818184,
-      "change_1d": 10.98,
-      "change_7d": -19.88,
-      "change_1m": 4.06,
-      "change_7dover7d": 10.86,
-      "change_30dover30d": -90.26,
+      "total24h": 157745,
+      "total48hto24h": 178132,
+      "total7d": 2980910,
+      "total14dto7d": 4922473,
+      "total60dto30d": 66033471,
+      "total30d": 19211942,
+      "total1y": 5643060635,
+      "totalAllTime": 5607524039,
+      "average1y": 22939270.87398374,
+      "change_1d": -11.44,
+      "change_7d": -78.72,
+      "change_1m": 87.12,
+      "change_7dover7d": -39.44,
+      "change_30dover30d": -70.91,
       "breakdown24h": {
         "ethereum": {
-          "DODO Agg": 56127
+          "DODO Agg": 127469
         },
         "optimism": {
-          "DODO Agg": 6
+          "DODO Agg": 439
         },
         "bsc": {
-          "DODO Agg": 540573
+          "DODO Agg": 17647
         },
         "polygon": {
-          "DODO Agg": 11139
+          "DODO Agg": 6075
         },
         "boba": {
           "DODO Agg": 0
@@ -4644,45 +4652,45 @@
           "DODO Agg": 0
         },
         "mantle": {
-          "DODO Agg": 78
+          "DODO Agg": 34
         },
         "base": {
-          "DODO Agg": 2708
+          "DODO Agg": 4467
         },
         "avax": {
-          "DODO Agg": 220
+          "DODO Agg": 138
         },
         "arbitrum": {
-          "DODO Agg": 341
+          "DODO Agg": 906
         },
         "linea": {
-          "DODO Agg": 1336
+          "DODO Agg": 456
         },
         "scroll": {
           "DODO Agg": 0
         },
         "manta": {
-          "DODO Agg": 127
+          "DODO Agg": 112
         },
         "zero_network": {
-          "DODO Agg": 0
+          "DODO Agg": 2
         },
         "zircuit": {
-          "DODO Agg": 165
+          "DODO Agg": 0
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "DODO Agg": 3484212
+          "DODO Agg": 3954113
         },
         "optimism": {
-          "DODO Agg": 3943
+          "DODO Agg": 6964
         },
         "bsc": {
-          "DODO Agg": 13239776
+          "DODO Agg": 12984957
         },
         "polygon": {
-          "DODO Agg": 479985
+          "DODO Agg": 483698
         },
         "boba": {
           "DODO Agg": 0
@@ -4694,35 +4702,35 @@
           "DODO Agg": 0
         },
         "mantle": {
-          "DODO Agg": 182
+          "DODO Agg": 312
         },
         "base": {
-          "DODO Agg": 1405699
+          "DODO Agg": 1430656
         },
         "avax": {
-          "DODO Agg": 9957
+          "DODO Agg": 8637
         },
         "arbitrum": {
-          "DODO Agg": 314814
+          "DODO Agg": 310958
         },
         "linea": {
-          "DODO Agg": 24923
+          "DODO Agg": 23377
         },
         "scroll": {
           "DODO Agg": 0
         },
         "manta": {
-          "DODO Agg": 6098
+          "DODO Agg": 5670
         },
         "zero_network": {
-          "DODO Agg": 221
+          "DODO Agg": 223
         },
         "zircuit": {
-          "DODO Agg": 2193
+          "DODO Agg": 2377
         }
       },
-      "total7DaysAgo": 764883,
-      "total30DaysAgo": 588904,
+      "total7DaysAgo": 741261,
+      "total30DaysAgo": 84302,
       "defillamaId": "5062",
       "name": "DODO Agg",
       "displayName": "DODO Agg",
@@ -4760,32 +4768,32 @@
       "id": "5062"
     },
     {
-      "total24h": 813608,
-      "total48hto24h": 1004432,
-      "total7d": 8735294,
-      "total14dto7d": 9235478,
-      "total60dto30d": 26789689,
-      "total30d": 28574161,
-      "total1y": 361572770,
-      "totalAllTime": 362386378,
-      "average1y": 1614164.1517857143,
-      "change_1d": -19,
-      "change_7d": 243.79,
-      "change_1m": 75.9,
-      "change_7dover7d": -5.42,
-      "change_30dover30d": 6.66,
+      "total24h": 411688,
+      "total48hto24h": 294024,
+      "total7d": 4099950,
+      "total14dto7d": 12492886,
+      "total60dto30d": 25490583,
+      "total30d": 28204698,
+      "total1y": 363321464,
+      "totalAllTime": 363733152,
+      "average1y": 1593515.1929824562,
+      "change_1d": 40.02,
+      "change_7d": -89.92,
+      "change_1m": -51.49,
+      "change_7dover7d": -67.18,
+      "change_30dover30d": 10.65,
       "breakdown24h": {
         "sui": {
-          "Scallop Aggregator": 363218
+          "Scallop Aggregator": 365959
         }
       },
       "breakdown30d": {
         "sui": {
-          "Scallop Aggregator": 28574161
+          "Scallop Aggregator": 28204698
         }
       },
-      "total7DaysAgo": 236656,
-      "total30DaysAgo": 462531,
+      "total7DaysAgo": 4083250,
+      "total30DaysAgo": 848605,
       "defillamaId": "5087",
       "name": "Scallop Aggregator",
       "displayName": "Scallop Aggregator",
@@ -4812,12 +4820,11 @@
       "total48hto24h": 0,
       "total7d": 0,
       "total14dto7d": 0,
-      "total60dto30d": 86272,
+      "total60dto30d": 0,
       "total30d": 0,
-      "total1y": 369033760,
+      "total1y": 357931353,
       "totalAllTime": 463148186,
-      "average1y": 1011051.3972602739,
-      "change_30dover30d": -100,
+      "average1y": 980633.8438356165,
       "breakdown24h": {
         "ethereum": {
           "Orion Aggregator": 0
@@ -4887,32 +4894,32 @@
       "id": "5098"
     },
     {
-      "total24h": 10766,
-      "total48hto24h": 6544,
-      "total7d": 154938,
-      "total14dto7d": 61016,
-      "total60dto30d": 719357,
-      "total30d": 613516,
-      "total1y": 31164468,
-      "totalAllTime": 31164614,
-      "average1y": 113325.33818181818,
-      "change_1d": 64.52,
-      "change_7d": 54.26,
-      "change_1m": -24.52,
-      "change_7dover7d": 153.93,
-      "change_30dover30d": -14.71,
+      "total24h": 3612,
+      "total48hto24h": 5546,
+      "total7d": 40410,
+      "total14dto7d": 150080,
+      "total60dto30d": 538727,
+      "total30d": 543178,
+      "total1y": 31181621,
+      "totalAllTime": 31181766,
+      "average1y": 111762.08243727598,
+      "change_1d": -34.87,
+      "change_7d": -73.43,
+      "change_1m": -66.01,
+      "change_7dover7d": -73.07,
+      "change_30dover30d": 0.83,
       "breakdown24h": {
         "ton": {
-          "Rainbow Swap": 10766
+          "Rainbow Swap": 3612
         }
       },
       "breakdown30d": {
         "ton": {
-          "Rainbow Swap": 613516
+          "Rainbow Swap": 543178
         }
       },
-      "total7DaysAgo": 6979,
-      "total30DaysAgo": 14263,
+      "total7DaysAgo": 13594,
+      "total30DaysAgo": 10628,
       "defillamaId": "5110",
       "name": "Rainbow Swap",
       "displayName": "Rainbow Swap",
@@ -4930,32 +4937,32 @@
       "id": "5110"
     },
     {
-      "total24h": 226220,
-      "total48hto24h": 252344,
-      "total7d": 1092264,
-      "total14dto7d": 737184,
-      "total60dto30d": 4195763,
-      "total30d": 4241060,
-      "total1y": 38891612,
-      "totalAllTime": 38374203,
-      "average1y": 157455.91902834008,
-      "change_1d": -10.35,
-      "change_7d": 354.93,
-      "change_1m": 15.64,
-      "change_7dover7d": 48.17,
-      "change_30dover30d": 1.08,
+      "total24h": 100109,
+      "total48hto24h": 106114,
+      "total7d": 1053042,
+      "total14dto7d": 766444,
+      "total60dto30d": 4835129,
+      "total30d": 3938899,
+      "total1y": 39334928,
+      "totalAllTime": 38817519,
+      "average1y": 156712.86055776893,
+      "change_1d": -5.66,
+      "change_7d": -38.46,
+      "change_1m": -54.84,
+      "change_7dover7d": 37.39,
+      "change_30dover30d": -18.54,
       "breakdown24h": {
         "polygon": {
-          "Wolfswap": 415
+          "Wolfswap": 1132
         },
         "cronos": {
-          "Wolfswap": 101543
+          "Wolfswap": 44272
         },
         "cronos_zkevm": {
-          "Wolfswap": 13847
+          "Wolfswap": 206
         },
         "base": {
-          "Wolfswap": 0
+          "Wolfswap": 24
         },
         "avax": {
           "Wolfswap": 0
@@ -4967,21 +4974,21 @@
           "Wolfswap": 0
         },
         "abstract": {
-          "Wolfswap": 110415
+          "Wolfswap": 54475
         }
       },
       "breakdown30d": {
         "polygon": {
-          "Wolfswap": 24574
+          "Wolfswap": 24893
         },
         "cronos": {
-          "Wolfswap": 2878361
+          "Wolfswap": 2424986
         },
         "cronos_zkevm": {
-          "Wolfswap": 78764
+          "Wolfswap": 80750
         },
         "base": {
-          "Wolfswap": 256
+          "Wolfswap": 1206
         },
         "avax": {
           "Wolfswap": 0
@@ -4993,11 +5000,11 @@
           "Wolfswap": 0
         },
         "abstract": {
-          "Wolfswap": 1259105
+          "Wolfswap": 1407064
         }
       },
-      "total7DaysAgo": 49726,
-      "total30DaysAgo": 195632,
+      "total7DaysAgo": 162673,
+      "total30DaysAgo": 221682,
       "defillamaId": "5138",
       "name": "Wolfswap",
       "displayName": "Wolfswap",
@@ -5022,32 +5029,32 @@
       "id": "5138"
     },
     {
-      "total24h": 263927,
-      "total48hto24h": 235745,
-      "total7d": 2893590,
-      "total14dto7d": 18297561,
-      "total60dto30d": 13354384,
-      "total30d": 48180703,
-      "total1y": 352855313,
-      "totalAllTime": 352147072,
-      "average1y": 1575246.9330357143,
-      "change_1d": 11.95,
-      "change_7d": -5.86,
-      "change_1m": -31.25,
-      "change_7dover7d": -84.19,
-      "change_30dover30d": 260.79,
+      "total24h": 155212,
+      "total48hto24h": 211620,
+      "total7d": 1981589,
+      "total14dto7d": 6624926,
+      "total60dto30d": 15102879,
+      "total30d": 45516618,
+      "total1y": 353980357,
+      "totalAllTime": 353163401,
+      "average1y": 1552545.4254385964,
+      "change_1d": -26.66,
+      "change_7d": -55.21,
+      "change_1m": -82.01,
+      "change_7dover7d": -70.09,
+      "change_30dover30d": 201.38,
       "breakdown24h": {
         "ton": {
-          "swap.coffee": 323272
+          "swap.coffee": 192696
         }
       },
       "breakdown30d": {
         "ton": {
-          "swap.coffee": 48180703
+          "swap.coffee": 45516618
         }
       },
-      "total7DaysAgo": 280353,
-      "total30DaysAgo": 383879,
+      "total7DaysAgo": 346504,
+      "total30DaysAgo": 862847,
       "defillamaId": "5150",
       "name": "swap.coffee",
       "displayName": "swap.coffee",
@@ -5073,7 +5080,7 @@
       "total30d": 0,
       "total1y": 3197119,
       "totalAllTime": 3185517,
-      "average1y": 15519.995145631068,
+      "average1y": 15224.37619047619,
       "breakdown24h": {
         "ton": {
           "TON Diamonds": 0
@@ -5107,13 +5114,13 @@
       "total48hto24h": 0,
       "total7d": 0,
       "total14dto7d": 0,
-      "total60dto30d": 7792365997,
-      "total30d": 647314255,
-      "total1y": 63211158722,
+      "total60dto30d": 6829366953,
+      "total30d": 99,
+      "total1y": 62987487318,
       "totalAllTime": 68611302675,
-      "average1y": 173181256.77260274,
+      "average1y": 172568458.40547946,
       "change_1m": -100,
-      "change_30dover30d": -91.69,
+      "change_30dover30d": -100,
       "breakdown24h": {
         "ethereum": {
           "OKX Swap": 0
@@ -5214,67 +5221,67 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "OKX Swap": 119553875
+          "OKX Swap": 33
         },
         "bsc": {
-          "OKX Swap": 160923235
+          "OKX Swap": 0
         },
         "okexchain": {
-          "OKX Swap": 1819
+          "OKX Swap": 0
         },
         "polygon": {
-          "OKX Swap": 6154848
+          "OKX Swap": 0
         },
         "tron": {
-          "OKX Swap": 1017197
+          "OKX Swap": 0
         },
         "avax": {
-          "OKX Swap": 16605239
+          "OKX Swap": 0
         },
         "fantom": {
-          "OKX Swap": 16262
+          "OKX Swap": 0
         },
         "arbitrum": {
-          "OKX Swap": 21978370
+          "OKX Swap": 30
         },
         "optimism": {
-          "OKX Swap": 7476021
+          "OKX Swap": 0
         },
         "cronos": {
-          "OKX Swap": 304363
+          "OKX Swap": 0
         },
         "solana": {
-          "OKX Swap": 253428623
+          "OKX Swap": 36
         },
         "osmosis": {
-          "OKX Swap": 47
+          "OKX Swap": 0
         },
         "aptos": {
-          "OKX Swap": 29397
+          "OKX Swap": 0
         },
         "era": {
-          "OKX Swap": 306526
+          "OKX Swap": 0
         },
         "conflux": {
-          "OKX Swap": 1420
+          "OKX Swap": 0
         },
         "sui": {
-          "OKX Swap": 8401804
+          "OKX Swap": 0
         },
         "polygon_zkevm": {
-          "OKX Swap": 2441
+          "OKX Swap": 0
         },
         "sei": {
-          "OKX Swap": 11
+          "OKX Swap": 0
         },
         "linea": {
-          "OKX Swap": 853757
+          "OKX Swap": 0
         },
         "mantle": {
-          "OKX Swap": 2419090
+          "OKX Swap": 0
         },
         "base": {
-          "OKX Swap": 47071626
+          "OKX Swap": 0
         },
         "stacks": {
           "OKX Swap": 0
@@ -5283,35 +5290,35 @@
           "OKX Swap": 0
         },
         "scroll": {
-          "OKX Swap": 115863
+          "OKX Swap": 0
         },
         "xlayer": {
-          "OKX Swap": 130915
+          "OKX Swap": 0
         },
         "manta": {
-          "OKX Swap": 3938
+          "OKX Swap": 0
         },
         "metis": {
-          "OKX Swap": 52001
+          "OKX Swap": 0
         },
         "zeta": {
-          "OKX Swap": 1329
+          "OKX Swap": 0
         },
         "merlin": {
-          "OKX Swap": 69506
+          "OKX Swap": 0
         },
         "blast": {
-          "OKX Swap": 222134
+          "OKX Swap": 0
         },
         "mode": {
-          "OKX Swap": 2225
+          "OKX Swap": 0
         },
         "ton": {
-          "OKX Swap": 170373
+          "OKX Swap": 0
         }
       },
       "total7DaysAgo": 0,
-      "total30DaysAgo": 168735448,
+      "total30DaysAgo": 113132716,
       "defillamaId": "5201",
       "name": "OKX Swap",
       "displayName": "OKX Swap",
@@ -5365,80 +5372,80 @@
       "id": "5201"
     },
     {
-      "total24h": 10309,
-      "total48hto24h": 9701,
-      "total7d": 64154,
-      "total14dto7d": 1202851,
-      "total60dto30d": 2458155,
-      "total30d": 2803868,
-      "total1y": 40977632,
-      "totalAllTime": 42826367,
-      "average1y": 112267.48493150684,
-      "change_1d": 6.27,
+      "total24h": 9439,
+      "total48hto24h": 11158,
+      "total7d": 73170,
+      "total14dto7d": 90580,
+      "total60dto30d": 2925274,
+      "total30d": 2342889,
+      "total1y": 40912835,
+      "totalAllTime": 42870931,
+      "average1y": 112089.95890410959,
+      "change_1d": -15.41,
       "change_7d": 6.09,
-      "change_1m": -93.45,
-      "change_7dover7d": -94.67,
-      "change_30dover30d": 14.06,
+      "change_1m": -88.91,
+      "change_7dover7d": -19.22,
+      "change_30dover30d": -19.91,
       "breakdown24h": {
         "ethereum": {
-          "Jeton": 1871
+          "Jeton": 513
         },
         "polygon": {
-          "Jeton": 1235
+          "Jeton": 1666
         },
         "optimism": {
-          "Jeton": 860
+          "Jeton": 1961
         },
         "bsc": {
-          "Jeton": 1885
+          "Jeton": 994
         },
         "arbitrum": {
-          "Jeton": 1620
+          "Jeton": 1243
         },
         "avax": {
-          "Jeton": 956
+          "Jeton": 860
         },
         "scroll": {
-          "Jeton": 1019
+          "Jeton": 577
         },
         "era": {
-          "Jeton": 359
+          "Jeton": 1037
         },
         "base": {
-          "Jeton": 504
+          "Jeton": 588
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Jeton": 40471
+          "Jeton": 46111
         },
         "polygon": {
-          "Jeton": 697996
+          "Jeton": 546329
         },
         "optimism": {
-          "Jeton": 157356
+          "Jeton": 98113
         },
         "bsc": {
-          "Jeton": 36107
+          "Jeton": 37669
         },
         "arbitrum": {
-          "Jeton": 1778100
+          "Jeton": 1523537
         },
         "avax": {
-          "Jeton": 22366
+          "Jeton": 22222
         },
         "scroll": {
-          "Jeton": 24791
+          "Jeton": 24543
         },
         "era": {
-          "Jeton": 22654
+          "Jeton": 22073
         },
         "base": {
-          "Jeton": 24027
+          "Jeton": 22292
         }
       },
-      "total7DaysAgo": 9717,
-      "total30DaysAgo": 157432,
+      "total7DaysAgo": 8897,
+      "total30DaysAgo": 85134,
       "defillamaId": "5213",
       "name": "Jeton",
       "displayName": "Jeton",
@@ -5464,32 +5471,32 @@
       "id": "5213"
     },
     {
-      "total24h": 1420988,
-      "total48hto24h": 757016,
-      "total7d": 13865254,
-      "total14dto7d": 12951263,
-      "total60dto30d": 60091811,
-      "total30d": 41913040,
-      "total1y": 531993876,
-      "totalAllTime": 533414864,
-      "average1y": 2875642.572972973,
-      "change_1d": 87.71,
-      "change_7d": -14.1,
-      "change_1m": 133.68,
-      "change_7dover7d": 7.06,
-      "change_30dover30d": -30.25,
+      "total24h": 1020219,
+      "total48hto24h": 2423228,
+      "total7d": 11728321,
+      "total14dto7d": 15467646,
+      "total60dto30d": 55609746,
+      "total30d": 46428872,
+      "total1y": 539755978,
+      "totalAllTime": 540776197,
+      "average1y": 2855851.7354497355,
+      "change_1d": -57.9,
+      "change_7d": 21.07,
+      "change_1m": 59.58,
+      "change_7dover7d": -24.18,
+      "change_30dover30d": -16.51,
       "breakdown24h": {
         "sui": {
-          "NAVI Aggregator": 1399854
+          "NAVI Aggregator": 2196074
         }
       },
       "breakdown30d": {
         "sui": {
-          "NAVI Aggregator": 41913040
+          "NAVI Aggregator": 46428872
         }
       },
-      "total7DaysAgo": 1654325,
-      "total30DaysAgo": 608100,
+      "total7DaysAgo": 842643,
+      "total30DaysAgo": 639296,
       "defillamaId": "5326",
       "name": "NAVI Aggregator",
       "displayName": "NAVI Aggregator",
@@ -5512,18 +5519,17 @@
       "id": "5326"
     },
     {
-      "total24h": 3,
+      "total24h": 0,
       "total48hto24h": 0,
-      "total7d": 121,
-      "total14dto7d": 318,
-      "total60dto30d": 2423,
-      "total30d": 24681,
-      "total1y": 5911701,
-      "totalAllTime": 95521,
-      "average1y": 30472.68556701031,
-      "change_1m": -95.08,
-      "change_7dover7d": -61.95,
-      "change_30dover30d": 918.61,
+      "total7d": 20,
+      "total14dto7d": 150,
+      "total60dto30d": 2103,
+      "total30d": 24682,
+      "total1y": 5911721,
+      "totalAllTime": 95039,
+      "average1y": 29857.176767676767,
+      "change_7dover7d": -86.67,
+      "change_30dover30d": 1073.66,
       "breakdown24h": {
         "ton": {
           "Moki": 0
@@ -5531,11 +5537,11 @@
       },
       "breakdown30d": {
         "ton": {
-          "Moki": 24681
+          "Moki": 24682
         }
       },
       "total7DaysAgo": 0,
-      "total30DaysAgo": 61,
+      "total30DaysAgo": 0,
       "defillamaId": "5356",
       "name": "Moki",
       "displayName": "Moki",
@@ -5553,32 +5559,32 @@
       "id": "5356"
     },
     {
-      "total24h": 3228,
-      "total48hto24h": 337,
-      "total7d": 5442,
-      "total14dto7d": 3254,
-      "total60dto30d": 70625,
-      "total30d": 21073,
-      "total1y": 716846,
-      "totalAllTime": 720074,
-      "average1y": 5012.909090909091,
-      "change_1d": 857.86,
-      "change_7d": 689.24,
-      "change_1m": -10.31,
-      "change_7dover7d": 67.24,
-      "change_30dover30d": -70.16,
+      "total24h": 1093,
+      "total48hto24h": 1049,
+      "total7d": 9014,
+      "total14dto7d": 6008,
+      "total60dto30d": 68566,
+      "total30d": 28256,
+      "total1y": 724365,
+      "totalAllTime": 725458,
+      "average1y": 4927.65306122449,
+      "change_1d": 4.19,
+      "change_7d": 4272,
+      "change_1m": 9836.36,
+      "change_7dover7d": 50.03,
+      "change_30dover30d": -58.79,
       "breakdown24h": {
         "ton": {
-          "Titan Aggregator": 1158
+          "Titan Aggregator": 286
         }
       },
       "breakdown30d": {
         "ton": {
-          "Titan Aggregator": 21073
+          "Titan Aggregator": 28256
         }
       },
-      "total7DaysAgo": 409,
-      "total30DaysAgo": 3599,
+      "total7DaysAgo": 25,
+      "total30DaysAgo": 11,
       "defillamaId": "5394",
       "name": "Titan Aggregator",
       "displayName": "Titan Aggregator",
@@ -5596,35 +5602,35 @@
       "id": "5394"
     },
     {
-      "total24h": 51,
-      "total48hto24h": 10813,
-      "total7d": 33055,
-      "total14dto7d": 62729,
-      "total60dto30d": 203578,
-      "total30d": 191772,
-      "total1y": 150459512,
-      "totalAllTime": 150459512,
-      "average1y": 923064.490797546,
-      "change_1d": -99.53,
-      "change_7d": -98.39,
-      "change_1m": -98.57,
-      "change_7dover7d": -47.31,
-      "change_30dover30d": -5.8,
+      "total24h": 292,
+      "total48hto24h": 13468,
+      "total7d": 31399,
+      "total14dto7d": 25293,
+      "total60dto30d": 196641,
+      "total30d": 192400,
+      "total1y": 150475830,
+      "totalAllTime": 150475830,
+      "average1y": 901052.874251497,
+      "change_1d": -97.83,
+      "change_7d": -96.57,
+      "change_1m": -94.1,
+      "change_7dover7d": 24.14,
+      "change_30dover30d": -2.16,
       "breakdown24h": {
         "solana": {
-          "Swing": 0
+          "Swing": 272
         },
         "ethereum": {
           "Swing": 0
         },
         "bsc": {
-          "Swing": 50
+          "Swing": 0
         },
         "avax": {
           "Swing": 0
         },
         "polygon": {
-          "Swing": 1
+          "Swing": 20
         },
         "arbitrum": {
           "Swing": 0
@@ -5713,22 +5719,22 @@
       },
       "breakdown30d": {
         "solana": {
-          "Swing": 3520
+          "Swing": 3792
         },
         "ethereum": {
-          "Swing": 146905
+          "Swing": 153852
         },
         "bsc": {
-          "Swing": 889
+          "Swing": 847
         },
         "avax": {
           "Swing": 2920
         },
         "polygon": {
-          "Swing": 27514
+          "Swing": 21881
         },
         "arbitrum": {
-          "Swing": 588
+          "Swing": 564
         },
         "archway-1": {
           "Swing": 0
@@ -5737,7 +5743,7 @@
           "Swing": 0
         },
         "base": {
-          "Swing": 197
+          "Swing": 173
         },
         "bitcoin": {
           "Swing": 0
@@ -5809,11 +5815,11 @@
           "Swing": 0
         },
         "zksync": {
-          "Swing": 9205
+          "Swing": 8337
         }
       },
-      "total7DaysAgo": 3164,
-      "total30DaysAgo": 3574,
+      "total7DaysAgo": 8509,
+      "total30DaysAgo": 4952,
       "defillamaId": "5474",
       "name": "Swing",
       "displayName": "Swing",
@@ -5863,32 +5869,32 @@
       "id": "5474"
     },
     {
-      "total24h": 925143,
-      "total48hto24h": 1048101,
-      "total7d": 20512101,
-      "total14dto7d": 15284039,
-      "total60dto30d": 138344497,
-      "total30d": 56914855,
-      "total1y": 405940886,
-      "totalAllTime": 405940886,
-      "average1y": 2838747.4545454546,
-      "change_1d": -11.73,
-      "change_7d": 54.37,
-      "change_1m": -20.89,
-      "change_7dover7d": 34.21,
-      "change_30dover30d": -58.86,
+      "total24h": 869899,
+      "total48hto24h": 360978,
+      "total7d": 7041626,
+      "total14dto7d": 22781428,
+      "total60dto30d": 129938845,
+      "total30d": 57065126,
+      "total1y": 408753594,
+      "totalAllTime": 408753594,
+      "average1y": 2780636.6938775512,
+      "change_1d": 140.98,
+      "change_7d": -82.48,
+      "change_1m": -29.95,
+      "change_7dover7d": -69.09,
+      "change_30dover30d": -56.08,
       "breakdown24h": {
         "aptos": {
-          "Thetis Aggregator": 925143
+          "Thetis Aggregator": 869899
         }
       },
       "breakdown30d": {
         "aptos": {
-          "Thetis Aggregator": 56914855
+          "Thetis Aggregator": 57065126
         }
       },
-      "total7DaysAgo": 599321,
-      "total30DaysAgo": 1169365,
+      "total7DaysAgo": 4964241,
+      "total30DaysAgo": 1241873,
       "defillamaId": "5483",
       "name": "Thetis Aggregator",
       "displayName": "Thetis Aggregator",
@@ -5913,38 +5919,38 @@
       "id": "5483"
     },
     {
-      "total24h": 4018161,
-      "total48hto24h": 7720902,
-      "total7d": 71679802,
-      "total14dto7d": 46629920,
-      "total60dto30d": 139388343,
-      "total30d": 170907535,
-      "total1y": 387082588,
-      "totalAllTime": 374842907,
-      "average1y": 3909925.131313131,
-      "change_1d": -47.96,
-      "change_7d": 25.25,
-      "change_1m": -13.13,
-      "change_7dover7d": 53.72,
-      "change_30dover30d": 22.61,
+      "total24h": 5090017,
+      "total48hto24h": 3391210,
+      "total7d": 45866041,
+      "total14dto7d": 69997239,
+      "total60dto30d": 126976617,
+      "total30d": 184054608,
+      "total1y": 407532923,
+      "totalAllTime": 396365098,
+      "average1y": 3956630.3203883497,
+      "change_1d": 50.09,
+      "change_7d": -66.04,
+      "change_1m": 245.45,
+      "change_7dover7d": -34.47,
+      "change_30dover30d": 44.95,
       "breakdown24h": {
         "avax": {
-          "LFJ Aggregator": 4413939
+          "LFJ Aggregator": 5313969
         },
         "arbitrum": {
-          "LFJ Aggregator": 31
+          "LFJ Aggregator": 29
         }
       },
       "breakdown30d": {
         "avax": {
-          "LFJ Aggregator": 170886848
+          "LFJ Aggregator": 184037493
         },
         "arbitrum": {
-          "LFJ Aggregator": 20687
+          "LFJ Aggregator": 17115
         }
       },
-      "total7DaysAgo": 3208051,
-      "total30DaysAgo": 4625675,
+      "total7DaysAgo": 14987705,
+      "total30DaysAgo": 1473427,
       "defillamaId": "5618",
       "name": "LFJ Aggregator",
       "displayName": "LFJ Aggregator",
@@ -5968,32 +5974,32 @@
       "id": "5618"
     },
     {
-      "total24h": 3581,
-      "total48hto24h": 6859,
-      "total7d": 37075,
-      "total14dto7d": 337416,
-      "total60dto30d": 349976,
-      "total30d": 1578256,
-      "total1y": 5454890,
-      "totalAllTime": 13069867,
-      "average1y": 60609.88888888889,
-      "change_1d": -47.79,
-      "change_7d": -57.34,
-      "change_1m": -98.34,
-      "change_7dover7d": -89.01,
-      "change_30dover30d": 350.96,
+      "total24h": 141024,
+      "total48hto24h": 3815,
+      "total7d": 27591,
+      "total14dto7d": 79791,
+      "total60dto30d": 707787,
+      "total30d": 1230986,
+      "total1y": 5468399,
+      "totalAllTime": 13220683,
+      "average1y": 58174.45744680851,
+      "change_1d": 3596.57,
+      "change_7d": 3772.16,
+      "change_1m": -58.01,
+      "change_7dover7d": -65.42,
+      "change_30dover30d": 73.92,
       "breakdown24h": {
         "aptos": {
-          "Anqa": 3581
+          "Anqa": 2532
         }
       },
       "breakdown30d": {
         "aptos": {
-          "Anqa": 1578256
+          "Anqa": 1230986
         }
       },
-      "total7DaysAgo": 8394,
-      "total30DaysAgo": 215755,
+      "total7DaysAgo": 3642,
+      "total30DaysAgo": 335813,
       "defillamaId": "5621",
       "name": "Anqa",
       "displayName": "Anqa",
@@ -6014,18 +6020,16 @@
       "total24h": 0,
       "total48hto24h": 0,
       "total7d": 1657,
-      "total14dto7d": 1,
-      "total60dto30d": 9497,
+      "total14dto7d": 0,
+      "total60dto30d": 6355,
       "total30d": 1658,
       "total1y": 24447,
-      "totalAllTime": 14816,
-      "average1y": 150.90740740740742,
-      "change_1m": -100,
-      "change_7dover7d": 165600,
-      "change_30dover30d": -82.54,
+      "totalAllTime": 13543,
+      "average1y": 147.2710843373494,
+      "change_30dover30d": -73.91,
       "breakdown24h": {
         "ton": {
-          "OOIA": 1657
+          "OOIA": 0
         }
       },
       "breakdown30d": {
@@ -6034,7 +6038,7 @@
         }
       },
       "total7DaysAgo": 0,
-      "total30DaysAgo": 1,
+      "total30DaysAgo": 0,
       "defillamaId": "5630",
       "name": "OOIA",
       "displayName": "OOIA",
@@ -6057,32 +6061,32 @@
       "id": "5630"
     },
     {
-      "total24h": 25703,
-      "total48hto24h": 19371,
-      "total7d": 361636,
-      "total14dto7d": 171543,
-      "total60dto30d": 1584205,
-      "total30d": 895571,
-      "total1y": 6540832,
-      "totalAllTime": 10432256,
-      "average1y": 28438.4,
-      "change_1d": 32.69,
-      "change_7d": -42.53,
-      "change_1m": -12.82,
-      "change_7dover7d": 110.81,
-      "change_30dover30d": -43.47,
+      "total24h": 30022,
+      "total48hto24h": 36583,
+      "total7d": 205326,
+      "total14dto7d": 434392,
+      "total60dto30d": 1620988,
+      "total30d": 949137,
+      "total1y": 6692441,
+      "totalAllTime": 10920251,
+      "average1y": 28600.175213675215,
+      "change_1d": -17.93,
+      "change_7d": -53.66,
+      "change_1m": 51.89,
+      "change_7dover7d": -52.73,
+      "change_30dover30d": -41.45,
       "breakdown24h": {
         "sei": {
-          "Symphony Exchange": 25703
+          "Symphony Exchange": 30022
         }
       },
       "breakdown30d": {
         "sei": {
-          "Symphony Exchange": 895571
+          "Symphony Exchange": 949137
         }
       },
-      "total7DaysAgo": 44727,
-      "total30DaysAgo": 29481,
+      "total7DaysAgo": 64793,
+      "total30DaysAgo": 19765,
       "defillamaId": "5637",
       "name": "Symphony Exchange",
       "displayName": "Symphony Exchange",
@@ -6102,14 +6106,12 @@
     {
       "total24h": 0,
       "total48hto24h": 0,
-      "total60dto30d": 1129344,
+      "total60dto30d": 524455,
       "total1y": 7076694,
       "totalAllTime": 7062346,
       "average1y": 141533.88,
-      "change_1m": -100,
       "breakdown24h": null,
       "breakdown30d": null,
-      "total30DaysAgo": 7174,
       "defillamaId": "5661",
       "name": "Starbase",
       "displayName": "Starbase",
@@ -6127,32 +6129,32 @@
       "id": "5661"
     },
     {
-      "total24h": 15744,
-      "total48hto24h": 359761,
-      "total7d": 649822,
-      "total14dto7d": 155350,
-      "total60dto30d": 4813807,
-      "total30d": 1179796,
-      "total1y": 9509101,
-      "totalAllTime": 9524845,
-      "average1y": 100095.8,
-      "change_1d": -95.62,
-      "change_7d": 59.77,
-      "change_1m": -16.16,
-      "change_7dover7d": 318.3,
-      "change_30dover30d": -75.49,
+      "total24h": 27266,
+      "total48hto24h": 12892,
+      "total7d": 556328,
+      "total14dto7d": 279738,
+      "total60dto30d": 4083290,
+      "total30d": 1153536,
+      "total1y": 9608186,
+      "totalAllTime": 9635452,
+      "average1y": 97052.38383838384,
+      "change_1d": 111.5,
+      "change_7d": -5.86,
+      "change_1m": 9.83,
+      "change_7dover7d": 98.87,
+      "change_30dover30d": -71.75,
       "breakdown24h": {
         "ink": {
-          "SuperSwap Ink": 23416
+          "SuperSwap Ink": 19418
         }
       },
       "breakdown30d": {
         "ink": {
-          "SuperSwap Ink": 1179796
+          "SuperSwap Ink": 1153536
         }
       },
-      "total7DaysAgo": 9854,
-      "total30DaysAgo": 18779,
+      "total7DaysAgo": 28964,
+      "total30DaysAgo": 24826,
       "defillamaId": "5668",
       "name": "SuperSwap Ink",
       "displayName": "SuperSwap Ink",
@@ -6170,32 +6172,32 @@
       "id": "5668"
     },
     {
-      "total24h": 158176,
-      "total48hto24h": 38551,
-      "total7d": 1036563,
-      "total14dto7d": 2030499,
-      "total60dto30d": 4048924,
-      "total30d": 10644422,
-      "total1y": 15570095,
-      "totalAllTime": 15728271,
-      "average1y": 192223.3950617284,
-      "change_1d": 310.3,
-      "change_7d": 24.29,
-      "change_1m": -20.82,
-      "change_7dover7d": -48.95,
-      "change_30dover30d": 162.9,
+      "total24h": 122910,
+      "total48hto24h": 122910,
+      "total7d": 712425,
+      "total14dto7d": 1648420,
+      "total60dto30d": 5111117,
+      "total30d": 10053959,
+      "total1y": 16041825,
+      "totalAllTime": 15796005,
+      "average1y": 188727.35294117648,
+      "change_1d": 0,
+      "change_7d": -50.77,
+      "change_1m": -68.19,
+      "change_7dover7d": -56.78,
+      "change_30dover30d": 96.71,
       "breakdown24h": {
         "mantle": {
-          "1delta": 0
+          "1delta": 2643
         },
         "optimism": {
-          "1delta": 1
+          "1delta": 3
         },
         "polygon": {
           "1delta": 0
         },
         "linea": {
-          "1delta": 0
+          "1delta": 7
         },
         "bsc": {
           "1delta": 0
@@ -6204,13 +6206,13 @@
           "1delta": 0
         },
         "taiko": {
-          "1delta": 2093
+          "1delta": 4831
         },
         "base": {
-          "1delta": 0
+          "1delta": 10
         },
         "arbitrum": {
-          "1delta": 2
+          "1delta": 7
         },
         "blast": {
           "1delta": 0
@@ -6240,24 +6242,24 @@
           "1delta": 0
         },
         "fuel": {
-          "1delta": 158591
+          "1delta": 115409
         }
       },
       "breakdown30d": {
         "fuel": {
-          "1delta": 10089071
+          "1delta": 9473685
         },
         "mantle": {
-          "1delta": 514571
+          "1delta": 522510
         },
         "optimism": {
-          "1delta": 17
+          "1delta": 26
         },
         "polygon": {
           "1delta": 155
         },
         "linea": {
-          "1delta": 3750
+          "1delta": 3771
         },
         "bsc": {
           "1delta": 64
@@ -6266,13 +6268,13 @@
           "1delta": 0
         },
         "taiko": {
-          "1delta": 36199
+          "1delta": 53102
         },
         "base": {
-          "1delta": 21
+          "1delta": 51
         },
         "arbitrum": {
-          "1delta": 396
+          "1delta": 417
         },
         "blast": {
           "1delta": 0
@@ -6302,8 +6304,8 @@
           "1delta": 0
         }
       },
-      "total7DaysAgo": 127261,
-      "total30DaysAgo": 199774,
+      "total7DaysAgo": 249659,
+      "total30DaysAgo": 386343,
       "defillamaId": "5740",
       "name": "1delta",
       "displayName": "1delta",
@@ -6339,74 +6341,73 @@
       "id": "5740"
     },
     {
-      "total24h": 611552,
-      "total48hto24h": 533311,
-      "total7d": 5535913,
-      "total14dto7d": 10890869,
-      "total60dto30d": 45730997,
-      "total30d": 42115377,
-      "total1y": 3914190956,
-      "totalAllTime": 4273347050,
-      "average1y": 10723810.838356165,
-      "change_1d": 14.67,
-      "change_7d": -0.94,
-      "change_1m": -4.37,
-      "change_7dover7d": -49.17,
-      "change_30dover30d": -7.91,
+      "total24h": 3042292,
+      "total48hto24h": 1040335,
+      "total7d": 9313560,
+      "total14dto7d": 8201538,
+      "total60dto30d": 45105797,
+      "total30d": 45040646,
+      "total1y": 3916179112,
+      "totalAllTime": 4281427032,
+      "average1y": 10729257.84109589,
+      "change_1d": 192.43,
+      "change_1m": 18.24,
+      "change_7dover7d": 13.56,
+      "change_30dover30d": -0.14,
       "breakdown24h": {
         "ethereum": {
-          "Enso": 449586
+          "Enso": 2799615
         },
         "optimism": {
-          "Enso": 2116
+          "Enso": 4569
         },
         "bsc": {
-          "Enso": 111601
+          "Enso": 71702
         },
         "polygon": {
-          "Enso": 1304
+          "Enso": 9823
         },
         "base": {
-          "Enso": 8584
+          "Enso": 42393
         },
         "arbitrum": {
-          "Enso": 22518
+          "Enso": 110984
         },
         "berachain": {
           "Enso": 0
         },
         "linea": {
-          "Enso": 15843
+          "Enso": 3206
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Enso": 35787167
+          "Enso": 38575811
         },
         "optimism": {
-          "Enso": 2097122
+          "Enso": 1771658
         },
         "bsc": {
-          "Enso": 1076361
+          "Enso": 1583751
         },
         "polygon": {
-          "Enso": 108384
+          "Enso": 124515
         },
         "base": {
-          "Enso": 1303537
+          "Enso": 1187947
         },
         "arbitrum": {
-          "Enso": 1593887
+          "Enso": 1655701
         },
         "berachain": {
           "Enso": 0
         },
         "linea": {
-          "Enso": 148919
+          "Enso": 141263
         }
       },
-      "total7DaysAgo": 617384,
-      "total30DaysAgo": 639466,
+      "total7DaysAgo": 0,
+      "total30DaysAgo": 2572879,
       "defillamaId": "5741",
       "name": "Enso",
       "displayName": "Enso",
@@ -6431,56 +6432,56 @@
       "id": "5741"
     },
     {
-      "total24h": 111001669,
-      "total48hto24h": 109332409,
-      "total7d": 711323499,
-      "total14dto7d": 624264939,
-      "total60dto30d": 978023008,
-      "total30d": 2335307333,
-      "total1y": 3313330341,
-      "totalAllTime": 3424332010,
-      "average1y": 57126385.18965517,
-      "change_1d": 1.53,
-      "change_7d": 18.08,
-      "change_1m": 80.12,
-      "change_7dover7d": 13.95,
-      "change_30dover30d": 138.78,
+      "total24h": 81825183,
+      "total48hto24h": 221818958,
+      "total7d": 1075422328,
+      "total14dto7d": 691809497,
+      "total60dto30d": 1216336249,
+      "total30d": 2819502351,
+      "total1y": 4055770890,
+      "totalAllTime": 4137596073,
+      "average1y": 65415659.51612903,
+      "change_1d": -63.11,
+      "change_7d": -24.53,
+      "change_1m": 72.86,
+      "change_7dover7d": 55.45,
+      "change_30dover30d": 131.8,
       "breakdown24h": {
         "ethereum": {
-          "Defi App": 15750
+          "Defi App": 37324
         },
         "bsc": {
-          "Defi App": 87474
+          "Defi App": 1472091
         },
         "arbitrum": {
-          "Defi App": 19030571
+          "Defi App": 75146803
         },
         "base": {
-          "Defi App": 5525568
+          "Defi App": 2497897
         },
         "solana": {
-          "Defi App": 87938111
+          "Defi App": 113662463
         }
       },
       "breakdown30d": {
         "ethereum": {
-          "Defi App": 1554896
+          "Defi App": 1504098
         },
         "bsc": {
-          "Defi App": 12612579
+          "Defi App": 17835134
         },
         "arbitrum": {
-          "Defi App": 934301160
+          "Defi App": 975708577
         },
         "base": {
-          "Defi App": 77035048
+          "Defi App": 88278069
         },
         "solana": {
-          "Defi App": 1309803650
+          "Defi App": 1736176473
         }
       },
-      "total7DaysAgo": 94008567,
-      "total30DaysAgo": 61625552,
+      "total7DaysAgo": 108418242,
+      "total30DaysAgo": 47337207,
       "defillamaId": "5819",
       "name": "Defi App",
       "displayName": "Defi App",
@@ -6504,42 +6505,44 @@
       "id": "5819"
     },
     {
-      "total24h": 24,
-      "total48hto24h": 0,
-      "total7d": 39,
+      "total24h": 4,
+      "total48hto24h": 29,
+      "total7d": 89,
       "total14dto7d": 27,
-      "total60dto30d": 8565,
-      "total30d": 1123,
-      "total1y": 9688,
-      "totalAllTime": 9712,
-      "average1y": 201.83333333333334,
-      "change_1m": -96.77,
-      "change_7dover7d": 44.44,
-      "change_30dover30d": -86.89,
+      "total60dto30d": 8762,
+      "total30d": 990,
+      "total1y": 9752,
+      "totalAllTime": 9756,
+      "average1y": 187.53846153846155,
+      "change_1d": -86.21,
+      "change_7d": 33.33,
+      "change_1m": -87.1,
+      "change_7dover7d": 229.63,
+      "change_30dover30d": -88.7,
       "breakdown24h": {
         "ethereum": {
-          "ERC Burner": 1
+          "ERC Burner": 0
         },
         "arbitrum": {
-          "ERC Burner": 2
+          "ERC Burner": 8
         },
         "base": {
-          "ERC Burner": 16
+          "ERC Burner": 3
         },
         "bsc": {
-          "ERC Burner": 0
+          "ERC Burner": 3
         },
         "avax": {
-          "ERC Burner": 0
+          "ERC Burner": 10
         },
         "optimism": {
           "ERC Burner": 0
         },
         "blast": {
-          "ERC Burner": 0
+          "ERC Burner": 3
         },
         "polygon": {
-          "ERC Burner": 6
+          "ERC Burner": 0
         },
         "era": {
           "ERC Burner": 0
@@ -6547,35 +6550,35 @@
       },
       "breakdown30d": {
         "ethereum": {
-          "ERC Burner": 71
+          "ERC Burner": 36
         },
         "arbitrum": {
-          "ERC Burner": 102
+          "ERC Burner": 89
         },
         "base": {
-          "ERC Burner": 523
+          "ERC Burner": 435
         },
         "bsc": {
-          "ERC Burner": 13
+          "ERC Burner": 16
         },
         "avax": {
-          "ERC Burner": 7
+          "ERC Burner": 16
         },
         "optimism": {
-          "ERC Burner": 234
+          "ERC Burner": 229
         },
         "blast": {
-          "ERC Burner": 4
+          "ERC Burner": 7
         },
         "polygon": {
-          "ERC Burner": 163
+          "ERC Burner": 156
         },
         "era": {
           "ERC Burner": 6
         }
       },
-      "total7DaysAgo": 0,
-      "total30DaysAgo": 744,
+      "total7DaysAgo": 3,
+      "total30DaysAgo": 31,
       "defillamaId": "5859",
       "name": "ERC Burner",
       "displayName": "ERC Burner",
@@ -6603,32 +6606,32 @@
       "id": "5859"
     },
     {
-      "total24h": 17469145,
-      "total48hto24h": 7518574,
-      "total7d": 253329533,
-      "total14dto7d": 313203127,
-      "total60dto30d": 573236177,
-      "total30d": 963410730,
-      "total1y": 1597082292,
-      "totalAllTime": 1614551437,
-      "average1y": 24198216.545454547,
-      "change_1d": 132.35,
-      "change_7d": -61.88,
-      "change_1m": -14.44,
-      "change_7dover7d": -19.12,
-      "change_30dover30d": 68.07,
+      "total24h": 19015115,
+      "total48hto24h": 14698209,
+      "total7d": 131967595,
+      "total14dto7d": 355924094,
+      "total60dto30d": 563989507,
+      "total30d": 1013862017,
+      "total1y": 1680149417,
+      "totalAllTime": 1699164532,
+      "average1y": 24002134.528571427,
+      "change_1d": 29.37,
+      "change_7d": -64.29,
+      "change_1m": 38.61,
+      "change_7dover7d": -62.92,
+      "change_30dover30d": 79.77,
       "breakdown24h": {
         "berachain": {
-          "Ooga Booga": 19440213
+          "Ooga Booga": 20981298
         }
       },
       "breakdown30d": {
         "berachain": {
-          "Ooga Booga": 963410730
+          "Ooga Booga": 1013862017
         }
       },
-      "total7DaysAgo": 45830143,
-      "total30DaysAgo": 20417958,
+      "total7DaysAgo": 53248438,
+      "total30DaysAgo": 13718075,
       "defillamaId": "5880",
       "name": "Ooga Booga",
       "displayName": "Ooga Booga",
@@ -6646,28 +6649,28 @@
       "id": "5880"
     },
     {
-      "total24h": 140703,
-      "total48hto24h": 1033322,
-      "total7d": 4583802,
-      "total14dto7d": 508069,
-      "total30d": 5470853,
-      "total1y": 5470853,
-      "totalAllTime": 6390150,
-      "average1y": 195387.60714285713,
-      "change_1d": -86.38,
-      "change_7d": 453.73,
-      "change_7dover7d": 802.2,
-      "breakdown24h": {
-        "move": {
-          "Mosaic": 866161
-        }
-      },
+      "total24h": 0,
+      "total48hto24h": 785894,
+      "total7d": 10190012,
+      "total14dto7d": 1856754,
+      "total60dto30d": 204,
+      "total30d": 12797809,
+      "total1y": 12798013,
+      "totalAllTime": 15835138,
+      "average1y": 412839.12903225806,
+      "change_1d": -100,
+      "change_7d": -100,
+      "change_1m": -100,
+      "change_7dover7d": 448.81,
+      "change_30dover30d": 6273335.78,
+      "breakdown24h": null,
       "breakdown30d": {
         "move": {
-          "Mosaic": 5470853
+          "Mosaic": 12797809
         }
       },
-      "total7DaysAgo": 25410,
+      "total7DaysAgo": 708590,
+      "total30DaysAgo": 81,
       "defillamaId": "5890",
       "name": "Mosaic",
       "displayName": "Mosaic",
@@ -6687,20 +6690,20 @@
     {
       "total24h": 2,
       "total48hto24h": 2,
-      "total7d": 4,
-      "total30d": 4,
-      "total1y": 4,
-      "totalAllTime": 6,
-      "average1y": 2,
+      "total7d": 15,
+      "total30d": 15,
+      "total1y": 15,
+      "totalAllTime": 17,
+      "average1y": 2.5,
       "change_1d": 0,
       "breakdown24h": {
         "sui": {
-          "Cro.ag": 2
+          "Cro.ag": 4
         }
       },
       "breakdown30d": {
         "sui": {
-          "Cro.ag": 4
+          "Cro.ag": 15
         }
       },
       "defillamaId": "6026",
@@ -6718,6 +6721,23 @@
       "latestFetchIsOk": true,
       "slug": "cro.ag",
       "id": "6026"
+    },
+    {
+      "defillamaId": "6064",
+      "name": "Kame Aggregator",
+      "displayName": "Kame Aggregator",
+      "module": "kame-aggregator",
+      "category": "DEX Aggregator",
+      "logo": "https://icons.llamao.fi/icons/protocols/kame-aggregator.jpg",
+      "chains": [
+        "Sei"
+      ],
+      "protocolType": "protocol",
+      "methodologyURL": "https://github.com/DefiLlama/dimension-adapters/blob/master/aggregators/kame-aggregator",
+      "methodology": {},
+      "latestFetchIsOk": true,
+      "slug": "kame-aggregator",
+      "id": "6064"
     }
   ]
 }
