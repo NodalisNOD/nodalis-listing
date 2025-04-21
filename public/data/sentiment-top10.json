@@ -1,0 +1,75 @@
+{
+  "timestamp": "20/4/2025, 00:00:00",
+  "top": [
+    {
+      "id": "capybara-nation",
+      "total": 2,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 2
+    },
+    {
+      "id": "corgiai-corgiai",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "crodex-token-crx",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "crofam-crofam",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "croginalcats-croginal",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "degen-mole",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "fortune-frtn",
+      "total": 2,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 2
+    },
+    {
+      "id": "lex-the-husky",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    },
+    {
+      "id": "loaded-lions",
+      "total": 2,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 2
+    },
+    {
+      "id": "miguel-leugim",
+      "total": 1,
+      "positivePercentage": 100,
+      "changePct": 100,
+      "changeTotal": 1
+    }
+  ]
+}

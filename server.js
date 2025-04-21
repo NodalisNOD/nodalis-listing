@@ -14,6 +14,9 @@ const cron = require("node-cron");
 const cookieParser = require("cookie-parser");
 const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
+// Vote-summary (top10) route
+const voteSummaryRoute = require('./routes/voteSummary');
+
 
 // Bestand waarin globale vote-records worden opgeslagen
 const VOTE_RECORDS_FILE = path.join(__dirname, "public", "data", "voteRecords.json");
@@ -32,6 +35,7 @@ console.log("🔑 JWT_SECRET geladen:", process.env.JWT_SECRET);
 // Importeer de ads-route
 const spotlightRoute = require('./routes/spotlight');
 app.use(spotlightRoute);
+app.use('/api/votes/summary', voteSummaryRoute);
 
 // === MIDDLEWARE ===
 app.use(express.json());

@@ -3368,8 +3368,8 @@
       "name": "More skills,less bills",
       "symbol": "SKILL",
       "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRLID6R1dT7suLHghNQ9ikUGKDZV4eatAYcrMd0",
-      "twitter": "",
+      "logoURI": "https://assets.wolfswap.app/skill-1744985562291.png",
+      "twitter": " ",
       "twitterImageGenerated": false,
       "twitterBannerUrl": "",
       "postedOnTwitter": false
@@ -4238,15 +4238,6 @@
       "decimals": 18,
       "logoURI": "https://assets.wolfswap.app/aurum-1741906028416.jpg",
       "boost": 3
-    },
-    {
-      "name": "LIONESS",
-      "symbol": "LIONESS",
-      "address": "0x335Ac13e6399d55F3f26698884D2AD9E74cB2201",
-      "chainId": 25,
-      "decimals": 18,
-      "logoURI": "https://utfs.io/f/cdx60qAQskRL3sClPWlBbZcMg9jdpWknIaO5QTKAoXvVy8Dl",
-      "boost": 2
     },
     {
       "name": "MOON",

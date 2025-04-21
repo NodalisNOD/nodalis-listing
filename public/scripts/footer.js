@@ -23,15 +23,37 @@ footer.innerHTML = `
       </ul>
     </div>
 
-    <!-- Deel 3: Socials -->
-    <div class="footer-section">
-      <h3>Socials</h3>
-      <ul>
-        <li><a href="https://x.com/Nodalis_Network" target="_blank">X (Twitter)</a></li>
-        <li><a href="https://discord.gg/JGkvJYC85E" target="_blank">Discord</a></li>
-        <li><a href="https://www.reddit.com/r/Nodalis/" target="_blank">Reddit</a></li>
-      </ul>
-    </div>
+<!-- Deel 3: Socials -->
+<div class="footer-section">
+  <h3>Socials</h3>
+  <ul>
+    <li>
+      <a href="https://x.com/Nodalis_Network" target="_blank">
+        <img src="./assets/UI/twitter.png" alt="Twitter" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        X (Twitter)
+      </a>
+    </li>
+    <li>
+      <a href="https://discord.gg/JGkvJYC85E" target="_blank">
+        <img src="./assets/UI/discord.png" alt="Discord" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        Discord
+      </a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/r/Nodalis/" target="_blank">
+        <img src="./assets/UI/reddit.png" alt="Reddit" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        Reddit
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/company/nodalisting/posts/?feedView=all" target="_blank">
+        <img src="./assets/UI/linkedin.png" alt="LinkedIn" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        LinkedIn
+      </a>
+    </li>
+  </ul>
+</div>
+
 
     <!-- Deel 4: About -->
     <div class="footer-section">

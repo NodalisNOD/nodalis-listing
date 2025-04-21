@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to List a Coin</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/docs.css" />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+      authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+      projectId: "nodalis-network-c1d0f",
+      storageBucket: "nodalis-network-c1d0f.appspot.com",
+      messagingSenderId: "909094640371",
+      appId: "1:909094640371:web:7da1e9d4f5434927667586",
+      measurementId: "G-10HBE0H9R6"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <div class="docs-container">
+    <aside class="docs-sidebar">
+      <nav>
+        <ul>
+          <li class="section-title">Introduction</li>
+          <li><a href="./whatIsNodalis.html">❓ What is Nodalis</a></li>
+          <li><a href="./mission.html">🌎 Mission & Vision</a></li>
+          <li><a href="./unique.html">💎 What Makes Nodalis Unique?</a></li>
+          <li class="section-title">Getting started</li>
+          <li><a href="./platform.html">🔍 How Does the Platform Work?</a></li>
+          <li><a href="./listCoin.html" class="active">🪙 How to List a Coin</a></li>
+          <li><a href="./access.html">👉 Accessing the Platform</a></li>
+          <li class="section-title">Coin listings</li>
+          <li><a href="./listingPage.html">🔍 What You’ll Find on a Listing Page</a></li>
+          <li><a href="./voting.html">📣 Community Voting</a></li>
+          <li><a href="./badges.html">🏅 Badges on Listings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="docs-content">
+      <h1>🪙 How to List a Coin</h1>
+
+      <p>Listing your coin on Nodalis is simple and free — but quality matters.</p>
+
+      <h2>📋 Steps to List</h2>
+      <ol>
+        <li>Navigate to the <a href="https://nodalisting.com/listing" target="_blank">List a Coin</a> page.</li>
+        <li>Fill in the required details:
+          <ul>
+            <li>Token name, symbol, contract address</li>
+            <li>Project description</li>
+            <li>Website, socials, whitepaper, and logo</li>
+          </ul>
+        </li>
+        <li>Submit your listing for review.</li>
+      </ol>
+
+      <h2>🕒 After Submission</h2>
+      <ul>
+        <li>Your coin will be marked as “Pending”.</li>
+        <li>The Nodalis team will verify your project within 24–48 hours.</li>
+        <li>Once approved, your project becomes eligible for badges and community ranking.</li>
+      </ul>
+
+      <p><strong>🧩 Pro tip:</strong> Projects with more info and clear branding are more likely to earn early trust and engagement.</p>
+    </main>
+  </div>
+
+  <footer id="footer"></footer>
+
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/footer.js"></script>
+</body>
+</html>

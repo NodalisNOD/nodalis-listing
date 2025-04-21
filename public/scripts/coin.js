@@ -65,7 +65,7 @@ function aggregateDynamicData(pairs) {
   let totalLiquidity = 0;
   let weightedPriceSum = 0;
   let totalMarketCap = 0;
-  
+
   pairs.forEach(pair => {
     const { vol, liq, price, mc } = getPairValues(pair);
     totalVolume += vol;
@@ -73,9 +73,9 @@ function aggregateDynamicData(pairs) {
     weightedPriceSum += price * liq;
     totalMarketCap += mc;
   });
-  
+
   const aggregatedPrice = totalLiquidity > 0 ? weightedPriceSum / totalLiquidity : 0;
-  
+
   return {
     price: aggregatedPrice,
     volume: totalVolume,
@@ -136,18 +136,65 @@ async function fetchCoinDetails() {
       c.id === coinId ||
       c.name.toLowerCase().replace(/\s+/g, "") === coinId.replace(/-/g, "")
     );
-    
+
     if (!coinStatic) {
       alert("Coin not found!");
       window.location.href = "index.html";
       return;
     }
-    
+
+// --- BADGE CONFIGURATIE (bovenaan je file) ---
+// De zes badge‑keys in de juiste volgorde:
+const badgeKeys = [
+  "innovative",
+  "top1",
+  "top5",
+  "top10",
+  "topperformer",
+  "verify"
+];
+// Human-readable labels for tooltip/title:
+const badgeLabels = {
+  innovative:   "Innovative Project – Recognized for unique ideas or technology",
+  top1:         "Top 1 Community Favorite – #1 based on community votes",
+  top5:         "Top 5 Community Favorite – Ranked among the top 5 by the community",
+  top10:        "Top 10 Community Favorite – Ranked among the top 10 by the community",
+  topperformer: "Performance Badge – High momentum and strong growth",
+  verify:       "Verified – Officially reviewed and approved by the Nodalis team"
+};
+
+
+// … in fetchCoinDetails(), na het instellen van coinStatic.* velden …
+const badgeContainer = document.getElementById("coin-badges");
+badgeContainer.innerHTML = "";  // clear
+
+// pak de array uit je JSON, of een lege array als ‘badges’ niet bestaat
+const badges = Array.isArray(coinStatic.badges) ? coinStatic.badges : [];
+
+// loop over je 6 keys, toon pad of blanco.png
+badgeKeys.forEach((key, idx) => {
+  const wrapper = document.createElement("div");
+  wrapper.className = "badge-wrapper";
+  wrapper.setAttribute("data-label", badgeLabels[key]);
+
+  const img = document.createElement("img");
+  img.src = badges[idx] || "./assets/UI/badges/blanco.png";
+  img.alt = badgeLabels[key];
+  img.className = "badge";
+
+  wrapper.appendChild(img);
+  badgeContainer.appendChild(wrapper);
+});
+
+
+
     // Vul de statische gegevens in de pagina
     document.getElementById("coin-icon").src = coinStatic.icon;
+    document.getElementById("coin-icon-header").src = coinStatic.icon;
+
     document.getElementById("coin-name").textContent = coinStatic.name;
     document.getElementById("coin-description").textContent = coinStatic.description;
-    
+
     // Contract tonen en copy-functionaliteit
     const contractElement = document.getElementById("coin-contract");
     contractElement.textContent = `${coinStatic.contract.slice(0, 7)}...${coinStatic.contract.slice(-5)}`;
@@ -158,7 +205,7 @@ async function fetchCoinDetails() {
         .then(() => showNotification("Contract address copied!", event))
         .catch(() => showNotification("Failed to copy address.", event));
     });
-    
+
     // Vul de standaard links in (statische data)
     document.getElementById("coin-website").innerHTML = `
       <img src="./assets/UI/domain.png" alt="Website Icon" class="icon">
@@ -180,7 +227,7 @@ async function fetchCoinDetails() {
       <img src="./assets/UI/discord.png" alt="Discord Icon" class="icon">
       <a href="${coinStatic.discord}" target="_blank">Discord</a>
     `;
-    
+
     // Whitepaper en Threads
     if (coinStatic.whitepaper) {
       document.getElementById("coin-whitepaper").innerHTML = `
@@ -198,7 +245,7 @@ async function fetchCoinDetails() {
     } else {
       document.getElementById("coin-threads").innerHTML = "";
     }
-    
+
     // Extra links (indien aanwezig)
     if (coinStatic.extraLinks && coinStatic.extraLinks.length > 0) {
       let extraLinksHTML = `<h3><img src="./assets/UI/link.png" alt="Link Icon" class="icon"> Additional Links</h3><ul>`;
@@ -212,16 +259,16 @@ async function fetchCoinDetails() {
     } else {
       document.getElementById("coin-extra-links").innerHTML = "";
     }
-    
+
     // Haal de dynamische data uit de cache op en voeg deze samen
     await fetchAndMergeDynamicData(coinStatic);
-    
+
     // Haal coin sentiment votes op (blijft realtime)
     fetchVotes();
-    
+
     // Haal de NodSecurity data op via de GoPlusLabs API
     fetchNodSecurityData(coinStatic);
-    
+
   } catch (error) {
     console.error("Error loading coin details:", error);
   }
@@ -240,7 +287,7 @@ async function fetchAndMergeDynamicData(coinStatic) {
     }
     if (coinCachePairs && coinCachePairs.length > 0) {
       const aggregated = aggregateDynamicData(coinCachePairs);
-      
+
       document.getElementById("coin-price").textContent = aggregated.price
         ? `$${aggregated.price.toFixed(10)}`
         : "N/A";
@@ -253,10 +300,10 @@ async function fetchAndMergeDynamicData(coinStatic) {
       document.getElementById("coin-liquidity").textContent = aggregated.liquidity
         ? `$${aggregated.liquidity.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
         : "N/A";
-      
+
       marketData = coinCachePairs;
       renderMarkets(marketData);
-      
+
       if (coinStatic.contract) {
         embedDexscreenerChart(coinStatic.contract);
       }
@@ -294,7 +341,7 @@ function embedDexscreenerChart(contractAddress) {
     <iframe src="https://dexscreener.com/cronos/${contractAddress}?embed=1&loadChartSettings=0&trades=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=1">
     </iframe>
   `;
-  
+
   wrapper.appendChild(div);
 }
 
@@ -332,142 +379,6 @@ async function submitTrendingVote(event) {
     showNotification("❌ Failed to submit trending vote.", event);
   }
 }
-
-// Render grafiek vanuit de cache
-function renderGraphFromCache(graphData) {
-  try {
-    const canvas = document.getElementById("price-graph");
-    const ctx = canvas.getContext("2d");
-    const { labels, prices } = graphData;
-    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');
-    gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)');
-    gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');
-    const dataset = {
-      label: "Price (USD)",
-      data: prices,
-      borderColor: "rgba(0, 123, 255, 1)",
-      borderWidth: 2,
-      pointRadius: 1,
-      pointHoverRadius: 2,
-      pointBackgroundColor: "rgba(255, 255, 255, 0.8)",
-      fill: true,
-      backgroundColor: gradient,
-    };
-    new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: labels,
-        datasets: [dataset],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        aspectRatio: 2,
-        scales: {
-          x: { display: false },
-          y: {
-            ticks: {
-              callback: (value) => `$${value.toFixed(10)}`,
-            },
-          },
-        },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: (context) => `Price: $${context.raw.toFixed(10)}`,
-              title: (context) => context[0].label,
-            },
-          },
-        },
-      },
-    });
-  } catch (error) {
-    console.error("Error rendering cached graph:", error);
-  }
-}
-
-// Fallback: Grafiek-render functie als geen cache beschikbaar is
-function renderGraph(graphApi) {
-  fetch(graphApi)
-    .then((response) => response.json())
-    .then((data) => {
-      const canvas = document.getElementById("price-graph");
-      const ctx = canvas.getContext("2d");
-      const ohlcvList = data.data.attributes.ohlcv_list.reverse();
-      const labels = ohlcvList.map((entry) =>
-        new Date(entry[0] * 1000).toLocaleString("en-US", {
-          month: "short",
-          day: "numeric",
-          hour: "2-digit",
-          minute: "2-digit",
-        })
-      );
-      const prices = ohlcvList.map((entry) => parseFloat(entry[4]));
-      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, 'rgba(0, 123, 255, 0.8)');
-      gradient.addColorStop(0.5, 'rgba(0, 123, 255, 0.7)');
-      gradient.addColorStop(1, 'rgba(0, 123, 255, 0.3)');
-      const dataset = {
-        label: "Price (USD)",
-        data: prices,
-        borderColor: "rgba(0, 123, 255, 1)",
-        borderWidth: 2,
-        pointRadius: 1,
-        pointHoverRadius: 2,
-        pointBackgroundColor: "rgba(255, 255, 255, 0.8)",
-        fill: true,
-        backgroundColor: gradient,
-      };
-      new Chart(ctx, {
-        type: "line",
-        data: {
-          labels: labels,
-          datasets: [dataset],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          aspectRatio: 2,
-          scales: {
-            x: { display: false },
-            y: {
-              ticks: {
-                callback: (value) => `$${value.toFixed(10)}`,
-              },
-            },
-          },
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              callbacks: {
-                label: (context) => `Price: $${context.raw.toFixed(10)}`,
-                title: (context) => context[0].label,
-              },
-            },
-          },
-        },
-      });
-    })
-    .catch((error) => console.error("Error rendering graph:", error));
-}
-
-/* ===================== */
-/* Coin Sentiment Votes  */
-/* ===================== */
-
-// Firebase authenticatiecontrole
-let currentUser = null;
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    console.log("Gebruiker ingelogd:", user.displayName);
-    currentUser = user;
-  } else {
-    console.log("Gebruiker is niet ingelogd.");
-    currentUser = null;
-  }
-});
 
 // Helper: Bereken het aantal milliseconden tot de volgende UTC-middernacht
 function getTimeRemainingForCoinVote() {
@@ -542,7 +453,7 @@ async function submitVote(type, event) {
       negative: Number(data.votes.negative) || 0,
     });
 
-    showNotification("✅ Your trending vote has been recorded.", event);
+    showNotification("✅ Your vote has been recorded.", event);
     localStorage.setItem(`coin_vote_${coinId}_${currentUser.uid}`, new Date().toISOString());
   } catch (error) {
     console.error("Error submitting coin vote:", error);
@@ -608,18 +519,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const nodSecurityContent = document.querySelector(".nodsecurity-content");
   
   if (nodSecurityHeader && nodSecurityContent && nodSecuritySection) {
-    // Zorg dat de content standaard verborgen is
     nodSecurityContent.style.display = "none";
-    
     nodSecurityHeader.addEventListener("click", function() {
-      // Toggle de 'open' class op de gehele sectie
       nodSecuritySection.classList.toggle("open");
-      // Als de sectie nu de class 'open' bevat, tonen we de inhoud; anders verbergen we deze
-      if (nodSecuritySection.classList.contains("open")) {
-        nodSecurityContent.style.display = "block";
-      } else {
-        nodSecurityContent.style.display = "none";
-      }
+      nodSecurityContent.style.display = nodSecuritySection.classList.contains("open") ? "block" : "none";
     });
   }
 });
@@ -647,16 +550,12 @@ async function fetchNodSecurityData(coinStatic) {
 
 /**
  * Helper: Geeft het standaard icoon-URL terug voor een gegeven veld en waarde.
- * Deze functie wordt gebruikt voor alle velden, behalve voor de Buy/Sell tax,
- * waarvoor we een aangepaste logica toepassen.
  */
 function getIconForField(field, value) {
-  // Specifieke logica voor "Is anti whale": altijd warning
   if (field === "Is anti whale") {
     return "./assets/UI/warning.png";
   }
-  
-  // Velden waar "No" als gewenst wordt gezien
+
   const noExpectedFields = [
     "Tax modifiable", "External call", "Hidden owner", "Honeypot", "Proxy contract", 
     "Mintable", "Transfer pausable", "Trading cooldown", "Can't sell all", 
@@ -665,21 +564,17 @@ function getIconForField(field, value) {
   if (noExpectedFields.includes(field)) {
     return value === "No" ? "./assets/UI/shield.png" : "./assets/UI/delete.png";
   }
-  
-  // Velden waar "Yes" als gewenst wordt gezien
+
   const yesExpectedFields = ["Ownership renounced", "Open source"];
   if (yesExpectedFields.includes(field)) {
     return value === "Yes" ? "./assets/UI/shield.png" : "./assets/UI/delete.png";
   }
-  
-  // Voor alle overige velden gebruik je het about-icoon
+
   return "./assets/UI/about.png";
 }
 
 /**
  * Render de NodSecurity data in de UI.
- * Deze functie leest de relevante velden uit de API-response (per token)
- * en toont deze in een overzichtelijk format met bijbehorende iconen.
  */
 function renderNodSecurityData(apiResponse, contractAddress) {
   const infoEl = document.getElementById("nodsecurity-info");
@@ -687,39 +582,30 @@ function renderNodSecurityData(apiResponse, contractAddress) {
     infoEl.textContent = "Token security data not available.";
     return;
   }
-  
+
   const result = apiResponse.result[contractAddress];
   if (!result) {
     infoEl.textContent = "No data for this token.";
     return;
   }
-  
-  // Helper voor boolean weergave: "1" resulteert in "Yes", anders "No"
+
   const yesNo = (val) => val === "1" ? "Yes" : "No";
-  
-  // Ownership renounced: als het owner_address gelijk is aan de null-address en can_take_back_ownership is "0"
+
   const ownershipRenounced = (result.owner_address.toLowerCase() === "0x0000000000000000000000000000000000000000" &&
                               result.can_take_back_ownership === "0")
                               ? "Yes" : "No";
-  
-  // Formatteren van de creator balance: omzetting naar miljoenen met 2 decimalen en percentage erbij
+
   const creatorBalance = parseFloat(result.creator_balance);
   const creatorBalanceFormatted = isNaN(creatorBalance)
     ? "N/A"
     : `${(creatorBalance / 1e6).toFixed(2)}M (${(parseFloat(result.creator_percent) * 100).toFixed(2)}%)`;
-  
+
   let html = "<ul style='list-style:none; padding:0;'>";
-  
-  /**
-   * Specifieke helper voor tax-velden.
-   * Voor Buy tax: als waarde > 0 → warning; als 0 → shield.
-   * Voor Sell tax: als waarde > 0 en (sell tax - buy tax) >= 1 → delete,
-   * anders als > 0 → warning; als 0 → shield.
-   */
+
   function addTaxItem(label, value, buyTaxValue = null) {
     let iconUrl;
     const tax = parseFloat(value);
-    
+
     if (label === "Buy tax") {
       iconUrl = tax === 0 ? "./assets/UI/shield.png" : "./assets/UI/warning.png";
     } else if (label === "Sell tax") {
@@ -727,34 +613,27 @@ function renderNodSecurityData(apiResponse, contractAddress) {
         iconUrl = "./assets/UI/shield.png";
       } else {
         const buyTax = parseFloat(buyTaxValue) || 0;
-        // Als verschil (sell - buy) >= 1% dan delete, anders warning.
         iconUrl = (tax - buyTax) >= 1 ? "./assets/UI/delete.png" : "./assets/UI/warning.png";
       }
     }
-    
+
     html += `<li style="margin-bottom:5px;">
-          <img src="${iconUrl}" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+          <img src="${iconUrl}" style="width:16px; vertical-align:middle; margin-right:5px;">
           <strong>${label}:</strong> ${value}%
           </li>`;
   }
-  
-  // Voeg de tax-velden toe met de aangepaste logica.
+
   addTaxItem("Buy tax", result.buy_tax);
   addTaxItem("Sell tax", result.sell_tax, result.buy_tax);
-  
-  /**
-   * Algemene helper om list-items toe te voegen voor de overige velden
-   * via de getIconForField functie.
-   */
+
   function addItem(label, value) {
     const iconUrl = getIconForField(label, value);
     html += `<li style="margin-bottom:5px;">
-      <img src="${iconUrl}" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+      <img src="${iconUrl}" style="width:16px; vertical-align:middle; margin-right:5px;">
       <strong>${label}:</strong> ${value}
     </li>`;
   }
-  
-  // Voeg overige velden toe met de standaard logica.
+
   addItem("Tax modifiable", yesNo(result.slippage_modifiable) === "Yes" ? "Yes" : "No");
   addItem("External call", yesNo(result.external_call));
   addItem("Ownership renounced", ownershipRenounced);
@@ -769,35 +648,35 @@ function renderNodSecurityData(apiResponse, contractAddress) {
   addItem("Owner can change balance", parseFloat(result.owner_change_balance) > 0 ? "Yes" : "No");
   addItem("Has blacklist", yesNo(result.is_blacklisted));
   addItem("Has whitelist", yesNo(result.is_whitelisted));
-  addItem("Is anti whale", yesNo(result.is_anti_whale)); // Wordt altijd via getIconForField als warning getoond.
-  
-  // Voor overige gegevens gebruiken we standaard het about-icoon.
+  addItem("Is anti whale", yesNo(result.is_anti_whale));
+
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>Holder count:</strong> ${result.holder_count}
            </li>`;
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>LP Holder count:</strong> ${result.lp_holder_count}
            </li>`;
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>Creator address:</strong> ${result.creator_address}
            </li>`;
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>Creator balance:</strong> ${creatorBalanceFormatted}
            </li>`;
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>Owner address:</strong> ${result.owner_address}
            </li>`;
   html += `<li style="margin-bottom:5px;">
-             <img src="./assets/UI/about.png" alt="icon" style="width:16px; vertical-align:middle; margin-right:5px;">
+             <img src="./assets/UI/about.png" style="width:16px; vertical-align:middle; margin-right:5px;">
              <strong>Owner balance:</strong> ${result.owner_balance}
            </li>`;
-  
+
   html += "</ul>";
-  
-  infoEl.innerHTML = html;
+
+  document.getElementById("nodsecurity-info").innerHTML = html;
 }
+

@@ -414,3 +414,63 @@ img.icon {
   font-size: 1rem;
   color: #fff; /* Zet de ondertitel in wit */
 }
+#coin-badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+}
+
+.badge-wrapper img.badge {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.badge-wrapper img.badge:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.badge-wrapper::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.badge-wrapper:hover::after {
+  opacity: 1;
+}
+/* 🔹 Coin header icon naast Token Info */
+.coin-icon-header {
+  width: 36px;               /* Klein icoontje */
+  height: 36px;
+  margin-left: 4px;          /* Ruimte tussen tekst en icoon */
+  vertical-align: middle;    /* Zorgt dat het mooi gecentreerd staat op de tekstlijn */
+  object-fit: cover;
+  border-radius: 50%;        /* Indien je het rond wil maken */
+  opacity: 0.9;
+}

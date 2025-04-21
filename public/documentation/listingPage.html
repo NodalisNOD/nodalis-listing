@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What You’ll Find on a Listing Page</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/docs.css" />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
+      authDomain: "nodalis-network-c1d0f.firebaseapp.com",
+      projectId: "nodalis-network-c1d0f",
+      storageBucket: "nodalis-network-c1d0f.appspot.com",
+      messagingSenderId: "909094640371",
+      appId: "1:909094640371:web:7da1e9d4f5434927667586",
+      measurementId: "G-10HBE0H9R6"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <div class="docs-container">
+    <aside class="docs-sidebar">
+      <nav>
+        <ul>
+          <li class="section-title">Introduction</li>
+          <li><a href="./whatIsNodalis.html">❓ What is Nodalis</a></li>
+          <li><a href="./mission.html">🌎 Mission & Vision</a></li>
+          <li><a href="./unique.html">💎 What Makes Nodalis Unique?</a></li>
+          <li class="section-title">Getting started</li>
+          <li><a href="./platform.html">🔍 How Does the Platform Work?</a></li>
+          <li><a href="./listCoin.html">🪙 How to List a Coin</a></li>
+          <li><a href="./access.html">👉 Accessing the Platform</a></li>
+          <li class="section-title">Coin listings</li>
+          <li><a href="./listingPage.html" class="active">🔍 What You’ll Find on a Listing Page</a></li>
+          <li><a href="./voting.html">📣 Community Voting</a></li>
+          <li><a href="./badges.html">🏅 Badges on Listings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="docs-content">
+      <h1>🔍 What You’ll Find on a Listing Page</h1>
+
+      <p>Each project listed on Nodalis has its own dedicated page. These pages are carefully designed to highlight the most important aspects of the project so that users can make informed decisions and engage meaningfully.</p>
+
+      <h2>🔎 Listing Page Features:</h2>
+      <ul>
+        <li>🪙 <strong>Coin Name & Symbol:</strong> Clear and visible at the top of the page.</li>
+        <li>📊 <strong>Key Stats:</strong> Includes real-time data like price, market cap, volume, and liquidity.</li>
+        <li>🏷 <strong>Tags & Categories:</strong> Help you understand the type of project at a glance.</li>
+        <li>🏅 <strong>Badges:</strong> Visual indicators of project achievements like verification, top performance, innovation, and more.</li>
+        <li>💬 <strong>Community Sentiment:</strong> Users can vote Bullish or Bearish to express their feelings about the project.</li>
+        <li>📈 <strong>Performance Overview:</strong> Optional graphs and trending info to show how the project is evolving over time.</li>
+      </ul>
+
+      <p>Each element is meant to contribute to an ecosystem of trust and transparency — putting projects and users on equal footing through clear and interactive data.</p>
+    </main>
+  </div>
+
+  <footer id="footer"></footer>
+
+  <script src="../scripts/header.js"></script>
+  <script src="../scripts/footer.js"></script>
+</body>
+</html>

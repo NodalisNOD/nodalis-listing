@@ -27,35 +27,56 @@
       display: none;
     }
     .audit-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .toggle-icon {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
 
-.toggle-icon {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-
+    /* Badge‑strip */
+    .badge-strip {
+      margin: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      background: #eef;
+      border-radius: 12px;
+      font-size: 0.9em;
+    }
+    .badge img {
+      width: 16px;
+      height: 16px;
+    }
   </style>
 </head>
 <body>
   <!-- Notification popup -->
   <div id="notification-popup" class="notification-popup hidden"></div>
-  
+
   <header id="header"></header>
 
   <main>
     <div class="coin-header">
       <img id="coin-icon" alt="Coin Icon" class="coin-icon">
       <h1 id="coin-name">Loading...</h1>
+      <!-- Badge‑container -->
+      <div id="coin-badges" class="badge-strip"></div>
       <p id="coin-description">Loading...</p>
     </div>
+
     <!-- Nieuwe Trending Vote Knop -->
     <div class="trending-vote-container">
       <button id="vote-trending">
@@ -68,7 +89,11 @@
     <div class="layout-container">
       <!-- Info Kolom -->
       <div class="coin-info">
-        <h2>Token Info</h2>
+        <h2 id="coin-info-title">
+          Token Info
+          <img id="coin-icon-header" alt="Coin Icon" class="coin-icon-header">
+        </h2>
+        
         <br>
         <div class="coin-details">
           <p>
@@ -108,7 +133,7 @@
 
         <!-- Extra links indien aanwezig -->
         <div id="coin-extra-links"></div>
-<br>
+        <br>
         <div class="dynamic-data">
           <p><strong>Price:</strong> <span id="coin-price">Loading...</span></p>
           <p><strong>Market Cap:</strong> <span id="coin-marketcap">Loading...</span></p>
@@ -130,7 +155,7 @@
             <img id="vote-negative" src="./assets/UI/dislike.png" alt="Dislike" class="vote-icon">
           </div>
         </div>
-        
+
         <!-- Inklapbare NodSecurity Sectie -->
         <div class="nodsecurity-section">
           <h4 class="nodsecurity-header">
@@ -138,19 +163,16 @@
             NodSecurity
             <img src="./assets/UI/arrow.png" alt="Toggle Arrow" class="toggle-icon">
           </h4>
-          
-          
           <div class="nodsecurity-content">
             <p id="nodsecurity-info">Loading token security data...</p>
           </div>
         </div>
       </div>
-      
+
       <!-- Graph Kolom -->
       <div class="chart-container">
         <h2>Price Graph</h2>
         <br>
-        <!-- Wrapper voor de grafiek of de Dexscreener embed -->
         <div id="price-graph-wrapper">
           <canvas id="price-graph"></canvas>
         </div>
@@ -175,11 +197,11 @@
         </table>
       </div>
     </div>
-    
+
   </main>
 
   <footer id="footer"></footer>
-  
+
   <!-- Firebase SDK's (moeten vóór je andere scripts worden geladen) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
