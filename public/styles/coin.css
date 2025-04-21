@@ -426,6 +426,7 @@ img.icon {
   display: inline-block;
   width: 108px;
   height: 108px;
+  transition: transform var(--transition);
 }
 
 .badge-wrapper img.badge {
@@ -442,7 +443,7 @@ img.icon {
   transform: scale(1.1);
 }
 
-/* Tooltip */
+/* Tooltip bij unlocked badges */
 .badge-wrapper::after {
   content: attr(data-label);
   position: absolute;
@@ -464,13 +465,43 @@ img.icon {
 .badge-wrapper:hover::after {
   opacity: 1;
 }
+
+/* LOCKED badge effect */
+.badge-wrapper.locked .badge {
+  filter: grayscale(100%) brightness(0.5);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Extra hovertekst voor locked badges */
+.badge-wrapper.locked::after {
+  content: "🔒 Unlock this badge";
+  background: rgba(30, 37, 54, 0.95);
+  color: var(--text-color);
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.badge-wrapper.locked:hover::after {
+  opacity: 1;
+}
+
 /* 🔹 Coin header icon naast Token Info */
 .coin-icon-header {
-  width: 36px;               /* Klein icoontje */
+  width: 36px;
   height: 36px;
-  margin-left: 4px;          /* Ruimte tussen tekst en icoon */
-  vertical-align: middle;    /* Zorgt dat het mooi gecentreerd staat op de tekstlijn */
+  margin-left: 4px;
+  vertical-align: middle;
   object-fit: cover;
-  border-radius: 50%;        /* Indien je het rond wil maken */
+  border-radius: 50%;
   opacity: 0.9;
 }

@@ -1,4 +1,9 @@
 // coin.js
+let currentUser = null;
+
+firebase.auth().onAuthStateChanged((user) => {
+  currentUser = user;
+});
 
 // Haal de coinId uit de URL-query parameters
 const params = new URLSearchParams(window.location.search);
@@ -143,8 +148,7 @@ async function fetchCoinDetails() {
       return;
     }
 
-// --- BADGE CONFIGURATIE (bovenaan je file) ---
-// De zes badge‑keys in de juiste volgorde:
+// --- BADGE CONFIGURATIE ---
 const badgeKeys = [
   "innovative",
   "top1",
@@ -153,7 +157,7 @@ const badgeKeys = [
   "topperformer",
   "verify"
 ];
-// Human-readable labels for tooltip/title:
+
 const badgeLabels = {
   innovative:   "Innovative Project – Recognized for unique ideas or technology",
   top1:         "Top 1 Community Favorite – #1 based on community votes",
@@ -163,28 +167,33 @@ const badgeLabels = {
   verify:       "Verified – Officially reviewed and approved by the Nodalis team"
 };
 
-
-// … in fetchCoinDetails(), na het instellen van coinStatic.* velden …
+// --- BADGES TOEVOEGEN NA coinStatic.* ---
 const badgeContainer = document.getElementById("coin-badges");
-badgeContainer.innerHTML = "";  // clear
+badgeContainer.innerHTML = ""; // clear
 
-// pak de array uit je JSON, of een lege array als ‘badges’ niet bestaat
 const badges = Array.isArray(coinStatic.badges) ? coinStatic.badges : [];
 
-// loop over je 6 keys, toon pad of blanco.png
 badgeKeys.forEach((key, idx) => {
   const wrapper = document.createElement("div");
   wrapper.className = "badge-wrapper";
   wrapper.setAttribute("data-label", badgeLabels[key]);
 
   const img = document.createElement("img");
-  img.src = badges[idx] || "./assets/UI/badges/blanco.png";
+  const badgeUnlocked = badges[idx];
+
+  img.src = badgeUnlocked || "./assets/UI/badges/blanco.png";
   img.alt = badgeLabels[key];
   img.className = "badge";
+
+  if (!badgeUnlocked) {
+    wrapper.classList.add("locked");
+    wrapper.setAttribute("title", "🔒 This badge is not yet unlocked");
+  }
 
   wrapper.appendChild(img);
   badgeContainer.appendChild(wrapper);
 });
+
 
 
 

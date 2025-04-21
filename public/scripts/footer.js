@@ -11,17 +11,43 @@ footer.innerHTML = `
         </p>
       </div>
     </div>
+<!-- Deel 2: Support -->
+<div class="footer-section">
+  <h3>Support</h3>
+  <ul>
+    <li>
+      <a href="/contact.html" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/UI/adwords.png" alt="Advertise Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+        Advertise with us
+      </a>
+    </li>
+    <li>
+      <a href="/listForm.html" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/UI/exam.png" alt="List Form Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+        Get listed
+      </a>
+    </li>
+    <li>
+      <a href="/contact.html" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/UI/contact-us.png" alt="Contact Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+        Contact
+      </a>
+    </li>
+    <li>
+      <a href="/faq.html" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/UI/help.png" alt="FAQ Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+        FAQ
+      </a>
+    </li>
+    <li>
+      <a href="/whatIsNodalis.html" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/UI/document.png" alt="Documentation Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+        Documentation
+      </a>
+    </li>
+  </ul>
+</div>
 
-    <!-- Deel 2: Support -->
-    <div class="footer-section">
-      <h3>Support</h3>
-      <ul>
-        <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">Advertise with us</a></li>
-        <li><a href="/listForm.html" target="_blank" rel="noopener noreferrer">Get listed</a></li>
-        <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
-        <li><a href="/faq.html" target="_blank" rel="noopener noreferrer">FAQ</a></li>
-      </ul>
-    </div>
 
 <!-- Deel 3: Socials -->
 <div class="footer-section">

@@ -1,0 +1,75 @@
+/* ===== PRIVACY POLICY STYLING ===== */
+body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+  }
+  
+  
+  header h1 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 12px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 50px;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: var(--transition);
+  }
+  
+  footer a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
