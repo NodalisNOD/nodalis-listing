@@ -206,4 +206,12 @@
     padding-left: 0.5rem;
     border-left: 2px solid #444;
   }
+  /* ✅ Badge icons netjes inline maken */
+.inline-badge {
+    width: 72px;
+    height: 72px;
+    vertical-align: middle;
+    margin-right: 2px;
+    object-fit: contain;
+  }
   
