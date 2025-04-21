@@ -39,12 +39,13 @@ footer.innerHTML = `
         FAQ
       </a>
     </li>
-    <li>
-      <a href="/whatIsNodalis.html" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/UI/document.png" alt="Documentation Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
-        Documentation
-      </a>
-    </li>
+<li>
+  <a href="/documentation/whatIsNodalis.html" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/UI/document.png" alt="Documentation Icon" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;" />
+    Documentation
+  </a>
+</li>
+
   </ul>
 </div>
 
