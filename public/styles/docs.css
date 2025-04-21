@@ -66,6 +66,10 @@
   .docs-sidebar a:hover {
     background-color: var(--hover-bg, #2c3448);
   }
+  .docs-sidebar a.active {
+    background-color: var(--hover-bg);
+    font-weight: bold;
+  }
   
   .docs-sidebar a img {
     width: 18px;
