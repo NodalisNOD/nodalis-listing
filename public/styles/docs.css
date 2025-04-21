@@ -66,6 +66,7 @@
   .docs-sidebar a:hover {
     background-color: var(--hover-bg, #2c3448);
   }
+  
   .docs-sidebar a.active {
     background-color: var(--hover-bg);
     font-weight: bold;
@@ -122,6 +123,54 @@
     text-decoration: none;
   }
   
+  /* 🔹 Badge Blocks */
+  .badge-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2rem 0;
+    background-color: #2a2f3d;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .badge-block img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #1a1f2c;
+    padding: 6px;
+  }
+  
+  .badge-block-content {
+    flex: 1;
+  }
+  
+  .badge-block-content h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .badge-block-content ul {
+    margin: 0.3rem 0 0 1rem;
+    padding-left: 0.8rem;
+    list-style-type: disc;
+  }
+  
+  .badge-note {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #bbb;
+    font-size: 0.9rem;
+    background: #222836;
+    border-left: 3px solid var(--accent-color);
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+  }
+  
   /* 🔹 Responsiveness */
   @media (max-width: 900px) {
     .docs-container {
@@ -132,7 +181,22 @@
       width: 100%;
       position: static;
     }
+  
+    .badge-block {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .badge-block img {
+      margin-bottom: 0.5rem;
+    }
+  
+    .badge-block-content {
+      text-align: left;
+    }
   }
+  
   .docs-sidebar .section-title {
     font-size: 0.85rem;
     text-transform: uppercase;
