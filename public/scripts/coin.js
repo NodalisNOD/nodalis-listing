@@ -175,24 +175,26 @@ const badges = Array.isArray(coinStatic.badges) ? coinStatic.badges : [];
 
 badgeKeys.forEach((key, idx) => {
   const wrapper = document.createElement("div");
-  wrapper.className = "badge-wrapper";
-  wrapper.setAttribute("data-label", badgeLabels[key]);
-
-  const img = document.createElement("img");
   const badgeUnlocked = badges[idx];
 
+  const img = document.createElement("img");
   img.src = badgeUnlocked || "./assets/UI/badges/blanco.png";
   img.alt = badgeLabels[key];
   img.className = "badge";
 
-  if (!badgeUnlocked) {
+  if (badgeUnlocked && !badgeUnlocked.includes("blanco")) {
+    // Alleen label toevoegen als het géén blanco is
+    wrapper.setAttribute("data-label", badgeLabels[key]);
+  } else {
     wrapper.classList.add("locked");
     wrapper.setAttribute("title", "🔒 This badge is not yet unlocked");
   }
 
+  wrapper.classList.add("badge-wrapper");
   wrapper.appendChild(img);
   badgeContainer.appendChild(wrapper);
 });
+
 
 
 

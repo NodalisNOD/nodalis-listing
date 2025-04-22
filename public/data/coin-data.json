@@ -2462,7 +2462,16 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x79773e4aba9f74da020a9bc4ed82377b3f374895%2C0x9b336da5705c727f9b0946abec4c7687646068e8%2C0xb8814cfb073a7207b9eff712fdab0543e1c62f26%2C0xc2e09f89744aefcd01eb6c98cabbc1a0094af835",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x79773e4aba9f74da020a9bc4ed82377b3f374895/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x79773e4aba9f74da020a9bc4ed82377b3f374895"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/topperformer.png",
+      "./assets/UI/badges/blanco.png"
+
+    ]
   },
   {
     "id": "cryptoholic-holic",
