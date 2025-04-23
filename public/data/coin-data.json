@@ -589,7 +589,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb237b551258957e65ac1aa15bf7551f07850c6ca/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe58c8e2569b631e088f54ea47cc90a1a3509c808"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/topperformer.png",
+      "./assets/UI/badges/blanco.png"
+    ]
   },
   {
     "id": "gen-z",
@@ -2470,7 +2478,6 @@
       "./assets/UI/badges/blanco.png",       
       "./assets/UI/badges/topperformer.png",
       "./assets/UI/badges/blanco.png"
-
     ]
   },
   {
