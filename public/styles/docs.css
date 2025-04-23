@@ -214,4 +214,25 @@
     margin-right: 2px;
     object-fit: contain;
   }
-  
+  /* Attribution lists */
+.docs-content .attribution-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.docs-content .attribution-list li {
+  flex: 1 1 280px;
+  display: flex;
+  align-items: center;
+}
+
+.docs-content .attribution-icon {
+  width: 128px;
+  height: 128;
+  margin-right: 0.75rem;
+  object-fit: contain;
+}

@@ -14,122 +14,76 @@ function fetchWithRetry(url, options = {}, retries = 3, delay = 1000) {
 
 // Globale variabelen
 let coinTableData = [];      // Data voor alle coins (uit coinCache.json) met icoon uit coin-data.json
-let currentDisplayData = []; // Huidige data (bijv. na filtering)
+let currentDisplayData = []; // Huidige data (na filtering)
 let currentPage = 1;
 const itemsPerPage = 20;
 
+
 /**
- * Haalt de coin-data op uit coin-data.json (handmatig, voor het icoon)
- * en vervolgens de dynamische data uit coinCache.json.
- * We combineren deze door het icoon uit de handmatige data te gebruiken en de rest uit de cache.
+ * Haal en combineer coin data, en retourneer een Promise.
  */
 export function populateAltcoinTable() {
-  // Eerst handmatige coin-data laden (voor icoon en overige statische info)
-  fetchWithRetry("./data/coin-data.json")
+  return fetchWithRetry("./data/coin-data.json")
     .then((response) => response.json())
     .then((manualCoinData) => {
-      console.log("✅ Loaded manual coin data");
-      // Vervolgens de dynamische data uit de coinCache laden
-      fetchWithRetry("./data/coinCache.json")
+      return fetchWithRetry("./data/coinCache.json")
         .then((response) => response.json())
         .then((cachedData) => {
-          // Verwerk de data: cachedData is een object met keys (coin IDs)
           const results = Object.entries(cachedData).map(([key, coinData]) => {
-            // Normaliseer de key (lowercase en trim)
             const normalizedKey = key.trim().toLowerCase();
-            // Bepaal de coinId: gebruik coinData.id indien beschikbaar, anders de genormaliseerde key
             const coinId = coinData.id ? coinData.id.trim().toLowerCase() : normalizedKey;
-            // Zoek de bijbehorende coin in de handmatige data (voor het icoon, naam, ticker, contract en chain)
             const manualCoin = manualCoinData.find(
               (c) => c.id.trim().toLowerCase() === coinId
             );
-            if (!manualCoin) {
-              console.warn("Coin niet gevonden in manualCoinData:", coinId);
-              return null;
-            }
-            // Verwerking voor Dexscreener-respons (als array)
+            if (!manualCoin) return null;
+
+            let priceUsd, change6h, change24h, marketCap, volume24h;
             if (Array.isArray(coinData) && coinData.length > 0) {
               const dexData = coinData[0];
-              const volume24hTotal = coinData.reduce((sum, pool) => {
-                return sum + (pool.volume && pool.volume.h24 ? parseFloat(pool.volume.h24) : 0);
-              }, 0);
-              return {
-                id: manualCoin.id,            // uit de handmatige data
-                name: manualCoin.name,          // uit de handmatige data
-                ticker: manualCoin.ticker,      // uit de handmatige data (of eventueel dexData.symbol)
-                icon: manualCoin.icon,          // gebruik altijd het icoon uit de handmatige data
-                contract: manualCoin.contract,  // uit de handmatige data
-                chain: manualCoin.chain,        // uit de handmatige data
-                priceUsd: dexData.priceUsd ? parseFloat(dexData.priceUsd) : null,
-                change6h:
-                  dexData.priceChange && dexData.priceChange.h6 !== undefined && dexData.priceChange.h6 !== "N/A"
-                    ? parseFloat(dexData.priceChange.h6)
-                    : 0,
-                change24h:
-                  dexData.priceChange && dexData.priceChange.h24 !== undefined && dexData.priceChange.h24 !== "N/A"
-                    ? parseFloat(dexData.priceChange.h24)
-                    : 0,
-                marketCap: dexData.marketCap !== undefined ? parseFloat(dexData.marketCap) : null,
-                volume24h: volume24hTotal,
-              };
-            }
-            // Verwerking voor Geckoterminal-respons (als object met data)
-            else if (coinData && coinData.data) {
+              volume24h = coinData.reduce((sum, pool) => sum + (pool.volume?.h24 ? parseFloat(pool.volume.h24) : 0), 0);
+              priceUsd = dexData.priceUsd ? parseFloat(dexData.priceUsd) : null;
+              change6h = dexData.priceChange?.h6 && dexData.priceChange.h6 !== "N/A" ? parseFloat(dexData.priceChange.h6) : 0;
+              change24h = dexData.priceChange?.h24 && dexData.priceChange.h24 !== "N/A" ? parseFloat(dexData.priceChange.h24) : 0;
+              marketCap = dexData.marketCap !== undefined ? parseFloat(dexData.marketCap) : null;
+            } else if (coinData?.data) {
               const gt = coinData.data.attributes;
-              return {
-                id: manualCoin.id,
-                name: manualCoin.name,
-                ticker: manualCoin.ticker,
-                icon: manualCoin.icon,
-                contract: manualCoin.contract,
-                chain: manualCoin.chain,
-                priceUsd: gt.base_token_price_usd ? parseFloat(gt.base_token_price_usd) : null,
-                change6h: (gt.price_change_percentage && gt.price_change_percentage.h6 !== undefined)
-                  ? parseFloat(gt.price_change_percentage.h6)
-                  : 0,
-                change24h: (gt.price_change_percentage && gt.price_change_percentage.h24 !== undefined)
-                  ? parseFloat(gt.price_change_percentage.h24)
-                  : 0,
-                marketCap: (gt.market_cap_usd === null || gt.market_cap_usd === undefined)
-                  ? (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null)
-                  : parseFloat(gt.market_cap_usd),
-                volume24h: (gt.volume_usd && gt.volume_usd.h24) ? parseFloat(gt.volume_usd.h24) : 0,
-              };
-            } else {
-              console.error("Geen geldige data voor coin:", manualCoin.name);
-              return null;
-            }
+              priceUsd = gt.base_token_price_usd ? parseFloat(gt.base_token_price_usd) : null;
+              change6h = gt.price_change_percentage?.h6 !== undefined ? parseFloat(gt.price_change_percentage.h6) : 0;
+              change24h = gt.price_change_percentage?.h24 !== undefined ? parseFloat(gt.price_change_percentage.h24) : 0;
+              marketCap = gt.market_cap_usd != null ? parseFloat(gt.market_cap_usd) : (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null);
+              volume24h = gt.volume_usd?.h24 ? parseFloat(gt.volume_usd.h24) : 0;
+            } else return null;
+
+            return {
+              id: manualCoin.id,
+              name: manualCoin.name,
+              ticker: manualCoin.ticker,
+              icon: manualCoin.icon,
+              contract: manualCoin.contract,
+              chain: manualCoin.chain,
+              category: manualCoin.category || '',
+              priceUsd,
+              change6h,
+              change24h,
+              marketCap,
+              volume24h,
+            };
           });
-          coinTableData = results.filter((item) => item !== null);
-          console.log("✅ Gefilterde data:", coinTableData);
-          // Sorteer op marketCap (aflopend)
+
+          coinTableData = results.filter((x) => x);
           coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
-          console.log("✅ Gesorteerde data:", coinTableData);
           currentDisplayData = [...coinTableData];
           renderTable(currentDisplayData, 1);
           setupTableSort();
-          setupSearch();
-          setupChainFilter();
-        })
-        .catch((error) => {
-          console.error("Fout bij ophalen van coinCache.json:", error);
+          return;
         });
-    })
-    .catch((error) => {
-      console.error("Fout bij ophalen van coin-data.json:", error);
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM geladen, tabel wordt ingevuld...");
-  populateAltcoinTable();
+  // populateAltcoinTable wordt van buiten aangeroepen
 });
 
-/**
- * Render de altcoin-tabel met paginering.
- * @param {Array} data - De data-array die gerenderd moet worden (bijv. volledige of gefilterde data)
- * @param {number} page - Het huidige paginanummer (default: currentPage)
- */
 function renderTable(data = coinTableData, page = currentPage) {
   currentDisplayData = data;
   currentPage = page;
@@ -137,23 +91,21 @@ function renderTable(data = coinTableData, page = currentPage) {
   tableBody.innerHTML = "";
 
   const startIndex = (page - 1) * itemsPerPage;
-  const pageData = data.slice(startIndex, startIndex + itemsPerPage);
-
-  pageData.forEach((coin, index) => {
+  data.slice(startIndex, startIndex + itemsPerPage).forEach((coin, idx) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${startIndex + index + 1}</td>
+      <td>${startIndex + idx + 1}</td>
       <td>
-        <a href="coin.html?id=${coin.id}" style="display: block; text-decoration: none; color: inherit;">
-          <img src="${coin.icon}" alt="${coin.name}" class="coin-icon" style="width:20px; height:20px; margin-right:5px; vertical-align:middle;">
+        <a href="coin.html?id=${coin.id}" style="display:block;text-decoration:none;color:inherit;">
+          <img src="${coin.icon}" alt="${coin.name}" class="coin-icon" style="width:20px;height:20px;margin-right:5px;vertical-align:middle;">
           ${coin.name} <strong>${coin.ticker}</strong>
         </a>
       </td>
-      <td>${coin.priceUsd !== null ? coin.priceUsd.toFixed(10) : "N/A"}</td>
-      <td style="color: ${coin.change6h >= 0 ? "green" : "red"};">${coin.change6h.toFixed(2)}%</td>
-      <td style="color: ${coin.change24h >= 0 ? "green" : "red"};">${coin.change24h.toFixed(2)}%</td>
-      <td>${coin.marketCap !== null ? "$" + coin.marketCap.toLocaleString() : "N/A"}</td>
-      <td>${coin.volume24h !== null ? "$" + coin.volume24h.toLocaleString() : "N/A"}</td>
+      <td>${coin.priceUsd != null ? coin.priceUsd.toFixed(10) : 'N/A'}</td>
+      <td style="color:${coin.change6h >= 0 ? 'green' : 'red'}">${coin.change6h.toFixed(2)}%</td>
+      <td style="color:${coin.change24h >= 0 ? 'green' : 'red'}">${coin.change24h.toFixed(2)}%</td>
+      <td>${coin.marketCap != null ? '$' + coin.marketCap.toLocaleString() : 'N/A'}</td>
+      <td>${coin.volume24h != null ? '$' + coin.volume24h.toLocaleString() : 'N/A'}</td>
     `;
     tableBody.appendChild(tr);
   });
@@ -161,154 +113,250 @@ function renderTable(data = coinTableData, page = currentPage) {
 }
 
 function renderPagination(data, page) {
-  const paginationContainer = document.getElementById("pagination");
-  paginationContainer.innerHTML = "";
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-  if (totalPages <= 1) return; // Geen paginering nodig
-
-  // Vorige knop
-  if (page > 1) {
-    const prevButton = document.createElement("button");
-    prevButton.innerText = "Previous";
-    prevButton.addEventListener("click", () => {
-      renderTable(data, page - 1);
-    });
-    paginationContainer.appendChild(prevButton);
-  }
-
-  // Paginaknoppen
-  for (let i = 1; i <= totalPages; i++) {
-    const pageButton = document.createElement("button");
-    pageButton.innerText = i;
-    if (i === page) {
-      pageButton.classList.add("active");
-    }
-    pageButton.addEventListener("click", () => {
-      renderTable(data, i);
-    });
-    paginationContainer.appendChild(pageButton);
-  }
-
-  // Volgende knop
-  if (page < totalPages) {
-    const nextButton = document.createElement("button");
-    nextButton.innerText = "Next";
-    nextButton.addEventListener("click", () => {
-      renderTable(data, page + 1);
-    });
-    paginationContainer.appendChild(nextButton);
-  }
+  const container = document.getElementById("pagination");
+  container.innerHTML = "";
+  const total = Math.ceil(data.length / itemsPerPage);
+  if (total < 2) return;
+  if (page > 1) createPageBtn('Previous', page - 1, container);
+  for (let i = 1; i <= total; i++) createPageBtn(i, i, container, page);
+  if (page < total) createPageBtn('Next', page + 1, container);
+}
+function createPageBtn(label, p, container, current) {
+  const btn = document.createElement('button');
+  btn.innerText = label;
+  if (p === current) btn.classList.add('active');
+  btn.addEventListener('click', () => renderTable(currentDisplayData, p));
+  container.appendChild(btn);
 }
 
 function setupTableSort() {
-  const ths = document.querySelectorAll(".main-crypto-table thead th");
-  const sortKeys = [
-    "name",
-    "priceUsd",
-    "change6h",
-    "change24h",
-    "marketCap",
-    "volume24h",
-  ];
-  for (let i = 1; i < ths.length; i++) {
-    let key = sortKeys[i - 1];
-    ths[i].style.cursor = "pointer";
-    ths[i].addEventListener("click", () => {
-      // Toggle sorteerorde
-      if (!ths[i].dataset.order || ths[i].dataset.order === "desc") {
-        ths[i].dataset.order = "asc";
-      } else {
-        ths[i].dataset.order = "desc";
-      }
-      const order = ths[i].dataset.order;
-      currentDisplayData.sort((a, b) => {
-        let aValue = a[key] !== null ? a[key] : -Infinity;
-        let bValue = b[key] !== null ? b[key] : -Infinity;
-        if (key === "name") {
-          return order === "asc" ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
-        } else {
-          return order === "asc" ? aValue - bValue : bValue - aValue;
-        }
+  const ths = document.querySelectorAll('.main-crypto-table thead th');
+  const keys = ['name', 'priceUsd', 'change6h', 'change24h', 'marketCap', 'volume24h'];
+  ths.forEach((th, i) => {
+    if (i > 0) {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const key = keys[i - 1];
+        th.dataset.order = th.dataset.order === 'asc' ? 'desc' : 'asc';
+        const order = th.dataset.order;
+        currentDisplayData.sort((a, b) => {
+          let av = a[key] != null ? a[key] : -Infinity;
+          let bv = b[key] != null ? b[key] : -Infinity;
+          if (key === 'name') return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+          return order === 'asc' ? av - bv : bv - av;
+        });
+        renderTable(currentDisplayData, 1);
       });
-      renderTable(currentDisplayData, 1);
-    });
-  }
-}
-
-function setupSearch() {
-  const searchInput = document.getElementById("search-bar");
-  if (!searchInput) return;
-  searchInput.addEventListener("input", function () {
-    const filter = this.value.toLowerCase();
-    const filteredData = coinTableData.filter(
-      (coin) =>
-        coin.name.toLowerCase().includes(filter) ||
-        coin.contract.toLowerCase().includes(filter)
-    );
-    renderTable(filteredData, 1);
-  });
-}
-
-function setupChainFilter() {
-  const dropdown = document.getElementById("chain-filter");
-  if (!dropdown) return;
-
-  // Verkrijg unieke chain-namen uit de coinTableData
-  const chains = [...new Set(coinTableData.map((coin) => coin.chain))].sort();
-
-  // Mapping met chain-icoontjes
-  const chainIcons = {
-    "Cronos": "./assets/chains/cronos.png",
-    // Voeg hier andere chains en hun icoontjes toe indien nodig
-  };
-
-  dropdown.innerHTML = "";
-  const selected = document.createElement("div");
-  selected.classList.add("custom-dropdown-selected");
-  selected.innerHTML = `<img src="./assets/UI/all.png" alt="All" class="chain-icon"> All Chains`;
-  dropdown.appendChild(selected);
-
-  const optionsContainer = document.createElement("div");
-  optionsContainer.classList.add("custom-dropdown-options");
-  optionsContainer.style.display = "none";
-
-  const allOption = document.createElement("div");
-  allOption.classList.add("custom-dropdown-option");
-  allOption.setAttribute("data-value", "");
-  allOption.innerHTML = `<img src="./assets/UI/all.png" alt="All" class="chain-icon"> All Chains`;
-  optionsContainer.appendChild(allOption);
-
-  chains.forEach((chain) => {
-    const option = document.createElement("div");
-    option.classList.add("custom-dropdown-option");
-    option.setAttribute("data-value", chain);
-    const iconSrc = chainIcons[chain] ? chainIcons[chain] : "default.png";
-    option.innerHTML = `<img src="${iconSrc}" alt="${chain}" class="chain-icon"> ${chain}`;
-    optionsContainer.appendChild(option);
-  });
-
-  dropdown.appendChild(optionsContainer);
-
-  selected.addEventListener("click", () => {
-    optionsContainer.style.display = optionsContainer.style.display === "none" ? "block" : "none";
-  });
-
-  optionsContainer.addEventListener("click", (e) => {
-    const option = e.target.closest(".custom-dropdown-option");
-    if (!option) return;
-    const value = option.getAttribute("data-value");
-    const icon = option.querySelector("img").src;
-    selected.innerHTML = `<img src="${icon}" alt="${value || 'All'}" class="chain-icon"> ${value || "All Chains"}`;
-    optionsContainer.style.display = "none";
-    const filteredData = value ? coinTableData.filter((coin) => coin.chain === value) : coinTableData;
-    renderTable(filteredData, 1);
-  });
-
-  document.addEventListener("click", (e) => {
-    if (!dropdown.contains(e.target)) {
-      optionsContainer.style.display = "none";
     }
   });
 }
 
-export { renderTable, setupSearch, setupTableSort, setupChainFilter };
+function setupSearch() {
+  const input = document.getElementById('search-bar');
+  input.addEventListener('input', () => {
+    const f = input.value.toLowerCase();
+    const filt = coinTableData.filter(c => c.name.toLowerCase().includes(f) || c.contract.toLowerCase().includes(f));
+    renderTable(filt, 1);
+  });
+}
+
+// 🌐 Mapping chain → icoon pad
+const chainIcons = {
+  Cronos: "./assets/UI/chains/cronos.png",
+  Ethereum: "./assets/UI/chains/ethereum.png",
+  BSC: "./assets/UI/chains/bsc.png",
+  Polygon: "./assets/UI/chains/polygon.png",
+  // voeg hier je eigen chains toe…
+};
+
+// ✨ setupChainFilter (vervang je huidige functie hiermee)
+function setupChainFilter() {
+  const dropdown = document.getElementById("chain-filter");
+  const selected = dropdown.querySelector(".custom-dropdown-selected");
+  const optionsContainer = dropdown.querySelector(".custom-dropdown-options");
+
+  // Haal alle unieke chains uit coinTableData
+  const chains = Array.from(
+    new Set(coinTableData.map((c) => c.chain).filter(Boolean))
+  ).sort();
+  const allChains = ["All Chains", ...chains];
+
+  // Clear oude opties
+  optionsContainer.innerHTML = "";
+
+  // Bouw een optie voor elke chain
+  allChains.forEach((chain) => {
+    const opt = document.createElement("div");
+    opt.className = "custom-dropdown-option";
+    opt.setAttribute("data-value", chain);
+
+    // Kies icoon of fallback
+    const iconSrc = chainIcons[chain] || "./assets/UI/all.png";
+
+    opt.innerHTML = `
+      <img src="${iconSrc}" alt="${chain} icon" class="filter-icon" />
+      <span class="filter-label">${chain}</span>
+    `;
+    optionsContainer.appendChild(opt);
+
+    // Klik-handler: filter en sluit dropdown
+    opt.addEventListener("click", () => {
+      // Active state
+      optionsContainer
+        .querySelectorAll(".custom-dropdown-option.active")
+        .forEach((el) => el.classList.remove("active"));
+      opt.classList.add("active");
+
+      // Toon geselecteerde in header
+      selected.innerHTML = `
+        <img src="${iconSrc}" alt="${chain} icon" class="filter-icon" />
+        ${chain}
+      `;
+
+      // Sluit menu
+      dropdown.classList.remove("open");
+
+      // Pas filter toe
+      const filtered =
+        chain === "All Chains"
+          ? coinTableData
+          : coinTableData.filter((c) => c.chain === chain);
+      renderTable(filtered, 1);
+    });
+  });
+
+  // Open/close dropdown op click
+  selected.addEventListener("click", () => {
+    dropdown.classList.toggle("open");
+  });
+
+  // Sluit dropdown als je buiten klikt
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+}
+
+
+// 🌟 Mapping categorie → icoon pad
+const categoryIcons = {
+  Meme:            "./assets/UI/categories/meme.png",
+  Gaming:          "./assets/UI/categories/gaming.png",
+  "Utility Token": "./assets/UI/categories/utility.png",
+  NFT:             "./assets/UI/categories/nft.png",       // ✂️ geen spaties in pad
+  "DEX/Exchange":  "./assets/UI/categories/dex.png",
+  // voeg hier je eigen categorieën en iconen toe…
+};
+
+// ✨ setupCategoryFilter (vervang je huidige functie hiermee)
+function setupCategoryFilter() {
+  const dropdown = document.getElementById("category-filter");
+  const selected = dropdown.querySelector(".custom-dropdown-selected");
+  const optionsContainer = dropdown.querySelector(".custom-dropdown-options");
+
+  // 1) Verzamel ALLE categorieën (ondersteunt zowel c.categories als c.category)
+  const cats = Array.from(
+    new Set(
+      coinTableData
+        .flatMap(c =>
+          Array.isArray(c.categories)
+            ? c.categories
+            : typeof c.category === "string"
+              ? [c.category]
+              : []
+        )
+        .filter(Boolean)
+    )
+  ).sort();
+
+  console.log("Beschikbare categorieën:", cats); // <-- check hier wat er in cats zit
+
+  const allCats = ["All Categories", ...cats];
+
+  // 2) Maak dropdown leeg
+  optionsContainer.innerHTML = "";
+
+  // 3) Bouw opties voor elke categorie
+  allCats.forEach(cat => {
+    const iconSrc = categoryIcons[cat] || "./assets/UI/all.png";
+    const opt = document.createElement("div");
+    opt.className = "custom-dropdown-option";
+    opt.setAttribute("data-value", cat);
+    opt.innerHTML = `
+      <img src="${iconSrc}" alt="${cat} icon" class="filter-icon" />
+      <span class="filter-label">${cat}</span>
+    `;
+    optionsContainer.appendChild(opt);
+
+    // Klik-handler
+    opt.addEventListener("click", () => {
+      // Active-state
+      optionsContainer
+        .querySelectorAll(".custom-dropdown-option.active")
+        .forEach(el => el.classList.remove("active"));
+      opt.classList.add("active");
+
+      // Update header
+      selected.innerHTML = `
+        <img src="${iconSrc}" alt="${cat} icon" class="filter-icon" />
+        ${cat}
+      `;
+
+      // Sluit dropdown
+      dropdown.classList.remove("open");
+
+      // Filter coins
+      const filtered = cat === "All Categories"
+        ? coinTableData
+        : coinTableData.filter(c =>
+            Array.isArray(c.categories)
+              ? c.categories.includes(cat)
+              : c.category === cat
+          );
+
+      renderTable(filtered, 1);
+    });
+  });
+
+  // Open/close dropdown
+  selected.addEventListener("click", () => {
+    dropdown.classList.toggle("open");
+  });
+
+  // Sluit bij buitenklik
+  document.addEventListener("click", e => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+}
+
+
+
+// Helper: init dropdown
+function initDropdown(container, items, onSelect) {
+  const sel = container.querySelector('.custom-dropdown-selected');
+  const opts = container.querySelector('.custom-dropdown-options');
+  sel.innerHTML = `<img src="./assets/UI/all.png" class="chain-icon"> ${items[0]}`;
+  opts.innerHTML = '';
+  items.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'custom-dropdown-option';
+    div.textContent = item;
+    opts.appendChild(div);
+    div.addEventListener('click', () => {
+      sel.innerHTML = `<img src="./assets/UI/all.png" class="chain-icon"> ${item}`;
+      opts.style.display = 'none';
+      onSelect(item);
+    });
+  });
+  sel.addEventListener('click', () => {
+    opts.style.display = opts.style.display === 'block' ? 'none' : 'block';
+  });
+  document.addEventListener('click', e => {
+    if (!container.contains(e.target)) opts.style.display = 'none';
+  });
+}
+
+export { renderTable, setupSearch, setupTableSort, setupChainFilter, setupCategoryFilter };

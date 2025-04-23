@@ -6,14 +6,22 @@
 }
 
 :root {
-  --primary-color: #161a25;      /* Lichtere variant van donkerblauw */
-  --secondary-color: #0d3b66;    /* Lichtere variant van secundair blauw */
-  --accent-color: #ffffff;       /* Accent blijft wit */
-  --bg-color: #1e2536;           /* Lichtere donkerblauwe achtergrond */
-  --card-bg: #3a3f4b;            /* Lichtere card achtergrond */
-  --text-color: #e6e6e6;         /* Lichtere tekst */
-  --border-color: #888;          /* Lichtere borders */
-  --hover-bg: #4a4e5a;           /* Lichtere hover kleur */
+  --primary-color: #161a25;
+  /* Lichtere variant van donkerblauw */
+  --secondary-color: #0d3b66;
+  /* Lichtere variant van secundair blauw */
+  --accent-color: #ffffff;
+  /* Accent blijft wit */
+  --bg-color: #1e2536;
+  /* Lichtere donkerblauwe achtergrond */
+  --card-bg: #3a3f4b;
+  /* Lichtere card achtergrond */
+  --text-color: #e6e6e6;
+  /* Lichtere tekst */
+  --border-color: #888;
+  /* Lichtere borders */
+  --hover-bg: #4a4e5a;
+  /* Lichtere hover kleur */
   --transition: 0.3s ease;
   --font: 'Eurostile Regular', sans-serif;
 }
@@ -26,17 +34,53 @@
   padding: 0;
 }
 
+/* Extra styling voor de dashboard-grid (5 vakken naast elkaar) */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Box 5: Stats gecombineerd in één vak */
+.stats-combined {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stats-combined .stat-box {
+  background-color: #f9f9f9;
+  border: 3px solid #042c3f;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  flex: 1;
+}
+
+.stats-combined .stat-box:last-child {
+  margin-bottom: 0;
+}
+
 /* ----- Basis Styling ----- */
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: var(--font);
   background-color: var(--bg-color);
   color: var(--text-color);
   letter-spacing: 0.05em;
 }
+
 html {
   font-size: 18px;
 }
+
 body {
   font-family: var(--font);
   background-color: var(--bg-color);
@@ -98,9 +142,11 @@ main {
   border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
 }
+
 .stats-combined {
   background-color: #161a25 !important;
 }
+
 .stat-box {
   background-color: var(--card-bg) !important;
   border: 0px solid var(--border-color);
@@ -118,7 +164,7 @@ table {
   background: var(--card-bg);
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .table-wrapper table {
@@ -174,7 +220,8 @@ table tr:hover {
     gap: 1rem;
     padding-bottom: 1rem;
   }
-  .dashboard-grid > * {
+
+  .dashboard-grid>* {
     flex: 0 0 auto;
     min-width: 300px;
   }
@@ -197,7 +244,7 @@ table tr:hover {
   background: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px #161a25(0,0,0,0.1);
+  box-shadow: 0 2px 4px #161a25(0, 0, 0, 0.1);
   min-width: 600px;
 }
 
@@ -251,8 +298,10 @@ table tr:hover {
 
 .crypto-table td img,
 .main-crypto-table td img {
-  height: 40px;       /* Grotere hoogte */
-  max-width: 60px;    /* Grotere maximale breedte */
+  height: 40px;
+  /* Grotere hoogte */
+  max-width: 60px;
+  /* Grotere maximale breedte */
   margin-right: 0.5rem;
   vertical-align: middle;
   border-radius: 50%;
@@ -284,6 +333,7 @@ table tr:hover {
   display: flex;
   justify-content: flex-start;
 }
+
 #search-bar {
   width: 100%;
   max-width: 300px;
@@ -299,10 +349,12 @@ table tr:hover {
   gap: 1rem;
   flex: 1;
 }
+
 .top-community-wrapper table {
   width: 48%;
   border-collapse: collapse;
 }
+
 .top-community-wrapper th,
 .top-community-wrapper td {
   border: 1px solid var(--border-color);
@@ -324,10 +376,12 @@ table tr:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .stat-box h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
 .stat-box p {
   font-size: 1.1rem;
   font-weight: bold;
@@ -339,6 +393,7 @@ table tr:hover {
   display: inline-block;
   position: relative;
 }
+
 .tooltip-icon {
   width: 24px;
   height: 24px;
@@ -346,6 +401,7 @@ table tr:hover {
   vertical-align: middle;
   cursor: pointer;
 }
+
 .tooltip-text {
   display: none;
   position: absolute;
@@ -357,58 +413,151 @@ table tr:hover {
   font-size: 0.75rem;
   padding: 5px 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   width: 200px;
   text-align: center;
 }
+
 .tooltip-wrapper:hover .tooltip-text {
   display: block;
 }
 
-/* ----- CUSTOM DROPDOWN STYLING ----- */
-.custom-dropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 200px;
-}
-.custom-dropdown-selected {
-  padding: 5px 10px;
-  border: 1px solid var(--border-color);
+/* 📦 Card‐wrapper rond filters + tabel */
+.table-card {
   background: var(--card-bg);
+  border: 0px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 📦 Filter‐panel binnen de card */
+.filter-panel {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* 🔹 Filters‐row: flex met spacing, links uitlijnen */
+.filter-panel .filters-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 🔍 Search krijgt meer ruimte maar niet alles */
+.filter-panel .filters-row>.search-container {
+  flex: 2 1 300px;
+  /* groeit dubbel zo hard als een dropdown */
+  min-width: 0;
+  /* voorkomt overflow */
+}
+
+/* 📐 Dropdowns fixed-ish, direct naast de search */
+.filter-panel .filters-row>.filter-container {
+  flex: 1 1 150px;
+  /* neemt voldoende ruimte, maar krimpt mee */
+  min-width: 0;
+}
+
+/* 📝 Zoekveld styling */
+.filter-panel .search-container input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.filter-panel .search-container input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* 📂 Dropdown styling */
+.filter-panel .custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.filter-panel .custom-dropdown-selected {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--bg-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.5rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
-.custom-dropdown-selected img.chain-icon {
-  /* Gebruik de globale .chain-icon styling */
+
+.filter-panel .custom-dropdown-selected:hover,
+.filter-panel .custom-dropdown-selected:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
-.custom-dropdown-options {
+
+.filter-panel .custom-dropdown-selected::after {
+  content: '▾';
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+/* 🍱 Dropdown menu exact onder de selected box */
+.filter-panel .custom-dropdown-options {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 4px);
   left: 0;
   width: 100%;
-  border: 1px solid var(--border-color);
   background: var(--card-bg);
-  z-index: 1000;
-  display: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   max-height: 200px;
   overflow-y: auto;
+  z-index: 1000;
 }
-.custom-dropdown-option {
-  padding: 5px 10px;
+
+/* 🎯 Dropdown options */
+.filter-panel .custom-dropdown-option {
+  padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
-.custom-dropdown-option img.chain-icon {
-  /* Gebruik de globale .chain-icon styling */
-}
-.custom-dropdown-option:hover {
+
+.filter-panel .custom-dropdown-option:hover,
+.filter-panel .custom-dropdown-option.active {
   background: var(--hover-bg);
+  font-weight: 600;
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
+
+/* kleine icoontjes naast elke optie */
+.filter-panel .custom-dropdown-option img.filter-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  object-fit: contain;
+}
+
+/* en in de geselecteerde regel */
+.filter-panel .custom-dropdown-selected img.chain-icon,
+.filter-panel .custom-dropdown-selected img.filter-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  object-fit: contain;
 }
 
 /* ----- COOKIE BANNER ----- */
@@ -425,6 +574,7 @@ table tr:hover {
   align-items: center;
   z-index: 10000;
 }
+
 .cookie-banner button {
   padding: 6px 12px;
   font-size: 16px;
@@ -432,6 +582,7 @@ table tr:hover {
   border: none;
   border-radius: 4px;
 }
+
 .cookie-banner a {
   color: #fff;
   text-decoration: underline;
@@ -443,6 +594,7 @@ table tr:hover {
   margin-top: 10px;
   opacity: 0.9;
 }
+
 .table-footer-logo img {
   width: 250px;
   height: auto;
@@ -460,6 +612,7 @@ table tr:hover {
   overflow: hidden;
   box-sizing: border-box;
 }
+
 .spotlight-item {
   position: absolute;
   top: 0;
@@ -469,9 +622,11 @@ table tr:hover {
   display: none;
   background-color: rgba(0, 255, 0, 0.2);
 }
+
 .spotlight-item.active {
   display: block;
 }
+
 .spotlight-item img {
   display: block;
   max-width: 100%;
@@ -488,6 +643,7 @@ table tr:hover {
   margin-bottom: 10px;
   overflow: hidden;
 }
+
 #comVotes .positive-bar,
 #comVotes .negative-bar {
   flex-shrink: 0;
@@ -496,24 +652,29 @@ table tr:hover {
   text-align: center;
   color: white;
 }
+
 #comVotes .positive-bar {
   background: green;
 }
+
 #comVotes .negative-bar {
   background: red;
 }
+
 #comVotes .vote-buttons {
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
 }
+
 #comVotes .vote-buttons img {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease, opacity 0.2s ease;
   border: none;
 }
+
 #comVotes .vote-buttons button {
   border: none;
   background: transparent;
@@ -522,23 +683,28 @@ table tr:hover {
   cursor: pointer;
   outline: none;
 }
+
 .top-community-wrapper a {
   text-decoration: none;
   color: inherit;
 }
+
 #comVotes .vote-buttons img:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
+
 #comVotes .vote-buttons img:active {
   transform: scale(0.9);
 }
+
 #total-votes,
 #reset-timer {
   font-size: 0.75rem;
   color: #666;
   margin-top: 0.25rem;
 }
+
 #trending-reset-timer {
   font-size: 0.6rem;
   color: #666;
@@ -581,4 +747,14 @@ table tr:hover {
   color: #000;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* verberg standaard alle dropdown-opties */
+.filter-panel .custom-dropdown-options {
+  display: none;
+}
+
+/* toon alleen als de parent de class “open” heeft */
+.filter-panel .custom-dropdown.open .custom-dropdown-options {
+  display: block;
 }

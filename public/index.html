@@ -8,40 +8,6 @@
   <link rel="stylesheet" href="./styles/global.css" />
   <link rel="stylesheet" href="./styles/layout.css" />
   <link rel="icon" type="image/png" href="./assets/logo.png" />
-  <style>
-    /* Extra styling voor de dashboard-grid (5 vakken naast elkaar) */
-    .dashboard-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    /* Box 5: Stats gecombineerd in één vak */
-    .stats-combined {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    .stats-combined .stat-box {
-      background-color: #f9f9f9;
-      border: 3px solid #042c3f;
-      border-radius: 5px;
-      padding: 15px;
-      text-align: center;
-      margin-bottom: 0.5rem;
-      flex: 1;
-    }
-
-    .stats-combined .stat-box:last-child {
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 
 <body>
@@ -96,9 +62,7 @@
         <h2>
           <img src="./assets/UI/fire.png" alt="Community Logo" class="table-icon" />This Week's Top Community
         </h2>
-        <!-- Reset timer element -->
         <div id="trending-reset-timer"></div>
-        <!-- Wrapper voor de twee subtabellen naast elkaar -->
         <div class="top-community-wrapper">
           <table>
             <thead>
@@ -108,9 +72,7 @@
                 <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
               </tr>
             </thead>
-            <tbody id="top-community-left">
-              <!-- Hier komen de eerste 5 tokens -->
-            </tbody>
+            <tbody id="top-community-left"></tbody>
           </table>
           <table>
             <thead>
@@ -120,23 +82,16 @@
                 <th><img src="./assets/UI/fire.png" alt="Votes" class="votes-icon"></th>
               </tr>
             </thead>
-            <tbody id="top-community-right">
-              <!-- Hier komen de overige 5 tokens -->
-            </tbody>
+            <tbody id="top-community-right"></tbody>
           </table>
         </div>
       </div>
 
       <!-- Box 4: Spotlight, Ads & Community Sentiment -->
       <div class="spotlight-sentiment-wrapper table-wrapper">
-        <!-- Spotlight -->
         <div class="spotlight-twitter-wrapper">
-          <!-- Vast container voor de spotlight -->
-          <div class="spotlight-container" id="spotlight-container">
-            <!-- Dynamisch toegevoegd door spotlightCycler.js -->
-          </div>
+          <div class="spotlight-container" id="spotlight-container"></div>
         </div>
-        <!-- Community Sentiment (onder de spotlight, in hetzelfde vak) -->
         <div id="comVotes">
           <h3>
             Cronos Community Sentiment
@@ -161,21 +116,20 @@
       <div class="stats-combined">
         <div id="market-cap-container" class="stat-box">
           <h3>
-            <div class="tooltip-wrapper">
+            <span class="tooltip-wrapper">
               <img src="./assets/UI/about.png" alt="About Market Cap" class="tooltip-icon" />
               <span class="tooltip-text">The total market value on Nodalis.</span>
-            </div>
+            </span>
             Market Cap
           </h3>
           <p id="market-cap">$0</p>
         </div>
         <div id="dominance-container" class="stat-box">
           <h3>
-            <div class="tooltip-wrapper">
+            <span class="tooltip-wrapper">
               <img src="./assets/UI/about.png" alt="About Dominance" class="tooltip-icon" />
-              <span class="tooltip-text">The percentage of this platform's market cap relative to the Cronos market
-                cap.</span>
-            </div>
+              <span class="tooltip-text">The percentage of this platform's market cap relative to Cronos.</span>
+            </span>
             Dominance
           </h3>
           <p id="dominance">
@@ -185,58 +139,69 @@
         </div>
       </div>
     </div>
-  </main>
 
-
-  <!-- All Coins Table (onder de 5 vakken) -->
+  <!-- All Coins Table + Filters in één card -->
   <div class="main-table-wrapper">
-    <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search for a coin by name or contract address..."
-        aria-label="Search for a coin" />
-    </div>
-    <!-- Chain Filter Dropdown -->
-    <div class="filter-container">
-      <label for="chain-filter">Filter by Chain:</label>
-      <div id="chain-filter" class="custom-dropdown">
-        <div class="custom-dropdown-selected">
-          <img src="default.png" alt="All Chains" class="chain-icon"> All Chains
-        </div>
-        <div class="custom-dropdown-options">
-          <!-- Voorbeeldopties; vul hier je eigen chains en iconen in -->
-          <div class="custom-dropdown-option" data-value="">
-            <img src="./assets/UI/all.png" alt="All Chains" class="chain-icon"> All Chains
+    <div class="table-card">
+      <!-- Filters -->
+      <section class="filter-panel">
+        <div class="filters-row">
+          <!-- Search -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Search by name or contract…"
+              aria-label="Search for a coin" />
           </div>
-          <div class="custom-dropdown-option" data-value="Cronos">
-            <img src="./assets/chains/cronos.png" alt="Cronos" class="chain-icon"> Cronos
+          <!-- Chain -->
+          <div class="filter-container">
+            <div id="chain-filter" class="custom-dropdown">
+              <div class="custom-dropdown-selected">
+                <img src="./assets/UI/all.png" class="filter-icon" />
+                All Chains
+              </div>
+              <div class="custom-dropdown-options"></div>
+            </div>
           </div>
-          <!-- Voeg hier extra opties toe -->
+          <!-- Category -->
+          <div class="filter-container">
+            <div id="category-filter" class="custom-dropdown">
+              <div class="custom-dropdown-selected">
+                <img src="./assets/UI/all.png" class="filter-icon" />
+                All Categories
+              </div>
+              <div class="custom-dropdown-options"></div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Tabel -->
+      <table class="main-crypto-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>6h Change</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+            <th>Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="altcoin-table"></tbody>
+      </table>
+
+      <!-- Paginering -->
+      <div id="pagination" class="pagination-container"></div>
     </div>
-
-
-    <table class="main-crypto-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>6h Change</th>
-          <th>24h Change</th>
-          <th>Market Cap</th>
-          <th>Volume (24h)</th>
-        </tr>
-      </thead>
-      <tbody id="altcoin-table"></tbody>
-    </table>
-    <div id="pagination" class="pagination-container"></div>
   </div>
-  </main>
+
 
   <!-- Firebase SDK's -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <!-- Firebase-configuratie -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyAJ0JySbIiXEJP4R_bPiVOFGBlPQM8slEU",
@@ -249,6 +214,7 @@
     };
     firebase.initializeApp(firebaseConfig);
   </script>
+
   <!-- Footer -->
   <footer id="footer">
     <p>&copy; 2025 Nodalis. All rights reserved.</p>
@@ -258,17 +224,6 @@
     </p>
   </footer>
 
-  <!-- Cookie Consent Banner -->
-  <div id="cookie-banner" class="cookie-banner" style="display: none;">
-    <span>
-      Our website uses cookies, including third-party cookies, to improve your experience.
-      By clicking "Accept", you agree to our use of cookies.
-      <a href="pos.html" target="_blank">Learn more</a>.
-    </span>
-    <button id="acceptCookies">Accept</button>
-    <button id="declineCookies">Decline</button>
-  </div>
-
   <!-- Scripts -->
   <script src="./scripts/header.js"></script>
   <script src="./scripts/footer.js"></script>
@@ -277,63 +232,60 @@
   <script src="./scripts/newcomers-topgainers.js" type="module"></script>
   <script src="./scripts/spotlightCycler.js"></script>
   <script type="module">
-    import { populateAltcoinTable, setupSearch } from "./scripts/altcoins.js?v=20250219";
+    import {
+      populateAltcoinTable,
+      setupSearch,
+      setupChainFilter,
+      setupCategoryFilter
+    } from "./scripts/altcoins.js?v=20250219";
     document.addEventListener("DOMContentLoaded", () => {
-      populateAltcoinTable();
-      setupSearch();
+      populateAltcoinTable().then(() => {
+        setupSearch();
+        setupChainFilter();
+        setupCategoryFilter();
+      });
     });
   </script>
   <script src="./scripts/stats-dashboard.js" type="module"></script>
   <script src="./scripts/comVote.js"></script>
-  <script>
-    // Cookie Consent Script
-    document.addEventListener("DOMContentLoaded", function () {
-      const banner = document.getElementById("cookie-banner");
-      const consent = localStorage.getItem("cookieConsent");
-      if (!consent) {
-        banner.style.display = "flex";
-      }
-      document.getElementById("acceptCookies").addEventListener("click", function () {
-        localStorage.setItem("cookieConsent", "accepted");
-        banner.style.display = "none";
-      });
-      document.getElementById("declineCookies").addEventListener("click", function () {
-        localStorage.setItem("cookieConsent", "declined");
-        banner.style.display = "none";
-      });
-    });
-
-    // PostHog Tracking Script (example)
-    !function (t, e) {
-      var o, n, p, r;
-      e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) {
-        function g(t, e) {
-          var o = e.split(".");
-          2 == o.length && (t = t[o[0]], e = o[1]),
-            t[e] = function () {
-              t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-            }
+   <!-- PostHog Tracking Script -->
+   <script>
+    !function(t,e){
+      var o,n,p,r;
+      e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){
+        function g(t,e){
+          var o=e.split(".");
+          2==o.length&&(t=t[o[0]],e=o[1]),
+          t[e]=function(){
+            t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+          }
         }
-        (p = t.createElement("script")).type = "text/javascript",
-          p.crossOrigin = "anonymous",
-          p.async = !0,
-          p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js",
-          (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
-        var u = e;
-        for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) {
-          var e = "posthog";
-          return "posthog" !== a && (e += "." + a),
-            t || (e += " (stub)"),
-            e
-        }, u.people.toString = function () {
-          return u.toString(1) + ".people (stub)"
-        }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetGroupPropertiesForFlags resetPersonPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),
-          n = 0; n < o.length; n++) g(u, o[n]);
-        e._i.push([i, s, a])
-      },
-        e.__SV = 1)
-    }(document, window.posthog || []);
-    posthog.init('phc_4GifZdg799FxUjonRWB7EpOowLNfFj01CmVo24INpzA', { api_host: 'https://eu.i.posthog.com' });
+        p=t.createElement("script"),
+        p.type="text/javascript",
+        p.crossOrigin="anonymous",
+        p.async=!0,
+        p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",
+        r=t.getElementsByTagName("script")[0],
+        r.parentNode.insertBefore(p,r);
+        var u=e;
+        for(void 0!==a?u=e[a]=[]:a="posthog",
+            u.people=u.people||[],
+            u.toString=function(t){
+              var e="posthog";
+              return "posthog"!==a&&(e+="."+a),t|| (e+=" (stub)"),e
+            },
+            u.people.toString=function(){
+              return u.toString(1)+".people (stub)"
+            },
+            o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetGroupPropertiesForFlags resetPersonPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), 
+            n=0;n<o.length;n++
+        )g(u,o[n]);
+        e._i.push([i,s,a])
+      },e.__SV=1)
+    }(document,window.posthog||[]);
+    posthog.init('phc_4GifZdg799FxUjonRWB7EpOowLNfFj01CmVo24INpzA',{
+      api_host: 'https://eu.i.posthog.com'
+    });
   </script>
 </body>
 
