@@ -235,7 +235,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xECf3361441512c1e9F6A6e8734D86614D8e795BC"
-    }
+  },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/topperformer.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "y2k-coin",
