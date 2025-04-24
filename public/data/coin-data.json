@@ -1,8 +1,53 @@
 [ 
   {
+    "id": "cave-man",
+    "name": "CaveMan",
+    "ticker": "Cave",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/cave.jpg",
+    "contract": "0x61dAC9229E0F0235b3bca542D5034183b096516F",
+    "website": "https://cave-oncronos.squarespace.com/",
+    "explorer": "https://cronoscan.com/token/0x61dAC9229E0F0235b3bca542D5034183b096516F",
+    "twitter": "https://x.com/CaveOnCro",
+    "telegram": "",
+    "discord": "https://discord.gg/qNcMRhB78T",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Ooga booga! Seven cave brothers make $CAVE, strong like rock! We grunt, \"Me no sell $CAVE, never!\" Only buy, pile high like mammoth bones! Cronos memes wake again, roar loud in cave! $CAVE forever, ooga booga!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x61dAC9229E0F0235b3bca542D5034183b096516F",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x61dAC9229E0F0235b3bca542D5034183b096516F"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "baby-ryoshi-yoshi",
     "name": "Baby Ryoshi Yoshi",
-    "ticker": "Yoshi ",
+    "ticker": "Yoshi",
     "chain": "Cronos",
     "category": "Meme",
     "icon": "./assets/coinIcons/yoshi.jpg",
@@ -35,15 +80,15 @@
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x4594104d43cEC6F5c8C6631294d5582D0d67EdE7"
     },
-      "badges": {
-        "innovative":      "./assets/UI/badges/innovative.png",
-        "top1":            "./assets/UI/badges/blanco.png",
-        "top5":            "./assets/UI/badges/top5.png",
-        "top10":           "./assets/UI/badges/blanco.png",
-        "topperformer":    "./assets/UI/badges/topperformer.png",
-        "verify":          "./assets/UI/badges/blanco.png"
-      }
-    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
   {
     "id": "more-skills-less-bills",
     "name": "More skills less bills",
