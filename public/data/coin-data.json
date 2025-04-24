@@ -615,14 +615,14 @@
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6"
     },
     "badges": [
-      "./assets/UI/badges/innovative.png", 
-      "./assets/UI/badges/top1.png",
-      "./assets/UI/badges/top5.png", 
-      "./assets/UI/badges/top10.png",       
-      "./assets/UI/badges/topperformer.png",  
-      "./assets/UI/badges/verify.png"         
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
     ]
-  },  
+  },
   {
     "id": "ai7z",
     "name": "AI7Z",
@@ -784,7 +784,7 @@
     "name": "Xitcoin",
     "ticker": "XTC",
     "chain": "Cronos",
-    "category": "Meme",
+    "category": "Utility Token",
     "icon": "./assets/coinIcons/xitcoin.jpg",
     "contract": "0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
     "website": "https://xitcoin.org/",
@@ -1191,7 +1191,7 @@
     "name": "CARA",
     "ticker": "CARA",
     "chain": "Cronos",
-    "category": "Meme",
+    "category": "Gaming",
     "icon": "./assets/coinIcons/CARA.jpg",
     "contract": "0x3Caf0136302440Ebb68f41D6c57b7bEbDE9E12ca",
     "website": "https://cronoslegends.com/",
