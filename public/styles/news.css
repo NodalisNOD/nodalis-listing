@@ -1,0 +1,98 @@
+/* public/styles/news.css */
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  #main-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .post-card {
+    display: flex;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow var(--transition);
+  }
+  .post-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .post-card img.thumb {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .post-card .card-text {
+    padding: 0.75rem 1rem;
+  }
+  .post-card .card-text time {
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  .post-card .card-text h2 {
+    margin: 0.25rem 0 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Rendered Markdown */
+  .marked, #main-content {
+    line-height: 1.6;
+  }
+  .marked h1, .marked h2, .marked h3 {
+    margin-top: 2rem;
+    color: var(--accent-color);
+  }
+  .marked img {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 4px;
+  }
+  .marked blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+    color: #ccc;
+    margin: 1rem 0;
+  }
+  .marked pre {
+    background: #2c2f3a;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  /* Extra ruimte voor alle koppen */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  /* Iets meer ruimte onder paragrafen */
+  p {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Specifiek voor je Markdown-content */
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .post-content p {
+    margin-bottom: 1.5rem;
+  }
+  

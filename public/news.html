@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nodalis News</title>
+  <link rel="stylesheet" href="./styles/global.css"/>
+  <link rel="stylesheet" href="./styles/layout.css"/>
+  <style>
+    .article-list, .article-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .article-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-list li {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .article-list .thumb {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .article-list a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .article-list a:hover h2 {
+      text-decoration: underline;
+    }
+    .article-list h2 {
+      margin: 0.2rem 0;
+      font-size: 1.2rem;
+    }
+    .article-list small {
+      color: #666;
+    }
+    /* Markdown content wrapper */
+    .post-content {
+      line-height: 1.6;
+    }
+    .post-content h1,
+    .post-content h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .post-content p {
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header id="header"></header>
+  <main>
+    <!-- LIST VIEW -->
+    <section class="article-list" id="list-view">
+      <h1>Latest News</h1>
+      <ul id="news-list"></ul>
+    </section>
+
+    <!-- ARTICLE VIEW -->
+    <section class="article-content" id="article-view" style="display:none">
+      <div id="article-content" class="post-content"></div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+
+  <!-- marked.js voor Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // 1) Laad index.json
+    fetch('./data/news/index.json')
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load ./data/news/index.json`);
+        return r.json();
+      })
+      .then(articles => {
+        const listEl = document.getElementById('news-list');
+
+        // vul de lijst
+        articles.forEach(a => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <a href="#${a.slug}">
+              <img class="thumb" src="${a.thumb}" alt="${a.title} thumbnail"/>
+              <div>
+                <time>${new Date(a.date).toLocaleDateString()}</time>
+                <h2>${a.title}</h2>
+                <small>${a.excerpt}</small>
+              </div>
+            </a>
+          `;
+          listEl.append(li);
+        });
+
+        // helper: laad 1 markdown
+        function loadArticle(slug) {
+          fetch(`./data/news/${slug}.md`)
+            .then(r => {
+              if (!r.ok) throw new Error(`Failed to load ./data/news/${slug}.md`);
+              return r.text();
+            })
+            .then(md => {
+              document.getElementById('list-view').style.display = 'none';
+              document.getElementById('article-view').style.display = 'block';
+              document.getElementById('article-content').innerHTML = marked.parse(md);
+            })
+            .catch(err => console.error(err));
+        }
+
+        // hash-change listener
+        window.addEventListener('hashchange', () => {
+          const slug = location.hash.slice(1);
+          if (slug) loadArticle(slug);
+          else {
+            document.getElementById('article-view').style.display = 'none';
+            document.getElementById('list-view').style.display = 'block';
+          }
+        });
+
+        // op start: check hash
+        if (location.hash) {
+          loadArticle(location.hash.slice(1));
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById('list-view').innerHTML = `<p>Error loading news.</p>`;
+      });
+  </script>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/footer.js"></script>
+</body>
+</html>

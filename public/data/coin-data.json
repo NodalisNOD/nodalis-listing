@@ -1,5 +1,50 @@
 [ 
   {
+    "id": "white-stone",
+    "name": "CaveMan",
+    "ticker": "TONE",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/tone.jpg",
+    "contract": "0x4f9Be5284AA027cfbf9c1E4178D8221669E8e3FB",
+    "website": "https://whitestonerwa.com/",
+    "explorer": "https://cronoscan.com/token/0x4f9Be5284AA027cfbf9c1E4178D8221669E8e3FB",
+    "twitter": "https://x.com/whitestonerwa",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Bridging physical assets to the blockchain.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x4f9Be5284AA027cfbf9c1E4178D8221669E8e3FB",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x4f9Be5284AA027cfbf9c1E4178D8221669E8e3FB"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "cave-man",
     "name": "CaveMan",
     "ticker": "Cave",
@@ -814,7 +859,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4339ad632438661db56b4dd5ad82279de743676f/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/topperformer.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "diamond-hands",

@@ -14,34 +14,43 @@ header.innerHTML = `
         <li><a href="/dexs.html">Exchanges</a></li>
         <!-- Dropdown "Products" menu (blijft onveranderd) -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Products</a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="/calculator.html">
-                <img src="/assets/exchange.png" alt="Currency Converter" class="dropdown-icon">
-                Currency Converter
-              </a>
-            </li>
-            <li>
-              <a href="/advertise.html">
-                <img src="/assets/megaphone.png" alt="Advertise" class="dropdown-icon">
-                Advertise
-              </a>
-            </li>
-            <li>
-              <a href="/listForm.html">
-                <img src="/assets/check.png" alt="Get listed" class="dropdown-icon">
-                Get listed
-              </a>
-            </li>
-            <li>
-              <a href="/NodaLink">
-                <img src="/assets/UI/linked.png" alt="Noda Link" class="dropdown-icon">
-                Noda Link
-              </a>
-            </li>
-          </ul>
-        </li>
+  <a href="#" class="dropdown-toggle">
+    Products
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="/news.html">
+        <img src="/assets/UI/news/newspaper.png" alt="News" class="dropdown-icon">
+        News
+      </a>
+    </li>
+    <li>
+      <a href="/calculator.html">
+        <img src="/assets/exchange.png" alt="Currency Converter" class="dropdown-icon">
+        Currency Converter
+      </a>
+    </li>
+    <li>
+      <a href="/advertise.html">
+        <img src="/assets/megaphone.png" alt="Advertise" class="dropdown-icon">
+        Advertise
+      </a>
+    </li>
+    <li>
+      <a href="/listForm.html">
+        <img src="/assets/check.png" alt="Get listed" class="dropdown-icon">
+        Get listed
+      </a>
+    </li>
+    <li>
+      <a href="/NodaLink">
+        <img src="/assets/UI/linked.png" alt="Noda Link" class="dropdown-icon">
+        Noda Link
+      </a>
+    </li>
+  </ul>
+</li>
+
         <!-- Nieuwe dropdown "Nodalis" menu -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Nodalis</a>

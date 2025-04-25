@@ -1,5 +1,12 @@
 [
   {
+    "name": "Patriot",
+    "profilePicture": "assets/links/patriot.jpg",
+    "affiliation": "$CLOVE",
+    "role": "Founder",
+    "twitter": "https://x.com/patriotcronos" 
+  },
+  {
     "name": "Cro271",
     "profilePicture": "assets/links/cro271.jpg",
     "affiliation": "$ERIC",

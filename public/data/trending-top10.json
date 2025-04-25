@@ -1,55 +1,55 @@
 {
-  "timestamp": "20/4/2025, 00:00:00",
+  "timestamp": "25/4/2025, 00:00:00",
   "top": [
     {
       "id": "capybara-nation",
-      "votes": 3,
-      "change": 3
+      "votes": 4,
+      "change": 1
     },
     {
       "id": "lex-the-husky",
       "votes": 2,
-      "change": 2
+      "change": 0
     },
     {
       "id": "loaded-lions",
       "votes": 2,
-      "change": 2
+      "change": 0
     },
     {
       "id": "puush-puush",
       "votes": 2,
-      "change": 2
+      "change": 0
     },
     {
       "id": "rumham-ham",
       "votes": 2,
-      "change": 2
+      "change": 0
     },
     {
       "id": "ryoshi-with-knife-ryoshi",
       "votes": 2,
-      "change": 2
+      "change": 0
     },
     {
       "id": "crazzy-token",
       "votes": 1,
-      "change": 1
+      "change": 0
     },
     {
       "id": "croc-with-knife-stab",
       "votes": 1,
-      "change": 1
+      "change": 0
     },
     {
       "id": "pepe-eyes-peyes",
       "votes": 1,
-      "change": 1
+      "change": 0
     },
     {
       "id": "robin-on-cronos",
       "votes": 1,
-      "change": 1
+      "change": 0
     }
   ]
 }

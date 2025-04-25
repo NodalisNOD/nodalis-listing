@@ -295,42 +295,48 @@ main.container {
   width: 20px;
 }
 
+/* ----- Custom Dropdown (match altcoins filter style) ----- */
 .custom-dropdown {
   position: relative;
-  width: 220px;
-  cursor: pointer;
-  user-select: none;
+  display: inline-block;
+  width: 200px;                        /* same as your filter panel */
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background: #fff;
-  margin-right: 10px;
-  height: 40px;             /* Vaste hoogte */
-  line-height: 40px;        /* Zorgt voor verticale centrering */
-  display: flex;
-  align-items: center;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  user-select: none;
 }
 
+/* hover / focus state */
+.custom-dropdown:hover,
+.custom-dropdown:focus-within {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(13, 59, 102, 0.2);
+}
+
+/* the “closed” box */
 .custom-dropdown-selected {
-  padding: 0 0.5rem;
-  height: 40px;             /* Vaste hoogte */
-  min-height: 40px;
-  max-height: 40px;
+  padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
-  font-size: 1rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  color: var(--text-color);
+  font-family: var(--font);
 }
 
-.custom-dropdown-selected img {
-  height: 14px;             /* Eventueel nog kleiner, indien gewenst */
-  width: 14px;
+/* icon sizing inside the selected area */
+.custom-dropdown-selected img,
+.custom-dropdown-selected .chain-icon,
+.custom-dropdown-selected .filter-icon {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  margin-right: 4px;
+  margin-right: 8px;
+  filter: brightness(1.2);
 }
 
+/* the popup list */
 .custom-dropdown-options {
   position: absolute;
   top: 100%;
@@ -338,36 +344,53 @@ main.container {
   right: 0;
   border: 1px solid var(--border-color);
   border-top: none;
-  background: #fff;
-  max-height: 200px;
+  background: var(--card-bg);
+  border-radius: 0 0 4px 4px;
+  max-height: 250px;
   overflow-y: auto;
   display: none;
   z-index: 1000;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.custom-dropdown-options li {
-  padding: 0 0.5rem;
+/* show when open */
+.custom-dropdown.active .custom-dropdown-options {
+  display: block;
+}
+
+/* each option */
+.custom-dropdown-option {
+  padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 40px;             /* Vaste hoogte voor elke optie */
-  line-height: 40px;
+  gap: 0.5rem;
+  color: var(--text-color);
+  font-family: var(--font);
+  transition: background var(--transition);
 }
 
-.custom-dropdown-options li img {
-  height: 14px;
-  width: 14px;
-  object-fit: contain;
-  margin-right: 4px;
-}
-
-.custom-dropdown-options li:hover {
+/* hover on an option */
+.custom-dropdown-option:hover {
   background: var(--hover-bg);
 }
 
-.custom-dropdown.active .custom-dropdown-options {
-  display: block;
+/* active (selected) option */
+.custom-dropdown-option.active {
+  background: var(--secondary-color);
+  color: #fff;
+}
+/* ----- Tighter icon sizing in dropdowns ----- */
+.custom-dropdown-selected img,
+.custom-dropdown-selected .chain-icon,
+.custom-dropdown-selected .filter-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.custom-dropdown-options img,
+.custom-dropdown-options .chain-icon,
+.custom-dropdown-options .filter-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
 }
