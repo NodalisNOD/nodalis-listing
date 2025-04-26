@@ -838,11 +838,11 @@
     "telegram": "",
     "discord": "https://discord.com/invite/u3MUHtGb",
     "whitepaper": "https://xitcoin.org/files/xitcoin-whitepaper-en.pdf",
-    "threads": "",
+    "threads": "https://www.threads.net/@xitcoin_org",
     "extraLinks": [
       {
-        "name": "",
-        "url": ""
+        "name": "Instagram",
+        "url": "https://www.instagram.com/xitcoin_org"
       },
       {
         "name": "",
@@ -853,7 +853,7 @@
         "url": ""
       }
     ],
-    "description": "Xitcoin ($XTC) is more than just a utility token — it’s the foundation for a larger ecosystem, including a futur Xbank-Crypto expanding into staking, bridge functionality, and strategic token burning. Xitcoin has been built on Cronos will be deployed across 10 networks. As of today we are on Ethereum, BNB Smart Chain, Polygon, Avalanche, and recently Sonic, ensuring broad interoperability. Born with a total supply of 21 billion, Xitcoin as a unique strategy with a deflationary model including scheduled burns to reduce supply and increase scarcity. The project will offer staking rewards and a secure, transparent ecosystem.\nXitcoin positions itself as a pivotal force in uniting blockchain ecosystems. By utilizing strategic liquidity pools, implementing controlled burns, and spearheading the innovative Xbank-Crypto project, $XTC delivers a sustainable and scalable solution tailored to the demands of a rapidly evolving market.",
+    "description": "Xitcoin ($XTC) is a decentralized token deployed on the Cronos Network, designed to simplify and accelerate exchanges while offering accessible solutions for anyone who wishes to use it. It follows a logic of interoperability, with a vision focused on building a decentralized, stable, and scalable ecosystem.The project is currently active on the Cronos network through a single verified contract, which constitutes the official origin of the $XTC token issuance, with an initial total supply of 21,000,000,000 $XTC.",
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdd646291d2fff52c75f27ccdadd0d4c2a24f37dd",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
