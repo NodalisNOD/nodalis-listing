@@ -547,7 +547,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x921b0a42a824679877c4dca8ec45fbb413557274/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xcA3aCc4cfD07159C8507C825B72D5f8489070161"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/top5.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
   },
   {
     "id": "whoisyourdaddy",
@@ -621,7 +629,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd30a1624e5e3f32659b308e154f1d0dc8478a8e6/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xcedeC6eCd76af32aCfFFD07EB554927E0573Fb30"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/top5.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "nodalis",
@@ -662,7 +678,7 @@
     "badges": [
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
-      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/top5.png", 
       "./assets/UI/badges/blanco.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png"
@@ -708,7 +724,7 @@
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/topperformer.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -1348,7 +1364,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x874c5832bd42ab63f19ad2b3b8d7e7ac3bffcfa7/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD896aA25da8e3832d68d1C05fEE9C851d42F1dC1"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/top10.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
   },
   {
     "id": "croge-coin",
@@ -2014,7 +2038,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x70e547e282712730fc7ec49e21a1dc6bea0c5db7/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x25B7449E2416e0Ef0f244f6cC34eb31C4902d9Cb"
-    }
+  },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "crazzy-token",
@@ -2125,8 +2157,16 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a%2C0x02218cf2500275680171903e5a242ec604e27b12%2C0x58675f375ba76a5345ecc620e38b1c8eeb55438e%2C0x6ee779ea096562c005dca8b3c9817b1138a6e35b",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfe42d552292dc9fbbf84d93071ae4cd8bd0c2b7a/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x3475785Dbb1F35D84D1aaB6Ddd6978257f3F8274"
-    }
-  },
+    },
+"badges": [
+  "./assets/UI/badges/blanco.png", 
+  "./assets/UI/badges/blanco.png",
+  "./assets/UI/badges/top5.png", 
+  "./assets/UI/badges/blanco.png",       
+  "./assets/UI/badges/blanco.png",
+  "./assets/UI/badges/blanco.png"
+]
+},
   {
     "id": "black-moon-bmn",
     "name": "Black Moon ",
@@ -2649,7 +2689,7 @@
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/topperformer.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -2948,7 +2988,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00%2C0xc3d569fa65b7ec8d4f1350d19b96f0330124c3f5%2C0x90828bff571be8b64f48067c65533d93cf017230%2C",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdc1ff76d4737b2f54bbf42656fb998650b7a2b00/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x4d7c922D6C12CfbF5BC85F56c9ccB1F61f49bf61"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/top1.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
   },
   {
     "id": "reaper-squad-reaper",
@@ -3027,7 +3075,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xea8f22344dd9269b030381f676432270a22a5837%2C0xf5d8f38541abdd4e5e9a50af11ebae9b7780f6fb%2C0x6da125da08484b4c5cd755142205531ceb2d9a95%2C0x4b6d58436e37a941d065ba337c01b49821aad902%2C0xc1233acbd36f4ef022ef7e6292031283877c3305%2C0xc8fcfc922338d94d601758acf05e0372155c39f1%2C0x9642b3000b3a75a0037a0cb2293ab9f92049c999%2C0x890fc1a70111ef1539d1d3223f44a2d2b561c439",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xea8f22344dd9269b030381f676432270a22a5837/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8C9E2bEf2962CE302ef578113eebEc62920B7e57"
-    }
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/top10.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
   },
 
   {
