@@ -1,5 +1,50 @@
 [ 
   {
+    "id": "astroshib",
+    "name": "AstroShib",
+    "ticker": "ASHIB",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/astroshib.jpg",
+    "contract": "0xe65940D0CD2dBC949d26FC64216af480b3db5256",
+    "website": "https://astroshib.com/",
+    "explorer": "https://cronoscan.com/token/0xe65940D0CD2dBC949d26FC64216af480b3db5256",
+    "twitter": "https://x.com/AstroShibCro",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "AstroShib ($ASHIB) is the first token created by Grok on #cronos— from smart contract to strategy. 100% AI-made, 100% cosmic.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe65940D0CD2dBC949d26FC64216af480b3db5256",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe65940D0CD2dBC949d26FC64216af480b3db5256"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "white-stone",
     "name": "White Stone",
     "ticker": "TONE",
@@ -838,7 +883,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xcb7d2be44c82f70a5ad814f31f5d239194659f04/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x2B986EEB82356b518d0Deb1fCD5D102184BF4F7D"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/topperformer.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "xitcoin",
@@ -2350,7 +2403,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xf89e1751a2757a5c6716f3332208622a71100f44",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf89e1751a2757a5c6716f3332208622a71100f44/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xf89e1751a2757a5c6716f3332208622a71100f44"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/innovative.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "buttman-on-cronos-butt",

@@ -20,7 +20,7 @@ header.innerHTML = `
   <ul class="dropdown-menu">
     <li>
       <a href="/news.html">
-        <img src="/assets/UI/news/newspaper.png" alt="News" class="dropdown-icon">
+        <img src="/assets/UI/newspaper.png" alt="News" class="dropdown-icon">
         News
       </a>
     </li>
