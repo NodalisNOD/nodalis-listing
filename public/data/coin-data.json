@@ -1,6 +1,51 @@
 [ 
   {
     "id": "astroshib",
+    "name": "Knight's Army",
+    "ticker": "KNIGHT",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/knight.jpg",
+    "contract": "0x604aa3c1c8a89487D2E6f1c3a5Db569A96f48ec5",
+    "website": "https://medieval-knights.netlify.app/",
+    "explorer": "https://cronoscan.com/token/0x604aa3c1c8a89487D2E6f1c3a5Db569A96f48ec5",
+    "twitter": "https://x.com/KnightsArmyCro",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Knight's Army is a collection of 2000 NFT's that will be usable in the upcoming P2E game in work by showalabs, be in our top 10 holders to receive 1:1 benefits and custom skins and more! The adventure start now, join us!🚀",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x604aa3c1c8a89487D2E6f1c3a5Db569A96f48ec5",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xa4b36002d45b5e0c57090023ad065420be7045ec/ohlcv/minute?aggregate=15",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x604aa3c1c8a89487D2E6f1c3a5Db569A96f48ec5"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
+    "id": "astroshib",
     "name": "AstroShib",
     "ticker": "ASHIB",
     "chain": "Cronos",
