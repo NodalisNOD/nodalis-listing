@@ -194,9 +194,23 @@ badgeKeys.forEach((key, idx) => {
   wrapper.appendChild(img);
   badgeContainer.appendChild(wrapper);
 });
+// … ná je existing badgeKeys.forEach(…) loop …
 
-
-
+// === Audit Report Download toevoegen als “verify” badge unlocked ===
+const reportContainer = document.getElementById("coin-report");
+// badgeKeys[5] is “verify”
+if (badges[5] && !badges[5].includes("blanco")) {
+  const ticker = coinStatic.ticker;
+  const link = document.createElement("a");
+  link.href      = `/assets/audits/${ticker}.pdf`;
+  link.download  = `${ticker}.pdf`;
+  link.className = "report-link";
+  link.innerHTML = `
+    <img src="./assets/UI/document.png" class="audit-icon" alt="PDF Icon" />
+    Download Verification Report
+  `;
+  reportContainer.appendChild(link);
+}
 
 
     // Vul de statische gegevens in de pagina

@@ -1,5 +1,49 @@
 [ 
   {
+    "id": "WARIO",
+    "name": "WARIO",
+    "ticker": "WARIO",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/wario.webp",
+    "contract": "0xd7BF423FfE56Bc1a831080aAF8e9C8bF2f949336",
+    "website": "https://obsidian.finance/?inputCurrency=CRO&outputCurrency=0xd7BF423FfE56Bc1a831080aAF8e9C8bF2f949336",
+    "explorer": "https://cronoscan.com/token/0xd7BF423FfE56Bc1a831080aAF8e9C8bF2f949336",
+    "twitter": "https://x.com/RyoshiBaby",
+    "telegram": "",
+    "discord": "https://discord.gg/bPQJGPFs",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$WARIO is a community tax token under the $YOSHI (Baby Ryoshi) umbrella paying 3% in $FRTN rewards to holders & 2% to top $YOSHI holders. Wario is planning to take over the Cronos landscape and reward handsomely those who choose to join the mayhem!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xd7BF423FfE56Bc1a831080aAF8e9C8bF2f949336",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xd7BF423FfE56Bc1a831080aAF8e9C8bF2f949336"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "knights-army",
     "name": "Knight's Army",
     "ticker": "KNIGHT",
@@ -86,7 +130,7 @@
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",       
       "./assets/UI/badges/blanco.png",
-      "./assets/UI/badges/blanco.png"
+      "./assets/UI/badges/verify.png"
     ]
   },
   {
@@ -219,7 +263,7 @@
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -762,14 +806,13 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xd30a1624e5e3f32659b308e154f1d0dc8478a8e6/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xdBB3A75B102F1e65653Adb19EE282D209843A1b6"
     },
     "badges": [
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/top5.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -932,7 +975,7 @@
   "badges": [
     "./assets/UI/badges/blanco.png", 
     "./assets/UI/badges/blanco.png",
-    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top5.png", 
     "./assets/UI/badges/blanco.png",       
     "./assets/UI/badges/topperformer.png",
     "./assets/UI/badges/blanco.png"
@@ -1581,7 +1624,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xc0b91fe1d1e376b7c5b0686779828fdf07f3b830",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x22dd457625e287a9c4b83aea0c384c235c00ec02/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x41bc026dabe978bc2fafea1850456511ca4b01bc"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "crofam-crofam",
@@ -2216,8 +2267,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x797604a537af0da93f09c232049f5e7dae4eabad",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x797604a537af0da93f09c232049f5e7dae4eabad/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x797604a537af0da93f09c232049f5e7dae4eabad"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xa0D445dC147f598d63518b5783CA97Cd8Bd9f5Bc"
     }
   },
   {
@@ -2335,8 +2385,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xe9a4c3aba1075e1470ebe3007db11132905c9bdc",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x28de1ed8ace0b87bbdc2ec368c48decd03998905",
-      "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905/ohlcv/minute?aggregate=15",
-      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x28de1ed8ace0b87bbdc2ec368c48decd03998905"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xe9A4c3aba1075E1470EBe3007db11132905c9bdC"
     }
   },
   {
@@ -2453,7 +2502,7 @@
     "./assets/UI/badges/innovative.png", 
     "./assets/UI/badges/blanco.png",
     "./assets/UI/badges/blanco.png", 
-    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/top10.png",       
     "./assets/UI/badges/blanco.png",
     "./assets/UI/badges/blanco.png"
   ]
@@ -2604,7 +2653,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x39017cdbc84101d737d2410d67fca3ac0783b90f",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x39017cdbc84101d737d2410d67fca3ac0783b90f/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x39017cdbc84101d737d2410d67fca3ac0783b90f"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "chucky-chucky",
@@ -2983,7 +3040,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xdf782b0c50750a153b9418e85bb88ac4639c173c%2C0x3e8c3ae55c1d5ed0e83a3b083cda38c258296e56%2C0x248418551c7ebeba485eae3f4bafe8e7244aaecd%2C0xc520fc9862b7a67750b0dcec0a0d6d45a314a021",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xdf782b0c50750a153b9418e85bb88ac4639c173c/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },   
    {
     "id": "papasmerf-papacro",

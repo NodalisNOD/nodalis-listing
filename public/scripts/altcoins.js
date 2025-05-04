@@ -18,10 +18,7 @@ let currentDisplayData = []; // Huidige data (na filtering)
 let currentPage = 1;
 const itemsPerPage = 20;
 
-
-/**
- * Haal en combineer coin data, en retourneer een Promise.
- */
+// populateAltcoinTable.js --- 
 export function populateAltcoinTable() {
   return fetchWithRetry("./data/coin-data.json")
     .then((response) => response.json())
@@ -31,28 +28,71 @@ export function populateAltcoinTable() {
         .then((cachedData) => {
           const results = Object.entries(cachedData).map(([key, coinData]) => {
             const normalizedKey = key.trim().toLowerCase();
-            const coinId = coinData.id ? coinData.id.trim().toLowerCase() : normalizedKey;
+            const coinId = coinData.id
+              ? coinData.id.trim().toLowerCase()
+              : normalizedKey;
             const manualCoin = manualCoinData.find(
               (c) => c.id.trim().toLowerCase() === coinId
             );
             if (!manualCoin) return null;
 
+            // ── bepaal of 'verify' in de badges staat ──
+            const badges = Array.isArray(manualCoin.badges)
+              ? manualCoin.badges
+              : [];
+            const isVerified = badges.includes("verify");
+
             let priceUsd, change6h, change24h, marketCap, volume24h;
             if (Array.isArray(coinData) && coinData.length > 0) {
               const dexData = coinData[0];
-              volume24h = coinData.reduce((sum, pool) => sum + (pool.volume?.h24 ? parseFloat(pool.volume.h24) : 0), 0);
-              priceUsd = dexData.priceUsd ? parseFloat(dexData.priceUsd) : null;
-              change6h = dexData.priceChange?.h6 && dexData.priceChange.h6 !== "N/A" ? parseFloat(dexData.priceChange.h6) : 0;
-              change24h = dexData.priceChange?.h24 && dexData.priceChange.h24 !== "N/A" ? parseFloat(dexData.priceChange.h24) : 0;
-              marketCap = dexData.marketCap !== undefined ? parseFloat(dexData.marketCap) : null;
+              volume24h = coinData.reduce(
+                (sum, pool) =>
+                  sum +
+                  (pool.volume?.h24 ? parseFloat(pool.volume.h24) : 0),
+                0
+              );
+              priceUsd = dexData.priceUsd
+                ? parseFloat(dexData.priceUsd)
+                : null;
+              change6h =
+                dexData.priceChange?.h6 &&
+                dexData.priceChange.h6 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h6)
+                  : 0;
+              change24h =
+                dexData.priceChange?.h24 &&
+                dexData.priceChange.h24 !== "N/A"
+                  ? parseFloat(dexData.priceChange.h24)
+                  : 0;
+              marketCap =
+                dexData.marketCap !== undefined
+                  ? parseFloat(dexData.marketCap)
+                  : null;
             } else if (coinData?.data) {
               const gt = coinData.data.attributes;
-              priceUsd = gt.base_token_price_usd ? parseFloat(gt.base_token_price_usd) : null;
-              change6h = gt.price_change_percentage?.h6 !== undefined ? parseFloat(gt.price_change_percentage.h6) : 0;
-              change24h = gt.price_change_percentage?.h24 !== undefined ? parseFloat(gt.price_change_percentage.h24) : 0;
-              marketCap = gt.market_cap_usd != null ? parseFloat(gt.market_cap_usd) : (gt.fdv_usd ? parseFloat(gt.fdv_usd) : null);
-              volume24h = gt.volume_usd?.h24 ? parseFloat(gt.volume_usd.h24) : 0;
-            } else return null;
+              priceUsd = gt.base_token_price_usd
+                ? parseFloat(gt.base_token_price_usd)
+                : null;
+              change6h =
+                gt.price_change_percentage?.h6 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h6)
+                  : 0;
+              change24h =
+                gt.price_change_percentage?.h24 !== undefined
+                  ? parseFloat(gt.price_change_percentage.h24)
+                  : 0;
+              marketCap =
+                gt.market_cap_usd != null
+                  ? parseFloat(gt.market_cap_usd)
+                  : gt.fdv_usd
+                  ? parseFloat(gt.fdv_usd)
+                  : null;
+              volume24h = gt.volume_usd?.h24
+                ? parseFloat(gt.volume_usd.h24)
+                : 0;
+            } else {
+              return null;
+            }
 
             return {
               id: manualCoin.id,
@@ -61,29 +101,30 @@ export function populateAltcoinTable() {
               icon: manualCoin.icon,
               contract: manualCoin.contract,
               chain: manualCoin.chain,
-              category: manualCoin.category || '',
+              category: manualCoin.category || "",
               priceUsd,
               change6h,
               change24h,
               marketCap,
               volume24h,
+              isVerified,    // ── hier toevoegen
             };
           });
 
-          coinTableData = results.filter((x) => x);
+          coinTableData = results.filter((x) => x !== null);
           coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
           currentDisplayData = [...coinTableData];
           renderTable(currentDisplayData, 1);
           setupTableSort();
-          return;
         });
     });
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   // populateAltcoinTable wordt van buiten aangeroepen
 });
-
+// ---  renderTable in altcoins.js --- //
 function renderTable(data = coinTableData, page = currentPage) {
   currentDisplayData = data;
   currentPage = page;
@@ -96,19 +137,49 @@ function renderTable(data = coinTableData, page = currentPage) {
     tr.innerHTML = `
       <td>${startIndex + idx + 1}</td>
       <td>
-        <a href="coin.html?id=${coin.id}" style="display:block;text-decoration:none;color:inherit;">
-          <img src="${coin.icon}" alt="${coin.name}" class="coin-icon" style="width:20px;height:20px;margin-right:5px;vertical-align:middle;">
+        <a href="coin.html?id=${coin.id}" class="coin-link">
+          <span class="icon-wrapper">
+            <img
+              src="${coin.icon}"
+              alt="${coin.name}"
+              class="coin-icon"
+            >
+            ${
+              coin.isVerified
+                ? `<img
+                     src="/assets/UI/badges/verify.png"
+                     alt="Verified"
+                     class="verify-overlay"
+                   >`
+                : ""
+            }
+          </span>
           ${coin.name} <strong>${coin.ticker}</strong>
         </a>
       </td>
-      <td>${coin.priceUsd != null ? coin.priceUsd.toFixed(10) : 'N/A'}</td>
-      <td style="color:${coin.change6h >= 0 ? 'green' : 'red'}">${coin.change6h.toFixed(2)}%</td>
-      <td style="color:${coin.change24h >= 0 ? 'green' : 'red'}">${coin.change24h.toFixed(2)}%</td>
-      <td>${coin.marketCap != null ? '$' + coin.marketCap.toLocaleString() : 'N/A'}</td>
-      <td>${coin.volume24h != null ? '$' + coin.volume24h.toLocaleString() : 'N/A'}</td>
+      <td>${
+        coin.priceUsd != null ? coin.priceUsd.toFixed(10) : "N/A"
+      }</td>
+      <td style="color:${
+        coin.change6h >= 0 ? "green" : "red"
+      }">${coin.change6h.toFixed(2)}%</td>
+      <td style="color:${
+        coin.change24h >= 0 ? "green" : "red"
+      }">${coin.change24h.toFixed(2)}%</td>
+      <td>${
+        coin.marketCap != null
+          ? "$" + coin.marketCap.toLocaleString()
+          : "N/A"
+      }</td>
+      <td>${
+        coin.volume24h != null
+          ? "$" + coin.volume24h.toLocaleString()
+          : "N/A"
+      }</td>
     `;
     tableBody.appendChild(tr);
   });
+
   renderPagination(data, page);
 }
 
