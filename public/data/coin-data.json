@@ -174,10 +174,10 @@
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",       
-      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/topperformer.png",
       "./assets/UI/badges/blanco.png"
     ]
-  },
+    },
   {
     "id": "cave-man",
     "name": "CaveMan",
