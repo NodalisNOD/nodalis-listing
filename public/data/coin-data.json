@@ -1,5 +1,49 @@
 [ 
   {
+    "id": "BurnIt ",
+    "name": "BurnIt ",
+    "ticker": "PYRO",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/pyro.jpg",
+    "contract": "0x24fC9e2e89C7DCB0238B9D13B1F6566Eca45C6f6",
+    "website": "https://burnit.fun/",
+    "explorer": "https://cronoscan.com/token/0x24fC9e2e89C7DCB0238B9D13B1F6566Eca45C6f6",
+    "twitter": "https://x.com/BurnItJuliemom",
+    "telegram": "",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "BurnIt is a project built around a game dApp (TBA) that burns tokens or NFTs as you play, strengthening communities and building long term value along the way. $PYRO is the official token of the BurnIt ecosystem. \n\nPLAY. BURN. WIN.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x24fC9e2e89C7DCB0238B9D13B1F6566Eca45C6f6",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x24fC9e2e89C7DCB0238B9D13B1F6566Eca45C6f6"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "WARIO",
     "name": "WARIO",
     "ticker": "WARIO",
@@ -686,7 +730,7 @@
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/top5.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -976,7 +1020,7 @@
     "./assets/UI/badges/blanco.png", 
     "./assets/UI/badges/blanco.png",
     "./assets/UI/badges/top5.png", 
-    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/top10.png",       
     "./assets/UI/badges/topperformer.png",
     "./assets/UI/badges/blanco.png"
   ]
@@ -2310,7 +2354,7 @@
   "./assets/UI/badges/blanco.png", 
   "./assets/UI/badges/blanco.png",
   "./assets/UI/badges/top5.png", 
-  "./assets/UI/badges/blanco.png",       
+  "./assets/UI/badges/top10.png",       
   "./assets/UI/badges/blanco.png",
   "./assets/UI/badges/blanco.png"
 ]
@@ -2616,7 +2660,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xfc0a8be90566e5329caec3d9630a603453ac7e44%2C0xaf56df060ca167361c66831801e0e17bb05bb313%2C0xa720f9e7c2067fd055b08fceb039fb798c67f44f%2C0xbc10bed82041a5d1abad43cc206656aafe9f84e6%2C0xe6ab98c145a25174c3f5c7184be96bd39faa4772%2C0x83208772584e2bafd2dd52322f9cb24f9e904762%2C0x4ae88a7a207b239b5281db37da9eb357dd8f99d1",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xfc0a8be90566e5329caec3d9630a603453ac7e44/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xaF02D78F39C0002D14b95A3bE272DA02379AfF21"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "retribution-retrib",
@@ -3163,8 +3215,8 @@
     "badges": [
       "./assets/UI/badges/blanco.png", 
       "./assets/UI/badges/top1.png",
-      "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/top5.png", 
+      "./assets/UI/badges/top10.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/blanco.png"
     ]
@@ -3390,5 +3442,14 @@
     "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52%2C0xfa58287ee181307072e07bbbb5bb81a59926a143%2C0x42b01e2efd9b971c87728cef8d11e1e56a3c1bca%2C0x4e3ed2e098932fb48bb923991c8448e9952a64e7",
     "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52/ohlcv/minute?aggregate=15",
     "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x9cc7826047d03e3f1d7eadfcdc75bfdfcdfebc52"
-  }
-}]
+  },
+"badges": [
+  "./assets/UI/badges/blanco.png", 
+  "./assets/UI/badges/blanco.png",
+  "./assets/UI/badges/blanco.png", 
+  "./assets/UI/badges/top10.png",       
+  "./assets/UI/badges/blanco.png",
+  "./assets/UI/badges/blanco.png"
+]
+}
+]
