@@ -1216,7 +1216,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0xa23c46472ad49385796774bc98c9903f901b75a0",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x4f70fdcfa6e9d68f6614b3af00e0739125b186b2/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x8ab1c78364eb29ad4ae509ff6b03e3e7bd4f8d10"
-    }
+  },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/top10.png",       
+    "./assets/UI/badges/topperformer.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "lildavid-ghost",
