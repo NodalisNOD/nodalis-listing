@@ -5,7 +5,7 @@
     "ticker": "TRI",
     "chain": "Cronos",
     "category": "Meme",
-    "icon": "./assets/coinIcons/tri.jpg",
+    "icon": "./assets/coinIcons/tri.png",
     "contract": "0xF1F8B074D616796Ae529651a41874246389eC6d3",
     "website": "https://crokillsbnb.info/",
     "explorer": "https://cronoscan.com/token/0xF1F8B074D616796Ae529651a41874246389eC6d3",
