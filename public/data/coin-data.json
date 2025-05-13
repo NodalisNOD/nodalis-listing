@@ -5,7 +5,7 @@
     "ticker": "CRNB",
     "chain": "Cronos",
     "category": "Meme",
-    "icon": "./assets/coinIcons/cronon.webp",
+    "icon": "./assets/coinIcons/crnb.jpg",
     "contract": "0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
     "website": "https://crokillsbnb.info/",
     "explorer": "https://cronoscan.com/token/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
