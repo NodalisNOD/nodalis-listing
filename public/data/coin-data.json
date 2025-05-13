@@ -44,50 +44,6 @@
     ]
   },
   {
-    "id": "CRNB",
-    "name": "CrokillsBnB",
-    "ticker": "CRNB ",
-    "chain": "Cronos",
-    "category": "Meme",
-    "icon": "./assets/coinIcons/crnb.jpg",
-    "contract": "0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
-    "website": "https://crokillsbnb.info/",
-    "explorer": "https://cronoscan.com/token/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
-    "twitter": "https://x.com/CrokillsBnb",
-    "telegram": "https://t.co/tVdRkfvRgg",
-    "discord": "",
-    "whitepaper": "",
-    "threads": "",
-    "extraLinks": [
-      {
-        "name": "",
-        "url": ""
-      },
-      {
-        "name": "",
-        "url": ""
-      },
-      {
-        "name": "",
-        "url": ""
-      }
-    ],
-    "description": "#CRNB was a fair launched token by old school cro OGs over a year ago , who have always believed in the cronos vision. And through it, we hope to see the day cro will flip bnb MC. \n\nThis meme is a symbol of the strong belief we have in cro\n\n#FFTB.",
-    "dynamicData": {
-      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
-      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x59795CdA23903315B7A9e6a3eDB775e53EF96706"
-    },
-    "badges": [
-      "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",
-      "./assets/UI/badges/blanco.png", 
-      "./assets/UI/badges/blanco.png",       
-      "./assets/UI/badges/blanco.png",
-      "./assets/UI/badges/blanco.png"
-    ]
-  },
-  {
     "id": "Greg",
     "name": "Greg",
     "ticker": "Greg",
