@@ -709,7 +709,15 @@
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
       "graphApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0x0393ff327a4e43d6d7a7420450a98d40a8eec59e/ohlcv/minute?aggregate=15",
       "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xDf50068a8B84028884C5725613132b2c592baa61"
-    }
+    },
+  "badges": [
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",
+    "./assets/UI/badges/blanco.png", 
+    "./assets/UI/badges/blanco.png",       
+    "./assets/UI/badges/topperformer.png",
+    "./assets/UI/badges/blanco.png"
+  ]
   },
   {
     "id": "kristine",
