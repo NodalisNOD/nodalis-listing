@@ -1,5 +1,181 @@
 [ 
   {
+    "id": "Trinari",
+    "name": "Trinari",
+    "ticker": "TRI",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/tri.jpg",
+    "contract": "0xF1F8B074D616796Ae529651a41874246389eC6d3",
+    "website": "https://crokillsbnb.info/",
+    "explorer": "https://cronoscan.com/token/0xF1F8B074D616796Ae529651a41874246389eC6d3",
+    "twitter": "https://x.com/CronosLegends",
+    "telegram": "",
+    "discord": "https://discord.gg/qHw52PxnNX",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "$TRI – The Utility Token of Cronos Legends: Trinari\nA true fair launch, powered by community and purpose.\n\n$TRI fuels the magical world of Trinari — home to mystical creatures, enchanted artifacts, and epic battles. More than just a token, it unlocks NFTs, staking, battleground rewards, and future gameplay features.\n\n🌀 Token Allocation – A Bold Fair Launch:\n💠 33% – Equally distributed to 33 pre-sale participants (1% each)\n💠 17% – Project wallet for LP, marketing, community initiatives & burns\n\nThose holding 1% of supply, something may be coming to you! 👀\n\nJoin the journey:\n🔹 X (Twitter) for updates\n🔹 Discord for community and support",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xF1F8B074D616796Ae529651a41874246389eC6d3",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xF1F8B074D616796Ae529651a41874246389eC6d3"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
+    "id": "CRNB",
+    "name": "CrokillsBnB  ",
+    "ticker": "CRNB ",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/crnb.jpg",
+    "contract": "0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+    "website": "https://crokillsbnb.info/",
+    "explorer": "https://cronoscan.com/token/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+    "twitter": "https://x.com/CrokillsBnb",
+    "telegram": "https://t.co/tVdRkfvRgg",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "#CRNB was a fair launched token by old school cro OGs over a year ago , who have always believed in the cronos vision. And through it, we hope to see the day cro will flip bnb MC. \n\nThis meme is a symbol of the strong belief we have in cro\n\n#FFTB.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x59795CdA23903315B7A9e6a3eDB775e53EF96706"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
+    "id": "CRNB",
+    "name": "CrokillsBnB  ",
+    "ticker": "CRNB ",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/crnb.jpg",
+    "contract": "0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+    "website": "https://crokillsbnb.info/",
+    "explorer": "https://cronoscan.com/token/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+    "twitter": "https://x.com/CrokillsBnb",
+    "telegram": "https://t.co/tVdRkfvRgg",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "#CRNB was a fair launched token by old school cro OGs over a year ago , who have always believed in the cronos vision. And through it, we hope to see the day cro will flip bnb MC. \n\nThis meme is a symbol of the strong belief we have in cro\n\n#FFTB.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x59795CdA23903315B7A9e6a3eDB775e53EF96706"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
+    "id": "Greg",
+    "name": "Greg",
+    "ticker": "Greg",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/greg.webp",
+    "contract": "0x673e5f1ED0130a3A605C8aD627A2EB39767DCa4A",
+    "website": "https://gregcoin.info/",
+    "explorer": "https://cronoscan.com/token/0x673e5f1ED0130a3A605C8aD627A2EB39767DCa4A",
+    "twitter": "https://x.com/gregcoin07",
+    "telegram": "",
+    "discord": "https://discord.gg/PbMbY56T",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Greg is a funny meme coin about an African boy with a Goat in Africa . Greg is his real name and he gives live videos about his life and the goat on twitter and discord . \n\nIt gained alot of traction and we have decided to bring the African boy and his goat back.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x673e5f1ED0130a3A605C8aD627A2EB39767DCa4A",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x673e5f1ED0130a3A605C8aD627A2EB39767DCa4A"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "BurnIt ",
     "name": "BurnIt ",
     "ticker": "PYRO",
