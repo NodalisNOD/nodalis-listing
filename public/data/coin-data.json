@@ -1,5 +1,49 @@
 [ 
   {
+    "id": "schnitzel",
+    "name": "SCHNITZEL",
+    "ticker": "SNTZL",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/schnitzel.jpg",
+    "contract": "0xacda402e87a76944fb2d8ab5b4e468a747765688",
+    "website": "https://t.co/S36lDM1CWg/",
+    "explorer": "https://cronoscan.com/token/0xacda402e87a76944fb2d8ab5b4e468a747765688",
+    "twitter": "https://x.com/vinocryptoreal",
+    "telegram": "",
+    "discord": "https://t.co/S36lDM1CWg",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "The earlier you order your schnitzel, the larger it will be wen server! $SNTZL",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xacda402e87a76944fb2d8ab5b4e468a747765688",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xacda402e87a76944fb2d8ab5b4e468a747765688"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "vino-coin",
     "name": "Vino Coin",
     "ticker": "Vino",
@@ -120,7 +164,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0xF1F8B074D616796Ae529651a41874246389eC6d3",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xF1F8B074D616796Ae529651a41874246389eC6d3"
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0xacda402e87a76944fb2d8ab5b4e468a747765688"
     },
     "badges": [
       "./assets/UI/badges/blanco.png", 
