@@ -1,5 +1,49 @@
 [ 
   {
+    "id": "vino-coin",
+    "name": "Vino Coin",
+    "ticker": "Vino",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/vino.jpg",
+    "contract": "0x3376f2d69ec344c19504def2e775ad1ba4022cbb",
+    "website": "https://vino-coin.net/",
+    "explorer": "https://cronoscan.com/token/0x3376f2d69ec344c19504def2e775ad1ba4022cbb",
+    "twitter": "https://x.com/vinocryptoreal",
+    "telegram": "https://t.me/vinocoincrypto",
+    "discord": "",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "Celebrates the joy of wine! Designed for wine lovers and meme enthusiasts, Vino Coin offers a fun, lighthearted crypto experience. Sipping cabernet or toasting chardonnay, Vino Coin adds humor to your portfolio. Raise a glass and join the community!",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x3376f2d69ec344c19504def2e775ad1ba4022cbb",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xcb43cf7f8d3cf79d0d80e6dc0f3c30959e1f6b35"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png"
+    ]
+  },
+  {
     "id": "cro-kills-bnb",
     "name": "CrokillsBnB",
     "ticker": "CRNB",
