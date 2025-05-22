@@ -76,7 +76,7 @@
     "dynamicData": {
       "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x59795CdA23903315B7A9e6a3eDB775e53EF96706",
       "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
-      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x59795CdA23903315B7A9e6a3eDB775e53EF96706"
+      "generalApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/0xb8f96a1b909a5d85bc7ad6bfd5b9dce1c9ffaa18"
     },
     "badges": [
       "./assets/UI/badges/blanco.png", 
