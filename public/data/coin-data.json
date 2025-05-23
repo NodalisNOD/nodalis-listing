@@ -1,4 +1,48 @@
 [ 
+    {
+    "id": "inoai",
+    "name": "InoAi",
+    "ticker": "INO",
+    "chain": "Cronos",
+    "category": "Meme",
+    "icon": "./assets/coinIcons/ino.png",
+    "contract": "0x025f1575908d85815198390b2e5366fe754f8207",
+    "website": "https://inoai.org",
+    "explorer": "https://cronoscan.com/token/0x025f1575908d85815198390b2e5366fe754f8207",
+    "twitter": "https://x.com/Ino_C1",
+    "telegram": "",
+    "discord": "https://discord.com/invite/xitcoin",
+    "whitepaper": "",
+    "threads": "",
+    "extraLinks": [
+      {
+        "name": "Docs",
+        "url": "https://docs.xitcoin.org/ecosystem-on-cronos/inoai"
+      },
+      {
+        "name": "",
+        "url": ""
+      },
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "description": "InoAi is a memecoin available for those interested in its use. Its interaction is combined with an artificial intelligence named INO, which represents the voice and identity of the token, guiding its purpose within a decentralized ecosystem.",
+    "dynamicData": {
+      "priceApi": "https://api.geckoterminal.com/api/v2/simple/networks/cro/token_price/0x025f1575908d85815198390b2e5366fe754f8207",
+      "marketApi": "https://api.geckoterminal.com/api/v2/networks/cro/pools/multi/0x03afed7a204427c7d763795350e7cfe4e34ed9b7",
+      "generalApi": "https://api.dexscreener.com/token-pairs/v1/cronos/0x025f1575908d85815198390b2e5366fe754f8207"
+    },
+    "badges": [
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/blanco.png", 
+      "./assets/UI/badges/blanco.png",       
+      "./assets/UI/badges/blanco.png",
+      "./assets/UI/badges/verify.png"
+    ]
+  },
   {
     "id": "schnitzel",
     "name": "SCHNITZEL",
