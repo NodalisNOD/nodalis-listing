@@ -758,3 +758,17 @@ table tr:hover {
 .filter-panel .custom-dropdown.open .custom-dropdown-options {
   display: block;
 }
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.verify-overlay {
+  position: absolute;
+  top: -4px;
+  right: -15px;
+  width: 28px;
+  height: 28px;
+  padding: 1px;
+  object-fit: contain;  /* ✅ Voorkomt dat het plat getrokken wordt */
+}

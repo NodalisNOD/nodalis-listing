@@ -41,7 +41,8 @@
       "./assets/UI/badges/blanco.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/verify.png"
-    ]
+    ],
+      "verified": "Yes"
   },
   {
     "id": "schnitzel",
@@ -439,7 +440,8 @@
       "./assets/UI/badges/blanco.png",       
       "./assets/UI/badges/blanco.png",
       "./assets/UI/badges/verify.png"
-    ]
+    ],
+      "verified": "Yes"
   },
   {
     "id": "white-stone",

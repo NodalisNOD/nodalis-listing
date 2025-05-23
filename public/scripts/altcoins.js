@@ -36,11 +36,8 @@ export function populateAltcoinTable() {
             );
             if (!manualCoin) return null;
 
-            // ── bepaal of 'verify' in de badges staat ──
-            const badges = Array.isArray(manualCoin.badges)
-              ? manualCoin.badges
-              : [];
-            const isVerified = badges.includes("verify");
+            // Controleer op verified
+            const isVerified = manualCoin.verified === "Yes";
 
             let priceUsd, change6h, change24h, marketCap, volume24h;
             if (Array.isArray(coinData) && coinData.length > 0) {
@@ -55,13 +52,11 @@ export function populateAltcoinTable() {
                 ? parseFloat(dexData.priceUsd)
                 : null;
               change6h =
-                dexData.priceChange?.h6 &&
-                dexData.priceChange.h6 !== "N/A"
+                dexData.priceChange?.h6 && dexData.priceChange.h6 !== "N/A"
                   ? parseFloat(dexData.priceChange.h6)
                   : 0;
               change24h =
-                dexData.priceChange?.h24 &&
-                dexData.priceChange.h24 !== "N/A"
+                dexData.priceChange?.h24 && dexData.priceChange.h24 !== "N/A"
                   ? parseFloat(dexData.priceChange.h24)
                   : 0;
               marketCap =
@@ -107,19 +102,18 @@ export function populateAltcoinTable() {
               change24h,
               marketCap,
               volume24h,
-              isVerified,    // ── hier toevoegen
+              isVerified, // toegevoegd
             };
           });
 
-          coinTableData = results.filter((x) => x !== null);
+          const coinTableData = results.filter((x) => x !== null);
           coinTableData.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
-          currentDisplayData = [...coinTableData];
+          const currentDisplayData = [...coinTableData];
           renderTable(currentDisplayData, 1);
           setupTableSort();
         });
     });
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   // populateAltcoinTable wordt van buiten aangeroepen
@@ -147,7 +141,7 @@ function renderTable(data = coinTableData, page = currentPage) {
             ${
               coin.isVerified
                 ? `<img
-                     src="/assets/UI/badges/verify.png"
+                     src="/assets/UI/shield.png"
                      alt="Verified"
                      class="verify-overlay"
                    >`
